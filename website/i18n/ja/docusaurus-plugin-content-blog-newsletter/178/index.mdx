@@ -1,0 +1,150 @@
+---
+slug: /178
+title: "This Week In React #178: Remix and Vite, Type-safe Children, Astro DB, React Compiler, Firebolt, Vitest, Composition, Remix Nitro, RSC in React Native, TenTap, Expo Atlas, TypeScript, Elysia..."
+authors: [slorber, bndkt]
+date: 03-20-2024
+---
+
+みなさん、こんにちは！
+
+今週は私にとって特別で重要な週です。ニュースレターを少しお休みし、代わりに[Benedikt](https://twitter.com/bndkt)がニュースレター全体を執筆しています。Benedikt、よろしくお願いします！
+
+***
+
+先週はリリースが少なく、おそらく皆が今後のカンファレンスシーズンに向けて発表を温存しているのでしょう。Astroは新しいデータベースに関する詳細を公開し、開発者向けポータルもリリースしました。これはテーママーケットプレイスとして始まりますが、将来的には統合機能もカバーする予定です。RemixはViteを優先するようになり、Vercelは新しいAIチャットボットテンプレートを公開しました。ReactセクションでReact Server Componentsに関する多くのニュースがあった後、今週はReact NativeセクションでRSCに関するニュースが見られます。
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Next.js向けインライン視覚編集可能なヘッドレスCMS](/emails/issues/169/reactbricks.jpg)](https://reactbricks.com?utm_source=twir\&utm_campaign=twir_2024\&utm_medium=email)
+
+**[Next.js向けインライン視覚編集可能なヘッドレスCMS](https://reactbricks.com?utm_source=twir\&utm_campaign=twir_2024\&utm_medium=email)**
+
+[**1分でプロジェクトをセットアップ**](https://reactbricks.com/sign-up?utm_source=twir\&utm_campaign=twir_2024\&utm_medium=email) CLIを使用して、ピクセルパーフェクトな企業ブランドを伝えるための独自のビジュアルブロックをReactコンポーネントとして定義できます。任意のCSSフレームワークを使用可能です。新しいNext.jsスターター（Server Components対応）をお試しください！
+
+コンテンツ編集者は、ワードプロセッサのように視覚的にページを構成するコンテンツブロックを簡単に使用でき、デザインを損なうことなく作業できます。
+
+React Bricksは、デジタルアセット管理、高度なSEO、リアルタイムコラボレーション、スケジュールされた公開、多言語対応、外部APIとの統合、承認ワークフロー、複数環境、変更履歴など、エンタープライズ向けの機能を備えています。
+
+The Weather Channel、Deel.com、La Banque Postaleなどの企業クライアントや、主要なeCommerceサイト、世界中の9,000人以上のユーザーに信頼されています。
+[**今日から始めましょう！**](https://reactbricks.com/sign-up?utm_source=twir\&utm_campaign=twir_2024\&utm_medium=email)
+
+***
+
+## ⚛️ React {#react}
+
+[![Remix Vite-first](/emails/issues/178/remix_heart_vite.jpg)](https://twitter.com/markdalgleish/status/1770224011831890036)
+
+🐦 [**RemixがVite-firstに**](https://twitter.com/markdalgleish/status/1770224011831890036)
+
+RemixはVite統合を不安定版として導入した比較的短い移行期間を経て、これが安定版としてマークされ、すぐに新しいデフォルトとなりました。私はこの迅速な移行を見て非常に楽しみ、RemixとViteの組み合わせは強力な組み合わせだと考えています。また、ViteをRemixの開発環境およびコンパイラとして使用することで、Remixチームは表面積を減らし、コアフレームワーク機能に集中できるようになることは良いことだと思います！新しく作成されたRemixプロジェクトには、Remixプラグインを参照するVite設定ファイルしか含まれていませんが、これは簡素化の美しい例だと思います！
+
+* 💸 [Document Generation with Apryse - Transforming Templates into Tailored Documents with React](https://apryse.com/blog/docx-generation-from-templates-react?utm_source=email\&utm_medium=newsletter\&utm_campaign=thisweekinreact4)
+* 📜 [Astro DB: A Deep Dive](https://astro.build/blog/astro-db-deep-dive/): Astro partnered with Turso to integrate libSQL. Also interesting to read why they thought about and ultimately didn’t choose Cloudflare’s D1.
+* 📜 [The Astro Developer Portal](https://astro.build/blog/dev-portal/): An official theme marketplace for Astro.
+* 📜 [How Next.js breaks React Fundamentals](https://ondrejvelisek.github.io/how-nextjs-breaks-react-fundamentals/): I don’t agree with the title and the conclusion, but it’s still an interesting exploration of the limitations of RSC (most of them not specific to Next.js).
+* 📜 [Type system of the React compiler](https://www.recompiled.dev/blog/type-system/): This is quite deep and theoretical, but if you want to learn more about the relation of compilers and type inference, it might be interesting to you.
+* 📜 [Two Types of Composition](https://kyleshevlin.com/two-types-of-composition/): I think sometimes it’s good to revisit the fundamentals of what we’re doing as developers every day. Composition is one of React’s basic principles, and this article looks at the basics of nesting composition and merging composition.
+* 📜 [Migrate Next.js app away from "Vercel + PlanetScale" to "Fly.io"](https://www.crispyscript.com/articles/13)
+* 📜 [Astro Studio - first impression](https://maciekpalmowski.dev/blog/astro-studio-first-impression/)
+* 📜 [You Are Leaking Your Next.js Application Features](https://www.rexforde.com/blog/conditional-render-problem)
+* 📜 [Embracing the Future and Moving Back Again: From Server Actions to tRPC](https://documenso.com/blog/removing-server-actions)
+* 📜 [You Can't Make Children "Type Safe" in React & TypeScript](https://www.totaltypescript.com/type-safe-children-in-react-and-typescript)
+* 📜 [How to test React custom hooks and components with Vitest](https://www.thisdot.co/blog/how-to-test-react-custom-hooks-and-components-with-vitest)
+* 📜 [OpenTelemetry in Practice: Instrumenting JavaScript Apps for Tracing](https://marmelab.com/blog/2024/03/14/opentelemetry-in-practice-instrumenting-javascript-apps-for-tracing.html)
+* 🗓 [React Connection - 22 April](https://reactconnection.io/) + [React-Native Connection - 23 April](https://reactnativeconnection.io/) - 🇫🇷 Paris - 2 days of web/mobile conferences. Get a -20% discount with code "TWIR".
+* 📦 [Firebolt](https://firebolt.dev/): A new simple React framework that reminds a bit of Remix. See also the [introductory blog post](https://firebolt.dev/blog/introducing-firebolt). RSC support is in progress.
+* 📦 [remix-nitro - An example on how to run Remix with Nitro with HMR using Vite's 5.1 experimental runtime API](https://github.com/alessandrojcm/remix-nitro)
+* 📦 [remix-hono v0.0.16 - now on Hono v4](https://github.com/sergiodxa/remix-hono/releases/tag/v0.0.16)
+* 📦 [Next.js AI Chatbot 2.0 - Now on AI SDK 3.0](https://vercel.com/changelog/next-js-ai-chatbot-2-0)
+* 🎥 [Daniel Kanem - Understanding the Steps of Migrating Your Remix App to Vite.js](https://www.youtube.com/watch?v=CTgQhNFqn5E)
+* 🎥 [Brooks Lybrand - Deploying Remix to GitHub Pages](https://www.youtube.com/watch?v=EO_-KwSslWQ)
+* 🎥 [Theo Browne - Million Lint](https://youtu.be/fcY9TthQnI4?si=bROdHJmIumw24AlO)
+* 🎥 [UI Engineering - Goodbye, forwardRef](https://www.youtube.com/watch?v=m4QbeS9BTNU)
+* 🎥 [Jack Herrington - Pigment-CSS: Material-UI Fixed on NextJS and React 19](https://www.youtube.com/watch?v=fyja_ldjxwA)
+* 🎙️ [Rocket Ship 34 - React Architecture Tips with Charlotte Isambert](https://share.transistor.fm/s/48a4b223)
+* 🎙️ [PodRocket - Partial pre-rendering in Next.js with Delba de Oliveira and Wyatt Johnson](https://podrocket.logrocket.com/partial-pre-rendering-next-js-delba-oliveira-wyatt-johnson)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![React向けFormBuilder SDK](/emails/issues/171/tripetto.jpg)](https://tripetto.com/sdk/this-week-in-react/?utm_source=thisweekinreact\&utm_medium=sponsor\&utm_campaign=sdk)
+
+**[React向けFormBuilder SDK](https://tripetto.com/sdk/this-week-in-react/?utm_source=thisweekinreact\&utm_medium=sponsor\&utm_campaign=sdk)**
+
+フォーチュン500企業でも採用されている、Reactプロジェクト向けの完全なフォームソリューションです。Reactアプリ内で強力なフォームを構築・実行するための使いやすいオープンソースコンポーネントを提供します。詳細なドキュメントがあり、数分でセットアップ可能で、高度なカスタマイズが可能です。
+
+* 強力なフォームを作成するビルダー
+* フォームをデプロイしデータを収集するランナー
+* 柔軟なフォームレイアウト（会話型、チャット形式など）とスタイリング
+* カスタム質問タイプで拡張可能
+* 完全なドキュメント、サンプル、デモ
+* 外部依存なしでセルフホスティング可能
+* 無料で開始、テスト、調整可能
+
+TWIR限定: [FormBuilder SDKライセンスを25%オフで入手](https://tripetto.com/sdk/this-week-in-react/?utm_source=thisweekinreact\&utm_medium=sponsor\&utm_campaign=sdk)。
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![React Native RSC](/emails/issues/178/rn_rsc.jpg)](https://github.com/mui/material-ui/tree/master/packages/pigment-css-react)
+
+🐦 [**React NativeでのReact Server Componentsデモ**](https://twitter.com/SzymonRybczak/status/1769747995862384756)
+
+カンファレンスシーズンが近づき、発表が少なくなる中、人々は大きな舞台に最高の内容を取っておく傾向があります。今後のカンファレンスで最も楽しみにしているトピックの1つは、React NativeでのReact Server Components（RSC）です。CallstackのSzymon Rybczak氏が、RNで動作するRSCの興味深いデモを公開しました。詳細なブログ記事とコードも近日公開予定とのことで、さらに詳しく学べることを楽しみにしています。
+
+* 💸 [React Universe Conf - 講演提案の締め切り間近: CFPは3月22日まで。RUCで講演したくない方も、早期割引チケットをゲットしましょう！](https://www.reactuniverseconf.com/?utm_campaign=React_Universe_Conf\&utm_source=email\&utm_content=This_Week_in_React)
+* 📖 [Expo Docs: CodePushからの移行](https://docs.expo.dev/eas-update/codepush/): Visual Studio App Centerは2025年3月31日に提供終了予定です。CodePushユーザーは代替手段の検討を開始すべきです。
+* 📜 [Expo Routerとは何か？](https://www.themorrow.digital/blog/what-is-the-expo-router)
+* 📜 [Reactナビゲーション＆ステートマシン - アプリフローの最適化](https://www.bam.tech/article/react-navigation-state-machine-perfecting-app-flows): React Navigationで複雑なフローを実現する方法について、ステートマシンまたはカスタムナビゲーターを使用した興味深い探求。
+* 📜 [Expoブログ - 次のExpoプロジェクトをセットアップするための12のヒント](https://expo.dev/blog/12-tips-for-setting-up-your-next-expo-project): 一部は明白（TypeScriptを使用など）ですが、開発と本番用のアプリバリアントや自動ビルドバージョニングなど、価値あるリマインダーも含まれています。
+* 📜 [緊急時のOTA（Over-The-Air）配信](https://www.callstack.com/blog/ship-over-the-air-when-in-an-emergency)
+* 📦 [TenTap - 型付け可能でカスタマイズ可能、拡張可能なReact Native用リッチテキストエディター](https://github.com/10play/10tap-editor)
+* 📦 [React Native 0.74.0-rc.4](https://github.com/facebook/react-native/releases/tag/v0.74.0-rc.4)
+* 📦 [expo-atlas - Metroからのバンドル統計を検査する実験的ライブラリ](https://github.com/byCedric/expo-atlas)
+* 📦 [React Native MMKVデバッグ用の新しいExpo Devツールプラグイン](https://www.npmjs.com/package/@dev-plugins/react-native-mmkv)
+* 📦 [Expo SDK 51の最初のカナリアリリースが登場](https://www.npmjs.com/package/expo/v/51.0.0-canary-20240318-dd8f245)
+* 🎙️ [RNR 291 - RNR解説: デブメニュー](https://reactnativeradio.com/episodes/rnr-291-rnr-explains-the-dev-menu)
+* 🎥 [ユニバーサルReactアプリのベストスタック](https://www.youtube.com/watch?v=2yvjgwTZOUY)
+* 🎥 [Expoモジュールを使用してネイティブライブラリを構築しよう](https://www.youtube.com/watch?v=UczTzTBYRhA)
+* 🎥 [Expoプロジェクト用のアプリアイコンとスプラッシュスクリーンの作成方法](https://www.youtube.com/watch?v=QSNkU7v0MPc)
+
+***
+
+## 🔀 Other {#other}
+
+* 👀 [TypeScript 5.5 PRがマージされました - 制御フロー分析を使用して関数本体から型述語を推論](https://github.com/microsoft/TypeScript/pull/57465)
+* 📜 [VitestとworkerdによるCloudflare Workersのテスト改善](https://blog.cloudflare.com/workers-vitest-integration/)
+* 📜 [TypeScriptでNodeアプリを構築する](https://www.totaltypescript.com/typescript-and-node)
+* 📜 [型述語推論: 誰も予想しなかったTS 5.5の機能](https://www.totaltypescript.com/type-predicate-inference)
+* 📜 [拡張リクエストの非表示とNetworkパネルのその他の改善](https://developer.chrome.com/blog/network-panel-improvements?hl=en)
+* 📜 [Node.jsでのrequire(esm)](https://joyeecheung.github.io/blog/2024/03/18/require-esm-in-node-js/)
+* 📜 [ECMAScriptモジュールとCommonJSの比較](https://wanago.io/2024/03/18/ecmascript-modules-esm-commonjs/)
+* 📜 [Node.js Worker Threads初心者ガイド](https://betterstack.com/community/guides/scaling-nodejs/nodejs-workers-explained/)
+* 📦 [Elysia 1.0 - Bunウェブフレームワーク](https://elysiajs.com/blog/elysia-10)
+* 📦 [Bun 1.0.31](https://bun.sh/blog/bun-v1.0.31)
+* 📦 [AnalogJS 1.0 - Angularメタフレームワーク](https://dev.to/analogjs/announcing-analogjs-10-19an)
+* 📦 [Rsbuild 0.5 - Lightning CSS](https://rsbuild.dev/community/releases/v0-5)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![ドロップされたアニメーションフレーム](/emails/issues/178/meme.jpg)](https://twitter.com/ryanflorence/status/1769842701904822774)
+
+またね！👋

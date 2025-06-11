@@ -1,0 +1,138 @@
+---
+slug: /115
+title: "This Week In React #115: Astro, Radix, Remix, Next.js, MDX, Storybook, Expo 46, Skia, TanStack, TC39, Docusaurus..."
+authors: [slorber]
+date: 08-05-2022
+---
+
+This Week In React #115: Astro、Radix、Remix、Next.js、MDX、Storybook、Expo 46、Skia、TanStack、TC39、Docusaurus...
+
+<!-- truncate -->
+
+皆さん、こんにちは！
+
+Docusaurus 2.0の成功したローンチに続き、今週初めに予定していたニュースレターを送る時間がありませんでした😅
+
+これは金曜日の夜に送る特別版で、ほぼ3週間分のニュースをカバーしています。多くのことが起こりました！
+
+すべてを読んだりコメントしたりするのは不可能です😬。私は網羅的であることを選択し、興味深いと思ったすべてのリンクを含めることにしましたが、必ずしもコメントは付けていません。まず自分で読む必要があります😅 今は少し手一杯です。
+
+8月中は、RevueからConvertKitへの移行に集中します。次回の配信は8月20日頃を予定していますが、スキップして9月初旬まで何も送らない可能性もあります。
+
+とにかく、しばらく会えない間、せめて夏の間に読むものがあるように🤣
+
+🙏 **ニュースレターをサポート:**
+
+* 😘 **友人に薦める**: とても助かります！
+* 💸 [**This Week In Reactをスポンサー**](https://gist.github.com/slorber/cb732fb5d0a002c4d73236a9baeba7bb?utm_campaign=thisweekinreact\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 😍 [**Twitterで推薦文を書く**](https://twitter.com/sebastienlorber/timelines/1448942785814466561?utm_campaign=thisweekinreact\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 🧵 [**最新のTwitterスレッドをリツイート**](https://slo.im/thread?utm_campaign=thisweekinreact\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📨 この[**メール**](mailto\:lorber.sebastien@gmail.com?utm_campaign=thisweekinreact\&utm_medium=email\&utm_source=Revue%20newsletter)に返信: フィードバックは歓迎です
+* 👥 [**LinkedIn**](https://www.linkedin.com/company/this-week-in-react/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)でフォロー
+
+**このニュースレターが気に入ったら、優先的にこちらで購読してください**:
+
+* 🇬🇧 [ThisWeekInReact.com](https://thisweekinreact.com/md)
+* 🇫🇷 [ReactHebdo.fr](https://reacthebdo.fr/)
+
+[![](https://user-images.githubusercontent.com/749374/153181021-8fdb0ece-270a-4cf2-980b-4557d04316ad.png)](https://thisweekinreact.com/md)
+
+***
+
+## React
+
+[**Docusaurus 2.0の発表**](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+
+Docusaurusは私がMetaと共に取り組んでいるReactフレームワークです。v2.0をリリースしました。このリリースは至る所で取り上げられ、とても嬉しく思っています！💝 成功に参加し、貢献してくれた皆さんに感謝します！🙏 役立つリンク:
+
+* 📜 [Issue #114はローンチ特集でした](https://www.getrevue.co/profile/thisweekinreact/issues/this-week-in-react-114-official-launch-of-docusaurus-2-0-1273933?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 🥇 [Product Huntで「本日のプロダクト」に選出](https://www.producthunt.com/posts/docusaurus-2-0?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter) 🥇🤩
+* 🎨 [Lee RobinsonによるVercelでのデプロイデモ](https://twitter.com/leeerob/status/1554211061284364290?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📜 [DocusaurusとNxを使った簡単なドキュメンテーション](https://blog.nrwl.io/easy-documentation-with-docusaurus-and-nx-4b932d8ad0e4?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+
+**その他:**
+
+* 📜 [Reactの再レンダリングガイド：すべてを一度に](https://www.developerway.com/posts/react-re-renders-guide?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📜 [React Three Fiberを使ったシェーダーの研究](https://blog.maximeheckel.com/posts/the-study-of-shaders-with-react-three-fiber/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📜 [AstroとMDXへの移行](https://www.brycewray.com/posts/2022/07/astro-move-to-mdx/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📜 [Vercel - 独自のWebフレームワークを構築する](https://vercel.com/blog/build-your-own-web-framework?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📜 [RedwoodJS vs. BlitzJS：フルスタックJavaScriptメタフレームワークの未来](https://blog.risingstack.com/redwoodjs-vs-blitzjs-comparison/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📜 [Reactの再レンダリングガイド：すべてを一度に](https://www.developerway.com/posts/react-re-renders-guide?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📜 [Storybook 7.0のデザインを先取り](https://storybook.js.org/blog/storybook-7-0-design-sneak-peek/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📜 [Storybook - TypeScriptでストーリーを書く](https://storybook.js.org/blog/writing-stories-in-typescript/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📜 [Ladle vs. Storybook：プロジェクトサイズごとのパフォーマンス比較](https://blog.logrocket.com/ladle-storybook-performance-project-sizes/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📜 [ReactのuseEffectとuseLayoutEffectフックの違いを理解する](https://blog.saeloun.com/2022/07/28/difference-between-useeffect-and-useeffectlayout-hooks?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📜 [なぜReact Queryから移行する必要があったのか](https://www.basedash.com/blog/why-we-had-to-move-away-from-react-query?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📜 [サスペンスが私を殺す：パート2](https://blog.6nok.org/the-suspense-is-killing-me:-part-2/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📜 [8年Reactを書いてきた私の書き方](https://nesbtesh.medium.com/how-i-write-react-after-8-years-12cbf82c351?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📜 [Reactで500msから1.7msへの旅とチェックリスト](https://orizens.com/blog/500ms-to-1-7ms-in-react-a-journey-and-a%20checklist/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 🐦 [Next.jsのプレビューデプロイを高速化するヒント](https://twitter.com/leeerob/status/1550617876188520452?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 🧵 [Next.jsの新しいルーター](https://twitter.com/nextjs/status/1549841497822056454?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📦 [Next.js 12.2.3](https://twitter.com/nextjs/status/1551973401346347009?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📦 [React Ariaリリース（7月29日）](https://twitter.com/devongovett/status/1553078605533499393?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📦 [Gatsby 4.19](https://www.gatsbyjs.com/docs/reference/release-notes/v4.19/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📦 [TanStack Query 4](https://twitter.com/tannerlinsley/status/1549785943837515776?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📦 [Radix 1.0](https://twitter.com/radix_ui/status/1550071948658593797?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📦 [Astro 1.0 RC](https://twitter.com/astrodotbuild/status/1551938246296363009?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📦 [remix-ssg](https://github.com/jacob-ebey/remix-ssg?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter): Remixを使った静的サイト構築用CLI
+* 📦 [create-slots](https://github.com/nihgwu/create-slots?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter): SSR対応のReactスロットコンポーネント
+* 📦 [remix-typedjson](https://github.com/kiliman/remix-typedjson?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📦 [zustand 4.0](https://twitter.com/dai_shi/status/1551744179390533632?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+
+***
+
+## 💸 スポンサー
+
+💡 [このニュースレターのスポンサーになる方法](https://thisweekinreact.com/sponsor?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+
+[A Byte of Coding](https://abyteofcoding.com/?utm_campaign=This%20Week%20In%20React\&utm_medium=newsletter\&utm_source=twireact)
+
+ソフトウェアエンジニアリングに関する3つの厳選された技術的な深掘り記事を毎日配信するニュースレターです。
+
+[G2i: 100%リモートのJavaScript求人](https://welcome.g2i.co/apply?campaign=marketing-partner-newsletters\&utm_campaign=Marketing%20Partner%20Newsletters\&utm_medium=email\&utm_source=TWIR)
+
+G2iは、開発者の健康を第一に考える唯一の採用プラットフォームです。ReactおよびReact Nativeのフリーランサーを、開発者の精神的・身体的・感情的な健康と幸福を向上させることに取り組む優れた企業と結びつけます。[今すぐ参加を申し込む](https://welcome.g2i.co/apply?campaign=marketing-partner-newsletters\&utm_campaign=Marketing%20Partner%20Newsletters\&utm_medium=email\&utm_source=TWIR)
+
+G2iの創設者であるGabe Greenbergは、[**developerhealth.org**](https://developerhealth.org/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)で基金を立ち上げ、開発者コミュニティへの財政的支援を提供しています。開発者は、カウンセリング/セラピー、フリーランスプロジェクト間の有給休暇、ローン支援、育児サービス、医療訪問や費用などにこの基金を利用できます。
+
+***
+
+## React-Native
+
+[**Pedal to the Metal**](https://www.youtube.com/watch?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter\&v=uvLQ5f3KDXk)
+
+🤯 このWilliam Candillonによる動画は私のお気に入りです！イントロだけでも、そして制作のクオリティだけでも必見です👌 React-Native-Skiaの最新ニュースが含まれており、アルファ版がリリースされ、Expo SDK 46を介してExpo Goに含まれ、Snackをサポートし、Web（Remotionスターター付き）をサポートし、レコンシライアのパフォーマンス改善も見逃せません... 要するに、急速に進化しており、非常にエキサイティングです！Shopify、Expo、Google、Remotionとの素晴らしいコラボレーションでもあります。
+
+**その他:**
+
+* 📜 [Expo SDK 46](https://blog.expo.dev/expo-sdk-46-c2a1655f63f7?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📜 [EAS Updateが一般公開されました](https://blog.expo.dev/eas-update-is-now-generally-available-6532d25e750?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📜 [Mercari - React Nativeの進化](https://blog.mercari.com/eng-posts/our-react-native-evolution?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📜 [Discord for Androidのエキサイティングなアップデート](https://discord.com/blog/android-react-native-framework-update?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📜 [React Nativeモーダルについて誰もが誤解していること](https://javascript.plainenglish.io/you-have-been-using-react-native-modals-wrong-9b8c17de2f96?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 📦 [React-Native-AMA](https://formidable.com/blog/2022/react-native-ama/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter): アクセシビリティライブラリ
+* 📦 [react-native-quick-crypto](https://github.com/margelo/react-native-quick-crypto?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 💬 [バージョン0.70.0への道](https://github.com/reactwg/react-native-releases/discussions/26?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 🎨 [Reanimatedを使った迷路ゲームのデモ](https://twitter.com/tomekzaw_/status/1552645938400972802?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 🎨 [擬似的な深度アニメーションのデモ](https://twitter.com/4twiggers/status/1550459752290947072?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 🎨 [Expo 46 + React-Three-Fiberのデモ](https://twitter.com/4twiggers/status/1552264177020026880?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 🎨 [ドラッグ＆ドロップのデモ](https://twitter.com/barany6m/status/1551687689484865537?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* 🐦 [iOS上で異なるアプリフレームワークがビューをレンダリングする方法](https://twitter.com/Baconbrix/status/1550501126117773313?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+
+***
+
+## その他
+
+* [第91回TC39会議からのアップデート](https://dev.to/hemanth/updates-from-the-91th-tc39-meeting-779?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* [npm依存関係セレクター構文](https://github.blog/changelog/2022-08-03-introducing-the-new-npm-dependency-selector-syntax/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* [ESLintの新しい設定システム](https://eslint.org/blog/2022/08/new-config-system-part-1/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* [@containerと:has(): Chromium 105で登場](https://developer.chrome.com/blog/has-with-cq-m105/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* [個別のtransformプロパティを使ったCSS変形](https://web.dev/css-individual-transform-properties/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* [どのジェネレーターがMarkdownを最速でビルドするか？](https://www.zachleat.com/web/build-benchmark/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* [Safari 15.6の新WebKit機能](https://webkit.org/blog/13009/new-webkit-features-in-safari-15-6/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* [CSSネストの構文選択に協力を](https://developer.chrome.com/blog/help-css-nesting/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* [Deno - 自分専用JavaScriptランタイムを作る](https://deno.com/blog/roll-your-own-javascript-runtime?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* [Deno 1.24](https://deno.com/blog/v1.24?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* [Electron 20.0](https://www.electronjs.org/blog/electron-20-0?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+
+![CleanShot 2022-08-06 at 19 06 45@2x](https://user-images.githubusercontent.com/749374/183258933-c5a420ba-d368-4ffb-808d-853f37b55723.png)

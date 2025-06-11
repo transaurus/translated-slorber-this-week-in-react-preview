@@ -1,0 +1,652 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/134/index.mdx",
+  "source_file_content_hash": "12a4e1eda63cb2827c08a791c5bd3f0da259167542d3e26031d6daa7dcaf933c",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /134\ntitle: \"This Week In React #134: Gatsby ➡️ Netlify, React DOM for Native, XState, Flashlight, re-renders, Custom Hooks, Ignite Cookbook...\"\nauthors: [slorber]\ndate: 02-07-2023\n---",
+      "source_content_hash": "d64d40e5a983f3fd7bd3240b5ce381808af05fdef54c1bc539f3c71b732b7666",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Gatsby has just been acquired by Netlify 🤯!",
+      "source_content_hash": "dba13a5a08eaabdf361d89fc03f723679a87361d6cbf4e0ff3c507c8057075e7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "GatsbyがNetlifyに買収されました 🤯！"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "There is also a very interesting RFC to read if you are passionate about cross-platform in React-Native.",
+      "source_content_hash": "f48d19a4520529450539a83448879c0682585f52b78b20c9721266f42e0a7568",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React-Nativeのクロスプラットフォームに興味がある方は、非常に興味深いRFCも公開されています。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Otherwise, it's a pretty quiet week. That's good timing, because I don't have much time 😄. I'm finishing up some preparations for next week's email which will be a bit different.",
+      "source_content_hash": "92c7a3f37326a7e59689a5e0462a2ab074098da91d9ba13f0e7bf912f31f84e8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "それ以外は、比較的静かな週でした。ちょうど良いタイミングです。というのも、私はあまり時間が取れないからです 😄。来週のメールの準備を少し進めていますが、内容が少し変わります。"
+      }
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6429a3aa"
+      }
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアル形式 🎨**"
+      }
+    },
+    {
+      "segment_id": "507b4652",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "fcd52337",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_fcd52337"
+      }
+    },
+    {
+      "segment_id": "42e34e45",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_42e34e45"
+      }
+    },
+    {
+      "segment_id": "caf67047",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "[![refine](/emails/issues/132/refine.png)](https://github.com/refinedev/refine)",
+      "source_content_hash": "71d493474baa20151f282f0b238baca71787ebc1c6169a4525e355156ccb318d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![refine](/emails/issues/132/refine.png)](https://github.com/refinedev/refine)"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "[**refine - 100% open-source, headless React framework for building CRUD apps**](https://github.com/refinedev/refine)",
+      "source_content_hash": "8cfb5c506d1dddd63b61eea57b48329373ac5a4fad2d1af7d24a1e48bbe8e87c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**refine - 100%オープンソースのヘッドレスReactフレームワーク、CRUDアプリ構築用**](https://github.com/refinedev/refine)"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "Get ready to take your skillset to the next level! We are thrilled to launch an Open Source refine Hackathon",
+      "source_content_hash": "924e9c060e40b3b267f6d5b1ea8126a832b721d878fa6db2663e500dbbc82d00",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "スキルを次のレベルに引き上げる準備をしましょう！私たちはOpen Source refineハッカソンを開催します。"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "You can win \\$1500 and special swag kits!",
+      "source_content_hash": "cf050313633ed24a1460d9d8df73deb58434f22129e85a570c5aa0beea826d83",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "優勝者は1500ドルと特別なスワッグキットを獲得できます！"
+      }
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "We are excited to collaborate with Strapi, Appwrite, Meilisearch, and Medusa. They are sponsoring the refine Hackathon and the winners will get a swag kit from each of them!",
+      "source_content_hash": "3e0793f6f973523b526d21c74f05a6ef4f2d774382941109774edcf0b38d445c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Strapi、Appwrite、Meilisearch、Medusaと協力しています。彼らはrefineハッカソンをスポンサーしており、優勝者はそれぞれからスワッグキットを受け取れます！"
+      }
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "[More information about the Hackathon](https://s.refine.dev/hackathon).",
+      "source_content_hash": "e4babacab0c9c8b93cdad7058a6ef227e0a52d28344b16617248c5c48a507dca",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[ハッカソンの詳細はこちら](https://s.refine.dev/hackathon)。"
+      }
+    },
+    {
+      "segment_id": "602e59c7",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "54268405",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "[![Netlify Acquires Gatsby Inc. to Accelerate Adoption of Composable Web Architectures](/emails/issues/134/netlify-gatsby.jpg)](https://www.netlify.com/press/netlify-acquires-gatsby-inc-to-accelerate-adoption-of-composable-web-architectures/)",
+      "source_content_hash": "13aa256377fa56fb660af996c7e9fcbc6d68a7eb4521a5c048cd17c4f4b065a1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![NetlifyがGatsby Inc.を買収、コンポーザブルWebアーキテクチャの採用を加速](/emails/issues/134/netlify-gatsby.jpg)](https://www.netlify.com/press/netlify-acquires-gatsby-inc-to-accelerate-adoption-of-composable-web-architectures/)"
+      }
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "**[Netlify Acquires Gatsby Inc. to Accelerate Adoption of Composable Web Architectures](https://www.netlify.com/press/netlify-acquires-gatsby-inc-to-accelerate-adoption-of-composable-web-architectures/)**",
+      "source_content_hash": "03d10e330dc28756e07d8b834649e5ce8c14b83d56f38654cf2dd84d34ea290f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[NetlifyがGatsby Inc.を買収、コンポーザブルWebアーキテクチャの採用を加速](https://www.netlify.com/press/netlify-acquires-gatsby-inc-to-accelerate-adoption-of-composable-web-architectures/)**"
+      }
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "This is the big news of the week. Gatsby Inc. bought by Netlify. The framework is now under the Netlify umbrella alongside Eleventy and SolidJS and will continue to evolve. The cloud features (including the [Valhalla Content Hub](https://www.gatsbyjs.com/products/valhalla-content-hub/)) will be integrated into Netlify's offerings. The new slogan is \"composable architecture\". Gatsby is not the most popular React framework right now, but I think this acquisition makes sense, especially for the content hub and all the CMS integrations they have been working on. The Gatsby Cloud offering is harder to adopt than an optional paid features on Netlify, and that's even more true for sites that don't use Gatsby as a framework.",
+      "source_content_hash": "26a8ce72b00215522e9f6c2ddb1f09fdff10e088bb2cabf9a270340e2a675e1f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週のビッグニュースです。Gatsby Inc.がNetlifyに買収されました。このフレームワークは、EleventyやSolidJSとともにNetlify傘下で進化を続けます。クラウド機能（[Valhalla Content Hub](https://www.gatsbyjs.com/products/valhalla-content-hub/)を含む）はNetlifyの提供サービスに統合されます。新しいスローガンは「コンポーザブルアーキテクチャ」です。Gatsbyは現在最も人気のあるReactフレームワークではありませんが、この買収は理にかなっていると思います。特にコンテンツハブと彼らが取り組んできたCMS統合のためです。Gatsby Cloudの提供は、Netlifyのオプション有料機能よりも採用が難しく、Gatsbyをフレームワークとして使用しないサイトではさらに顕著です。"
+      }
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "Also check:",
+      "source_content_hash": "8dde1b471a8a17d06577330a1ea4d9176eb99ca99b99cbf21be5e5fe3d6eb7de",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "こちらもチェック："
+      }
+    },
+    {
+      "segment_id": "157c9741",
+      "source_content": "* 📜 [Gatsby is joining Netlify](https://www.gatsbyjs.com/blog/gatsby-is-joining-netlify/)\n* 📜 [Netlify Acquires Gatsby, Its Struggling Jamstack Competitor](https://thenewstack.io/netlify-acquires-gatsby-its-struggling-jamstack-competitor/)\n* 🎥 [Why would anyone buy Gatsby?](https://www.youtube.com/watch?v=5HE6FcOpit8)",
+      "source_content_hash": "b31144c69d41c3fdd4e036d0fc00599278b57f33a4db43e56f2ff9c12edc8d47",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📜 [GatsbyがNetlifyに加わります](https://www.gatsbyjs.com/blog/gatsby-is-joining-netlify/)\n* 📜 [Netlifyが競合のGatsbyを買収](https://thenewstack.io/netlify-acquires-gatsby-its-struggling-jamstack-competitor/)\n* 🎥 [なぜGatsbyを買収するのか？](https://www.youtube.com/watch?v=5HE6FcOpit8)"
+      }
+    },
+    {
+      "segment_id": "e2fed468",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "40158b4b",
+      "source_content": "[![Making state machines global in React](/emails/issues/134/xstate.jpg)](https://stately.ai/blog/making-state-machines-global-in-react)",
+      "source_content_hash": "0eea5c889b9910b6b14f12f422c31b0e34e20edab95e55332d6d71226d339250",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Reactでステートマシンをグローバルにする](/emails/issues/134/xstate.jpg)](https://stately.ai/blog/making-state-machines-global-in-react)"
+      }
+    },
+    {
+      "segment_id": "6ea4c715",
+      "source_content": "**[Making state machines global in React](https://stately.ai/blog/making-state-machines-global-in-react)**",
+      "source_content_hash": "bf25fcecacd0570674fc29c4f38a99b59bbc630658e9e6fae0fe02fb25d8873b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Reactでステートマシンをグローバルにする](https://stately.ai/blog/making-state-machines-global-in-react)**"
+      }
+    },
+    {
+      "segment_id": "79ad944d",
+      "source_content": "Presentation of the new `createActorContext` API appearing in XState 3.1. It allows to facilitate the creation of global XState state machines, associated to a React context. It is possible to use a selector system, or to provide a custom state machine to the provider (this looks convenient to customize a machine from parent `props`).",
+      "source_content_hash": "db0f723a563333eb5f69e99740d00eb2779272f5c5b15fe54313cfe50b4fd910",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "XState 3.1で登場する新しい`createActorContext` APIの紹介です。このAPIは、Reactコンテキストに関連付けられたグローバルなXStateステートマシンの作成を容易にします。セレクターシステムを使用することも、プロバイダーにカスタムステートマシンを提供することも可能です（親`props`からマシンをカスタマイズするのに便利そうです）。"
+      }
+    },
+    {
+      "segment_id": "e874d9e7",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "645e08e3",
+      "source_content": "* 📜 [React recursively re-renders child components, but there is a nuance](https://alexsidorenko.com/blog/react-render-children-prop/): nice visual article that illustrates how component splitting and state colocation can avoid unnecessary re-rendering.\n* 📜 [Custom React Hooks and When to Use Them](https://thoughtbot.com/blog/custom-react-hooks): sometimes you have to create custom hooks, even if they are not intended to be reused. But be careful: unnecessary abstractions also have a cost.\n* 📜 [TypeScript Utility Types You Need To Know](https://www.builder.io/blog/utility-types): presents in particular `Awaited` and `ReturnType`, but also `Readonly` in a React context.\n* 📜 [React JS Best Practices From The New Docs](https://sebastiancarlos.com/react-js-best-practices-from-the-new-docs-1c65570e785d): Interesting reading for those who want to have an overview of the content of the new doc. I don't agree with all the comments, in particular don't miss the [underrated useSyncExternalStore](https://thisweekinreact.com/articles/useSyncExternalStore-the-underrated-react-api) 😄.\n* 📜 [WebStorm announces official support for Astro](https://astro.build/blog/astro-webstorm-support/)\n* 📜 [Demystifying UI Frameworks and Theming for React Apps](https://www.velotio.com/engineering-blog/demystifying-ui-frameworks-and-theming-for-react-apps)\n* 🎥 [Using Svelte Inside A React App](https://www.youtube.com/watch?v=FrusJNycQvk)\n* 👀 [Shopify.com using Remix](https://twitter.com/remix_run/status/1622666016135475200)\n* 👀 [`create-astro` CLI redesign](https://twitter.com/n_moore/status/1621524815550074880)\n* 📦 [Ionic 7 Beta](https://ionic.io/blog/announcing-the-ionic-7-beta)\n* 📦 [Netlify/Remix-Compute](https://github.com/netlify/remix-compute): Remix + Netlify adapter",
+      "source_content_hash": "6b0368fa36e20e25e36eef9a1bbd696709b9b7b91c7fba72c88cde626a577a70",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📜 [Reactは子コンポーネントを再帰的に再レンダリングしますが、ニュアンスがあります](https://alexsidorenko.com/blog/react-render-children-prop/): コンポーネントの分割と状態の共置が不要な再レンダリングを回避する方法を視覚的に説明した素晴らしい記事です。\n* 📜 [カスタムReactフックとその使用タイミング](https://thoughtbot.com/blog/custom-react-hooks): 再利用を意図していなくても、カスタムフックを作成しなければならない場合があります。ただし注意が必要です：不必要な抽象化にもコストがかかります。\n* 📜 [知っておくべきTypeScriptユーティリティ型](https://www.builder.io/blog/utility-types): `Awaited`や`ReturnType`、特にReactコンテキストでの`Readonly`を紹介しています。\n* 📜 [新しいドキュメントからのReact JSベストプラクティス](https://sebastiancarlos.com/react-js-best-practices-from-the-new-docs-1c65570e785d): 新しいドキュメントの内容を概観したい方にとって興味深い読み物です。すべてのコメントに同意するわけではありませんが、特に[過小評価されているuseSyncExternalStore](https://thisweekinreact.com/articles/useSyncExternalStore-the-underrated-react-api)を見逃さないでください😄。\n* 📜 [WebStormがAstroの公式サポートを発表](https://astro.build/blog/astro-webstorm-support/)\n* 📜 [ReactアプリのUIフレームワークとテーマ設定の解説](https://www.velotio.com/engineering-blog/demystifying-ui-frameworks-and-theming-for-react-apps)\n* 🎥 [Reactアプリ内でSvelteを使用する](https://www.youtube.com/watch?v=FrusJNycQvk)\n* 👀 [Shopify.comがRemixを使用](https://twitter.com/remix_run/status/1622666016135475200)\n* 👀 [`create-astro` CLIの再設計](https://twitter.com/n_moore/status/1621524815550074880)\n* 📦 [Ionic 7 Beta](https://ionic.io/blog/announcing-the-ionic-7-beta)\n* 📦 [Netlify/Remix-Compute](https://github.com/netlify/remix-compute): Remix + Netlifyアダプター"
+      }
+    },
+    {
+      "segment_id": "4edbd92a",
+      "source_content": "<SubscribeFormEmbed />",
+      "source_content_hash": "2b5c5e42f4352c90b9647a9da7a0fb7ece8b8dc27440e42cdf85cbb6e1901b85",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_4edbd92a"
+      }
+    },
+    {
+      "segment_id": "678c3938",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "a4bf4268",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "ec619944",
+      "source_content": "**[![Build and Run Synthetic Monitoring That Scales](/emails/issues/134/checkly.jpg)](https://www.checklyhq.com/?utm_medium=email\\&utm_source=newsletter\\&utm_campaign=this-week-in-react-february)**",
+      "source_content_hash": "2ec476d0c271ce91e2dd0d86c456f10d78938a03b8aa7d89d841e84ab678a36b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[![スケーラブルな合成モニタリングの構築と実行](/emails/issues/134/checkly.jpg)](https://www.checklyhq.com/?utm_medium=email\\&utm_source=newsletter\\&utm_campaign=this-week-in-react-february)**"
+      }
+    },
+    {
+      "segment_id": "2547a6bb",
+      "source_content": "**[Build and Run Synthetic Monitoring That Scales](https://www.checklyhq.com/?utm_medium=email\\&utm_source=newsletter\\&utm_campaign=this-week-in-react-february)**",
+      "source_content_hash": "3da1016664746f16ab7859610db882bd0ceac34334451ec2226a184f36d11bf7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[スケーラブルな合成モニタリングの構築と実行](https://www.checklyhq.com/?utm_medium=email\\&utm_source=newsletter\\&utm_campaign=this-week-in-react-february)**"
+      }
+    },
+    {
+      "segment_id": "0750bfa1",
+      "source_content": "**[Checkly](https://www.checklyhq.com/?utm_medium=email\\&utm_source=newsletter\\&utm_campaign=this-week-in-react-february)** lets you easily deploy Playwright scripts to monitor apps, websites and APIs, from Dev to Production. Validate crucial user flows, collect error traces, capture screenshots and record performance metrics to understand how your app performs for users across the globe!",
+      "source_content_hash": "dae891b7389b0c3fca59ce3242383eb602b822c4eafeb13c824e48c6fcf315a1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Checkly](https://www.checklyhq.com/?utm_medium=email\\&utm_source=newsletter\\&utm_campaign=this-week-in-react-february)**を使えば、Playwrightスクリプトを簡単にデプロイして、アプリ、ウェブサイト、APIを開発から本番環境までモニタリングできます。重要なユーザーフローを検証し、エラートレースを収集し、スクリーンショットをキャプチャし、パフォーマンスメトリクスを記録して、世界中のユーザーにとってアプリがどのように動作するかを理解しましょう！"
+      }
+    },
+    {
+      "segment_id": "86348f98",
+      "source_content": "Use [Checkly](https://www.checklyhq.com/?utm_medium=email\\&utm_source=newsletter\\&utm_campaign=this-week-in-react-february) to:",
+      "source_content_hash": "2252fb8e0233d0f1d31656f1cc4aa56892b4a2ea0117cc353052e6efb64c1fbc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[Checkly](https://www.checklyhq.com/?utm_medium=email\\&utm_source=newsletter\\&utm_campaign=this-week-in-react-february)を使用して："
+      }
+    },
+    {
+      "segment_id": "023197ab",
+      "source_content": "* ✅ Run programmable API and Browser checks to validate app performance\n* ✅ Get alerts when checks are failing, and easily integrate Checkly with your existing tech stack\n* ✅ Leverage Playwright and Javascript to maximize your monitoring and testing efforts",
+      "source_content_hash": "1217baa8cfdec71f1ba9441b6a479fa705dcc11e40b0bad6ab22ce131a8dd4f7",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* ✅ プログラム可能なAPIおよびブラウザチェックを実行してアプリのパフォーマンスを検証\n* ✅ チェックが失敗したときにアラートを受け取り、既存の技術スタックと簡単に統合\n* ✅ PlaywrightとJavascriptを活用してモニタリングとテストの効果を最大化"
+      }
+    },
+    {
+      "segment_id": "eb51d107",
+      "source_content": "[Start monitoring your apps for free](https://www.checklyhq.com/?utm_medium=email\\&utm_source=newsletter\\&utm_campaign=this-week-in-react-february)",
+      "source_content_hash": "4aa0ede494987ec9befea58e29c8fd8dfdc8a8b36582163a323367a1e5b23d7f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[無料でアプリのモニタリングを開始](https://www.checklyhq.com/?utm_medium=email\\&utm_source=newsletter\\&utm_campaign=this-week-in-react-february)"
+      }
+    },
+    {
+      "segment_id": "7fc4bca5",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "a138e327",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "a2c0166e",
+      "source_content": "[![React DOM for Native (reduce API fragmentation)](/emails/issues/134/rn-web.jpg)](https://github.com/necolas/discussions-and-proposals/blob/reduce-fragmentation/proposals/0000-reduce-fragmentation.md)",
+      "source_content_hash": "8eb105f392809ff3ce020e6d2f57a6ee5e4b9b4f7e8e9d0b999fa96a43b89f60",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![React DOM for Native (reduce API fragmentation)](/emails/issues/134/rn-web.jpg)](https://github.com/necolas/discussions-and-proposals/blob/reduce-fragmentation/proposals/0000-reduce-fragmentation.md)"
+      }
+    },
+    {
+      "segment_id": "c1eaf30b",
+      "source_content": "**[React DOM for Native (reduce API fragmentation)](https://github.com/necolas/discussions-and-proposals/blob/reduce-fragmentation/proposals/0000-reduce-fragmentation.md)**",
+      "source_content_hash": "678419fde86757c3684287907d915d318d1a8ec52845e584d126318f2395f2a1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[React DOM for Native (APIフラグメンテーションの削減)](https://github.com/necolas/discussions-and-proposals/blob/reduce-fragmentation/proposals/0000-reduce-fragmentation.md)**"
+      }
+    },
+    {
+      "segment_id": "f0984c2a",
+      "source_content": "The [RFC](https://github.com/react-native-community/discussions-and-proposals/pull/496) by Nicolas Gallagher (Meta / React-Native-Web) has just been updated. The goal is to align React-Native APIs as much as possible with Web APIs, including DOM elements like `div`, `span` and even `select`! The \"learn once, run everywhere\" could gradually turn into \"write once, run everywhere\". The community is quite divided. We'll have to sleep on it a bit know if it's a good idea 😄, and considering the size of this ambitious project, it's clearly not for tomorrow!",
+      "source_content_hash": "6bfc2c002b42c20b4a34bb7c83b0f37b3d84357fa128a33d0d2ac4d486b01c1c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Nicolas Gallagher（Meta / React-Native-Web）による[RFC](https://github.com/react-native-community/discussions-and-proposals/pull/496)が更新されました。この提案の目的は、React-NativeのAPIを可能な限りWeb APIと整合させ、`div`、`span`、さらには`select`のようなDOM要素も含めることです。「一度学べばどこでも動く」が「一度書けばどこでも動く」に変わる可能性があります。コミュニティの意見は分かれています。これが良いアイデアかどうかはもう少し時間をかけて考える必要があり、この野心的なプロジェクトの規模を考えると、実現はまだ先のことでしょう！"
+      }
+    },
+    {
+      "segment_id": "bc8bc928",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "5cb70a3d",
+      "source_content": "* 📜 [How to swap between React Native Storybook and your app](https://dev.to/dannyhw/how-to-swap-between-react-native-storybook-and-your-app-p3o): useful technique for those who have a React-Native Storybook. Personally I like to have a menu bar in dev with buttons to open/close the Storybook, change the API environment or other... It saves a lot of time in the long run to create your own DX.\n* 📦 [Flashlight.dev](https://flashlight.dev/): Flashlight is a new service that wants to become the Lighthouse of mobile, including a convenient Flashlight Cloud offering. Project formerly named [Android-Performance-Profiler](https://twitter.com/almouro/status/1622588283740880897).\n* 📖 [Ignite Cookbook for React Native](https://ignitecookbook.com/): short step-by-step recipes for React-Native.\n* 🎨 [SolidJS + NativeScript demo running React-Native-WebView](https://twitter.com/ammarahm_ed/status/1622259723729764354): the promise of Open Native in action, is interesting for the portability of native code.\n* 👀 [The White House calls for more interoperability between mobile platforms](https://twitter.com/JI/status/1620948253381632000)\n* 🎙️ [React-Native-Radio 258 - AI Robots coding React Native?!](https://reactnativeradio.com/episodes/r258-robots-coding-react-native)",
+      "source_content_hash": "09886c0969b1d0a4ca23799b44528fa6f49c0fb53efd88d89bdd76083fb66d5b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📜 [React Native Storybookとアプリを切り替える方法](https://dev.to/dannyhw/how-to-swap-between-react-native-storybook-and-your-app-p3o): React-Native Storybookを使用している人にとって便利なテクニックです。個人的には、開発時にStorybookを開閉したり、API環境を変更したりするボタンをメニューバーに配置するのが好きです。独自の開発者体験（DX）を構築することで、長期的に多くの時間を節約できます。\n* 📦 [Flashlight.dev](https://flashlight.dev/): Flashlightは、モバイル向けのLighthouseになりたい新しいサービスで、便利なFlashlight Cloudも提供しています。以前は[Android-Performance-Profiler](https://twitter.com/almouro/status/1622588283740880897)という名前でした。\n* 📖 [Ignite Cookbook for React Native](https://ignitecookbook.com/): React-Native向けの短いステップバイステップのレシピ集。\n* 🎨 [SolidJS + NativeScriptデモでReact-Native-WebViewを実行](https://twitter.com/ammarahm_ed/status/1622259723729764354): Open Nativeの可能性を示す興味深いデモで、ネイティブコードの移植性に注目です。\n* 👀 [ホワイトハウスがモバイルプラットフォーム間の相互運用性向上を呼びかけ](https://twitter.com/JI/status/1620948253381632000)\n* 🎙️ [React-Native-Radio 258 - AIロボットがReact Nativeをコーディング?!](https://reactnativeradio.com/episodes/r258-robots-coding-react-native)"
+      }
+    },
+    {
+      "segment_id": "6ad15270",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c7fa1e8d",
+      "source_content": "## 🧑‍💻 Jobs {#jobs}",
+      "source_content_hash": "64cde6166f05bd39337c21ca10f52b6613641f23e0c97e204de33d6857fa16ed",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🧑‍💻 Jobs {#jobs}"
+      }
+    },
+    {
+      "segment_id": "a6c928a1",
+      "source_content": "🧑‍💼 [**Passionfroot - Senior Full-stack Engineer (Remix) - €160k+, Berlin/remote**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)",
+      "source_content_hash": "3532cb42fea164e6dcc868f5fea6ecb0e7fcb06975740df1803d78565f5e643e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🧑‍💼 [**Passionfroot - シニアフルスタックエンジニア（Remix） - €160k+、ベルリン/リモート**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)"
+      }
+    },
+    {
+      "segment_id": "b6152880",
+      "source_content": "Passionfroot's mission is to empower the independent businesses of tomorrow via YouTube, Podcasts, Social Media, and Newsletters. Join us in building a tool that will empower creators globally to build scalable, sustainable businesses.",
+      "source_content_hash": "071531677ae3763a43d70c7461fb6bad05d66e66663737b2158931a241a2c33c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Passionfrootの使命は、YouTube、ポッドキャスト、ソーシャルメディア、ニュースレターを通じて、明日の独立したビジネスを支援することです。クリエイターがスケーラブルで持続可能なビジネスを構築できるツールの開発に参加してください。"
+      }
+    },
+    {
+      "segment_id": "b9331170",
+      "source_content": "🧑‍💼 [**Callstack - Senior React Native Developer - Fully Remote, PLN 21-32k net on B2B, monthly**](https://www.callstack.com/senior-react-native-developer)",
+      "source_content_hash": "6a76e4cede7e5d7fef90376d244177e3a889ea3b88ed1a9d60d116bb33a52f5b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🧑‍💼 [**Callstack - シニアReact Native開発者 - 完全リモート、月額PLN 21-32k net（B2B）**](https://www.callstack.com/senior-react-native-developer)"
+      }
+    },
+    {
+      "segment_id": "8fcdd6d4",
+      "source_content": "Do you want to work on the world's most used apps? Would you like to co-create the React Native technology? Join the Callstack team of React & React Native leaders. Check our website for more details. We are looking forward to seeing your application - show us what you've got!",
+      "source_content_hash": "d26d300a25c86c54931180669d1a8cce73f71a546a8457896fc0c835fb78d2d0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "世界で最も使われているアプリに携わりたいですか？React Native技術の共創に興味がありますか？React & React NativeのリーダーであるCallstackチームに参加してください。詳細はウェブサイトをご覧ください。あなたの応募をお待ちしています！"
+      }
+    },
+    {
+      "segment_id": "53aa2b95",
+      "source_content": "🧑‍💼 [**G2i - 100% Remote React Native Jobs**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\\&t=ArRLC77BpRwXXCdx8fnUqw)",
+      "source_content_hash": "5d3c54581f6c180e021405df5da2dff285c443814d1d5e6c5c09516b6002a38b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\\&t=ArRLC77BpRwXXCdx8fnUqw)"
+      }
+    },
+    {
+      "segment_id": "9c9e2b64",
+      "source_content": "We have several roles open for developers focused on React Native! Pay is \\~160k plus 10% bonus. You must have production experience with RN and be based in the US. DM [@gabe\\_g2i](https://twitter.com/gabe_g2i) to learn more and don't forget to mention This Week in React.",
+      "source_content_hash": "03109db05ba0c8c528483a4218dc3b2b0314cf5c6032f5eb3c7be604094658fd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React Nativeにフォーカスした開発者向けに複数のポジションを募集しています！報酬は約160kドル＋10％のボーナスです。React Nativeの実務経験があり、アメリカ在住であることが条件です。詳細は[@gabe_g2i](https://twitter.com/gabe_g2i)までDMでお問い合わせください。その際、This Week in Reactからの紹介であることをお忘れなく。"
+      }
+    },
+    {
+      "segment_id": "5c7d994c",
+      "source_content": "💡 [How to publish an offer?](https://thisweekinreact.com/sponsor)",
+      "source_content_hash": "d58176524c2d7675bf008e7b635d056628a0d092fb0152d6bbdfb97f4239d273",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "💡 [求人を掲載する方法は？](https://thisweekinreact.com/sponsor)"
+      }
+    },
+    {
+      "segment_id": "efbc76b7",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c6868a9f",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "8c9c56b6",
+      "source_content": "* [Updates from the 94th TC39 meeting](https://dev.to/hemanth/updates-from-the-94th-tc39-meeting-48mb): finalized list of proposals that are going to the next stage. Especially excited about [AsyncContext](https://twitter.com/sebastienlorber/status/1620391460679065601), Change array by Copy and Symbols as WeakMap keys (much needed for [Records & Tuples](https://sebastienlorber.com/records-and-tuples-for-react)).\n* [Deno - The Future (and the Past) of the Web is Server Side Rendering](https://deno.com/blog/the-future-and-past-is-server-side-rendering)\n* [WebKit - Pushing Interop Forward in 2023](https://webkit.org/blog/13706/interop-2023/) + [Chrome - Interop 2023: continuing to improve the web for developers](https://web.dev/interop-2023/)\n* [Understanding monomorphism can improve your JavaScript performance 60x](https://twitter.com/mhevery/status/1622499229813047296)\n* [Speeding up the JavaScript ecosystem - eslint](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-3/)\n* [Google is working on bringing Chromium to iOS](https://twitter.com/OpenWebAdvocacy/status/1621653519274246144) + [Mozilla is working on bringing Firefox to iOS](https://twitter.com/OpenWebAdvocacy/status/1622898924775415808)\n* [The Guide To Responsive Design In 2023 and Beyond](https://ishadeed.com/article/responsive-design/)\n* [A Business Case for SvelteKit](https://elliscs.hashnode.dev/a-business-case-for-sveltekit)\n* [Node.js 19.6](https://twitter.com/ruyadorno/status/1621186886470361093)\n* [Ada 1.0 - New Node.js URL parser](https://twitter.com/nodejs/status/1622707746716917761)\n* [Vite 4.1](https://twitter.com/vite_js/status/1621149774627094535)\n* [Don't use return types, unless...](https://www.youtube.com/watch?v=nwSe95uFN8E)\n* [The Dangers Of Return Types in TypeScript](https://www.youtube.com/watch?v=I6V2FkW1ozQ)\n* [Learn Images - In-depth course on images for the web](https://web.dev/learn/images/)\n* [Forking Chrome to render in a terminal](https://fathy.fr/carbonyl)",
+      "source_content_hash": "76f19127f3432a80e0e8d6a9e9e4e9b6816d0b35c74ef6a05a8dabffc5b4cd66",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* [第94回TC39会議からのアップデート](https://dev.to/hemanth/updates-from-the-94th-tc39-meeting-48mb): 次のステージに進む提案の最終リスト。特に[AsyncContext](https://twitter.com/sebastienlorber/status/1620391460679065601)、Change array by Copy、Symbols as WeakMap keys（[Records & Tuples](https://sebastienlorber.com/records-and-tuples-for-react)に必要）が注目されます。\n* [Deno - ウェブの未来（そして過去）はサーバーサイドレンダリング](https://deno.com/blog/the-future-and-past-is-server-side-rendering)\n* [WebKit - 2023年に向けた相互運用性の推進](https://webkit.org/blog/13706/interop-2023/) + [Chrome - Interop 2023: 開発者のためのウェブ改善の継続](https://web.dev/interop-2023/)\n* [単相性を理解することでJavaScriptのパフォーマンスを60倍向上できる](https://twitter.com/mhevery/status/1622499229813047296)\n* [JavaScriptエコシステムの高速化 - eslint](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-3/)\n* [Google、ChromiumをiOSに導入する取り組みを進行中](https://twitter.com/OpenWebAdvocacy/status/1621653519274246144) + [Mozilla、FirefoxをiOSに導入する取り組みを進行中](https://twitter.com/OpenWebAdvocacy/status/1622898924775415808)\n* [2023年以降のレスポンシブデザインガイド](https://ishadeed.com/article/responsive-design/)\n* [SvelteKitのビジネスケース](https://elliscs.hashnode.dev/a-business-case-for-sveltekit)\n* [Node.js 19.6](https://twitter.com/ruyadorno/status/1621186886470361093)\n* [Ada 1.0 - 新しいNode.js URLパーサー](https://twitter.com/nodejs/status/1622707746716917761)\n* [Vite 4.1](https://twitter.com/vite_js/status/1621149774627094535)\n* [戻り値の型を使わないでください、ただし...](https://www.youtube.com/watch?v=nwSe95uFN8E)\n* [TypeScriptにおける戻り値の型の危険性](https://www.youtube.com/watch?v=I6V2FkW1ozQ)\n* [画像を学ぶ - ウェブ向け画像の詳細コース](https://web.dev/learn/images/)\n* [ターミナルでレンダリングするためにChromeをフォーク](https://fathy.fr/carbonyl)"
+      }
+    },
+    {
+      "segment_id": "c66a3543",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c6b2ca77",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "dce16ab4",
+      "source_content": "Savage 😅 why is he so mean!",
+      "source_content_hash": "863945eee37d92801830dcf2a7aa44ce5143b579c2d235292b34735746da5f98",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "辛辣すぎる😅 なんでこんなに意地悪なの！"
+      }
+    },
+    {
+      "segment_id": "6f08f877",
+      "source_content": "[![alt](/emails/issues/134/meme.png)](https://twitter.com/ThePrimeagen/status/1620827474681827333)",
+      "source_content_hash": "6194fe9ae3aaa08d3d21da6b1ca3699195455b51ab72a1e12c6496f077eea9a0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/134/meme.png)](https://twitter.com/ThePrimeagen/status/1620827474681827333)"
+      }
+    },
+    {
+      "segment_id": "2dbfc5f7",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "またね！👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/134/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:38.097727+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "12a4e1eda63cb2827c08a791c5bd3f0da259167542d3e26031d6daa7dcaf933c"
+  }
+}

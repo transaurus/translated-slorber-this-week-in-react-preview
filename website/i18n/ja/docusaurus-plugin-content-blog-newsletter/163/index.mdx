@@ -1,0 +1,167 @@
+---
+slug: /163
+title: "This Week In React #163: React-Query, React-Forget, Rspress, Remix Vite, Next.js Barrels, Storybook, Memo, Transitions, Gluestack, VisionCamera, Unistyles, VisionOS, Expo debugging..."
+authors: [slorber]
+date: 10-17-2023
+---
+
+みなさん、こんにちは！
+
+今週はたくさんのコンテンツがあります！リリース情報に加え、素晴らしいReact関連の記事も多数掲載しています。そして、React Advanced、Next.js Conf、reactjsdayなど、これから開催される素晴らしいReactカンファレンスも控えています。
+
+また、事前にお知らせしたい嬉しいニュースがあります：私は間もなく女の子の父親になります🤗
+
+ニュースレターは初めてとなる長い休暇に入ります。次回の配信は11月29日を予定しています。
+
+その間も、年末までに30,000人の購読者を突破する目標に向けて進んでいきます。休暇中も、新しい仲間を増やし続けてくださいね😜
+
+ありがとうございます。また近いうちにお会いしましょう👋
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Frontendmasters](/emails/issues/158/frontendmasters.jpg)](https://frontendmasters.com/learn/react/?utm_source=newsletter\&utm_medium=thisweekinreact\&utm_campaign=reactpath)
+
+**[FrontendMasters – シニアReact開発者を目指すReact.js完全学習パス](https://frontendmasters.com/learn/react/?utm_source=newsletter\&utm_medium=thisweekinreact\&utm_campaign=reactpath)**
+
+React.jsを基礎から学び、パフォーマンス、テスト、コード品質などの上級トピックまでカバーします。「React完全入門」で実践的なアプリケーションを構築し、「中級React」でエコシステムの人気ツールを統合します。さらに、パフォーマンス、TypeScript、そしてフルスタックReactフレームワークであるNext.jsも学べます！
+
+***
+
+## ⚛️ React {#react}
+
+[![TanStack Query v5](/emails/issues/163/tanstack-query-v5.jpg)](https://tanstack.com/blog/announcing-tanstack-query-v5)
+
+[**TanStack Query v5**](https://tanstack.com/blog/announcing-tanstack-query-v5)
+
+多くのプレリリースを経て、TanStack Query v5.0の安定版がリリースされました。React Queryパッケージも含まれています。特に以下の機能が含まれています：
+
+* 統一された、より型安全なAPI（オーバーロードなし）
+* 安定版のSuspenseサポート。ストリーミング、React Server Components（実験的）
+* その他多くの改善：無限クエリ、永続化、開発者ツール、楽観的更新、useMutationStateなど
+
+***
+
+[![Rspress v1.0 - Rspackベースの高速静的サイトジェネレーター](/emails/issues/163/rspress.jpg)](https://github.com/orgs/web-infra-dev/discussions/5)
+
+[**Rspress v1.0 - Rspackベースの高速静的サイトジェネレーター**](https://github.com/orgs/web-infra-dev/discussions/5)
+
+ByteDanceチームによる新しい静的サイトジェネレーターの最初の安定版リリースです。Rust、React、MDXを基盤としており、Docusaurus、Nextra、Vitepress、Starlightなどのコンテンツ指向ソリューションにとっての強力な競合です。Rspressは高性能でありながら、i18n、バージョニング、検索など、印象的な機能リストを提供します。競争が激化していますが、それがDocusaurusにRustを導入するモチベーションをさらに高めてくれています😄！
+
+***
+
+[![Remix - Viteサポート](/emails/issues/163/remix-vite.jpg)](https://remix.run/docs/en/dev/future/vite)
+
+[**Remix - Viteサポート（不安定版）**](https://remix.run/docs/en/dev/future/vite)
+
+Remixはこの[提案](https://github.com/remix-run/remix/discussions/7632)で、Viteプラグイン化する決定について説明しています。これによりコンパイラを開放し、ユーザーが独自のViteプラグインを追加できるようになることで柔軟性が向上し、MDXやGraphQL、Tailwind、パスエイリアスなど様々なシナリオに対応可能になります。
+
+***
+
+[![Reactコンポーネントの静的解析を楽しみながら利益を得る](/emails/issues/163/react-forget.jpg)](https://www.youtube.com/watch?v=kjOacmVsLSE)
+
+🎥 [**Reactコンポーネントの静的解析を楽しみながら利益を得る**](https://www.youtube.com/watch?v=kjOacmVsLSE)
+
+Sathya氏は待望のコンパイラ「React-Forget」の開発に取り組んでいます。この講演ではいくつかの興味深い詳細が明かされています：
+
+* コンパイルが可能なのは、Reactの新しいモデルがクラスや`this`を使用しなくなったため
+* ローカルに推論し、並列で最適化でき、段階的に導入可能
+* 型なしJavaScriptでも動作し、フックや"use"プレフィックスといったReactの慣習を理解
+* エイリアス解析システムはV8エンジンよりもさらに高度
+
+Sathya氏によると、今後数週間でReact-Forgetに関するさらなる情報が公開される予定で、2日後に開催されるReact Advancedカンファレンスの["Understanding Idiomatic React"講演](https://reactadvanced.com/schedule-offline)でも触れられるそうです。要するに、待ちきれないほど楽しみな内容です！
+
+***
+
+* 💸 [FigmaやMiroのようなコラボレーションアプリケーションを数行のコードで作成 - Ablyのin-appコラボレーションSDK](https://hubs.la/Q023nqgg0)
+* 📜 [Vercel - Next.jsでのパッケージインポート最適化手法](https://vercel.com/blog/how-we-optimized-package-imports-in-next-js): Next.js最新版に追加された`optimizePackageImports`オプションの仕組みを解説。「Barrel files」（複数モジュールを再エクスポートする`index.js`）によるパフォーマンス問題を最適化する方法。
+* 📜 [Storybookの真価を引き出す](https://formidable.com/blog/2023/unlocking-the-power-of-storybook/): Storybookを効率的に活用する実践的なヒントを多数紹介。Storybookをお持ちなら、ビジュアルリグレッションテストの導入を強く推奨。
+* 📜 [React useTransition: パフォーマンスの救世主か...？](https://www.developerway.com/posts/use-transition): メインスレッドをブロックする典型的なReact更新ケースをインタラクティブに解説。UX改善のためのトランジションとコンカレントレンダリングの正しい使い方。
+* 📜 [React memoは実際に有用です](https://timtech.blog/posts/react-memo-is-good-actually/): Reactにおけるメモ化使用に関する考察。一点異論あり：[🐦 最適化はカプセル化すべき](https://twitter.com/sebastienlorber/status/1709258823582564644)という立場。
+* 📜 [Remix loaderへのラブレター](https://laconicwit.com/a-love-letter-to-the-remix-loader/): 型付けが容易で動的なRemix loaderの美点を讃える。同時に克服すべき課題も解説。
+* 📜 [Next.jsでのプログラムmatic SEO](https://practicalprogrammatic.com/blog/programmatic-seo-in-nextjs/): データセットに基づいてRSCでNext.jsページを生成する手法。
+* 📜 [Classed Components](https://flexible.dev/blog/single-line-components/): Tailwind使用を簡素化するため、styled-components APIと`@tw-classed/react`を活用する提案。
+* 📜 [Next.js台頭の理由：モダンWebサイトにおけるフルスタックフレームワークとしての選択](https://www.felixvemmer.com/blog/why-next-js/): Next.js採用の正当な理由を豊富に解説した記事。
+* 📜 [Directus内にRemixを組み込む](https://echobind.com/post/embedding-remix-in-directus)
+* 📜 [Storybook - テーマスイッチャーアドオンの紹介](https://storybook.js.org/blog/introducing-theme-switcher-addon/)
+* 📜 [MobX-State-Treeパフォーマンスのベンチマーク](https://coolsoftware.dev/blog/benchmarking-mobx-state-tree/)
+* 📦 [Remix v2.1 - View Transitionsの実験的サポート](https://github.com/remix-run/remix/releases/tag/remix%402.1.0)
+* 📦 [Astro v3.3 - 実験的なPictureコンポーネント、shikijiシンタックスハイライト](https://astro.build/blog/astro-330/)
+* 📦 [create-t3-app v7.22 - Next.js App Routerオプション追加](https://github.com/t3-oss/create-t3-app/releases/tag/create-t3-app%407.22.0)
+* 📦 [Legend-State v2.0 - パフォーマンス、永続性、DX改善](https://legendapp.com/open-source/legend-state-v2/)
+* 📦 [Next-international v1.1 - App Routerサポート強化](https://github.com/QuiiBz/next-international/releases/tag/1.1.0)
+* 👥 [Next.js Conf - 10月26日 - スピーカー発表](https://nextjs.org/conf/speakers)
+* 👥 [React Advanced](https://reactadvanced.com/?utm_source=email\&utm_medium=thisweekinreact) (ロンドン 🇬🇧, 10月20-23日) で[-10%割引 - コード「REACT10」](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)を提供中
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![CoderPad: 一緒にコードを書いてから一緒に働こう](/emails/issues/154/coderpad.png)](https://coderpad.io/?utm_medium=3pmedia\&utm_source=ThisWeekInReact\&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)
+
+**[CoderPad: 一緒にコードを書いてから一緒に働こう](https://coderpad.io/?utm_medium=3pmedia\&utm_source=ThisWeekInReact\&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)**
+
+フロントエンド開発者の採用は難しいです。😩 しかし、Netflix、Spotify、LinkedInを含む4,000以上のエンジニアリングチームがより良い方法を見つけました！🤠 アルゴリズム面接をスキップして、**完全にカスタマイズ可能でコラボレーティブなIDEでフロントエンド面接を実施**できます：
+
+* React（およびAngularやVue）のリポジトリをドラッグ＆ドロップ
+* npm installでパッケージを追加
+* 面接中に候補者がChatGPTをライブで使用できるようにする
+* 面接後にコードの再生を視聴・共有
+
+CoderPadを使用して、候補者と面接官が信頼する迅速で公平な実際のコーディング面接を実施しましょう。[今すぐ無料で登録して、自信を持って採用しましょう](https://coderpad.io/?utm_medium=3pmedia\&utm_source=ThisWeekInReact\&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)。
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![Gluestack](/emails/issues/163/gluestack.jpg)](https://gluestack.io/ui/v1)
+
+[**Gluestack-ui v1.0 - React Native & Web向けのユニバーサルでアクセシブルなUIコンポーネント、未スタイル＆テーマ付き**](https://gluestack.io/ui/v1)
+
+React-Native向けの新しいクロスプラットフォームスタイリングソリューションおよびコンポーネントライブラリの安定版v1.0がリリースされました。この最初のバージョンには既に多くの機能が含まれています：VSCodeプラグイン、Figmaキット、ExpoおよびNext.jsサポート、ヘッドレスおよびスタイル付きプリミティブ。これらすべてを詳しく見ていく必要があります！Next.jsのRSCサポートはまだ限定的で、「use client」ディレクティブが必要になると思います。
+
+***
+
+* 💸 [Moropo - オープンソースのReact Nativeテストを10倍速く構築・スケール](https://www.moropo.com/for-react-native?utm_source=newsletter\&utm_medium=emails\&utm_campaign=twir-20231018)
+* 📜 [Expo - ネットワークデバッグの3つの方法](https://blog.expo.dev/three-ways-to-use-network-debugging-75fa6118fac6)
+* 📦 [React-Native 0.72.6 - CocoaPodsインストールの修正](https://github.com/facebook/react-native/releases/tag/v0.72.6)
+* 📦 [react-native-visionos](https://github.com/callstack/react-native-visionos): CallstackのReact-Nativeフォークで、React-NativeをVisionOS上で実行できるようにしたものがオープンソース化されました。
+* 📦 [react-native-unistyles v1.0](https://github.com/jpudysz/react-native-unistyles): この新しいクロスプラットフォームスタイリングソリューションの安定版で、React-Native StyleSheetのDXを改善しています。
+* 📦 [VisionCamera v3.4 - 7倍高速化](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.4.0)
+* 📦 [React-Native-Screens v3.26 - useAnimatedHeaderHeight](https://github.com/software-mansion/react-native-screens/releases/tag/3.26.0)
+* 📦 [react-native-vercel-ai - Vercel AIへのクロスプラットフォームインターフェース](https://github.com/bidah/react-native-vercel-ai)
+* 📦 [radix-ui-react-native-icons](https://github.com/Eronred/radix-ui-react-native-icons)
+
+***
+
+## 🔀 Other {#other}
+
+* 👀 [TC39-TG4 - ソースマップの標準化に向けた新たなタスクグループが設立](https://www.ecma-international.org/news/ecma-tc39-ecmascript-initiates-a-new-task-group-to-standardize-source-maps//)
+* 📜 [「No Build」以上の速さは実現できない](https://world.hey.com/dhh/you-can-t-get-faster-than-no-build-7a44131c)
+* 📜 [Fetch PromiseがエラーレスポンスでRejectしない理由](https://kettanaito.com/blog/why-fetch-promise-doesnt-reject-on-error-responses)
+* 📜 [DefinitelyTypedがモノレポに！](https://jakebailey.dev/posts/pnpm-dt-3/)
+* 📦 [Node.js v21 - fetch/WebStreamsの安定版、デフォルトモジュールシステムフラグ、V8 11.8、v20がLTS化...](https://openjsf.org/announcement/2023/10/17/node-js-21-available-now/)
+* 📦 [Parcel v2.10 - 大幅なパフォーマンス改善](https://github.com/parcel-bundler/parcel/releases/tag/v2.10.0)
+* 📦 [Oslo - 認証関連ユーティリティのコレクション](https://github.com/pilcrowOnPaper/oslo)
+* 📦 [async-cache-dedupe v2](https://github.com/mcollina/async-cache-dedupe)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/163/meme.jpg)](https://twitter.com/BHolmesDev/status/1713177728143241403)
+
+それではまた！ 👋

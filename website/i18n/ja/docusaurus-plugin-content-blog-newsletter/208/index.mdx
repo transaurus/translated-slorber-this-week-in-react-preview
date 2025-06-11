@@ -1,0 +1,166 @@
+---
+slug: /208
+title: "This Week In React #208: Compiler, Next.js, Docusaurus, TanStack, nuqs, Storybook, StyleX, React Navigation, Shopify, Reanimated, Nitro, BottomTabs, CocoaPods, Maestro, Rolldown, Container Queries..."
+authors: [slorber]
+date: 11-06-2024
+---
+
+みなさん、こんにちは！
+
+今週は米国大統領選挙の影響もあり、大きなReactの発表はありませんでした。
+
+しかし、ReactとReact Nativeに関する興味深い記事やコミュニティの動きはたくさんありました。特にReact Compilerの方向性や、新しい画面プリロードAPIを搭載したReact Navigation 7のリリースが楽しみです。ShopifyがReact Nativeを推奨したこともエコシステムにとって良いニュースでした。もちろん、数ヶ月かけて取り組んできたDocusaurusの新機能も公開できることを嬉しく思います！
+
+[State of React 2024調査](https://survey.devographics.com/en-US/survey/state-of-react/2024?source=this_week_in_react)への回答を忘れずに。締め切りは来週で、現時点では昨年よりも回答数が少ない状況です。もしあなたに影響力があるなら、ぜひ周知に協力し、[`?source=my_name`パラメータ](https://github.com/Devographics/surveys/issues/250#issuecomment-2423485429)を追加して調査バイアスの追跡に貢献してください。
+
+<!-- truncate -->
+
+**💡 [Twitterでこのニュースレターをチェック](https://slo.im/thread) - ビジュアル形式 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![AG Grid: 世界最高のReactテーブル](/emails/issues/208/aggrid.jpg)](https://www.ag-grid.com/react-table?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=2024-email-3)
+
+**[AG Grid: 世界最高のReactテーブル](https://www.ag-grid.com/react-table?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=2024-email-3)**
+
+AG Gridは高速で無料、完全にカスタマイズ可能なReactテーブルです。**フォーチュン500企業の90%**に利用され、**100%オープンソース**で**月間400万以上のnpmダウンロード**を誇ります：
+
+* 🆓 **無料:** **ソート**、**フィルタリング**、**ページネーション**、**セル編集**など数百の機能を**永久無料**で利用可能
+* **🚀 高速:** **数百万セル**をパフォーマンス低下なしに表示
+* **🎨 カスタマイズ可能:** セル、行、列に独自コンポーネントを追加可能。**テーマAPI**でテーマの構築とカスタマイズが可能
+* 🏢 **エンタープライズ機能:** **ピボット**、**グループ化**、**マスター/ディテール**、**統合チャート**（Reactチャートライブラリ[AG Charts](https://www.ag-grid.com/charts?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=2024-email-1)搭載）など高度な機能をライセンス購入で永久利用可能。トライアルライセンス不要で無料体験可能
+
+詳細はこちら: [ag-grid.com](https://www.ag-grid.com/react-table?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=2024-email-1)
+
+***
+
+## ⚛️ React {#react}
+
+[![Sathya Gunasekaran - React Compilerの今後](/emails/issues/208/compiler.jpg)](https://www.youtube.com/watch?v=qd5yk2gxbtg)
+
+🎥 [**Sathya Gunasekaran - React Compilerの今後**](https://www.youtube.com/watch?v=qd5yk2gxbtg)
+
+この素晴らしい講演で[Reactコンパイラのベータ版](https://react.dev/blog/2024/10/21/react-compiler-beta-release)が発表されただけでなく、他にも興味深い情報が公開されました。コンパイラは自動メモ化だけでなく、さらなる最適化を構築するためのプラットフォームです。紹介された3つの今後の機能：
+
+* 型設定: 追加の型情報を提供することで、コンパイラの最適化を支援できます。
+* JSXインライン化: コンパイラは不要なJSXランタイム呼び出しを削除し、事前ビルドされたJSXオブジェクトに置き換えることが可能です。`jsx('div')`が`{type: 'div'}`になります。
+* JSXアウトライン化: コンパイラはサブコンポーネントを自動的に抽出し、独立して最適化できます。これは特に`array.map`とインラインJSXを使用するリスト要素で有用で、コンパイラは`<Item>`コンポーネントを作成できます（トークのスクリーンショットを参照、または[このPR](https://github.com/facebook/react/pull/30956)で詳しく説明されています）。
+
+***
+
+* 💸 [Omlet – リポジトリをスキャンしてコンポーネントの使用状況を測定](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-oct-2024)
+* 📜 [Next.js App Routerでの高度な検索パラメータフィルタリング管理](https://aurorascharff.no/posts/managing-advanced-search-param-filtering-next-app-router/): RSCベースのルーティング使用時にURLへの状態リフトが簡単でないことを示すインタラクティブな記事。良好なUXを得るにはstartTransitionとuseOptimisticの使用が必要。nuqsライブラリが簡略化に役立つ。
+* 📜 [2つのReactへの2つの道](https://bobaekang.com/blog/two-ways-to-the-two-reacts/): Next.jsとTanStack Startが採用している現代的なReact機能統合への異なるビジョンについての興味深い考察。TanStack Startはよりクライアント中心で破壊的変更が少ない。
+* 📜 [ReactでServer Action後のフォームリセット方法（とリセットしない方法）](https://www.robinwieruch.de/react-server-action-reset-form/): React Actionsは非制御フォーム入力を自動リセットするが、アクションエラー時には望ましくない場合がある。
+* 📜 [Storybook Test スニークピーク](https://storybook.js.org/blog/storybook-test-sneak-peek/): ブラウザ内でのコンポーネントとストーリーのテスト。
+* 📜 [マイクロフロントエンドでReactをアップグレード](https://alexocallaghan.com/upgrading-react-with-microfrontends): Module Federation Reactブリッジを使用して異なるReactバージョンの利用を可能にする。
+* 📜 [React Routerブランド更新](https://remix.run/blog/react-router-brand-update): 近日リリース予定のv7に向けたロゴ/ワードマークの更新。
+* 📜 [ヘッドレスコンポーネントがUIライブラリ構築の未来となった理由](https://www.subframe.com/blog/how-headless-components-became-the-future-for-building-ui-libraries): 特にRadixに焦点を当てて。
+* 📜 [フロントエンドへの大規模言語モデル統合](https://www.manuelsanchezdev.com/blog/integrating-llm-frontend)
+* 📜 [ReactでのXState: useStateやuseEffect不要！](https://www.frontendundefined.com/posts/monthly/xstate-in-react/)
+* 📜 [Next.jsでヘッドレスWordPressを構築・デプロイする方法](https://scientyficworld.org/how-to-deploy-headless-wordpress-with-next-js/)
+* 📜 [絵画的シェーダーの制作について（React Three Fiber）](https://blog.maximeheckel.com/posts/on-crafting-painterly-shaders/)
+* 📜 [Preact - アイランドアーキテクチャの簡素化](https://preactjs.com/blog/simplifying-islands-arch/)
+* 📦 [Docusaurus 3.6 - 更に高速化](https://docusaurus.io/blog/releases/3.6): 数ヶ月取り組んできたプロジェクトで、Rustツールチェイン（Rspack、SWC、LightningCSS）へのアップグレードにより静的サイトのビルドが3倍高速化！
+* 📦 [next-validate-link - Markdownリンクの簡単検証](https://next-validate-link.vercel.app/): Next.js（App Router）の規約を理解し、MD/MDXファイル内の壊れたリンク/アンカーを報告。
+* 📦 [StyleX 0.9.3 - テーマAPIと動的スタイルの改善](https://stylexjs.com/blog/v0.9.3)
+* 📦 [nuqs 2.1 - タイプセーフな検索パラメータ - Vitest 2サポート、parseAsISODate、serializer urlKeysとclearAsDefaults](https://github.com/47ng/nuqs/releases/tag/v2.1.0)
+* 📦 [uikit 0.8 - React-Three-FiberとYogaを使用した高性能3Dユーザーインターフェース](https://github.com/pmndrs/uikit/releases/tag/v0.8.0)
+* 📦 [Quicky - Next.jsとNode.jsを独自サーバーにデプロイ](https://quicky.dev/)
+* 📦 [Shopify Hydrogen - 2024年10月リリース - Storefront API](https://hydrogen.shopify.dev/update/october-2024-release-storefront-api-2024-10)
+* 📦 [Monicon - ユニバーサルアイコンライブラリ](https://monicon-docs.vercel.app/)
+* 🎥 [Ethan Niser - Reactが高速に感じられる秘密](https://www.youtube.com/watch?v=vtotu8p9DWw): Reactというより関数型プログラミングについてだが、Concurrent Reactが作業を小さな塊に分割し定期的にメインスレッドに制御を戻すことを可能にする基礎技術を理解する価値あり。
+* 🎥 [Delba - Next.js 'use cache'を100秒で](https://www.youtube.com/watch?v=OWmRn74CQKY)
+* 🎙️ [今月のReact - React Devtools、RN 0.76、Web Components...](https://podcasters.spotify.com/pod/show/reactiflux/episodes/TMiR-2024-10-React-DevTools-update--React-Native-0-76-new-architecture-dropped--Web-Components-arent-the-future-e2qi6bb)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Introducing @clerk/nextjs v6 - Next.js 15 compatible](/emails/issues/208/clerk.jpg)](https://go.clerk.com/763LGC2)
+
+**[@clerk/nextjs v6の紹介 - Next.js 15対応](https://go.clerk.com/763LGC2)**
+
+Next.jsチームはNext.js 15の安定版リリースを発表しました。Clerkは、新メジャーリリースへの（ほぼ）同日サポートの伝統を継続し、`@clerk/nextjs` v6をリリースしました。v6では、`auth()`ヘルパーが非同期化され、`<ClerkProvider>`はデフォルトで動的レンダリングではなく静的レンダリングになり、部分的なプリレンダリングのサポートが導入されました。
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![React Navigation 7.0](/emails/issues/208/reactnavigation7.jpg)](https://reactnavigation.org/blog/2024/11/06/react-navigation-7.0/)
+
+[**React Navigation 7.0**](https://reactnavigation.org/blog/2024/11/06/react-navigation-7.0/)
+
+React Navigation v7がリリースされ、Expo SDK 52で提供予定のExpo Router v4（現在ベータ版）をサポートします。主なハイライトは以下の通りです：
+
+* スクリーンプリロード：ナビゲートする前にスクリーンを事前に準備でき、体感パフォーマンスが向上します。これは非常にエキサイティングで、将来的にはConcurrent Reactの機能を活用できる可能性があります。
+* 静的API：ナビゲーター設定が簡素化され、TypeScriptやディープリンクとの連携が容易になります。
+
+***
+
+[**ShopifyモバイルアプリのReact Nativeへの移行が完了しました**](https://threadreaderapp.com/thread/1853619638141071573.html)
+
+Mustafa（エンジニアリングディレクター）はXで、Shopifyが586画面を有するフラッグシップアプリのReact Nativeへの移行を完了し、非常に良い結果を得たと発表しました。詳細なブログ記事が公開されることを期待しています。
+
+* 180万行のコード削減
+* iOSとAndroid間でのコード共有率86%
+* スクーンロード時間59%短縮
+* アプリ起動時間44%短縮
+* WebView表示速度63%向上
+* アプリクラッシュの減少
+* アプリストア評価の改善
+
+***
+
+* 💸 [ReactでPuppeteerを使ったカスタマイズ可能なPDFビューアを作成。Nodeと任意のJavaScriptフレームワークでスタイル付きPDFを簡単に生成する方法を学ぶ。](https://apryse.com/blog/react/react-to-pdf?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=1106)
+* 💬 [CocoaPodsの代わりにTuistを採用 - Swift Package Managerではなく](https://github.com/react-native-community/discussions-and-proposals/issues/587#issuecomment-2457647318): iOSツールチェーンTuistの作成者がReact NativeでのSPM採用における潜在的な問題を指摘し、代替案を提案。
+* 📜 [Nitro入門](https://www.renanmav.com/blog/getting-started-with-nitro)
+* 📜 [ElectronアプリのCSSテーマをReact Nativeに移植する計画](https://www.devas.life/my-plan-to-port-electron-app-css-themes-into-react-native/)
+* 📜 [Expoで構築したカンファレンスアプリのアーキテクチャ](https://expo.dev/blog/the-architecture-of-a-conference-application-built-with-expo)
+* 📦 [Reanimated 3.16 - RN 0.76対応、新しいReact-Compilerセーフなget/set API、ロギング機能](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.16.0)
+* 📦 [Nitro 0.14 - RN 0.76対応、getHybridObjectConstructor追加](https://github.com/mrousavy/nitro/releases/tag/v0.14.0)
+* 📦 [Bottom Tabs 0.3 - 触覚フィードバック、Androidバック動作プロパティ、preventDefault()対応](https://github.com/okwasniewski/react-native-bottom-tabs/releases)
+* 📦 [Vision Camera 4.6 - RN 0.76対応、Android向けvideoBitRate、CameraXアップグレード](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v4.6.0)
+* 📦 [Skia 1.5.1 - ProMotion 120 fps対応](https://github.com/Shopify/react-native-skia/releases/tag/v1.5.1)
+* 📦 [Screens 3.35 - RN 0.76対応、RSC 'use client'追加、動的フレームワーク、blurEffect](https://github.com/software-mansion/react-native-screens/releases/tag/3.35.0)
+* 📦 [Safe Area Context 4.14 - macOSサポート](https://github.com/th3rdwave/react-native-safe-area-context/releases/tag/v4.13.0)
+* 📦 [Maests - TypeScriptでMaestroフローを記述・構成するツール](https://github.com/shoma-mano/maests)
+* 🎥 [Expo - EAS Buildでエンドツーエンドテストを実行する方法](https://www.youtube.com/watch?v=-o-bfIRrg9U)
+* 🎥 [Simon Grimm - Tailwindがモバイルに進出](https://www.youtube.com/watch?v=I_o17M30m5I)
+* 🎥 [Catalin Miron - 壁紙用Reanimatedカルーセル](https://www.youtube.com/watch?v=qaGRabISXwI)
+* 🎥 [Beto - EAS Updateを使ったOTA（Over-the-Air）アップデートの送信](https://www.youtube.com/watch?v=DWpcD6bvTRA)
+* 🎙️ [Rocket Ship 53 - React Nativeにおけるアクセシビリティの重要性（Britta Evans-Fenton氏）](https://share.transistor.fm/s/ccfd5491)
+
+***
+
+## 🔀 Other {#other}
+
+* 📜 [コンテナクエリの優しい入門](https://www.joshwcomeau.com/css/container-queries-introduction/)
+* 📜 [シングルページアプリとは何か？](https://jakelazaroff.com/words/whats-a-single-page-app/)
+* 📜 [メイソンリーレイアウトはCSSグリッドの一部になるべきか？](https://ishadeed.com/article/css-grid-masonry/)
+* 📜 [CSSリセットはレイヤー化されるべき](https://www.mayank.co/blog/css-reset-layer/)
+* 📜 [2024年10月のウェブプラットフォーム新機能](https://web.dev/blog/web-platform-10-2024?hl=en)
+* 📦 [Lightning CSS 1.28](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.28.0)
+* 📦 [Rolldown 0.14](https://github.com/rolldown/rolldown/releases/tag/v0.14.0): Vite向けRollup互換のRustバンドラーが機能完成、v1ベータは年末までにリリース予定。
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/208/meme.jpg)](https://bsky.app/profile/brophdawg11.bsky.social/post/3l7ookbysyq2h)
+
+[![alt](/emails/issues/208/meme2.jpg)](https://x.com/sebastienlorber/status/1854177504891650303)
+
+[![alt](/emails/issues/208/meme3.jpg)](https://x.com/bunjavascript/status/1854005887817699831)
+
+それでは！ 👋

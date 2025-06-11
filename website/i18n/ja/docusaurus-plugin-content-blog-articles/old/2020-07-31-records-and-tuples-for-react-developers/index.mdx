@@ -1,0 +1,26 @@
+---
+slug: records-and-tuples-for-react
+title: Records & Tuples for React
+description: .Records & Tuples for React... and how they are much more than immutable data structures.
+authors: [slorber]
+twitterThreadUrl: "https://slo.im/thread"
+image: ./images/hero.png
+---
+
+**Records & Tuples**（レコードとタプル）は、非常に興味深い**[プロポーザル](https://github.com/tc39/proposal-record-tuple)**であり、**TC39**で**[ステージ2](https://twitter.com/robpalmer2/status/1286040041089904640)**に到達しました。
+
+これらはJavaScriptに**深い不変性を持つデータ構造**をもたらします。
+
+しかし、**React**にとって<u>**非常に**</u>興味深い**等価性の特性**を見逃さないでください。
+
+**Reactのバグ**の一つのカテゴリは、**不安定なオブジェクト識別子**に関連しています：
+
+* **パフォーマンス**: 避けられたはずの再レンダリング
+* **挙動**: 不要なエフェクトの再実行、無限ループ
+* **APIサーフェス**: 安定したオブジェクト識別子が重要な場合を表現できない
+
+**Records & Tuples**の基本と、それらが**実際のReactの問題**をどのように解決できるかを説明します。
+
+[![hero](./images/hero.png)](https://sebastienlorber.com/records-and-tuples-for-react)
+
+🔗 [**続きを読む**](https://sebastienlorber.com/records-and-tuples-for-react)

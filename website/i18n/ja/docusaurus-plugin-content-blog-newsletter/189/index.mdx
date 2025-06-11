@@ -1,0 +1,138 @@
+---
+slug: /189
+title: "This Week In React #189: Next.js Security, Memoization, useFormStatus, React State, Remix Typesafe Routes, View Transitions, Astro, Starlight, Hydrogen, Remotion, Lingui, Storybook, Skia Video, Starlink, App Clips, VisionOS..."
+authors: [bndkt]
+date: 06-12-2024
+---
+
+みなさん、こんにちは！
+
+今週も[Benedikt](https://x.com/bndkt)がお届けします。Sebastienは休暇中です。
+
+今週の最も興味深いトピックは、大きな発表や新リリースではなく、将来の作業を示唆する微妙なヒント（Remixに導入予定の型安全なルートモデル、ExpoへのReact Compilerの導入、Expo Routerのネイティブインテント）や、React Suspenseの実装詳細に関するオンライン議論（`display: none`、そしてより重要なのはReact 19での並列フェッチ動作の大幅な変更）でした。
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![プロダクトスキルを鍛えよう](/emails/issues/183/posthog.jpg)](https://newsletter.posthog.com/?utm_source=twir\&utm_campaign=twir)
+
+**[プロダクトスキルを鍛えよう](https://newsletter.posthog.com/?utm_source=twir\&utm_campaign=twir)**
+
+[**エンジニアのためのプロダクト思考**](https://newsletter.posthog.com/?utm_source=twir\&utm_campaign=twir)は、PostHogが提供するエンジニア向けニュースレターです。ユーザーに尋ねるべき質問、ユーザーが愛用する新機能の構築方法、プロダクトマーケットフィットへの道筋などについて学べます。
+
+[**無料購読**](https://newsletter.posthog.com/?utm_source=twir\&utm_campaign=twir)して、優れたプロダクトを構築するためのアドバイス、PostHog構築からの教訓（と失敗）、トップスタートアップの戦略に関する深堀り記事を受け取りましょう。
+
+***
+
+## ⚛️ React {#react}
+
+[![Mind the gap](/emails/issues/189/react189.jpg)](https://www.youtube.com/live/1g5ruM-16_Y?t=7443s)
+
+🎥 **[Ryan Florenceの講演「Mind the Gap」](https://www.youtube.com/live/1g5ruM-16_Y?t=7443s)**
+
+この講演は、複数の人々から「今まで見た中で最高のテックカンファレンス講演の一つ」と評されているのを聞いて視聴しました。React 19がReactモデルに大きな変化をもたらし、新しいJSフレームワークが人気を集め、RailsやLaravelとの違いや比較に関する多くのオンライン議論が交わされている現在、私たちはウェブ開発の非常に興味深い転換点に立っています。Ryanの講演は、私たちがどのようにここまで来たのかを概観し、React 19について考えるための非常に優れたメンタルモデルを提供してくれます。また、Remixの創設者の一人がNext.jsのデモを行う様子を見るのも楽しいです😉
+
+* 💸 [NL Kit — JavaScriptでAI機能を迅速に実装](https://nlkit.com)
+* 🐦 [Reactの状態管理を選ぶための30以上の方法をまとめたフローチャート](https://x.com/housecor/status/1799435036736778364)
+* 🐦 [ReactがSuspenseコンテキスト内のコンポーネントをデータ取得完了まで`display: none !important`に変更](https://x.com/cpojer/status/1798912741383844237)
+* 🐦 [Remix/React Router 7に型安全なルートモジュールが導入予定](https://x.com/pcattori/status/1799194706850504818)
+* 🐦 [React 18と19でSuspenseの並列フェッチ処理に重大な差異が発生し懸念が高まる](https://x.com/TkDodo/status/1800501040766144676)
+* 🗓 [dotJS](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 パリ - 6月27日 - カンファレンスまであと2週間！コード「TWIR」で10%オフ
+* 🗓 [React Summit](https://reactsummit.com/?utm_source=thisweekinreact) - 🇳🇱 アムステルダム - 6月14-18日 - チケットほぼ完売間近。コード「TWIR」で10%オフ
+* 📜 [JavaScriptにおけるWeakメモ化](https://dev.to/thekashey/weak-memoization-in-javascript-4po6): useMemoではなく、メモ化の基本概念をゼロから解説（Reactにも多数言及）。内部動作の理解を深めるのに最適
+* 📜 [useFormStatusを使った再利用可能なSubmitButtonの作成](https://aurorascharff.no/posts/creating-a-reusable-submitbutton-with-useformstatus/): React 19のフォームとサーバーアクションの使い方を学べるだけでなく、プログレッシブエンハンスメントを用いた実装方法も解説
+* 📜 [React Server ComponentsでのLingui使用法](https://lingui.dev/tutorials/react-rsc): Linguiを使ったNext.js App Routerアプリ（RSC含む）の国際化チュートリアル
+* 📜 [Next.jsセキュリティチェックリスト](https://blog.arcjet.com/next-js-security-checklist/): 7つの領域をカバーする有用なチェックリスト。依存関係の更新や入力値のサニタイズといった基本的な項目から、サーバーコードの公開回避やセキュリティヘッダーの使用といったより専門的な項目まで
+* 📜 [Hydrogen - 2024年6月リリース - 楽観的カート、RichTextコンポーネント、安定版アナリティクス](https://hydrogen.shopify.dev/update/june-2024): 3つの新機能発表に加え、Remix（React Router 7）への継続的なコミットメントが再確認されている
+* 📜 [Astro - Starlight（Astroベースのドキュメントビルダー）が1周年](https://astro.build/blog/starlight-turns-one/): 24のマイナーリリース、181人のコントリビューター、2,000コミット、4,000 GitHubスター、2,700のオープンソースStarlightサイトという印象的な統計
+* 📜 [Astro - ゼロJavaScriptビュートランジション](https://astro.build/blog/future-of-astro-zero-js-view-transitions/): Chrome 126でページ遷移間のネイティブなアプリ風アニメーションがサポート
+* 📜 [スピードの必要性：Reactテスト時間を短縮する簡単な方法](https://www.helpscout.com/blog/improve-react-testing-times/)
+* 📜 [Radix UIを使ったインタラクティブなドロップダウンメニュー](https://www.joshuawootonn.com/radix-interactive-dropdown)
+* 📜 [Shadcn UIとTailwind CSSでNext.jsにズーム可能な画像をレンダリングする方法](https://www.nico.fyi/blog/easy-zoomable-image-with-shadcn-tailwind)
+* 📜 [Storybook - インタラクティブなストーリー生成](https://storybook.js.org/blog/interactive-story-generation/)
+* 📜 [Next.jsでKnockを使った通知システムを構築する方法](https://spacejelly.dev/posts/how-to-build-a-notification-system-in-next-js-with-knock)
+* 📦 [Code Hike + Remotionの例](https://github.com/code-hike/examples/tree/main/with-remotion): アニメーションコードビデオを作成するための巧妙な組み合わせ（🐦 [デモ動画](https://x.com/pomber/status/1800108854459715864?t=8ickNCn-Orou7665JY31VA\&s=19)）
+* 📦 [@xstate/store 1.0.0](https://github.com/statelyai/xstate/releases/tag/%40xstate%2Fstore%401.0.0)
+* 📦 [@tanstack/query 5.44.0](https://github.com/TanStack/query/releases/tag/v5.44.0): cache-controlヘッダーからstale timeを導出する「staleTime」関数を導入
+* 🎥 [Theo - Reactコンパイラ：想像以上に奇妙](https://www.youtube.com/watch?v=wnXGSwrOw80)
+* 🎥 [Ben Holmes - サーバーアクションの問題点](https://www.youtube.com/watch?v=GPYAC1qGD44)
+* 🎥 [Jack Herrington - Radix Themes：NextJS向けの素晴らしい新コンポーネント](https://www.youtube.com/watch?v=SKm2XGxbLLM)
+* 🎥 [Syntax - React界隈の最新動向 - React Conf 2024まとめ](https://www.youtube.com/watch?v=udXZw-9LdOM)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![WorkOS: エンタープライズ向け認証を数分で](/emails/issues/189/WorkOS.jpg)](https://workos.com/?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=q22024)
+
+**[WorkOS: エンタープライズ向け認証を数分で](https://workos.com/?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=q22024)**
+
+🔐 WorkOSは、**SSO、SCIM、RBAC、FGA**を含む完全なユーザー管理ソリューションをサポートしています。
+
+🗂️ 他の認証プロバイダーがユーザー中心のモデルに依存するのに対し、WorkOSはB2B SaaS向けに設計された**組織モデリングアプローチ**を採用しています。
+
+🏗️ APIは**柔軟で使いやすく、モジュール式**です。必要な機能を選び、数分で統合できます。
+
+✨ ユーザー管理は**100万MAUまで無料**で、ボット対策、なりすまし防止、MFAなどが含まれます。
+
+🤝 WorkOSは、**Perplexity**、**Vercel**、**Webflow**など、数百の主要スタートアップに信頼されています。
+
+[WorkOS](https://workos.com/?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=q22024)で認証スタックを未来に備えましょう 🚀
+
+***
+
+## 📱 React-Native {#react-native}
+
+このセクションは[Benedikt](https://twitter.com/bndkt)によって執筆されています。
+
+* 💸 [WithFrame - すぐに使えるReact Nativeコンポーネント](https://withfra.me/?utm_source=thisweekinreact\&utm_medium=email\&utm_campaign=quick-link--2)
+* 👀 [Expoが実験的なReact Compilerサポートを追加](https://github.com/expo/expo/pull/29168)
+* 👀 [Expo Router +native-intent デモ](https://github.com/EvanBacon/expo-router-native-intent-demo)
+* 🐦 [Skia VideoがWebにも登場予定](https://x.com/wcandillon/status/1799859456584646663)
+* 🐦 [LorenzoがMicrosoftとReact Nativeを離れる](https://x.com/Kelset/status/1800158749811966280?t=jif1MJRNNYc3wIE1cIUJvw\&s=19): 長年にわたりReact Nativeコアメンテナとしてコミュニティに貢献してくれたLorenzoに感謝し、今後の活躍を祈念します！
+* 🗓 [Chain React Conf](https://chainreactconf.com/?utm_source=thisweekinreact) - ポートランド（オレゴン州）・7月17-19日。米国React Nativeカンファレンスが帰ってきました！講演とハンズオン形式のワークショップが満載です。「TWIR」コードでチケット15%オフ
+* 📜 [Apple Vision Pro: カンファレンスとその先からの洞察](https://www.callstack.com/blog/apple-vision-pro-insights-from-conferences-and-beyond)
+* 📜 [React Nativeが書けるようになった今、何をテストすべきか](https://thoughtbot.com/blog/now-that-i-can-write-react-native-what-should-i-test): React Nativeにおける単体テストと統合テストの初心者向けガイド。次はエンドツーエンドテストに挑戦しましょう！
+* 📜 [StarlinkがReact Native & Expoで3D/ARを構築した方法](https://www.notjust.dev/blog/react-native-starlink): App.js confでのAaronの講演まとめ。テキスト派はこちらを、動画派は元の講演視聴を推奨
+* 📜 [BelkaがExpoでMangaYo!アプリを3ヶ月で開発した方法](https://expo.dev/blog/how-belka-built-mangayo-app-in-just-3-months-with-expo): ExpoとSupabaseを使用し3ヶ月で開発、App Storeランキング5位を獲得
+* 📜 [Flatlistのレンダリング技法](https://www.andydevs.dev/articles/flatlist-rendering-techniques): FlashListを直接使うことが多いですが、使えない/使いたくない場合の従来型FlatListの最適化手法
+* 📦 [react-native-app-clip 0.3.0 - Expo 51、RN 0.74、New Architecture、Apple Payに対応](https://github.com/bndkt/react-native-app-clip/releases/tag/v0.3.0)
+* 📦 [@rn-tools/navigation](https://github.com/ajsmth/rn-tools/blob/main/packages/navigation/readme.md): React Native向け新ナビゲーションコンポーネントセット
+* 🎙️ [RNR 299 - 5年後のReact Nativeに期待すること](https://www.reactnativeradio.com/episodes/rnr-299-what-to-expect-from-react-native-in-5-years)
+* 🎙️ [React Conf 2024ハイライト: スピーカーインタビュー | The React Native Show Podcast #38](https://www.youtube.com/watch?v=EP2IzK6rPv8)
+* 🎥 [Expoライブストリーム - SDK 51発表: New Architecture、Router 3.5、高速化された「はじめに」フローなど](https://www.youtube.com/watch?v=k1ISWPgP4S4)
+* 🎥 [Simon Grimm - PowerSyncとSupabaseでローカルファーストReact Nativeアプリを構築](https://www.youtube.com/watch?v=xvvVGOyRgZg)
+
+***
+
+## 🔀 Other {#other}
+
+* 📜 [Safari 18 betaのWebKit - ビュートランジション、スタイルクエリ、WebXRなど](https://webkit.org/blog/15443/news-from-wwdc24-webkit-in-safari-18-beta/)
+* 📜 [DOMの深さはどれくらい？](https://frontendatscale.com/blog/how-deep-is-your-dom/)
+* 📜 [フィールドでの遅いインタラクションを見つける](https://web.dev/articles/find-slow-interactions-in-the-field)
+* [Node.jsがメモリリーク？setTimeoutが原因かも](https://lucumr.pocoo.org/2024/6/5/node-timeout/)
+* 📜 [Chrome DevToolsを使ったJavaScriptパフォーマンス分析の包括的ガイド](https://blog.jiayihu.net/comprenhensive-guide-chrome-performance/)
+* 📦 [TypeScript 5.5 RC](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5-rc/?t)
+* 📦 [Valibot v0.31.0がついにリリース](https://valibot.dev/blog/valibot-v0.31.0-is-finally-available/)
+* 📦 [Vite 5.3.0-beta.2](https://github.com/vitejs/vite/blob/v5.3.0-beta.2/packages/vite/CHANGELOG.md#530-beta2-2024-06-10)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![tailwindモニター](/emails/issues/189/meme.jpg)](https://x.com/thekitze/status/1788852862669217805)
+
+またね！ 👋

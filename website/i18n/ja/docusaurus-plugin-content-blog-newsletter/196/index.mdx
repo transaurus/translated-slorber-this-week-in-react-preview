@@ -1,0 +1,152 @@
+---
+slug: /196
+title: "This Week In React #196: Forms, Jotai, DI, Electron, Docusaurus, Signals, Plunk, React-Server, Switchboard, React-Call, RN WebGPU, Nitro Modules, use dom, macOS, Screens, Autolinking, Cocoapods, Corepack, Node.js, TypeScript..."
+authors: [matthieugicquel, cyrilbo]
+date: 08-14-2024
+---
+
+みなさん、こんにちは！
+
+今週は、**2名の新しい協力者**を迎え、**ニュースレターの継続性を確保**するため、Sebが休暇を取る間もサポートします。
+
+**[Theodo Apps（旧BAM）](https://apps.theodo.com/en?utm_source=thisweekinreact)**の**CyrilとMatthieu**です 👋。ReactとReact Nativeの最新ニュースをお届けします。
+
+今週のReactは比較的落ち着いており、React 19のSuspenseに関する議論が続いています。
+
+**しかし、React Nativeは活況を呈しています！**\
+ExpoがReact DOMコンポーネントの統合方法をデモしたり、React Native WebGPUのエキサイティングなリリースがあったり、ネイティブモジュール開発の新しいアプローチが話題を呼んでいます。また、React Native 0.75も間もなくリリースされますので、来週詳しくお伝えします！
+
+パートナーカンファレンス **[reactjsday](https://2024.reactjsday.it/?utm_source=thisweekinreact)**（🇮🇹 ヴェローナ - 10月25日）は10周年を記念し、2トラック（16講演）に拡大しました。コード「TWIR」で10%オフ。Matheus Albuquerque、Aurora Scharff、Dani Collなど、素晴らしいスピーカーが発表されています！
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![デザインシステムを最大限活用するStackBlitz](/emails/issues/196/StackBlitz.jpg)](https://stackblitz.com/design-systems?utm_source=twir\&utm_medium=primary)
+
+**[StackBlitzでデザインシステムを最大限活用](https://stackblitz.com/design-systems?utm_source=twir\&utm_medium=primary)**
+
+デザインシステムはウェブ開発を効率的かつ一貫性のあるものにしますが、構築と維持には多くの課題があります。[**StackBlitz**](https://stackblitz.com/)は、デザインシステムの**普及**、**維持**、**進化**を容易にします。StackBlitzを使えば：
+
+* 📈 **採用率向上**: チームが内部ライブラリを試すためのワンクリック環境を提供。
+* 💻 **開発者体験の向上**: ドキュメントにライブコード例を組み込む。
+* 🐛 **バグ報告の改善**: 単純なバグ報告のために重いローカル環境をセットアップする必要がなくなります。
+* 🤝 **コラボレーションの簡素化**: エンジニアリング、デザインなど部門間のシームレスな協力を促進。
+
+**デザインシステムのワークフローを変える準備はできましたか？** [今すぐ始める](https://stackblitz.com/design-systems)！
+
+***
+
+## ⚛️ React {#react}
+
+* 💸 [Chromatic – Storybook、Playwright、Cypress向けのビジュアルテスト。機能テストでは見逃すUIバグを検出。高速動作＆フレークゼロ。](https://www.chromatic.com/features/visual-test?utm_source=thisweekinreact\&utm_medium=quick_link\&utm_campaign=q3_2024)
+* 👀 [React 19 - サスペンドされたコンポーネントの兄弟要素のプリレンダリングを無効化すると一般的なパターンが破壊される問題](https://github.com/facebook/react/issues/29898): Reactチームはこの変更を取り消す作業中で、React 19に含まれる予定だったが多くのSPAのパフォーマンスを低下させる可能性があった。まだリリース時期は未定で、安定版React 19のリリースには時間がかかるかもしれない
+* 🐦 [Matt Pocockがライブラリの型付けに対する新しいアプローチを提案](https://x.com/mattpocockuk/status/1821124980043636841): Reactは例えばTypeScriptの名前空間を使って`useState`の型を公開できる
+* 🐦 [Matt](https://x.com/mattpocockuk/status/1821926395380986219) [Pocock](https://x.com/mattpocockuk/status/1821124980043636841)が[コンポーネントのpropsにオートコンプリートを追加するヒント](https://x.com/mattpocockuk/status/1821926395380986219): `string & {}`を使う方法
+* 📜 [モダンなReactを使ったフォームの深堀り](https://www.epicreact.dev/react-forms): Kentが新しいフック`useFormStatus`、`useActionState`、`useOptimistic`の使い方を解説
+* 📜 [Jotaiが生まれた経緯](https://blog.axlight.com/posts/how-jotai-was-born/): Daishi KatoがJotaiを作る前に試した様々な状態管理ライブラリの反復を振り返る
+* 📜 [アプリで依存性注入を使うとコードがクリーンでメンテナンスしやすくなる理由](https://codedrivendevelopment.com/posts/dependency-injection-in-react): フロントエンド開発、特に複雑なReactプロジェクトで作業している人にとってDIを慎重に検討する価値がある記事
+* 📜 [Next.jsとElectronでサーバーコンポーネント対応のアプリを構築](https://www.saybackend.com/blog/03-electron-nextjs-ssr): Next.jsをハイジャックしてElectronアプリ内でRSCサーバーを実行する方法を説明
+* 📜 [非同期チャンクのプリロードでSPAの読み込み時間を最適化](https://mmazzarolo.com/blog/2024-08-13-async-chunk-preloading-on-load/)
+* 📜 [コンポーネントライブラリとは？自分で作るべきか？](https://component-odyssey.com/articles/10-what-is-a-library-should-you-build-your-own)
+* 📦 [Docusaurus 3.5 - 著者ページと多くの新しいブログ機能](https://docusaurus.io/blog/releases/3.5)
+* 📦 [Impact-React RC版 - CodeSandboxによるReact向けSignals](https://impact-react.dev)
+* 📦 [Plunk - react-emailとjsx-email統合の新しいOSSメールプラットフォーム](https://www.useplunk.com/)
+* 📦 [react-switchboard - アプリ向けのカスタムDevToolsを素早く作成](https://github.com/coryhouse/react-switchboard)
+* 📦 [react-call - Reactコンポーネントを命令的に表示して結果を待機](https://github.com/desko27/react-call): 確認ダイアログやトースターの実装を簡素化する興味深いアイデア
+* 📦 [@lazarv/react-server - サーバーコンポーネント対応の代替フレームワーク](https://react-server.dev/)
+* 🎙️ [Syntax.fm - State of Reactサーベイに対する反応](https://syntax.fm/show/805/we-react-to-state-of-react-survey)
+* 🎙️ [Syntax.fm - CSSコンポーネント: Tailwind、Panda、Scoped、Modules、Classes、Variables、CSS-in-JS、Sprinkles！](https://syntax.fm/show/807/css-components-tailwind-panda-scoped-modules-classes-variables-css-in-js-and-sprinkles)
+* 🎥 [Sam Selikoff - Unstyled Componentsで時期尚早な抽象化を回避](https://www.youtube.com/watch?v=9iJK-Vl6PhE)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Statsig: Ship, Measure, Repeat](/emails/issues/196/statsig.jpg)](https://statsig.com/?utm_campaign=this-week-in-react\&utm_source=sponsorships\&utm_medium=email\&utm_content=website)
+
+**[Statsig: Ship, Measure, Repeat](https://statsig.com/?utm_campaign=this-week-in-react\&utm_source=sponsorships\&utm_medium=email\&utm_content=website)**
+
+OpenAI、Notion、Brexなどが採用する機能管理、A/Bテスト、製品分析ツール。リリースするすべてを計測し、より良い製品を構築しましょう 🚀
+
+Statsigを導入すると以下が利用可能:
+
+🧪 **A/Bテスト:** 高度な統計を用いた自動化実験。効果のある機能のみをリリース
+
+🚩 **機能フラグ:** 無制限の無料フラグ。ワンクリックで任意のフラグをA/Bテストに変換可能
+
+🥇 **製品分析:** 成長を追跡し機能の影響を測定。機能フラグやA/Bテストグループごとに分析を実施
+
+🎥 **セッション再生:** ユーザー操作を再生し体験と課題を理解
+
+🌐 **ウェブ分析:** JSスニペットを追加するだけで主要なウェブサイト指標とダッシュボードを取得
+
+200万イベントと1万セッション記録まで**無料**で利用可能 — [**今すぐ始める**](https://statsig.com/?utm_campaign=this-week-in-react\&utm_source=sponsorships\&utm_medium=email\&utm_content=website)**!**
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![React Native WebGPU](/emails/issues/196/rn-webgpu.jpg)](https://www.youtube.com/watch?v=i-DGY98cTjk)
+
+**🎥 [React Native WebGPU](https://www.youtube.com/watch?v=i-DGY98cTjk)**
+
+React Native WebGPUがリリースされ、React NativeでGPUを活用した高度なグラフィックスと計算処理が可能になりました！Web API標準を再利用することで、ThreeJSなどの既存のWebGPUコードサンプルやライブラリをReact Nativeに直接統合できます。
+グラフィックスだけでなく、行列計算などにも利用可能で、オンデバイスの機械学習アルゴリズムにも有用です。Nitro Modulesを使用してTypeScriptからC++へのシームレスな相互運用性を実現。現在テクニカルプレビューとして提供されており、今後の展開が期待されます！
+
+***
+
+**React Nativeモジュールの未来**
+
+React Native開発者にとってエキサイティングな時代が到来！Marc RousavyがNitroModulesで新たなアプローチを提案📦 [既存ソリューションを速度テストで凌駕](https://github.com/mrousavy/NitroBenchmarks)。VisionCameraでJSIの制約に直面した経験から生まれたこのプロジェクトは、C++側では既に安定しており、🐦 [react-native-unistyles](https://x.com/jpudysz/status/1822541758137303233)やreact-native-webgpuなど様々なプロジェクトで採用されています（SwiftとKotlinバインディングは開発中）。
+
+👀 [一方、SwiftをTurboModulesに活用する新提案も登場](https://github.com/okwasniewski/discussions-and-proposals/blob/22edd2c7853aaf2ee654b57f4521e43d668103fb/proposals/0000-swift-turbo-modules.md)。Objective-CとC++からの移行により、ネイティブモジュール開発が大幅に改善される見込みです！
+
+***
+
+* 💸 [Galaxies.dev - React Native開発のエキスパートになろう & 来週火曜日の価格改定前に\$65お得に！](https://galaxies.dev/subscription?utm_campaign=announcement\&utm_medium=price-updates\&utm_source=thisweekinreact.com)
+* 👀 [React Native 0.76ではiOSの最低バージョンが15.1に引き上げられる見込み](https://github.com/react-native-community/discussions-and-proposals/discussions/812)
+* 👀 [「use dom」 - ExpoがReact WebコンポーネントをReact Nativeアプリにシームレスに統合する方法を開発中](https://docs.expo.dev/guides/dom-components/): 新しい実験的機能により、React DOMコンポーネントをインポートし、propsとコールバックで通信可能に！コンポーネントはWebViewでレンダリングされるため、移行やサブ機能に最適
+* 👀 [React Native Screens 4.0ベータ版](https://github.com/software-mansion/react-native-screens/releases/tag/4.0.0-beta.0): iOSカスタムデテントとAndroidフォームシートをサポート
+* 👀 [React Native 0.75 & Expo SDK 51で導入予定のAutolinkingパフォーマンス改善](https://github.com/react-native-community/discussions-and-proposals/discussions/814)
+* 📖 [Expoドキュメント更新 - Jestを使ったユニットテスト](https://docs.expo.dev/develop/unit-testing/): jest-expoとReact Native Testing Libraryの設定方法を解説
+* 🗓️ [React Universe Conf](https://www.reactuniverseconf.com/?utm_source=thisweekinreact) -  🇵🇱 ヴロツワフ - 9月5-6日。コード「TWIR」で10%オフ。スピーカー: Dan Abramov、Evan Bacon、Kent C. Dodds、Delba Oliveira...
+* 📜 [Cocoapodsが正式にメンテナンスモードに移行](https://blog.cocoapods.org/CocoaPods-Support-Plans/): React Nativeもいずれ移行が必要
+* 📦 [react-native-macosがRN 0.74をサポート](https://github.com/microsoft/react-native-macos/releases/tag/v0.74.1)
+* 🎥 [Reactiiive - Reanimatedを使ったストーリーリストUIの構築（React Native）](https://www.youtube.com/watch?v=NNRym_f8JsA)
+* 🎥 [Simon Grimm - Expo Routerを使ったReact Native Firebase認証](https://www.youtube.com/watch?v=BsOik6ycGqk)
+* 🎙️ [RNR 303 - Chain React 2024のストーリー](https://www.reactnativeradio.com/episodes/rnr-303-stories-from-chain-react-2024)
+
+***
+
+## 🔀 Other {#other}
+
+* 👀 [Node.js - TypeScript enumとnamespaceのトランスパイルサポート追加](https://github.com/nodejs/node/pull/54283)
+* 📜 [Node.jsがCorepack削除に向けて動き出す](https://socket.dev/blog/node-js-takes-steps-towards-removing-corepack?utm_medium=feed)
+* 📜 [CSSのentry effectsアニメーションがFirefox 129で追加されベースライン化](https://web.dev/blog/baseline-entry-animations?hl=en)
+* 📜 [JavaScriptにおけるメモリリークの一般的な原因](https://www.trevorlasn.com/blog/common-causes-of-memory-leaks-in-javascript/)
+* 📜 [TypeScript型チェックパフォーマンス最適化へのアプローチ](https://www.edgedb.com/blog/an-approach-to-optimizing-typescript-type-checking-performance#how-do-we-quantify-the-type-checker-s-workload)
+* 📜 [ネイティブJavaScriptデコレータの可能性を探る](https://frontendmasters.com/blog/exploring-the-possibilities-of-native-javascript-decorators/?ref=cms.macarthur.me)
+* 📜 [FigmaのSVGエクスポートをアニメーション化](https://courses.nan.fyi/blog/svg/animating-figma-exports)
+* 📦 [Cheerio 1.0 - 7年間のRC期間を経てついに安定版](https://cheerio.js.org/blog/cheerio-1.0)
+* 🔗 [e18e - JSエコシステムのパフォーマンス向上イニシアチブ](https://e18e.dev/)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/196/meme.jpg)](https://x.com/DavidKPiano/status/1822633099433316504)
+
+それでは！👋

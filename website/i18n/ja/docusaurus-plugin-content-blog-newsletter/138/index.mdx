@@ -1,0 +1,185 @@
+---
+slug: /138
+title: "This Week In React #138: React-Router, Rspack, RSC, Storybook, Astro, Million, Superflare, Tremor, React-Email, Ink, Metro, VisionCamera, Jest, Proto..."
+authors: [slorber]
+date: 03-14-2023
+---
+
+みなさん、こんにちは！
+
+皆がGPT-4で遊んでいる間、私は皆さんのためにReact記事を読み続けています！
+
+React-Routerの新しい`lazy`機能は、ウォーターフォールを避けるのに非常に便利そうです。
+
+Rust製のバンドラー「Rspack」が発表されました。
+
+このニュースレターの紹介プログラムを作りたいと考えています。友人と共有して新規購読者が増えたら報酬を出す仕組みです。何を提供すべきかアイデアはありますか？
+
+考えている案：
+
+* +1購読者 - 私のおすすめReact記事トップ10へのアクセス
+* +3購読者 - タグ付けと評価付きの記事データベースへのアクセス
+* +5購読者 - TwitterやLinkedInで公開感謝
+* +10購読者 - ニュースレターでの求人掲載
+* +30購読者 - Just JavaScript（Dan Abramov）やThree.js Journey（Bruno Simon）などから選べるコース
+* +50購読者 - 1時間のReactコンサルティングセッション
+
+何を提供するか選ぶのは簡単ではありません😅。デジタル製品から始める方が管理しやすいですが、ステッカーや靴下、スニーカー、バックパック、マグカップなどの物理商品にも開放的な考えです。
+
+このメールに直接返信して意見を聞かせてください。どんな報酬が最もやる気を引き出すか教えてください。
+
+<!-- truncate -->
+
+**💡 [Twitterでこのニュースレターをチェック](https://slo.im/thread) - ビジュアル形式 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Suncel](/emails/issues/136/suncel.jpg)](https://suncel.io/)
+
+**[再利用可能なブロックを構築。コンテンツを迅速に公開。Core Web VitalsとSEOを向上。](https://suncel.io/)**
+
+**コンテンツ編集者向け**：多くのコンテンツを制作し強力なSEO戦略が必要な企業にとってゲームチェンジャーです。マーケターや編集者は複雑さなくページを編集・公開できます。長い遅延を排除し即座に公開可能。Next.jsによりページと画像が最適化され、完璧なCore Web Vitalsスコアを達成。
+
+**開発者向け**：既存のNext.jsアプリに簡単に接続。Suncel CMSを使用する利点：
+
+* Reactで再利用可能なブロックを構築
+* SEOメタとサイトマップが自動生成（SEOモジュールのおかげ）
+* Reactで独自のカスタム設定を作成
+* Reactでカスタマイズ可能な管理画面
+* CMSに合わせたルーティングシステム不要
+
+**[Suncel.ioを訪問](https://suncel.io/)** | **[5分デモ動画](https://www.youtube.com/watch?v=LUupLEZKp3w)**
+
+***
+
+## ⚛️ React {#react}
+
+[![React Router 6.4+での遅延ロード](/emails/issues/138/reactrouterlazy.jpg)](https://remix.run/blog/lazy-loading-routes)
+
+**[React Router 6.4+での遅延ロード](https://remix.run/blog/lazy-loading-routes)**
+
+[React-Router 6.9](https://github.com/remix-run/react-router/releases/tag/react-router%406.9.0)がリリースされ、ウォーターフォールを避けアプリの読み込み時間を最適化する新しい遅延ルート機能が追加されました。これはRemixの動作方法ですが、React-Routerベースのアプリでもこの手法が使えるようになります。個人的にはDocusaurus（React-Routerベース）で使う予定です。
+
+***
+
+* 👀 [React Flight PR - 返信エンコーディングの追加](https://github.com/facebook/react/pull/26360): サーバー => クライアント向けのストリーミングサポート。
+* 👀 [Remix RouterとReact Transitionsの統合](https://twitter.com/dan_abramov/status/1634300734094057472): Dan AbramovがRemixで`startTransition`を使用することを提案。`<Suspense>`境界外のサスペンドされたコンポーネントは遷移をブロックすべき。
+* 🧵 [Dan Abramov - 「もし複数のコンポーネントからGraphQLフラグメントを合成して1つのクエリにしていないなら[...]GraphQLのポイントの80%を見逃している」](https://twitter.com/dan_abramov/status/1634968234821844992): 今週のRelayに関する興味深い議論。かなり威圧的だが、このGraphQLクライアントにはシンプルなソリューションに比べて多くの利点がある（コロケーション、データマスキングなど）。
+* 🧵 [Docusaurusサイトの70%が良好なCore Web Vitalsを達成](https://twitter.com/sebastienlorber/status/1635661211579580429): DocusaurusがReactメタフレームワークのリストから忘れられがちなことに対する私の小さな不満。高い使用率と良好なパフォーマンスにもかかわらず。
+* 📜 [JavaScript時代の偉大なガスライティング](https://www.spicyweb.dev/the-great-gaslighting-of-the-js-age/): Reactへの辛辣な批判😅 私は同じ意見ではなく、React開発者は一般にトレードオフを認識していると思う。
+* 📜 [クライアントサイドJavaScriptとReact批判：次は何か？](https://molily.de/javascript-criticism/): よりニュアンスのある批判だが、Reactとプログレッシブエンハンスメントは両立しないとは思わない。Remixが良い例。
+* 📜 [ReactにおけるStateはイミュータブル](https://reacttraining.com/blog/state-in-react-is-immutable): Reactのイミュータブルモデルへの良いイントロダクション。
+* 📜 [フックはどこから来たのか？](https://reacttraining.com/blog/where-did-hooks-come-from): 今日なぜフックを使うのかを理解するために遡る。新しいReact開発者は数年前に遭遇した問題を必ずしも認識していない。
+* 📜 [useImperativeHandleでrefを微調整](https://prateeksurana.me/blog/fine-tuning-refs-with-useimperativehandle/): Reactコンポーネントが親に対して命令型APIを公開できるようにするこのフックの良いイントロダクション。
+* 📜 [React、ウェブ標準、Remixを学んだ経験](https://andre-landgraf.dev/blog/2023-03-11_web_standards_and_react): シンプルさに戻る、`useState`を減らし、よりフルスタックに。
+* 📜 [ReactとTailwind CSSを使用してメールを送信](https://resend.com/blog/tailwind-with-react-email): React-EmailがTailwindクラスをサポート。
+* 📜 [Reactで状態とレンダリングをエレガントに管理](https://remotion.com/blog/untangling-state-in-react): 最初は驚くかもしれない更新のバッチ処理の仕組みを強調。
+* 📜 [リアクティビティの簡単な歴史](https://www.builder.io/blog/history-of-reactivity): React（粗粒度リアクティビティ）を含む様々なフレームワークのリアクティブモデルを比較。
+* 📜 [2023年で最も人気のあるNode.jsフレームワーク](https://stackdiary.com/node-js-frameworks/)
+* 📜 [tRPCとReactを使用したフルスタックTypeScript](https://www.robinwieruch.de/react-trpc/)
+* 📜 [WebGL Render Targetsを使用した美しくて驚くべき効果](https://blog.maximeheckel.com/posts/beautiful-and-mind-bending-effects-with-webgl-render-targets/)
+* 🎥 [Dan AbramovとJoe SavonaによるRSCライブストリーム](https://kentcdodds.com/blog/rsc-with-dan-abramov-and-joe-savona-live-stream)
+* 🎥 [フロントエンドエコシステムにおけるReactの位置](https://www.youtube.com/watch?v=GHRkN_G5BMc)
+* 🎥 [すべてのフルスタックフレームワークをランキング（タイプセーフティで？）](https://www.youtube.com/watch?v=zADNdGVIPBY)
+* 🎥 [DeferとNextJS 13でAIの力を解放 - UIマジック！](https://www.youtube.com/watch?v=kHsTp2LENUI)
+* 📦 [Ink 4.0](https://github.com/vadimdemedes/ink/releases/tag/v4.0.0): CLI向けReactレンダラーがReact 18とESMに対応。
+* 📦 [Koestlich](https://twitter.com/coconut_xr/status/1633770307470098434): React-Three-Fiberベースの「3D UIキット」。
+* 📦 [Storybook 7.0 RC](https://github.com/storybookjs/storybook/releases/tag/v7.0.0-rc.0): Next.jsサポート、Component Story Format 3、MDX 2などを備えたAPIフレームワーク。また、カンファレンス[Storybook Day 2023](https://www.youtube.com/watch?v=P0hJm5v8TJw)も参照。
+* 📦 [Astro 2.1](https://astro.build/blog/astro-210/): Imageコンポーネント、Markdocサポート。
+* 📦 [Million 2.0](https://twitter.com/aidenybai/status/1634060432372813829): 「ブロック」概念に基づく仮想DOMでReactと互換性があり、70%高速化できる🤔
+* 📦 [SWR 2.1](https://github.com/vercel/swr/releases/tag/v2.1.0): useSWRSubscription + useSWRInfinite parallelオプション
+* 📦 [Superflare](https://superflare.dev/): Cloudflare Workers向けフルスタックツールキットでD1、R2、Session、Queues...をサポート。Remixとの統合、そしてまもなくNext.js？
+* 📦 [Tremor 2.0](https://twitter.com/tremorlabs/status/1635064912153284609): ダッシュボード作成用UIライブラリで、Tailwind CSSベース。
+* 📦 [next-route-visualizer](https://github.com/DiiiaZoTe/next-route-visualizer)
+* 📦 [Radix - 新しいFormプリミティブ](https://twitter.com/radix_ui/status/1633483912755261443)
+* 📦 [Nodl 1.0](https://twitter.com/emilwidlund/status/1634804041397022720)
+* 📦 [Framer-Motion 10.3](https://twitter.com/mattgperry/status/1635641473319280646)
+* 🐦 [Node.jsサイトがNext.jsを使用開始](https://twitter.com/leeerob/status/1633595208448311296)
+
+<SubscribeFormEmbed />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Surveyjs - 拡張可能なJavaScript製アンケート＆フォームライブラリ](/emails/issues/136/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact\&utm_medium=referral)
+
+**[拡張可能なJavaScript製アンケート＆フォームライブラリ](https://surveyjs.io/?utm_source=thisweekinreact\&utm_medium=referral)**
+
+[SurveyJS](https://surveyjs.io/form-library?utm_source=thisweekinreact\&utm_medium=referral)は、ウェブアプリに簡単に統合できるオープンソースのJavaScriptフォームライブラリセットです。**複数のフォームを作成・実行**したり、すべての機密データを自社サーバーに保持したり、非技術者ユーザーが直接使用できる**独自のセルフホスティング型WYSIWYGフォームビルダー**を構築できます。
+
+また、**アンケート結果をカスタムダッシュボードで分析**したり、フォームをPDFに保存したり、**編集可能なPDFファイルに変換**することも可能です。**ReactとAngularレンダリングをネイティブサポート**しており、バックエンドの選択も完全に自由です。**あらゆるサーバーとデータベースの組み合わせと互換性**があります。
+
+***
+
+## 📱 React-Native {#react-native}
+
+* 📜 [React NativeでスムーズなShared Element Transitionsを構築する](https://mrousavy.com/blog/Shared-Element-Transitions-in-React-Native): Reanimated 3でのShared Element Transitionsの良い入門記事。ワークレットでトランジションをカスタマイズ可能で、シンプルかつ柔軟に使用できるようです。
+* 📜 [AndroidのCamera API](https://mrousavy.com/blog/Camera-APIs-on-Android): Marc Rousavyが、特にAndroidでのカメラ管理がなぜ複雑なのかを説明。VisionCamera v3はCamera2 APIに戻り、当面はCameraX APIを使用しない予定。
+* 📜 [Shopify Tophat - 楽しいモバイル開発者体験の創造](https://shopify.engineering/shopify-tophat-mobile-developer-testing): ShopifyはExpoの体験に近い独自のDXをモバイルアプリ向けに作成。興味深い記事ですが、React-Nativeとは完全に関連しているわけではありません。
+* 📜 [Expo - EAS BuildがiOSビルドでM1/M2をデフォルトに](https://blog.expo.dev/eas-build-will-default-to-m1-m2-for-ios-builds-24208008a68d): ExpoがApple siliconビルダーへの移行を説明。iOSのビルド時間を削減（M1で40%、M2でさらに10%）
+* 📜 [Microsoft - React Native WindowsアプリへのJestスナップショットテストの追加](https://devblogs.microsoft.com/react-native/2023-03-02-adding-snapshot-testing-to-rnw-apps/)
+* 📜 [React Native VisionCameraの使用: デモと代替手段](https://blog.logrocket.com/react-native-visioncamera-demo-alternatives/)
+* 🧑‍🎓 [Bridgingチュートリアル - React Nativeアプリで任意のプラットフォームAPIを使用する方法を学ぶ](https://mateusz1913.github.io/rnbridgingtutorial/): ネイティブモジュール作成のための包括的なリソース。
+* 🎙️ [RNR 262 - Maestro: モバイルUIテストのための絶対的ソリューション](https://reactnativeradio.com/episodes/rnr-262-maestro-the-app-solute-solution-for-mobile-ui-testing)
+* 📦 [Metro 0.76](https://github.com/facebook/metro/releases/tag/v0.76.0): Webpackから移植されたAPIで、[コード分割を可能にする](https://twitter.com/sebastienlorber/status/1635671177082417158)予定。Expo Routerで使用されます。
+* 👀 [Expo Web Global CSSサポート](https://twitter.com/Baconbrix/status/1633562265189326855)
+
+***
+
+## 🧑‍💻 Jobs {#jobs}
+
+🧑‍💼 [**Callstack - シニアReact Native開発者 - 完全リモート、B2Bで月額PLN 21-32k net**](https://www.callstack.com/senior-react-native-developer)
+
+世界で最も利用されているアプリの開発に携わりたいですか？React Nativeテクノロジーの共創に興味はありませんか？CallstackのReact & React Nativeリーダーチームに参加しましょう。詳細は当社ウェブサイトをご確認ください。あなたの応募をお待ちしています。実力を存分に発揮してください！
+
+🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\&t=ArRLC77BpRwXXCdx8fnUqw)
+
+React Nativeに特化した開発者向けに複数のポジションを開設中です！報酬は約160kドル＋10％のボーナスです。RNの実務経験があり、米国在住であることが条件です。詳細は[@gabe\_g2i](https://twitter.com/gabe_g2i)までDMでお問い合わせください。その際、「This Week in React」を見たとお伝えください。
+
+💡 [求人を掲載する方法](https://thisweekinreact.com/sponsor)
+
+***
+
+## 🔀 Other {#other}
+
+[![Rspack](/emails/issues/138/rspack.jpg)](https://www.rspack.dev/)
+
+**[Rspack](https://www.rspack.dev/)**
+
+ByteDanceによるRustベースのバンドラーの正式発表。Webpack互換でありながら大幅に高速化されています。Rspackと[Turbopack](https://twitter.com/jaredpalmer/status/1619071988181651456)（Webpackローダーのサポート予定を発表済み）の間で選択が難しくなるでしょう。[Unplugin 1.3](https://twitter.com/antfu7/status/1634517321392726017)は既にRspackをサポートしており、バンドラ非依存のプラグイン作成が可能です。現時点でUnpluginのTurbopackサポートはありませんが、近い将来実装されることを期待しています！
+
+こちらもお読みください：[Rspack：高性能と相互運用性を兼ね備えたRustベースのWebバンドラー](https://valor-software.com/press-release/rs-pack-rust-based-web-bundler)
+
+***
+
+* [Jest 29.5](https://github.com/facebook/jest/releases/tag/v29.5.0): CLI `--randomize`オプション追加
+* [CSSネスティング](https://developer.chrome.com/articles/css-nesting/): Chrome 112で実装！
+* [Proto - 次世代ツールチェーンマネージャー](https://moonrepo.dev/blog/proto): fnmやVoltaに代わるNode.jsランタイム管理ツール（それだけではありません）
+* [SPAビュートランジションがChrome 111で実装](https://developer.chrome.com/blog/spa-view-transitions-land/)
+* [TypeScriptのモジュール移行](https://devblogs.microsoft.com/typescript/typescripts-migration-to-modules/)
+* [Cloudflare Workers - Node.js互換デモ](https://twitter.com/jasnell/status/1633949738516230144)
+* [ts-reset 0.4](https://twitter.com/mattpocockuk/status/1633525273860661257)
+* [CanvasアニメーションをWeb Workerで実行する考察](https://www.macarthur.me/posts/animate-canvas-in-a-worker)
+* [過去3年間のJavaScriptとTypeScript全機能](https://betterprogramming.pub/all-javascript-and-typescript-features-of-the-last-3-years-629c57e73e42)
+* [SPAにおけるCore Web Vitals計測方法](https://estelafranco.com/blog/spa-cwv/)
+* [JavaScript Oxidation Compiler v0.1](https://github.com/Boshen/oxc)
+* [TurborepoがGoからRustに移行する理由](https://vercel.com/blog/turborepo-migration-go-rust)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/138/meme.jpg)](https://twitter.com/sebastienlorber/status/1635592966973669379)
+
+🤣 [今週の面白ツイート集](https://twitter.com/sebastienlorber/status/1635710256876777472)
+
+それではまた！ 👋

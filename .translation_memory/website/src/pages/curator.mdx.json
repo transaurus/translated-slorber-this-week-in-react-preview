@@ -1,0 +1,752 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "src/pages/curator.mdx",
+  "source_file_content_hash": "8edcf5df956b2587c16163b02d51a1331d34b345f71d40577100bcffcf375261",
+  "segments": [
+    {
+      "segment_id": "76e4a56a",
+      "source_content": "# This Week In React - Curator Job",
+      "source_content_hash": "d644d5584da594816dca0ef70c8dc00d59cfaa83c7b2528e7efde163d85edb16",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# This Week In React - キュレーターの仕事"
+      }
+    },
+    {
+      "segment_id": "faebdc62",
+      "source_content": "I initially created [This Week In React](https://thisweekinreact.com/) as a curation newsletter helping React devs stay up-to-date with ecosystem news.",
+      "source_content_hash": "97dc24c37909bf237f549573c8158b779c6b0cefcf3122aadad54f0423114a15",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "私は当初、React開発者がエコシステムの最新情報をキャッチアップできるようにするキュレーションニュースレターとして[This Week In React](https://thisweekinreact.com/)を作成しました。"
+      }
+    },
+    {
+      "segment_id": "e7ec8f99",
+      "source_content": "The long-term goal is to become a real community-driven media for React and React Native developers (similar to CSS-Tricks). I’d like it to be more than a weekly email with a list of links.",
+      "source_content_hash": "bcbeb58e8a3c63f7099ba748e355d0c2405142617311236d983507e21a4d8f4d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "長期的な目標は、ReactとReact Native開発者のための真のコミュニティ主導のメディア（CSS-Tricksのような）になることです。単なる週刊メールのリンク集以上のものにしたいと考えています。"
+      }
+    },
+    {
+      "segment_id": "6ef78e84",
+      "source_content": "To do that, I need to delegate, and would like to recruit newsletter collaborators to help me produce the weekly issues.",
+      "source_content_hash": "a6f2ec5142d85f55fe6a678f567f6327768d7b00ff4e6facb697768481a8ed68",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "そのためには委任が必要で、週刊号の制作を手伝ってくれるニュースレター協力者を募集したいと考えています。"
+      }
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "This is **real work**: you get paid, need to be **reliable**, and be willing to spend **14-18h of work on a single email**.",
+      "source_content_hash": "49ad90c12f153c0d6ae8d3feb23130db9c188bd23c6ce7f193cab7fbd955ac67",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "これは**本物の仕事**です：報酬が支払われ、**信頼性**が求められ、**1通のメールに14-18時間の作業時間**を割く意思が必要です。"
+      }
+    },
+    {
+      "segment_id": "8a5f6a7b",
+      "source_content": "## Benefits for This Week In React",
+      "source_content_hash": "f31f8d817b41b13cce2a30f455df8b221f220435e43e6413a5a40144772ff9fe",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## This Week In Reactにとってのメリット"
+      }
+    },
+    {
+      "segment_id": "180bddb1",
+      "source_content": "My main goals for this recruitment are:",
+      "source_content_hash": "8f84d1afa023cc10cd6a9f2b5a0a7ad46b955f7250653aa0f9e36c56e520dabb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "この募集における私の主な目的は："
+      }
+    },
+    {
+      "segment_id": "4269e691",
+      "source_content": "* Having a reliable a backup when I take holidays, to avoid burnout\n* Making the media look professional with 50+ issues per year\n* Making the media more community-driven\n* Making the media more diverse by rotating authors\n* Freeing up time to develop the media further\n* Ensuring the quality of the newsletter stays high",
+      "source_content_hash": "5d4978a844f3a9234e25edb548f7c44bdd0a86beddcf205eace73f8627c413ff",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* バーンアウトを避けるため、私が休暇を取る際の信頼できるバックアップを持つこと\n* 年間50号以上でメディアをプロフェッショナルに見せること\n* メディアをよりコミュニティ主導にすること\n* 著者をローテーションさせることでメディアをより多様にすること\n* メディアをさらに発展させるための時間を確保すること\n* ニュースレターの品質を高いまま維持すること"
+      }
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "I've been doing this almost alone for five years now, and what was fun at first can become a burden in the long run. I’d like to choose when I want to publish a curation newsletter, instead of being forced to. I’d like to remove myself from the equation so that the project can eventually outlive me.",
+      "source_content_hash": "b866be0e9945a0c48c51ee105c2dba436d5bc8220023785edecce1a2f9d4bec3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "私はこれをほぼ独力で5年間続けてきましたが、最初は楽しかったことも長期的には負担になる可能性があります。強制されるのではなく、キュレーションニュースレターを発行したいときに選択できるようにしたいです。プロジェクトが最終的に私を超えて存続できるように、自分自身を方程式から外したいと考えています。"
+      }
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## Benefits for our guest curators",
+      "source_content_hash": "bdf622027ac5d783bd604d517d95f4bf8792f1f4b55bf29dd30b87cbcf72cf42",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ゲストキュレーターにとってのメリット"
+      }
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "The main benefits you get:",
+      "source_content_hash": "068943f5f0bb62043e21f75404e8511d69ab87861d8e2d746b02062269882a31",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "得られる主な利点："
+      }
+    },
+    {
+      "segment_id": "1d13125b",
+      "source_content": "* Being **paid correctly** for each issue sent\n* Contributing to your **personal branding** and the **visibility** of your company ([example issue written by guest curators](https://thisweekinreact.com/newsletter/206))\n* Giving back to the community, contributing to a useful project",
+      "source_content_hash": "962ae4ee7508e431d1ea7e1311ba1de614457c8b0f2ffed4f2af44a220d4cff3",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 各号ごとに**適切な報酬**が支払われる\n* **個人ブランディング**と会社の**認知度向上**に貢献できる（[ゲストキュレーターが執筆した号の例](https://thisweekinreact.com/newsletter/206)）\n* コミュニティに還元し、有用なプロジェクトに貢献できる"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "I’m open to discuss the benefits you get if you have fancy ideas. As long as it’s a win-win.",
+      "source_content_hash": "c9d6b192f0888273ddd2050477295b5d5f150b289db5d158c75743c193d2e8c5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "斬新なアイデアがあれば、得られるメリットについて話し合うことにオープンです。ウィンウィンの関係であれば。"
+      }
+    },
+    {
+      "segment_id": "a1b3d8cb",
+      "source_content": "## The ideal candidate",
+      "source_content_hash": "81cd25795714667d90fa076a58c37818e77943fd0696189ff5ffd2879d82b1f2",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 理想的な候補者"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "I’m looking for someone who:",
+      "source_content_hash": "e0aa8ddeff13830aa854000fba2702f1302a83307fbba5ca85450e3abd697385",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "私が探しているのは："
+      }
+    },
+    {
+      "segment_id": "157151e9",
+      "source_content": "* **Takes it seriously**, is **super reliable** and willing to do that job in the **long term**.\n* Can take **full ownership** of a single email. Remember: I’ll be on holiday and will just be there to hit send! You will be on your own, in my shoes.\n* Can comment on **both React and React Native news**, and provide interesting, **senior-level insight**.\n* Can spend **\\~16h on a single email** once a month. Really, **it’s not a joke**, you can’t do that as a side project and need to **schedule that time** on your agenda.\n* Can follow my curation process to find interesting links through various sources (RSS, X, organic…)\n* Read the newsletter regularly, and understand the target audience.\n* Can follow my editorial line and formatting guides.\n* Can communicate properly and simply in English, but it doesn’t need to be perfect and you can use LLMs if you want. I’m not a native speaker and it’s ok.",
+      "source_content_hash": "09776eea5a8095596b1a5ffd7d97163085b0abaafa4ec47d43b9440864f3826c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* **真剣に取り組み**、**非常に信頼でき**、**長期的**にこの仕事をする意思がある人\n* 単一のメールに**完全な責任**を持てる人。覚えておいてください：私は休暇中で、送信ボタンを押すだけの存在です！あなたは独りで、私の立場に立つことになります。\n* **ReactとReact Nativeの両方のニュース**についてコメントでき、興味深い**上級者レベルの洞察**を提供できる人\n* 月に1回、**1通のメールに約16時間**を費やせる人。本当に**冗談ではありません**、これは副業としてできるものではなく、スケジュールに**その時間を確保**する必要があります。\n* 様々なソース（RSS、X、有機的...）から興味深いリンクを見つけるための私のキュレーションプロセスに従える人\n* ニュースレターを定期的に読み、対象読者を理解している人\n* 私の編集方針とフォーマットガイドに従える人\n* 英語で適切かつ簡潔にコミュニケーションを取れる人（完璧である必要はなく、必要に応じてLLMを使用しても構いません）。私はネイティブスピーカーではないので問題ありません。"
+      }
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "Yes, I’m looking for a 5-legged sheep 😅",
+      "source_content_hash": "d37cf8b5ee9b27a21bed949ab97ddee94c953b5cc9bf68bafb4398d97397319e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "はい、私は5本足の羊を探しているようなものです😅"
+      }
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "The ideal candidate might not be a single person, but a React service company providing a duo of contributors. The advantages for me:",
+      "source_content_hash": "54cd5fbba36814f2513d02437888485891676488f3dd043d9fe47e1c2105442a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "理想的な候補者は単一の人物ではなく、貢献者を2人提供できるReactサービス会社かもしれません。私にとっての利点："
+      }
+    },
+    {
+      "segment_id": "ddd2c7ae",
+      "source_content": "* They usually take it seriously, with a long-term marketing vision.\n* They know how to manage developers and book the appropriate time in their agendas.\n* They can take ownership of an issue and care about their reputation.\n* They can provide a stable duo with distinct expertise to cover both React web and React Native\n* They can find a backup in case one of them takes holidays or doesn’t want to contribute anymore",
+      "source_content_hash": "cd5b2b83da6f8bd9d4900ee1e36701b56b4abc466e20b5ab11b281c64345022e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 彼らは通常、長期的なマーケティングビジョンを持って真剣に取り組みます。\n* 開発者を管理し、スケジュールに適切な時間を確保する方法を知っています。\n* 号の責任を持ち、自社の評判を気にします。\n* React WebとReact Nativeの両方をカバーする異なる専門知識を持つ安定したデュオを提供できます。\n* 休暇を取ったり、貢献をやめたりした場合のバックアップを見つけることができます。"
+      }
+    },
+    {
+      "segment_id": "4d52a261",
+      "source_content": "I remain open to individual contributors, but I believe companies are a better fit. I already work with [Theodo Apps](https://apps.theodo.com/) successfully ([example](https://thisweekinreact.com/newsletter/206)).",
+      "source_content_hash": "76d470b5dd9a5864c9e1696176de4e97d70ea54be77be872bb4c5febaaf45d85",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "個人の貢献者にもオープンですが、企業の方が適していると考えています。私はすでに[Theodo Apps](https://apps.theodo.com/)と成功裏に協力しています（[例](https://thisweekinreact.com/newsletter/206)）。"
+      }
+    },
+    {
+      "segment_id": "7283cdac",
+      "source_content": "## Onboarding",
+      "source_content_hash": "7ca9c2b308e2b3dbec0c41c9fad93c1e620158baec10d0f6d09caef6a89af858",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## オンボーディング"
+      }
+    },
+    {
+      "segment_id": "1131ef75",
+      "source_content": "So far, the onboarding has been:",
+      "source_content_hash": "6c6e67aa219552307c08d566e448924e4b4b763e74885a476d462e2aa589d4fd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "これまでのところ、オンボーディングは以下の通りです："
+      }
+    },
+    {
+      "segment_id": "ea0c7bae",
+      "source_content": "* You introduce yourself (or your company’s employees), explain why you think you are a good fit.\n* We run a test (paid), and assign you 2 test issues on our [newsletter calendar](https://thisweekinreact.com/calendar), weeks in advance.\n* We do an onboarding call so that I can explain the process .\n* I give you access to my curation tools to source links (RSS reader).\n* We work collaboratively on the 1st test issue so that you get used to the process and understand the subtleties.\n* You take full ownership of the 2nd test issue. I’ll answer questions and provide feedback, but you’ll do the majority of the work in autonomy.\n* We review the work. It will never be perfect, but If I’m not ashamed of the email we sent, then it’s working and likely to improve in the future.\n* We can define other dates you take ownership of.",
+      "source_content_hash": "a14ed93918bd8196c6c962a7f8bcc91b6ccf0afa3f5d2cfbb1b5b9bd3b8dbf58",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 自己紹介（または所属企業の従業員紹介）を行い、なぜ適任だと思うかを説明する。\n* 有償のテストを実施し、事前に[ニュースレターカレンダー](https://thisweekinreact.com/calendar)から2回分のテスト発行を割り当てる。\n* オンboarding通話を行い、プロセスを説明する。\n* リンク収集用のキュレーションツール（RSSリーダー）へのアクセス権を付与する。\n* 1回目のテスト発行では共同作業を行い、プロセスと細かなニュアンスを理解してもらう。\n* 2回目のテスト発行では完全なオーナーシップを委譲。質問への回答とフィードバックは行うが、大部分を自律的に作業する。\n* 作業内容をレビュー。完璧ではないが、送信するメールに恥ずかしさを感じなければ成功で、今後改善が見込める。\n* 他の担当日を定義可能。"
+      }
+    },
+    {
+      "segment_id": "047c2395",
+      "source_content": "## The process",
+      "source_content_hash": "da5d82935e1959f53df2180c247f5081ce2b2fd3eac48b00d2166f59fb961993",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## プロセス"
+      }
+    },
+    {
+      "segment_id": "883231d4",
+      "source_content": "**TLDR**: the newsletter curation process usually starts on Mondays, and we send the newsletter on Wednesdays evening (\\~17h UTC - \\~9am PST). You have the responsibility to ensure that the email is 100% ready to be sent on Wednesday. Usually, it takes \\~16h of work in total, that you can eventually parallelize between 2 devs.",
+      "source_content_hash": "395c89c5fe719e2b9582ea1addf3b979c70165632c091f9931e155d1ebba4054",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**要約**: ニュースレターのキュレーションプロセスは通常月曜日に開始し、水曜日夕方（~17時UTC/~9時PST）に送信。水曜日までにメールが100%完成している責任を負う。総作業時間は約16時間で、2名の開発者間で並行化可能。"
+      }
+    },
+    {
+      "segment_id": "6cc549f2",
+      "source_content": "**Main steps:**",
+      "source_content_hash": "ad683be1afdf35cf37092fc0dd5c193a3619874f24a5aafe2793bad56d30432b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**主要ステップ:**"
+      }
+    },
+    {
+      "segment_id": "6384b3d4",
+      "source_content": "* Planning weeks in advance the issues you’ll take ownership of\n* Sourcing roughly interesting links on X, RSS, web and organic sources\n* Adding those links to a collaborative Google Docs\n* Reviewing these links, formatting them and filtering uninteresting ones\n* Commenting the most interesting links\n* Selecting headlines\n* Selecting a meme, preferably related to the news\n* Creating a title with React / RN keywords\n* Creating an intro text\n* Converting to MDX\n* Pushing to Git and publishing the online version\n* Helping spread the word about the newsletter on social platforms",
+      "source_content_hash": "6bb68cc0e27586b08146faeb686c770e0c83ed4a6234feca8784070f52af0d88",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 数週間前に担当号を計画\n* X、RSS、ウェブ、有機的ソースからおおよその興味深いリンクを収集\n* これらのリンクを共同編集可能なGoogleドキュメントに追加\n* リンクをレビューし、フォーマット調整と不要なものの選別\n* 特に興味深いリンクへのコメント付与\n* 見出し記事の選定\n* ニュースに関連したミームの選定（可能であれば）\n* React/RNキーワードを含むタイトル作成\n* イントロテキストの作成\n* MDX形式への変換\n* Gitへのプッシュとオンライン版の公開\n* SNSでのニュースレター宣伝協力"
+      }
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "**This remains under my responsibility:**",
+      "source_content_hash": "9a0db69af124bc900f95a693f40e297b2c848c0dbac4f450e78b1eb13fd31d75",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**私が責任を保持する部分:**"
+      }
+    },
+    {
+      "segment_id": "d0b8a6db",
+      "source_content": "* Managing newsletter sponsors and ad placements\n* Converting the web newsletter to the email version and hitting send",
+      "source_content_hash": "0d47499061c3bf61cac976df5599265f35e3ccdcfa39b0115be42cf264648323",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* ニュースレタースポンサーと広告配置の管理\n* ウェブ版からメール版への変換と送信実行"
+      }
+    },
+    {
+      "segment_id": "a311e967",
+      "source_content": "**To be defined:**",
+      "source_content_hash": "b409621d8cf38b27d1bb1677a29a1430f112ffcd45153b93dcb4aa83942239fd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**要調整事項:**"
+      }
+    },
+    {
+      "segment_id": "cfea4c31",
+      "source_content": "* Publishing a X thread or an article\n* Publishing on Bluesky, Reddit, LinkedIn and other platforms",
+      "source_content_hash": "e025b319c9767ee4a52580ef09493678c665da7134aa57b8fc620364f02bca96",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* X（旧Twitter）スレッドまたは記事の公開\n* Bluesky、Reddit、LinkedIn等への投稿"
+      }
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "Months in advance, we look at the [newsletter public calendar](https://thisweekinreact.com/calendar) to define which dates you will contribute to.\nOnce we decide on a date, you become the planned author of this newsletter, and you **must book \\~2 days of work** in your calendar to work on it.",
+      "source_content_hash": "d8c6a89f6eeeb149dbcc4d116d5af89aa94147e489bbbcd6f4cead1204ad7a32",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "数ヶ月前に[公開カレンダー](https://thisweekinreact.com/calendar)を確認し、担当日を決定。日付が決まると、あなたがその号の予定著者となり、**約2日分の作業時間**をカレンダーに確保する必要がある。"
+      }
+    },
+    {
+      "segment_id": "71169a2d",
+      "source_content": "## Curation process",
+      "source_content_hash": "23830157d10de19a02f841043565888a8e4520580ce1920947a939af4c0bcbb1",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## キュレーションプロセス"
+      }
+    },
+    {
+      "segment_id": "c1eaf30b",
+      "source_content": "The sourcing process is quite predictable:",
+      "source_content_hash": "7bb1f7663fd2d78572e3b4c5e8bc5ecd9846159d73eac3d071f46a585d23e2c2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "情報収集プロセスは比較的予測可能:"
+      }
+    },
+    {
+      "segment_id": "7a3b7c62",
+      "source_content": "* Scroll the last 7 days on this [X chronological timeline](https://slo.im/x/feed) (bookmark the redirect `https://slo.im/x/feed`)\n* Get access to my 500+ RSS feeds to monitor",
+      "source_content_hash": "f491610efc7873245e102b14b7f7d45df21ef3ba55f33cdd65da635800217a3f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* この[X時系列タイムライン](https://slo.im/x/feed)で過去7日間をスクロール（リダイレクト`https://slo.im/x/feed`をブックマーク推奨）\n* 500以上のRSSフィードへのアクセス権取得"
+      }
+    },
+    {
+      "segment_id": "7bc8bb24",
+      "source_content": "You can also find interesting things your own way, organically or predictably, and help me refine this process over time. If you find interesting sources that we don’t track yet, we need to start tracking them.",
+      "source_content_hash": "0e33d2a3455a22a4c5cae07e566b12cbf3b0e8a9885bc3126a0a2dec31b60024",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "独自の方法（有機的または体系的）で興味深い情報を発見することも可能。未追跡の有益な情報源を見つけた場合、追跡を開始する必要がある。"
+      }
+    },
+    {
+      "segment_id": "8574d51c",
+      "source_content": "## Editorial line",
+      "source_content_hash": "43c0ac2cc215f1e83e5282e8526b8c08adc89a6d8ceca437f4625955dc813725",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 編集方針"
+      }
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "**General idea:**",
+      "source_content_hash": "8f1bb5f0d48fb4b451e7cfd7bd05bc0dba47b957692a06bd9a6a1eaed1c07772",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**基本理念:**"
+      }
+    },
+    {
+      "segment_id": "2890f5b2",
+      "source_content": "* For **mid/senior React and React Native dev**, but not limited to React links.\n* **Fresh content**. 1 month is old already, we probably already covered it.\n* **Weak signals** to understand what the future will look like.\n* **Event-driven content**, such as a new release, a new project, a new docs page.\n* Be the **pulse of the ecosystem** instead of being a discovery tool for all the React npm packages.",
+      "source_content_hash": "eed879435c9ddbfd6cbc9ae1e5deda5748476f1f7398f7b2cfeb2ff01345c6e3",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* **中級/上級React・React Native開発者**向けだが、React関連以外のリンクも含む。\n* **新鮮なコンテンツ**。1ヶ月前の情報は既に古く、既にカバー済みの可能性。\n* 未来の動向を理解するための**弱いシグナル**。\n* 新リリース、新プロジェクト、新ドキュメントページなどの**イベント駆動型コンテンツ**。\n* React npmパッケージの探索ツールではなく、**エコシステムの脈動**を伝える。"
+      }
+    },
+    {
+      "segment_id": "a6c928a1",
+      "source_content": "**What to prefer:**",
+      "source_content_hash": "2aaf0fe40f7577c4831cffa9e9fa6e476ba71569eaffc3743f9651d8b45ddf5e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**優先すべき内容:**"
+      }
+    },
+    {
+      "segment_id": "82abb0a4",
+      "source_content": "* Content focusing on a **single idea** explaining a concept in **depth**.\n* Content focusing on **React core techniques**, broadly applicable by a large audience.\n* Content presenting **novel**, **innovative** or **underrated** techniques.\n* Content covering **niche topics** and **weak signals** when presented well or impactful.\n* Content with **outstanding presentation effort** and great **reading experience** such as interactive articles.",
+      "source_content_hash": "6cea4477b369e14d327cc3cf70b2957972b385bb0018b5b2e5d8171818e509e4",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* **単一のアイデア**に焦点を当て、概念を**深く**解説するコンテンツ。\n* **Reactコア技術**に焦点を当て、広範な開発者層に適用可能な内容。\n* **斬新的**、**革新的**、または**過小評価されている**技術を紹介するコンテンツ。\n* 適切に提示され影響力のある**ニッチトピック**や**弱いシグナル**を扱うコンテンツ。\n* インタラクティブ記事など、**卓越したプレゼンテーション**と優れた**読了体験**を提供するコンテンツ。"
+      }
+    },
+    {
+      "segment_id": "53aa2b95",
+      "source_content": "**What to avoid:**",
+      "source_content_hash": "47ad408da8f75d13f77745f0dd56c4ecbff560b2dcc38c0eb349b2a7b026087c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**避けるべき内容:**"
+      }
+    },
+    {
+      "segment_id": "d8460b5b",
+      "source_content": "* Filter content produced by AI, for obvious SEO reasons, listicles, and other low-quality articles.\n* Filter content behind a paywall, requiring auth or having a bad reading UX.\n* Filter content for junior developers, basic 101s, step-by-step tutorials, paraphrasing official documentations with no added value.\n* Filter content teaching how to use a paid product (we have sponsorships for that), unless it is not too promotional and teaches something valuable about React core along the way.\n* Filter most UI libs and boilerplates, There simply are too many. The exception is when they prove high traction, a long-term maintenance commitment or come from an authority. We don’t cover “launches” for these but might cover v10 once it becomes mainstream and has proven its value to the community.\n* Filter weak signals that are too weak: if you don’t even understand it, can’t explain its impact with simple words, or think only a dozen people will benefit from a link, maybe it’s too soon, or not worth including that link.\n* Avoid X/Twitter thread/conversation links whenever possible: they require signups. Prefer external links. Eventually, individual tweets are fine if they contain all the information, a link, or a video demo.",
+      "source_content_hash": "004ee33d35a0c8581226c56616ddd0c3b7a4585783789450c75a1ddbab96aca5",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* AI生成コンテンツ、明らかなSEO目的の記事、リスト形式の低品質記事は除外する。\n* ペイウォールの裏にあるコンテンツ、認証が必要なもの、読みにくいユーザー体験を提供するコンテンツは除外する。\n* 初心者向けの基本的な内容、ステップバイステップのチュートリアル、公式ドキュメントの言い換えにすぎない付加価値のないコンテンツは除外する。\n* 有料製品の使い方を教えるコンテンツ（そのためにはスポンサーシップがある）は除外する。ただし、Reactのコアについて価値ある内容を教えつつ、過度に宣伝的でない場合は例外とする。\n* ほとんどのUIライブラリやボイラープレートは除外する。数が多すぎるため。例外は、高い注目を集めている、長期的なメンテナンスが約束されている、または権威あるソースから提供されている場合。これらの「ローンチ」はカバーしないが、v10など主流になりコミュニティに価値を証明した場合は取り上げる。\n* 弱すぎる弱シグナル: 理解できない、簡単な言葉で影響を説明できない、またはごく少数の人しか恩恵を受けられないと思われるリンクは時期尚早か、含める価値がない可能性がある。\n* X/Twitterのスレッドや会話のリンクは可能な限り避ける: サインアップが必要。外部リンクを優先する。ただし、すべての情報やリンク、動画デモを含む個別のツイートは問題ない。"
+      }
+    },
+    {
+      "segment_id": "bb1346b6",
+      "source_content": "Exceptions can always be made for content with an outstanding presentation effort. An interactive article explaining basic React concepts is fine for example: it’s a great resource our target audience (senior devs) might share with their junior colleagues.",
+      "source_content_hash": "aa7e2b66ef7663982ca377ac4a04bd576599454d89bd12be51a2a205f892224c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "例外的に、優れたプレゼンテーション努力があるコンテンツは常に考慮される。例えば、基本的なReactの概念を説明するインタラクティブ記事は問題ない: これは上級開発者（ターゲットオーディエンス）がジュニアの同僚と共有するのに適した優れたリソースである。"
+      }
+    },
+    {
+      "segment_id": "734d40d8",
+      "source_content": "## Content",
+      "source_content_hash": "8a7454c28fea26099276cbed1827658cd2a47942d6ef32e76e645c81358bf357",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## コンテンツ"
+      }
+    },
+    {
+      "segment_id": "9e90a9b3",
+      "source_content": "The newsletter contains a lot of links, because the React ecosystem is thriving.\nInstead of filtering links more aggressively, we optimize for providing a good reading experience despite the information density.\nThe content should be consistent, easy to scan, and information should be “inlined” whenever possible.\nWe don't want to bait someone into clicking on a link and then disappoint them.\nReading the newsletter should provide value despite not clicking a single link.",
+      "source_content_hash": "effc7bf887306e9f58c8ebdd3d5521b78da96da066c30754cf8642d12f5481da",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ニュースレターには多くのリンクが含まれる。Reactエコシステムが活発なためである。\nリンクをさらに厳選する代わりに、情報密度が高くても読みやすい体験を提供するよう最適化する。\nコンテンツは一貫性があり、スキャンしやすく、可能な限り情報を「インライン化」する必要がある。\nリンクをクリックさせてがっかりさせるようなことは避けたい。\nニュースレターを読むだけで、リンクをクリックしなくても価値を提供できるようにする。"
+      }
+    },
+    {
+      "segment_id": "3cd8185f",
+      "source_content": "### Sections",
+      "source_content_hash": "a2f0ac7e53340af5c96964e983ccdfda96baf0a41dbb372942e5c1ab22ab2bf7",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### セクション"
+      }
+    },
+    {
+      "segment_id": "3e8f45da",
+      "source_content": "The newsletter has 5 main sections:",
+      "source_content_hash": "3ca82f69fd3bfbd57f08c6da56a87590b8d88bc648afd36e26f4d124d50b4909",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ニュースレターには5つの主要セクションがある:"
+      }
+    },
+    {
+      "segment_id": "1852dfef",
+      "source_content": "* Intro: a small recap of the news\n* React: for content relevant to all React devs, and React web devs\n* React Native: for content relevant to React Native devs\n* Other: for content relevant to a broader JS audience, including TS, CSS, TC39, HTML, tooling and more\n* Fun: 1-3 memes or fun screenshots, preferably related to React (private joke) and the news of the current week.",
+      "source_content_hash": "b7f6b8f132810257fb268e5933a865b95c578614c5fe542803213cf21d598fb5",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* イントロ: ニュースの簡単なまとめ\n* React: すべてのReact開発者、特にReact Web開発者に関連するコンテンツ\n* React Native: React Native開発者に関連するコンテンツ\n* その他: TypeScript、CSS、TC39、HTML、ツーリングなど、より広範なJSオーディエンスに関連するコンテンツ\n* 楽しみ: 1-3つのミームまたは面白いスクリーンショット。Reactに関連するもの（内部ジョーク）や今週のニュースが好ましい。"
+      }
+    },
+    {
+      "segment_id": "3c6dd548",
+      "source_content": "### Headlines",
+      "source_content_hash": "690b8cbd3579b5721bed201f4e9b52a2b01cacd453bb0d59169c3e6b48e9a937",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 見出し"
+      }
+    },
+    {
+      "segment_id": "6f08f877",
+      "source_content": "We usually pick:",
+      "source_content_hash": "2ae87e878d9cd3639bd2992fcd58d40c24bfeb1f26e6fa2f3ab52cba75a95615",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "通常、以下のように選ぶ:"
+      }
+    },
+    {
+      "segment_id": "25215977",
+      "source_content": "* 1 React headline\n* 1 React Native headline",
+      "source_content_hash": "cc9341db3902e78f490f3533461bb5012c09aaf5e55b028d755bf5839cd97c54",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* Reactの見出し1つ\n* React Nativeの見出し1つ"
+      }
+    },
+    {
+      "segment_id": "fd7ed056",
+      "source_content": "Each headline usually has a top banner image.\nIt’s preferable to pick one that represents something meaningful visually (such as a code screenshot) but a beautiful social card is ok too.",
+      "source_content_hash": "67b9164aa3dc56afe2e998eb3de1f910e898b05c5761810e2002cad2082101e6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "各見出しには通常、トップバナー画像がある。\n視覚的に意味のあるもの（コードのスクリーンショットなど）を選ぶのが好ましいが、美しいソーシャルカードでも構わない。"
+      }
+    },
+    {
+      "segment_id": "827eb9a3",
+      "source_content": "Sometimes there is no clear headline for a section, sometimes there are 2.\nSometimes we pick a headline for the Other section.",
+      "source_content_hash": "0a690fa128c67b3954c3ac683724d281dee56a62c3515efdcbea55b6c30012ca",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "セクションに明確な見出しがない場合や2つある場合もある。\n「その他」セクションの見出しを選ぶこともある。"
+      }
+    },
+    {
+      "segment_id": "191265da",
+      "source_content": "### Formatting",
+      "source_content_hash": "0f5872898578063512b09f4bf45f170b75718ebd86480f8e81b40a56711ba1ed",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### フォーマット"
+      }
+    },
+    {
+      "segment_id": "85ea22dd",
+      "source_content": "All links usually follow the following convention for most links:",
+      "source_content_hash": "68e46e34e38d5932c97e69822172dd00993505f32e6a74aa1a172f4d120cb46b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ほとんどのリンクは以下の規則に従う:"
+      }
+    },
+    {
+      "segment_id": "db79148c",
+      "source_content": "* \\<Emoji> [Link title](https://example.com): Optional subjective comment.",
+      "source_content_hash": "1be014ba8ab9ae70bde30a288d98ee46105c0b00c89bda95e6d4f9f965745fbf",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* \\<絵文字> [リンクタイトル](https://example.com): 任意の主観的なコメント。"
+      }
+    },
+    {
+      "segment_id": "674abb31",
+      "source_content": "If a title is too long, click-baity or weirdly capitalized, feel free to refactor it so that all titles are relatively consistent.",
+      "source_content_hash": "f7b024b02dff7a41be0ee31414acc454c6e67b571ae38767bd047867095f710c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "タイトルが長すぎる、クリックベイト的、または大文字小文字が不自然な場合は、すべてのタイトルが一貫性を持つようにリファクタリングしても構わない。"
+      }
+    },
+    {
+      "segment_id": "9ef42155",
+      "source_content": "For releases, we drop the “v” and the patch number (3.1, not v3.1.9). Include the major release highlight keywords directly in the link, separated with a dash `-`. Don’t include a release if there’s nothing interesting to highlight, which is often the case for patch releases. What’s “inside” the link is the “objective” part (the highlights), what’s “outside” is your subjective comment (if any). Examples:",
+      "source_content_hash": "a3529a0c13e9f9f41f5df5147d78412c862c0cce5730b9f549124fb71e7a34db",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "リリースの場合、「v」とパッチ番号を省略する（3.1、v3.1.9ではない）。主要リリースのハイライトキーワードを直接リンクに含め、ダッシュ「-」で区切る。ハイライトする内容がないパッチリリースは含めないことが多い。リンクの「中身」は「客観的」な部分（ハイライト）、「外側」は主観的なコメント（ある場合）。例:"
+      }
+    },
+    {
+      "segment_id": "d0f2205c",
+      "source_content": "* 📦 [Astro 5.2 - Tailwind 4 support, trailing slash redirects, option to disable React streaming](https://astro.build/blog/astro-520/): Streaming might be incompatible with runtime CSS-in-JS libraries.\n* 📦 [Nextra 4.0 - Now using App Router](https://the-guild.dev/blog/nextra-4)\n* 📦 [React Scan 0.1.2 - Re-render history, components tree](https://github.com/aidenybai/react-scan/releases/tag/v0.1.2)",
+      "source_content_hash": "224bd95323d433aaad2e22cc47f5395921c64de7dad46841fdf4700b4432a2fd",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📦 [Astro 5.2 - Tailwind 4サポート、末尾スラッシュリダイレクト、Reactストリーミング無効化オプション](https://astro.build/blog/astro-520/): ストリーミングはランタイムCSS-in-JSライブラリと互換性がない可能性があります。\n* 📦 [Nextra 4.0 - App Routerを採用](https://the-guild.dev/blog/nextra-4)\n* 📦 [React Scan 0.1.2 - 再レンダー履歴、コンポーネントツリー](https://github.com/aidenybai/react-scan/releases/tag/v0.1.2)"
+      }
+    },
+    {
+      "segment_id": "5cf1bce4",
+      "source_content": "If it’s a rather new project featured for the first time, you can avoid the version number, and replace keywords by an objective project description (inspired by GitHub repo description, landing page, SEO tags):",
+      "source_content_hash": "fffcbc935da39ad08aa00bb76e3ee90fd7958b2f45b072c05ad7b4d59cb35f2d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "初めて紹介する比較的新しいプロジェクトの場合、バージョン番号を省略し、キーワードをGitHubリポジトリの説明やランディングページ、SEOタグからインスパイアされた客観的なプロジェクト説明に置き換えることができます："
+      }
+    },
+    {
+      "segment_id": "92dd525e",
+      "source_content": "* 📦 [Polygen - Run WebAssembly modules in your apps, statically, without interpreting](https://github.com/callstackincubator/polygen): This Callstack package in preview converts Wasm to C and then call it through JSI to deliver great performance.\n* 📦 [React Three Handles](https://pmndrs.github.io/xr/docs/handles/introduction): A new convenient package to build React XR interactions.\n* 📦 [mdx-prompt - Composable LLM Prompts with JSX](https://edspencer.net/2025/2/3/mdx-prompt-composable-prompts-with-jsx)",
+      "source_content_hash": "b9204bdd10ffad1106e64c14548d879d004a82be75856ce0021b27d8871ea3e1",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📦 [Polygen - WebAssemblyモジュールを静的に、解釈せずにアプリ内で実行](https://github.com/callstackincubator/polygen): Callstackのプレビュー版パッケージで、WasmをCに変換しJSI経由で呼び出すことで優れたパフォーマンスを実現。\n* 📦 [React Three Handles](https://pmndrs.github.io/xr/docs/handles/introduction): React XRインタラクションを構築するための便利な新パッケージ。\n* 📦 [mdx-prompt - JSXで構成可能なLLMプロンプト](https://edspencer.net/2025/2/3/mdx-prompt-composable-prompts-with-jsx)"
+      }
+    },
+    {
+      "segment_id": "b27c61de",
+      "source_content": "Here’s the emoji palette we generally use",
+      "source_content_hash": "530ea6f7fc5626866727484916c44539ff00182d0b68db9915ecf27a704aa0ad",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "以下は一般的に使用する絵文字パレットです："
+      }
+    },
+    {
+      "segment_id": "e612e1d0",
+      "source_content": "* 💸: sponsors\n* 👀: preview, PR, weak signals\n* 💬: RFC, community discussion\n* 📊: survey, benchmark\n* 💡: interesting idea\n* 📖: docs\n* 🦋: Bluesky links\n* 🐦: Twitter/X links (avoid if possible)\n* 🎨: visual demos (posted outside X)\n* 📅: events, conference partnerships\n* 📜: articles\n* 📦: releases, npm packages plugins, repositories\n* 🔗: resources\n* 🎥: videos\n* 🎙️: podcasts",
+      "source_content_hash": "f26944d6c334ccde37af3367ecfdf3962ec25d1530e52e4e75010f6a25f79daf",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸: スポンサー\n* 👀: プレビュー、PR、弱いシグナル\n* 💬: RFC、コミュニティディスカッション\n* 📊: 調査、ベンチマーク\n* 💡: 興味深いアイデア\n* 📖: ドキュメント\n* 🦋: Blueskyリンク\n* 🐦: Twitter/Xリンク（可能なら避ける）\n* 🎨: ビジュアルデモ（X以外で投稿）\n* 📅: イベント、カンファレンスパートナーシップ\n* 📜: 記事\n* 📦: リリース、npmパッケージ、プラグイン、リポジトリ\n* 🔗: リソース\n* 🎥: 動画\n* 🎙️: ポッドキャスト"
+      }
+    },
+    {
+      "segment_id": "1f9058cd",
+      "source_content": "We usually respect more or less this “emoji ordering”, leading to a consistent reading order:",
+      "source_content_hash": "0d86a8870298d58406877be3c05c3741bbe0d42fe52f7455d81588cf20a8a432",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "通常、この「絵文字の順序」をほぼ尊重し、一貫した読み順を実現します："
+      }
+    },
+    {
+      "segment_id": "fc1505a1",
+      "source_content": "* headlines\n* weak signals\n* community articles\n* media resources",
+      "source_content_hash": "7f70f8d9b22916a2d63881e6ed99fe56046e16f753570101314dea146ae02ab3",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* ヘッドライン\n* 弱いシグナル\n* コミュニティ記事\n* メディアリソース"
+      }
+    },
+    {
+      "segment_id": "c277c3c0",
+      "source_content": "Example:",
+      "source_content_hash": "872887e563e75957ffc20b021332504f2ddd0a8f3964cb93070863bfaf13cdad",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "例："
+      }
+    },
+    {
+      "segment_id": "4fbee4f2",
+      "source_content": "* 💸 [Add a collaborative document editor to your app](https://convex.link/0dtC5qE)\n* 👀 [Remix PR - Split Route Modules](https://github.com/remix-run/react-router/pull/11871): Introduce new `future.unstable_splitRouteModules` flag so that the route component and its clientLoader can be downloaded in parallel instead of sequentially.\n* 🗓️ [Paris TypeScript La Conf'](https://la-conf.typescript.paris/?utm_source=thisweekinreact) - 🇫🇷 Paris - 28 February - Last call to join the first ever TypeScript conference in the heart of Paris! Get 20% off tickets with code \"TWIR\"!\n* 📖 [Integrate Motion with Radix](https://motion.dev/docs/radix): New docs page presenting integration examples for exit and layout animations.\n* 📜 [Single Responsibility Principle in React: The Art of Component Focus](https://cekrem.github.io/posts/single-responsibility-principle-in-react/): I agree with this practice of designing your React app in “layers”.\n* 📜 [Persisting Form Data in React: A Modern Approach with Nuqs](https://armand-salle.fr/post/persisting-form-data-in-react-a-modern-approach-with-nuqs/): Introduces a convenient lib to use search parameters in a typesafe way with integrations for Next.js and React Router.\n* 📦 [Astro 5.2 - Tailwind 4 support, trailing slash redirects, option to disable React streaming](https://astro.build/blog/astro-520/): Streaming might be incompatible with runtime CSS-in-JS libraries.\n* 📦 [React Scan 0.1.2 - Re-render history, components tree](https://github.com/aidenybai/react-scan/releases/tag/v0.1.2)\n* 🎥 [Theo - Create React App is finally dead](https://www.youtube.com/watch?v=aujVi7ipkfM)\n* 🎥 [Jack Herrington - Stop Using Recoil, Use This Instead!](https://www.youtube.com/watch?v=QepeuHTxiLo)\n* 🎙️ [This Month in React 2025-01 - Movement on CRA, Redwood.js dead?](https://open.spotify.com/episode/45LTSjvCA5k5YAC7EM4ixk)",
+      "source_content_hash": "3a9fdddd3c4aad1ca870211dd62e5f003a10e3ae50e85771245c1a1b2c778400",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [アプリにコラボレーティブドキュメントエディタを追加](https://convex.link/0dtC5qE)\n* 👀 [Remix PR - ルートモジュールの分割](https://github.com/remix-run/react-router/pull/11871): 新しい `future.unstable_splitRouteModules` フラグを導入し、ルートコンポーネントとその clientLoader を逐次ではなく並列でダウンロードできるようにします。\n* 🗓️ [Paris TypeScript La Conf'](https://la-conf.typescript.paris/?utm_source=thisweekinreact) - 🇫🇷 パリ - 2月28日 - パリ中心部で開催される初のTypeScriptカンファレンスに参加する最後のチャンス！「TWIR」コードでチケットを20%オフ！\n* 📖 [MotionとRadixの統合](https://motion.dev/docs/radix): 終了アニメーションとレイアウトアニメーションの統合例を紹介する新しいドキュメントページ。\n* 📜 [Reactにおける単一責任の原則: コンポーネントの焦点を絞る技術](https://cekrem.github.io/posts/single-responsibility-principle-in-react/): Reactアプリを「レイヤー」で設計するこのプラクティスに同意します。\n* 📜 [Reactでのフォームデータ永続化: Nuqsを使ったモダンなアプローチ](https://armand-salle.fr/post/persisting-form-data-in-react-a-modern-approach-with-nuqs/): Next.jsとReact Router向けの統合を備え、型安全な方法で検索パラメータを使用できる便利なライブラリを紹介。\n* 📦 [Astro 5.2 - Tailwind 4サポート、末尾スラッシュリダイレクト、Reactストリーミング無効化オプション](https://astro.build/blog/astro-520/): ストリーミングはランタイムCSS-in-JSライブラリと互換性がない可能性があります。\n* 📦 [React Scan 0.1.2 - 再レンダー履歴、コンポーネントツリー](https://github.com/aidenybai/react-scan/releases/tag/v0.1.2)\n* 🎥 [Theo - Create React Appがついに終了](https://www.youtube.com/watch?v=aujVi7ipkfM)\n* 🎥 [Jack Herrington - Recoilの使用をやめて、代わりにこれを使おう！](https://www.youtube.com/watch?v=QepeuHTxiLo)\n* 🎙️ [This Month in React 2025-01 - CRAの動向、Redwood.jsは終了？](https://open.spotify.com/episode/45LTSjvCA5k5YAC7EM4ixk)"
+      }
+    },
+    {
+      "segment_id": "c0f80a50",
+      "source_content": "### Comments",
+      "source_content_hash": "f78e23e1f1748669cfccf80c1aa5c949980fbd23ee608857917de5a5489ce1b3",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### コメント"
+      }
+    },
+    {
+      "segment_id": "d73903fc",
+      "source_content": "Some general rules to follow:",
+      "source_content_hash": "e52c91308e87b3e65bf55ca32703261f633ca83a31eea1616704222f22e9fe28",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "一般的に従うべきルール:"
+      }
+    },
+    {
+      "segment_id": "9ffdd332",
+      "source_content": "* It’s not needed to comment on everything.\n* For a given emoji, what we comment usually appears first.\n* It's better not to comment on something than to make the wrong comment.\n* Comments have to be concise and to the point.\n* Use a simple language.\n* Don’t add useless fluff words.",
+      "source_content_hash": "35fcee493e5f00b0610ad0db883b764619763282e627f93046e600e4a028ba7f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* すべてにコメントする必要はありません。\n* 特定の絵文字に対して、コメントする内容は通常最初に表示されます。\n* 誤ったコメントをするよりは、コメントしない方が良いです。\n* コメントは簡潔で要点を押さえたものにします。\n* シンプルな言語を使用します。\n* 不要な飾り言葉は追加しないでください。"
+      }
+    },
+    {
+      "segment_id": "5f4381f8",
+      "source_content": "## Conclusion",
+      "source_content_hash": "be031d37bb75d96ef08ca9ec5b0e83bb6f91172f60d3c31a78feae8d7dc4a0b0",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 結論"
+      }
+    },
+    {
+      "segment_id": "80dbdeb8",
+      "source_content": "Yes, this is a serious job that takes a lot of time.\nI hope you’ll be interested to help me!",
+      "source_content_hash": "73f473cdf8e61f0c19543caada4212f5acd7d2a9a167980bfd55c75d3cfa13ad",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "はい、これは多くの時間を要する真剣な仕事です。\nあなたが協力に興味を持ってくれることを願っています！"
+      }
+    },
+    {
+      "segment_id": "6dc3e423",
+      "source_content": "Contact me at [sebastien@thisweekinreact.com](mailto\\:sebastien@thisweekinreact.com)",
+      "source_content_hash": "2cbbd8fa73f18271e069a0927d023f86874def83bf3636194eb82a8f69e73546",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "連絡先: [sebastien@thisweekinreact.com](mailto\\:sebastien@thisweekinreact.com)"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-pages/curator.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:36.750882+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "8edcf5df956b2587c16163b02d51a1331d34b345f71d40577100bcffcf375261"
+  }
+}

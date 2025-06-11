@@ -1,0 +1,175 @@
+---
+slug: /141
+title: "This Week In React #141: 20.000 subscribers 🥳, Next.js, Storybook, React Visualized, Remix, Chakra, Modern.js, Reselect, React-Native Benchmarks, Expo..."
+authors: [slorber]
+date: 04-11-2023
+---
+
+みなさん、こんにちは！
+
+私たちは大きな節目を迎えました：**20,000人以上の購読者**を突破しました！ 🥳️
+
+毎週注目してくださり、このプロジェクトの成長を支えてくださる皆さんに感謝します！手助けをしたい方は、**口コミ**が効果的です。現在**リファラルプログラム**を準備中で、近々最も貢献してくれたアンバサダーを把握し、感謝や報酬を提供できるようになります。
+
+一定数の読者がいることは重要です：[スポンサー](https://thisweekinreact.com/sponsor)を見つけ、私がこのプロジェクトに50%の時間を費やしていることの対価を得る助けになります。3年間の努力の末、ようやく持続可能性に到達しました：これにより、リスクを抑えつつ新しいアイデアを試す自由が得られます。
+
+今週は、Next.js 13.3とStorybook 7.0のリリースが目立ちました。React Visualizedは初心者にとって非常に良いリソースです。Modern.jsを発見しました。React、Remix、Chakra UIに関する良い記事もいくつかありました。React-Native側は落ち着いています。
+
+React-Native開発者の方は、5月10日から12日にクラクフで開催される[App.js](https://appjs.co/)カンファレンスをお見逃しなく。昨年は[非常に良い経験](https://twitter.com/sebastienlorber/status/1536636851230060544)でした👌。[ワークショップの-20%割引](https://ti.to/appjs/2023/discount/ThisWeekinReact20)も提供されています。
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアル形式 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![React-admin](/emails/issues/141/react_admin.png)](https://marmelab.com/react-admin/?utm_source=newsletter\&utm_term=this-week-in-react)
+
+**[React-admin - B2Bアプリのためのオープンソースフレームワーク](https://marmelab.com/react-admin/?utm_source=newsletter\&utm_term=this-week-in-react)**
+
+シングルページアプリケーション（SPA）は、REST/GraphQL API上に管理画面、B2Bアプリ、ERPシステムを作成するのに依然として最適な選択肢です。[React-admin](https://marmelab.com/react-admin/?utm_source=newsletter\&utm_term=this-week-in-react)は、**SPAを構築するためのリファレンスとなるオープンソースフレームワーク**です。
+
+React-adminは150以上のビジネス向けコンポーネントを提供しています。これはUIキットではなく、React向け最高のUIキットであるMUIを活用しています。React-adminは、開発者の生産性を向上させるために、ベストプラクティスのライブラリを組み合わせ、あなたが扱うべきでない繰り返し作業を管理します。
+
+その最大の強みは？これまでにない最高の開発者体験で、素晴らしいドキュメントと活発なコミュニティに支えられています。[そして開始するのに30分しかかかりません](https://marmelab.com/react-admin/Tutorial.html) 🚀
+
+React-adminは**5年間積極的にメンテナンス**されており、すでに世界中の20,000人以上の開発者に支持されています。ぜひ試してみてください、無料で永遠に利用できます！ 😁
+
+***
+
+## ⚛️ React {#react}
+
+[![Next.js 13.3](/emails/issues/141/nextjs13.3.jpg)](https://nextjs.org/blog/next-13-3)
+
+**[Next.js 13.3](https://nextjs.org/blog/next-13-3)**
+
+この新しいNext.jsリリースには、非常に素晴らしい新機能がいくつか含まれています。新しいApp Routerはまもなく安定版と見なされる予定です。
+
+* ファイルベースのメタデータAPI: サイトマップ、robots.txt、ファビコンなどを生成するための新しいファイルシステム規約。[このビジュアルスレッド](https://twitter.com/delba_oliveira/status/1645840553597362176)も参照。
+* 動的OG画像: `@vercel/og`とSatoriをNext.jsに直接統合し、JSXとCSS/Tailwindを使ってソーシャルカードを生成。
+* 静的エクスポート: Next.jsがビルド時にServer Componentsを実行し、サーバーランタイムを必要としないアプリの静的エクスポートを生成可能。
+* 並列ルート: レイアウトコンポーネントが複数のスロットを定義でき、異なるページで埋められる。
+* インターセプトルート: 「Instagram」タイプのルーティングパターンを実装可能。写真はモーダルまたはフルスクリーンで表示可能（遷移元に依存）。
+* その他多くの改善点。
+
+***
+
+[![React, Visualized](/emails/issues/141/visualized.jpg)](https://react.gg/visualized)
+
+**[React, Visualized](https://react.gg/visualized)**
+
+Reactを学ぶための非常に優れたビジュアルでインタラクティブなリソース。チーム内のReact初心者と共有するのに最適。
+
+***
+
+* 👀 [Modern.js](https://modernjs.dev/en): ByteDance devs don't only offer rspack, but also a complete React meta-framework, and a whole ecosystem of tools. Keep an eye on this!
+* 👀 [Next.js RFC - `next/third-parties`](https://github.com/vercel/next.js/discussions/48256): the goal is to create wrappers on top of `next/script` to facilitate the integration of popular libraries like Google Analytics.
+* 👀 [Next.js PR - Add Zod and router state validation](https://github.com/vercel/next.js/pull/46962)
+* 👀 [Reselect PR - Add experimental new memoizers: autotrack, weakmap, and signalis](https://github.com/reduxjs/reselect/pull/605)
+* 📜 [Storybook 7.0](https://storybook.js.org/blog/storybook-7-0/): the blog post has just been published! Big release that we already talked about several times.
+* 📜 [The future of Chakra UI](https://www.adebayosegun.com/blog/the-future-of-chakra-ui): Chakra UI wants to switch to zero-runtime CSS-in-JS to be compatible with Server Components. Aims to be a universal library with a good DX. They are creating Panda for CSS-in-JS, and Ark to help with the integration of agnostic Zag.js state machines.
+* 📜 [Fighting inter-component HTML bloat](https://elisehe.in/2023/03/27/minimal-html-in-design-systems.html): a good article that advises to avoid creating useless DOM wrapper elements in a React context. Suggests some interesting solutions that I didn't know, like Radix `asChild`.
+* 📜 [Server-side render dates across timezones with Remix](https://www.jacobparis.com/guides/remix-ssr-dates): cookie-based solution to solve React hydration issues related to a different timezone between client and SSR.
+* 📜 [Framework popularity on Netlify](https://www.netlify.com/blog/framework-popularity-on-netlify/): stats on the use of many React frameworks at Netlify. Glad to see Docusaurus there!
+* 📜 [Generate open graph social preview images with Remix](https://www.jacobparis.com/guides/remix-og): as `@vercel/og` only runs on Vercel, this solution gives a similar result using Satori and svg2img.
+* 📜 [Why & How We Retired Elm at Culture Amp](https://kevinyank.com/posts/on-endings-why-how-we-retired-elm-at-culture-amp/): feedback on the choice to use Elm or React over time.
+* 📜 [The Most Common Mistakes When Using React](https://claritydev.net/blog/the-most-common-mistakes-when-using-react)
+* 📜 [Improving React Testing Library Tests](https://claritydev.net/blog/improving-react-testing-library-tests)
+* 📜 [NextJS - SPA or MPA?](https://www.code-insights.dev/posts/nextjs-spa-or-mpa)
+* 📦 [React Aria Components alpha](https://twitter.com/devongovett/status/1643988004577619971): to facilitate the use of React-Aria and other React-Aria + React-Spectrum updates.
+* 📦 [Astro 2.2](https://astro.build/blog/astro-220/): `assetPrefix` to use a CDN and changes on the `image()` helper for the collections schema.
+* 📦 [Next-Auth v4.22](https://twitter.com/nextauthjs/status/1645004172725551104): support Route Handlers support.
+* 📦 [next-seo v6](https://github.com/garmeeh/next-seo/releases/tag/v6.0.0): recommande d'utiliser les nouvelles API Next.js avec le App Router.
+* 📦 [Deno SaaS Kit](https://github.com/denoland/saaskit): official Deno boilerplate to create SaaS, based on Fresh and Preact.
+* 🎥 [Secret React Server Component Patterns They Don't Want You To Know](https://www.youtube.com/watch?v=ciQdQkT0bZk): interesting for those who want to know more about Wakuwork and its RSC capabilities not present in Next.js 13.
+* 🎥 [Why React breaks your app – on purpose](https://www.youtube.com/watch?v=1UOAI7pFDek): explains why React renders the app twice with Strict Mode.
+* 🎥 [React Server Components without NextJS - A 1 minute guide](https://twitter.com/BHolmesDev/status/1643990398824763393): great short RSC overview.
+
+<SubscribeFormEmbed />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Tina.ioはMarkdownベースのサイト向けヘッドレスCMSです](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter\&utm_term=this-week-in-react)
+
+**[Tina.ioはMarkdownベースのサイト向けヘッドレスCMSです](https://tina.io/?utm_source=newsletter\&utm_term=this-week-in-react)**
+
+* Markdownファイルの編集UI
+* MDXコンポーネントのUI
+* 静的生成（SSG）とサーバーサイドレンダリング（SSR）をサポート
+* ビジュアル編集（ライブプレビュー）オプション
+* 再利用可能なブロックで構築
+
+スターターサイトを試す
+
+* [Docusaurus](https://github.com/tinacms/tinasaurus) (Github)
+* [Next.js + Tailwind（ビジュアル編集付き）](https://github.com/tinacms/tina-cloud-starter) (Github)
+
+または `npx create-tina-app@latest` を実行し、`localhost:3000/admin` にアクセス
+
+[4分のデモ動画](https://www.youtube.com/watch?v=zRkeKSZjlyw)を視聴
+
+***
+
+## 📱 React-Native {#react-native}
+
+* 📜 [React Nativeで環境変数を安全に管理する方法](https://www.bam.tech/article/managing-environment-variables-securely-in-react-native)
+* 📜 [Expo - EAS Build向けM1/M2移行タイムライン](https://blog.expo.dev/m1-m2-migration-timeline-for-eas-build-22bd6c49f1b3)
+* 👀 [新アーキテクチャのパフォーマンスベンチマーク](https://github.com/reactwg/react-native-new-architecture/discussions/123): この合成ベンチマークでは、新アーキテクチャは旧アーキテクチャよりわずかに高速です。注: パフォーマンスは新アーキテクチャを採用する唯一の理由ではありません。v0.72で修正されたパフォーマンス問題もあります。
+* 👀 [近日公開: Expoの環境変数サポート](https://twitter.com/Baconbrix/status/1644731840132169728)
+* 👀 [Expo-MDXがグローバルコンポーネントをサポート](https://twitter.com/Baconbrix/status/1645477524606943248)
+* 📦 [React-Native 0.72.0-RC.1](https://github.com/facebook/react-native/releases/tag/v0.72.0-rc.1)
+* 📦 [react-native-keyboard-controller 1.5](https://twitter.com/ziusko/status/1645322969453932576): インタラクティブなキーボード、ジェスチャーでキーボードを閉じる機能。
+* 📦 [react-native-quick-sqlite](https://twitter.com/mrousavy/status/1643991438450114563): Margeloがメンテナンスを引き継いだパッケージ。
+* 🐦 [「Hermesが最近、EAS BuildでJavaScriptCoreを抜いて最も人気のあるJavaScriptエンジンになりました！」](https://twitter.com/expo/status/1645540179724353536)
+* 🎥 [React-Native Firebaseを使ったExpoアプリの作成方法](https://www.youtube.com/watch?v=mZlKwRV4MC8)
+* 🎥 [freeCodeCamp React-Nativeコース](https://www.youtube.com/watch?v=obH0Po_RdWk)
+* 👥 [App.js](https://appjs.co/)（クラクフ、5月10-12日）がワークショップで[-20%オフ](https://ti.to/appjs/2023/discount/ThisWeekinReact20)を提供（コード「ThisWeekinReact20」）。
+* 👥 [Chain React](https://chainreactconf.com/)（ポートランド、5月18-19日）が参加費-10%オフを提供（コード「thisweekinreact」）。
+
+***
+
+## 🧑‍💻 Jobs {#jobs}
+
+🧑‍💼 [**Passionfroot - シニアフルスタックエンジニア（Remix） - €160k+、ベルリン/リモート**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+Passionfrootのミッションは、YouTube、ポッドキャスト、ソーシャルメディア、ニュースレターを通じて、明日の独立したビジネスを支援することです。クリエイターがスケーラブルで持続可能なビジネスを構築できるツールを共に作りましょう。
+
+🧑‍💼 [**Callstack - シニアReact Native開発者 - 完全リモート、B2Bで月額PLN 21-32k（税抜）**](https://www.callstack.com/senior-react-native-developer)
+
+世界で最も利用されているアプリで働きたいですか？React Nativeテクノロジーの共創に参加しませんか？React & React NativeのリーダーであるCallstackチームに加わってください。詳細はウェブサイトをご覧ください。あなたの応募をお待ちしています - あなたの実力を示してください！
+
+🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\&t=ArRLC77BpRwXXCdx8fnUqw)
+
+React Nativeに特化した開発者向けの複数のポジションを募集しています！報酬は約160kドルに加え、10%のボーナスがあります。RNの実務経験があり、米国在住であることが条件です。詳細は[@gabe\_g2i](https://twitter.com/gabe_g2i)までDMでお問い合わせください。This Week in Reactからの紹介をお忘れなく。
+
+💡 [求人を掲載する方法は？](https://thisweekinreact.com/sponsor)
+
+***
+
+## 🔀 Other {#other}
+
+* [JSPM CLIの再リリース](https://jspm.org/jspm-cli): インポートマップに注力したパッケージ管理。
+* [lazyrepo - npm/pnpm/yarnモノレポ向けのキャッシュタスクランナー](https://github.com/ds300/lazyrepo)
+* [AWS Lambdaがレスポンスペイロードストリーミングを導入](https://aws.amazon.com/fr/about-aws/whats-new/2023/04/aws-lambda-response-payload-streaming/)
+* [Vercel - Edge MiddlewareとEdge Functions向けのNode.js互換性向上](https://vercel.com/changelog/improved-node-js-compatibility-for-edge-middleware-and-edge-functions)
+* [W3C - 初公開草案 - Badging API](https://www.w3.org/blog/news/archives/9878)
+* [Node.js 19.9](https://nodejs.org/en/blog/release/v19.9.0)
+* [Vitest 0.30](https://twitter.com/sheremet_va/status/1645063635712999427)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![Reactは間違いだった](/emails/issues/141/meme.jpg)](https://twitter.com/sebastienlorber/status/1645823352693506048)
+
+またね！👋

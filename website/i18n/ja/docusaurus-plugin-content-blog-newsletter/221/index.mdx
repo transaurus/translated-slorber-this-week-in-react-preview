@@ -1,0 +1,148 @@
+---
+slug: /221
+title: "This Week In React #221: State of React, React Router, Rsbuild, ProseMirror, Redux, React Hook Form, Base UI, RSC, React Admin | AI & RN, Expo, Strict DOM, Polygen, Ignite, New Arch, Radon, macOS, Universal RSC, Gesture Handler | TypeScript, Prettier, esbuild..."
+authors: [cyrilbo, matthieugicquel]
+date: 02-12-2025
+---
+
+みなさん、こんにちは！
+
+[Theodo Apps](https://apps.theodo.com/en?utm_source=thisweekinreact)のCyrilとMatthieuです 👋。Sebに代わって、ReactとReact Nativeの最新ニュースをお届けします！
+
+今週は、[State of React 2024](https://2024.stateofreact.com)の調査結果を詳しく読み込み、興味深い記事もいくつか見つけました。新しいリリースについては比較的静かな週でした。
+
+パートナーカンファレンス[App.js](https://appjs.co?utm_source=thisweekinreact)（5月28-30日、🇵🇱クラクフ開催）をチェックしてください！React NativeとExpoに特化した最大級のカンファレンスで、コード「TWIR」を使うと15%オフになります。[トークを応募](https://docs.google.com/forms/u/1/d/e/1FAIpQLSeKSqxwrTdJJavOFgK-UA25K-hJPmZ5wnZDY7UUo9ULDuckkA/viewform?usp=send_form)したい方は急いでください - CFPは間もなく締め切られます！
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![EAS Workflows: Fast, flexible React Native CI/CD](/emails/issues/221/eas-workflows.jpg)](https://expo.dev/eas/workflows?utm_source=twir+newsletter\&utm_medium=email\&utm_campaign=twir-workflows\&utm_id=TWIR)
+
+**[EAS Workflows: 高速で柔軟なReact Native CI/CD](https://expo.dev/eas/workflows?utm_source=twir+newsletter\&utm_medium=email\&utm_campaign=twir-workflows\&utm_id=TWIR)**
+
+朝起きた時、いくつの異なるyamlファイルを管理したいですか？EAS Workflowsなら、**すべてを一箇所で**管理できます。
+
+• ビルドの自動化\
+• e2eテストの実行\
+• プレビューの送信\
+• ストアへの提出\
+• GitHubトリガー、lintチェック、Slack通知...その他多数
+
+EAS Workflowsを使えば、すべてのビルド/更新/提出を**自動化して順序立てて**実行できます。ワークフローにコマンドをまとめて、コーヒーを飲みに行きましょう。あなたはそれに値します。
+
+[今日から無料でより速くビルド＆デプロイを開始 →](https://expo.dev/eas/workflows?utm_source=twir+newsletter\&utm_medium=email\&utm_campaign=twir-workflows\&utm_id=TWIR)
+
+***
+
+## ⚛️ React {#react}
+
+[![State of React 2024 - 調査結果](/emails/issues/221/state-of-react.png)](https://2024.stateofreact.com)
+
+**[State of React 2024 - 調査結果](https://2024.stateofreact.com)**
+
+State of React 2024の結果が公開されました。情報の宝庫であり、ここですべてを語ることはできませんが、いくつかのハイライトをご紹介します：
+
+* 「新しい」React機能の中では、Server Componentsが最も人気で、約7000人の回答者の40%が「使用したことがある」と回答（Next.jsのおかげかもしれません…）
+* `forwardRef`は最も嫌われているReact APIで、廃止予定です！
+* ReactのTaint APIについて聞いたことがありますか？80%のReact開発者は知らないようで、これは実験的な機能なので理解できます。
+* 1位の位置に大きな変動はありません：Next.js、TanStack Query、Axios、Jest、Zodが依然として最も頻繁に使用されています。
+* いくつかの新星：ZustandとVitestのユーザーが増加、TanStack Startはまだほとんど使われていませんが、関心度では1位です。
+
+Sebが[調査の結論](https://2024.stateofreact.com/en-US/conclusion/)を書いています - 必ずチェックしてください！🙂
+
+***
+
+* 💸 [Meet Harmony - 独立したビジネス機能から一貫性と高性能なプラットフォームを構築するためのオープンソースライブラリ](https://bit.dev/blog/meet-harmony-a-practical-solution-for-composability?utm_source=This-Week-In-React\&utm_id=7\&utm_medium=newsletter)
+* 👀 [@rsbuild/plugin-react-router](https://github.com/rspack-contrib/rsbuild-plugin-react-router): npmにはまだ公開されていませんが、フレームワークモードでReact Routerアプリをバンドルする際にViteよりも高速な代替手段となる可能性があります。
+* 📜 [React Routerの内部動作](https://tigerabrodi.blog/how-react-router-works-under-the-hood): 初期リクエストからハイドレーション、クライアントサイドナビゲーションとアクションまで。
+* 📜 [ProseMirrorのレンダラーをReactで再構築した理由](https://smoores.dev/post/why_i_rebuilt_prosemirror_view/): ProseMirror（テキストエディタ）は独自の状態管理と仮想DOMを持っており、Reactとうまく連携しませんでした。この記事ではその問題点と解決策（「ギャップを埋める」のではなくReactを直接使用する方法）について深く掘り下げています。
+* 📜 [voidを越えるPromise: RSCを使ったストリーミングデータ](https://edspencer.net/2024/7/12/promises-across-the-void-react-server-components): Reactはサーバーから未解決のPromiseを送信し、クライアント側で解決を完了させることができます。数ヶ月前のこの記事ではその仕組みを説明しています。
+* 📜 [古いReactとどう向き合うか？](https://www.manuelsanchezdev.com/blog/what-to-do-with-old-react-upgrading-to-modern-react): クラスコンポーネントや「古い」Reduxを使用しているコードベースをアップグレードするためのヒント。
+* 📜 [ReactフロントエンドをGoとWebAssemblyに置き換えた](https://dagger.io/blog/replaced-react-with-go): 彼らにとっては正しい選択だった理由を説明していますが、自宅ではおそらく真似しないでください。
+* 📜 [React Adminでのリレーションシップの扱い方](https://marmelab.com/blog/2025/02/06/handling-relationships-in-react-admin.html): 組み込みコンポーネント（`<ReferenceField>`など）は通常必要なことを行いますが、カスタムコンポーネントを構築する方法も説明しています。
+* 📜 [Create React Appが公式に非推奨に - React 19の互換性問題により](https://socket.dev/blog/create-react-app-officially-deprecated?utm_medium=feed): このニュースをまだ知らない方は、こちらのまとめでキャッチアップしてください。
+* 📜 [2025年にReactプロジェクトを始める方法](https://www.robinwieruch.de/react-starter/)
+* 📜 [Reduxアクションのベストプラクティスをマスターし、デバッグを容易にする](https://janhesters.com/blog/master-redux-action-best-practices-and-make-debugging-easy)
+* 📦 [React Hook Form resolvers 4.0](https://github.com/react-hook-form/resolvers/releases/tag/v4.0.0): [standard-schema](https://github.com/standard-schema/standard-schema)リゾルバを追加し、standard-schema仕様に準拠する検証ライブラリ間で簡単に切り替えられるようになりました。
+* 📦 [Base UI v1.0.0 alpha 6](https://github.com/mui/base-ui/releases/tag/v1.0.0-alpha.6): 待望の非スタイルコンポーネントコレクションがアルファ段階を進んでいます。
+* 🎥 [Jack Herrington - RSCを使ったReactが2倍速いという証明！](https://www.youtube.com/watch?v=AJvbnNFHx0A)
+* 🎙️ [Rocket Ship 60 - Jack HerringtonとのModule Federation、RSC＆ユニバーサルアプリ](https://share.transistor.fm/s/144c4947)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Vercelコスト最適化：実戦的戦略](/emails/issues/221/pagepro.jpg)](https://pagepro.co/nextjs-hosting-cost-optimization?utm_source=newsletter\&utm_medium=email\&utm_campaign=this-week-in-react-expert-session\&utm_id=this-week-in-react)
+
+**[Vercelコスト最適化：実践的戦略](https://pagepro.co/nextjs-hosting-cost-optimization?utm_source=newsletter\&utm_medium=email\&utm_campaign=this-week-in-react-expert-session\&utm_id=this-week-in-react)**
+
+Next.jsアプリをVercelにデプロイするのは簡単ですが、ホスティングコストの最適化は別の話です。
+
+PageproのChris LojniewskiとJakub Dakowiczによる**2月20日午前11時（EST）**のディープ分析セッションに参加しましょう。Vercelのコスト最適化戦略について学び、**コードレベルの最適化**（過剰な関数呼び出しを避けるためのプリフェッチ調整、適切なレンダリング方法の選択、不要なデータ転送の削除など）を通じてコスト削減する方法を理解しましょう。
+
+さらに、**Vercelのプレミアム機能への依存を最小化**する方法（分析、画像最適化、パスワード保護を外部サービスにオフロードする「機能の外部化」）や、エンタープライズプランが価値があるケースと代替手段が適しているケースの見極め方についても解説します。**無駄な出費を止め、[今すぐ登録](https://pagepro.co/nextjs-hosting-cost-optimization?utm_source=newsletter\&utm_medium=email\&utm_campaign=this-week-in-react-expert-session\&utm_id=this-week-in-react)**してください。
+
+## 📱 React-Native {#react-native}
+
+[![Bolt x Expo](/emails/issues/221/bolt-expo.jpg)](https://expo.dev/blog/bolt-expo-integration-announcement)
+
+**AIを使ったアプリ開発**
+
+このニュースレターではLLMについてあまり取り上げませんが（すでに十分な情報があるでしょう😅）、今週の発表を踏まえて最新動向をお伝えします。
+
+大きなニュース：**[BoltとExpoが提携](https://expo.dev/blog/bolt-expo-integration-announcement)**し、AI生成アプリのReact Nativeモバイルアプリ対応を追加しました。現在はWeb上でプレビュー可能ですが、さらに進めるにはコードをダウンロードする必要があります。将来的にはEASとの連携で本番環境へのデプロイも可能にする予定です。
+
+競合他社の動向もご紹介：
+
+* Replitに公式Expoテンプレートが追加され、[デモ動画も公開されています](https://www.youtube.com/watch?v=mTm_dCF53qk)。Replitにはアプリもあるため、アプリからアプリを構築できます。
+* スタートアップのa0が[v0に似たReact Nativeアプリ生成サービス](https://a0.dev)をローンチしました。
+
+***
+
+* 💸 [Codemagic - React Native開発者向けの素晴らしいApp Center代替サービス！ビルド速度8倍、CodePush、自動配布。1ヶ月無料トライアル！](https://codemagic.io/migration-from-app-center/?utm_source=newsletter\&utm_medium=email\&utm_campaign=app_center_this_week_react)
+* 🐦 [これはReact Nativeではありません](https://x.com/mrousavy/status/1889358737930068051): MarkはReact、JSI、NitroModulesを基にした新しいUIライブラリを開発中ですが、**React Nativeは使用していません**。内部ではSwiftUIとComposeを利用しています。
+* 🐦 [Reactアプリでローカル実行されるDeepSeek R1:](https://x.com/SzymonRybczak/status/1889412928694002004) リポジトリは[こちら](https://github.com/callstackincubator/ai)でオープンソース化されています。ただし、これは実験的なものであり、アプリサイズを最大1GB増加させる可能性があることに注意してください。
+* 👀 [Expo Universal React Server Components + AIチャットアプリのデモ](https://github.com/EvanBacon/expo-ai): Evan Baconがカンファレンスでデモしたアプリをオープンソース化しました。
+* 💬 [React Strict DOM - 本番環境での準備状況と採用事例](https://github.com/facebook/react-strict-dom/discussions/270): Nicolas Gallagherが興味深いアップデートを共有し、RSDがMetaで本番環境で使用されていることを明らかにしました。
+* 🗓 [React Universe Conf](https://www.reactuniverseconf.com/?utm_campaign=RUC2025\&utm_source=TWIRpartnership\&utm_content=savethedate) - 🇵🇱 ポーランド・ヴロツワフ - 9月2-4日開催。Call for Papers受付中！コード「TWIR」で10%割引。
+* 📜 [PolygenによるReact NativeへのWebAssembly導入](https://www.callstack.com/blog/bringing-webassembly-to-react-native-with-polygen): PolygenはWebAssemblyモジュールをネイティブコードにコンパイルすることで、iOSのJIT制限を克服し、React Nativeでネイティブに近い性能を実現します。これはreact-native-webassemblyのような既存のWasm解釈ベースのソリューションとは異なる新しいアプローチです。
+* 📜 [Ignite GeneratorsでExpoの力をさらに引き出す](https://expo.dev/blog/increase-your-expo-power-with-ignite-generators): Igniteは有名なReact Nativeアプリのボイラープレートですが、Expoアプリを含むあらゆるReact Nativeプロジェクトでジェネレーターとして活用でき、画面、コンポーネント、状態スライスの作成を自動化できます。
+* 📜 [React Nativeの新アーキテクチャがパフォーマンスに与える影響は？](https://dev.to/anishamalde/how-does-react-natives-new-architecture-affect-performance-1dkf): Anishaが実施したベンチマークでは、React Native TVアプリ（パフォーマンスが重要な分野）で新アーキテクチャを有効にすることで最大1000msの性能向上が確認されました。
+* 📜 [ブリッジレスネイティブ開発](https://www.callstack.com/blog/bridgeless-native-development): これまで使用されてきたネイティブコードブリッジ手法（NativeModule、TurboModule、NitroModule）の簡潔なまとめ。
+* 📜 [Tracyを使用したReact Nativeのネイティブコードプロファイリング方法](https://www.callstack.com/blog/how-to-profile-native-code-react-native-with-tracy)
+* 📜 [Expo、SwiftUI、React Nativeを使用したライブアクティビティの構築方法](https://christopher.engineering/en/blog/live-activity-with-react-native/)
+* 📦 [Radon IDE v1.3](https://github.com/software-mansion/radon-ide/releases/tag/v1.3.0): 組み込みネットワークインスペクター、Redux DevToolsサポート、デバッガー改善。
+* 📦 [React Native Gesture Handler v2.23](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.23.0): 旧APIは非推奨となります。
+* 📦 [React Native macOS v0.77](https://github.com/microsoft/react-native-macos/releases/tag/react-native-macos%400.77.0)
+* 📦 [React Native Reanimated Carousel v4.0](https://rn-carousel.dev/migration-v4): コンテナスタイリング、最小スクロール距離、固定方向スクロール、進捗変更処理、強化されたページネーションコンポーネント、改善されたWebサポート。
+* 🎙️ [RNR 321 - Evan BaconとのExpo DOMについて](https://www.reactnativeradio.com/episodes/rnr-321-expo-dom-with-evan-bacon)
+
+***
+
+## 🔀 Other {#other}
+
+* 👀 [`require(esm)`がNode.js 20にバックポートされました](https://github.com/nodejs/node/pull/56927)
+* 📜 [TypeScript: `satisfies`演算子](https://2ality.com/2025/02/satisfies-operator.html): 型を変更せずにオブジェクト形状の正確性を確認、オブジェクト内のオプショナルプロパティの検証、列挙型ライクなオブジェクトの構造チェック、API向けの適切なオブジェクトキーの保証など…
+* 📜 [JavaScriptで長いタスクを分割する方法はたくさんあります](https://macarthur.me/posts/long-tasks/)
+* 📜 [Style-observer: CSSプロパティの変更を実際に監視するJS](https://lea.verou.me/blog/2025/style-observer/)
+* 📜 [Webパフォーマンスのための画像最適化](https://frontendmasters.com/blog/optimizing-images-for-web-performance/)
+* 📜 [Chrome CanaryでのCSSカスタム関数実験](https://www.bram.us/2025/02/09/css-custom-functions-teaser/)
+* 📦 [Prettier 3.5 - TS設定ファイル、`objectWrap`オプション、`experimentalOperatorPosition`オプション](https://prettier.io/blog/2025/02/09/3.5.0)
+* 📦 [esbuild 0.25 - 様々な修正と一部の後方互換性のない変更](https://github.com/evanw/esbuild/releases/tag/v0.25.0)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![ダウンロード数が0のReact npmスクリーンショット](/emails/issues/221/meme.jpg)](https://x.com/andrii_sherman/status/1887492134426558849)
+
+またね！ 👋

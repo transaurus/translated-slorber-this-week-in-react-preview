@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "This Week In React",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "This Week In React ロゴ",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Articles": {
+    "message": "記事",
+    "description": "Navbar item with label Articles"
+  },
+  "item.label.Newsletter": {
+    "message": "ニュースレター",
+    "description": "Navbar item with label Newsletter"
+  },
+  "item.label.Thread": {
+    "message": "スレッド",
+    "description": "Navbar item with label Thread"
+  },
+  "item.label.Sponsor": {
+    "message": "スポンサー",
+    "description": "Navbar item with label Sponsor"
+  }
+}

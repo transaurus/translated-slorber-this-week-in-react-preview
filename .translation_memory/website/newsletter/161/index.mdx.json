@@ -1,0 +1,512 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/161/index.mdx",
+  "source_file_content_hash": "6389b8bfd7014f8d4a6a22df745e50412eac5bd689f58b99f1f538a001ba056b",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /161\ntitle: \"This Week In React #161: useFormState, Memo, Conform, Progressive Enhancement, Astro, Radix, React-Aria, Rustymotion, Ecctrl, Expo Apple Settings, Unistyles, TypeScript, TC39...\"\nauthors: [slorber]\ndate: 10-04-2023\n---",
+      "source_content_hash": "bdf5e66e5a94ae1021a19804494b50da1cb461752f99842a094b6de8110b6904",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week I've found the React ecosystem rather quiet, but we've got some pretty cool articles to read.",
+      "source_content_hash": "b3204f0230b9925e87a8a1be24980166667f825fad81dc2eba7911cee4b6b973",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週のReactエコシステムは比較的静かでしたが、読む価値のある素晴らしい記事がいくつかあります。"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "React progressive enhancement is in the spotlight in both Remix and Next.js!",
+      "source_content_hash": "e92aa6c56da4d4ec7e580e7c2e178d2fedb1f431f04cf1b3cb8da79c838c5882",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "RemixとNext.jsの両方で、Reactのプログレッシブエンハンスメントが注目されています！"
+      }
+    },
+    {
+      "segment_id": "e883b2cc",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_e883b2cc"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**"
+      }
+    },
+    {
+      "segment_id": "7f7f1cb2",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "92f4ea84",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_92f4ea84"
+      }
+    },
+    {
+      "segment_id": "5dfba1c3",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_5dfba1c3"
+      }
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "[![Enterprise Grade APIs for Feeds, Chat, & Video!](/emails/issues/153/stream.jpg)](https://getstream.io/video/voice-calling/?utm_source=thisweekinreact\\&utm_medium=sponsorship\\&utm_content=\\&utm_campaign=thisweekinreact_July2023_video_klmh22)",
+      "source_content_hash": "55a337297540c87cdce419e786c293f69162be9febc6552ecf55d1728e6423b4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![エンタープライズグレードのAPI（フィード、チャット、ビデオ対応）](/emails/issues/153/stream.jpg)](https://getstream.io/video/voice-calling/?utm_source=thisweekinreact\\&utm_medium=sponsorship\\&utm_content=\\&utm_campaign=thisweekinreact_July2023_video_klmh22)"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "[**Enterprise Grade APIs for Feeds, Chat, & Video!**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact\\&utm_medium=sponsorship\\&utm_content=\\&utm_campaign=thisweekinreact_July2023_video_klmh22)",
+      "source_content_hash": "ca0d5ac1def28adaad19c514c51d7da341221a8e294440e4dfab9c41879c0fca",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**エンタープライズグレードのAPI（フィード、チャット、ビデオ対応）**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact\\&utm_medium=sponsorship\\&utm_content=\\&utm_campaign=thisweekinreact_July2023_video_klmh22)"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "Stream is the maker of enterprise-grade **APIs** and **SDKs** that help product and engineering teams solve two common problems at scale: in-app chat and social activity feeds.",
+      "source_content_hash": "05dbd4e953d38d36460ebb9e37d1f04584951effef9ed2729a75d53bf17c3888",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Streamは、エンタープライズグレードの**API**と**SDK**を提供し、プロダクトチームとエンジニアリングチームがスケール時に直面する2つの一般的な課題（アプリ内チャットとソーシャルアクティビティフィード）を解決する手助けをします。"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "With Stream, developers can integrate any type of messaging or feed experience into their app in a fraction of the time it would take to build these features from scratch. Stream Chat makes it easy for developers to integrate rich, real-time messaging into their applications.",
+      "source_content_hash": "d69cfc6b1f18fddf8be7fbf319171f3f7b8c563e6532a28dc86f5864a667c6ea",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Streamを使用すれば、開発者はこれらの機能を一から構築する時間のほんの一部で、あらゆるタイプのメッセージングやフィード体験をアプリに統合できます。Stream Chatは、リッチでリアルタイムなメッセージングをアプリケーションに簡単に統合することを可能にします。"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "Stream provides robust client-side SDKs for popular frameworks such as [**React**](https://getstream.io/chat/sdk/react/?utm_source=thisweekinreact\\&utm_medium=sponsorship\\&utm_content=\\&utm_campaign=thisweekinreact_July2023_video_klmh22), [**React-Native**](https://getstream.io/chat/sdk/react-native/?utm_source=thisweekinreact\\&utm_medium=sponsorship\\&utm_content=\\&utm_campaign=thisweekinreact_July2023_video_klmh22), Expo, Flutter, Android, Angular, Compose, Unreal, and iOS.\nUnlock enterprise-grade features, functions, and UI components completely free for your startup or side project with the Maker Account.",
+      "source_content_hash": "45f73afd0be3dc2a0957c66fb3e5d80f7578775d3918484299a53a76ff73fe25",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Streamは、[**React**](https://getstream.io/chat/sdk/react/?utm_source=thisweekinreact\\&utm_medium=sponsorship\\&utm_content=\\&utm_campaign=thisweekinreact_July2023_video_klmh22)、[**React-Native**](https://getstream.io/chat/sdk/react-native/?utm_source=thisweekinreact\\&utm_medium=sponsorship\\&utm_content=\\&utm_campaign=thisweekinreact_July2023_video_klmh22)、Expo、Flutter、Android、Angular、Compose、Unreal、iOSなど、人気のあるフレームワーク向けの堅牢なクライアントサイドSDKを提供しています。\nスタートアップやサイドプロジェクト向けに、メーカーアカウントでエンタープライズグレードの機能、関数、UIコンポーネントを完全無料で利用できます。"
+      }
+    },
+    {
+      "segment_id": "c3a738de",
+      "source_content": "[**Try the new React Video tutorial!**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact\\&utm_medium=sponsorship\\&utm_content=\\&utm_campaign=thisweekinreact_July2023_video_klmh22)",
+      "source_content_hash": "d395ed504f447ff0641debf36d3cb7119f7edf24599d7a5a8faa1740cb259664",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**新しいReact Videoチュートリアルを試してみよう！**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact\\&utm_medium=sponsorship\\&utm_content=\\&utm_campaign=thisweekinreact_July2023_video_klmh22)"
+      }
+    },
+    {
+      "segment_id": "bd7c9323",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "06c0f776",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "aa1e7006",
+      "source_content": "[![The Uphill Battle of Memoization](/emails/issues/161/memo.jpg)](https://tkdodo.eu/blog/the-uphill-battle-of-memoization)",
+      "source_content_hash": "25c0eaf3e1e4e46063051f8aad7789d3936a9bc0e2731803f9fafc5a3ede7869",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![メモ化の上り坂](/emails/issues/161/memo.jpg)](https://tkdodo.eu/blog/the-uphill-battle-of-memoization)"
+      }
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "[**The Uphill Battle of Memoization**](https://tkdodo.eu/blog/the-uphill-battle-of-memoization)",
+      "source_content_hash": "df62109f585221f81781b92d1c9ff6c916a1997b643b4c6e71086cc7d34ec662",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**メモ化の上り坂**](https://tkdodo.eu/blog/the-uphill-battle-of-memoization)"
+      }
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "We want to create high-performance applications, and to do that we use `React.memo`, which avoids unnecessary re-renders. But these optimisations break too easily. Dominik shares with us several scenarios that lead to performance degradation, including the use of inlined objects/callbacks, or the use of JSX slots with a props like `children`.",
+      "source_content_hash": "ada34b053dd43c80b62991e0f0724357f9f9cbb089da0c3100dd656a1b715d5a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "私たちは高性能なアプリケーションを作成したいと考えており、そのために`React.memo`を使用して不要な再レンダリングを回避します。しかし、これらの最適化は簡単に破綻してしまいます。Dominikは、インラインオブジェクト/コールバックの使用や、`children`のようなプロップスを持つJSXスロットの使用など、パフォーマンス低下を引き起こすいくつかのシナリオを共有しています。"
+      }
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "I took the opportunity to give [my opinion on Twitter](https://twitter.com/sebastienlorber/status/1709258817844752794): the performance of a React component should be better encapsulated. While we're waiting for the React-Forget compiler, there are a few lesser-known avenues to explore, such as the use of Babel plugins.",
+      "source_content_hash": "1c963fdd23973ad03cab4a783c5c4278020cdc4b8e5c7db6f197fba2553dffbe",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "私はこの機会に[Twitterで意見を述べました](https://twitter.com/sebastienlorber/status/1709258817844752794)：Reactコンポーネントのパフォーマンスは、よりカプセル化されるべきです。React-Forgetコンパイラを待つ間、Babelプラグインの使用など、あまり知られていないアプローチを探ってみる価値があります。"
+      }
+    },
+    {
+      "segment_id": "5f01394b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "d3649a1e",
+      "source_content": "[![Accessible, Typesafe, Progressively Enhanced Modern Web Forms](/emails/issues/161/epicweb.jpg)](https://www.epicweb.dev/accessible-typesafe-progressively-enhanced-modern-web-forms)",
+      "source_content_hash": "0f152279cd1fa61b20294fabd699f4d35615052a38ab901565c8c540234185ba",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![アクセシブルでタイプセーフ、プログレッシブエンハンスメントされたモダンなWebフォーム](/emails/issues/161/epicweb.jpg)](https://www.epicweb.dev/accessible-typesafe-progressively-enhanced-modern-web-forms)"
+      }
+    },
+    {
+      "segment_id": "4d52a261",
+      "source_content": "[**Accessible, Typesafe, Progressively Enhanced Modern Web Forms**](https://www.epicweb.dev/accessible-typesafe-progressively-enhanced-modern-web-forms)",
+      "source_content_hash": "35e0e6c99590123ff7101260d3d6fa7f0d6a527535f0db8fbee3a10b5874c850",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**アクセシブルで型安全、プログレッシブエンハンスメントを備えたモダンなWebフォーム**](https://www.epicweb.dev/accessible-typesafe-progressively-enhanced-modern-web-forms)"
+      }
+    },
+    {
+      "segment_id": "23dfb152",
+      "source_content": "Kent shows us a few examples of Remix code and how easy it is to implement pending UI and optimistic UI. He recommends using a shared Zod schema to validate forms on the frontend, and extending it on the backend to eventually add additional rules. [conform](https://conform.guide/) facilitates the use of a Zod schema to validate a `FormData`, and seems to be an underrated solution for managing a React form, from the local state to the server.",
+      "source_content_hash": "b12f4e09bcb03ae779257ed6849dd0adf9f7e5fade06c4fed276b03104d04f5a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Kent氏は、Remixのコード例をいくつか紹介し、保留中のUIや楽観的UIを実装するのがいかに簡単かを示しています。彼は、フロントエンドでフォームを検証するために共有のZodスキーマを使用し、バックエンドで追加のルールを加えるためにそれを拡張することを推奨しています。[conform](https://conform.guide/)は、`FormData`を検証するためにZodスキーマを使用することを容易にし、Reactフォームをローカルステートからサーバーまで管理するための過小評価されている解決策のように思えます。"
+      }
+    },
+    {
+      "segment_id": "aa7d3f2b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "ea0c7bae",
+      "source_content": "* 💸 [Ably Realtime Hackathon - Create a real-time React app, win \\$19,000 in prizes - from real-time dashboards to collaborative experiences!](https://ably.devpost.com/?utm_campaign=23-hackathon\\&utm_source=thisweekinreact\\&utm_medium=referral)\n* 👀 [Next.js PR - Progressive enhancement for form state](https://github.com/vercel/next.js/pull/55584): Next.js includes a brand-new `useFormState` React core hook (not to be confused with `useFormStatus`), which can be used to manage the feedback/response of Server Actions, even when JavaScript is disabled.\n* 👀 [React core PR - Add Server Context deprecation warning](https://github.com/facebook/react/pull/27424): the secret hook `createServerContext` is deprecated and will be removed.\n* 👀 [Panda CSS Public Roadmap - Container Query, Panda Studio](https://panda-css.canny.io/)\n* 🐦 [Astro View Transition + persistent React-Three-Fiber model demo](https://twitter.com/astrodotbuild/status/1707918024471355406)\n* 🐦 [Remotion contracting with GitHub - Assembled a team to produce GitHub Unwrapped 2023 videos](https://twitter.com/Remotion/status/1707664519403614323)\n* 📜 [Sharing State with Islands Architecture](https://frontendatscale.com/blog/islands-architecture-state/): well-illustrated article analysing several possible solutions for getting Islands to communicate in an Astro/React context.\n* 📜 [Next.js 13 vs Remix: An In-depth case study](https://prateeksurana.me/blog/nextjs-13-vs-remix-an-in-depth-case-study/): exhaustive, well-documented article comparing many Next.js and Remix features side-by-side.\n* 📜 [React Google Maps: Drawing Tools](https://sudolabs.com/insights/react-google-maps-drawing-tools)\n* 📜 [Docusaurus - Preparing your site for v3 + MDX 2](https://docusaurus.io/blog/preparing-your-site-for-docusaurus-v3)\n* 📦 [Astro 3.2 - View Transitions improvements](https://astro.build/blog/astro-320/)\n* 📦 [Radix Themes 2.0 - New colors, better Tailwind compatibility, many component improvements](https://www.radix-ui.com/themes/docs/overview/releases#200)\n* 📦 [React Aria - October 2 2023 releases - Client-side routing integration](https://react-spectrum.adobe.com/releases/2023-10-02.html)\n* 📦 [Rustymotion - A Rust-based renderer for Remotion videos](https://github.com/clearlysid/rustymotion)\n* 📦 [Ecctrl - React-Three-Fiber character controller](https://github.com/pmndrs/ecctrl)\n* 🎥 [Theo T3 - Facebook Tried Tailwind, Then Built This Instead (styleX)](https://www.youtube.com/watch?v=PHV94q7BivI)\n* 🎙️ [This Month in React – September 2023](https://podcasters.spotify.com/pod/show/reactiflux/episodes/This-Month-in-React--September-2023-e29vb6o)\n* 👥 [reactjsday](https://2023.reactjsday.it/) (Verona 🇮🇹, Octobre 27) is offering us [-10% - code \"media\\_TWIR\"](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR)\n* 👥 [React Advanced](https://reactadvanced.com/?utm_source=email\\&utm_medium=thisweekinreact) (London 🇬🇧, Octobre 20-23) is offering us [-10% - code \"REACT10\"](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)",
+      "source_content_hash": "9bad891a4c9184654c64d303111f9b5ca13a8b197f2c204014e224665060b23f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Ably Realtime Hackathon - リアルタイムReactアプリを作成し、19,000ドルの賞金を獲得 - リアルタイムダッシュボードからコラボレーティブな体験まで！](https://ably.devpost.com/?utm_campaign=23-hackathon\\&utm_source=thisweekinreact\\&utm_medium=referral)\n* 👀 [Next.js PR - フォーム状態のプログレッシブエンハンスメント](https://github.com/vercel/next.js/pull/55584): Next.jsには、JavaScriptが無効でもサーバーアクションのフィードバック/レスポンスを管理できる新しい`useFormState` Reactコアフック（`useFormStatus`と混同しないように）が含まれています。\n* 👀 [React core PR - サーバーコンテキスト廃止予定の警告を追加](https://github.com/facebook/react/pull/27424): 非公開フック`createServerContext`は廃止予定で、削除されます。\n* 👀 [Panda CSS 公開ロードマップ - コンテナクエリ、Panda Studio](https://panda-css.canny.io/)\n* 🐦 [Astro View Transition + 永続的なReact-Three-Fiberモデルのデモ](https://twitter.com/astrodotbuild/status/1707918024471355406)\n* 🐦 [RemotionのGitHub契約 - GitHub Unwrapped 2023動画制作のためにチームを結成](https://twitter.com/Remotion/status/1707664519403614323)\n* 📜 [Islandsアーキテクチャでの状態共有](https://frontendatscale.com/blog/islands-architecture-state/): Astro/ReactコンテキストでIslands間の通信を実現するためのいくつかの解決策を分析した、よく説明された記事。\n* 📜 [Next.js 13 vs Remix: 詳細なケーススタディ](https://prateeksurana.me/blog/nextjs-13-vs-remix-an-in-depth-case-study/): Next.jsとRemixの多くの機能を並べて比較した、詳細でよくドキュメント化された記事。\n* 📜 [React Google Maps: 描画ツール](https://sudolabs.com/insights/react-google-maps-drawing-tools)\n* 📜 [Docusaurus - v3 + MDX 2に向けたサイトの準備](https://docusaurus.io/blog/preparing-your-site-for-docusaurus-v3)\n* 📦 [Astro 3.2 - View Transitionsの改善](https://astro.build/blog/astro-320/)\n* 📦 [Radix Themes 2.0 - 新しいカラー、Tailwind互換性の向上、多くのコンポーネント改善](https://www.radix-ui.com/themes/docs/overview/releases#200)\n* 📦 [React Aria - 2023年10月2日リリース - クライアントサイドルーティング統合](https://react-spectrum.adobe.com/releases/2023-10-02.html)\n* 📦 [Rustymotion - Remotion動画のRustベースレンダラー](https://github.com/clearlysid/rustymotion)\n* 📦 [Ecctrl - React-Three-Fiberキャラクターコントローラー](https://github.com/pmndrs/ecctrl)\n* 🎥 [Theo T3 - FacebookはTailwindを試し、代わりにこれを構築した（styleX）](https://www.youtube.com/watch?v=PHV94q7BivI)\n* 🎙️ [This Month in React – 2023年9月](https://podcasters.spotify.com/pod/show/reactiflux/episodes/This-Month-in-React--September-2023-e29vb6o)\n* 👥 [reactjsday](https://2023.reactjsday.it/) (イタリア・ヴェローナ、10月27日) が提供する[-10% - コード \"media\\_TWIR\"](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR)\n* 👥 [React Advanced](https://reactadvanced.com/?utm_source=email\\&utm_medium=thisweekinreact) (イギリス・ロンドン、10月20-23日) が提供する[-10% - コード \"REACT10\"](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)"
+      }
+    },
+    {
+      "segment_id": "688f86d6",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_688f86d6"
+      }
+    },
+    {
+      "segment_id": "4e1804a3",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "759d12dd",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "[![A Non-Cloud Alternative to Google Forms that has it all](/emails/issues/155/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact\\&utm_medium=email)",
+      "source_content_hash": "b28f9936d809fc291111436764d27496768dc60d229189fb3068c2fe318790f4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Google Formsの非クラウド代替で全てを備えたSurveyJS](/emails/issues/155/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact\\&utm_medium=email)"
+      }
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "**[A Non-Cloud Alternative to Google Forms that has it all](https://surveyjs.io/?utm_source=thisweekinreact\\&utm_medium=email)**",
+      "source_content_hash": "ae465e4bdf6aff33dbe1ce129b2f32bc3fd59621e579424770c625b4d5cb09f8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Google Formsに代わる非クラウド型の完全なフォームソリューション](https://surveyjs.io/?utm_source=thisweekinreact\\&utm_medium=email)**"
+      }
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "If you are looking to set up **a robust form management system fully integrated in your IT infrastructure** that allows you to **retain full control over the data flow**, and you don’t want to spend months and thousands of dollars to get it up and running, then SurveyJS is the way to go!",
+      "source_content_hash": "3b763681d6fb13c179ad7a4da130899fe97993821b0f3fbe689e05f792af2ef1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**ITインフラに完全統合された堅牢なフォーム管理システム**を構築し、**データフローを完全に制御**したい場合、かつ、立ち上げに数ヶ月と数千ドルを費やしたくないなら、SurveyJSが最適です！"
+      }
+    },
+    {
+      "segment_id": "785750ac",
+      "source_content": "SurveyJS is a product suite of four open-source JavaScript libraries that allow you to **create and edit** multiple dynamic **JSON-based forms** in a drag-and-drop form builder, render them in your React app and **store sensitive survey data within your in-house infrastructure**. You can then **render your custom surveys and forms as editable PDF files** in a browser and visualize survey results with **interactive charts and tables**. [Learn more now](https://surveyjs.io/?utm_source=thisweekinreact\\&utm_medium=email).",
+      "source_content_hash": "5a8be927aafc4cb02bc1c73c31ac09ae4de8c5b64e3c614b32f1f7daf329e6dd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "SurveyJSは4つのオープンソースJavaScriptライブラリから成る製品スイートで、**動的なJSONベースのフォーム**をドラッグ＆ドロップのフォームビルダーで作成・編集し、Reactアプリでレンダリング、**機密性の高い調査データを自社インフラ内に保存**できます。さらに**カスタム調査フォームを編集可能なPDFファイル**としてブラウザで表示したり、**インタラクティブなチャートや表**で結果を可視化できます。[詳細はこちら](https://surveyjs.io/?utm_source=thisweekinreact\\&utm_medium=email)。"
+      }
+    },
+    {
+      "segment_id": "f7a7cb1b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "e06c002e",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "[![Custom Apple Settings UI with Expo](/emails/issues/161/exposettings.jpg)](https://evanbacon.dev/blog/apple-settings)",
+      "source_content_hash": "11eb526639cb368f3cf0c36b2432b2371b57351d436fe2bc43be3621fe1d36a9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Expoで作るカスタムApple設定UI](/emails/issues/161/exposettings.jpg)](https://evanbacon.dev/blog/apple-settings)"
+      }
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "[**Custom Apple Settings UI with Expo**](https://evanbacon.dev/blog/apple-settings)",
+      "source_content_hash": "a8842007ee12fa3fa8596c88f9464c3ba2a2f9bacf9617f938ecfa4f7189d489",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**Expoで作るカスタムApple設定UI**](https://evanbacon.dev/blog/apple-settings)"
+      }
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "Evan points out the few advantages of using the iOS settings screen. It's a pain to implement natively, and the ROI is low, but his Expo Config Plugin simplifies the task. He explains how to toggle an app's sound with a switch, or how to automate the display of your app's software licenses.",
+      "source_content_hash": "2dfc1256029b4ce73629dd8fd817b167ede5886092d0f316c756b15b8bfe4eef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "EvanはiOS設定画面を利用する利点を指摘しています。ネイティブ実装は手間がかかりROIも低いですが、彼のExpo Config Pluginが作業を簡素化します。アプリのサウンドをスイッチで切り替える方法や、ソフトウェアライセンス表示を自動化する方法を解説しています。"
+      }
+    },
+    {
+      "segment_id": "f414353c",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "664ad8b1",
+      "source_content": "* 💸 [Blitz - Build React Native Apps Faster for iOS, Android, and Web!](https://www.blitz-rn.com/)\n* 📜 [Expo EAS - Support for XCode 15 and iOS 17](https://expo.dev/changelog/2023/09-28-new-xcode-ios)\n* 📖 [Expo Docs - Continuous Native Generation (CNG)](https://docs.expo.dev/workflow/continuous-native-generation/): presents the idea of generating native platforms on an ongoing basis with Expo Prebuild.\n* 📦 [create-react-native-library v0.34 - local library support](https://github.com/callstack/react-native-builder-bob/releases/tag/create-react-native-library%400.34.0): it's now very easy to generate a local library in React-Native vanilla. Expo supports it too.\n* 📦 [react-native-unistyles - Level up your React Native StyleSheet, make it cross-platform and scalable](https://github.com/jpudysz/react-native-unistyles)\n* 📦 [react-native-compressor - Compress Image, Video, and Audio before uploading](https://github.com/numandev1/react-native-compressor)\n* 📦 [Expo-Image 1.3.4 - Fix libwepb security issue](https://expo.dev/changelog/2023/09-29-libwebp)\n* 📦 [React-Native-Skia v0.1.211 beta - Animated images](https://shopify.github.io/react-native-skia/docs/animated-images/)\n* 🎥 [Why did your app crash? How to use Logcat & macOS Console to debug](https://www.youtube.com/watch?v=LvCci4Bwmpc)\n* 🎥 [Why Airbnb was wrong to ditch React Native in 2018](https://www.youtube.com/watch?v=RwUQnfcxH0o)\n* 🎙 [React Native Radio 276 - Announcing Ignite v9](https://reactnativeradio.com/episodes/rnr-276-announcing-ignite-v9-expresso)",
+      "source_content_hash": "af685915d06b4e6ed7fb2708b8e9595ff288f8cd738e6a000a5ed14f6dfe7efc",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Blitz - iOS/Android/Web向けReact Nativeアプリを高速開発！](https://www.blitz-rn.com/)\n* 📜 [Expo EAS - XCode 15とiOS 17のサポート](https://expo.dev/changelog/2023/09-28-new-xcode-ios)\n* 📖 [Expoドキュメント - Continuous Native Generation (CNG)](https://docs.expo.dev/workflow/continuous-native-generation/): Expo Prebuildを使った継続的なネイティブプラットフォーム生成の概念を紹介\n* 📦 [create-react-native-library v0.34 - ローカルライブラリサポート](https://github.com/callstack/react-native-builder-bob/releases/tag/create-react-native-library%400.34.0): React-Native vanillaでローカルライブラリを簡単生成。Expoも対応\n* 📦 [react-native-unistyles - React Native StyleSheetを強化、クロスプラットフォーム＆スケーラブルに](https://github.com/jpudysz/react-native-unistyles)\n* 📦 [react-native-compressor - アップロード前の画像/動画/音声圧縮](https://github.com/numandev1/react-native-compressor)\n* 📦 [Expo-Image 1.3.4 - libwebpセキュリティ問題修正](https://expo.dev/changelog/2023/09-29-libwebp)\n* 📦 [React-Native-Skia v0.1.211 beta - アニメーション画像対応](https://shopify.github.io/react-native-skia/docs/animated-images/)\n* 🎥 [アプリクラシュの原因調査法 - Logcat & macOS Consoleデバッグ](https://www.youtube.com/watch?v=LvCci4Bwmpc)\n* 🎥 [Airbnbが2018年にReact Nativeを廃止した判断は誤りだった](https://www.youtube.com/watch?v=RwUQnfcxH0o)\n* 🎙 [React Native Radio 276 - Ignite v9発表](https://reactnativeradio.com/episodes/rnr-276-announcing-ignite-v9-expresso)"
+      }
+    },
+    {
+      "segment_id": "0bee36ce",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "b9b8694c",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "82abb0a4",
+      "source_content": "* 📜 [Updates from the 98th TC39 meeting - Resizable ArrayBuffer, ShadowRealm, RegEx escape...](https://dev.to/hemanth/updates-from-the-98th-tc39-meeting-1lcf)\n* 📜 [The Absolute Minimum Every Software Developer Must Know About Unicode in 2023](https://tonsky.me/blog/unicode/)\n* 📜 [CSS Subgrid - Now available in all browsers thanks to Chrome 117](https://web.dev/css-subgrid/)\n* 📜 [CSS Nesting and the Cascade](https://webkit.org/blog/14571/css-nesting-and-the-cascade/)\n* 📜 [New to the web platform in September](https://web.dev/web-platform-09-2023/)\n* 📦 [TypeScript 5.3 Beta - Import Attributes, \"resolution-mode\" for type imports ...](https://devblogs.microsoft.com/typescript/announcing-typescript-5-3-beta/)\n* 📦 [string-ts - Strongly typed string functions](https://github.com/gustavoguichard/string-ts)\n* 📦 [every-ts - A utility to build and bisect any version of TypeScript](https://github.com/jakebailey/every-ts)\n* 📦 [pattycake - Zero-runtime pattern matching - Optimizing compiler for ts-pattern](https://github.com/aidenybai/pattycake)\n* 📦 [Node.js 20.8 - Notable performance improvements](https://nodejs.org/en/blog/release/v20.8.0)\n* 📦 [Vitest 1.0 beta](https://github.com/vitest-dev/vitest/releases/tag/v1.0.0-beta.0)",
+      "source_content_hash": "e48f1f236d521cceb6c63a507e88ff06ca4732409cdae7e6fbfb238360286bc7",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📜 [第98回TC39会議のアップデート - Resizable ArrayBuffer、ShadowRealm、RegExエスケープなど](https://dev.to/hemanth/updates-from-the-98th-tc39-meeting-1lcf)\n* 📜 [2023年、ソフトウェア開発者が知っておくべきUnicodeの絶対的最小知識](https://tonsky.me/blog/unicode/)\n* 📜 [CSS Subgrid - Chrome 117ですべてのブラウザで利用可能に](https://web.dev/css-subgrid/)\n* 📜 [CSSネスティングとカスケード](https://webkit.org/blog/14571/css-nesting-and-the-cascade/)\n* 📜 [9月のWebプラットフォーム新機能](https://web.dev/web-platform-09-2023/)\n* 📦 [TypeScript 5.3 Beta - Import Attributes、型インポート用の\"resolution-mode\"など](https://devblogs.microsoft.com/typescript/announcing-typescript-5-3-beta/)\n* 📦 [string-ts - 厳密に型付けされた文字列関数](https://github.com/gustavoguichard/string-ts)\n* 📦 [every-ts - TypeScriptのあらゆるバージョンをビルド・二分探索するユーティリティ](https://github.com/jakebailey/every-ts)\n* 📦 [pattycake - ゼロランタイムパターンマッチング - ts-pattern用最適化コンパイラ](https://github.com/aidenybai/pattycake)\n* 📦 [Node.js 20.8 - 注目のパフォーマンス改善](https://nodejs.org/en/blog/release/v20.8.0)\n* 📦 [Vitest 1.0 beta](https://github.com/vitest-dev/vitest/releases/tag/v1.0.0-beta.0)"
+      }
+    },
+    {
+      "segment_id": "efbc76b7",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c6868a9f",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "bb1346b6",
+      "source_content": "[![alt](/emails/issues/161/meme.jpg)](https://twitter.com/creatine_cycle/status/1706912311309652159)",
+      "source_content_hash": "9c279d2aa8de2f6d80e7f4d4238e32830856ca59559287330b1d00e5a0a8d6e0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/161/meme.jpg)](https://twitter.com/creatine_cycle/status/1706912311309652159)"
+      }
+    },
+    {
+      "segment_id": "8664ed0b",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "またね！👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/161/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:38.068383+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "6389b8bfd7014f8d4a6a22df745e50412eac5bd689f58b99f1f538a001ba056b"
+  }
+}

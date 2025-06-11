@@ -1,0 +1,532 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/217/index.mdx",
+  "source_file_content_hash": "caa649d8256812a27252683ec03b90b3d4331ed9d8c18ef36cf5aea4e88f1aa1",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /217\ntitle: \"This Week In React #217: View Transitions, RSC, Next.js, SWR, Nextra, React Router, Rails, Compiler, EAS Hosting, Shopify, Skia, OTP, Gesture Handler, Radon, React-Query, TC55, Bun, CSS...\"\nauthors: [slorber]\ndate: 01-15-2025\n---",
+      "source_content_hash": "f4d7e473b0aa1964d2c9235fb158e9aec98682aa4e3b89445dfd4645d1ae598e",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "皆さん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week we continue to notice interesting activity around the upcoming `<ViewTransition>` component.",
+      "source_content_hash": "4bd68680b6d89d0144128820fff9ac3806f36e2abb12665ed5c348271cb9d5e8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週も、今後の`<ViewTransition>`コンポーネントを巡る興味深い動きが続いています。"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Expo is finally launching its universal cross-platform hosting solution, and Shopify shared interesting feedback on its usage of React Native.",
+      "source_content_hash": "440732253537678d16cccfd1c8d35f29fe2391d19f2b48c5e4b249e977ba8315",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Expoがついにクロスプラットフォームのユニバーサルホスティングソリューションをローンチし、ShopifyはReact Nativeの使用に関する興味深いフィードバックを共有しました。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Make sure to check our partner conf,️ [React Paris 2025](https://react.paris/?utm_source=thisweekinreact) -  🇫🇷 Paris - 20 & 21 March (2 days) / 19th of March (Workshops) - Full Speaker line up just dropped! Jemima Abu, Antoine Chalifour and David Khourshid joined the line up. Get 20% off tickets with code \"TWIR”.",
+      "source_content_hash": "a4d3540fa801023feb8e9c11fc1c911aa816228e777e9d27acd79e1120a0dd23",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "パートナーカンファレンス[React Paris 2025](https://react.paris/?utm_source=thisweekinreact)をチェックしてください - 🇫🇷 パリ - 3月20日＆21日（2日間）/ 3月19日（ワークショップ） - スピーカーラインナップが発表されました！Jemima Abu、Antoine Chalifour、David Khourshidが参加します。コード「TWIR」でチケットを20%オフで購入できます。"
+      }
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6429a3aa"
+      }
+    },
+    {
+      "segment_id": "6c991806",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6c991806"
+      }
+    },
+    {
+      "segment_id": "8f488ab5",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_8f488ab5"
+      }
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "[![If It’s Slow, It’s Broken 🐢](/emails/issues/217/sentry.jpg)](https://sentry.io/lp/new-apm/?utm_source=thisweekinreact\\&utm_medium=paid-community\\&utm_campaign=perf-fy26q1-evergreen\\&utm_content=newsletter-primary-slowbug-seehow)",
+      "source_content_hash": "1c6b7f2810260dfdb4a2e6bb8453c9b6275c064fd171bde6cc9450cefb27ac67",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![遅いのはバグです 🐢](/emails/issues/217/sentry.jpg)](https://sentry.io/lp/new-apm/?utm_source=thisweekinreact\\&utm_medium=paid-community\\&utm_campaign=perf-fy26q1-evergreen\\&utm_content=newsletter-primary-slowbug-seehow)"
+      }
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "**[If It’s Slow, It’s Broken 🐢](https://sentry.io/lp/new-apm/?utm_source=thisweekinreact\\&utm_medium=paid-community\\&utm_campaign=perf-fy26q1-evergreen\\&utm_content=newsletter-primary-slowbug-seehow)**",
+      "source_content_hash": "451ceda2b7bf8e15fde0bb56b32c47068c94d466031cd5aa114dc79025ca4741",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[遅いのはバグです 🐢](https://sentry.io/lp/new-apm/?utm_source=thisweekinreact\\&utm_medium=paid-community\\&utm_campaign=perf-fy26q1-evergreen\\&utm_content=newsletter-primary-slowbug-seehow)**"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "Bad performance is just another kind of bug 🐛 . And Sentry helps you find bugs fast, even the ones that aren’t obvious.",
+      "source_content_hash": "9be1c4bc288836bec25320f7f096cba98918e28a688cadb91ea93508ee9bf913",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "パフォーマンスの悪さは、ただの別の種類のバグです 🐛。Sentryは、明らかでないバグも含め、迅速に見つけるのに役立ちます。"
+      }
+    },
+    {
+      "segment_id": "86b525ab",
+      "source_content": "* Cut chunks of time off of bad API calls\n* Reduce extremely costly, frequently pinged, or generally slow db operations\n* Uncover the source of a traffic spike spike in minutes",
+      "source_content_hash": "2e0fe632bfb4bda2c95126ca737e60ba30a0a9dbb0dd23a8faeae776a60a8ee6",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 悪いAPIコールから時間を削減\n* 非常にコストが高く、頻繁に呼び出される、または一般的に遅いDB操作を削減\n* トラフィックスパイクの原因を数分で解明"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "Whether it’s an error or a slowdown, Sentry helps you fix issues fast and keep your app running smoothly. Because if it’s slow, it’s broken. [See for yourself](https://sentry.io/lp/new-apm/?utm_source=thisweekinreact\\&utm_medium=paid-community\\&utm_campaign=perf-fy26q1-evergreen\\&utm_content=newsletter-primary-slowbug-seehow).",
+      "source_content_hash": "284a056a4a2f1742737481a7ee2f21fccd522af00da000f8cf9faebc04f59373",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "エラーであれ速度低下であれ、Sentryは問題を迅速に修正し、アプリをスムーズに稼働させ続けるのに役立ちます。遅いのはバグだからです。[実際に確かめてください](https://sentry.io/lp/new-apm/?utm_source=thisweekinreact\\&utm_medium=paid-community\\&utm_campaign=perf-fy26q1-evergreen\\&utm_content=newsletter-primary-slowbug-seehow)。"
+      }
+    },
+    {
+      "segment_id": "91afe33f",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "782c902a",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "[![Revealed: React's experimental animations API](/emails/issues/217/viewtransition.jpg)](https://motion.dev/blog/reacts-experimental-view-transition-api)",
+      "source_content_hash": "2304b4426885cf5badac31930212d2e511f2e261b04b95e4a73e3f9b534ad010",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![公開：Reactの実験的なアニメーションAPI](/emails/issues/217/viewtransition.jpg)](https://motion.dev/blog/reacts-experimental-view-transition-api)"
+      }
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "**[Revealed: React's experimental animations API](https://motion.dev/blog/reacts-experimental-view-transition-api)**",
+      "source_content_hash": "f834e5431fba1655598577edb243c3ae88d2da4db9eadb2774059e5f48ed8ca7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[公開：Reactの実験的なアニメーションAPI](https://motion.dev/blog/reacts-experimental-view-transition-api)**"
+      }
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "Motion creator explains the animation tradeoffs of using View Transitions and why it makes sense for React to directly integrate it into its reconciler through a new `<ViewTransition>` component. This interactive post shows an early look at the upcoming React feature, including some of its current implementation details, and explains how it overlaps a bit with Motion layout animations.",
+      "source_content_hash": "7e3ba4aa6ffae27d579dc9b48ae9d1d4a7a75c0e1e9bcba1d872b0f7b83ff88d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Motionの作成者が、View Transitionsを使用する際のアニメーションのトレードオフと、Reactが新しい`<ViewTransition>`コンポーネントを通じてそれを直接レコンシラーに統合する意義について説明しています。このインタラクティブな記事では、今後のReact機能の早期の様子や現在の実装の詳細の一部を示し、Motionのレイアウトアニメーションと少し重複する点について説明しています。"
+      }
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "Keep in mind this exciting new API is still in active development, subject to change, and new PRs keep landing, notably:",
+      "source_content_hash": "50ded5d40c274a064097c47dad74c542b447a9c82c6cd7ad320fd68d1a4845d9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このエキサイティングな新しいAPIはまだ開発中であり、変更される可能性があり、新しいPRが引き続き追加されています。特に："
+      }
+    },
+    {
+      "segment_id": "40251870",
+      "source_content": "* 👀 [React Core PR - Support only View Transitions v2](https://github.com/facebook/react/pull/31996): The new component will leverage recent v2 spec APIs such as `view-transition-class`, requires Safari 18.2+, and still unsupported in Firefox.\n* 👀 [React Core PR - View Transition Class Names based on event kind](https://github.com/facebook/react/pull/32050)\n* 👀 [Next.js PR - `experimental.viewTransition` flag](https://github.com/vercel/next.js/pull/74659): You can try the feature in Next.js 15.2 canary 4.",
+      "source_content_hash": "7866d5564c8b67c4e934105877182d2d6142bb36888a122ffd67348b233638ef",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 👀 [React Core PR - View Transitions v2のみをサポート](https://github.com/facebook/react/pull/31996): 新しいコンポーネントは`view-transition-class`などの最近のv2仕様APIを活用し、Safari 18.2+が必要で、Firefoxではまだサポートされていません。\n* 👀 [React Core PR - イベント種類に基づくView Transitionクラス名](https://github.com/facebook/react/pull/32050)\n* 👀 [Next.js PR - `experimental.viewTransition`フラグ](https://github.com/vercel/next.js/pull/74659): Next.js 15.2 canary 4でこの機能を試すことができます。"
+      }
+    },
+    {
+      "segment_id": "49d8fe2a",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "9b797309",
+      "source_content": "* 💸 [Product for Engineers - Product management is broken. Engineers can fix it](https://dub.link/twir-jan15)\n* 👀 [React website PR - Upgrade to Next.js 15, React 19, enable React Compiler](https://github.com/reactjs/react.dev/pull/6996)\n* 👀 [React Router Milestones](https://github.com/remix-run/react-router/milestones): Now communicating what they hope to ship in upcoming releases. v7.2 should include initial RSC support (from loaders/actions), Server Actions, middleware.\n* 👀 [Adopting the compiler at Wakelet](https://github.com/reactwg/react-compiler/discussions/52): Positive feedback, improving LCP and INP metrics. It did not magically solve all the perf issues, but was close to a “free lunch” experience.\n* 📖 [Next.js docs - Single-Page Applications with Next.js](https://nextjs.org/docs/app/building-your-application/upgrading/single-page-applications): This new page notably documents how the newly released [SWR 2.3](https://github.com/vercel/swr/releases/tag/v2.3.0) now allows passing promises in `<SWRConfig fallback>`, enabling you to seamlessly move data fetching from the client to the server.\n* 📜 [Understanding React Server Components](https://tonyalicea.dev/blog/understanding-react-server-components/): A comprehensive and well-presented overview of RSCs.\n* 📜 [Accessibility essentials every front-end developer should know](https://martijnhols.nl/blog/accessibility-essentials-every-front-end-developer-should-know): Accessibility tips with React examples.\n* 📜 [Bloated React code? Try component hooks](https://www.tymzap.com/blog/bloated-react-code-try-component-hooks): Reduce cognitive load by extracting a component hook so that the component can solely focus on rendering.\n* 📜 [Make FormData and input names type-safe in React](https://www.typeonce.dev/article/make-form-data-and-input-names-type-safe-in-react): Using hand-made TS, then using Effect.Schema and FP.\n* 📜 [Maybe don't navigate(-1) in Remix/React Router](https://programmingarehard.com/2025/01/13/maybe-dont-navigate-1.html/): Or how to navigate backward but ensure you never leave the current app.\n* 📜 [Should you use MobX-State-Tree with React in 2025?](https://coolsoftware.dev/blog/mobx-state-tree-react-2025/)\n* 📜 [Become expert in React Query](https://tigerabrodi.blog/become-expert-in-react-query)\n* 📦 [Next.js React Server Component Testing](https://github.com/kettanaito/nextjs-rsc-testing): An example repository of testing Next.js RSCs using MSW and Playwright.\n* 📦 [Nextra 4.0](https://the-guild.dev/blog/nextra-4): The Next.js-based docs framework upgrades to App Router among many other things.\n* 📦 [Base UI 1.0.0-alpha.5](https://base-ui.com/react/overview/releases)\n* 📦 [Superglue 1.0 - React + Rails](https://thoughtbot.com/blog/superglue-1-0-react-rails-a-new-era-of-thoughtfulness)\n* 🎥 [Theo - All the ways HTML gets to your browser](https://www.youtube.com/watch?v=Cifkb-ZVps4)\n* 🎥 [Simeon Griggs - useOptimistic from React docs to production](https://www.youtube.com/watch?v=_0bwnnlUZRU)",
+      "source_content_hash": "f8251c7c99d76b93307713fb48f67ab32605ba0ee211e111d21a03711debe304",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [エンジニアのためのプロダクト - プロダクトマネジメントは壊れている。エンジニアがそれを修正できる](https://dub.link/twir-jan15)\n* 👀 [ReactウェブサイトPR - Next.js 15、React 19へのアップグレード、React Compilerの有効化](https://github.com/reactjs/react.dev/pull/6996)\n* 👀 [React Routerのマイルストーン](https://github.com/remix-run/react-router/milestones): 今後のリリースで提供予定の機能を明示。v7.2にはローダー/アクションからの初期RSCサポート、Server Actions、ミドルウェアが含まれる予定。\n* 👀 [Wakeletでのコンパイラ導入](https://github.com/reactwg/react-compiler/discussions/52): LCPとINPメトリクスの改善など好意的なフィードバック。すべてのパフォーマンス問題を魔法のように解決したわけではないが、「無料のランチ」に近い体験だった。\n* 📖 [Next.jsドキュメント - Next.jsでのシングルページアプリケーション](https://nextjs.org/docs/app/building-your-application/upgrading/single-page-applications): この新しいページでは、新しくリリースされた[SWR 2.3](https://github.com/vercel/swr/releases/tag/v2.3.0)が`<SWRConfig fallback>`でプロミスを渡せるようになり、データフェッチをクライアントからサーバーにシームレスに移行できることが記載されている。\n* 📜 [React Server Componentsの理解](https://tonyalicea.dev/blog/understanding-react-server-components/): RSCに関する包括的でわかりやすい概要。\n* 📜 [フロントエンド開発者が知っておくべきアクセシビリティの基本](https://martijnhols.nl/blog/accessibility-essentials-every-front-end-developer-should-know): Reactの例を交えたアクセシビリティのヒント。\n* 📜 [Reactコードが肥大化？コンポーネントフックを試してみよう](https://www.tymzap.com/blog/bloated-react-code-try-component-hooks): コンポーネントフックを抽出して認知負荷を軽減し、コンポーネントをレンダリングに集中させる。\n* 📜 [ReactでFormDataとinput名を型安全にする](https://www.typeonce.dev/article/make-form-data-and-input-names-type-safe-in-react): 手作りのTypeScriptを使用し、その後Effect.SchemaとFPを使用する方法。\n* 📜 [Remix/React Routerでnavigate(-1)を使わない方が良いかもしれない](https://programmingarehard.com/2025/01/13/maybe-dont-navigate-1.html/): または、戻るナビゲーションを行いながら現在のアプリを離れないようにする方法。\n* 📜 [2025年にReactでMobX-State-Treeを使うべきか？](https://coolsoftware.dev/blog/mobx-state-tree-react-2025/)\n* 📜 [React Queryのエキスパートになる](https://tigerabrodi.blog/become-expert-in-react-query)\n* 📦 [Next.js React Server Componentのテスト](https://github.com/kettanaito/nextjs-rsc-testing): MSWとPlaywrightを使用してNext.js RSCをテストする例のリポジトリ。\n* 📦 [Nextra 4.0](https://the-guild.dev/blog/nextra-4): Next.jsベースのドキュメントフレームワークがApp Routerなど多くの機能にアップグレード。\n* 📦 [Base UI 1.0.0-alpha.5](https://base-ui.com/react/overview/releases)\n* 📦 [Superglue 1.0 - React + Rails](https://thoughtbot.com/blog/superglue-1-0-react-rails-a-new-era-of-thoughtfulness)\n* 🎥 [Theo - HTMLがブラウザに到達するすべての方法](https://www.youtube.com/watch?v=Cifkb-ZVps4)\n* 🎥 [Simeon Griggs - ReactドキュメントからプロダクションまでのuseOptimistic](https://www.youtube.com/watch?v=_0bwnnlUZRU)"
+      }
+    },
+    {
+      "segment_id": "e7961985",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_e7961985"
+      }
+    },
+    {
+      "segment_id": "63e1d83c",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "58ed925f",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "463ed165",
+      "source_content": "[![Tests are dead - Meticulous is here](/emails/issues/217/meticulous.jpg)](https://www.meticulous.ai?utm_source=thisweekinreact\\&utm_campaign=jan15th)",
+      "source_content_hash": "a389101e030787256aa0e9554c4f78629f63450d598b352d0bff0b7c5eeb6328",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![テストは終わった - Meticulousがここに](](/emails/issues/217/meticulous.jpg)](https://www.meticulous.ai?utm_source=thisweekinreact\\&utm_campaign=jan15th)"
+      }
+    },
+    {
+      "segment_id": "a5c5772a",
+      "source_content": "**[Tests are dead - Meticulous is here](https://www.meticulous.ai?utm_source=thisweekinreact\\&utm_campaign=jan15th)**",
+      "source_content_hash": "d1b78938c43f275ef1b15f3cd6f17e115a6fa30d5a55829c824ee19b722d87bb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[テストは終わった - Meticulousがここに](https://www.meticulous.ai?utm_source=thisweekinreact\\&utm_campaign=jan15th)**"
+      }
+    },
+    {
+      "segment_id": "fbc2db85",
+      "source_content": "Meticulous creates and maintains an exhaustive suite of e2e ui tests with **zero** developer effort.",
+      "source_content_hash": "0ecb39db111eb1375a61d1cef29da6ab4b417c2dea7f9c87927ef68686364ce6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Meticulousは、**ゼロ**の開発者努力で包括的なe2e UIテストスイートを作成し、維持します。"
+      }
+    },
+    {
+      "segment_id": "8126f763",
+      "source_content": "This quote from the CTO of Traba sums the product up best: \"Meticulous has fundamentally changed the way we approach frontend testing in our web applications, fully eliminating the need to write any frontend tests. The software gives us confidence that every change will be completely regression tested, allowing us to ship more quickly with significantly fewer bugs in our code. The platform is easy to use and reduces the barrier to entry for backend-focused devs to contribute to our frontend codebase.\"",
+      "source_content_hash": "6acb7ce95334c968f65d98d8aa681c516c73056b1a7a22c54b80fab6df929cf6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "TrabaのCTOによるこの言葉が、この製品を最もよく表しています：「Meticulousは、私たちのウェブアプリケーションにおけるフロントエンドテストのアプローチを根本的に変え、フロントエンドテストを一切書く必要を完全になくしました。このソフトウェアは、あらゆる変更が完全に回帰テストされることを保証し、より迅速にリリースできると同時に、コードのバグを大幅に減らすことができます。このプラットフォームは使いやすく、バックエンド中心の開発者がフロントエンドコードベースに貢献する際の障壁を低減します。」"
+      }
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "Meticulous is used by companies like Lattice, Bilt Rewards, Power and many others.",
+      "source_content_hash": "c16da34b4d73e2dd42a62da57689cb6e6e595583d38e749cd48371c34f1c049c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Meticulousは、Lattice、Bilt Rewards、Powerなどの企業で利用されています。"
+      }
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "This [post](https://www.meticulous.ai/blog/lessons-from-a-decade?utm_source=thisweekinreact\\&utm_campaign=jan15th) from our CTO sets out the context of why exhaustive testing can double engineering velocity.",
+      "source_content_hash": "cd3680a9ea2f7139b5657e35929930c60757adfc54394447a4c051ae5fd1db18",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "私たちのCTOによるこの[記事](https://www.meticulous.ai/blog/lessons-from-a-decade?utm_source=thisweekinreact\\&utm_campaign=jan15th)では、網羅的なテストがエンジニアリングの速度を倍増させる理由について説明しています。"
+      }
+    },
+    {
+      "segment_id": "945bf499",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "e33a2404",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "[![EAS Hosting Preview](/emails/issues/217/easdeploy.jpg)](https://expo.dev/blog/expo-announces-eas-hosting-service)",
+      "source_content_hash": "9d76b14155732f558b07d109adf93c831fbfa5abcd108f7e230940317c845a6d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![EAS Hosting Preview](/emails/issues/217/easdeploy.jpg)](https://expo.dev/blog/expo-announces-eas-hosting-service)"
+      }
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "**[EAS Hosting Preview](https://expo.dev/blog/expo-announces-eas-hosting-service)**",
+      "source_content_hash": "d6d9f31dd841fc1cdae1b48dc095b8d4e90bf528b9fa904b2c38cc297059a215",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[EAS Hosting Preview](https://expo.dev/blog/expo-announces-eas-hosting-service)**"
+      }
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "Expo unveiled what we expected, the first-ever universal app-hosting platform that completes the vision of bringing the web DX to the cross-platform world. It enables us to seamlessly deploy Expo’s server-related features, notably Expo for Web, API Routes, and Universal React Server Components. It takes into account mobile app subtleties, such as syncing the backend/app versions. You can use either the CLI or CI (EAS Workflows). Under the hood, it’s using Cloudflare Workers. There’s a free plan.",
+      "source_content_hash": "8325a44cfc9595720a347dfc1b212ec3ba1f6737cefdb1c027a0e79d9947dfa4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Expoは、ウェブの開発者体験（DX）をクロスプラットフォームの世界にもたらすというビジョンを完成させる、初のユニバーサルアプリホスティングプラットフォームを発表しました。これにより、Expoのサーバー関連機能、特にExpo for Web、API Routes、Universal React Server Componentsをシームレスにデプロイできます。モバイルアプリの特殊性（バックエンド/アプリのバージョン同期など）も考慮されています。CLIまたはCI（EAS Workflows）を使用できます。内部ではCloudflare Workersを利用しています。無料プランもあります。"
+      }
+    },
+    {
+      "segment_id": "4c30a6aa",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "[![Five years of React Native at Shopify](/emails/issues/217/shopify.jpg)](https://shopifyengineering.myshopify.com/blogs/engineering/five-years-of-react-native-at-shopify)",
+      "source_content_hash": "6af5d4dde7b2d21b02f1ced42686f4f4459b3ee68cc6b80f44b9fcc6fa98eb7e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Five years of React Native at Shopify](/emails/issues/217/shopify.jpg)](https://shopifyengineering.myshopify.com/blogs/engineering/five-years-of-react-native-at-shopify)"
+      }
+    },
+    {
+      "segment_id": "4be28ed1",
+      "source_content": "**[Five years of React Native at Shopify](https://shopifyengineering.myshopify.com/blogs/engineering/five-years-of-react-native-at-shopify)**",
+      "source_content_hash": "97d73a44c3839831a9c5804bd376d13ec52c7b74542753ebafd417fe34d2b6d0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Five years of React Native at Shopify](https://shopifyengineering.myshopify.com/blogs/engineering/five-years-of-react-native-at-shopify)**"
+      }
+    },
+    {
+      "segment_id": "0e80209e",
+      "source_content": "Shopify successfully migrated all their 6 apps to React Native, and shared a nuanced feedback summarizes well the tradeoffs of using React Native in practice. On the positive side we have: cross-platform support, performance, hot reloading, knowledge portability... You still need native knowledge, and a few things could be improved, such as the debugging experience and the ability to easily upgrade.",
+      "source_content_hash": "921a83c290d39147c7bc87d25964447d2234809379b8763baf86a40c66c2b238",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Shopifyは、6つのアプリすべてをReact Nativeに移行し、React Nativeを実際に使用する際のトレードオフをよくまとめたフィードバックを共有しました。ポジティブな側面としては、クロスプラットフォームサポート、パフォーマンス、ホットリロード、知識の移植性などが挙げられます。ネイティブの知識は依然として必要であり、デバッグ体験や簡単なアップグレードの能力など、改善の余地がある点も指摘されています。"
+      }
+    },
+    {
+      "segment_id": "3c5a1374",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "b0465fca",
+      "source_content": "* 💸 [WithFrame - React Native Templates to accelerate your app development](https://withfra.me)\n* 👀 [Expo Router RSC Movies Demo](https://github.com/EvanBacon/expo-rsc-movies)\n* 📜 [Animated Loader with React Native Skia](https://reactiive.io/articles/animated-loader-skia)\n* 📦 [React Native 0.78 RC.0](https://github.com/facebook/react-native/releases/tag/v0.78.0-rc.0): This upcoming version upgrades to React 19! Note that the v0.77 stable release has been postponed until next week due to a bug.\n* 📦 [React Native 0.76.6](https://github.com/facebook/react-native/releases/tag/v0.76.6)\n* 📦 [React Query 5.63 - Allow useQuery and useQueries to unsubscribe from the query cache](https://github.com/TanStack/query/releases/tag/v5.63.0): Particularly useful to unsubscribe hidden RN stack screens (including querying), more powerful/granular than react-freeze.\n* 📦 [Input OTP Native - One Time Passcode input, unstyled and fully customizable](https://github.com/yjose/input-otp-native)\n* 📦 [Edge-to-Edge 1.3 - Transparent button navigation bar](https://github.com/zoontek/react-native-edge-to-edge/releases/tag/1.3.0)\n* 📦 [Skia 1.9 & 1.10 - tvOS support, new reconcilier, image sampling options](https://github.com/Shopify/react-native-skia/releases)\n* 📦 [Radon 1.2 - RN 0.77, Redux and React Query tools, local EAS builds](https://github.com/software-mansion/radon-ide/releases/tag/v1.2.0)\n* 📦 [Screens 4.5 - RN 0.77 support](https://github.com/software-mansion/react-native-screens/releases/tag/4.5.0)\n* 📦 [Gesture Handler 2.22 - RN 0.77 support, Text component](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.22.0)\n* 📦 [Reanimated 3.16.7 - RN 0.77 support](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.16.7)\n* 🎥 [Simon Grimm - The Missing Piece to Universal React Native](https://www.youtube.com/watch?v=UpPj5xZiiFo)\n* 🎙️ [React Universe On Air 46 - Lessons from Shopify's Migration to React Native with Mustafa Ali](https://www.youtube.com/watch?v=WFoO-GDvrY8)\n* 🎙️ [Rocket Ship 58 - React Native Games & Animations with Ben Awad](https://share.transistor.fm/s/249233ec)\n* 🎙️ [RNR 318 - Maintaining Open Source Libraries at Software Mansion](https://www.reactnativeradio.com/episodes/rnr-318-maintaining-open-source-libraries-at-software-mansion)",
+      "source_content_hash": "0f9d76101d9c895a365cd4e5a8a03cb939c293b4d0cf442592cb7ecc66d7d457",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [WithFrame - React Nativeアプリ開発を加速するテンプレート](https://withfra.me)\n* 👀 [Expo Router RSC Movies デモ](https://github.com/EvanBacon/expo-rsc-movies)\n* 📜 [React Native Skiaを使ったアニメーションローダー](https://reactiive.io/articles/animated-loader-skia)\n* 📦 [React Native 0.78 RC.0](https://github.com/facebook/react-native/releases/tag/v0.78.0-rc.0): この次期バージョンではReact 19にアップグレードされます！なお、v0.77の安定版リリースはバグのため来週まで延期されています。\n* 📦 [React Native 0.76.6](https://github.com/facebook/react-native/releases/tag/v0.76.6)\n* 📦 [React Query 5.63 - useQueryとuseQueriesがクエリキャッシュからアンサブスクライブ可能に](https://github.com/TanStack/query/releases/tag/v5.63.0): 非表示のRNスタックスクリーン（クエリ含む）のアンサブスクライブに特に有用。react-freezeよりも強力で細かい制御が可能。\n* 📦 [Input OTP Native - ワンタイムパスコード入力、スタイル未適用で完全カスタマイズ可能](https://github.com/yjose/input-otp-native)\n* 📦 [Edge-to-Edge 1.3 - 透過的なボタンナビゲーションバー](https://github.com/zoontek/react-native-edge-to-edge/releases/tag/1.3.0)\n* 📦 [Skia 1.9 & 1.10 - tvOSサポート、新しいレコンシラー、画像サンプリングオプション](https://github.com/Shopify/react-native-skia/releases)\n* 📦 [Radon 1.2 - RN 0.77対応、ReduxとReact Queryツール、ローカルEASビルド](https://github.com/software-mansion/radon-ide/releases/tag/v1.2.0)\n* 📦 [Screens 4.5 - RN 0.77サポート](https://github.com/software-mansion/react-native-screens/releases/tag/4.5.0)\n* 📦 [Gesture Handler 2.22 - RN 0.77サポート、Textコンポーネント](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.22.0)\n* 📦 [Reanimated 3.16.7 - RN 0.77サポート](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.16.7)\n* 🎥 [Simon Grimm - ユニバーサルReact Nativeに欠けていたピース](https://www.youtube.com/watch?v=UpPj5xZiiFo)\n* 🎙️ [React Universe On Air 46 - ShopifyのReact Native移行から学んだこと（Mustafa Ali氏）](https://www.youtube.com/watch?v=WFoO-GDvrY8)\n* 🎙️ [Rocket Ship 58 - Ben Awad氏と語るReact Nativeゲーム＆アニメーション](https://share.transistor.fm/s/249233ec)\n* 🎙️ [RNR 318 - Software Mansionでのオープンソースライブラリメンテナンス](https://www.reactnativeradio.com/episodes/rnr-318-maintaining-open-source-libraries-at-software-mansion)"
+      }
+    },
+    {
+      "segment_id": "75603060",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c766290e",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "6409152f",
+      "source_content": "* 📣 [WinterTC (TC55) - Technical Committee on Web-interoperable Server Runtimes](https://www.w3.org/blog/2025/collaborating-across-w3c-and-ecma-for-web-interoperable-server-runtimes-through-wintertc/): Supersede WinterCG, responsible for defining a Minimum Common API spec for server runtimes, aligned with web APIs.\n* 📜 [Build systems and bundlers](https://github.com/orgs/web-infra-dev/discussions/24): Rspack maintainer’s research on how build tools and bundlers implement their incremental mode.\n* 📜 [Everything You Need to Know About Node.js Type Stripping](https://satanacchio.hashnode.dev/everything-you-need-to-know-about-nodejs-type-stripping): Tradeoffs explained by the Node.js PR author, including why `.tsx` files are not supported.\n* 📜 [CSS text-box-trim - Take back space from above/below, achieve optical balance](https://developer.chrome.com/blog/css-text-box-trim)\n* 📜 [Updates to the customizable select API](https://una.im/select-updates/)\n* 📜 [ECMAScript feature: import attributes](https://2ality.com/2025/01/import-attributes.html)\n* 📦 [Lightning CSS 1.29 - Support for view transitions level 2](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.29.0)\n* 📦 [Bun 1.1.43 - S3 support, HTML bundling, V8 snapshots and more](https://bun.sh/blog/bun-v1.1.43)",
+      "source_content_hash": "5f9416288326f978f1b88142d80924cf36949a7de49de374de4f05f7ea061731",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📣 [WinterTC (TC55) - Web相互運用可能なサーバーランタイムに関する技術委員会](https://www.w3.org/blog/2025/collaborating-across-w3c-and-ecma-for-web-interoperable-server-runtimes-through-wintertc/): WinterCGを引き継ぎ、Web APIと整合したサーバーランタイム向けの最小共通API仕様の策定を担当。\n* 📜 [ビルドシステムとバンドラー](https://github.com/orgs/web-infra-dev/discussions/24): Rspackメンテナーによる、ビルドツールとバンドラーがインクリメンタルモードを実装する方法に関する調査。\n* 📜 [Node.jsの型ストリッピングについて知っておくべきすべて](https://satanacchio.hashnode.dev/everything-you-need-to-know-about-nodejs-type-stripping): Node.js PR作者によるトレードオフの解説（.tsxファイルがサポートされない理由を含む）。\n* 📜 [CSS text-box-trim - 上下のスペースを取り戻し、視覚的なバランスを実現](https://developer.chrome.com/blog/css-text-box-trim)\n* 📜 [カスタマイズ可能なselect APIの更新](https://una.im/select-updates/)\n* 📜 [ECMAScript機能: import属性](https://2ality.com/2025/01/import-attributes.html)\n* 📦 [Lightning CSS 1.29 - ビュートランジションlevel 2のサポート](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.29.0)\n* 📦 [Bun 1.1.43 - S3サポート、HTMLバンドリング、V8スナップショットなど](https://bun.sh/blog/bun-v1.1.43)"
+      }
+    },
+    {
+      "segment_id": "c63467a3",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "73776161",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "f7e6e884",
+      "source_content": "[![alt](/emails/issues/217/meme.jpg)](https://bsky.app/profile/did\\:plc\\:hxmev3uady7j4litwnr5fzbg/post/3lfmnhwx6e222)",
+      "source_content_hash": "d044bbfa885da37216ee99b38e79c8c4e08479f1b9eb8ed5f82686afc0107b92",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/217/meme.jpg)](https://bsky.app/profile/did\\:plc\\:hxmev3uady7j4litwnr5fzbg/post/3lfmnhwx6e222)"
+      }
+    },
+    {
+      "segment_id": "17b50e81",
+      "source_content": "[![alt](/emails/issues/217/meme2.jpg)](https://x.com/mrousavy/status/1878383018324222000)",
+      "source_content_hash": "29b3e92cdb51ff51a2cd5af830cfa38a537ffca8ca82e4119ecb0500aca3e428",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/217/meme2.jpg)](https://x.com/mrousavy/status/1878383018324222000)"
+      }
+    },
+    {
+      "segment_id": "719d3997",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "またね！👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/217/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:38.878553+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "caa649d8256812a27252683ec03b90b3d4331ed9d8c18ef36cf5aea4e88f1aa1"
+  }
+}

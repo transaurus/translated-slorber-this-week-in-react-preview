@@ -1,0 +1,231 @@
+---
+slug: /122
+title: "This Week In React #122: Next.js 13, Turbopack, Remixing Shopify, React-Three-Fiber Journey, Gatsby Valhalla, Expo 47, Rive, Storybook, Asta..."
+authors: [slorber]
+date: 11-01-2022
+---
+
+みなさん、こんにちは！
+
+今週は驚きの連続でした！
+
+* Next.js 13が最新のReactイノベーションを提供
+* TurbopackがWebpackの後継となる可能性
+* ShopifyがRemixを買収
+* Gatsbyがv5をリリースし、データレイヤーをアグノスティックに
+* ExpoのSDK 47が非常に有望
+
+また、Three.js Journeyコースの大幅なアップデート（React-Three-Fiberモジュール含む）も見逃せません。ローンチに合わせてプロモコード「TWIR」を用意しました。これは今後作成予定の「お得情報」ページで初めて紹介されるコースとなります。
+
+新しいフォーマットを試しています！いつもより時間がかかりました😅。もしこのニュースレターをサポートしたいなら、[リツイート](https://slo.im/thread)や推薦、友人への紹介をいただけると嬉しいです🙏。ニュースレターが大きくなるほど、改善の機会も増えます。
+
+<!-- truncate -->
+
+**💡 [Twitterでこのニュースレターをチェック](https://slo.im/thread) - ビジュアルフォーマット🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Sizzy - 開発者向けブラウザ](/emails/issues/220/sizzy.jpg)](https://sizzy.co/?utm_campaign=newsletter\&utm_source=thisweekinreact)
+
+他の業界のプロは専用ツールを使っているのに、なぜウェブ開発者はまだ祖母がAmazonで買い物するのと同じブラウザを使い続けているのでしょうか？
+
+Sizzy以外のブラウザでlocalhost:3000を開いているなら、貴重な時間を無駄にしています。
+
+**Sizzy以前:** ウェブ開発はストレスフル、レスポンシブデザインは難しい、タブやアプリが多すぎて圧倒される。
+
+**Sizzy以後:** 必要なツールが全て一箇所に、レスポンシブデザインは簡単、コンテキストスイッチングなし。
+
+[こちらからダウンロード](https://sizzy.co/?utm_campaign=newsletter\&utm_source=thisweekinreact)して14日間無料でお試しください！
+
+***
+
+## ⚛️ React {#react}
+
+[![Next.js 13 キーノートスライド](/emails/issues/122/nextjs13.jpg)](https://nextjs.org/blog/next-13)
+
+**[Next.js 13 - 限界のないダイナミズム](https://nextjs.org/blog/next-13)**
+
+この新バージョンでは、新しいルーティングシステムとネストされたレイアウトがベータで導入されています。移行は段階的でオプションです：Next.jsのページを新しい`app/`フォルダに移動する必要があります。これにより、React Server ComponentsやEdge + Node.jsランタイムでのSSRストリーミングサポートといった最新のイノベーションが可能になります。
+
+⚡️ その他の重要な改善点：
+
+* Turbopack：新しいRustバンドラ（アルファ版、詳細は後述）
+* next/image：より軽量で柔軟、高速な新しい画像コンポーネント、レイアウトシフトを回避
+* @next/font：フォントを効率的にセルフホストし、レイアウトシフトを回避（先週紹介した[Fontaine](https://twitter.com/danielcroe/status/1586472544491950080)も参照）
+
+💬 コメント：
+
+* [Dan Abramov](https://twitter.com/dan_abramov/status/1585076899126345728) は、Reactが目指すターゲットアーキテクチャに具体的な実装を与えるこのリリースに興奮している
+* [Andrew Clark](https://twitter.com/acdlite/status/1585029529361612801) は、物議を醸した「Next.js 13が真のReact 18リリースである」という発言について説明している
+* [Matt Kane](https://twitter.com/ascorbic/status/1585004156615479296) は、ReactがNext.jsに依存しすぎていると考えている
+* [Zach Leatherman](https://twitter.com/zachleat/status/1584995586918731776) は、Next.js 13のHello Worldが依然として過剰なJavaScriptを送信していると指摘している
+
+🔗 参考リンク:
+
+* 🎥 [Next.js Conf キーノート](https://www.youtube.com/watch?v=NiknNI_0J48)
+* 🎥 [Fireship - Next.js 13... これはすべてを変える](https://www.youtube.com/watch?v=_w0Ikk4JY7U)
+* 🧵 [Next.js アップグレードガイド - ビジュアルスレッド](https://twitter.com/shadcn/status/1584971527820541953)
+
+***
+
+[![Turbopack keynote slide](/emails/issues/122/turbopack.jpg)](https://vercel.com/blog/turbopack)
+
+**[Turbopackの紹介: Webpackの後継となるRustベースのバンドラー](https://vercel.com/blog/turbopack)**
+
+VercelはWebpackの作者であるTobias Koppersを雇い、Rustで書かれた新しい超高速バンドラーであるTurbopackの開発に取り組んでいます。現時点ではこのツールはアルファ版で、主にNext.jsをサポートしており、機能は限定的です。他のフレームワーク（Svelte、Vueなど）や機能（Tailwindなど）のサポートは後日追加される予定です。
+
+Turbopackは開発者体験に最適化されており、VercelはこのツールがWebpackよりも700倍、Viteよりも20倍高速であると発表しています。これは、各関数の結果を独立してキャッシュできるRustのメモ化フレームワークであるTurboを基盤としています。Vercelはまた、より詳細なベンチマークを記載した[記事](https://turbo.build/blog/turbopack-benchmarks)を公開しています。
+
+💬 コメント:
+
+* [Jared Palmer](https://twitter.com/jaredpalmer/status/1584971637694222336) は、キャッシュの仕組みとTurborepo/Turbopackが統合される可能性について説明している
+* [Evan You](https://twitter.com/youyuxi/status/1585040261922820096) はベンチマークに疑問を呈し、[Turbopackは本当にViteより10倍速いのか？](https://github.com/yyx990803/vite-vs-next-turbo-hmr/discussions/8)というページを作成した。ViteはデフォルトでSWCを使用しておらず、公開されたベンチマークはBabelの使用に依存している。Viteはesbuild/RollupをTurbopackに置き換える可能性がある。
+* [Sebastian McKenzie](https://twitter.com/sebmck/status/1584971938786861056) は、コールドスタート時の比較的小さなパフォーマンス向上（4倍）を指摘し、これはキャッシュの初期化に伴うオーバーヘッドが原因である可能性が高いとしている
+* [Devon Govett](https://twitter.com/devongovett/status/1585035737971724288) は、このアーキテクチャがParcelと似ていると述べている
+* [Amjad Masad](https://twitter.com/amasad/status/1585001646782033921) は、React-NativeのMetroバンドラーが非常に長い間同様のキャッシュシステムを使用してきたと述べている
+
+***
+
+[![Remixing Shopify](/emails/issues/122/remixing.jpg)](https://shopify.engineering/remix-joins-shopify)
+
+**[RemixがShopifyに加わり、Webの未来を推進](https://shopify.engineering/remix-joins-shopify)**
+
+RemixはShopifyに加わり、Hydrogen eコマースメタフレームワークやその他のプロジェクトで使用されることになりました。Hydrogen 2.0はReact Server Componentsの使用をRemix APIに置き換えます！彼らはRemixのモデルがServer Componentsよりも理解しやすく、より強力であると判断しました。
+
+私にとってこれは素晴らしい買収です。Shopifyはインフラの懸念ではなくHydrogenの価値提案に集中でき、特にeコマースにとって重要なRemixのプログレッシブエンハンスメントの恩恵を受けられます。さらにRemixはReactから切り離されており、Shopifyは[Hydrogen UI](https://github.com/Shopify/hydrogen-ui)というフレームワークに依存しないライブラリを開発中です。ShopifyはReactを強制することなく、さまざまなフレームワーク（Vue、Svelteなど）の開発者にリーチできるようになり、共有インフラに依存することが可能になります。
+
+💬 コメント:
+
+* [Josh Larson](https://twitter.com/jplhomer/status/1587095536833859584)はHydrogen v1の開発に携わり、遭遇した課題をリストアップし、Next.js 13でより適切に実装されているReact Server Componentsの利点を疑問視していません。
+* [Ryan Florence](https://twitter.com/ryanflorence/status/1587171069915385856)は、ShopifyがServer Componentsに反対しているわけではなく、おそらく後でRemixに再導入されると述べています。
+* [Ryan Florence](https://twitter.com/ryanflorence/status/1587090973594558464)は、この買収がRemixに完全に集中することを可能にする方法を説明しています。
+* [Guillermo Rauch](https://twitter.com/rauchg/status/1587104330053664768)は、フロントエンドはヘッドレスバックエンドから切り離されるべきだと述べています。[Anthony Frehner](https://twitter.com/frehner_a/status/1587107928099651586)は、Next.jsのサポートがHydrogen UIに追加される予定だと返信しています。
+
+🔗 有用なリンク:
+
+* 📜 [The Hydrogen Roadmap](https://hydrogen.shopify.dev/roadmap/)はより多くの技術的詳細で更新されました。
+* 📜 [Remixing Shopify](https://remix.run/blog/remixing-shopify): Remixチームの発表で、eコマース用途から切り離された独立したオープンソースのReactフレームワークとして残ります。
+* 🎥 [Fireship - When your JavaScript framework gets acquired](https://www.youtube.com/watch?v=HleppfVh8jc)
+
+***
+
+[![Three.js JourneyがReactに対応](/emails/issues/122/r3f.jpg)](https://twitter.com/bruno_simon/status/1585222892769497089)
+
+**[Three.js JourneyがReactに対応](https://twitter.com/bruno_simon/status/1585222892769497089)**
+
+Three.js Journeyは、Three.jsを使用してWeb上で3Dシーンを作成する方法を学ぶためのリファレンスコースです。Bruno Simonは、Three.jsに宣言型モデルをもたらす[React-Three-Fiber](https://github.com/pmndrs/react-three-fiber)に基づいた24時間分の追加ビデオをリリースしました。3Dが私たちのアプリケーションにやって来ています：フォームやビジネスアプリケーション以外の何かをやりたい場合は、今が学ぶ良い機会です。私も[このコースを受講中](https://github.com/slorber/react-three-fiber-journey)で、全く後悔していません！
+
+Brunoは今後10日間、["TWIR"](https://threejs-journey.com/join/TWIR)というプロモーションコードで30%（または\$66）の割引を提供しています。これはスポンサーではありません：このコースは本当に素晴らしく、アップデートによりReact開発者にとってさらに関連性が高まりました。
+
+近々、他の興味深いコース（私が収益を得ないもの）を含めたお得な情報ページを作成する予定です。どのコースが最も興味深いか教えてください。著者に連絡できるようにします！
+
+***
+
+* 🤔 [Reactコア - フェッチの重複排除にフェッチ計装を追加](https://github.com/facebook/react/pull/25516): `fetch`のモンキーパッチは[議論の的](https://github.com/facebook/react/issues/25573)となっています。
+* 💬 [RFC - TypeScript + React - 関数コンポーネントによる任意のレンダリングを許可](https://github.com/DefinitelyTyped/DefinitelyTyped/pull/62876)
+* 📜 [フルスタックコンポーネント](https://www.epicweb.dev/full-stack-components): Kent C. Doddsは、Remixがフロントエンドとバックエンドのコードを同じファイルにカプセル化した真のフルスタックコンポーネント作成を可能にすると説明しています。Remixのフルスタックパターンはルーティングに限定されず、`useFetcher`フックを介したマイクロインタラクション（いいねボタン、オートコンプリートなど）でも使用可能です。
+* 📜 [ReactアプリでのRiveアニメーション最適化手法](https://pixelpoint.io/blog/rive-react-optimizations/): RiveはLottieよりも効率的なアニメーションライブラリです。AlexはGatsbyやNext.jsアプリでのRiveアニメーション読み込み最適化方法（WASMランタイムのセルフホスティング、Webpackローダー、プリロード、遅延読み込みなど）を解説。他のコンテキストでも応用可能な有用な技術です。
+* 📜 [NetlifyでNext.js 13をデプロイ](https://www.netlify.com/blog/deploy-nextjs-13/): Netlifyが最新のNext.js 13機能をサポート。
+* 📜 [Storybookテストランナーによるコードカバレッジ](https://storybook.js.org/blog/code-coverage-with-the-storybook-test-runner/): Storybookのテスト機能をよくまとめています。[Istanbul](https://istanbul.js.org/)計装によりカバレッジレポート生成が可能に。レポート形式は設定可能です。
+* 📜 [Gatsby Slice API: 高精度インクリメンタルビルド](https://www.gatsbyjs.com/blog/gatsby-slice-api/): レイアウトコンポーネント（ヘッダー、フッター）更新時のビルドパフォーマンス向上を実現するGatsby 5新APIの仕組みを解説。
+* 📜 [クエリキャッシュのシーディング](https://tkdodo.eu/blog/seeding-the-query-cache): React-QueryとSuspense使用時のウォーターフォール問題の可能性を指摘。コンポーネントマウント前の`prefetchQuery`使用による読み込み最適化を提案。React-Queryが最新のReact機能とどう統合するかの展望を示唆。
+* 📜 [Freshでブログを構築する方法](https://deno.com/blog/build-a-blog-with-fresh): FreshはDenoベースのPreactフレームワーク
+* 📦 [Gatsby 5](https://twitter.com/GatsbyJS/status/1587136776828772353): 新バージョンは本日リリース予定！[Gatsby Valhalla Content Hub](https://twitter.com/GatsbyJS/status/1587489648397410320)により、GatsbyのGraphQLデータレイヤーを他のフレームワークで使用可能に！
+* 📦 [Docusaurus 2.2](https://twitter.com/docusaurus/status/1586347397667495936): Mermaid図表のサポート
+* 📦 [Asta](https://github.com/yisar/asta): QwikとMarkoにインスパイアされた新しい再開可能SSRフレームワークで、React風のシンタックスを採用。今後の展開に注目！
+* 📦 [TanStack Query 4.14](https://twitter.com/TkDodo/status/1587411685517697028): 新しいESLintプラグイン
+* 📦 [Remix Forms 1.0](https://twitter.com/danielweinmann/status/1587465389990084609)
+* 📦 [Downshift 7.0](https://github.com/downshift-js/downshift/releases/tag/v7.0.0)
+
+<SubscribeFormEmbed />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Sunsama - 何千人ものソフトウェアエンジニアが燃え尽きずに生産性を維持する方法](/emails/issues/121/sunsama.jpg)](https://www.sunsama.com/a/this-week-in-react)
+
+**[何千人ものソフトウェアエンジニアが燃え尽きずに生産性を維持する方法](https://www.sunsama.com/a/this-week-in-react)**
+
+あなたの仕事の成果は、費やした時間の量よりも重要であることをご存知でしょう。**[Sunsama](https://www.sunsama.com/a/this-week-in-react)** は、より少ない時間でより多くの成果を上げるために数千人の開発者が利用している内輪の秘密ツールです。
+
+JIRA、Github、Notionとの連携により、終わりのないタブ切り替えを解消します。1日の時間を区切り、趣味やサイドプロジェクトのためのスペースを作りましょう。
+
+最も良い点は？ **[14日間の無料トライアル](https://www.sunsama.com/a/this-week-in-react)**（クレジットカード不要）を提供しているので、今日からより多くの成果を上げ始めることができます。
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![Expo SDK 47 betaが利用可能に](/emails/issues/122/expo47.jpg)](https://blog.expo.dev/expo-sdk-47-beta-is-now-available-fa760eea1908)
+
+**[Expo SDK 47 betaが利用可能に](https://blog.expo.dev/expo-sdk-47-beta-is-now-available-fa760eea1908)**
+
+新しいExpo SDKが1週間のベータ期間で利用可能になりました。主なハイライトは以下の通りです：
+
+* React-Native 0.70.4とReact 18.1へのアップグレード
+* iOSのExpo GoでHermesが利用可能に。HermesはSDK 48からデフォルトのJSエンジンになります。
+* 多くのExpoモジュールでFabricをサポート
+* Swift/KotlinでネイティブFabricモジュールを簡単に作成できるExpo Modules API 1.0
+* React-Navigation用のファイルシステムルーティングがベータ版で利用可能。最新リリース[v0.0.34](https://twitter.com/Baconbrix/status/1587303631602307076)はSDK 47と互換性があります。
+
+来週にはさらに詳細をお伝えしますが、非常に素晴らしい新機能が盛り込まれた大きなリリースであることは間違いありません！
+
+***
+
+* 💡 [Andrew Clark: "ExpoがいつかServer Componentsを採用するのを見たいですね。React-NativeでもServer Componentsを本当に使えるべきです..."](https://twitter.com/Baconbrix/status/1585058874864062466): 私はReact-NativeでのServer Componentsの利用に[以前から興味を持っていました](https://twitter.com/sebastienlorber/status/1470810351197433863)。これがついに「公式に」公に言及されたことを非常に嬉しく思います！
+* 📦 [React-Native-Gesture-Handler 2.8](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.8.0)
+* 📦 [React-Native-Fast-Shadow](https://github.com/alan-eu/react-native-fast-shadow)
+* 🐦 [React-Native Androidがビルド速度を改善 + `--active-arch-only` フラグを追加](https://twitter.com/o_kwasniewski/status/1585270027942502404)
+* 📜 [Stripe Identity: シンプルなID認証](https://www.callstack.com/blog/stripe-identity-id-authentication-made-simple)
+* 📜 [React Native - 既存アプリとの統合ガイド - Android](https://michalchudziak.dev/blog/integration-with-existing-apps-android)
+* 📜 [React Native - 既存アプリとの統合ガイド - iOS](https://michalchudziak.dev/blog/integration-with-existing-apps-ios)
+* 🎙️ [The React Native Show #17 - React Native New Architecture](https://www.callstack.com/podcasts/react-native-new-architecture-ep-17)
+* 🎙️ [The React Native Show Podcast: Coffee Talk #6 - Webpack & Callstackの専門家が語るNext.js Conf](https://www.callstack.com/podcasts/webpack-callstack-experts-take-on-next-js-conf-coffee-talk-6)
+* 🎙️ [RNR 250 - React Native Firebase](https://reactnativeradio.com/episodes/rnr-250-react-native-firebase-tl-dr)
+* 🔗 [The React Native Community Map](https://lifeiswhat.notion.site/The-React-Native-Community-Map-07f3221c294d4c8ab65a13cf1dee6901)
+* 🗣 [Wix Engineering - 公式React Nativeパートナーに](https://www.wix.engineering/post/wix-engineering-now-an-official-react-native-partner)
+
+***
+
+## 🧑‍💻 Jobs {#jobs}
+
+🧑‍💼 [**Causalのプロダクトエンジニア、リモート/ロンドン/NY、\$150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied\&lever-source%5B%5D=thisweekinreact.com)
+
+Causalは、数値データの処理と可視化のためのオールインワンツールを構築しているSeries Aスタートアップです（Coatue/Accelが支援）。UX/パフォーマンスの難しい課題を解決できるReactエンジニアを募集しています。
+
+🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\&t=ArRLC77BpRwXXCdx8fnUqw)
+
+React Nativeに特化した開発者向けの複数のポジションを募集しています！報酬は約160kドル＋10％のボーナスです。RNの実務経験があり、米国在住である必要があります。詳細は[@gabe\_g2i](https://twitter.com/gabe_g2i)にDMでお問い合わせください。This Week in Reactからの紹介であることをお忘れなく。
+
+💡 [求人の掲載方法は？](https://thisweekinreact.com/sponsor)
+
+***
+
+## 🔀 Other {#other}
+
+* [Babel 7.20](https://babeljs.io/blog/2022/10/27/7.20.0): DenoターゲットとTS 4.9サポート（`satisfies`対応！）
+* [Announcing TypeScript 4.9 RC](https://devblogs.microsoft.com/typescript/announcing-typescript-4-9-rc/): `satisfies`演算子を導入！
+* [Node v18.12.0 (LTS)](https://nodejs.org/en/blog/release/v18.12.0/): v18初のLTSリリース
+* [Open-sourcing the new TypeScript type checker](https://kdy1.dev/posts/2022/10/open-sourcing-stc): swc作者がRust製タイプチェッカーstcをオープンソース化
+* [npm v9.0.0](https://github.blog/changelog/2022-10-24-npm-v9-0-0-released/)
+* [VercelがSplitbeeを買収しファーストパーティ分析機能を拡張](https://vercel.com/blog/vercel-acquires-splitbee)
+* [Deno 1.27: IDE機能が大幅改善](https://deno.com/blog/v1.27)
+* [Chrome 108 beta](https://developer.chrome.com/blog/chrome-108-beta/)
+* [Vite 3.2](https://twitter.com/vite_js/status/1585261680841424897)
+* [Vite向け実験的Dev Server永続キャッシュ機能](https://twitter.com/Akryum/status/1585769403781505024)
+* [Two JavaScripts](https://remysharp.com/2022/10/13/two-javascripts)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![Next.js 13 - 1299\$価格 - Apple風キーノートのジョーク](/emails/issues/122/meme.jpg)](https://twitter.com/thekitze/status/1584974847306002432)

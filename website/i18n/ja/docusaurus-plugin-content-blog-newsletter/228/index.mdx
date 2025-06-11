@@ -1,0 +1,131 @@
+---
+slug: /228
+title: "This Week In React #228: React 19.1, Next.js deployment, React-Email, Triplex, Tinybase, Rspack, i18n-check, React-Admin | 0.79 Golden RC, ExecuTorch, Unistyles, Xcode 16.3, macOS, Screens, Gesture Handler | TypeScript, TC39, WebKit, Intl.Collator, Vitest 3.1"
+authors: [matthieugicquel, cyrilbo]
+date: 04-02-2025
+---
+
+みなさん、こんにちは！
+
+Sebが[React Native Connection](https://reactnativeconnection.io/)カンファレンスを楽しんでいる間、[Theodo Apps](https://apps.theodo.com/)のCyrilとMatthieuが、今週のReactとReact Nativeのアップデートをお届けします 👋
+
+React 19.1がリリースされ、エラーハンドリングの改善とParcelでのServer Componentsのより深い統合が実現しました。一方、Tailwind CSS 4.1も間もなくリリース予定で、コミュニティではCSS-in-JSに関する熱い議論が交わされています。React Native側では、0.79のゴールデンRCが公開され、ExecuTorch v0.4.0も間もなくリリースされ、エキサイティングなAI機能が搭載される予定です。
+
+さっそく見ていきましょう！ 🚀
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Bit: 10年間のコンポーザビリティを祝う](/emails/issues/228/bit.jpg)](https://bit.cloud/?utm_source=ThisWeekInReact\&utm_id=551)
+
+**[Bit: 10年間のコンポーザビリティを祝う](https://bit.cloud/?utm_source=ThisWeekInReact\&utm_id=551)**
+
+10年間、私たちは断片化されたシステムの複雑さと向き合い、統合の頭痛やスケーリングの課題に直面してきました。スケールする効果的な構築を目指す旅の末、私たちは[**Harmony**](https://bit.dev/blog/meet-harmony-a-practical-solution-for-composability/)という突破口を見出しました。
+
+私たちが10年間にわたって開拓してきたコンポーザブルアーキテクチャのストーリーと、Harmonyがどのようにしてモノリシックなシンプルさと分散型のパワーを実現し、開発を苦闘から指数関数的な進歩へと変革したかをご覧ください。
+
+[**私たちのストーリーを読む**](https://bit.dev/blog/telling-the-bit-story-celebrating-10-years-of-composability/?utm_source=ThisWeekInReact\&utm_id=9\&utm_medium=newsletter)
+
+***
+
+## ⚛️ React {#react}
+
+[![React 19.1](/emails/issues/228/react_19_1.jpg)](https://github.com/facebook/react/releases/tag/v19.1.0)
+
+**[React 19.1](https://github.com/facebook/react/releases/tag/v19.1.0)**
+
+今週、React 19.1がリリースされました。主な変更点は以下の通りです：
+
+* 開発環境でより優れたエラー情報を提供するためにフレームワークが使用する新しい[`captureOwnerStack()`](https://react.dev/reference/react/captureOwnerStack) API。これは`children`やDOMノードの扱いにおいて既存のコンポーネントスタックとは異なります。
+* Parcel 2.14の新機能と連携する、ParcelでのServer Componentsサポートの「React側」の実装。
+* サーバー上でReact Server Componentsをプリレンダリングするための実験的な`unstable_prerender()`。
+
+このリリースには、Server Componentsや`Suspense`バウンダリに関連する多数のマイナーな変更と修正も含まれています。
+
+***
+
+* 💸 [Strapi - オープンソースのヘッドレスコンテンツ管理システム、今なら手厚いPaaSホスティング付きで、完全管理ながら柔軟でカスタマイズ可能です。](https://strapi.link/twir)
+* 📜 [CSS-in-JSはまだ使われているのか？](https://fullystacked.net/css-in-js-still-a-thing/) もはやトレンディではない（少なくともパフォーマンスペナルティを避けるコンパイラなしでは）が、依然として広く利用されています。
+* 📜 [Next.jsデプロイの課題：プラットフォーム間のオープンソース協力の必要性](https://www.netlify.com/blog/how-we-run-nextjs/)：Netlifyが、Next.jsがVercel以外でのデプロイがなぜ難しいか（アダプターサポートの欠如、ドキュメント不足、可視性の低さなど）と改善したい点を説明。
+* 📜 [ReactでのDASH.jsを使った適応型ビデオストリーミング](https://www.smashingmagazine.com/2025/03/adaptive-video-streaming-dashjs-react/)：日常的に実装する機会は少ないかもしれませんが、DASH標準のおかげで適応型ストリーミングはそれほど複雑ではありません。
+* 📜 [i18n-check: Reactの国際化(i18n)をエンドツーエンドでテスト](https://lingual.dev/blog/i18n-check-end-to-end-react-i18n-testing/)
+* 📜 [VercelでNext.jsをホストする際のコスト管理](https://www.thisdot.co/blog/keeping-costs-in-check-when-hosting-next-js-on-vercel)
+* 📜 [Reactアーキテクチャのトレードオフ：SPA、SSR、RSC](https://reacttraining.com/blog/react-architecture-spa-ssr-rsc)
+* 📜 [SPAとその課題の理解](https://reacttraining.com/blog/problems-you-face-with-spas)
+* 💸 [VS Code拡張機能: VS CodeでReactコンポーネントの使用状況を把握](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-mar-2025)
+* 📦 [React Email 4.0](https://resend.com/blog/react-email-4)：リンター、スパムスコア、互換性チェッカーなどの便利なツールと追加コンポーネントを搭載。
+* 📦 [Triplexベータ版](https://triplex.dev/blog/triplex-for-vscode)：Reactアプリを視覚的に開発するVS Code拡張機能。当初はReact Three Fiber向けに構築されましたが、現在はあらゆるReactコンポーネントをサポート。
+* 📦 [Rspack 1.3](https://rspack.dev/blog/announcing-1-3)：React Router v7アプリのビルドに利用可能。
+* 📦 [Tinybase 6.0](https://github.com/tinyplex/tinybase/releases/tag/v6.0.0)：React 19と互換性あり。
+* 📦 [vike-server 1.0](https://vike.dev/blog/vike-server)：viteビルドアプリのサーバーサイドの実行とデプロイをどこでも簡素化し、開発時のHMRを処理。
+* 📦 [React-Admin 5.7](https://github.com/marmelab/react-admin/releases/tag/v5.7.0)
+* 🎙️ [Front-End Fire: Next.jsのセキュリティ脆弱性、RemixがRSCから撤退、Rsdoctor 1.0](https://front-end-fire.com/episodes/87/)
+* 🎙️ [今月のReact 2025年3月号：Nextに認証脆弱性、TypeScriptがGolangに移植中](https://creators.spotify.com/pod/show/reactiflux/episodes/TMiR-2025-03-Next-had-an-auth-vulnerability--TypeScript-is-porting-to-Golang-e30tvf5/a-abs3i7h)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![ダッシュボードを数分で出荷 — スプリント不要](/emails/issues/228/semaphor.jpg)](https://semaphor.cloud)
+
+**[ダッシュボードを数分で出荷 — スプリント不要](https://semaphor.cloud)**
+
+Semaphorは、顧客向け製品に完全にインタラクティブなダッシュボードを起動するためのReactベースのSDKです。
+
+Semaphorは分析を製品コードから分離し、迅速に反復し、アプリを再デプロイせずに新しい洞察を独立して出荷できるようにします。
+
+TalentsConnectのCPOが最も簡潔にまとめています：
+
+「Semaphorは私たちのプロダクトとデータチームのワークフローを一変させました。クライアントと共にアプリケーション内で新しいユースケースを迅速にプロトタイプしテストできるようになり、フィードバックサイクルを大幅に短縮できました。さらに、Semaphorのスタイリングオプションは優れており、私たちのプロダクトデザインにシームレスに統合されます」
+
+***
+
+## 📱 React-Native {#react-native}
+
+今週のReact Nativeコミュニティは静かな週でした——おそらく、現在パリで開催中のReact Native Connectionに注目が集まっているためでしょう。来週は、掘り下げるべきエキサイティングなトピックがたくさんあることを期待しています🤗
+
+* 💸 [Radon IDE – React Native & Expo開発のためのオールインワンツール。Network InspectorとOutline Rendersが新たに追加！](https://ide.swmansion.com/?utm_source=thisweekinreact.com)
+* 🐦 [Expo SplashScreenとRN Masked Viewを使用した素敵なアニメーション付きスプラッシュスクリーン](https://x.com/S0LARIN/status/1905829104600875025)
+* 🐦 [React Native ExecuTorch 0.4が5月末にリリース予定](https://x.com/swmansion/status/1907086132828934414): Universal LLM Runner、追加のLLMサポート、Embeddingモデル、多言語Whisper、OCR、画像セグメンテーションなどが含まれます…
+* 👀 [React Native 0.79 Golden RC](https://github.com/facebook/react-native/releases/tag/v0.79.0-rc.4): 来週には安定版がリリースされる予定です。
+* 👀 [Lynxがネイティブプラグイン開発のソリューションを検討中](https://github.com/lynx-family/lynx/discussions/1#discussioncomment-12660488)
+* 🗓️ [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 クラクフ - 5月28-30日。App.js Conf 2025の最初のスピーカーを発表します: Charlie Cheever、Enzo Manuel Mangano、Delphine Bugner！「TWIR」コードを使用して15%オフでチケットを購入しましょう。
+* 📜 [Xcode 16.3向けSDK 52パッチ](https://expo.dev/changelog/xcode-16-3-patches): Xcode 16.3にアップグレード時にビルド問題が発生した場合、最新のSDK 52パッチとRN0.77をインストールする必要があるかもしれません。またはXcode 16.2に戻すこともできます 🫠
+* 📜 [React Native: 10周年](https://shift.infinite.red/react-native-10-years-db9eb36c5af6): Infinite Redが誕生日を祝います。
+* 📦 [React Native Screens 4.10](https://github.com/software-mansion/react-native-screens/releases/tag/4.10.0): iOSの最低サポートバージョンがv15.1に引き上げられ、フォームシート使用時のスクロールビューヘッダーの実験的サポート、多くのAndroidバグ修正が含まれます。
+* 📦 [Unistyles 3.0 RC.1](https://github.com/jpudysz/react-native-unistyles/releases/tag/v3.0.0-rc.1): React Native Connectionカンファレンスで発表されたばかりで、ライブラリはRC段階に入りました。素敵なスタイリング機能に加え、このバージョンはReact Nativeの「Shadow Tree」上でC++を使用して多くの処理を行い、テーマ、シグナル、画面サイズ/向きなどの依存関係が変更されたときにJS側でコンポーネントを再レンダリングする必要がない動的スタイルを実装できます。これはWeb上のCSSの動作を思い起こさせます: ブレークポイントを超えてもReactの再レンダリングは不要です。
+* 📦 [React Native MacOS 0.78](https://github.com/microsoft/react-native-macos/releases/tag/v0.78.0): ライブラリが追いつきました。SkiaとWebGPUもサポートされたと聞いています。
+* 📦 [React Native Builder Bob 0.39 - ESLint v9にアップグレード](https://github.com/callstack/react-native-builder-bob/releases/tag/react-native-builder-bob%400.39.0)
+* 📦 [React Native Gesture Handler 2.25](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.25.0)
+* 🎥 [William Candillon - The Shader's Gambit](https://www.youtube.com/watch?v=wUsFNlas620): この動画ではあまり話はありませんが、react-native-skiaでどこまでできるかを示しています。
+* 🎥 [Theo - Androidが永遠に変わった](https://www.youtube.com/watch?v=ucZx1ArrIVQ)
+* 🎙️ [RNR 326 - React Native 10周年 🎉](https://infinite.red/react-native-radio/rnr-326-react-native-turns-10)
+
+***
+
+## 🔀 Other {#other}
+
+* 👀 [TypeScriptに関するArkTypeメンテナのPR](https://github.com/microsoft/TypeScript/pull/61505): ZodやArkTypeのような「スキーマ」を多用するコードベースに大きなパフォーマンス向上がもたらされる可能性があります。
+* 📜 [Safari 18.4のWebKit機能](https://webkit.org/blog/16574/webkit-features-in-safari-18-4/): 3つのTC39提案を含む様々な機能が搭載されています。Iterator Helpersが全ブラウザとNode.jsで利用可能になりました！
+* 📜 [2025年2月TC39総会のまとめ](https://blogs.igalia.com/compilers/2025/03/27/summary-of-the-february-2025-tc39-plenary/)
+* 📜 [Intl.Collatorによる高速な文字列ソート](https://claritydev.net/blog/faster-string-sorting-intl-collator)
+* 📜 [禁止されたリクエストヘッダー](https://macarthur.me/posts/forbidden-request-headers/)
+* 📜 [files-bucket-serverにおけるNode.js APIのパストラバーサル脆弱性](https://www.nodejs-security.com/blog/nodejs-api-security-vulnerabilities-path-traversal-files-bucket-server/)
+* 📦 [Vitest 3.1](https://github.com/vitest-dev/vitest/releases/tag/v3.1.0)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/228/next_burn.jpg)](https://x.com/aidenybai/status/1904294570533572817)
+
+それでは！👋

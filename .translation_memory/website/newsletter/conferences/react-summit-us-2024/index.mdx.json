@@ -1,0 +1,472 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/conferences/react-summit-us-2024/index.mdx",
+  "source_file_content_hash": "7513b5b62953a3fecf66e69c42e125b05f84c0dc4aff1615cae515d5db072df0",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /conferences/2024/react-summit-us-recap\ntitle: \"📅 React Summit US 2024 - Conf Recap\"\nauthors:\n  - name: \"Anton Meleshkin\"\n    url: https://www.linkedin.com/in/anton-meleshkin-b226b5184/\n    image_url: https://github.com/Kragov.png\n    title: \"Developer at FocusReactive\"\n    socials:\n      github: https://github.com/Kragov\n      linkedin: https://www.linkedin.com/in/anton-meleshkin-b226b5184/\n      blog: https://focusreactive.com/blog/author/AntonMeleshkin/\n  - name: \"Sergey Labuts\"\n    url: https://www.linkedin.com/in/siarhei-labuts-aa3139125/\n    image_url: https://github.com/o8o0o8o.png\n    title: \"Developer at FocusReactive\"\n    socials:\n      github: https://github.com/o8o0o8o\n      linkedin: https://www.linkedin.com/in/siarhei-labuts-aa3139125/\n      blog: https://focusreactive.com/blog/author/SergeyLabuts/\n  - name: \"Gleb Makhankov\"\n    url: https://www.linkedin.com/in/gleb-makhankov/\n    image_url: https://github.com/user-attachments/assets/8235e2f0-c5d8-4dd5-89ea-305fb47a8285\n    title: \"Developer at FocusReactive\"\n    socials:\n      linkedin: https://www.linkedin.com/in/gleb-makhankov/\n      blog: https://focusreactive.com/blog/author/GlebMakhankov/\n  - slorber\n\ndate: 11-26-2024\n---",
+      "source_content_hash": "d2f5fdae05f1784afb6bd3ccca07687d7cf2a645deec26e6b24b9d6b0b37b255",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "4daf5cdd",
+      "source_content": "What's this fancy e-mail on a Monday? Well, we're trying something new!",
+      "source_content_hash": "a98eca3c6c1a1fea3d6bc3d4398183243b4fff34de52ae38778c1db21d826cdb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "月曜日にこんな凝ったメール？実は新しい試みをしています！"
+      }
+    },
+    {
+      "segment_id": "bdc231b1",
+      "source_content": "Last week, **[React Summit US 2024](https://reactsummit.us?utm_source=Newsletter\\&utm_medium=thisweekinreact)** took place in New York. The [videos will be online soon](https://gitnation.com/events/react-summit-us-2024/talks). In the meantime, we partnered with the organizers to send you a recap of a few selected talks.",
+      "source_content_hash": "99b01e6606cd67e93efdb76e50fe7d6899d0153452ae2fdb47c15637f990aa30",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "先週、**[React Summit US 2024](https://reactsummit.us?utm_source=Newsletter\\&utm_medium=thisweekinreact)**がニューヨークで開催されました。[動画は近日公開予定](https://gitnation.com/events/react-summit-us-2024/talks)です。それまでの間、主催者と協力して選りすぐりの講演のまとめをお届けします。"
+      }
+    },
+    {
+      "segment_id": "258ebd2c",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_258ebd2c"
+      }
+    },
+    {
+      "segment_id": "c3a738de",
+      "source_content": "![conf picture](/emails/conferences/2024/react-summit-us/conf.jpg)",
+      "source_content_hash": "dcafebe3f50568b5a69ae40bbe605e5e54c2314b1842cba7b717b8ecde4b45d4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "![conf picture](/emails/conferences/2024/react-summit-us/conf.jpg)"
+      }
+    },
+    {
+      "segment_id": "3cfe6286",
+      "source_content": "**[Focus Reactive](https://focusreactive.com?utm_source=Newsletter\\&utm_medium=thisweekinreact)** devs wrote the summaries. They are trusted technological partners delivering advanced content platforms optimized for performance, scalability, and SEO. Experts in Next.js, Headless CMS, eCommerce, and AI integrations, partners of Vercel, Shopify, Sanity. [Learn more](https://focusreactive.com?utm_source=Newsletter\\&utm_medium=thisweekinreact).",
+      "source_content_hash": "4f846f60fd4f591cd36aef248699ad18b9ca23ee35e5a2c8f13519f2e13eae35",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Focus Reactive](https://focusreactive.com?utm_source=Newsletter\\&utm_medium=thisweekinreact)**の開発者がまとめを執筆しました。彼らはパフォーマンス、スケーラビリティ、SEOに最適化された先進的なコンテンツプラットフォームを提供する信頼できる技術パートナーです。Next.js、Headless CMS、eコマース、AI統合の専門家で、Vercel、Shopify、Sanityのパートナーです。[詳細はこちら](https://focusreactive.com?utm_source=Newsletter\\&utm_medium=thisweekinreact)。"
+      }
+    },
+    {
+      "segment_id": "1042b50d",
+      "source_content": "The US edition of the conf may have wrapped up, but **[React Summit 2025](https://reactsummit.com?utm_source=Newsletter\\&utm_medium=thisweekinreact)** (🇳🇱 Amsterdam edition - June 13-17 2025) has just been announced! Get ready for another incredible event, just as cool as last year, but in a unique venue. Early-bird tickets are on sale now!",
+      "source_content_hash": "c43048c1d1e816436fd727a1cd9edf8b1f14ef65db01869667760a84201372f0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "米国版のカンファレンスは終了しましたが、**[React Summit 2025](https://reactsummit.com?utm_source=Newsletter\\&utm_medium=thisweekinreact)**（🇳🇱アムステルダム版 - 2025年6月13-17日）が発表されました！昨年と同じく素晴らしいイベントが、ユニークな会場で開催されます。早期割引チケットは現在販売中です！"
+      }
+    },
+    {
+      "segment_id": "aa1e7006",
+      "source_content": "It's the first time we send this type of content. Would you like to receive more React conf recaps like this one in the future?",
+      "source_content_hash": "e846e902baa5864b6d04c22ed1c310205dfde1f4fef7a2824bca8e35f6987064",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このようなコンテンツを送信するのは初めてです。今後もこのようなReactカンファレンスのまとめを受け取りたいですか？"
+      }
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "Without further ado, here are the 6 talks we've selected!",
+      "source_content_hash": "06548677f71a1d771d710202b4cb67a5b4d2e10597984dc35ed4e0c12869601f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "さて、ここからは私たちが選んだ6つの講演をご紹介します！"
+      }
+    },
+    {
+      "segment_id": "6127963f",
+      "source_content": "<SubscribeFormEmbed placement=\"top\" />",
+      "source_content_hash": "eb1e2ddbeac66fed0876a1a16efc3ad2e17b7a410347b6f4636146c1c69c6b1e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6127963f"
+      }
+    },
+    {
+      "segment_id": "12647a35",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c6cc90a0",
+      "source_content": "## Chrome DevTools: State of the Union 2024 - Debugging React & Beyond",
+      "source_content_hash": "4380ebdc66501b280d0cc7ea9f84f581e4a19790d124cf76765e07fd63f2b013",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## Chrome DevTools: State of the Union 2024 - Reactのデバッグとその先へ"
+      }
+    },
+    {
+      "segment_id": "d3649a1e",
+      "source_content": "![Addy speaking](/emails/conferences/2024/react-summit-us/addy.jpg)",
+      "source_content_hash": "96a2434c85674a2ecaa0fae059e91544ce29d1f6ad6dbe73d6672f9b38bd7711",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "![Addy speaking](/emails/conferences/2024/react-summit-us/addy.jpg)"
+      }
+    },
+    {
+      "segment_id": "4d52a261",
+      "source_content": "**[Addy Osmani](https://bsky.app/profile/addyosmani.bsky.social)** (Head of Chrome DX) delivered an exciting review of the latest Chrome DevTools features and highlighted the INP metric. Here’s a summary of the main points covered:",
+      "source_content_hash": "848b27418bac00bc6d77ec6f4eeb8413248b482fec5e664acd51a394193dc349",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Addy Osmani](https://bsky.app/profile/addyosmani.bsky.social)**（Chrome DX責任者）が最新のChrome DevTools機能を紹介し、INPメトリックについて解説しました。主なポイントは以下の通りです："
+      }
+    },
+    {
+      "segment_id": "30193704",
+      "source_content": "* **Gemini AI in DevTools**: You can now ask it to change the UI, help with errors, or assist with any challenges you might face during development.\n* **Server Components and the “Memo” Tag in React DevTools**: This, along with server logs in the browser console in Next.js, enables you to manage Suspense loading states more easily.\n* **useDebugValue**: Helps in debugging custom hooks.\n* **Font Color Contrast Fixing Tool**: Now built directly into the color picker.\n* **Override XHR and Fetch Requests**: Mock data can be injected into these requests, and even headers can be mocked.",
+      "source_content_hash": "f167286d8a3d0a47bc977f472a6b61d92070a18fc0ac6f3c704c8de1c8c6a5cf",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* **DevTools内のGemini AI**：UIの変更、エラーの解決、開発中の課題に対する支援を依頼できます。\n* **React DevToolsの「Memo」タグとServer Components**：Next.jsではブラウザコンソールにサーバーログが表示され、Suspenseのローディング状態を管理しやすくなります。\n* **useDebugValue**：カスタムフックのデバッグに役立ちます。\n* **フォントカラーコントラスト修正ツール**：カラーピッカーに直接組み込まれました。\n* **XHRとFetchリクエストのオーバーライド**：モックデータを注入でき、ヘッダーもモック可能です。"
+      }
+    },
+    {
+      "segment_id": "126950d7",
+      "source_content": "## Abracadabra: The Vanishing Network",
+      "source_content_hash": "1b8cec247ade0d6557d08b473a110a270fa456dab9af247c43b27d2d63dc6c2e",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## アブラカダブラ：消えるネットワーク"
+      }
+    },
+    {
+      "segment_id": "0bb95128",
+      "source_content": "![Kent speaking](/emails/conferences/2024/react-summit-us/kent.jpg)",
+      "source_content_hash": "2c6e2d9d12d8e3046bdf13b037904d025d945f4d9a06ceef7e67bb5eb0651908",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "![Kent speaking](/emails/conferences/2024/react-summit-us/kent.jpg)"
+      }
+    },
+    {
+      "segment_id": "657c2b20",
+      "source_content": "Web app development has evolved to meet the growing demands of users and developers. **[Kent C. Dodds](https://bsky.app/profile/kentcdodds.com)** traces web app evolution from multi-page apps (MPAs) to React Server Components (RSC). Let’s look at the key stages of this evolution highlighted in the talk:",
+      "source_content_hash": "29a4b9b643514cffb526c7a1e56bc2747bcd1f70cfdbb608e5666296bf8e3037",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ウェブアプリ開発は、ユーザーと開発者の要求に応じて進化してきました。**[Kent C. Dodds](https://bsky.app/profile/kentcdodds.com)**は、マルチページアプリケーション（MPA）からReact Server Components（RSC）までの進化を辿ります。講演で強調された主な進化段階は以下の通りです："
+      }
+    },
+    {
+      "segment_id": "af6ca965",
+      "source_content": "* **Multi-Page Applications** (MPA) is simple and effective, but requires a full page reload.\n* **Progressively Enhanced MPAs** (PEMPA) introduced JavaScript for partial updates and UX improvement but added complexity and server-client duplication.\n* **Single-Page Applications** (SPA) improved interactivity but required client-side networking and managing loading states, increasing complexity.\n* **Progressively Enhanced SPAs** (PESPA) brought server-side fetching and rendering, improving UX. Yet, tying logic to routes limited reusable components.\n* **React Server Componentss** enable full-stack, reusable components, simplifying workflows while improving speed and scalability.",
+      "source_content_hash": "8d05dbcf4a097d8d171e5bb91c186591d484f819d5120ba8d583cb132f66eb18",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* **マルチページアプリケーション（MPA）**：シンプルで効果的ですが、ページ全体の再読み込みが必要です。\n* **プログレッシブエンハンスドMPA（PEMPA）**：部分的な更新とUX向上のためにJavaScriptを導入しましたが、複雑さとサーバー-クライアントの重複が増えました。\n* **シングルページアプリケーション（SPA）**：インタラクティブ性が向上しましたが、クライアントサイドのネットワーキングとローディング状態の管理が必要で、複雑さが増しました。\n* **プログレッシブエンハンスドSPA（PESPA）**：サーバーサイドのフェッチとレンダリングによりUXが向上しました。しかし、ロジックをルートに紐付けることで再利用可能なコンポーネントが制限されました。\n* **React Server Components**：フルスタックで再利用可能なコンポーネントを可能にし、ワークフローを簡素化しながら速度とスケーラビリティを向上させます。"
+      }
+    },
+    {
+      "segment_id": "93028a4e",
+      "source_content": "## Out Of Order Streaming - The Secret Powering Modern React",
+      "source_content_hash": "4df7eee8fefae8618075c79eeb4a5989fc6b0220a871e72755d5b5a8817eb661",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 順不同ストリーミング - 現代のReactを支える秘密の力"
+      }
+    },
+    {
+      "segment_id": "e8e162a9",
+      "source_content": "![Theo speaking](/emails/conferences/2024/react-summit-us/theo.jpg)",
+      "source_content_hash": "a69374d8e4853e9940faf737aafe66b2cdab9c0f4b6625f2dc1ba9b953b88af5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "![Theo speaking](/emails/conferences/2024/react-summit-us/theo.jpg)"
+      }
+    },
+    {
+      "segment_id": "463ed165",
+      "source_content": "**[Theo Browne](https://bsky.app/profile/t3.gg)** explores one of React's most innovative advancements—out-of-order streaming. Streaming HTML in web applications allows browsers to **progressively render incomplete HTML as it arrives**, significantly improving **perceived performance**. This is especially valuable for SSR. The only limitation was the order of the elements. HTML is linear, meaning that a slow component at the top of the HTML will block other components below.",
+      "source_content_hash": "35705635429537c4ae0fbbc53ae34f9e38f2e9043f72bb69a562506b5b816054",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Theo Browne](https://bsky.app/profile/t3.gg)** は、Reactの最も革新的な進化の1つである「順不同ストリーミング」について探求しています。ウェブアプリケーションにおけるHTMLストリーミングにより、ブラウザは**到着した不完全なHTMLを段階的にレンダリング**できるようになり、**体感パフォーマンス**が大幅に向上します。これはSSRにおいて特に価値があります。唯一の制限は要素の順序でした。HTMLは線形であるため、HTMLの上部にある遅いコンポーネントが下部の他のコンポーネントをブロックしてしまいます。"
+      }
+    },
+    {
+      "segment_id": "a5c5772a",
+      "source_content": "This limitation was solved by using RSC. The `<template/>` and `<script/>` tags are used to identify placeholders for unresolved content and replace them dynamically when data becomes available.",
+      "source_content_hash": "3d32b0cabb53a418768c227e53f630f56f90a5535181d4edcb636f3d4175f4d7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "この制限はRSCを使用することで解決されました。`<template/>`と`<script/>`タグを使用して、未解決のコンテンツのプレースホルダーを識別し、データが利用可能になったときに動的に置き換えます。"
+      }
+    },
+    {
+      "segment_id": "fbc2db85",
+      "source_content": "Recent advancements, such as **partial pre-rendering and dynamic IO in Next.js**, combine static and dynamic rendering. This hybrid approach allows initial static content to be cached on CDNs for faster loads, with subsequent dynamic updates streamed from the server, optimizing both speed and developer workflow. These methods revolutionize SSR by enhancing UX and supporting complex web interactions seamlessly.",
+      "source_content_hash": "0b03d55c37ee6490f165dd73797b5d38d3085eac78dbb6c85919c9c7842b3d26",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**Next.jsにおける部分プリレンダリングや動的IO**などの最近の進歩により、静的レンダリングと動的レンダリングが組み合わさっています。このハイブリッドアプローチにより、初期の静的コンテンツをCDNにキャッシュして高速に読み込むことができ、その後動的な更新をサーバーからストリーミングすることで、速度と開発者のワークフローの両方を最適化します。これらの方法は、UXを向上させ、複雑なウェブインタラクションをシームレスにサポートすることで、SSRに革命をもたらしています。"
+      }
+    },
+    {
+      "segment_id": "bfba2ea7",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_bfba2ea7"
+      }
+    },
+    {
+      "segment_id": "3a8d2b95",
+      "source_content": "## Everything You Need to Know About React 19",
+      "source_content_hash": "bf000e43afaf5b8951a0c47ba257321c2925507ae8c88f4e20f5be9cc52b4a98",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## React 19について知っておくべきすべて"
+      }
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "![Shruti speaking](/emails/conferences/2024/react-summit-us/shruti.jpg)",
+      "source_content_hash": "a09bc4cc49b47186163836f71472c48f7b5f92d1473b3339c8c11b9ea8517325",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "![Shruti speaking](/emails/conferences/2024/react-summit-us/shruti.jpg)"
+      }
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "**[Shruti Kapoor](https://bsky.app/profile/shrutikapoor08.bsky.social)** (Frontend engineer at Slack) provides an overview of the forthcoming stable update to the React library, which promises a lot of new and exciting things. The key features of this new version of React:",
+      "source_content_hash": "36aa090ea8a8cc05932dd47d49ea5db7530a818bbb78741bff6640f764c07130",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Shruti Kapoor](https://bsky.app/profile/shrutikapoor08.bsky.social)**（Slackのフロントエンドエンジニア）は、Reactライブラリの今後の安定版アップデートについて概説し、多くの新しくエキサイティングな機能を約束しています。この新しいバージョンのReactの主な機能は以下の通りです："
+      }
+    },
+    {
+      "segment_id": "b0dbe2f3",
+      "source_content": "* **React actions**: functions that use async transitions. It also supported on the server.\n* **New hooks**: `useActionState` and `useFormStatus` will make building forms easier. `useOptimistic` will provide fancy way to make UI smooth.\n* **React Compiler**: new plugin for React, that will say goodbye to `useMemo` and `useCallback`\n* **New API**: `use` - read resources and Promises inside of your component.\n* **`ref` change**: finally it is a prop, so say goodbye to `forwardRef`\n* **Improved errors**: errors became more descriptive\n* **Context change**: Render `<Context>` instead of `<Context.Provider>`",
+      "source_content_hash": "c620a043421889fdc7126baf2401953f08e590b9ba51fc3d33b6162053f3c463",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* **Reactアクション**: 非同期トランジションを使用する関数。サーバー側でもサポートされます。\n* **新しいフック**: `useActionState`と`useFormStatus`はフォームの構築を容易にします。`useOptimistic`はUIをスムーズにする洗練された方法を提供します。\n* **Reactコンパイラ**: Reactの新しいプラグインで、`useMemo`と`useCallback`に別れを告げます。\n* **新しいAPI**: `use` - コンポーネント内でリソースやPromiseを読み取ります。\n* **`ref`の変更**: ついにpropになり、`forwardRef`に別れを告げます。\n* **エラーの改善**: エラーメッセージがより詳細になりました。\n* **コンテキストの変更**: `<Context.Provider>`の代わりに`<Context>`をレンダリングします。"
+      }
+    },
+    {
+      "segment_id": "94145a94",
+      "source_content": "## AI Will Revolutionize UI",
+      "source_content_hash": "7e8093d29c45f2b1267b6d86ac91aad4a7e7cb5edb10175097915fda46d096fa",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## AIがUIを革命する"
+      }
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "![Jack speaking](/emails/conferences/2024/react-summit-us/jack.jpg)",
+      "source_content_hash": "fb4977032d61ab642d139f70951276819aec007401f58399293127e6b7c65cc9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "![Jack speaking](/emails/conferences/2024/react-summit-us/jack.jpg)"
+      }
+    },
+    {
+      "segment_id": "4be28ed1",
+      "source_content": "**[Jack Herrington](https://bsky.app/profile/jherr.dev)** shows common problems when we trying to use AI in our applications:",
+      "source_content_hash": "b3ccde27c8f82cfc03fa970bd424d29764e54a641952f886162dc22ccb150db2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Jack Herrington](https://bsky.app/profile/jherr.dev)** は、アプリケーションでAIを使用しようとする際の一般的な問題を示しています："
+      }
+    },
+    {
+      "segment_id": "664ad8b1",
+      "source_content": "* Super big context, that we need to provide to the model\n* How to get the right data?\n* AI can’t make multiple request for data\n* AI can’t manage UI",
+      "source_content_hash": "86e12ac79eca56c8c89ae74abacf3674e9235318aabb7d81c0142d4b59acf8a6",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* モデルに提供する必要がある超大規模なコンテキスト\n* 適切なデータをどのように取得するか？\n* AIは複数のデータリクエストを実行できない\n* AIはUIを管理できない"
+      }
+    },
+    {
+      "segment_id": "3c19e221",
+      "source_content": "He tells how to integrate AI into our applications and shows with clear examples that:",
+      "source_content_hash": "befce24d27a196e76991ce332cb3082e82cedcc5435225737576071d5b6959e1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "彼は、AIをアプリケーションに統合する方法を説明し、明確な例を示しています："
+      }
+    },
+    {
+      "segment_id": "8d56fc0d",
+      "source_content": "* Using tools is the easiest way to do Retrieval Augmented Generation, known as RAG\n* You can use tools both on the server and on the client for UI\n* The AI can have chives on which tool to use\n* You don’t have to use the Vercel AI library or OpenAI. It is possible to use even the local LLM.",
+      "source_content_hash": "f422d08d89c0bfcb3b23e795f36b4169bc2f9fedb2f1475dde3fe5da91176a68",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* ツールを使用することが、RAG（Retrieval Augmented Generation）を実現する最も簡単な方法です。\n* UIのためにサーバー側とクライアント側の両方でツールを使用できます。\n* AIは使用するツールを選択できます。\n* Vercel AIライブラリやOpenAIを使用する必要はありません。ローカルのLLMを使用することも可能です。"
+      }
+    },
+    {
+      "segment_id": "c7fa1e8d",
+      "source_content": "## AI and Accessibility: A Conversation Worth Having",
+      "source_content_hash": "557bdb3237050d6d74da91b588fd9081eb1e44cd5878dc0b9500aad17ddf70b9",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## AIとアクセシビリティ：議論する価値のある話題"
+      }
+    },
+    {
+      "segment_id": "a6c928a1",
+      "source_content": "![Cat speaking](/emails/conferences/2024/react-summit-us/cat.jpg)",
+      "source_content_hash": "a01397d0ee9d42f5f829ce0c589927d8309e6e2d399c96055abccab9589df2b7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "![Cat speaking](/emails/conferences/2024/react-summit-us/cat.jpg)"
+      }
+    },
+    {
+      "segment_id": "b6152880",
+      "source_content": "Accessibility is often overlooked in development, but **[Cat Johnson](https://www.linkedin.com/in/catandthemachines/)** highlights how AI is already making a difference and what developers can do now.",
+      "source_content_hash": "2f8a31ab00a623629d38738e6d0a19067297a11de71fc781777cfec24a67ad83",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "アクセシビリティは開発においてしばしば見落とされますが、**[Cat Johnson](https://www.linkedin.com/in/catandthemachines/)** は、AIが既にどのように違いを生んでいるか、そして開発者が今できることを強調しています。"
+      }
+    },
+    {
+      "segment_id": "b9331170",
+      "source_content": "AI has brought us tools like improved text-to-speech, automated meeting notes, and advanced voice commands. Apps like \"Be My Eyes\" use AI to describe objects captured with a phone camera, offering invaluable support for visually impaired users.",
+      "source_content_hash": "8f9413dbc087829ef1e31830bedeec553ad53d82e6f25597245b67eb133a6d4b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "AIは、改善されたテキスト読み上げ、自動化された会議メモ、高度な音声コマンドなどのツールをもたらしました。「Be My Eyes」のようなアプリは、AIを使用して電話のカメラで撮影した物体を説明し、視覚障害のあるユーザーに貴重なサポートを提供しています。"
+      }
+    },
+    {
+      "segment_id": "8fcdd6d4",
+      "source_content": "Developers can enhance accessibility by writing clean HTML with proper tags and attributes. Accessibility tools can test and ensure your work is functional. Adding accessibility scans like **axe-core** or **lighthouse-cli** to your CI/CD pipeline can further streamline this process.",
+      "source_content_hash": "59ef5f7c2da33a1bdcc936dfba963031a3247cf9ced8c8c95569b7abba594dfd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "開発者は、適切なタグと属性を持つクリーンなHTMLを書くことでアクセシビリティを向上させることができます。アクセシビリティツールを使用して作業が機能することをテストし、確認できます。CI/CDパイプラインに**axe-core**や**lighthouse-cli**などのアクセシビリティスキャンを追加することで、このプロセスをさらに効率化できます。"
+      }
+    },
+    {
+      "segment_id": "53aa2b95",
+      "source_content": "By leveraging AI and following best practices, we can make technology more inclusive for everyone.",
+      "source_content_hash": "0a0a6faaf795997a4290406c7a324217a611b83f08b672ad2c5790f6326499ca",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "AIを活用し、ベストプラクティスに従うことで、誰もが利用しやすいテクノロジーを実現できます。"
+      }
+    },
+    {
+      "segment_id": "cf542fb4",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "5c7d994c",
+      "source_content": "That's a wrap!",
+      "source_content_hash": "6830f173d6b1594a7411b29d2af6168f24f6d3752817b2560ae3aee987c67c52",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "以上です！"
+      }
+    },
+    {
+      "segment_id": "1ecf0882",
+      "source_content": "Before you leave, make sure to:",
+      "source_content_hash": "baf58e44bb19089157b816d78d3fc9ddf999b08e053545eebd4949a1160030fb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "最後に、以下のことを確認してください："
+      }
+    },
+    {
+      "segment_id": "1fe5236e",
+      "source_content": "* Check [React Summit 2025](https://reactsummit.com?utm_source=Newsletter\\&utm_medium=thisweekinreact) for early bird tickets.\n* Hire [FocusReactive](https://focusreactive.com/?utm_source=Newsletter\\&utm_medium=thisweekinreact) for their Next.js CMS and e-commerce expertise.\n* Give us feedback - Did you like this email? Hit reply and tell us!",
+      "source_content_hash": "0e7dc96023c1bacb5f32538827fc744e0a470b91da65f7252442d1cc81d79b2d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* [React Summit 2025](https://reactsummit.com?utm_source=Newsletter\\&utm_medium=thisweekinreact)で早期割引チケットをチェック。\n* Next.js CMSとeコマースの専門知識を持つ[FocusReactive](https://focusreactive.com/?utm_source=Newsletter\\&utm_medium=thisweekinreact)を採用。\n* フィードバックをお寄せください - このメールは気に入りましたか？返信で教えてください！"
+      }
+    },
+    {
+      "segment_id": "8664ed0b",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "それではまた！👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/conferences/react-summit-us-2024/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:36.744080+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "7513b5b62953a3fecf66e69c42e125b05f84c0dc4aff1615cae515d5db072df0"
+  }
+}

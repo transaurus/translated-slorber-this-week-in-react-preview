@@ -1,0 +1,168 @@
+---
+slug: /153
+title: "This Week In React #153: Server Components, Astro, MUI, Next.js, Remix, React-Query, AsyncLocalStorage, forwardRef, Storybook, Vaul, Solito, Yoga, Reanimated, React-Tweet, Expo-Router, Lottie, Bun, TypeScript..."
+authors: [slorber]
+date: 07-25-2023
+---
+
+みなさん、こんにちは！
+
+休暇中の方もいらっしゃるようですが、今週もReactとReact Nativeの両方で多くのニュースがありました。
+
+皆さんに質問があります（メールで返信できます）：直接リンクとツイートへのリンク、どちらが好みですか？
+
+* 直接リンク: リソースに1クリックでアクセス可能
+* ツイート: 関連する会話を読むことができる
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアル形式 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![エンタープライズグレードのフィード、チャット、ビデオ用API！](/emails/issues/153/stream.jpg)](https://getstream.io/video/voice-calling/?utm_source=thisweekinreact\&utm_medium=sponsorship\&utm_content=\&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+[**エンタープライズグレードのフィード、チャット、ビデオ用API！**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact\&utm_medium=sponsorship\&utm_content=\&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+Streamは、エンタープライズグレードの**API**と**SDK**を提供し、プロダクトとエンジニアリングチームがスケール時に直面する2つの一般的な問題（アプリ内チャットとソーシャルアクティビティフィード）を解決します。
+
+Streamを使用すれば、開発者はこれらの機能をゼロから構築する時間のほんの一部で、あらゆるタイプのメッセージングやフィード体験をアプリに統合できます。Stream Chatは、リッチでリアルタイムなメッセージングをアプリケーションに簡単に統合する方法を開発者に提供します。
+
+Streamは、[**React**](https://getstream.io/chat/sdk/react/?utm_source=thisweekinreact\&utm_medium=sponsorship\&utm_content=\&utm_campaign=thisweekinreact_July2023_video_klmh22)、[**React-Native**](https://getstream.io/chat/sdk/react-native/?utm_source=thisweekinreact\&utm_medium=sponsorship\&utm_content=\&utm_campaign=thisweekinreact_July2023_video_klmh22)、Expo、Flutter、Android、Angular、Compose、Unreal、iOSなど、人気のあるフレームワーク向けの堅牢なクライアントサイドSDKを提供しています。
+スタートアップやサイドプロジェクト向けに、メーカーアカウントでエンタープライズグレードの機能、関数、UIコンポーネントを完全無料で利用できます。
+
+[**新しいReactビデオチュートリアルを試す！**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact\&utm_medium=sponsorship\&utm_content=\&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+***
+
+## ⚛️ React {#react}
+
+[![Astro 2.9](/emails/issues/153/astro.jpg)](https://astro.build/blog/astro-290/)
+
+[**Astro 2.9**](https://astro.build/blog/astro-290/)
+
+Astroの新バージョンがリリースされ、待望の実験的機能である[View Transitions](https://developer.chrome.com/docs/web-platform/view-transitions/)が追加されました。これにより、クライアントサイドルーティングに頼らずに、HTMLページ間の流動的でアニメーションされたトランジションを簡単に作成できます。Next.jsやRemixのような`<Link>`コンポーネントは必要ありません。React開発者にとって、これはUXの面で従来のSPAモードと同等の魅力を持ちながら、よりシンプルなモデルを維持するフレームワークをより魅力的にします。注意点として、これらのトランジションはナビゲーション間でReactの状態を保持しないため、問題になる可能性があります。[View Transitionsのサポート](https://caniuse.com/?search=View%20Transition%20API)はまだ弱いですが、急速に進歩しており、プログレッシブエンハンスメントとして考慮できます。また、Astroはフォールバックモードを提供しています。
+
+***
+
+* 👤 [Dan AbramovがMetaを退職、ただしReactコアチームには残留](https://twitter.com/dan_abramov/status/1682029195843739649)
+* 👤 [MetaがReact DXエンジニアリングマネージャーをロンドンで募集](https://twitter.com/sebastienlorber/status/1683529524414148608)
+* 🧑‍🎓 [新しいJotaiチュートリアル](https://twitter.com/jotaijs/status/1682075111040630784)
+* 💬 [Material UI RFC - ゼロランタイムCSS-in-JS](https://github.com/mui/material-ui/issues/38137): MUIがLinaria/CompiledにインスパイアされたRSC互換のゼロランタイムCSS-in-JSソリューションを開発予定。既存ソリューションに依存できない理由も説明。
+* 💡 [Server Componentsでネットワーク越しにPromiseを渡せる](https://twitter.com/ryantotweets/status/1681696002883944451)
+* 💡 [ジェネリクスでも動作するforwardRef型修正](https://twitter.com/sebastienlorber/status/1683753462058610688)
+* 📜 [React QueryとReact Context](https://tkdodo.eu/blog/react-query-and-react-context): DominikがReact-QueryデータをReactコンテキストに入れることでデータ依存関係を明示化する利点を解説。将来の`useSuspenseQuery`フックも代替案として有望。
+* 📜 [Next 13のcookies()とheaders()解説](https://raphael.badia.cc/posts/next-13-cookies-and-headers-explained): Next.jsが`AsyncLocalStorage`（将来的には[AsyncContext?](https://twitter.com/sebastienlorber/status/1639183216799100928)）を使ってRSC向けに`cookies()`と`headers()`関数を公開する仕組みを説明。
+* 📜 [Kuma UI vs Panda CSS - 第一印象](https://www.devas.life/my-first-impressions-of-kuma-ui-and-panda-css/): 2つの新しいCSS-in-JSライブラリを比較。著者はKuma UIを選択。
+* 📜 [レシピキット - インストール可能ライブラリの優れた代替案](https://andrewingram.net/posts/recipe-kits-a-great-alternative-to-installable-libraries): npm経由で配布されないUIキット（Shadcn UI、Tailwind UI、近々Tailwind Catalyst）の台頭と意義について論考。
+* 📜 [Tailwind Connect 2023レポート](https://tailwindcss.com/blog/2023-07-18-tailwind-connect-2023-recap): カンファレンスのまとめ。現在開発中のReact UIキット「Catalyst」も紹介。
+* 📜 [React-Tweetの紹介](https://vercel.com/blog/introducing-react-tweet): VercelがRSC互換のツイート表示パッケージを提供。
+* 📜 [React Server Componentsのコツ](https://echobind.com/post/react-server-components-tips): CSRを理解し活用するための5つのヒントとメンタルモデル。
+* 📜 [JSXの起源と存在理由](https://dodov.dev/blog/origins-of-jsx-and-why-it-exists)
+* 📜 [ReactとNext.jsアプリでの遅延読み込み](https://www.fullctx.dev/p/lazy-loading-in-react-and-nextjs)
+* 📦 [Storybook 7.1 - アプリ内オンボーディング、ゼロ設定スタイリングサポート、TypeScriptスニペット...](https://storybook.js.org/blog/storybook-7-1/)
+* 📦 [TanStack Query v5ベータ - ほぼ安定版、移行ガイドとコードモジュール提供](https://twitter.com/TkDodo/status/1683425919770173442)
+* 📦 [Remix 1.19 - 改良されたdevサーバーネットワークオプション、ESBuildメタファイル、改善されたNodeポリフィル...](https://github.com/remix-run/remix/releases/tag/remix%401.19.0)
+* 📦 [Redwood v6.0.0 RC](https://community.redwoodjs.com/t/redwood-v6-0-0-rc-is-now-available/5044)
+* 📦 [Vaul - React向け非スタイルドロワーコンポーネント](https://twitter.com/emilkowalski_/status/1683832539490942978)
+* 📦 [Framer-Motion 10.13 - スクロールAPI](https://twitter.com/mattgperry/status/1681663921072078851)
+* 📦 [Downshift v8](https://github.com/downshift-js/downshift/releases/tag/v8.0.0)
+* 🎥 [Jack Herrington - Panda採用理由: RSC向けCSSがゲームチェンジャー](https://www.youtube.com/watch?v=fKSemrudovo)
+* 🎥 [Addy Osmani - JavaScriptのコスト - 2023年版](https://www.youtube.com/watch?v=ZKH3DLT4BKw)
+* 🎥 [Jamon Holmgren - サスペンスが私を殺す](https://www.youtube.com/watch?v=3iRF63A_xbo)
+* 🎥 [Lee Robinson - Next.js App Routerに関するRedditへの返答](https://www.youtube.com/watch?v=-YO_z14dUyI)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Porkbun.com - 最高のドメイン登録サービス](/emails/issues/150/porkbun.png)](https://porkbun.com/?coupon=TWIREACT\&utm_source=TWIREACT\&utm_medium=Newsletter\&utm_campaign=twirjune2023)
+
+**[Porkbun.com - 最高のドメイン登録サービス](https://porkbun.com/?coupon=TWIREACT\&utm_source=TWIREACT\&utm_medium=Newsletter\&utm_campaign=twirjune2023)**
+
+Porkbunは、ReactおよびReact-Native開発者向けに、.devや.appから.cloud、.xyz、.aiまで、数百のドメイン拡張子を**業界最低価格**で提供しています。Porkbunのすべてのドメイン名には、以下のような**無料機能**が付帯します：
+
+* SSL証明書
+* WHOISプライバシー
+* DNS
+* URL転送
+* Webおよびメールホスティングのトライアル
+
+**AI生成検索ツール**もチェックしてください。これはドメイン名の探し方を変革しています。これらすべてが、**365日年中無休の素晴らしいサポート**と、Trustpilotでの数千の本物の5つ星評価によって支えられています。
+
+リンクをクリックして、[次のドメイン登録で1ドル割引](https://porkbun.com/?coupon=TWIREACT\&utm_source=TWIREACT\&utm_medium=Newsletter\&utm_campaign=twirjune2023)をPorkbun.comで受けましょう！
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![Solito 4](/emails/issues/153/solito4.jpg)](https://github.com/nandorojo/solito/releases/tag/v4.0.0)
+
+[**Solito 4**](https://github.com/nandorojo/solito/releases/tag/v4.0.0)
+
+React-NativeとNext.jsを共通の抽象化で統合するプロジェクトの新バージョン。v4では、Next.js App Routerを使用できるようになりました。この目的のために新しいAPIが導入されました。ただし、React-NativeはまだReact-Server Componentsをサポートしていないことに注意してください。クロスプラットフォームで使用するにはまだ少し早い段階です。
+
+***
+
+* 🎉 [Expo Launch Party](https://expo.dev/launch-party): 8月第1週に予定されているExpoのローンチウィーク？
+* 👥 [React Nativeアプリのエンドツーエンドデバッグ：MetaとSentryの専門家によるAMA - 7月26日](https://sentry.io/resources/ama-debugging-react-native-apps-end-to-end/)
+* 📜 [React Nativeのナビゲーション再定義：expo-routerの可能性](https://www.bam.tech/en/article/redefining-navigation-in-react-native-the-potential-of-expo-router): Expo Router（v1）とReact-Navigationのトレードオフに関する優れた分析。
+* 📜 [Expo Router v2、SDK 49、TypeScriptを使ったStorybook WebとNativeのセットアップ](https://twitter.com/mauro_codes/status/1682765642963861505)
+* 📜 [EAS Buildは今秋からM1/M2ビルダーの使用が必須に](https://blog.expo.dev/eas-build-will-require-using-m1-m2-builders-this-fall-df40e8a9e930)
+* 📦 [Yoga v2.0.0-beta.2](https://twitter.com/sebastienlorber/status/1683874650785210369): React-Nativeのレイアウトエンジンv2がベータ版に。W3C仕様への準拠を目指しており、クロスプラットフォームReactコードの記述に朗報！Yogaはモバイル開発者だけでなく、Satori、React-Native-Skia、React-Three-Flex、React Ink CLIレンダラーなど多くのプロジェクトで使用されています。
+* 📦 [Reanimated 3.4.0](https://twitter.com/swmansion/status/1683848307452289025): [Shared Element Transitions](https://twitter.com/piaskowyk/status/1683846036878393349)、Workletsの改善、React-Native 0.72サポート、`useReducedMotion`などの新APIを備えた素晴らしいリリース。
+* 📦 [React-Native-Lottie v6 - 新アーキテクチャ対応](https://twitter.com/matinzd/status/1683623846992044034)
+* 📦 [Tamagui Takeout](https://twitter.com/tamagui_js/status/1681925619997868033): クロスプラットフォームアプリをリリースするための自動更新テンプレート。オープンソースプロジェクトを資金調達する有料製品。
+* 🎥 [Jamon Holmgren - Colo LocoでXcodeをハック！](https://www.youtube.com/watch?v=ucEBfIZOap8)
+* 🎙️ [The React Native Show Podcast #24 - AbbottのJacob Suñolと語る大規模React Native](https://www.youtube.com/watch?v=tGGa885ycrg)
+* 🎙️ [React Native Radio 272 - 実践React Native: NTWRKのNick Alekhine](https://reactnativeradio.com/episodes/rnr-272-real-life-react-native-nick-alekhine-at-ntwrk)
+
+***
+
+## 🧑‍💻 Jobs {#jobs}
+
+🧑‍💼 [**Passionfroot - シニアフルスタックエンジニア（Remix） - €160k+、ベルリン/リモート**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+Passionfrootのミッションは、YouTube、ポッドキャスト、ソーシャルメディア、ニュースレターを通じて明日の独立ビジネスを支援することです。クリエイターがスケーラブルで持続可能なビジネスを構築できるツールの開発に参加してください。
+
+🧑‍💼 [**Callstack - シニアReact Native開発者 - 完全リモート、B2B月額PLN 21-32k（税抜）**](https://www.callstack.com/senior-react-native-developer)
+
+世界で最も使われているアプリに携わりたいですか？React Native技術の共創に興味はありますか？React & React NativeのリーダーであるCallstackチームに参加してください。詳細はウェブサイトをご確認ください。あなたの応募をお待ちしています - 実力を示してください！
+
+🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\&t=ArRLC77BpRwXXCdx8fnUqw)
+
+React Nativeに特化した開発者向けの複数のポジションを募集しています！報酬は約160kドルに加え、10%のボーナスがあります。React Nativeの実務経験があり、アメリカ在住であることが必須条件です。詳細は[@gabe_g2i](https://twitter.com/gabe_g2i)にDMでお問い合わせください。その際、「This Week in React」を見たとお伝えください。
+
+💡 [求人を掲載する方法は？](https://thisweekinreact.com/sponsor)
+
+***
+
+## 🔀 Other {#other}
+
+* [Bun 0.7 - Node.js互換性の向上、Viteサポート、Worker、AsyncLocalStorage...](https://twitter.com/jarredsumner/status/1682383403684106242)
+* [Rspack 0.2.9](https://twitter.com/rspack_dev/status/1684039960230522880)
+* [Microsoft TypeChat - AI/LLMからTypeScriptの型安全なレスポンスを得るためのツール](https://microsoft.github.io/TypeChat/blog/introducing-typechat)
+* [TypeScriptと段階的型付けの夜明け](https://github.com/readme/featured/typescript-gradual-types)
+* [pkg-size - npmパッケージの真のサイズを調べる（WebContainersを利用）](https://twitter.com/privatenumbr/status/1681206731127554048)
+* [Node.jsベストプラクティスリスト - 2023年更新版](https://twitter.com/nodepractices/status/1683835221840654337)
+* [TurborepoがGoからRustへの移行を進める方法](https://vercel.com/blog/how-turborepo-is-porting-from-go-to-rust)
+* [Valibotの紹介 - 1kb未満のZod代替ライブラリ](https://www.builder.io/blog/introducing-valibot)
+* [TypeScriptに関する5つの不都合な真実](https://oida.dev/5-truths-about-typescript/)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/153/meme.jpg)](https://twitter.com/fireship_dev/status/1682866059098095616)
+
+それではまた！👋

@@ -1,0 +1,171 @@
+---
+slug: /120
+title: "This Week In React #120: use RFC, Sandpack, Progressive enhancement, Streaming, Storybook, React-Native, Codeflow, Fontaine, Unplugin, Node.js 19, TypeRunner..."
+authors: [slorber]
+date: 10-18-2022
+---
+
+みなさん、こんにちは！
+
+ニュースレターが遅れています：新しいReact RFCを読むのに時間がかかりました😄 Kent C. Doddsの記事も長いですが、読む価値があります。Sandpackを紹介する記事が2週連続で2つもあり、これはチェックする価値があるでしょう！
+
+React-Nativeコアの側でも動きがあり、新しいオープンな議論が行われています。新しいアーキテクチャへの移行と公開APIの安定化が進めば、1.0リリースも考えられるかもしれません？ 実際にはあまり重要ではありませんが、メジャーバージョンを気にする人もいるようです。
+
+フロントエンドエコシステムにも興味深い新機能がいくつかあります。特にCodeflow、Fontaine、UnpluginはDocusaurusに直接関係するかもしれません。
+
+Docusaurusと言えば、[Changelog JS Partyポッドキャスト](https://changelog.com/jsparty/247)で話す機会をいただきました。
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアル形式 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Sizzy - 開発者向けブラウザ](/emails/issues/120/sizzy.jpg)](https://sizzy.co/?utm_campaign=newsletter\&utm_source=thisweekinreact)
+
+他の業界のプロフェッショナルは専用ツールを使っているのに、なぜウェブ開発者はまだ祖母がAmazonで買い物するのに使っているようなブラウザを使い続けているのでしょうか？
+
+Sizzy以外のブラウザでlocalhost:3000を開いているなら、貴重な時間を無駄にしています。
+
+**Sizzy以前：** ウェブ開発はストレスが多く、レスポンシブデザインは難しく、開いているタブやアプリが多すぎて圧倒されます。
+
+**Sizzy以後：** 必要なツールがすべて一箇所に集まり、レスポンシブデザインは簡単に、コンテキストスイッチングもなくなります。
+
+[ここからダウンロード](https://sizzy.co/?utm_campaign=newsletter\&utm_source=thisweekinreact)して14日間無料で試せます！
+
+***
+
+## ⚛️ React {#react}
+
+**[React RFC: Promiseとasync/awaitのファーストクラスサポート](https://github.com/reactjs/rfcs/pull/229)**
+
+ReactチームはServer Componentsの使用を簡素化するために`async/await`モデルに戻ることを決めました。問題：Client Componentsで`async/await`をサポートするのは難しい。そこでクライアント側で`use(promise)` APIを導入する提案がされています。他のフックとは異なり、`use`は条件付きで呼び出せます。将来的にはReactコンテキストのような他の「usable」でも使えるようになるかもしれません（実際、すでに[`useContext`を条件付きで使えます！](https://twitter.com/acdlite/status/1581401077915975680)）。異なるAPIを使うことは機能としても見なせます：Server ComponentsとClient Componentsを区別できるからです。
+
+このRFCは興味深い議論を呼んでいます。データフェッチングライブラリとの統合がどうなるかが懸念されています。ジェネレーターの使用はこのケースに適しているようですが、実際には使いにくいです。キャッシュAPIを導入する新しいRFCを待っているところです。
+
+**[ウェブの次の移行](https://www.epicweb.dev/the-webs-next-transition)**
+
+Kent C. Doddsは、3つの主要なWebアーキテクチャに関する素晴らしい回顧録を提供しています。非常に分かりやすく図解され、ドキュメント化されています。彼は最新のアーキテクチャ、現在のトレンドである「Progressively Enhanced Single-Page-Application（段階的に強化されたシングルページアプリケーション）」を強調しています。Remixはこの実装の一つで、ブラウザのネイティブな動作を模倣することを促す、よく考えられた抽象化を備えています。サーバーが絶対に必要という点にはあまり同意できません。[Docusaurus](https://github.com/facebook/docusaurus)もまた、JavaScriptなしでうまく機能するPESPAの実装です。
+
+**[A World-Class Code Playground with Sandpack](https://www.joshwcomeau.com/react/next-level-playground/)**
+
+Josh Comeauは、インタラクティブなコードプレイグラウンドを作成するために使用している[Sandpack](https://github.com/codesandbox/sandpack)（CodeSandboxのツールキット）を称賛しています。使いやすく、非常に柔軟なツールのようです！
+
+* 📜 [ストリーミング：その価値はあるのか？](https://www.builder.io/blog/streaming-is-it-worth-it): Qwik、Solid、Markoの作者たちがストリーミングの利点と、この技術を採用する難しさについて解説。Reactの文脈では、使用するライブラリ（Helmet、CSS-in-JS、Reduxなど）がストリーミングと互換性を持つ必要がある。
+* 📜 [Storybook - Viteのファーストクラスサポート](https://storybook.js.org/blog/first-class-vite-support-in-storybook/): 7.0が間もなくベータ版に：設定不要のViteサポート、プリバンドリング、Webpack不要、Vue 2、Lit、Svelteなどの新機能サポート...
+* 📜 [Reactからhtmxへの移行](https://htmx.org/essays/a-real-world-react-to-htmx-port/): Reactから[htmx](https://htmx.org/)への成功した移行のフィードバック（記事＋動画）。Pythonバックエンドの文脈であり、JavaScript環境（全員がフルスタック開発者）では結論が異なる可能性。JS開発者がPOCを行い、その後職を失った😅。
+* 📜 [コンポーネントよりコンテンツを優先する](https://www.simeongriggs.dev/components-considered-harmful-for-content): デザイナー、開発者、コンテンツ作成者（CMS）の異なる視点から見たReactコンポーネント設計に関する興味深い考察。
+* 📜 [Reactコンポーネントのための小さなセマンティックHTMLトリック](https://queen.raae.codes/emails/2022-10-10-semantic-react/): 作成するDOM要素をpropsで渡すことでHTMLのセマンティクスを尊重する方法を解説。
+* 📜 [Next（または任意のSSRフレームワーク）でWeb Componentsを使用する](https://css-tricks.com/using-web-components-with-next-or-any-ssr-framework/)
+* 📜 [Reactにおける仮想DOMの実装を探る](https://indepth.dev/posts/1501/exploring-how-virtual-dom-is-implemented-in-react)
+* 📜 [RemixでReactコンポーネントを遅延ロードする](https://sergiodxa.com/articles/lazy-load-react-components-in-remix)
+* 🐦 [Reactのヒント：isFocusedはほぼプロップとして使うべきではない](https://twitter.com/DavidKPiano/status/1580179833052876800)
+* 🚧 [PreactプロトタイプでのストリーミングSSR](https://twitter.com/marvinhagemeist/status/1581762567328104448)
+* 🧑‍🎓 [SplineとReactで3Dサイトをゲームコントロール付きで作成](https://designcode.io/spline2) ([動画](https://www.youtube.com/watch?v=uYp_ipIasYE))
+* 🎨 [Satori + React-Three-Fiberデモ](https://twitter.com/0xca0a/status/1581751380339232768)
+* 🎨 [Satori + SVGコードシンタックスハイライトデモ](https://twitter.com/shuding_/status/1581358324569645056)
+* 🎙️ [Docusaurus 2はかなり大きな話題](https://changelog.com/jsparty/247)
+* 🎥 [useEffectの擁護](https://www.youtube.com/watch?v=Zw4lJqBphvA)
+* 🎥 [React Contextを高速化！](https://www.youtube.com/watch?v=ZKlXqrcBx88)
+* 📦 [Planby - スケジュールとタイムライン用のReact.jsベースコンポーネント](https://planby.netlify.app/)
+* 📦 [Gatsby v5ベータ](https://twitter.com/GatsbyJS/status/1580288285229735936)
+* 📦 [Astro 1.5](https://twitter.com/astrodotbuild/status/1580611193429168129)
+* 📦 [SWR 2.0 RC](https://github.com/vercel/swr/releases/tag/2.0.0-rc.0)
+
+<SubscribeFormEmbed />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Chain React - 米国React Nativeカンファレンス - 2023年5月17-19日 オレゴン州ポートランド](/emails/issues/120/chainreact.jpg)](https://cr.infinite.red/?utm_source=react_hebdo)
+
+**[Chain React - 米国React Nativeカンファレンス - 2023年5月17-19日 オレゴン州ポートランド](https://cr.infinite.red/?utm_source=react_hebdo)**
+
+Chain Reactが2023年5月に第4回プレミアReact Nativeカンファレンスとして開催されます。最高の頭脳、企業、パートナーが集結する見逃せないイベントです。
+
+* **ワークショップ | 2023年5月17日** - さまざまなスキルレベル向けの3つのエキサイティングなワークショップを用意しています！これらの限定ワークショップは5月17日に公式スピーカーホテルで開催されます。専門家から直接学び、交流する機会です。
+
+* **カンファレンス | 2023年5月18-19日** - メインイベント！企業が大きなニュースを発表し、開発者が秘密を共有し、生涯の友情が生まれる場所です。メインカンファレンスはライブストリームされません。
+
+***
+
+## 📱 React-Native {#react-native}
+
+**[2022年: React Nativeをどう改善できるか？](https://github.com/react-native-community/discussions-and-proposals/discussions/528)**
+
+React-Nativeチームは、React-Nativeで改善が必要な点についてフィードバックを求めています。言及されているポイントには、CSSサポート（Yoga、gap、grid、shadows...）、クロスプラットフォームサポート、バージョンアップグレード、デバッグ、キーボード、Metroのシンボリックリンクなどがあります。
+
+* 💬 [React NativeのパブリックAPIの再構築](https://github.com/react-native-community/discussions-and-proposals/discussions/523)
+* 📜 [Yarn Workspacesを使ったReact Nativeモノレポの設定](https://www.callstack.com/blog/setting-up-react-native-monorepo-with-yarn-workspaces)
+* 📜 [Re.Pack 3でModule Federationを使う方法](https://www.callstack.com/blog/module-federation-with-re-pack-3)
+* 🚧 [Expo Router 0.0.27](https://twitter.com/Baconbrix/status/1579912795323215872) + [Layout API変更RFC](https://twitter.com/Baconbrix/status/1582057133939384321)
+* 🚧 [React-Native Bottom Sheet v5はWebサポートを予定](https://twitter.com/gorhom/status/1581334529121218561)
+* 🚧 [React-Native Flex gapサポートが来る？](https://twitter.com/Baconbrix/status/1580587087174062080)
+* 📖 [Expoドキュメントの改善](https://twitter.com/amanhimself/status/1580615698321399811): 「EAS BuildでのE2EテストがAndroidで動作するようになりました」
+* 📦 [Metro 0.73.0](https://github.com/facebook/metro/releases/tag/v0.73.0)
+* 📦 [React-Native 0.70.3](https://twitter.com/Kelset/status/1580210635266084864)
+* 🎥 [React-Native Re-Animated 2でのフリップカードアニメーション](https://www.youtube.com/watch?v=nVsvcu93488)
+* 🎙️ [React-Native-Radio 248 - Ignite v8: Maverickの紹介！](https://reactnativeradio.com/episodes/rnr-248-introducing-ignite-v8-maverick)
+
+***
+
+## 🧑‍💻 Jobs {#jobs}
+
+🧑‍💼 [**Causalのプロダクトエンジニア、リモート/ロンドン/NY、\$150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied\&lever-source%5B%5D=thisweekinreact.com)
+
+Causalは、数字を扱いデータを可視化するためのオールインワンツールを構築しているSeries Aスタートアップ（Coatue/Accelが支援）です。難しいUX/パフォーマンス課題を解決できる強力なReactエンジニアを探しています。
+
+🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_gi/status/1563204813881425926?s=20\&t=ArRLC77BpRwXXCdx8fnUqw)
+
+React Nativeに特化した開発者向けの複数のポジションを募集しています！報酬は約160,000ドルに加えて10％のボーナスです。React Nativeの実務経験があり、アメリカ在住であることが必須条件です。詳細は[@gabe_g2i](https://twitter.com/gabe_g2i)までDMでお問い合わせください。その際、「This Week in React」を見たとお伝えください。
+
+💡 [求人を掲載する方法は？](https://thisweekinreact.com/sponsor)
+
+***
+
+## 🔀 Other {#other}
+
+**[StackBlitz Codeflow](https://stackblitz.com/codeflow)**
+
+StackBlitzの[WebContainers](https://blog.stackblitz.com/posts/introducing-webcontainers/)技術により、WebAssemblyを介してブラウザ上でNode.jsを実行できます。VS Code、Next.js、Docusaurusなどを直接ブラウザ上で実行可能で、リモートのDockerコンテナを介する必要はありません。CodeflowはGitHubとの統合レイヤーを追加し、プルリクエストを安全にローカルで開いたり、レビューしたり、編集したりすることを容易にします。オープンソースプロジェクトにとって非常に便利です。
+
+また、Markdownファイル向けの簡易編集ビュー「Web Publisher」もリリースされました（エディタ、プレビュー、保存ボタン）。技術に詳しくないユーザーでもGit上のドキュメントに貢献しやすくなっています。GitHubのMarkdownプレビューとは異なり、実際のコンテンツプレビューが可能です。これは[Docusaurusユーザーにとって重要なニーズ](https://twitter.com/ericsimons40/status/1580371754974781440)です。
+
+**[Fontaine - フォントメトリクスに基づく自動フォントフォールバック](https://github.com/unjs/fontaine)**
+
+カスタムフォントの読み込み時にレイアウトシフトを防ぎます。フォールバックフォントを最終的なフォントと同じサイズに調整することで、テキストコンテナのサイズに影響を与えず、スムーズな遷移を実現します。素晴らしいアイデアです！
+
+* [Node.js 19](https://twitter.com/nodejs/status/1582401871179747329)
+* [Node 18.11](https://nodejs.org/en/blog/release/v18.11.0/): 新しい `--watch` モードと[その他の便利な機能](https://twitter.com/matteocollina/status/1580911016506163202)を追加
+* [Unplugin - Vite、Rollup、Webpackなどの統合プラグインシステム](https://github.com/unjs/unplugin): すべてのバンドラーで動作するプラグインを作成可能！
+* [CSS - ネスト構文の選択を手伝って - 調査結果](https://developer.chrome.com/blog/help-css-nesting-results/)
+* [tscポートの進捗状況](https://kdy1.dev/posts/2022/10/tsc-port-status) + [高速なTypeScript型チェッカーの公開リポジトリ](https://twitter.com/kdy1dev/status/1582174891230760960)
+* [TypeRunner - 高性能TypeScriptコンパイラ](https://github.com/marcj/TypeRunner)
+* [Lerna復活 — v6の新機能は？](https://blog.nrwl.io/lerna-reborn-whats-new-in-v6-10aec6e9091c)
+* [Nx 15の新機能](https://blog.nrwl.io/whats-new-in-nx-15-7e14e1ff282d)
+* [JetBrains Fleet - パブリックプレビュー開始](https://blog.jetbrains.com/fleet/2022/10/introducing-the-fleet-public-preview/)
+* [Import mapsがすべてのブラウザで利用可能に](https://twitter.com/sebastienlorber/status/1582024272788480000)
+* [BunのViteConf講演](https://twitter.com/jarredsumner/status/1581427214691708929)
+* [rRPC-chrome - Web Extensions向けtRPCアダプター](https://github.com/jlalmes/trpc-chrome)
+* [pnpmとは？本当に高速でスペース効率が良いのか？](https://dev.to/stackblitz/what-is-pnpm-and-is-it-really-so-fast-and-space-efficient-29la)
+* [Intl Explorer - ECMAScript国際化APIの実験と試行のためのツール](https://www.intl-explorer.com/)
+* [2022年にThree.jsではなくBabylon.jsを選ぶ理由](https://www.spotvirtual.com/blog/why-we-use-babylonjs-instead-of-threejs-in-2022)
+* [Viteが生まれた経緯 - ViteConf 2022スライド](https://docs.google.com/presentation/d/1O09rAOu_wRLHVjukVbBeSlRkLeX-dcYZfsdjPiU4kGQ/edit#slide=id.p)
+* [Rollup v3](https://github.com/rollup/rollup/releases/tag/v3.0.0)
+* [Jest 29.2](https://github.com/facebook/jest/releases/tag/v29.2.0)
+* [Obsidian 1.0](https://obsidian.md/1.0)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![ミーム - ESLintルールがエラーではなく警告だった時。- あらまあ - まあいいか（誰も気にしない）](/emails/issues/120/meme.png)](https://twitter.com/markdalgleish/status/1580827326799310848)

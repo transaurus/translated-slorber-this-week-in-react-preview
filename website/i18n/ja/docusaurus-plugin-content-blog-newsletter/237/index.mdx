@@ -1,0 +1,150 @@
+---
+slug: /237
+title: "This Week In React #237: RSC, TanStack, Storybook, Lingo Compiler, LiveStore, Base UI | Legacy Arch, Hermes N-API, 120fps, ReactRaptor, DevTools | TC39, Import Maps, Vite, Vitest, Babel, PHP"
+authors: [slorber]
+date: 06-04-2025
+---
+
+みなさん、こんにちは！
+
+今日のニュースレターを時間通りに準備できたと思っていたら、Dan Abramovが今週4つのRSCに関するブログ記事を公開していたことに気づき、慌てて対応しました😂。また、Storybook、LiveStore、Base UIといった素晴らしいリリースがあり、Lingo Compilerは特にエキサイティングなイノベーションです。コミュニティでは先週の[Remixの覚醒](https://remix.run/blog/wake-up-remix)について多くの動画やポッドキャストで議論が続いています。
+
+先週はApp.jsでReact Native開発者が集まり、React NativeチームがLegacy Architectureの凍結計画を発表しました。
+
+また、先週のTC39会議も非常に生産的で、3つの提案がステージ4に進むなど多くの成果がありました。Viteエコシステムからもさまざまな興味深い発表がありました。
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![IDEで無料のAIコードレビュー - VSCode、Cursor、Windsurf](/emails/issues/237/coderabbit.jpg)](https://coderabbit.link/LszC1pB)
+
+**[IDEで無料のAIコードレビュー - VSCode、Cursor、Windsurf](https://coderabbit.link/LszC1pB)**
+
+[CodeRabbit](https://coderabbit.link/6ZXULSK)は、コードレビューを高速化しコード品質を向上させるために設計されたAIコードレビュープラットフォームです。Gitワークフローや既存のツールチェーンにシームレスに統合され、コードベースを理解したレビューを提供し、すべてのプログラミング言語をサポートします。
+
+現在、VS Code、Cursor、Windsurfで直接AIコードレビューを提供できるようになりました。これにより、チームはフローを保ちながら自信を持ってコーディングし、その場でレビューを行うことができます。
+
+さらに良いことに、IDE内でのコードレビューは無料です！そうです、行単位のレビューとワンクリックでの修正がすべてIDE内で無料で利用できます。
+
+[拡張機能をインストール](https://coderabbit.link/LszC1pB)して、今日からコードの「バイブチェック」を始めましょう！
+
+***
+
+## ⚛️ React {#react}
+
+[![Storybook 9](/emails/issues/237/storybook.jpg)](https://storybook.js.org/blog/storybook-9/)
+
+**[Storybook 9](https://storybook.js.org/blog/storybook-9/)**
+
+Storybookは、VitestやPlaywrightとの統合により、究極のコンポーネントテストツールとなるべく進化しています。以下の機能をカバーします：
+
+* インタラクションテスト：ユーザーの動作をシミュレートして機能を検証
+* アクセシビリティテスト：WCAG違反を検出、診断、修正
+* ビジュアルテスト：ピクセル単位での見た目のバグをチェック
+* カバレッジレポート：テスト済みコードを一目で把握
+* テストウィジェット：クリックで包括的なテストスイートを実行
+
+このリリースには以下の機能も含まれます：
+
+* 48%軽量化：ドキュメントとテストパッケージをオプション化してインストールサイズを削減
+* ストーリー生成：ストーリーを自動的に作成するツール
+* タグベースの整理：タグでストーリーをフィルタリングおよびグループ化
+* ストーリーグローバル：ストーリーレベルでコンテキスト（テーマ、ビューポート、ロケール）を設定
+* フレームワーク：Svelte、Next.js、React Nativeなどのメジャーアップデート！
+
+***
+
+* 💸 [エンジニア向けプロダクト - 誰も教えてくれないドキュメンテーションの真実](https://go.posthog.com/twir-jun4)
+* 📖 [TanStackドキュメント - Next.jsからの移行](https://tanstack.com/start/latest/docs/framework/react/migrate-from-next-js)
+* 🔐 [Next.js CVE-2025-48068 - 開発サーバーの低深刻度脆弱性、v15.2.2で修正](https://vercel.com/changelog/cve-2025-48068)
+* 🗓️ [React Advanced London](https://reactadvanced.com/?utm_source=Newsletter\&utm_medium=ThisWeekinReact) -  🇬🇧 ロンドン - 11月28日 & 12月1日。「ここは私が最も好きなカンファレンスの一つです」 *— Lenz Weber-Tronic, Apollo GraphQL*。コード「TWIR」で10%オフ。
+* 📜 [プログレッシブJSON](https://overreacted.io/progressive-json/): Danはさまざまな比喩を使って、異なるデータストリーミング戦略の違いを説明しています。深さ優先戦略 - JPEG、JSON、HTMLで使用 - はデータを順番にストリーミングし、解析を遅らせるか任意の切り捨てポイントを作成します。幅優先戦略はデータを順不同でストリーミングし、ネストされたデータを後で埋められるプレースホルダーに置き換えます。React Server Componentsは幅優先戦略を使用しています。SuspenseはUIの意図的な表示をデータ受信から切り離すことを可能にします。この興味深い記事は[動画形式](https://www.youtube.com/watch?v=MaMQLNBZz64)でも存在します。
+* 📜 [ナビゲーションごとに1往復](https://overreacted.io/one-roundtrip-per-navigation/): Danは主要なReactデータ取得パターンのトレードオフを包括的に概説しています。Server Componentsを使用することは、多くのServer Loaderを単一のLoaderにまとめるのと非常に似ており、Relayのパフォーマンスと配置の利点をバニラJSコードで得ることができます。
+* 📜 [LISP開発者向けRSC](https://overreacted.io/rsc-for-lisp-developers/): `’use client’`ディレクティブはLISPのクォートに似ており、コードの一部を後で評価されるデータとしてマークします。
+* 📜 [なぜRSCはバンドラーと統合するのか？](https://overreacted.io/why-does-rsc-integrate-with-a-bundler/): Server Componentsはサーバーからクライアントへコンポーネントモジュールをシリアライズする方法が必要です。技術的にはバンドラーなしでも可能ですが、非効率的です。
+* 📜 [検索パラメータは状態である](https://tanstack.com/blog/search-params-are-state): TannerはTanStack Routerがルート定義に検索パラメータスキーマを関連付ける良い理由を説明しています。これは型安全性の向上、再レンダーの最適化、スキーマの断片化を防ぎます。
+* 📜 [実用主義の力](https://tanstack.com/blog/power-in-pragmatism): TanStackエコシステムのライブラリはレンダリングフレームワークに縛られず、コアアイデアに焦点を当てています。TanStack Startはニーズを予測するのではなく、ニーズに適応する柔軟なフレームワークです。
+* 📜 [useSyncExternalStore: 実践的なReact開発のための解説](https://www.epicreact.dev/use-sync-external-store-demystified-for-practical-react-development-w5ac0): 私のお気に入りのフックの一つについて、よくある間違いを含む良い概要です。
+* 📜 [ディレクティブプロローグとJavaScriptのダークマター](https://macwright.com/2025/04/29/directive-prologues-and-javascript-dark-matter): JSの解釈方法を制御するさまざまな方法（JSXプラグマ、ディレクティブ、マジックコメント）について興味深い背景を提供します。
+* 💸 [1,000人以上の開発者に参加 - The Road to NextでフルスタックWeb開発を学び、レベルアップする準備ができたReact開発者向けのコースです。](https://www.road-to-next.com/?utm_source=newsletter\&utm_medium=email\&utm_campaign=this_week_in_react_2)
+* 📦 [Lingo Compiler](https://lingo.dev/en/compiler): ソースコードに触れることなくビルド時に任意のReactアプリを自動翻訳する無料のオープンソースコンパイラ。ReactコードのASTを処理し、LLMで自動翻訳し、ホットモジュールリプレースメントもサポートします。Next.js、React Router、Remix、Viteアプリ向けのファーストクラス統合を備えた素晴らしい革新です。[Xでのデモ](https://x.com/MaxPrilutskiy/status/1929946504216932746)は印象的です。
+* 📦 [LiveStore Beta](https://livestore.dev/): Prismaの作成者が、ReactとExpoのファーストクラスサポートを備えた新しいクライアント中心の状態管理ソリューションを紹介しました。SQLite、イベントソーシング、リアクティビティに基づいており、さまざまなプロバイダーを通じてクライアントを同期することもできます。ランディングページはチェックする価値があり、その仕組みを説明しています。
+* 📦 [Base UI 1.0 Beta](https://github.com/mui/base-ui/releases/tag/v1.0.0-beta.0): 今後のRadix UIの競合がベータ版になりました。このリリースには新しいMenubar、NavigationMenu、ContextMenuコンポーネントが含まれています。
+* 📦 [Ink 6.0 - CLI向けReactレンダラー - React 19サポート](https://github.com/vadimdemedes/ink/releases/tag/v6.0.0)
+* 📦 [TanStack Query 4.39 - v5のAPIの一部をv4にバックポート](https://github.com/TanStack/query/releases/tag/v4.39.0)
+* 📦 [Lexical 0.32 - 拡張可能なテキストエディタフレームワーク](https://github.com/facebook/lexical/releases/tag/v0.32.0)
+* 🎥 [Theo - RemixはReactを捨てる（そしてそれは良いことだと思う）](https://www.youtube.com/watch?v=y_64170hz0o)
+* 🎥 [Alem Tuzlak - Remix.runは目覚めた、よく眠れたか？](https://www.youtube.com/watch?v=Y5t0ILcuxVc)
+* 🎥 [Ryan Carniato - JavaScriptフレームワークがDOMをレンダリングする3つの方法](https://www.youtube.com/watch?v=0C-y59betmY)
+* 🎥 [React Miami 2025 プレイリスト](https://www.youtube.com/playlist?list=PL4mWVugy3a2il28mbeNmyjJDoHOvw4JTK)
+* 🎙️ [This Month in React - DanがRSCを説明。Remix v3？ReactコアチームのWIP？](https://creators.spotify.com/pod/profile/reactiflux/episodes/TMiR-2025-05-Dan-explains-RSC--Remix-v3--React-core-team-WIP-e33nc5a)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![数分で動作する報酬フローを構築 — Dynamoで](/emails/issues/237/dynamo.png)](hhttps://whitelabel-loyalty.com/products/dynamo/?utm_source=email\&utm_medium=newsletter\&utm_campaign=react)
+
+**[数分で動作する報酬フローを構築 — Dynamoで](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email\&utm_medium=newsletter\&utm_campaign=react)**
+
+ロイヤルティロジックをゼロから構築するのは大変です — インフラ設定、報酬トラッキング、イベントトリガー、ティアルール…すべてが積み重なります。
+
+**Dynamo**は開発者向けに構築されたロイヤルティエンジンです：1つのAPI、完全な制御、一切の制約なし。ReactとReact Native向けの実用的なSDK、明確なドキュメント、そして実際の報酬フローを数分でテストできるライブサンドボックスを提供 — 電話もクレジットカードも不要、コードだけで始められます。
+
+→ [今すぐサンドボックスにアクセス](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email\&utm_medium=newsletter\&utm_campaign=react)
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![レガシーアーキテクチャの凍結](/emails/issues/237/rn-frozen.jpg)](https://github.com/reactwg/react-native-new-architecture/discussions/290)
+
+**[レガシーアーキテクチャの凍結](https://github.com/reactwg/react-native-new-architecture/discussions/290)**
+
+React Nativeチームは、レガシーアーキテクチャを凍結する計画を正式に発表しました。これにより、すべてのリソースを新しいアーキテクチャに集中させることができます。レガシーアーキテクチャはセキュリティ修正や重大なバグ修正を通じて引き続き使用可能ですが、新機能のマージは予定していません。将来的には未定の時期に削除される予定で、維持コストがかかるためです。
+
+***
+
+* 💸 [React Universe Meetup、ニューヨークでBrownfieldのテクニック（RNEF）、React Native向けOpenTelemetryなどを学ぶ。6月24日（火）18:00-21:00 EDT（ハイブリッド開催）](https://www.callstack.com/events/react-universe-meetup-new-york-june-2025?utm_campaign=Brownfield\&utm_source=TWIR\&utm_medium=mail\&utm_content=react_universe_mmetup_new_york)
+* 👀 [Hermes PR - HermesにNode-APIを追加](https://github.com/facebook/hermes/pull/1377): 最近の議論では、HermesチームがこのMicrosoftのPRを受け入れることに前向きで、`Intl`や`Temporal`などの標準ライブラリAPIの統合に活用する計画があるようです。
+* 👀 [React Native PR - iOSでAnimatedが120fpsをサポート](https://github.com/facebook/react-native/pull/51775)
+* 📜 [ReactRaptor: Expoで構築されたAndroidアプリを発見](https://expo.dev/blog/which-android-apps-are-built-with-expo): このアプリはスマートフォンをスキャンし、RN/Expoで構築されたアプリのリストを表示します。試してみたところ、ローカルのフランス製アプリを含め、RNを使用しているとは思わなかった多くのアプリが見つかりました。新しいRNの仕事やフリーランスのクライアントを見つけるのに非常に役立つかもしれません。
+* 💸 [Expo AI Chatbot - React Native製AIチャットボットアプリを最速で作成。ストリーミング、音声エージェント、画像生成などを含む完全なコードベース](https://www.expoaichatbot.com?atp=twir)
+* 📦 [Reanimated 3.18 - RN 0.80をサポート](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.18.0)
+* 📦 [React Native Better DevTools - React Query、MMKV、AsyncStorage、Secure Storage、環境変数などをすべてのプラットフォームでデバッグするmacOSアプリ](https://github.com/LovesWorking/rn-better-dev-tools)
+* 📦 [zustand-expo-devtools](https://github.com/csark0812/zustand-expo-devtools)
+* 🎥 [App.js Conf 2025 – 1日目と2日目のライブストリーム](https://www.youtube.com/watch?v=K2JTTKpptGs\&list=PLSk21zn8fFZBD3Kxg8Rw_n4LPIuA6TGHd)
+* 🎥 [React Universe Meetup、2025年4月](https://www.youtube.com/watch?v=FqSLVdOrclI\&list=PLZ3MwD-soTTHQjW7z1BEUmHC7aKdUnA7J)
+* 🎥 [Simon Grimm - Expo Routerを使ったReact Nativeタブナビゲーション](https://www.youtube.com/watch?v=CN4x8srCMl0)
+* 🎙️ [Rocket Ship 71 - Reanimated 4 Beta、LiveStore、DevTools & Expo Routerコース](https://share.transistor.fm/s/512c4c06)
+
+***
+
+## 🔀 Other {#other}
+
+* 📣 [TC39が`Array.fromAsync`、`Error.isError`、明示的リソース管理など9つの提案をStage 4に進めました](https://socket.dev/blog/tc39-advances-9-proposals)：`using`キーワードが仕様に採用され、すでにVitestで活用されているのは素晴らしいです。また、新しい[Random名前空間と関数](https://github.com/tc39/proposal-random-functions)も非常に興味深いです！
+* 📜 [Resilient Import Maps](https://shopify.engineering/resilient-import-maps)：ShopifyはHTML仕様に大きな貢献をし、ブラウザが複数のインポートマップを宣言できるようにしました。これは偶然ではなく、Remix v3でも活用される可能性が高いでしょう。
+* 📜 [PHPとNode.jsをシームレスに統合](https://blog.platformatic.dev/seamlessly-blend-php-with-nodejs)
+* 📦 [Rolldown-Vite](https://voidzero.dev/posts/announcing-rolldown-vite)：Rolldownを基盤としたViteのバージョンが親プロジェクトと機能パリティに達しました。現在テクニカルプレビューとして利用可能で、ドロップイン代替として使用できます。早期導入者からは最大16倍のビルド速度向上が報告されています。
+* 📦 [Vitest 3.2 - アノテーションAPI、カスタムブラウザロケーター、`using`、Test Signal、改善されたカバレッジ結果](https://vitest.dev/blog/vitest-3-2.html)
+* 📦 [Vite 7.0 Beta - Node 18のサポート終了、ESMのみ、ブラウザターゲットを`baseline-widely-available`に](https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md#700-beta0-2025-06-02)
+* 📦 [Babel 8 Beta - Node 18のサポート終了、ESMのみ、技術的負債の整理](https://babeljs.io/blog/2025/05/30/babel-8-beta)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/237/meme.jpg)](https://x.com/AlemTuzlak/status/1927806693007597883)
+
+[![alt](/emails/issues/237/meme2.jpg)](https://x.com/sebastienlorber/status/1929880640670814510)
+
+またね！ 👋

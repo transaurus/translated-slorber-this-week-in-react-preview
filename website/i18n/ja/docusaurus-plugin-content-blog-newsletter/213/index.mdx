@@ -1,0 +1,158 @@
+---
+slug: /213
+title: "This Week In React #213: React 19, Next.js, React Compiler, React Router, Restyle, Lingui, State of RN, Uniffi, Shared Objects, Fast IO, Sheet Transitions, Radon, TC39, OpenAuth, TypeScript, Dioxus..."
+authors: [matthieugicquel, cyrilbo]
+date: 12-11-2024
+---
+
+みなさん、こんにちは！
+
+Theodo Apps（旧BAM）のCyrilとMatthieuです 👋。Sebに代わって、ReactとReact Nativeの最新ニュースをお届けします！
+
+React 19が正式に安定版となりました。以下で紹介する記事やリリースの多くがその新機能に関連していることからも、このリリースの重要性がわかります 🙂
+
+「State of React Native 2024」調査が開始されました。React Nativeの未来を形作るチャンスをお見逃しなく！
+
+また、React Native向けのUniffiやDioxusなどのツールを使用してRustをフロントエンドアプリに活用する動きも進んでおり、より強力なクロスプラットフォーム体験への道が開かれています。
+
+さあ、始めましょう！ 🚀
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![WorkOS: B2B SaaS向けモダンなアイデンティティプラットフォーム](/emails/issues/195/workOS.jpg)](https://workos.com/?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=q32024)
+
+**[WorkOS: B2B SaaS向けモダンなアイデンティティプラットフォーム](https://workos.com/?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=q32024)**
+
+WorkOSを使えば、わずか数行のコードで企業向けの販売を開始できます。
+
+🔐 WorkOS AuthKitは、**SSO、SCIM、RBAC、FGA**を含む完全なユーザー管理ソリューションをサポートします。
+
+🏗️ APIは**柔軟で使いやすく、モジュール式**です。必要な機能を選び、数分で統合できます。
+
+🎨 デザインとユーザー体験がすべてです。ドキュメントの品質からユーザーのオンボーディングまで、開発者にとって**不要な複雑さをすべて排除**します。
+
+✨ AuthKitは**100万MAUまで無料**で、ボット保護、MFA、RBACなどが含まれます。
+
+🤝 WorkOSは、**Perplexity**、**Vercel**、**Webflow**など、数百の主要スタートアップに信頼されています。
+
+[WorkOSを始める](https://workos.com/?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=q32024) 🚀
+
+***
+
+## ⚛️ React {#react}
+
+[![React 19](/emails/issues/213/react.jpg)](https://react.dev/blog/2024/12/05/react-19)
+
+**[React 19](https://react.dev/blog/2024/12/05/react-19)**
+
+React 19 RCはこのニュースレターで過去1年間にわたって主要なトピックの1つでしたので、正式に安定版となったこと以外に特筆すべきは、リリースを遅らせたpre-warming機能と新しいReact-DOMの静的APIの2点です。以下は既にカバーした他の機能の良い復習です：
+
+* アクション / サーバーアクション / `useActionState()`
+* `<form>` + プログレッシブエンハンスメント互換のフック
+* `<Context.Provider>`の代わりに`<Context>`
+* `use()`フック
+* カスタム要素
+* 標準プロップとしてのrefとrefコールバックのクリーンアップ関数
+* メタタグの処理
+* リソースのプリロード
+* エラーの改善とハイドレーション差分の報告
+
+リリースをカバーした関連動画：
+
+* 🎥 [Theo - React 19がついにリリース！](https://www.youtube.com/watch?v=6aQgiJHReCI)
+* 🎥 [Ankita - 5分で学ぶReact 19の変更点！](https://www.youtube.com/watch?v=ZcuOV60_z6s)
+* 🎥 [Brandon Roberts - React 19: Angular開発者が知るべきこと！](https://www.youtube.com/watch?v=0aHHGdxAmF4)
+
+***
+
+* 💸 [React Bricks – React向けビジュアルCMSがよりアクセスしやすくなり、低価格のエントリープランと柔軟な従量課金オプションを提供。無料で始められます！](https://www.reactbricks.com/?utm_source=twir\&utm_campaign=ql24)
+* 📖 [新しいReact Routerチュートリアル](https://reactrouter.com/tutorials/address-book): 約30分で必要な機能のほとんどをカバー
+* 📜 [React Compilerが実際のコードでどのように動作するか](https://www.developerway.com/posts/how-react-compiler-performs-on-real-code): 実際のアプリでコンパイラを有効にすると、初期ロード時のパフォーマンスは変わらず、インタラクション時のパフォーマンスが向上。ただし、既存コードを完全に最適化できない場合も。
+* 📜 [Refコールバック、React 19とコンパイラ](https://tkdodo.eu/blog/ref-callbacks-react-19-and-the-compiler): TkDodoがクリーンアップ関数を備えたrefコールバックについて考察。いつ`useEffect`を置き換えるべきか？
+* 📜 [Next.jsマルチゾーンでスケーラブルなマイクロフロントエンドを構築](https://techhub.iodigital.com/articles/building-scalable-micro-frontends-with-next-js-multi-zones): 独立したデプロイが可能なことは大規模チームにとって大きな利点であり、Next.jsではそれほど複雑ではないことが判明
+* 📜 [wakuのRoot Element API](https://waku.gg/blog/root-element-api): `\_root.tsx`ファイルで`<html>`、`<body>`、`<head>`をカスタマイズ
+* 📜 [Astro Starlightを使ったマルチフレームワークドキュメント](https://blog.arcjet.com/multi-framework-docs-with-astro-starlight/)
+* 📜 [SSRは高コストではない](https://t3.gg/blog/post/ssr-is-not-expensive)
+* 📜 [状態管理に関する考察](https://www.frontendundefined.com/posts/monthly/react-state-management-reflections/)
+* 📦 [Next.js 15.1](https://nextjs.org/blog/next-15-1): React 19安定版、エラーデバッグの改善、レスポンス送信後のコード実行（例：分析）用の`after`が安定版に、新たな実験的API`forbidden`と`unauthorized`が`notFound`と同様に動作
+* 📦 [Restyle 3.0](https://www.restyle.dev/): React 19の新しいメタデータAPIを使用する非常に軽量なCSS-in-JSライブラリ
+* 📦 [Lingui 5.0](https://lingui.dev/blog/2024/11/28/announcing-lingui-5.0): RSCのサポートと新しい`useLingui`マクロなど、さまざまな改善
+* 📦 [react-render-stream-testing-library 2.0](https://github.com/testing-library/react-render-stream-testing-library/releases/tag/v2.0.0): 大きな新機能はなし、React 19との互換性のために必要な破壊的変更がいくつか
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![ソロからコラボレーションへ: React + Stream Video！](/emails/issues/213/stream.jpg)](https://getstream.io/video/sdk/react/tutorial/video-calling/?utm_source=newsletter\&utm_medium=referral\&utm_content=\&utm_campaign=thisweekinreact)
+
+**[ソロからコラボレーションへ: React + Stream Video！](https://getstream.io/video/sdk/react/tutorial/video-calling/?utm_source=newsletter\&utm_medium=referral\&utm_content=\&utm_campaign=thisweekinreact)**
+
+StreamのVideo React SDKは、開発者がビデオ通話、会議、ライブストリーミングを簡単に統合できるようにします。
+
+✔️ **開発者による開発者のための:** 完全にカスタマイズ可能なUIコンポーネントとフック、包括的なドキュメント、クイックスタートテンプレート。
+
+✔️ **超高速パフォーマンス:** 200ms未満のレイテンシとWebRTCによるスケーラビリティ。
+
+✔️ **すぐに使える機能:** グループ通話、画面共有、適応型ビットレート、コーデックなど。
+
+迅速に構築。簡単にスケール。[Streamを今すぐ始める](https://getstream.io/try-for-free/?utm_source=newsletter\&utm_medium=referral\&utm_content=\&utm_campaign=thisweekinreact)。
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![State of React Native 2024](/emails/issues/213/state_of_rn.jpg)](https://stateofreactnative.com/)
+
+**[State of React Native 2024](https://stateofreactnative.com/)**
+
+State of React Native 2024調査が開始されました！📊 これは、React Nativeの未来に影響を与えるチャンスです。トレンド、ツール、課題に関する洞察を共有することで、ExpoとMetaチームが毎年改善を進めるための指針となります。あなたのフィードバックがコミュニティ全体に利益をもたらします。
+
+***
+
+* 💸 [React Native Mastery - 現在募集中！](https://notjust.dev/react-native-mastery?utm_source=twir\&utm_medium=email)
+* 🐦 [RN Unistyles v3がスコープ付きテーマをサポート](https://x.com/jpudysz/status/1865460854717632737): v2で`UnistylesTheme`が削除されて以来の欠けていた機能。
+* 📜 [Expo ModulesにおけるShared Objectsの実世界での影響](https://expo.dev/blog/the-real-world-impact-of-shared-objects): Expo ModulesのShared Objectsは、ネイティブとJavaScript間のシームレスな統合を可能にし、API設計とクロスパッケージ互換性を向上させます。
+* 📜 [React Native向けUniffiの紹介: RustパワーのTurbo Modules](https://hacks.mozilla.org/2024/12/introducing-uniffi-for-react-native-rust-powered-turbo-modules/): React Native向けUniffiは、RustとTurbo Modulesを統合し、React Nativeアプリ向けにRust cratesエコシステム全体を開放します。
+* 📜 [複数のFlavorとSchemeを持つベアReact Nativeアプリでの自動化されたEAS Updates](https://shift.infinite.red/automated-eas-updates-in-a-bare-react-native-app-with-multiple-flavors-schemes-dcdf17963079): ExpoやEASを使用せず、CodePushに依存しているプロジェクト向けの記事。CodePushが正式にサンセットされる前にOTA更新ソリューションが必要な場合に最適です。
+* 📜 [React Native TVアプリの開発](https://www.callstack.com/blog/developing-a-react-native-tv-app)
+* 📦 [React Native Sheet Transitions - 美しいユニバーサルシートトランジション](https://github.com/saulamsal/react-native-sheet-transitions): 印象的ですが、まだ開発中です。
+* 📦 [@lingui/metro-transformer](https://lingui.dev/blog/2024/11/20/metro-transformer): `.po`翻訳ファイルのプリコンパイルが不要になり、Metroバンドリング時にコンパイルを処理します。
+* 📦 [React Native Fast IOプレリリース](https://github.com/callstackincubator/react-native-fast-io): React Native向けの高性能I/Oソリューション。WebSocket、Fetch、FileSystem、Blob、Streamsなどの標準W3C APIを実装し、Nitroによって駆動されます。
+* 📦 [React Native Bottom Tabs v0.7.2 - macOSサポート、サイドバーサポート](https://github.com/okwasniewski/react-native-bottom-tabs/releases/tag/react-native-bottom-tabs%400.7.2)
+* 📦 [React Native Video Player v0.15](https://github.com/TheWidlarzGroup/react-native-video-player/releases/tag/v0.15.0)
+* 🎥 [Radon IDEのライブデモ: 開発を効率化するVS Code拡張機能](https://www.youtube.com/watch?v=UeYmRKWhwFI)
+* 🎙️ [RNR 316 - Cedric van PuttenとAlex Huntによるデバッガーのデバッグ](https://reactnativeradio.com/episodes/rnr-316-debugging-the-debugger-with-cedric-van-putten-and-alex-hunt)
+
+***
+
+## 🔀 Other {#other}
+
+* 📜 [TC39 第105回会議](https://dev.to/hemanth/updates-from-the-105th-tc39-meeting-3gkh): Intl.DurationFormat、Immutable ArrayBuffer、Import Syncなど、いくつかのES提案が進展しました。
+* 📜 [Airtable - TypeScriptを数千プロジェクトにスケーリング](https://medium.com/airtable-eng/a-leap-in-the-evolution-of-airtables-codebase-scaling-typescript-to-thousands-of-projects-734326c3a553)
+* 📜 [Node.js、require(esm)を有効にした初のLTSをリリース、セキュリティとリリース自動化を強化](https://socket.dev/blog/node-js-delivers-first-lts-with-require-esm-enabled)
+* 📜 [JavaScriptのMapでN²の複雑さを解決](https://davidbonan.io/blog/solving-n2-complexity-with-javascript-maps)
+* 📜 [CSS Wrapped 2024](https://chrome.dev/css-wrapped-2024/)
+* 📜 [ブラウザキャッシュでページ読み込み時間を改善する方法 | DebugBear](https://www.debugbear.com/blog/browser-caching)
+* 📜 [Node.jsのReadable Streamsを探る](https://pavel-romanov.com/exploring-the-core-concepts-of-nodejs-readable-streams)
+* 📦 [OpenAuth - ユニバーサルで標準ベースの認証プロバイダ](https://openauth.js.org/)
+* 📦 [Dioxus 0.6 - Rust製フルスタッククロスプラットフォームアプリフレームワーク](https://dioxuslabs.com/blog/release-060): Reactから多くのインスピレーションを得ており、この大規模リリースではServer Functions、SSG/ISG、Streaming HTMLなど多くの機能が追加されました。
+
+***
+
+## 🤭 Fun {#fun}
+
+[![React 19 PeerDependencies](/emails/issues/213/react_19_meme.jpg)](https://bsky.app/profile/did\:plc\:hxmev3uady7j4litwnr5fzbg/post/3laz2eyx77k2l)
+
+[![JavaScript Math.sin](/emails/issues/213/math_sin.jpg)](https://x.com/davesnx/status/1863991593432391711)
+
+それではまた！👋

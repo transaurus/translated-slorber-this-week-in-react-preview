@@ -1,0 +1,172 @@
+---
+slug: /215
+title: "This Week In React #215: Dropdown, i18n, Next.js, Remix, Astro, shadcn, StyleX, Fancy Components, Expo, Static Hermes, Skia, ExecuTorch, Kotlin, Node, Shortest, Rolldown, Rspack, pnpm..."
+authors: [slorber]
+date: 01-02-2025
+---
+
+みなさん、こんにちは！
+
+当初は1月8日に再開する予定でしたが、\
+少し早めに新年のご挨拶をさせていただきます。新年あけましておめでとうございます！🎉\
+年末年始の休暇期間中ということもあり、React関連の動きは静かだったのは予想通りですね。
+
+また、このニュースレターを振り返る機会として、改めて読者の皆様に感謝申し上げます。皆様のご支援があってこそのプロジェクトです。
+
+2024年、このニュースレターは持続可能なプロジェクトから収支均衡のビジネスへと成長しました。これにより、より多くの投資が可能になり、コンテンツの質も向上しています。2023年から2024年までの具体的な数字を共有しましょう：
+
+* 📈 **購読者数**: 31k ➡️ 46k - 今年は+15kの増加。予想ほどの急成長ではありませんでしたが、非常に良い数字です！
+* 👥 **執筆者**: 1 ➡️ 4 - Benedikt、Matthieu、Cyrilが参加し、私が不在の時もニュースレターを発行できる体制が整いました。
+* 📨 **発行号数**: 38 ➡️ 47 - 執筆者の増加により、ほぼ毎週メールを配信できました！
+* 💰 **収入**: 47k€ ➡️ 99k€ ARR - 営業面でも成果を上げ、協力したい企業のほとんどからスポンサーを得ることに成功しました。
+* 💸 **支出**: 15k€ ➡️ 36k€ - ゲスト執筆者への報酬（14k€）などで支出が大幅に増加しました。その他、広告（12k€）、SaaS（7k€）、バーチャルアシスタント（3k€）が主な支出です。
+
+全体的に見て、2024年は素晴らしい年でした。50k購読者という野心的な目標には届きませんでしたが、それに近づくことができました。夏以降は成長が鈍化した理由は不明ですが、重要なマイルストーンである「Twitterのフォロワー数を超える」という目標は達成し、ソーシャルプラットフォームへの依存度を下げることができました。
+
+In 2025, I'd like the newsletter to be more than just a list of curation emails. I plan to onboard guest writers, paying them to produce a series of articles on topics they are passionate about. If you think you'd be a great fit, reply and say hi! 👋
+
+この計画を実現するため、ニュースレターを気に入ってくれそうな友人や同僚、またはSNSでシェアしていただけると嬉しいです。
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![ニュースレターでエンジニアとして成長しよう。](/emails/issues/183/posthog.jpg)](https://dub.link/twir-dec18)
+
+**[ニュースレターでエンジニアとして成長しよう。](https://dub.link/twir-dec18)**
+
+[Product for Engineers](https://dub.link/twir-dec18)は、PostHogが提供するエンジニア向けニュースレターで、プロダクトスキルの向上をサポートします。
+
+3万人以上の購読者を誇り、プロダクトとエンジニアリングのギャップを埋める信頼できる情報源として、ユーザーが愛用するプロダクトをリリースするためのノウハウを提供します。
+
+適切な技術の選び方、スタートアップを失敗に導く意外な行動、A/Bテストでの失敗談など、実践的なトピックをカバーしています。完全無料で、今後も無料のまま提供されます。
+
+[**無料で購読する。**](https://dub.link/twir-dec18)
+
+***
+
+## ⚛️ React {#react}
+
+[![ドロップダウンの構築](/emails/issues/215/dropdown.jpg)](https://reshaped.so/blog/building-a-dropdown)
+
+**[ドロップダウンの構築](https://reshaped.so/blog/building-a-dropdown)**
+
+柔軟なドロップダウンReactコンポーネントをゼロから実装する際の複雑さを解説したインタラクティブな記事です。トリガー、位置調整、フォーカストラップ、キーボードナビゲーション、アクセシビリティなど、考慮すべき多くの細かなポイントをカバーしています。
+
+***
+
+[![Reactアプリの国際化を自動化で構築する](/emails/issues/215/i18n.jpg)](https://lingual.dev/blog/automating-your-react-internationalization/)
+
+**[Reactアプリの国際化を自動化で構築する](https://lingual.dev/blog/automating-your-react-internationalization/)**
+
+この記事では、ts-morphのAST変換を使用して、アプリ内のハードコードされた文字列をreact-i18nextやreact-intlの翻訳APIに自動的に置き換える方法を紹介しています。
+
+***
+
+* 💸 [React Native Zero to Hero - 初めてのアプリをリリースするために必要なすべて](https://galaxies.dev/missions/zero-to-hero?utm_source=thisweekinreact)
+* 👀 [React PR - 「Forgive」IDE拡張](https://github.com/facebook/react/pull/31918): React Compilerチームは最近[React Summitでヒント](https://www.youtube.com/watch?v=C8Mg-NSyqWg\&t=14452s)を出しました。彼らはコンパイラを活用した「React IDE」を作る意図を持っており、単なるリンターに限定されず、教育的なツールチップなどを提供する予定です。まだ特に興味深いものはありませんが、Language Server ProtocolとVSCode拡張の構築が始まっています。
+* 🗓️ [Paris TypeScript La Conf'](https://la-conf.typescript.paris/?utm_source=thisweekinreact) - 🇫🇷 パリ - 2月28日 - スピーカーラインナップが発表されました！Mateusz Burzyński、Elise Patrikainen、David Roussetが登壇します！「TWIR」コードでチケットを20%オフで購入できます！
+* 📜 [Next.jsは必要ない](https://www.comfydeploy.com/blog/you-dont-need-nextjs): ダッシュボードをNext.js 15からReactのみに移行し、TanStack RouterとRspackを使用して満足のいく結果を得ました。
+* 📜 [ブラックフライデー・サイバーマンデーライブダッシュボードの構築](https://vercel.com/blog/building-the-black-friday-cyber-monday-live-dashboard): VercelがNext.jsベースのブラックフライデーダッシュボードの技術的アーキテクチャを紹介します。
+* 📜 [React 19でレガシーなthrowをSuspenseとuseで置き換える](https://peterkellner.net/2024/12/31/replacing-legacy-throw-in-react-19-with-suspense-and-use/): 新しい`use()`フックがありますが、Promiseをthrowする方法もまだ機能します。
+* 📜 [Remixセキュリティチェックリスト](https://blog.arcjet.com/remix-security-checklist/)
+* 📜 [Reactでシンプルなフォームを構築 - React 19前後での比較](https://reactpractice.dev/articles/building-a-simple-form-in-react-before-and-after-react-19/)
+* 📦 [Astro 5.1 - 実験的なセッション、リモート画像キャッシュ、getActionPath](https://astro.build/blog/astro-510/)
+* 📦 [StyleX 0.10 - PostCSSプラグイン、デバッグ機能の向上、ESLint/パフォーマンス/CLIの改善](https://stylexjs.com/blog/v0.10.0): 新しいPostCSSプラグインにより、さまざまな環境でStyleXを導入しやすくなりました。
+* 📦 [Fancy Components - ユニークで型破りなコンポーネントのコレクション](https://www.fancycomponents.dev/)
+* 📦 [next-intl 4.0ベータ](https://next-intl.dev/blog/next-intl-4-0): ICUパラメータの型安全性が非常に便利です！また、PPR、dynamicIO、rootParamsなどの最新のNext.js機能の基盤も整えられています。
+* 📦 [React Router 7.1 - Vite 6のサポート](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v710)
+* 📦 [shadcn/ui CLI - 実験的なモノレポサポート](https://ui.shadcn.com/docs/monorepo)
+* 📦 [React Toastify 11.0 - 簡単なカスタマイズ](https://github.com/fkhadra/react-toastify/releases/tag/v11.0.0)
+* 📦 [TanStack Store 0.7 - 派生/エフェクトクラス](https://tanstack.com/store/latest/docs/quick-start#derived)
+* 🎥 [Theo - この魔法のハックがNext.jsを可能にする](https://www.youtube.com/watch?v=VMDydLUCLtE): Next.jsがPPRとDynamic IO機能をJSの機能のみで実装する方法を解説した素晴らしい動画です。
+* 🎥 [Theo - 新しいお気に入りの状態管理ライブラリかもしれない（XState Store）](https://www.youtube.com/watch?v=Pmieyp75SrA)
+* 🎥 [Lee Robinson - React 19とNext.jsでのフォーム](https://www.youtube.com/watch?v=KhO4VjaYSXU)
+* 🎥 [Ankita - やめて！これらのNext.jsのミスがアプリを殺している](https://www.youtube.com/watch?v=6ZR5drEQzp4)
+* 🎙️ [This Month in React - React 19が来た、2024年が終わった](https://creators.spotify.com/pod/show/reactiflux/episodes/TMiR-2024-12-React-19-is-here--2024-is-over-e2sv4o6)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![React-admin: B2Bアプリ向けオープンソースフレームワーク](/emails/issues/187/reactadmin.jpg)](https://marmelab.com/react-admin/)
+
+**[React-admin: B2Bアプリ向けオープンソースフレームワーク](https://marmelab.com/react-admin/)**
+
+👩🏻‍💻 **開発者による、開発者のためのツール**: React-adminは、内部ツールや管理画面、B2Bアプリの開発を加速する無料のローコードライブラリです。ノーコードツールとは異なり、コードを使用するため、フレームワークの制限に縛られることはありません。
+
+🔌 **柔軟な統合**: React-adminはあらゆるAPI形式（RESTやGraphQL）と、Auth0、Cognito、Google Auth、Active Directory、Keycloakなどのさまざまな認証バックエンドをサポートしています。サーバーを制御できるため、シングルサインオン（SSO）機能に追加コストはかかりません。完全にテーマ可能で、会社のカラーに合わせてカスタマイズできます。
+
+🚀 **実績のある成功**: 25,000社以上の企業がReact-adminを使用してシングルページアプリケーションを構築しています。次のプロジェクトでは、React-adminを使用して数週間の開発時間を節約しましょう。[今すぐReact-adminを試す](https://marmelab.com/react-admin/)。
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![Expo - 2024年の振り返り](/emails/issues/215/expo.jpg)](https://expo.dev/blog/2024-year-in-review)
+
+**[Expo - 2024年の振り返り](https://expo.dev/blog/2024-year-in-review)**
+
+2025年を良いスタートにするために、昨年Expoが提供してくれた素晴らしい機能を振り返りましょう:
+
+* Expo SDK v50、v51、v52
+* デフォルトでのNew Archサポート
+* Expo Router v3、v4
+* DOMコンポーネント
+* フィンガープリンティング
+* Atlas & DevTools
+* expo.new
+* ワークフロー
+* 環境変数、セキュリティアクティビティ、監査ログ
+
+***
+
+* 💸 [デモ - Reanimated、Gesture Handler、Skiaを使用してReactiiveが作成した90以上のReact Nativeアニメーション](https://reactiive.io/demos?utm_source=thisweekinreact)
+* 👀 [RN Skia PR - macOSサポート](https://github.com/Shopify/react-native-skia/pull/2836)
+* 📊 [State of React Native](https://stateofreactnative.com/): 年間コミュニティ調査に回答する最後の週です！
+* 📜 [Static Hermesアップデート、2024年12月](https://x.com/tmikov/status/1869945330638442651): Static Hermesは2025年にロールアウト予定で、最初はオプトイン、その後デフォルトで有効化されます。型付きと型なしの両方のコードをコンパイル・実行可能です。ベンチマークでは、型なしコードで既に大幅に高速化されており、特にJITモードでHermesが型を推論できる場合に顕著です。型付きコードのベンチマークは提供されていませんが、さらに高速化が期待されます！ES準拠の向上により、重いBabelプラグインの削除も可能になります。要約: 2025年にはビルド時と実行時の両方で大幅な速度向上が期待できます。
+* 📜 [React Native 0.76+で美しいグロー効果コンポーネントを作成する方法](https://www.devas.life/how-to-create-beautiful-glowing-components-on-react-native-0-76/): box-shadowのサポートとNew Architectureが新たな創造的可能性を開きます。
+* 📜 [ネイティブからマルチプラットフォーム開発へ: KotlinとComposeを解説](https://www.callstack.com/blog/from-native-to-multiplatform-development-unpacking-kotlin-and-compose): React Native開発者の視点からAndroid Kotlinエコシステムを説明します。
+* 📜 [React Nativeの時は今](https://galaxies.dev/article/time-for-react-native)
+* 📜 [新規および既存のReact NativeアプリにExpoが最適な理由](https://expo.dev/blog/why-expo-is-a-great-fit-for-new-and-existing-react-native-apps)
+* 📜 [Motiを使用したReact Nativeでのスケルトンアニメーション](https://reactiive.io/articles/skeleton-loader)
+* 📦 [RN ExecuTorch 0.2 - コンピュータビジョンモデルのサポート](https://github.com/software-mansion/react-native-executorch/releases/tag/v0.2.0)
+* 📦 [RN Volume Manager 2.0 - New Architectureサポート](https://github.com/hirbod/react-native-volume-manager/releases/tag/v2.0.1)
+* 📦 [RN Skia 1.8 - React Native Web向け新リコンサイラ](https://github.com/Shopify/react-native-skia/releases/tag/v1.8.0)
+* 📦 [RN 0.77 RC.5](https://github.com/facebook/react-native/releases/tag/v0.77.0-rc.5)
+* 📦 [RN Windows 0.77 preview.1](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.77.0-preview.1)
+* 📦 [RN Screens 4.4 - 重要な修正](https://github.com/software-mansion/react-native-screens/releases/tag/4.4.0)
+* 🎥 [Dan's Lab - 三角関数とReact-Native Skia - 私の見解](https://www.youtube.com/watch?v=r5P7Z3O8Jog)
+* 🎙️ [React Universe On Air - Evan Baconが語るユニバーサルReact Nativeアプリ、DOM & React Server Component](https://www.youtube.com/watch?v=rA7E3rGKSZw)
+* 🎙️ [RNR - React Native Rewind 2024](https://www.reactnativeradio.com/episodes/rnr-317-react-native-rewind-2024)
+
+***
+
+## 🔀 Other {#other}
+
+* 📜 [Node.jsがデフォルトでTypeScriptをサポート](https://www.totaltypescript.com/typescript-is-coming-to-node-23): 今後のNode.jsリリースv23.6（およびv22.x以降）では、デフォルトで`.ts`ファイルを実行可能に！ 🔥
+* 📜 [長いタスクとの決別](https://calendar.perfplanet.com/2024/breaking-up-with-long-tasks-or-how-i-learned-to-group-loops-and-wield-the-yield/)
+* 📦 [Shortest - AI駆動の自然言語エンドツーエンドテストフレームワーク](https://github.com/anti-work/shortest)
+* 📦 [Rolldown 1.0ベータ](https://github.com/rolldown/rolldown/releases/tag/v1.0.0-beta.1): 2025年初頭にRolldown上で動作するViteの正式リリースが予定されています。
+* 📦 [Skip - リアクティブフレームワーク](https://skiplabs.io/): Christopher Chedeauによると「バックエンド向けのReact」のようなもの。👀
+* 📦 [Rspack 1.2アルファ - 実験的な永続キャッシュ、パフォーマンス改善](https://github.com/web-infra-dev/rspack/releases/tag/v1.2.0-alpha.0)
+* 📦 [pnpm 10.0 RC - セキュリティ強化、インストールスクリプト実行許可パッケージのホワイトリスト化](https://github.com/pnpm/pnpm/releases/tag/v10.0.0-rc.2)
+* 📦 [Languine - AI搭載CLIでアプリケーションを翻訳](https://languine.ai/)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/215/meme.jpg)](https://bsky.app/profile/brandonroberts.dev/post/3ld74oultjc2g)
+
+[![alt](/emails/issues/215/meme2.jpg)](https://x.com/flydotio/status/1873840238966226548)
+
+それでは！ 👋

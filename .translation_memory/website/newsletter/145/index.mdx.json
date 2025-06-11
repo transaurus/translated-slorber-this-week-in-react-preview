@@ -1,0 +1,592 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/145/index.mdx",
+  "source_file_content_hash": "30a7bef2c0ac60b8d88dd43006359dfd98e8d718c7471161891b5994e330c0df",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /145\ntitle: \"This Week In React #145: Next.js, Server Actions, useFormStatus, useOptimistic, App Router, Canaries, Ink, ReasonML, Redwood, Reanimated, VisionCamera...\"\nauthors: [slorber]\ndate: 05-09-2023\n---",
+      "source_content_hash": "2716a3d789b9dfd2dfc2cf23c9b8d91868994f6ea837bdf5fceba0b354fa07f1",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "皆さん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "As expected a new version of Next.js is out. Some React innovations that are better documented in the Next.js doc than in the React one, like form `action`, or the 2 new hooks `useFormStatus` and `useOptimistic`.",
+      "source_content_hash": "5cc41c8f3f3359f2969b97d645a129a04d4d9e47436411ae87d237b73a58cf4c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "予想通り、Next.jsの新バージョンがリリースされました。フォーム`action`や、2つの新しいフック`useFormStatus`と`useOptimistic`など、Reactの新機能がNext.jsのドキュメントでより詳しく解説されています。"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "There are a lot of conferences at the moment. Remix Conf and App.js starting today: there will surely be some nice announcements.",
+      "source_content_hash": "96b52e840397a6d1dbfc9b18d8c055199d1a8e5a227bc85e0dfc9d3cf6f3008b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "現在、多くのカンファレンスが開催されています。Remix ConfとApp.jsが今日から始まります。素晴らしい発表があるでしょう。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "The [React-Native-Connection](https://reactnativeconnection.io/) (Paris, June 1st) is also a few weeks away, and you can have -20% discount with the code \"REACTHEBDO\"!",
+      "source_content_hash": "3f4889d3c5fa9565ec1df452a6af68b91501c537a9e0f341c91f8740438f43f6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[React-Native-Connection](https://reactnativeconnection.io/)（6月1日、パリ）も数週間後に迫っており、コード「REACTHEBDO」で20%オフの割引が適用されます！"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "I plan to skip next week's edition. Next issue on May 24th 👋",
+      "source_content_hash": "7faff37ac44c0f1dcb692c44269ec09b48e40638baecf5f1101406b4aa36d03e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "来週の号はお休みします。次回は5月24日です 👋"
+      }
+    },
+    {
+      "segment_id": "45c63027",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_45c63027"
+      }
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアル形式 🎨**"
+      }
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "0adfe0aa",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_0adfe0aa"
+      }
+    },
+    {
+      "segment_id": "1941846d",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_1941846d"
+      }
+    },
+    {
+      "segment_id": "a5403c6e",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "d06306f7",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "[![Start UI](/emails/issues/144/start_ui.jpg)](https://web.start-ui.com?utm_source=newsletter\\&utm_term=this-week-in-react)",
+      "source_content_hash": "6fe60a5f13a4035e97944265403f980efc2602f03541510457502722c991f8e3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Start UI](/emails/issues/144/start_ui.jpg)](https://web.start-ui.com?utm_source=newsletter\\&utm_term=this-week-in-react)"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "**[Start UI \\[web\\] - Opinionated web app UI starter](https://web.start-ui.com?utm_source=newsletter\\&utm_term=this-week-in-react)**",
+      "source_content_hash": "e3cf380f8b6cd3e037220e65a6c93a48121c74a35be615cce4775db57e26e2dc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Start UI \\[web\\] - オピニオン付きWebアプリUIスターター](https://web.start-ui.com?utm_source=newsletter\\&utm_term=this-week-in-react)**"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "Our **free and open source UI web app starter** offers a quick and easy way to bootstrap your next project. It includes **best practices & production ready tools** to help you get started right away, saving you time and effort in the initial setup phase.",
+      "source_content_hash": "12475d9e4e0189dc5bafe70e459eaab752e1ffa2795e01082463a64faf1b5a17",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "私たちの**無料でオープンソースのUI Webアプリスターター**は、次のプロジェクトを迅速かつ簡単に開始する方法を提供します。**ベストプラクティスと本番環境対応のツール**が含まれており、初期セットアップ段階で時間と労力を節約できます。"
+      }
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "Comes with built-in **features** like 🔐 Authentication, 📱Responsive Layout, 🧑‍💻 User Management, 🇫🇷 Internationalization & Right-to-Left support, 🌚 Dark Mode, 🎛 Advanced components for easy development. You can try out the [example app](https://demo.start-ui.com).",
+      "source_content_hash": "da59c07b7b4e664504a325bca2f3972011a1a415328023f61ae6fae0191d4251",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🔐 認証、📱 レスポンシブレイアウト、🧑‍💻 ユーザー管理、🇫🇷 国際化と右から左へのサポート、🌚 ダークモード、🎛 開発を容易にする高度なコンポーネントなど、**組み込み機能**を備えています。[デモアプリ](https://demo.start-ui.com)を試すことができます。"
+      }
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "Ready to use with **TypeScript**, **NextJS**, Chakra UI, TanStack Query, Storybook and more.",
+      "source_content_hash": "ff75df91e132769a926c4bffc17cdc4af96ea826855cfcf3b090a32ea26794e0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**TypeScript**、**NextJS**、Chakra UI、TanStack Query、Storybookなどとすぐに使用できます。"
+      }
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "[🚀 Start UI \\[web\\] on GitHub](https://web.start-ui.com)",
+      "source_content_hash": "b6e29969b8136266fd24c1ad6ed815b09424d0da97b74eaaaa19d1e7054930a0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[🚀 Start UI \\[web\\] on GitHub](https://web.start-ui.com)"
+      }
+    },
+    {
+      "segment_id": "d4e0d4e1",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "8bddee80",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "[![Next.js 13.4](/emails/issues/145/nextjs.jpg)](https://nextjs.org/blog/next-13-4)",
+      "source_content_hash": "07e30755601eec9bc4a8faa4ed2676fbcc93b9336154fde75003097b2c1aa56a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Next.js 13.4](/emails/issues/145/nextjs.jpg)](https://nextjs.org/blog/next-13-4)"
+      }
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "**[Next.js 13.4](https://nextjs.org/blog/next-13-4)**",
+      "source_content_hash": "56232d2b05801149b698abb1ec11366c48484a6ae7c01b61922f09c44208068e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Next.js 13.4](https://nextjs.org/blog/next-13-4)**"
+      }
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "A major release for Next.js, with:",
+      "source_content_hash": "acd0780d59fb84aca04c1a07e1a4fbecd7e14f40715625492b97b89b5807dc1d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Next.jsのメジャーリリースで、以下の機能が含まれています："
+      }
+    },
+    {
+      "segment_id": "157c9741",
+      "source_content": "* App Router (stable): the new router based on Suspense and Server Components is ready for production\n* Turbopack (beta): the new bundler is stabilizing in dev, and prod build is coming soon\n* Server Actions (alpha): Next.js integration of the latest React innovations",
+      "source_content_hash": "7c2a709754ff805278892fed2dfb40959bb6eccfb077d3f9640a323ccbea3fd4",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* App Router（安定版）：SuspenseとServer Componentsに基づく新しいルーターが本番環境に対応\n* Turbopack（ベータ版）：新しいバンドラーが開発環境で安定化し、本番ビルドが間もなくリリース予定\n* Server Actions（アルファ版）：最新のReactの革新をNext.jsに統合"
+      }
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "The blog post shows many notable differences with the old router: conventions, nested layouts, selective hydration, server components, code splitting...",
+      "source_content_hash": "81878600241b82d572300406bb0941eb874fb3109d6ea4189457d106b338d5e4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ブログ記事では、旧ルーターとの多くの注目すべき違いが示されています：規約、ネストされたレイアウト、選択的なハイドレーション、サーバーコンポーネント、コード分割など..."
+      }
+    },
+    {
+      "segment_id": "40158b4b",
+      "source_content": "It also unveils the new React innovations to manage mutations and form submissions, whose integration in Next.js gives birth to Server Actions. This greatly simplifies interactions with the server without the need to create an API route and the use of forms supporting [progressive enhancement](https://twitter.com/acdlite/status/1654159613950828546). It is now possible to create and distribute full-stack React components.",
+      "source_content_hash": "76f4d481a4e0bb7e8da76e5f9c7aaaedda97eccfdd033c585b23a1fb39cc07ff",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "また、サーバーとのインタラクションを大幅に簡素化する、Reactの最新の革新であるServer ActionsがNext.jsに統合されました。これにより、APIルートを作成する必要がなく、[プログレッシブエンハンスメント](https://twitter.com/acdlite/status/1654159613950828546)をサポートするフォームを使用せずに、フルスタックのReactコンポーネントを作成および配布できるようになりました。"
+      }
+    },
+    {
+      "segment_id": "6ea4c715",
+      "source_content": "Note that it is a bit early to adopt Server Actions in production. They are in alpha, and you could unexpectedly expose a secret captured in a Server Action closure to the client. Details here:",
+      "source_content_hash": "8e8afec48009693ec4208868d90c51fd52bbcfbee17a8e785e39e7d149b82935",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ただし、Server Actionsを本番環境で採用するにはまだ少し早いです。アルファ版であり、Server Actionのクロージャに含まれる秘密がクライアントに意図せず公開される可能性があります。詳細はこちら："
+      }
+    },
+    {
+      "segment_id": "158e1f5d",
+      "source_content": "* 🧵 [Thread](https://twitter.com/tomus_sherman/status/1654198731313500174): warns of this issue\n* 🐦 Problem recognized by [Sebastian Markbåge](https://twitter.com/sebmarkbage/status/1654212899097960448) and [Andrew Clark](https://twitter.com/acdlite/status/1654317374777032704) who propose to encrypt variables.\n* 🎥 [Next's Server Actions Might Not Be That Safe...](https://www.youtube.com/watch?v=fdKcbyEK66M)",
+      "source_content_hash": "7d6167248b00d453d39ad8bc307224b3e834f028a0c473cbb87183c26fbeba69",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 🧵 [スレッド](https://twitter.com/tomus_sherman/status/1654198731313500174): この問題について警告\n* 🐦 [Sebastian Markbåge](https://twitter.com/sebmarkbage/status/1654212899097960448) と [Andrew Clark](https://twitter.com/acdlite/status/1654317374777032704) によって認識され、変数の暗号化が提案されています。\n* 🎥 [NextのServer Actionsはそれほど安全ではないかもしれない...](https://www.youtube.com/watch?v=fdKcbyEK66M)"
+      }
+    },
+    {
+      "segment_id": "06e24cc0",
+      "source_content": "**Other useful links:**",
+      "source_content_hash": "73853c4508952fcaaf9b9abde7f8ada68b257bf4e078580b1cf0546679300adf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**その他の便利なリンク:**"
+      }
+    },
+    {
+      "segment_id": "af7d8a35",
+      "source_content": "* 📖 [New Next.js documentation](https://twitter.com/leeerob/status/1654181055740497939): the new beta doc is deployed in production. I advise in particular to read [React Essentials](https://nextjs.org/docs/getting-started/react-essentials).\n* 👀 [useOptimistic](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions#experimental-useoptimistic) and [useFormStatus](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions#experimental-useformstatus): new React experimental hooks.\n* 📜 [Next.js 13.4 on Vercel](https://vercel.com/changelog/next-js-13-4)\n* 📜 [Introducing the Vercel Data Cache: Optimized caching for React Server Components](https://vercel.com/changelog/introducing-vercel-data-cache)\n* 🧵 [Guillermo Rauch - \"I re-designed rauchg.com with App Router\"](https://twitter.com/rauchg/status/1652093972117073920): interesting feedback.\n* 🎥 [Introducing Next.js App Router](https://www.youtube.com/watch?v=DrxiNfbr63s)",
+      "source_content_hash": "cfbe9c1da2feb52473f2df8344bb899cb19990f7e8c4bb262175b808f0b3e134",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📖 [新しいNext.jsドキュメント](https://twitter.com/leeerob/status/1654181055740497939): 新しいベータ版ドキュメントが本番環境にデプロイされました。特に [React Essentials](https://nextjs.org/docs/getting-started/react-essentials) を読むことをお勧めします。\n* 👀 [useOptimistic](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions#experimental-useoptimistic) と [useFormStatus](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions#experimental-useformstatus): 新しいReactの実験的フック。\n* 📜 [Vercel上のNext.js 13.4](https://vercel.com/changelog/next-js-13-4)\n* 📜 [Vercel Data Cacheの紹介: React Server Componentsのための最適化されたキャッシュ](https://vercel.com/changelog/introducing-vercel-data-cache)\n* 🧵 [Guillermo Rauch - 「rauchg.comをApp Routerで再設計しました」](https://twitter.com/rauchg/status/1652093972117073920): 興味深いフィードバック。\n* 🎥 [Next.js App Routerの紹介](https://www.youtube.com/watch?v=DrxiNfbr63s)"
+      }
+    },
+    {
+      "segment_id": "63e1d83c",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "1316cb90",
+      "source_content": "* 🧑‍🎓 [TotalTypeScript - React with TypeScript tutorial](https://www.totaltypescript.com/tutorials/react-with-typescript): free tutorial by Matt Pocock, the TypeScript wizard.\n* 🎨 [The Rendering Journey of a React component](https://alexsidorenko.com/react-journey): step-by-step visualization of re-rendering.\n* 📜 [React Canaries: Enabling Incremental Feature Rollout Outside Meta](https://react.dev/blog/2023/05/03/react-canaries): the React team presenting a new canary release channel which allows frameworks to adopt new React features before their official stable release. The canary releases are stable enough to be adopted in production. This is what Next.js App Router uses now, but also what Meta and React-Native always relied on.\n* 📜 [React Server Components, Next.js App Router and examples](https://addyosmani.com/blog/react-server-components-app-router/): Addy Osmani shares his notes and reflections on Server Components. A good overview, as well as many examples of open-source apps. Also lists reasons to stop using Create-React-App.\n* 📜 [5 Lessons Learned From Taking Next.js App Router to Production](https://www.inngest.com/blog/5-lessons-learned-from-taking-next-js-app-router-to-production): feedback from Inngest who successfully migrated a CRA app to Next.js and App Router. There are some interesting details about caching or search parameters.\n* 📜 [Server-side rendering React in OCaml](https://sancho.dev/blog/server-side-rendering-react-in-ocaml): Ahrefs devs use Reason-React. They reimplemented `ReactDOMServer.renderToString` in OCaml to be able to run the SSR natively and solve some of their issues. Their SSR is now 10x faster than Node.js and 6x faster than Bun. The idea of running SSR natively is very interesting, but it will take a lot of work to support the latest innovations like streaming and Server Components.\n* 📜 [HTMX is the Future](https://quii.dev/HTMX_is_the_Future): a critique of SPA frameworks, in particular React. Proposes to use an alternative: HTMX and hypermedia responses. I find it interesting for backend devs who want to add interactivity without doing JavaScript, but not sure that it scales that well.\n* 📜 [Context, Composition, and Flexibility](https://kyleshevlin.com/context-composition-and-flexibility): proposes to use the React context to activate an alternative rendering of a component on a whole subtree.\n* 📜 [My Struggle With Remix](https://redd.one/blog/my-struggle-with-remix): interesting feedback. The author still loves Remix, but presents some challenges encountered while using it.\n* 📜 [Pull to refresh from scratch as a React hook](https://www.strictmode.io/articles/react-pull-to-refresh)\n* 📜 [Creating an interactive spotlight border with CSS and React](https://www.julienthibeaut.xyz/blog/create-spotlight-border-with-react-css)\n* 📦 [Redwood 5.0](https://community.redwoodjs.com/t/redwood-v5-0-0-is-now-available/4830): React 18, TypeScript v5 and observability.\n* 📦 [Ink UI - Themable UI components for your next CLI](https://twitter.com/vadimdemedes/status/1655567427885846534): great example of the React cross-platform abilities. It's possible to render to the terminal, and even create UI libs for that particular ecosystem.\n* 📦 [OpenNext 1.2.0 - geolocation in middleware](https://twitter.com/fanjiewang/status/1654192897678295040)\n* 📦 [Zact - Zod Server ACTions](https://github.com/pingdotgg/zact)\n* 📦 [Astro 2.4](https://astro.build/blog/astro-240/)\n* 📦 [server-only](https://www.npmjs.com/package/server-only): official React package to prevent the import of server code into Client Components (see [Next.js docs](https://nextjs.org/docs/getting-started/react-essentials#keeping-server-only-code-out-of-client-components-poisoning)).\n* 📦 [shadcn UI - Table and Data Table components](https://twitter.com/shadcn/status/1656019263394836480)\n* 📦 [Million.js 2.3.1 - Astro support (beta)](https://twitter.com/aidenybai/status/1655088722222923776)\n* 📊 [State of React 2023 - Preliminary Discussions](https://github.com/Devographics/surveys/issues/85): there might be a survey dedicated to React this year.\n* 👀 [RSCs on Rspack](https://twitter.com/_hyf0/status/1655538017669648385)\n* 👀 [Edit audio with Remotion](https://twitter.com/JNYBGR/status/1655853159623917568)\n* 🎥 [Always Bet On React](https://www.youtube.com/watch?v=TnyslkPfXaM)\n* 🎥 [I'm Done With React](https://www.youtube.com/watch?v=Zt8mO_Aqzw8)\n* 🎥 [Should You Learn React in 2023? - Interview with React Summit Speakers Tru Narla and Jordan Gensler](https://www.youtube.com/watch?v=5xRqP-M8MkM)\n* 👥 [React Summit](https://reactsummit.com/?utm_source=email\\&utm_medium=thisweekinreact) (Amsterdam, June 2-6) is offering us -5% on tickets (code \"ThisWeekInReact5\") and -10% on [workshops](https://reactsummit.com/react-workshops) (code \"THISWEEKINREACT\")",
+      "source_content_hash": "0cd7dc8226341394aecbca8b6908cdab57c1ef937e066ad25d1fc087f5bc392b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 🧑‍🎓 [TotalTypeScript - React with TypeScriptチュートリアル](https://www.totaltypescript.com/tutorials/react-with-typescript): TypeScriptの達人Matt Pocockによる無料チュートリアル。\n* 🎨 [Reactコンポーネントのレンダリングの旅](https://alexsidorenko.com/react-journey): 再レンダリングのステップバイステップ可視化。\n* 📜 [React Canaries: Meta外での段階的な機能ロールアウトを可能に](https://react.dev/blog/2023/05/03/react-canaries): Reactチームが、正式な安定版リリース前にフレームワークが新しいReact機能を採用できる新しいカナリアリリースチャネルを紹介。カナリアリリースは本番環境で採用できるほど安定している。これはNext.js App Routerが現在使用しているものだが、MetaやReact-Nativeも常に依存してきたもの。\n* 📜 [React Server Components、Next.js App Routerと例](https://addyosmani.com/blog/react-server-components-app-router/): Addy OsmaniがServer Componentsに関する考察とメモを共有。良い概要と多くのオープンソースアプリの例。また、Create-React-Appの使用をやめる理由もリストアップ。\n* 📜 [Next.js App Routerを本番環境に導入して学んだ5つの教訓](https://www.inngest.com/blog/5-lessons-learned-from-taking-next-js-app-router-to-production): CRAアプリからNext.jsとApp Routerに移行したInngestからのフィードバック。キャッシュや検索パラメータに関する興味深い詳細がある。\n* 📜 [OCamlでReactをサーバーサイドレンダリング](https://sancho.dev/blog/server-side-rendering-react-in-ocaml): Ahrefsの開発者はReason-Reactを使用。SSRをネイティブに実行し、問題を解決するためにOCamlで`ReactDOMServer.renderToString`を再実装。彼らのSSRはNode.jsより10倍、Bunより6倍高速。SSRをネイティブに実行するアイデアは非常に興味深いが、ストリーミングやServer Componentsのような最新のイノベーションをサポートするには多くの作業が必要。\n* 📜 [HTMXは未来](https://quii.dev/HTMX_is_the_Future): SPAフレームワーク、特にReactに対する批判。代替としてHTMXとハイパーメディアレスポンスの使用を提案。JavaScriptを書かずにインタラクティブ性を追加したいバックエンド開発者にとっては興味深いが、スケールするかどうかは不明。\n* 📜 [コンテキスト、コンポジション、柔軟性](https://kyleshevlin.com/context-composition-and-flexibility): Reactコンテキストを使用して、コンポーネントの代替レンダリングをサブツリー全体でアクティブにすることを提案。\n* 📜 [Remixとの闘い](https://redd.one/blog/my-struggle-with-remix): 興味深いフィードバック。著者はまだRemixを愛しているが、使用中に遭遇した課題を提示。\n* 📜 [Reactフックとしてスクラッチからプルツーリフレッシュを実装](https://www.strictmode.io/articles/react-pull-to-refresh)\n* 📜 [CSSとReactでインタラクティブなスポットライトボーダーを作成](https://www.julienthibeaut.xyz/blog/create-spotlight-border-with-react-css)\n* 📦 [Redwood 5.0](https://community.redwoodjs.com/t/redwood-v5-0-0-is-now-available/4830): React 18、TypeScript v5、および可観測性。\n* 📦 [Ink UI - CLI向けのテーマ可能なUIコンポーネント](https://twitter.com/vadimdemedes/status/1655567427885846534): Reactのクロスプラットフォーム能力の素晴らしい例。ターミナルにレンダリングし、その特定のエコシステム向けのUIライブラリを作成可能。\n* 📦 [OpenNext 1.2.0 - ミドルウェアでのジオロケーション](https://twitter.com/fanjiewang/status/1654192897678295040)\n* 📦 [Zact - Zod Server ACTions](https://github.com/pingdotgg/zact)\n* 📦 [Astro 2.4](https://astro.build/blog/astro-240/)\n* 📦 [server-only](https://www.npmjs.com/package/server-only): サーバーコードをクライアントコンポーネントにインポートするのを防ぐための公式Reactパッケージ（[Next.jsドキュメント](https://nextjs.org/docs/getting-started/react-essentials#keeping-server-only-code-out-of-client-components-poisoning)参照）。\n* 📦 [shadcn UI - テーブルとデータテーブルコンポーネント](https://twitter.com/shadcn/status/1656019263394836480)\n* 📦 [Million.js 2.3.1 - Astroサポート（ベータ）](https://twitter.com/aidenybai/status/1655088722222923776)\n* 📊 [State of React 2023 - 予備議論](https://github.com/Devographics/surveys/issues/85): 今年はReactに特化した調査が行われる可能性あり。\n* 👀 [Rspack上のRSCs](https://twitter.com/_hyf0/status/1655538017669648385)\n* 👀 [Remotionでオーディオを編集](https://twitter.com/JNYBGR/status/1655853159623917568)\n* 🎥 [Always Bet On React](https://www.youtube.com/watch?v=TnyslkPfXaM)\n* 🎥 [I'm Done With React](https://www.youtube.com/watch?v=Zt8mO_Aqzw8)\n* 🎥 [2023年にReactを学ぶべきか？ - React SummitスピーカーTru NarlaとJordan Genslerとのインタビュー](https://www.youtube.com/watch?v=5xRqP-M8MkM)\n* 👥 [React Summit](https://reactsummit.com/?utm_source=email\\&utm_medium=thisweekinreact) (アムステルダム、6月2-6日) はチケットに-5%（コード「ThisWeekInReact5」）、[ワークショップ](https://reactsummit.com/react-workshops)に-10%（コード「THISWEEKINREACT」）を提供。"
+      }
+    },
+    {
+      "segment_id": "a3da9b2d",
+      "source_content": "<SubscribeFormEmbed />",
+      "source_content_hash": "2b5c5e42f4352c90b9647a9da7a0fb7ece8b8dc27440e42cdf85cbb6e1901b85",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_a3da9b2d"
+      }
+    },
+    {
+      "segment_id": "4fc5e34f",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "56bc971f",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "0801d969",
+      "source_content": "[![Nylas](/emails/issues/144/nylas_2.png)](https://www.nylas.com/?utm_source=TWIR\\&utm_medium=sponsoredemail\\&utm_campaign=FY23Q2-TWIR-2P-DSU\\&utm_content\\&utm_term)",
+      "source_content_hash": "917093d52d63ad607085483ca3ad6c670c9168eef1b027d855971e01ef0d2884",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Nylas](/emails/issues/144/nylas_2.png)](https://www.nylas.com/?utm_source=TWIR\\&utm_medium=sponsoredemail\\&utm_campaign=FY23Q2-TWIR-2P-DSU\\&utm_content\\&utm_term)"
+      }
+    },
+    {
+      "segment_id": "3c19e221",
+      "source_content": "**[OpenAI + Nylas Fireside Chat : IA générative](https://www.nylas.com/?utm_source=TWIR\\&utm_medium=sponsoredemail\\&utm_campaign=FY23Q2-TWIR-2P-DSU\\&utm_content\\&utm_term)**",
+      "source_content_hash": "07b2fda6e3b753fe0415fbc8a99285a40c2553c2fc45351ccf788b7b44801aab",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[OpenAI + Nylas ファイアサイドチャット: 生成AI](https://www.nylas.com/?utm_source=TWIR\\&utm_medium=sponsoredemail\\&utm_campaign=FY23Q2-TWIR-2P-DSU\\&utm_content\\&utm_term)**"
+      }
+    },
+    {
+      "segment_id": "d21af28f",
+      "source_content": "Want to get an inside look at the future of generative AI? On May 17th, [OpenAI and Nylas will be hosting an open-to-all fireside chat](https://info.nylas.com/firesidechat-openai-registrationpage.html?utm_source=TWIR\\&utm_medium=sponsoredemail\\&utm_campaign=FY23Q2-TWIR-2P-Webinar\\&utm_content=march-9-issue\\&utm_term=) with Evan Morikawa, Applied Engineering Manager at OpenAI, and Christine Spang, CTO and Co-Founder at Nylas. They’ll discuss what it takes to deliver and maintain AI solutions at scale, what AI's next stage of maturity looks like, and much more. [Don’t miss it](https://info.nylas.com/firesidechat-openai-registrationpage.html?utm_source=TWIR\\&utm_medium=sponsoredemail\\&utm_campaign=FY23Q2-TWIR-2P-Webinar\\&utm_content=march-9-issue\\&utm_term=).",
+      "source_content_hash": "84a8c15b7ea01abdf76f63db09c71ae510e4771bd34631cabdbf0db507f559f8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "生成AIの未来を内側から覗いてみませんか？5月17日、[OpenAIとNylasが誰でも参加可能なファイアサイドチャットを開催](https://info.nylas.com/firesidechat-openai-registrationpage.html?utm_source=TWIR\\&utm_medium=sponsoredemail\\&utm_campaign=FY23Q2-TWIR-2P-Webinar\\&utm_content=march-9-issue\\&utm_term=)します。OpenAIのApplied Engineering ManagerであるEvan Morikawaと、NylasのCTO兼共同創業者Christine Spangが登壇し、大規模なAIソリューションの提供と維持に必要なこと、AIの次の成熟段階の姿などについて議論します。[お見逃しなく](https://info.nylas.com/firesidechat-openai-registrationpage.html?utm_source=TWIR\\&utm_medium=sponsoredemail\\&utm_campaign=FY23Q2-TWIR-2P-Webinar\\&utm_content=march-9-issue\\&utm_term=)。"
+      }
+    },
+    {
+      "segment_id": "55ba2007",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "638efb88",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "10e4f9ca",
+      "source_content": "* 📖 [New Reanimated Beta docs](https://twitter.com/swmansion/status/1655930596093472774): new interactive Docusaurus doc with many examples implemented in React-Native-Web.\n* 🎨 [VisionCamera + Skia + TensorFlow demo](https://twitter.com/mrousavy/status/1654143459849121792): it's impressive what can be done in React-Native today. Skia rendering and TensorFlow models can be updated with an Over-The-Air update.\n* 🎨 [Reanimated 3 + Expo Router + Shared Element Transitions demo](https://twitter.com/kacperkapusciak/status/1654434612825792513)\n* 📜 [Best tips & tricks for E2E Maestro with React Native](https://dev.to/retyui/best-tips-tricks-for-e2e-maestro-with-react-native-2kaa)\n* 📜 [React Native run-android: How to Test Various Device Types](https://www.testim.io/blog/react-native-run-android/)\n* 👥 [App.js](https://appjs.co/) (Krakow, May 10-12) is offering us [-20% on workshops](https://ti.to/appjs/2023/discount/ThisWeekinReact20) (code \"ThisWeekinReact20\").\n* 👥 [Chain React](https://chainreactconf.com/) (Portland, May 18-19) is offering us -10% on entries (code \"thisweekinreact\").\n* 👥 [React-Native-Connection](https://reactnativeconnection.io/) (Paris, 1er June) is offering us -10% on entries (code \"REACTHEBDO\").",
+      "source_content_hash": "993eadab150e99c133fc40d490aa5eb4502860a65b91738d97c896852a7aa7e3",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📖 [新Reanimatedベータ版ドキュメント](https://twitter.com/swmansion/status/1655930596093472774): React-Native-Webで実装された多くの例を含む、インタラクティブなDocusaurusドキュメント。\n* 🎨 [VisionCamera + Skia + TensorFlowデモ](https://twitter.com/mrousavy/status/1654143459849121792): 現在のReact-Nativeで可能なことの素晴らしさ。SkiaレンダリングとTensorFlowモデルはOTA更新で更新可能。\n* 🎨 [Reanimated 3 + Expo Router + 共有要素トランジションデモ](https://twitter.com/kacperkapusciak/status/1654434612825792513)\n* 📜 [React Native向けE2E Maestroのベストティップス＆トリック](https://dev.to/retyui/best-tips-tricks-for-e2e-maestro-with-react-native-2kaa)\n* 📜 [React Native run-android: 様々なデバイスタイプのテスト方法](https://www.testim.io/blog/react-native-run-android/)\n* 👥 [App.js](https://appjs.co/) (クラクフ、5月10-12日) はワークショップに[-20%割引](https://ti.to/appjs/2023/discount/ThisWeekinReact20)を提供しています（コード「ThisWeekinReact20」）。\n* 👥 [Chain React](https://chainreactconf.com/) (ポートランド、5月18-19日) は参加費に-10%割引を提供しています（コード「thisweekinreact」）。\n* 👥 [React-Native-Connection](https://reactnativeconnection.io/) (パリ、6月1日) は参加費に-10%割引を提供しています（コード「REACTHEBDO」）。"
+      }
+    },
+    {
+      "segment_id": "75603060",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c766290e",
+      "source_content": "## 🧑‍💻 Jobs {#jobs}",
+      "source_content_hash": "64cde6166f05bd39337c21ca10f52b6613641f23e0c97e204de33d6857fa16ed",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🧑‍💻 Jobs {#jobs}"
+      }
+    },
+    {
+      "segment_id": "5c7d994c",
+      "source_content": "🧑‍💼 [**Passionfroot - Senior Full-stack Engineer (Remix) - €160k+, Berlin/remote**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)",
+      "source_content_hash": "3532cb42fea164e6dcc868f5fea6ecb0e7fcb06975740df1803d78565f5e643e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🧑‍💼 [**Passionfroot - シニアフルスタックエンジニア（Remix） - €160k+、ベルリン/リモート**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)"
+      }
+    },
+    {
+      "segment_id": "1ecf0882",
+      "source_content": "Passionfroot's mission is to empower the independent businesses of tomorrow via YouTube, Podcasts, Social Media, and Newsletters. Join us in building a tool that will empower creators globally to build scalable, sustainable businesses.",
+      "source_content_hash": "071531677ae3763a43d70c7461fb6bad05d66e66663737b2158931a241a2c33c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Passionfrootのミッションは、YouTube、ポッドキャスト、ソーシャルメディア、ニュースレターを通じて、明日の独立ビジネスを支援することです。クリエイターが世界的にスケーラブルで持続可能なビジネスを構築するためのツールを共に作りましょう。"
+      }
+    },
+    {
+      "segment_id": "e77cf7c6",
+      "source_content": "🧑‍💼 [**Callstack - Senior React Native Developer - Fully Remote, PLN 21-32k net on B2B, monthly**](https://www.callstack.com/senior-react-native-developer)",
+      "source_content_hash": "6a76e4cede7e5d7fef90376d244177e3a889ea3b88ed1a9d60d116bb33a52f5b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🧑‍💼 [**Callstack - シニアReact Native開発者 - 完全リモート、B2B月額21-32k PLN（税抜）**](https://www.callstack.com/senior-react-native-developer)"
+      }
+    },
+    {
+      "segment_id": "bb1346b6",
+      "source_content": "Do you want to work on the world's most used apps? Would you like to co-create the React Native technology? Join the Callstack team of React & React Native leaders. Check our website for more details. We are looking forward to seeing your application - show us what you've got!",
+      "source_content_hash": "d26d300a25c86c54931180669d1a8cce73f71a546a8457896fc0c835fb78d2d0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "世界で最も利用されているアプリの開発に携わりたいですか？React Nativeテクノロジーの共創に興味はありませんか？React & React Nativeのリーダー集団であるCallstackチームに参加しましょう。詳細は当社ウェブサイトをご覧ください。あなたの応募をお待ちしています - あなたの実力を見せてください！"
+      }
+    },
+    {
+      "segment_id": "8664ed0b",
+      "source_content": "🧑‍💼 [**G2i - 100% Remote React Native Jobs**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\\&t=ArRLC77BpRwXXCdx8fnUqw)",
+      "source_content_hash": "5d3c54581f6c180e021405df5da2dff285c443814d1d5e6c5c09516b6002a38b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\\&t=ArRLC77BpRwXXCdx8fnUqw)"
+      }
+    },
+    {
+      "segment_id": "9e90a9b3",
+      "source_content": "We have several roles open for developers focused on React Native! Pay is \\~160k plus 10% bonus. You must have production experience with RN and be based in the US. DM [@gabe\\_g2i](https://twitter.com/gabe_g2i) to learn more and don't forget to mention This Week in React.",
+      "source_content_hash": "03109db05ba0c8c528483a4218dc3b2b0314cf5c6032f5eb3c7be604094658fd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React Nativeに特化した開発者向けに複数のポジションを募集しています！報酬は約160kドル＋10％のボーナスです。RNの実務経験があり、米国在住であることが条件です。詳細は[@gabe\\_g2i](https://twitter.com/gabe_g2i)までDMでお問い合わせください。その際、「This Week in React」を見たとお伝えください。"
+      }
+    },
+    {
+      "segment_id": "681ef526",
+      "source_content": "💡 [How to publish an offer?](https://thisweekinreact.com/sponsor)",
+      "source_content_hash": "d58176524c2d7675bf008e7b635d056628a0d092fb0152d6bbdfb97f4239d273",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "💡 [求人を掲載する方法は？](https://thisweekinreact.com/sponsor)"
+      }
+    },
+    {
+      "segment_id": "f97c407b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "3cd8185f",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "a627a446",
+      "source_content": "* [Client-side rendering of HTML and interactivity](https://web.dev/client-side-rendering-of-html-and-interactivity/)\n* [Diagnose slow interactions in the lab](https://web.dev/diagnose-slow-interactions-in-the-lab/)\n* [I want to talk about WebGPU](https://cohost.org/mcc/post/1406157-i-want-to-talk-about)\n* [Animate elements on scroll with Scroll-driven animations](https://developer.chrome.com/articles/scroll-driven-animations/)\n* [Cumulative Layout Shift Differences In Lab And Field Data](https://www.debugbear.com/blog/cls-lab-field-differences)\n* [Angular v16](https://blog.angular.io/angular-v16-is-here-4d7a28ec680d)\n* [Nx v16](https://blog.nrwl.io/nx-16-is-here-69584ec87053#68c6)\n* [Vitest 0.31](https://twitter.com/sheremet_va/status/1653827712576880645)",
+      "source_content_hash": "0f517b0e969fa26ea24958bb6b482d67b78667d9080234d0879f55eca6ef2477",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* [HTMLのクライアントサイドレンダリングとインタラクティビティ](https://web.dev/client-side-rendering-of-html-and-interactivity/)\n* [ラボ環境での遅いインタラクションの診断](https://web.dev/diagnose-slow-interactions-in-the-lab/)\n* [WebGPUについて話したい](https://cohost.org/mcc/post/1406157-i-want-to-talk-about)\n* [スクロール駆動アニメーションで要素をアニメート](https://developer.chrome.com/articles/scroll-driven-animations/)\n* [ラボと実環境データにおけるCLS（Cumulative Layout Shift）の差異](https://www.debugbear.com/blog/cls-lab-field-differences)\n* [Angular v16](https://blog.angular.io/angular-v16-is-here-4d7a28ec680d)\n* [Nx v16](https://blog.nrwl.io/nx-16-is-here-69584ec87053#68c6)\n* [Vitest 0.31](https://twitter.com/sheremet_va/status/1653827712576880645)"
+      }
+    },
+    {
+      "segment_id": "c7daeccd",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "d4eab4a6",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "0ddaa835",
+      "source_content": "[![alt](/emails/issues/145/meme.jpg)](https://twitter.com/markdalgleish/status/1654259858668163072)",
+      "source_content_hash": "062984a09037b3cfb6a15aa4c465b7ebeae38912fd25065bf9d01723e59c5c09",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/145/meme.jpg)](https://twitter.com/markdalgleish/status/1654259858668163072)"
+      }
+    },
+    {
+      "segment_id": "fd7ed056",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "それではまた！👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/145/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:39.353469+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "30a7bef2c0ac60b8d88dd43006359dfd98e8d718c7471161891b5994e330c0df"
+  }
+}

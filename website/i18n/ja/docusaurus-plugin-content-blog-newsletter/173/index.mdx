@@ -1,0 +1,174 @@
+---
+slug: /173
+title: "This Week In React #173: Million, Storybook, visionOS, Expo, Conform, Next.js, Remix, Astro, Apollo, useFormStatus, Framer Motion, Ariakit, Reanimated, TypeScript, JQuery, Express, Interop..."
+authors: [slorber, bndkt]
+date: 02-07-2024
+---
+
+みなさん、こんにちは！
+
+今週も素晴らしいReact関連の記事や興味深いリリースが多数あります。Reactは常に批判されていますが、全体的に見ると議論はいつも同じで、多くの主張はやや時代遅れに感じられ、Reactが他のソリューションよりも優れている点が認識されていないようです。
+
+React Nativeの世界は、Vision Proの正式リリースで盛り上がっています！
+
+今週は新しい試みとして、初めての[React Native専用Twitterスレッド](https://twitter.com/bndkt/status/1755203992039424377)を公開しました。ぜひご意見をお聞かせください。
+
+ニュースレターは来週お休みです。2月21日に再開します👋。
+
+また、小さなお願いがあります：このメールに「こんにちは」やコメントを返信していただけませんか？これによりメールの配信率が向上します。よろしくお願いします！
+
+<!-- truncate -->
+
+**💡 [Twitterでこのニュースレターをチェック](https://slo.im/thread) - ビジュアル形式🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![App Router対応Next.js用インライン視覚編集CMS](/emails/issues/173/reactbricks.jpg)](https://reactbricks.com?utm_source=twir\&utm_campaign=twir_2024\&utm_medium=email)
+
+**[App Router対応Next.js用インライン視覚編集CMS](https://reactbricks.com?utm_source=twir\&utm_campaign=twir_2024\&utm_medium=email)**
+
+[**1分でプロジェクトをセットアップ**](https://reactbricks.com/sign-up?utm_source=twir\&utm_campaign=twir_2024\&utm_medium=email) CLIを使用し、任意のCSSフレームワークでピクセルパーフェクトな企業ブランドを表現するための独自のビジュアルブロックをReactコンポーネントとして定義できます。新しいNext.jsスターター（Server Components対応）をお試しください！
+
+コンテンツ編集者は、デザインを損なうことなく、ワードプロセッサのように視覚的にページを構成するコンテンツブロックを簡単に使用できます。
+
+React Bricksは、デジタルアセット管理、高度なSEO、リアルタイムコラボレーション、スケジュール公開、多言語対応、外部API連携、承認ワークフロー、複数環境、変更履歴など、エンタープライズ向けの機能を備えています。
+
+The Weather Channel、Deel.com、La Banque Postaleなどの企業クライアントや、主要なeCommerceサイト、全世界9,000人以上のユーザーに信頼されています。\
+[**今すぐ始めましょう！**](https://reactbricks.com/sign-up?utm_source=twir\&utm_campaign=twir_2024\&utm_medium=email)
+
+***
+
+## ⚛️ React {#react}
+
+[![Million 3.0](/emails/issues/173/million.jpg)](https://million.dev/blog/million-3)
+
+**[Million 3.0](https://million.dev/blog/million-3)**
+
+MillionはReact用の最適化コンパイラです。この新しいメジャーバージョンは完全な書き直しで、以前のバージョンの欠点を修正し、より多くのエッジケースに対応し、新しい最適化されたハイドレーションシステムを導入し、安定性を向上させています。
+
+Millionは、デバッグを支援し、長期的に優れたWebパフォーマンスを維持する計画のようです。彼らの🐦[ローンチトレーラー](https://twitter.com/aidenybai/status/1753456530652107072)によると、Million Linterがロードマップに含まれています。
+
+***
+
+* 💸 [Product for Engineers - PostHog's newsletter helping engineers build their product skills.](https://newsletter.posthog.com/?utm_source=twir\&utm_campaign=twir)
+* 👀 [React Types PR - JSDoc comments](https://github.com/DefinitelyTyped/DefinitelyTyped/pull/68409): Matt Pocock is working on increasing our DX when using React with TypeScript.
+* 📜 [Avoid using React’s `useFormStatus`](https://allanlasser.com/posts/2024-01-26-avoid-using-reacts-useformstatus): An interesting article presenting shortcomings of this new React hook. It requires to be used under a `<form>` element, yet placing a submit `<button>` outside a form is perfectly valid HTML. Suggests using an async transition as an alternative.
+* 📜 [Direction-aware animations in Framer Motion](https://sinja.io/blog/direction-aware-animations-in-framer-motion): A pleasant interactive article showing how to animate list/details views and carousel slides in the correct direction for enter/exist animations.
+* 📜 [Open Sourcing the Remix Website](https://remix.run/blog/oss-remix-dot-run): The Remix team think there are more benefits than drawbacks to open-source their website. You can now study how their homepage scroll experience is implemented, or how they SSR their docs pages.
+* 📜 [Dockerizing a Next.js Application with GitHub Actions](https://mxd.codes/articles/ci-cd-for-nextjs-with-github-actions): Builds the default Dockerfile provided by Vercel with appropriate env variables, and publishes it to your container registry.
+* 📜 [Removing React is just weakness leaving your codebase](https://begin.com/blog/posts/2024-01-26-removing-react-is-just-weakness-leaving-your-codebase): Interesting criticism I can’t really agree with 😅 to me React doesn’t change that often, existing code doesn’t need to be rewritten and CSS-in-JS, well we know runtime-based libs are a problem for a while… And even React devs today rely more and more on web fundamentals than ever.
+* 📜 [It feels like React is getting a bit of a kicking recently](https://piccalil.li/blog/react-is-getting-a-bit-of-a-kicking-recently/): A more nuanced reply to the criticism above. React isn’t perfect, but isn’t going anywhere, and the web platform doesn’t currently give us all the tools we need.
+* 📜 [How to stream files from Next.js Route Handlers](https://www.ericburel.tech/blog/nextjs-stream-files): Shows how to serve dynamic/generated files without loading them in memory. You might need to convert Node.js streams to web streams.
+* 📜 [How to Detect Clicks Anywhere on a Page in React](https://spacejelly.dev/posts/how-to-detect-clicks-anywhere-on-a-page-in-react): TIL about the event.composedPath() API.
+* 📜 [How streaming helps build faster web applications](https://vercel.com/blog/how-streaming-helps-build-faster-web-applications)
+* 📜 [Lessons Learned from Developing DevCycle's Next.js SDK](https://blog.devcycle.com/feature-flagging-with-next-js-lessons-learned-from-developing-devcycles-sdk/): Their feature-flag SDK had to support Server/Client Components, streaming and Suspense.
+* 📜 [How to generate responsive images on Remix with Unpic](https://unpic.pics/blog/responsive-images-on-remix/)
+* 📜 [Enhance Your React App's Scalability using Storybook and Chromatic](https://dainemawer.com/articles/enhance-your-react-apps-scalability-using-storybook-and-chromatic)
+* 📜 [Tale of a Refactor - Payment system](https://commerce.nearform.com/blog/2024/tale-of-a-refactor/)
+* 📜 [How we Increased Search Traffic by 20x in 4 Months with the Next.js App Router](https://hardcover.app/blog/next-js-app-router-seo)
+* 📜 [How I generate Open Graph images for my Astro-based blog](https://techsquidtv.com/blog/generating-open-graph-images-for-astro/)
+* 📜 [Building a blog with Next.js App Router and MDX](https://www.alexchantastic.com/building-a-blog-with-next-and-mdx)
+* 📜 [React Intersection Observer - A Practical Guide](https://www.builder.io/blog/react-intersection-observer)
+* 📦 [Storybook 8 Beta - RSC support, SWC compiler, Vitest, major performance and compatibility improvements, on-the-fly visual tests…](https://storybook.js.org/blog/storybook-8-beta/)
+* 📦 [Conform 1.0 - Type-safe progressive enhancement form validation library for Remix and Next.js](https://github.com/edmundhung/conform/releases/tag/v1.0.0)
+* 📦 [Safe NextJS Navigation - Typesafe navigation for NextJS App Router](https://github.com/lukemorales/next-safe-navigation)
+* 📦 [Astro 4.3 - i18n domains, html output control, ComponentProps utility type…](https://astro.build/blog/astro-430/)
+* 📦 [Apollo Client 3.9 - Suspense data-fetching, query preloading, memory optimizations, useQueryRefHandlers hook…](https://www.apollographql.com/blog/whats-new-in-apollo-client-3-9)
+* 📦 [Remix 2.6.0 - Cloudflare support for Vite plugin (unstable)](https://github.com/remix-run/remix/blob/main/CHANGELOG.md)
+* 📦 [Sonner 1.4 - Toast component](https://github.com/emilkowalski/sonner/releases/tag/v1.4.0)
+* 📦 [Ariakit 0.4 - better support for CSS animations and transitions](https://ariakit.org/changelog#040)
+* 📦 [React-resizable-panels 2.0 - Support for multi-panel resize](https://github.com/bvaughn/react-resizable-panels/releases/tag/2.0.0)
+* 🎥 [Lee Robinson - Next.js App Router Authentication (Sessions, Cookies, JWTs)](https://www.youtube.com/watch?v=DJvM2lSPn6w)
+* 🎥 [Jack Herrington - Five Application Killing React Anti-Patterns](https://www.youtube.com/watch?v=ZkQPxP4wlE8)
+* 🎙️ [Dan Abramov on React, RSCs, and the future](https://podrocket.logrocket.com/dan-abramov-react-rscs-future)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![最も包括的なユーザー管理プラットフォーム](/emails/issues/172/clerk.jpg)](https://clerk.com/?utm_source=sponsorship\&utm_medium=newsletter\&utm_campaign=thisweekinreact\&utm_term=02-7-24)
+
+**[最も包括的なユーザー管理プラットフォーム](https://clerk.com/?utm_source=sponsorship\&utm_medium=newsletter\&utm_campaign=thisweekinreact\&utm_term=02-7-24)**
+
+ClerkはReactアプリの認証とユーザー管理を合理化し、モダンなWebアプリの迅速なセットアップを実現します。
+
+Clerkの利点を体験してください:
+
+* 💅 サインイン、サインアップ、ユーザープロフィール、組織向けのプリビルドUIコンポーネント。任意のCSSライブラリでカスタマイズ可能で、独自ドメインにデプロイ可能
+* 📦 React、React Native、Next.js、Redwood、Remixなどのフレームワーク向けSDK
+* ⚡ Firebase、Supabase、ConvexなどのBaaSプロバイダーとの統合
+* 🎁 ユーザー管理、ソーシャルログイン、マジックリンク、多要素認証などがすぐに利用可能
+
+Clerkの[クイックスタートとチュートリアル](https://clerk.com/docs/quickstarts/overview?utm_source=sponsorship\&utm_medium=newsletter\&utm_campaign=thisweekinreact\&utm_term=02-07-24)でプロジェクトを始めましょう🚀
+
+***
+
+## 📱 React-Native {#react-native}
+
+このセクションは現在[Benedikt](https://twitter.com/bndkt)と共同執筆しており、新しい[TwitterのReact Nativeスレッド](https://twitter.com/bndkt/status/1755203992039424377)も開設しました！気に入っていただけたら、いいねやリツイートでサポートしてください😍。
+
+[![Apple Vision Pro向けReact Nativeの発表](/emails/issues/173/visionos.jpg)](https://www.callstack.com/blog/announcing-react-native-for-apple-vision-pro)
+
+**[Apple Vision Pro向けReact Nativeの発表](https://www.callstack.com/blog/announcing-react-native-for-apple-vision-pro)**
+
+先週、AppleはApple Vision Proをリリースしました。React Nativeコミュニティの少なくとも一部は、お気に入りのフレームワークで新しいプラットフォーム向けの体験を構築できることに興奮しています。visionProでReact Nativeを動作させるには2つの異なるアプローチがあります（🐦 [並列比較](https://twitter.com/o_kwasniewski/status/1754520654219493408)）:
+
+* macOSでiOSアプリを実行できるのと同様に、App Store Connectでチェックボックスをオンにすると、互換モードでvisionOS上でアプリを「そのまま」実行できます。🐦 [Evan Baconが10分未満でExpoアプリをvisionProにプロビジョニング、ビルド、インストールする方法](https://twitter.com/Baconbrix/status/1753927218697208102)をご覧ください。ただし、互換モードのアプリはvisionOSの「空間コンピューティング」機能を活用せず、単に部屋に表示されるiPad画面です。
+
+* この新しい世界に最適化されたアプリを構築するには、追加のネイティブ機能を適応させる必要があります。まさにこの新しいvisionOSプラットフォームがそれを実現しており、Oskar Kwaśniewskiが主導し、Callstackによって提供されています。
+
+まだ初期段階ですが、RNが新しいプラットフォームをこれほど迅速に受け入れているのは非常にエキサイティングです！最初のReact Native visionOSアプリ[Spacial Noise](https://apps.apple.com/us/app/spatial-noise/id6477335349)はすでにApp Storeで利用可能です。
+
+***
+
+* 💸 [Moropo - Expo EASとシームレスに統合するモバイルテストインフラ](https://www.moropo.com?utm_source=newsletter\&utm_medium=emails\&utm_campaign=twir-20240207)
+* 👀 [RFC - React Nativeフレームワーク](https://github.com/react-native-community/discussions-and-proposals/pull/759): React Native、Expo、その他のコミュニティツール間の境界線がどこにあるか疑問に思ったことはありませんか？境界は曖昧ですが、このRFCでは「React Nativeフレームワーク」という概念を導入することで明確化を図っています。
+* 👀 [CSS4カラー関数](https://github.com/facebook/react-native/pull/42831)と[DisplayP3カラー](https://github.com/facebook/react-native/pull/42830): React Nativeにさらに多くのカラーオプション（例: ワイドガマット）が追加されます。
+* 🐦 [Expoが新しいブログでExpo WebとExpo Routerを実際に使用中](https://twitter.com/Baconbrix/status/1755026874047123843)
+* 🐦 [ShopifyがReact Nativeへの投資を継続](https://x.com/mustafa01ali/status/1753477532668600653?s=20)
+* 📖 [Expoドキュメント - TV向けExpoアプリの構築](https://x.com/expo/status/1754208200935518292?s=20): 「React Native everywhere」が日々現実に近づいています。Expoの設定プラグインにより、Apple TVとAndroid TV向けの実験的サポートが直接利用可能になりました。これは非常にエキサイティングな進展で、macOSやvisionOSなどにも拡張されていくでしょう。
+* 📖 [ExpoによるMetroバンドラードキュメントの改善](https://docs.expo.dev/guides/customizing-metro/): バンドル分割、ツリーシェイキング、ミニフィケーションの仕組みと、MetroがWeb向けにも使用されるようになった経緯を説明。
+* 📜 [開発者が知っておくべき環境変数の扱い方](https://expo.dev/blog/what-are-environment-variables): RNで環境変数を正しく扱わないと、クライアント側にシークレットが公開されるリスクがあります。
+* 📜 [@expo/fingerprintでネイティブランタイムをフィンガープリント](https://expo.dev/blog/fingerprint-your-native-runtime): RNアプリのJSバンドルの更新が新しいネイティブビルドを必要とするかどうかを判断するのは難しい問題です。SDK 50でリリースされたFingerprintは、RNアプリの「ネイティブ表面積」を表す単一のハッシュ値を生成し、新しいネイティブビルドのトリガーとして使用できます。
+* 📜 [EAS Updateを使用する6つの理由](https://expo.dev/blog/6-reasons-to-use-eas-update): リパブリッシュ機能をご存知でしたか？この記事を読むまで私は知りませんでした。アップグレードに失敗した場合、以前の（動作する）アップデートを素早く再公開できます！
+* 📜 [Expo設定プラグインでファイルに新しいターゲットを追加する方法](https://www.reactnativecrossroads.com/posts/config-plugin-expo-add-target)
+* 📦 [React Native Storybook 7 - CSF 3、TypeScript、Markdown、自動ストーリー読み込み、コントロールの自動生成](https://storybook.js.org/blog/react-native-storybook-7/)
+* 📦 [React Native Test App 3.1 - ブリッジレスモードのサポート](https://github.com/microsoft/react-native-test-app/releases/tag/3.1.0)
+* 🎥 [William Candillon - 2024年のJavaScriptアニメーション](https://www.youtube.com/watch?v=AHh3Bt7JpRs): Reanimatedの次期バージョンではJavaScriptジェネレーターがサポートされます。WilliamはカスタムReanimatedアニメーションの3つの例を、while (true)ループでyieldを使用するジェネレーターに書き換えています。
+* 🎥 [Simon Grimm - React Nativeの時は今](https://www.youtube.com/watch?v=COH_XhlMyZ4)
+* 🎙️ [RNR 287 - 特別ゲスト: Charlie Cheever](https://reactnativeradio.com/episodes/rnr-287-special-guest-charlie-cheever): ExpoがReact Nativeの上に構築される層であることは私には明らかでしたが、Charlie CheeverとJames IdeがReact Nativeが登場する前からExpoの開発を開始していたことをご存知でしたか？
+* 🎙️ [Rocket Ship 28 - Expo RouterとユニバーサルReact Nativeアプリ with Evan Bacon](https://share.transistor.fm/s/e9f2b98e)
+* 🎙️ [The React Native Show 34 - State of React Native 2023調査の結果](https://www.callstack.com/podcasts/state-of-react-native-2023)
+
+***
+
+## 🔀 Other {#other}
+
+* 👀 [Interop 2024 ダッシュボード - 今年ブラウザが優先する機能](https://wpt.fyi/interop-2024)
+* 👀 [Express Forward - Express v5、v6、v7の計画](https://github.com/expressjs/discussions/issues/160)
+* 📜 [サーバーレスの次の進化はステートフルへ](https://sunilpai.dev/posts/the-future-of-serverless/)
+* 📜 [TotalTypeScript - メソッド短縮構文は有害と考えられる](https://www.totaltypescript.com/method-shorthand-syntax-considered-harmful)
+* 📜 [TotalTypeScript - 'as never'が唯一機能する場合](https://www.totaltypescript.com/as-never)
+* 📜 [自動化ゲームのJavaScriptパフォーマンスを極限まで引き出す](https://ruoyusun.com/2024/01/23/cividle-optimization.html)
+* 📜 [2024年におけるファビコンの設定方法：ほとんどのニーズに対応する6つのファイル](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs)
+* 📜 [バリデータでのブランド型の使用](https://stack.convex.dev/using-branded-types-in-validators)
+* 📦 [Turborepo 1.12](https://turbo.build/blog/turbo-1-12-0)
+* 📦 [jQuery 4.0.0 ベータ版](https://blog.jquery.com/2024/02/06/jquery-4-0-0-beta/)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/173/meme.jpg)](https://twitter.com/wesbos/status/1754347448623890719)
+
+それでは！ 👋

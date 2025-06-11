@@ -1,0 +1,442 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/189/index.mdx",
+  "source_file_content_hash": "ff8ea2e62dc855146a14bbe65f0a3ed7694d2601c781b0a0bc3483d5aa7c0257",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /189\ntitle: \"This Week In React #189: Next.js Security, Memoization, useFormStatus, React State, Remix Typesafe Routes, View Transitions, Astro, Starlight, Hydrogen, Remotion, Lingui, Storybook, Skia Video, Starlink, App Clips, VisionOS...\"\nauthors: [bndkt]\ndate: 06-12-2024\n---",
+      "source_content_hash": "7d7cd0f648799da182d52382ec56af193a4ec1f15f765f247bbfce19acde7890",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "It's [Benedikt](https://x.com/bndkt) again this week, as Sebastien is taking a break.",
+      "source_content_hash": "96db336e60e4151d7583798d31f3ba7c42dd13419077c848c5a34121ff961601",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週も[Benedikt](https://x.com/bndkt)がお届けします。Sebastienは休暇中です。"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "For me, the week's most interesting topics are not big announcements or new releases but rather subtle hints at future work (type-safe routes models coming to Remix, React Compiler coming to Expo, native intents in Expo Router), as well as some online discussions about React Suspense implementation details (`display: none`, and, more importantly, a pretty significant change in parallel fetching behavior with React 19).",
+      "source_content_hash": "88b32d508821f3f2a8ae088ec4bae43dc0ada6031f231fe25c9a1327004dcf27",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週の最も興味深いトピックは、大きな発表や新リリースではなく、将来の作業を示唆する微妙なヒント（Remixに導入予定の型安全なルートモデル、ExpoへのReact Compilerの導入、Expo Routerのネイティブインテント）や、React Suspenseの実装詳細に関するオンライン議論（`display: none`、そしてより重要なのはReact 19での並列フェッチ動作の大幅な変更）でした。"
+      }
+    },
+    {
+      "segment_id": "e883b2cc",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_e883b2cc"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**"
+      }
+    },
+    {
+      "segment_id": "7f7f1cb2",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "92f4ea84",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_92f4ea84"
+      }
+    },
+    {
+      "segment_id": "5dfba1c3",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_5dfba1c3"
+      }
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "[![Flex your product muscles](/emails/issues/183/posthog.jpg)](https://newsletter.posthog.com/?utm_source=twir\\&utm_campaign=twir)",
+      "source_content_hash": "26e0827f85a9ae477539fc8a92c307229fb1f880eb46f0ef7ed8b40d6b97017c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![プロダクトスキルを鍛えよう](/emails/issues/183/posthog.jpg)](https://newsletter.posthog.com/?utm_source=twir\\&utm_campaign=twir)"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "**[Flex your product muscles](https://newsletter.posthog.com/?utm_source=twir\\&utm_campaign=twir)**",
+      "source_content_hash": "ce253d628d12c54c3ef95a98b614dd45585709bdbdd31f020c9f2c8e3f4932d3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[プロダクトスキルを鍛えよう](https://newsletter.posthog.com/?utm_source=twir\\&utm_campaign=twir)**"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "[**Product for Engineers**](https://newsletter.posthog.com/?utm_source=twir\\&utm_campaign=twir) is PostHog’s newsletter dedicated to helping engineers improve their product skills. Learn what questions to ask users, how to build new features users love, and the path to product market fit.",
+      "source_content_hash": "4446ee72204fa04689867dbb91d97b3d3ceb97922bf51a89159ca2fa8022e4f0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**エンジニアのためのプロダクト思考**](https://newsletter.posthog.com/?utm_source=twir\\&utm_campaign=twir)は、PostHogが提供するエンジニア向けニュースレターです。ユーザーに尋ねるべき質問、ユーザーが愛用する新機能の構築方法、プロダクトマーケットフィットへの道筋などについて学べます。"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "[**Subscribe for free**](https://newsletter.posthog.com/?utm_source=twir\\&utm_campaign=twir) to get curated advice on building great products, lessons (and mistakes) from building PostHog, and deep dives into the strategies of top startups.",
+      "source_content_hash": "abd9b55d4ca5873c321f3dca602272af191635af9af9f3b20fbe7a131f5d4c5f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**無料購読**](https://newsletter.posthog.com/?utm_source=twir\\&utm_campaign=twir)して、優れたプロダクトを構築するためのアドバイス、PostHog構築からの教訓（と失敗）、トップスタートアップの戦略に関する深堀り記事を受け取りましょう。"
+      }
+    },
+    {
+      "segment_id": "b0e5a8f2",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "80d9e13c",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "[![Mind the gap](/emails/issues/189/react189.jpg)](https://www.youtube.com/live/1g5ruM-16_Y?t=7443s)",
+      "source_content_hash": "994757f40378dcc96d0be571c5b20bae8095891e2979fda01ac7c67ab1479037",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Mind the gap](/emails/issues/189/react189.jpg)](https://www.youtube.com/live/1g5ruM-16_Y?t=7443s)"
+      }
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "🎥 **[Ryan Florence talk “Mind the Gap”](https://www.youtube.com/live/1g5ruM-16_Y?t=7443s)**",
+      "source_content_hash": "d48d551232a76c930a09394cae43b362eb6ec446a779def146169b1117966908",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🎥 **[Ryan Florenceの講演「Mind the Gap」](https://www.youtube.com/live/1g5ruM-16_Y?t=7443s)**"
+      }
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "I watched this talk after hearing multiple people describing it as one of the best tech conference talks they’ve ever seen. We’re at a very interesting point in time in web development, with React 19 bringing a major shift to the React model, new JS frameworks gaining popularity, and lots of online discussions drawing distinctions and/or making comparisons to Rails and Laravel. Ryan’s talk is a really good overview of how we got here and it offers, in my opinion, a very good mental model of how to think about React 19. Also fun to see one of the creators of Remix give a Next.js demo 😉",
+      "source_content_hash": "9258378dd11fa3f0df431d2ef764fc08a562102d127ec24e2452161f54495a70",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "この講演は、複数の人々から「今まで見た中で最高のテックカンファレンス講演の一つ」と評されているのを聞いて視聴しました。React 19がReactモデルに大きな変化をもたらし、新しいJSフレームワークが人気を集め、RailsやLaravelとの違いや比較に関する多くのオンライン議論が交わされている現在、私たちはウェブ開発の非常に興味深い転換点に立っています。Ryanの講演は、私たちがどのようにここまで来たのかを概観し、React 19について考えるための非常に優れたメンタルモデルを提供してくれます。また、Remixの創設者の一人がNext.jsのデモを行う様子を見るのも楽しいです😉"
+      }
+    },
+    {
+      "segment_id": "824626b3",
+      "source_content": "* 💸 [NL Kit — Ship AI Features Faster With JavaScript](https://nlkit.com)\n* 🐦 [Flow diagram on how to pick one of the over 30 ways to handle React state](https://x.com/housecor/status/1799435036736778364)\n* 🐦 [React changes a component in a Suspense context to `display: none !important` until data fetching completes](https://x.com/cpojer/status/1798912741383844237)\n* 🐦 [Type-safe route modules coming to Remix/React Router 7](https://x.com/pcattori/status/1799194706850504818)\n* 🐦 [Significant difference in how Suspense handles parallel fetching between React 18 and 19 raises concerns](https://x.com/TkDodo/status/1800501040766144676)\n* 🗓 [dotJS](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - June 27 - Only 2 weeks left before the conference! 10% discount with code \"TWIR\"\n* 🗓 [React Summit](https://reactsummit.com/?utm_source=thisweekinreact) - 🇳🇱 Amsterdam - 14-18 June - Tickets are almost sold out. Get a 10% discount with code \"TWIR\".\n* 📜 [Weak memoization in JavaScript](https://dev.to/thekashey/weak-memoization-in-javascript-4po6): I really like those “fundamental” articles. This is not about useMemo, it explains the concept of memoization from scratch (while referencing React a bunch), really helps to deepen the understanding of what’s going on under the hood.\n* 📜 [Creating a Reusable SubmitButton with useFormStatus](https://aurorascharff.no/posts/creating-a-reusable-submitbutton-with-useformstatus/): Following this article not only teaches you how to work with forms and server actions in React 19, but also how to do it using progressively enhanced forms.\n* 📜 [Lingui with React Server Components](https://lingui.dev/tutorials/react-rsc): Tutorial on how to internationalize a Next.js App Router app (incl. RSC) using Lingui.\n* 📜 [Next.js security checklist](https://blog.arcjet.com/next-js-security-checklist/): Useful checklist covering 7 areas, some very obvious (update dependencies, sanitize inputs), and others a bit more specific (avoid exposing server code, use security headers).\n* 📜 [Hydrogen - June 2024 Release - Optimistic cart, RichText component, stable analytics](https://hydrogen.shopify.dev/update/june-2024): Apart from these three features announcements, the post starts with a repeated commitment to Remix (aka React Router 7), in case you were wondering.\n* 📜 [Astro - Starlight (the Astro-based documentation builder) turns one year old](https://astro.build/blog/starlight-turns-one/): Pretty impressive stats: 24 minor releases, 181 contributors, 2,000 commits, 4,000 GitHub stars, and 2,700 open-source Starlight sites.\n* 📜 [Astro - Zero-JavaScript View Transitions](https://astro.build/blog/future-of-astro-zero-js-view-transitions/): Chrome 126 just shipped support for native, app-like animations between page navigation.\n* 📜 [The Need for Speed: A Quick Way to Improve React Testing Times](https://www.helpscout.com/blog/improve-react-testing-times/)\n* 📜 [Interactive dropdown menus with Radix UI](https://www.joshuawootonn.com/radix-interactive-dropdown)\n* 📜 [How to render zoomable image with Shadcn UI and Tailwind CSS in Next.js](https://www.nico.fyi/blog/easy-zoomable-image-with-shadcn-tailwind)\n* 📜[Storybook - Interactive story generation](https://storybook.js.org/blog/interactive-story-generation/)\n* 📜 [How to Build a Notification System in Next.js with Knock](https://spacejelly.dev/posts/how-to-build-a-notification-system-in-next-js-with-knock)\n* 📦 [Code Hike + Remotion example](https://github.com/code-hike/examples/tree/main/with-remotion): Neat combination to create animated code videos (🐦 [Demo video](https://x.com/pomber/status/1800108854459715864?t=8ickNCn-Orou7665JY31VA\\&s=19)).\n* 📦 [@xstate/store 1.0.0](https://github.com/statelyai/xstate/releases/tag/%40xstate%2Fstore%401.0.0)\n* 📦 [@tanstack/query 5.44.0](https://github.com/TanStack/query/releases/tag/v5.44.0): Brings a “staleTime” function, e.g. to derive stale time from cache-control headers.\n* 🎥 [Theo - React Compiler: It's Stranger Than You Think](https://www.youtube.com/watch?v=wnXGSwrOw80)\n* 🎥 [Ben Holmes - The problem with server actions](https://www.youtube.com/watch?v=GPYAC1qGD44)\n* 🎥 [Jack Herrington - Radix Themes: Awesome New Components For NextJS](https://www.youtube.com/watch?v=SKm2XGxbLLM)\n* 🎥 [Syntax - What's new in the world of React? - React Conf 2024 Recap](https://www.youtube.com/watch?v=udXZw-9LdOM)",
+      "source_content_hash": "5abc0c8b9deb13f088938b89cdd14afaf09fe33a8539309a170b1380b1ea137b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [NL Kit — JavaScriptでAI機能を迅速に実装](https://nlkit.com)\n* 🐦 [Reactの状態管理を選ぶための30以上の方法をまとめたフローチャート](https://x.com/housecor/status/1799435036736778364)\n* 🐦 [ReactがSuspenseコンテキスト内のコンポーネントをデータ取得完了まで`display: none !important`に変更](https://x.com/cpojer/status/1798912741383844237)\n* 🐦 [Remix/React Router 7に型安全なルートモジュールが導入予定](https://x.com/pcattori/status/1799194706850504818)\n* 🐦 [React 18と19でSuspenseの並列フェッチ処理に重大な差異が発生し懸念が高まる](https://x.com/TkDodo/status/1800501040766144676)\n* 🗓 [dotJS](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 パリ - 6月27日 - カンファレンスまであと2週間！コード「TWIR」で10%オフ\n* 🗓 [React Summit](https://reactsummit.com/?utm_source=thisweekinreact) - 🇳🇱 アムステルダム - 6月14-18日 - チケットほぼ完売間近。コード「TWIR」で10%オフ\n* 📜 [JavaScriptにおけるWeakメモ化](https://dev.to/thekashey/weak-memoization-in-javascript-4po6): useMemoではなく、メモ化の基本概念をゼロから解説（Reactにも多数言及）。内部動作の理解を深めるのに最適\n* 📜 [useFormStatusを使った再利用可能なSubmitButtonの作成](https://aurorascharff.no/posts/creating-a-reusable-submitbutton-with-useformstatus/): React 19のフォームとサーバーアクションの使い方を学べるだけでなく、プログレッシブエンハンスメントを用いた実装方法も解説\n* 📜 [React Server ComponentsでのLingui使用法](https://lingui.dev/tutorials/react-rsc): Linguiを使ったNext.js App Routerアプリ（RSC含む）の国際化チュートリアル\n* 📜 [Next.jsセキュリティチェックリスト](https://blog.arcjet.com/next-js-security-checklist/): 7つの領域をカバーする有用なチェックリスト。依存関係の更新や入力値のサニタイズといった基本的な項目から、サーバーコードの公開回避やセキュリティヘッダーの使用といったより専門的な項目まで\n* 📜 [Hydrogen - 2024年6月リリース - 楽観的カート、RichTextコンポーネント、安定版アナリティクス](https://hydrogen.shopify.dev/update/june-2024): 3つの新機能発表に加え、Remix（React Router 7）への継続的なコミットメントが再確認されている\n* 📜 [Astro - Starlight（Astroベースのドキュメントビルダー）が1周年](https://astro.build/blog/starlight-turns-one/): 24のマイナーリリース、181人のコントリビューター、2,000コミット、4,000 GitHubスター、2,700のオープンソースStarlightサイトという印象的な統計\n* 📜 [Astro - ゼロJavaScriptビュートランジション](https://astro.build/blog/future-of-astro-zero-js-view-transitions/): Chrome 126でページ遷移間のネイティブなアプリ風アニメーションがサポート\n* 📜 [スピードの必要性：Reactテスト時間を短縮する簡単な方法](https://www.helpscout.com/blog/improve-react-testing-times/)\n* 📜 [Radix UIを使ったインタラクティブなドロップダウンメニュー](https://www.joshuawootonn.com/radix-interactive-dropdown)\n* 📜 [Shadcn UIとTailwind CSSでNext.jsにズーム可能な画像をレンダリングする方法](https://www.nico.fyi/blog/easy-zoomable-image-with-shadcn-tailwind)\n* 📜 [Storybook - インタラクティブなストーリー生成](https://storybook.js.org/blog/interactive-story-generation/)\n* 📜 [Next.jsでKnockを使った通知システムを構築する方法](https://spacejelly.dev/posts/how-to-build-a-notification-system-in-next-js-with-knock)\n* 📦 [Code Hike + Remotionの例](https://github.com/code-hike/examples/tree/main/with-remotion): アニメーションコードビデオを作成するための巧妙な組み合わせ（🐦 [デモ動画](https://x.com/pomber/status/1800108854459715864?t=8ickNCn-Orou7665JY31VA\\&s=19)）\n* 📦 [@xstate/store 1.0.0](https://github.com/statelyai/xstate/releases/tag/%40xstate%2Fstore%401.0.0)\n* 📦 [@tanstack/query 5.44.0](https://github.com/TanStack/query/releases/tag/v5.44.0): cache-controlヘッダーからstale timeを導出する「staleTime」関数を導入\n* 🎥 [Theo - Reactコンパイラ：想像以上に奇妙](https://www.youtube.com/watch?v=wnXGSwrOw80)\n* 🎥 [Ben Holmes - サーバーアクションの問題点](https://www.youtube.com/watch?v=GPYAC1qGD44)\n* 🎥 [Jack Herrington - Radix Themes：NextJS向けの素晴らしい新コンポーネント](https://www.youtube.com/watch?v=SKm2XGxbLLM)\n* 🎥 [Syntax - React界隈の最新動向 - React Conf 2024まとめ](https://www.youtube.com/watch?v=udXZw-9LdOM)"
+      }
+    },
+    {
+      "segment_id": "32db7046",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_32db7046"
+      }
+    },
+    {
+      "segment_id": "01868def",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "93028a4e",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "e8e162a9",
+      "source_content": "[![WorkOS: enterprise-grade auth in minutes](/emails/issues/189/WorkOS.jpg)](https://workos.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=q22024)",
+      "source_content_hash": "dc9dab0eb65553bada446e5854ec632e3f885dc5856efe7aaefc2bfacedf10c3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![WorkOS: エンタープライズ向け認証を数分で](/emails/issues/189/WorkOS.jpg)](https://workos.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=q22024)"
+      }
+    },
+    {
+      "segment_id": "463ed165",
+      "source_content": "**[WorkOS: enterprise-grade auth in minutes](https://workos.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=q22024)**",
+      "source_content_hash": "96805fc2cfe1f8225373265e642a70fda36e3750554bd482b5035973e0a9fd7c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[WorkOS: エンタープライズ向け認証を数分で](https://workos.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=q22024)**"
+      }
+    },
+    {
+      "segment_id": "a5c5772a",
+      "source_content": "🔐 WorkOS supports a complete User Management solution along with **SSO, SCIM, RBAC, & FGA**.",
+      "source_content_hash": "2f2e507bd12e3ac919139e6f3d3d225a5373ae15c038928e94c42acd977b1d73",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🔐 WorkOSは、**SSO、SCIM、RBAC、FGA**を含む完全なユーザー管理ソリューションをサポートしています。"
+      }
+    },
+    {
+      "segment_id": "fbc2db85",
+      "source_content": "🗂️ Unlike other auth providers that rely on user-centric models, WorkOS is designed for B2B SaaS with an **org modeling approach**.",
+      "source_content_hash": "7dc18354f94bc88426e767a51c0c4a32cf5f80ace68a0932091929775b003a29",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🗂️ 他の認証プロバイダーがユーザー中心のモデルに依存するのに対し、WorkOSはB2B SaaS向けに設計された**組織モデリングアプローチ**を採用しています。"
+      }
+    },
+    {
+      "segment_id": "8126f763",
+      "source_content": "🏗️ The APIs are **flexible, easy-to-use, and modular**. Pick and choose what you need and integrate in minutes.",
+      "source_content_hash": "40cbba585ed73eb8b160406f2c3c40e74d45e7c861b8fe1a05b5a6778845df26",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🏗️ APIは**柔軟で使いやすく、モジュール式**です。必要な機能を選び、数分で統合できます。"
+      }
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "✨ User Management is **free up to 1 million MAUs** and includes bot protection, impersonation, MFA, & more.",
+      "source_content_hash": "582b686ca0891e3a152f6754ce81a454d6c569775a71cc7fe8ed336c18f84712",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "✨ ユーザー管理は**100万MAUまで無料**で、ボット対策、なりすまし防止、MFAなどが含まれます。"
+      }
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "🤝 WorkOS is trusted by hundreds of leading startups like **Perplexity**, **Vercel**, & **Webflow**.",
+      "source_content_hash": "43e2ceada1d518743097693e7bee36fd8f5f6a9f9a03dd28878d31ae3a97fba6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🤝 WorkOSは、**Perplexity**、**Vercel**、**Webflow**など、数百の主要スタートアップに信頼されています。"
+      }
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "Future-proof your auth stack with [WorkOS](https://workos.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=q22024) 🚀",
+      "source_content_hash": "f691b9e43bf55c11b0c62502945ab563c309d7f5370621cdd5536469b72bf8f1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[WorkOS](https://workos.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=q22024)で認証スタックを未来に備えましょう 🚀"
+      }
+    },
+    {
+      "segment_id": "b805e2c6",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "b10963d7",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "This section is authored by [Benedikt](https://twitter.com/bndkt).",
+      "source_content_hash": "0aff28d995823a706b5e2556e3ef90d67c8595d7a00290f1a597b94b15e10b1f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このセクションは[Benedikt](https://twitter.com/bndkt)によって執筆されています。"
+      }
+    },
+    {
+      "segment_id": "9f974d3d",
+      "source_content": "* 💸 [WithFrame - Ready to Use React Native Components](https://withfra.me/?utm_source=thisweekinreact\\&utm_medium=email\\&utm_campaign=quick-link--2)\n* 👀 [Expo adds experimental React Compiler support](https://github.com/expo/expo/pull/29168)\n* 👀 [Expo Router +native-intent Demo](https://github.com/EvanBacon/expo-router-native-intent-demo)\n* 🐦 [Skia Video is coming to the web, too](https://x.com/wcandillon/status/1799859456584646663)\n* 🐦 [Lorenzo leaving Microsoft and React Native](https://x.com/Kelset/status/1800158749811966280?t=jif1MJRNNYc3wIE1cIUJvw\\&s=19): Thanks Lorenzo for all your contributions to RN and it’s community as a long-time core maintainer, and best wishes for whatever comes next!\n* 🗓 [Chain React Conf](https://chainreactconf.com/?utm_source=thisweekinreact) -  Portland, OR - July 17-19. The U.S. React Native Conference is back with engaging talks and hands-on workshops! Get 15% off your ticket with code “TWIR”\n* 📜 [Apple Vision Pro: Insights From Conferences and Beyond](https://www.callstack.com/blog/apple-vision-pro-insights-from-conferences-and-beyond)\n* 📜 [Now that I can write React Native, what should I test](https://thoughtbot.com/blog/now-that-i-can-write-react-native-what-should-i-test): A beginner’s journey into unit and integration tests with React Native. Next, do end to end testing!\n* 📜 [How Starlink built 3d and AR in React Native & Expo](https://www.notjust.dev/blog/react-native-starlink): Summary of Aaron’s talk at App.js conf. Read this if you insist on text, but I’d recommend watching the original talk.\n* 📜 [How Belka built the MangaYo! app in just 3 months with Expo](https://expo.dev/blog/how-belka-built-mangayo-app-in-just-3-months-with-expo): Built using Expo and Supabase in 3 months, hit no 5 of the App Store charts on launch.\n* 📜 [Flatlist Rendering Techniques](https://www.andydevs.dev/articles/flatlist-rendering-techniques): I mostly reach for FlashList directly, but if you somehow can’t or don’t want to use this, here’s how to optimize rendering of the classic FlatList.\n* 📦 [react-native-app-clip 0.3.0 - Now supports Expo 51, RN 0.74, New Architecture, and Apple Pay](https://github.com/bndkt/react-native-app-clip/releases/tag/v0.3.0)\n* 📦 [@rn-tools/navigation](https://github.com/ajsmth/rn-tools/blob/main/packages/navigation/readme.md): New set of set of navigation components for React Native.\n* 🎙️ [RNR 299 - What to Expect From React Native in 5 Years](https://www.reactnativeradio.com/episodes/rnr-299-what-to-expect-from-react-native-in-5-years)\n* 🎙️ [React Conf 2024 Highlights: Speakers Interviews | The React Native Show Podcast #38](https://www.youtube.com/watch?v=EP2IzK6rPv8)\n* 🎥 [Expo livestream - Presenting SDK 51: New Architecture, Router 3.5, Faster 'getting started' flow and more](https://www.youtube.com/watch?v=k1ISWPgP4S4)\n* 🎥 [Simon Grimm - Building a Local-First React Native App with PowerSync and Supabase](https://www.youtube.com/watch?v=xvvVGOyRgZg)",
+      "source_content_hash": "cb3aecb19dd0fc3e09e6d0b252786bcab96741f9645584f006cde4a7f094cbeb",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [WithFrame - すぐに使えるReact Nativeコンポーネント](https://withfra.me/?utm_source=thisweekinreact\\&utm_medium=email\\&utm_campaign=quick-link--2)\n* 👀 [Expoが実験的なReact Compilerサポートを追加](https://github.com/expo/expo/pull/29168)\n* 👀 [Expo Router +native-intent デモ](https://github.com/EvanBacon/expo-router-native-intent-demo)\n* 🐦 [Skia VideoがWebにも登場予定](https://x.com/wcandillon/status/1799859456584646663)\n* 🐦 [LorenzoがMicrosoftとReact Nativeを離れる](https://x.com/Kelset/status/1800158749811966280?t=jif1MJRNNYc3wIE1cIUJvw\\&s=19): 長年にわたりReact Nativeコアメンテナとしてコミュニティに貢献してくれたLorenzoに感謝し、今後の活躍を祈念します！\n* 🗓 [Chain React Conf](https://chainreactconf.com/?utm_source=thisweekinreact) - ポートランド（オレゴン州）・7月17-19日。米国React Nativeカンファレンスが帰ってきました！講演とハンズオン形式のワークショップが満載です。「TWIR」コードでチケット15%オフ\n* 📜 [Apple Vision Pro: カンファレンスとその先からの洞察](https://www.callstack.com/blog/apple-vision-pro-insights-from-conferences-and-beyond)\n* 📜 [React Nativeが書けるようになった今、何をテストすべきか](https://thoughtbot.com/blog/now-that-i-can-write-react-native-what-should-i-test): React Nativeにおける単体テストと統合テストの初心者向けガイド。次はエンドツーエンドテストに挑戦しましょう！\n* 📜 [StarlinkがReact Native & Expoで3D/ARを構築した方法](https://www.notjust.dev/blog/react-native-starlink): App.js confでのAaronの講演まとめ。テキスト派はこちらを、動画派は元の講演視聴を推奨\n* 📜 [BelkaがExpoでMangaYo!アプリを3ヶ月で開発した方法](https://expo.dev/blog/how-belka-built-mangayo-app-in-just-3-months-with-expo): ExpoとSupabaseを使用し3ヶ月で開発、App Storeランキング5位を獲得\n* 📜 [Flatlistのレンダリング技法](https://www.andydevs.dev/articles/flatlist-rendering-techniques): FlashListを直接使うことが多いですが、使えない/使いたくない場合の従来型FlatListの最適化手法\n* 📦 [react-native-app-clip 0.3.0 - Expo 51、RN 0.74、New Architecture、Apple Payに対応](https://github.com/bndkt/react-native-app-clip/releases/tag/v0.3.0)\n* 📦 [@rn-tools/navigation](https://github.com/ajsmth/rn-tools/blob/main/packages/navigation/readme.md): React Native向け新ナビゲーションコンポーネントセット\n* 🎙️ [RNR 299 - 5年後のReact Nativeに期待すること](https://www.reactnativeradio.com/episodes/rnr-299-what-to-expect-from-react-native-in-5-years)\n* 🎙️ [React Conf 2024ハイライト: スピーカーインタビュー | The React Native Show Podcast #38](https://www.youtube.com/watch?v=EP2IzK6rPv8)\n* 🎥 [Expoライブストリーム - SDK 51発表: New Architecture、Router 3.5、高速化された「はじめに」フローなど](https://www.youtube.com/watch?v=k1ISWPgP4S4)\n* 🎥 [Simon Grimm - PowerSyncとSupabaseでローカルファーストReact Nativeアプリを構築](https://www.youtube.com/watch?v=xvvVGOyRgZg)"
+      }
+    },
+    {
+      "segment_id": "6ad15270",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c7fa1e8d",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "9673e622",
+      "source_content": "* 📜 [WebKit in Safari 18 beta - View Transitions, Style Queries, WebXR...](https://webkit.org/blog/15443/news-from-wwdc24-webkit-in-safari-18-beta/)\n* 📜 [How Deep is Your DOM?](https://frontendatscale.com/blog/how-deep-is-your-dom/)\n* 📜 [Find slow interactions in the field](https://web.dev/articles/find-slow-interactions-in-the-field)\n* [Your Node is Leaking Memory? setTimeout Could be the Reason](https://lucumr.pocoo.org/2024/6/5/node-timeout/)\n* 📜 [Comprehensive guide to JavaScript performance analysis using Chrome DevTools](https://blog.jiayihu.net/comprenhensive-guide-chrome-performance/)\n* 📦 [TypeScript 5.5 RC](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5-rc/?t)\n* 📦 [Valibot v0.31.0 is finally available](https://valibot.dev/blog/valibot-v0.31.0-is-finally-available/)\n* 📦 [Vite 5.3.0-beta.2](https://github.com/vitejs/vite/blob/v5.3.0-beta.2/packages/vite/CHANGELOG.md#530-beta2-2024-06-10)",
+      "source_content_hash": "fd05fc4c75654b55cc738f64da66052a90b1af66894eb8bbce36766e76e5dc2e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📜 [Safari 18 betaのWebKit - ビュートランジション、スタイルクエリ、WebXRなど](https://webkit.org/blog/15443/news-from-wwdc24-webkit-in-safari-18-beta/)\n* 📜 [DOMの深さはどれくらい？](https://frontendatscale.com/blog/how-deep-is-your-dom/)\n* 📜 [フィールドでの遅いインタラクションを見つける](https://web.dev/articles/find-slow-interactions-in-the-field)\n* [Node.jsがメモリリーク？setTimeoutが原因かも](https://lucumr.pocoo.org/2024/6/5/node-timeout/)\n* 📜 [Chrome DevToolsを使ったJavaScriptパフォーマンス分析の包括的ガイド](https://blog.jiayihu.net/comprenhensive-guide-chrome-performance/)\n* 📦 [TypeScript 5.5 RC](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5-rc/?t)\n* 📦 [Valibot v0.31.0がついにリリース](https://valibot.dev/blog/valibot-v0.31.0-is-finally-available/)\n* 📦 [Vite 5.3.0-beta.2](https://github.com/vitejs/vite/blob/v5.3.0-beta.2/packages/vite/CHANGELOG.md#530-beta2-2024-06-10)"
+      }
+    },
+    {
+      "segment_id": "44f53186",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "8f1c1cd6",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "383fbdd2",
+      "source_content": "[![tailwind monitor](/emails/issues/189/meme.jpg)](https://x.com/thekitze/status/1788852862669217805)",
+      "source_content_hash": "a0f5381f9206ef4806bf90356f912163fa8bbdd18e3efe5027396371ab722a1e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![tailwindモニター](/emails/issues/189/meme.jpg)](https://x.com/thekitze/status/1788852862669217805)"
+      }
+    },
+    {
+      "segment_id": "14bc6b75",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "またね！ 👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/189/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:39.444179+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "ff8ea2e62dc855146a14bbe65f0a3ed7694d2601c781b0a0bc3483d5aa7c0257"
+  }
+}

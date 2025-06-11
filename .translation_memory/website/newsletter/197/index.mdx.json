@@ -1,0 +1,542 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/197/index.mdx",
+  "source_file_content_hash": "329874c07c5c6844d2b9befbef7e5d400d4bd48d41fffa690f9b0728dce1ff9f",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /197\ntitle: \"This Week In React #197: Waku, Effect, TanStack, Framer Motion, use(), Preact, Valtio, Astro, Three.js, Nitrogen, React-Native-Web, expo-dom, Tophat, React-Navigation, Skip, TypeScript, Rspack, Volta...\"\nauthors: [matthieugicquel, cyrilbo]\ndate: 08-21-2024\n---",
+      "source_content_hash": "bbe2eece67320e66a558509e05a1b2d45ddde1a6533a83b695a64cb3e4638e59",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Cyril and Matthieu from [Theodo Apps (formerly BAM)](https://apps.theodo.com/en?utm_source=thisweekinreact) here 👋, standing in for Seb to bring you the latest news from the React and React Native worlds.",
+      "source_content_hash": "5589332c676d181a8eb3a621126785f713bf890d84868e4d69aa4ec90c6adae5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[Theodo Apps（旧BAM）](https://apps.theodo.com/en?utm_source=thisweekinreact)のCyrilとMatthieuです 👋。Sebに代わって、ReactとReact Nativeの最新ニュースをお届けします。"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "It’s been another calm week, but we've still got some great updates for you. Waku now supports React Server Actions, there are tips for using TanStack/Router, and we explore React's journey to becoming a full-stack framework. Plus, check out what's new in React Native 0.75 ! We also have some updates on NitroModules and react-native-webGPU. Dive in and enjoy!",
+      "source_content_hash": "8037181ba5804c72e5fa5dcd9f0a4aab66925189e64af4547afe3891c03ae044",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週も落ち着いた週でしたが、素晴らしいアップデートがあります。WakuがReact Server Actionsをサポート、TanStack/Routerの使用に関するヒント、Reactがフルスタックフレームワークへと進化する過程を探ります。さらに、React Native 0.75の新機能もチェックしてください！NitroModulesとreact-native-webGPUに関するアップデートもあります。ぜひご覧ください！"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Check our partner conf **[React Advanced London](https://reactadvanced.com/?utm_source=Newsletter\\&utm_medium=thisweekinreact)** (🇬🇧 London - 25 & 28 October). We really like the idea of advanced React talks, and so far the lineup doesn't disappoint! 👌",
+      "source_content_hash": "c6e20c2269a2ce811606865d79cdcffe90539ad7d8fbdb9b5d95c5bd2f2774c2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "パートナーイベント **[React Advanced London](https://reactadvanced.com/?utm_source=Newsletter\\&utm_medium=thisweekinreact)**（🇬🇧 ロンドン - 10月25日＆28日）をチェックしてください。高度なReactトークのアイデアが気に入っていますし、今のところラインナップも期待を裏切りません！👌"
+      }
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6429a3aa"
+      }
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**"
+      }
+    },
+    {
+      "segment_id": "507b4652",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "fcd52337",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_fcd52337"
+      }
+    },
+    {
+      "segment_id": "42e34e45",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_42e34e45"
+      }
+    },
+    {
+      "segment_id": "caf67047",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "[![Are your React PR reviews turning into component chaos?](/emails/issues/197/coderabbit.jpg)](https://coderabbit.ai/?utm_source=newsletter\\&utm_medium=this-week-react-aug-21)",
+      "source_content_hash": "57ce920f182cdc1acba1efefa868e7669fb0a25809ceda0ec82c1e349ede1e05",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![ReactのPRレビューがコンポーネントのカオスになっていませんか？](/emails/issues/197/coderabbit.jpg)](https://coderabbit.ai/?utm_source=newsletter\\&utm_medium=this-week-react-aug-21)"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "**[Are your React PR reviews turning into component chaos?](https://coderabbit.ai/?utm_source=newsletter\\&utm_medium=this-week-react-aug-21)**",
+      "source_content_hash": "6912dcfc26c172e148c7f0b37efe8c70dbff5bc60944ea66b1c0d2e70f23c682",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[ReactのPRレビューがコンポーネントのカオスになっていませんか？](https://coderabbit.ai/?utm_source=newsletter\\&utm_medium=this-week-react-aug-21)**"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "Discover strategies to streamline your React PR reviews and elevate your team's focus to critical aspects of code quality. We'll review every PR with dependency management, code reconciliation & more, allowing your team to concentrate on architectural decisions, component design, and performance optimizations.",
+      "source_content_hash": "7c86fb4b1fe3a0bf22686ddbdecbfe9acc4c782aa1e733d7b2920b3bcd378fc3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ReactのPRレビューを効率化し、チームの焦点をコード品質の重要な側面に集中させるための戦略を発見してください。依存関係管理、コード調整などを含むすべてのPRをレビューし、チームがアーキテクチャの決定、コンポーネント設計、パフォーマンス最適化に集中できるようにします。"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "CodeRabbit helps with:",
+      "source_content_hash": "d5fe2142902d4523cf1f10f4c5de3021a8934b1358a9fc2f533b91e5984dd2d3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "CodeRabbitは以下を支援します："
+      }
+    },
+    {
+      "segment_id": "157151e9",
+      "source_content": "* Best Practice Enforcement: Leverage CodeRabbit's ability to identify common React anti-patterns and suggest best practices, ensuring good code quality.\n* Component Structure Review: Benefit from a thorough summary of your component structure, receiving suggestions for better composition.\n* Actionable Code Review Comments: Fix the code right in the PR, with 1-click commit suggestion.",
+      "source_content_hash": "2da465f0ae271783ddff99f029e7b645fa5d01d25027558e12468db44ba83747",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* ベストプラクティスの実施：CodeRabbitの機能を活用して、Reactのアンチパターンを特定し、ベストプラクティスを提案することで、コード品質を確保します。\n* コンポーネント構造のレビュー：コンポーネント構造の詳細なサマリーを受け取り、より良い構成のための提案を得られます。\n* 実践的なコードレビューコメント：PR内でコードを修正し、1クリックでコミット提案を行います。"
+      }
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "CodeRabbit is free for all open-source repo's. [Get started today!](https://coderabbit.ai/?utm_source=newsletter\\&utm_medium=this-week-react-aug-21)",
+      "source_content_hash": "afb4ccb2413660d42f344be6da922153d76fae30173baa7c113976f6683ca4b3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "CodeRabbitはすべてのオープンソースリポジトリで無料です。[今日から始めましょう！](https://coderabbit.ai/?utm_source=newsletter\\&utm_medium=this-week-react-aug-21)"
+      }
+    },
+    {
+      "segment_id": "d4e0d4e1",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "8bddee80",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "[![Waku v0.21 - Full support for React Server Actions](/emails/issues/197/waku.jpg)](https://waku.gg/blog/server-actions-are-here)",
+      "source_content_hash": "45aecc652c3846cf8575dd902fa53e85cb4c2625d4457fa0945f97e815ef0392",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Waku v0.21 - React Server Actionsの完全サポート](/emails/issues/197/waku.jpg)](https://waku.gg/blog/server-actions-are-here)"
+      }
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "**[Waku v0.21 - Full support for React Server Actions](https://waku.gg/blog/server-actions-are-here)**",
+      "source_content_hash": "129e47fa351ab34b2858120a79d7359a8a811aa78938831cb6eb2828bbfe1203",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Waku v0.21 - React Server Actionsの完全サポート](https://waku.gg/blog/server-actions-are-here)**"
+      }
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "React Server components have inspired a new wave of “React frameworks”. Waku, created by Daishi Kato (the creator of jotai, valtio…) is one of them. It was one of the first outside of Next.js offering support for server components.",
+      "source_content_hash": "9478780408d60beae1989955ddfbcea58d50e6f34e7edfdca6071d8cb5fda93e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React Server Componentsは「Reactフレームワーク」の新たな波を引き起こしました。Daishi Kato（jotai、valtioの作者）が作成したWakuはその一つです。Next.js以外で最初にサーバーコンポーネントをサポートしたフレームワークの一つです。"
+      }
+    },
+    {
+      "segment_id": "b36c6338",
+      "source_content": "With the addition of Server Actions, most React 19 features are now supported by Waku, and it’s possible to develop full apps while skipping the “have an API” part.",
+      "source_content_hash": "996a3ad87f42d6d8078fb94b80fff1d9f37e1e51e8582fb11be3b876fadd14cc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Server Actionsの追加により、ほとんどのReact 19機能がWakuでサポートされるようになり、「APIを持つ」部分をスキップしてフルアプリを開発できるようになりました。"
+      }
+    },
+    {
+      "segment_id": "716da8e8",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "[![From React to Effect](/emails/issues/197/effect.jpg)](https://effect.website/blog/from-react-to-effect)",
+      "source_content_hash": "67dc06f39fa7f9642a3061c9a452e490aedd4f113761ef3f900ad2036040232a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![ReactからEffectへ](/emails/issues/197/effect.jpg)](https://effect.website/blog/from-react-to-effect)"
+      }
+    },
+    {
+      "segment_id": "40158b4b",
+      "source_content": "**[From React to Effect](https://effect.website/blog/from-react-to-effect)**",
+      "source_content_hash": "0adbb1992ff162642e80c5ef2a4d80d7a6b3d2f7c069760fd2de78488c2e8ed7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[ReactからEffectへ](https://effect.website/blog/from-react-to-effect)**"
+      }
+    },
+    {
+      "segment_id": "6ea4c715",
+      "source_content": "Michael Arnaldi, the creator of Effect, explains how the models used by Effect and React are similar. While Effect is a powerful toolkit, it’s quite hard to get started with, almost like a new language, so drawing parallels with what we’re already familiar with can help.",
+      "source_content_hash": "e05380e2c312cd31ec73003b03adbceb6990194122312f7f2405d7cfe1295536",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Effectの創始者であるMichael Arnaldiは、EffectとReactが採用するモデルの類似性について解説しています。Effectは強力なツールキットですが、習得が難しく、ほぼ新しい言語を学ぶようなものです。そのため、既に慣れ親しんでいる概念との類似点を理解することが助けになります。"
+      }
+    },
+    {
+      "segment_id": "79ad944d",
+      "source_content": "In Effect, just like with React, most of the code you write is a “blueprint”: you declare what your program should do without running it directly. Then the library (React of Effect) takes care of running it.",
+      "source_content_hash": "cb75758d49c7229b3a29bf1221293aa03805336a7b90b8ce070127fc0d7431ad",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Effectでは、Reactと同様に、記述するコードの大部分が「設計図」となります。プログラムが何をすべきかを宣言するだけで、直接実行はしません。その後、ライブラリ（ReactまたはEffect）が実際の実行を担当します。"
+      }
+    },
+    {
+      "segment_id": "e874d9e7",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "645e08e3",
+      "source_content": "* 💸 [TutorialKit — Create interactive tutorials instantly without building or managing any backend infrastructure.](https://tutorialkit.dev/)\n* 🗓️ [reactjsday](https://2024.reactjsday.it/?utm_source=thisweekinreact) - 🇮🇹 Verona - 25 October - Get a 10% discount with code \"TWIR\". A, B and C will speak !\n* 🗓️ [Squiggle Conf](https://2024.squiggleconf.com/?utm_source=thisweekinreact) - 🇺🇸 Boston - 03 & 04 October - Get a 10% discount with code \"TWIR\". Speakers are announced, please take a tour on the conf website.\n* 📜 [Tips from 8 months of TanStack/Router in production](https://swizec.com/blog/tips-from-8-months-of-tan-stack-router-in-production/): Swizec Teller shares the guiding principles he applies, for instance when he uses loaders, suspense queries or queries\n* 📜 [React is (becoming) a Full-Stack Framework](https://www.robinwieruch.de/react-full-stack-framework/): With the addition of Server Components and Server Actions\n* 📜 [Synchronizing State In React](https://www.brenelz.com/posts/synchronizing-state-in-react/): Explains how to solve a classic bug “the right way”, not with a useEffect but by splitting components\n* 📜 [Building Swipe Actions component with React and Framer Motion](https://sinja.io/blog/swipe-actions-react-framer-motion)\n* 📜 [useStateObject: A Simple, Convenient API Around useState](https://www.jameskerr.blog/posts/use-state-object/)\n* 📜 [How to Build a React Hook That Handles Sequential Requests - Using an AbortController](https://webdeveloper.beehiiv.com/p/build-react-hook-handles-sequential-requests)\n* 📜 [Generate a PDF in React](https://spacejelly.dev/posts/generate-a-pdf-from-html-in-javascript) - html2pdf.js, React PDF, and Puppeteer\n* 📜 [Preact - Prerendering with Preset Vite](https://preactjs.com/blog/prerendering-preset-vite)\n* 📜 [Good Refactoring vs Bad Refactoring](https://www.builder.io/blog/good-vs-bad-refactoring)\n* 📜 [How Valtio Was Born](https://blog.axlight.com/posts/how-valtio-was-born/)\n* 📦 [Astro v4.14 - Experimental Content Layer API with Intellisense support in content files](https://astro.build/blog/astro-4140/)\n* 📦 [react-three/xr 6.2.0](https://github.com/pmndrs/xr/releases/tag/v6.2.0): Adds unbounded spaces, depth sensing, and secondary input sources\n* 📦 [react18-use](https://github.com/dai-shi/react18-use): Daishi Kato created a shim of the React 19 `use` hook that works in React 18. Includes the ability to 🐦 [call `use(Context)` inside `useMemo`](https://x.com/dai_shi/status/1825484689030955094) (experimental), a better alternative to context selectors the React team plans to implement.\n* 📦 [Formity](https://www.formity.app/): Define complex forms with a JSON structure, let the package handle the heavy-lifting\n* 📦 [rspack-plugin-react-refresh v1.0](https://github.com/rspack-contrib/rspack-plugin-react-refresh)\n* 🎙️ [PodRocket - Generative UI and React components with Malte Ubl](https://podrocket.logrocket.com/generative-ui-react-components-malte-ubl)\n* 🎥 [Jack Herrington - Secret React-Native Hack For React Web Devs! - use patch-package to patch a dependency not working with Server Components](https://www.youtube.com/watch?v=81oUBWJQii4)",
+      "source_content_hash": "9a84b3bf8319e7fcb3b5db5b1ebb91b7e2ef6ca06d7d06009173721c77a524b3",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [TutorialKit — バックエンドインフラの構築や管理なしに、インタラクティブなチュートリアルを即座に作成。](https://tutorialkit.dev/)\n* 🗓️ [reactjsday](https://2024.reactjsday.it/?utm_source=thisweekinreact) - 🇮🇹 ヴェローナ - 10月25日 - コード「TWIR」で10%割引。A、B、Cが登壇予定！\n* 🗓️ [Squiggle Conf](https://2024.squiggleconf.com/?utm_source=thisweekinreact) - 🇺🇸 ボストン - 10月3日＆4日 - コード「TWIR」で10%割引。スピーカーが発表されましたので、公式サイトをご覧ください。\n* 📜 [TanStack/Routerを8ヶ月間プロダクションで使って得た知見](https://swizec.com/blog/tips-from-8-months-of-tan-stack-router-in-production/): Swizec Tellerが、ローダーやSuspenseクエリ、クエリを使用する際に適用している原則を共有\n* 📜 [Reactは（ついに）フルスタックフレームワークに](https://www.robinwieruch.de/react-full-stack-framework/): Server ComponentsとServer Actionsの追加により\n* 📜 [Reactでの状態同期](https://www.brenelz.com/posts/synchronizing-state-in-react/): 古典的なバグを「正しい方法」で解決する方法を解説。useEffectではなくコンポーネント分割で対応\n* 📜 [ReactとFramer Motionでスワイプアクションコンポーネントを構築](https://sinja.io/blog/swipe-actions-react-framer-motion)\n* 📜 [useStateObject: useStateをシンプルで便利なAPIでラップ](https://www.jameskerr.blog/posts/use-state-object/)\n* 📜 [連続リクエストを処理するReactフックの構築方法 - AbortControllerを使用](https://webdeveloper.beehiiv.com/p/build-react-hook-handles-sequential-requests)\n* 📜 [ReactでPDFを生成](https://spacejelly.dev/posts/generate-a-pdf-from-html-in-javascript) - html2pdf.js、React PDF、Puppeteer\n* 📜 [Preact - Preset Viteを使ったプリレンダリング](https://preactjs.com/blog/prerendering-preset-vite)\n* 📜 [良いリファクタリング vs 悪いリファクタリング](https://www.builder.io/blog/good-vs-bad-refactoring)\n* 📜 [Valtioが生まれた経緯](https://blog.axlight.com/posts/how-valtio-was-born/)\n* 📦 [Astro v4.14 - 実験的なContent Layer APIとコンテンツファイルでのIntellisenseサポート](https://astro.build/blog/astro-4140/)\n* 📦 [react-three/xr 6.2.0](https://github.com/pmndrs/xr/releases/tag/v6.2.0): 無制限スペース、深度センシング、セカンダリ入力ソースを追加\n* 📦 [react18-use](https://github.com/dai-shi/react18-use): Daishi KatoがReact 19の`use`フックをReact 18で動作するように作成。🐦 [`useMemo`内で`use(Context)`を呼び出せる](https://x.com/dai_shi/status/1825484689030955094)（実験的）機能を含む。Reactチームが実装予定のコンテキストセレクターのより良い代替手段。\n* 📦 [Formity](https://www.formity.app/): JSON構造で複雑なフォームを定義し、重たい処理をパッケージに任せる\n* 📦 [rspack-plugin-react-refresh v1.0](https://github.com/rspack-contrib/rspack-plugin-react-refresh)\n* 🎙️ [PodRocket - Malte Ublと語るGenerative UIとReactコンポーネント](https://podrocket.logrocket.com/generative-ui-react-components-malte-ubl)\n* 🎥 [Jack Herrington - React Web開発者向けReact-Native秘技！ - patch-packageを使ってServer Componentsと互換性のない依存関係を修正](https://www.youtube.com/watch?v=81oUBWJQii4)"
+      }
+    },
+    {
+      "segment_id": "897e0025",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_897e0025"
+      }
+    },
+    {
+      "segment_id": "c9716ede",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "39db08de",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "785750ac",
+      "source_content": "[![Visual testing for Storybook, Playwright & Cypress](/emails/issues/197/chromatic.jpg)](https://www.chromatic.com/features/visual-test?utm_source=thisweekinreact\\&utm_medium=2nd_sponsor\\&utm_campaign=q3_2024)",
+      "source_content_hash": "f9154b54b4c015f7f9de3856b9266ad5ce0a81663a93b087f47cdef1b01c5a2b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Storybook、Playwright、Cypress向けビジュアルテスト](/emails/issues/197/chromatic.jpg)](https://www.chromatic.com/features/visual-test?utm_source=thisweekinreact\\&utm_medium=2nd_sponsor\\&utm_campaign=q3_2024)"
+      }
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "**[Visual testing for Storybook, Playwright & Cypress](https://www.chromatic.com/features/visual-test?utm_source=thisweekinreact\\&utm_medium=2nd_sponsor\\&utm_campaign=q3_2024)**",
+      "source_content_hash": "05c33cbb0e8afc389021e5f39ad8718b3047b8f3062ec260327e26528b1dcee6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Storybook、Playwright、Cypress向けのビジュアルテスト](https://www.chromatic.com/features/visual-test?utm_source=thisweekinreact\\&utm_medium=2nd_sponsor\\&utm_campaign=q3_2024)**"
+      }
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "Tired of broken layouts and janky UI slowing you down? Chromatic’s visual tests allow you to build with confidence. They catch bugs that functional tests miss, from misaligned elements to incorrect colors and z-index glitches.",
+      "source_content_hash": "3392dd8203803493ba4748c86ddb5d7d4ef33afab8135e30d70421c41eecedb8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "レイアウトの崩れやUIの不具合に悩まされていませんか？Chromaticのビジュアルテストなら、自信を持って開発を進められます。機能テストでは見逃されがちな要素の位置ずれ、色の誤り、z-indexの問題まで検出します。"
+      }
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "No need for separate test cases or configuration. Chromatic plugs into your existing setup for Storybook, Playwright, or Cypress to enable visual testing of your application's UI. All tests run in parallel — at no extra cost — powered by Chromatic’s lightning-fast Capture Cloud infrastructure.",
+      "source_content_hash": "3ec646e0d2e8dc526bf0c184d7fc5b7f93371430486bdd6186368d74d33448dc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "追加のテストケースや設定は不要です。Chromaticは既存のStorybook、Playwright、Cypress環境にシームレスに統合され、アプリケーションUIのビジュアルテストを可能にします。すべてのテストは並列実行され、Chromaticの高速なCapture Cloudインフラで処理されます（追加費用なし）。"
+      }
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "Setup takes just two minutes, and our base plan includes 5,000 free snapshots per month. [Get started today »](https://www.chromatic.com/features/visual-test?utm_source=thisweekinreact\\&utm_medium=2nd_sponsor\\&utm_campaign=q3_2024)",
+      "source_content_hash": "b6580271bd89d31f4bd29f47620163a06ef37f81cd1f280ba6b9dfc4bf8d0e5d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "セットアップはわずか2分、基本プランでは月5,000件の無料スナップショットが利用可能です。[今すぐ始める »](https://www.chromatic.com/features/visual-test?utm_source=thisweekinreact\\&utm_medium=2nd_sponsor\\&utm_campaign=q3_2024)"
+      }
+    },
+    {
+      "segment_id": "e9ae42a9",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "42a5832e",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "0e80209e",
+      "source_content": "**[React Native 0.75](https://reactnative.dev/blog/2024/08/12/release-0.75)**",
+      "source_content_hash": "090e892d50159a6b630849f53ab25aa931f61e3cc54dbad8d7160efa57247541",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[React Native 0.75](https://reactnative.dev/blog/2024/08/12/release-0.75)**"
+      }
+    },
+    {
+      "segment_id": "7bc8bb24",
+      "source_content": "This week marks the release of React Native 0.75, where the core team has reinforced their recommendation to use a React Native framework like Expo for building production-ready apps. Reflecting this shift, the `/template` folder has been removed from the core `react-native` package, and the `react-native init` command is set to be deprecated by the end of 2024, though both will still be accessible within the `@react-native-community` packages. Notably, this update brings significant improvements, including [enhanced performance during the auto-linking build phase](https://github.com/react-native-community/discussions-and-proposals/discussions/814) and the addition of [Yoga 3.1](https://www.yogalayout.dev/blog/announcing-yoga-3.1), which now supports the use of percentages for `gap`, `columnGap`, `rowGap`, and `translation` props when the new architecture is enabled. With these advancements, it's clear that adopting the new architecture is crucial for staying up to date with the latest features and stability improvements.",
+      "source_content_hash": "39c8e22ead10e9c4560b9de9c206c32facf77ace2c11a7033089f00e4fb8cd9d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週、React Native 0.75がリリースされました。コアチームは、本番環境対応のアプリ構築にはExpoなどのReact Nativeフレームワークの使用を強く推奨しています。この方針転換を受け、コアパッケージから`/template`フォルダが削除され、`react-native init`コマンドも2024年末までに非推奨化される予定です（ただし、`@react-native-community`パッケージ内では引き続き利用可能）。注目すべき改善点として、[自動リンクビルドフェーズのパフォーマンス向上](https://github.com/react-native-community/discussions-and-proposals/discussions/814)と[Yoga 3.1の導入](https://www.yogalayout.dev/blog/announcing-yoga-3.1)が挙げられます。Yoga 3.1では、新アーキテクチャ有効時に`gap`、`columnGap`、`rowGap`、`translation`プロパティでパーセンテージ値が使用可能になりました。これらの進化から、最新機能と安定性を享受するには新アーキテクチャの採用が不可欠であることが明らかです。"
+      }
+    },
+    {
+      "segment_id": "42bfcc5d",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "0422e2e2",
+      "source_content": "* 💸 [React Native Mastery - The only course you need to Master React Native & Expo](https://notjust.dev/react-native-mastery?utm_source=twir\\&utm_medium=email)\n* 👀 [React Native 0.76 will ship with a single merged dynamic library called libreactnative.so](https://github.com/react-native-community/discussions-and-proposals/discussions/816): This will reduce app size and startup time\n* 🐦 [Nitrogen, the new Codegen for NitroModules](https://x.com/mrousavy/status/1823796378860184044): Marc presents how Nitrogen generates swift specs that you can then implement without touching Objective-C & C++ code 👏\n* 🐦 [Types for react-native-web are now published on DefinitelyTyped](https://x.com/swmansion/status/1824379053836480771)\n* 🐦 [three.js running in RN thanks to react-native-webGPU](https://x.com/wcandillon/status/1825862686300672124)\n* 🐦 [expo-dom demo with React Three Fiber component](https://x.com/Baconbrix/status/1825128678683971733)\n* 🗓️ [React Universe Conf](https://www.reactuniverseconf.com/?utm_source=thisweekinreact) - 🇵🇱 Wrocław - Sept 5-6. Get a 10% discount with code \"TWIR\". Speakers: Evan Bacon, Marc Rousavy, Tzvetan Mikov, Oskar Kwaśniewski...\n* 📜 [React Native 0.75 is now available with Expo SDK 51](https://expo.dev/changelog/2024/08-14-react-native-0.75): No need to wait for SDK 52, take advantage of bug fixes, performance improvements, and the stabilization of the new architecture at a lower upgrade cost.\n* 📜 [Progressive Web Apps (PWAs): A stepping stone towards a native mobile application](https://www.thinkmill.com.au/blog/progressive-web-apps-pw-as-a-stepping-stone-towards-a-native-mobile-application): An up-to-date assessment of the trade-off between PWAs and native apps\n* 📦 [React Native Keyboard Controller v1.13](https://github.com/kirillzyusko/react-native-keyboard-controller/releases/tag/1.13.0): Adds support for Android modals and React Native 0.75\n* 📦 [Skip v1.0](https://skip.tools/blog/skip-1_0-release/): New cross-platform framework that allows developers to write native iOS apps in Swift and SwiftUI while automatically generating native Android code\n* 📦 [Shopify - Tophat is now open sourced](https://github.com/shopify/tophat)\n* 🎙️ [RNR 304 - React Navigation V7 with Satyajit Sahoo - React Navigation 7's new features, including the static API, improved deep linking, and enhanced TypeScript support](https://reactnativeradio.com/episodes/rnr-304-react-navigation-v7-with-satyajit-saho)\n* 🎥 [Jolly Coding - Expo Just Made Web-to-Native Migration Easier - expo-dom demo](https://www.youtube.com/watch?v=MKoZTAcVCJU)",
+      "source_content_hash": "d9298d97ded7baa0473edcb869ac97018b0dd9b563f8befc77b842d8909d7f42",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [React Native Mastery - React NativeとExpoをマスターする唯一のコース](https://notjust.dev/react-native-mastery?utm_source=twir\\&utm_medium=email)\n* 👀 [React Native 0.76では、libreactnative.soという単一の動的ライブラリが統合される予定](https://github.com/react-native-community/discussions-and-proposals/discussions/816): これによりアプリサイズと起動時間が削減されます\n* 🐦 [NitroModulesの新しいコードジェネレータ「Nitrogen」](https://x.com/mrousavy/status/1823796378860184044): Marc氏が、Objective-CやC++コードに触れることなく実装可能なSwift仕様を生成する方法を紹介 👏\n* 🐦 [react-native-webの型定義がDefinitelyTypedで公開されました](https://x.com/swmansion/status/1824379053836480771)\n* 🐦 [react-native-webGPUを使用してthree.jsがRN上で動作](https://x.com/wcandillon/status/1825862686300672124)\n* 🐦 [expo-domのデモ with React Three Fiberコンポーネント](https://x.com/Baconbrix/status/1825128678683971733)\n* 🗓️ [React Universe Conf](https://www.reactuniverseconf.com/?utm_source=thisweekinreact) - 🇵🇱 ヴロツワフ - 9月5-6日。コード「TWIR」で10%割引。スピーカー: Evan Bacon、Marc Rousavy、Tzvetan Mikov、Oskar Kwaśniewski...\n* 📜 [React Native 0.75がExpo SDK 51で利用可能に](https://expo.dev/changelog/2024/08-14-react-native-0.75): SDK 52を待つ必要なく、バグ修正やパフォーマンス改善、新アーキテクチャの安定化を低いアップグレードコストで活用可能\n* 📜 [プログレッシブウェブアプリ（PWA）: ネイティブモバイルアプリケーションへの足がかり](https://www.thinkmill.com.au/blog/progressive-web-apps-pw-as-a-stepping-stone-towards-a-native-mobile-application): PWAとネイティブアプリのトレードオフに関する最新の評価\n* 📦 [React Native Keyboard Controller v1.13](https://github.com/kirillzyusko/react-native-keyboard-controller/releases/tag/1.13.0): AndroidモーダルとReact Native 0.75のサポートを追加\n* 📦 [Skip v1.0リリース](https://skip.tools/blog/skip-1_0-release/): SwiftとSwiftUIでネイティブiOSアプリを開発しながら、自動的にネイティブAndroidコードを生成する新しいクロスプラットフォームフレームワーク\n* 📦 [Shopify - Tophatがオープンソース化](https://github.com/shopify/tophat)\n* 🎙️ [RNR 304 - React Navigation V7 with Satyajit Sahoo - 静的API、改善されたディープリンク、強化されたTypeScriptサポートなどReact Navigation 7の新機能](https://reactnativeradio.com/episodes/rnr-304-react-navigation-v7-with-satyajit-saho)\n* 🎥 [Jolly Coding - ExpoがWebからネイティブへの移行をさらに簡単に - expo-domデモ](https://www.youtube.com/watch?v=MKoZTAcVCJU)"
+      }
+    },
+    {
+      "segment_id": "714b728f",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "47cd8dd6",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "d30a9380",
+      "source_content": "* 📊 [State of CSS 2024 survey is out](https://survey.devographics.com/en-US/survey/state-of-css/2024)\n* 👀 [Chrome 129 will introduce two new Javascript Events - scrollSnapChange and scrollSnapChanging](https://developer.chrome.com/blog/scroll-snap-events?hl=en)\n* 👀 [ECMAScript Error Safe Assignment Operator proposal](https://github.com/arthurfiorette/proposal-safe-assignment-operator) - Inspired by functional programming concepts like monads and Rust's `Result` type, It aims to streamline error handling in JavaScript by returning a tuple `[error, result]` from functions.\n* 🐦 [Colin’s hack to filter keys from a TS interface:](https://x.com/colinhacks/status/1824052417820021173) Using Omit/Pick and a string template literal\n* 📜 [Branded Types in Typescript](https://www.learningtypescript.com/articles/branded-types): Branded types are key if you want to strengthen your type system. Prices are not just numbers, nor is an amount of time, so protect your functions by narrowing down the types you accept.\n* 📜 [Total TypeScript - Why I Don't Like Enums - Numeric vs String Enums, Nominal typing and other quirks.](https://www.totaltypescript.com/why-i-dont-like-typescript-enums)\n* 📜 [Syntax Highlighting in Hand-Coded Websites - Implement syntax highlighting using OpenType features directly within a font](https://blog.glyphdrawing.club/font-with-built-in-syntax-highlighting/)\n* 📜 [“Smart” Layouts With Container Queries - Comparison of container queries with traditional media queries](https://css-tricks.com/smart-layouts-with-container-queries/)\n* 📜 [Lessons learned switching to Rspack - challenges and benefits of migrating a SPA from webpack to Rspack](https://birtles.blog/2024/08/14/lessons-learned-switching-to-rspack/)\n* 📜 [Spatial compute - Let the network decide where in the world to run your code](https://sunilpai.dev/posts/spatial-compute/)\n* 📦 [Chrome 128 Devtools update - Console insights by Gemini, Performance & Network panels improvements](https://developer.chrome.com/blog/new-in-devtools-128?hl=en)\n* 📦 [Volta 2.0 The Hassle-Free JavaScript Tool Manager](https://github.com/volta-cli/volta/releases/tag/v2.0.0)\n* 🎥 [Lydia Hallie - JavaScript Visualized - Closures](https://www.youtube.com/watch?v=6Ixyltr8_R0)",
+      "source_content_hash": "2c87d81d563ea4677f4ac1d338e6db5e364e78a7be237e968445159ff6adf740",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📊 [State of CSS 2024 調査結果が公開されました](https://survey.devographics.com/en-US/survey/state-of-css/2024)\n* 👀 [Chrome 129 で2つの新しいJavaScriptイベント - scrollSnapChangeとscrollSnapChangingが導入されます](https://developer.chrome.com/blog/scroll-snap-events?hl=en)\n* 👀 [ECMAScript Error Safe Assignment Operator提案](https://github.com/arthurfiorette/proposal-safe-assignment-operator) - 関数型プログラミングの概念（モナド）やRustの`Result`型に触発され、関数からタプル`[error, result]`を返すことでJavaScriptのエラーハンドリングを簡素化することを目的としています。\n* 🐦 [ColinのTSインターフェースからキーをフィルタリングするハック:](https://x.com/colinhacks/status/1824052417820021173) Omit/Pickと文字列テンプレートリテラルを使用\n* 📜 [TypeScriptのBranded Types](https://www.learningtypescript.com/articles/branded-types): Branded Typesは型システムを強化するための鍵です。価格は単なる数字ではなく、時間の量でもないので、受け入れる型を絞り込むことで関数を保護します。\n* 📜 [Total TypeScript - なぜ私はEnumが好きではないのか - 数値Enum vs 文字列Enum、名義型付けとその他の癖](https://www.totaltypescript.com/why-i-dont-like-typescript-enums)\n* 📜 [手書きウェブサイトでのシンタックスハイライト - フォント内に直接OpenType機能を使用してシンタックスハイライトを実装](https://blog.glyphdrawing.club/font-with-built-in-syntax-highlighting/)\n* 📜 [「スマート」レイアウトとコンテナクエリ - コンテナクエリと従来のメディアクエリの比較](https://css-tricks.com/smart-layouts-with-container-queries/)\n* 📜 [Rspackへの移行で学んだこと - webpackからRspackへのSPA移行の課題と利点](https://birtles.blog/2024/08/14/lessons-learned-switching-to-rspack/)\n* 📜 [空間コンピューティング - ネットワークにコードを実行する場所を決定させる](https://sunilpai.dev/posts/spatial-compute/)\n* 📦 [Chrome 128 Devtoolsアップデート - Geminiによるコンソールインサイト、パフォーマンス＆ネットワークパネルの改善](https://developer.chrome.com/blog/new-in-devtools-128?hl=en)\n* 📦 [Volta 2.0 手間のかからないJavaScriptツールマネージャー](https://github.com/volta-cli/volta/releases/tag/v2.0.0)\n* 🎥 [Lydia Hallie - JavaScriptビジュアライズド - クロージャー](https://www.youtube.com/watch?v=6Ixyltr8_R0)"
+      }
+    },
+    {
+      "segment_id": "af4523c9",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "35353302",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "719d3997",
+      "source_content": "[![alt](/emails/issues/197/meme.jpg)](https://x.com/colinhacks/status/1823445912997515429)",
+      "source_content_hash": "bdb70525e372347f917760ef6452789849ff3d9bb15260fc0bd97c94d8e94c78",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/197/meme.jpg)](https://x.com/colinhacks/status/1823445912997515429)"
+      }
+    },
+    {
+      "segment_id": "42d9ca67",
+      "source_content": "[![alt](/emails/issues/197/meme2.jpg)](https://x.com/nativewindcss/status/1824558552972923122)",
+      "source_content_hash": "9e099b999f309fb9e901e1d70c8af1e1f8f996d6ba979317e5777bbd7b92db79",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/197/meme2.jpg)](https://x.com/nativewindcss/status/1824558552972923122)"
+      }
+    },
+    {
+      "segment_id": "619c3209",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "それでは！ 👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/197/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:40.559599+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "329874c07c5c6844d2b9befbef7e5d400d4bd48d41fffa690f9b0728dce1ff9f"
+  }
+}

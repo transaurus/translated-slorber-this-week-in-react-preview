@@ -1,0 +1,161 @@
+---
+slug: /193
+title: "This Week In React #193: State of React, Server Functions, next/form, useId, Astro, Meteor, Gluestack, React-Aria, Turbopack, Airbnb, Apollo, DRY, IDX, Bootsplash, Flash Calendar, CSS, ES, Poku..."
+authors: [slorber, bndkt]
+date: 07-24-2024
+---
+
+みなさん、こんにちは！
+
+今週、State of React調査の結果がついに公開され、興味深い洞察が満載です。
+
+Reactにおける抽象化に関する素晴らしい記事や、さまざまなReactおよびReact Native企業からのフィードバックやケーススタディを見つけました。
+
+AstroがServer Islandsをリリースし、Next.jsのPartial Prerenderingと競合するシンプルながら説得力のあるソリューションのように見えます。Vercelもこれに関する素晴らしい記事を公開しています。また、Meteorの復活が期待され、React Ariaのリリースや、Universal React Native開発者向けのGluestack-UI v2も注目です。
+
+TypeScriptやWeb開発ツールがお好きですか？[Squiggle Conf](https://2024.squiggleconf.com/?utm_source=thisweekinreact)（🇺🇸 ボストン - 10月3日＆4日）をチェックしてください。コード「TWIR」で10%オフです。すでに素晴らしいスピーカーが発表されています！
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアル形式 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![エンタープライズ向けカテゴリ定義Reactグリッド](/emails/issues/190/advertfinal.jpg)](https://1771technologies.com/graphitegrid)
+
+**[エンタープライズ向けカテゴリ定義Reactグリッド](https://1771technologies.com/graphitegrid)**
+
+データグリッドはWebアプリケーションの複雑なコンポーネントですが、現在のソリューションは非効率的で、多くのメンテナンスを必要とし、パフォーマンスも低いです。[Graphite Grid](https://1771technologies.com/graphitegrid)は、リターゲティング可能なレンダリングとリアクティブシグナル状態という2つの主要機能でこの状況を変えます。
+
+**Graphite Grid**はグリッドの状態とビューロジックを分離し、単一の統一された状態モデルがさまざまなレンダーターゲットを宣言的または命令的にサポートします。**DOMとCanvas**レンダラーを含み、開発者に柔軟で高性能なオプションを提供します🚀。
+
+Graphite Gridは宣言的で一貫性があり、状態シグナルを活用してアプリケーションとのシームレスな統合を保証します。**Reactを念頭に設計**されており、Reactの状態管理プリミティブで構築された唯一のJavaScriptデータグリッドです。[今すぐ試してみてください！](https://1771technologies.com/graphitegrid/demo)
+
+***
+
+## ⚛️ React {#react}
+
+[![State of React 2023 - 調査結果](/emails/issues/193/stateofreact.jpg)](https://2023.stateofreact.com/en-US)
+
+**[State of React 2023 - 調査結果](https://2023.stateofreact.com/)**
+
+初めてのState of React調査結果がついに公開されました。データは2023年11月に収集され、結果が公開されるまでに時間がかかりました。私たちが愛するフレームワークエコシステムのトレンドを分析するための素晴らしいツールです。そして、これらのトレンドがどのように進化するかを確認するために、来年はさらに良くなるでしょう。さっそく、私のお気に入りを紹介します：
+
+* [フックの採用は大きく成功している](https://x.com/JoshWComeau/status/1814292932461306239)
+* React Query、Zustand、Radix UI、React Aria、shadcn/ui、tRPC、Zodに対して非常にポジティブなシグナル
+* Reactフレームワークの明確な勝者なし。Next.jsが最も人気があるが、AstroやRemixよりも保持率がわずかに低い
+* Reactレンダラーの使用状況は、ReactがReact-DOMだけではないことを示している。30%以上がReact Nativeを使用し、9%がReact-Three-Fiberを使用している
+* [私のお気に入りの過小評価されているフックuseSyncExternalStore](https://thisweekinreact.com/articles/useSyncExternalStore-the-underrated-react-api)を使用したことがあるのはわずか7%
+* This Week In Reactは「ブログ＆マガジン」カテゴリで5番目に人気のあるリソースです（❤️️ ありがとう！）
+
+次回のState of React 2024調査は[2024年9月に実施予定](https://dev.to/sachagreif/planning-out-the-2024-state-of-surveys-4lb9)であり、今が調査設計に参加する絶好の機会です。
+
+***
+
+* 💸 [Reactile – ReactベースのWebアプリ向けの新しいアプローチ。独自のビューを作成し、単一のブラウザタブでウィンドウやウィジェットを管理](https://www.reactile.net/?utm_source=reactnewsletter)
+* 👀 [Next.js PR - next/form](https://github.com/vercel/next.js/pull/68102)
+* 🗓️ [React-Brussels](https://www.react.brussels/?utm_source=thisweekinreact) - 🇧🇪 ブリュッセル - 10月18日 - 一部のスピーカーが公開されました！今すぐチェックし、「TWIR」コードで10%割引を適用。
+* 📜 [Next.jsでのServer Actionsを使ったデータ取得](https://www.robinwieruch.de/next-server-actions-fetch-data/): React-Queryを使用してクライアントデータを取得するためにServer Actionsを利用できます。ただし、POSTリクエストを使用し、順次実行されるという制限があります。参考までに、トランジション外で呼び出される「use server」関数はServer Actionではなく、[Server Function](https://x.com/sebastienlorber/status/1816096442492051672)です。
+* 📜 [手動でIDを作成する代わりにuseId()を使用する](https://reacttraining.com/blog/use-useid-instead-of-hand-making-ids): IDはアクセシビリティに有用ですが、コンポーネントを2回マウントしたい場合やReactのハイドレーションを適切にサポートしたい場合は、手動で作成するのを避けるべきです。DOM要素にアクセスするには、`useRef`で十分です。
+* 📜 [UIコンポーネントにDTOを渡さない](https://darios.blog/posts/do-not-pass-dtos-to-ui-components): バックエンドのペイロードをそのままpropsとして使用するのではなく、コンポーネントのpropsの形状を独立して設計する理由を説明しています。
+* 📜 [DRY – 悪い抽象化の一般的な原因](https://swizec.com/blog/dry-the-common-source-of-bad-abstractions/): React開発者が誤った抽象化を作成してしまう可能性を非常にうまく説明しています。React UIライブラリは、過度な抽象化を避け、コンポジションを通じて優れた柔軟性を提供することを学んできました。
+* 📜 [Turbopackアップデート: 移転](https://vercel.com/blog/turbopack-moving-homes): TurbopackバンドラーはNext.jsリポジトリに移行します。同じ場所に配置されることで、チームがプロダクションビルド（現在92%準備完了！）の反復を迅速化できます。Turbopackはフレームワークに依存しないスタンドアロンバンドラーのままです：準備が整ったら、別のリポジトリに戻されます。
+* 📜 [Vercel - アプリに最適なレンダリング戦略の選び方](https://vercel.com/blog/how-to-choose-the-best-rendering-strategy-for-your-app): SSG、SSR、ISR、CSRといったすべてのレンダリング戦略、そのトレードオフ、ベストプラクティスの概要です。Partial Pre-Renderingはこれらの戦略の上に構築されます。Next.jsでServer ComponentsとSuspense境界を使用すると、各コンポーネントに最適なレンダリング戦略を選択できる将来性のあるアプリになります。
+* 📜 [AirbnbがReactをスムーズにアップグレードする方法](https://medium.com/airbnb-engineering/how-airbnb-smoothly-upgrades-react-b1d772a565fd): Airbnbは最近、フロントエンドをReact 16からReact 18にアップグレードしました。「React Upgrade System」を使用し、共有インフラストラクチャコードと段階的な移行およびロールアウト戦略に依存しています。
+* 📜 [細かい粒度のMarkdown](https://v1.codehike.org/blog/fine-grained-markdown): Code Hike（MDXベース）の作成者によるインタラクティブな記事で、Markdownを装飾し、タイプセーフな方法で拡張してよりリッチなメディアにする方法を示しています。
+* 📜 [useEffectでのデータ取得 vs Remix loader](https://www.jacobparis.com/content/use-effect-fetching)
+* 📜 [Next.jsとNew Relicの統合](https://www.thisdot.co/blog/integrating-next-js-with-new-relic)
+* 📜 [クリーン（な）Reactアーキテクチャ（パート8） - React-Queryはどのようにフィットするか？](https://profy.dev/article/react-architecture-tanstack-query)
+* 📜 [Zoom - Web上のリファレンスアプリ構築にT3スタックを選んだ理由](https://developers.zoom.us/blog/why-we-chose-to-build-with-the-t3-stack/)
+* 📦 [Astro 4.12 - Server Islands](https://astro.build/blog/astro-4120/): Astroは、サーバー上にプレースホルダーをレンダリングし、その後動的コンテンツと独立して置き換える新しいServer Islands機能をリリースしました。これにより、サイトの残りの部分を静的にレンダリングできます。これは、React Server Components + Suspense + Partial Pre-Renderingで解決を計画しているNext.jsモデルとは異なるアプローチです。彼らのデモはNext.js PPRのフォークで、それを上回るパフォーマンスです！
+* 📦 [Meteor.js 3.0](https://forums.meteor.com/t/its-official-meteor-3-0-official-release-is-out/61860): Meteorは、レガシーなFibersコルーチンを廃止し、async/awaitを採用、Node 20にアップグレードし、Expressを統合した新しいメジャーバージョンをリリースしました。この新バージョンは[Meteor.jsのルネサンス](http://meteor.js)と称され、7月29日からローンチイベントが開始されます。私はMeteorを使ったことがありませんが、現代のReactフレームワークと並んでどのような位置を占めるのか興味深いです。
+* 📦 [React Aria 7月22日リリース - React 19対応、仮想化の改善、トーストのフォーカス管理改善、Color Picker RC](https://react-spectrum.adobe.com/releases/2024-07-22.html)
+* 📦 [Apollo Client 3.11 - サブスクリプションの改善、React 19 + コンパイラサポート、新しいテストライブラリ、新しいDevtoolsオプション](https://www.apollographql.com/blog/whats-new-in-apollo-client-3-11)
+* 📦 [eslint-plugin-use-server - トップレベルの「use server」を禁止](https://github.com/c-ehrlich/eslint-plugin-use-server)
+* 🧩️ [Design GUI - CSS変数の色を管理するブラウザ拡張 - shadcn/uiサポート](https://www.designgui.io/)
+* 🎥 [React Summit 2024 - すべての講演が公開中](https://portal.gitnation.org/events/react-summit-2024)
+* 🎥 [dotJS 2024 - Malte Ubl、Mark Dalgleishらの講演を含むYouTubeプレイリスト](https://www.youtube.com/watch?v=9tx-dE8oBTY\&list=PLMW8Xq7bXrG7fOUOLJQw9I7ygJCbue9zO)
+* 🎥 [Sam Selikoff - 再帰的Reactコンポーネントの構築方法](https://www.youtube.com/watch?v=6UU2Ey4KZr8)
+* 🎥 [Web Dev Simplified - シニア開発者のようにReactアプリをデバッグする方法](https://www.youtube.com/watch?v=l8knG0BPr-o)
+* 🎙️ [Mark Eriksonと2024年にReduxを使うべき理由](https://podrocket.logrocket.com/redux-2024-mark-erikson)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![AuthKitをどのフレームワークでも利用可能](/emails/issues/193/authkit.jpg)](https://www.youtube.com/watch?v=237vaK_nYRg)
+
+**[AuthKitをどのフレームワークでも利用可能](https://www.youtube.com/watch?v=237vaK_nYRg)**
+
+Next.jsだけが第一級の統合を享受しているように感じられるかもしれませんが、AuthKit（WorkOS提供）はRadixコンポーネントで構築されたオープンソースの認証UIです。
+
+こちらの[チュートリアル](https://www.youtube.com/watch?v=237vaK_nYRg)では、**任意のJSフレームワークでAuthKitをセットアップ**する方法を30分で解説しています。
+
+* 🏗️ AuthKitは柔軟性が高く、高レベル統合と低レベルSDKの両方を提供
+* 🔐 WorkOSユーザー管理と連携可能（**100万MAUまで無料**）
+* ✨ ユーザーデータは完全に管理可能（有効なユーザーオブジェクトにはメールアドレスのみ必要）
+* ☄️ ロール/権限、MFA、ユーザー偽装防止、ボット対策など標準装備（100万MAU到達まで無料）
+
+***
+
+## 📱 React-Native {#react-native}
+
+このセクションは[Benedikt](https://twitter.com/bndkt)が執筆しています。
+
+[![Gluestack-UI v2](/emails/issues/193/gluestack.jpg)](https://gluestack.io/)
+
+**[Gluestack-UI v2 - Expo/Next向けユニバーサルコピー＆ペーストコンポーネント](https://gluestack.io/)**
+
+Gluestack-UIはReact/Next.js/React Native向けのユニバーサルコンポーネント＆パターンを提供します。最近リリースされたv2は、パフォーマンス最適化、依存関係削減、RSC互換性に焦点を当てたメジャーアップデートです。Tailwind CSS（Web用）とNativeWind（ネイティブ用）を基盤としており、コンポーネントをコピー＆ペーストで利用可能です。アップグレードには依存関係の更新以上の作業が必要ですが、チュートリアルとコード修正ツールが用意されています。v2の雰囲気を感じるために、🐦 [Xでトレーラー](https://x.com/gluestack/status/1813895494005112859)も公開されています。
+
+***
+
+* 💸 [Sentry - React Native、Expo、Hermesなどあらゆる技術をサポートするアプリケーションモニタリングツール（一部を除く）。400万人の開発者から「悪くない」と評価されています。Sentryを無料で試す](https://sentry.io/welcome/?utm_medium=email\&utm_source=THIS_WEEK_IN_REACT\&utm_campaign=TWIR_july_2024\&utm_content=rn-quick-link)
+* 🐦 [新しい実験的なexpo-doctor機能が、reactnative.directoryのメタデータに対してプロジェクトの依存関係を検証](https://x.com/notbrent/status/1814016564452315374): メンテナンスが停止されているライブラリやNew Archをサポートしていないライブラリを使用している場合に通知します。
+* 🐦 [Expoドキュメントの新着更新](https://x.com/amanhimself/status/1815460518515118266): SSO、Metroバンドラーのエイリアス、expo-drizzle-studio-plugin
+* 🐦 [Google IDX（ウェブベースのIDE）がReact Native / Expoをサポート](https://x.com/kirupa/status/1813690012720120225)
+* 🐦 [+native-intentを使用したサードパーティのディープリンクとのリンクリダイレクトと活用方法を学ぶ](https://x.com/expo/status/1814274913030520874)
+* 📜 [Flash Calendarで高速かつ柔軟なカレンダーを構築](https://expo.dev/blog/build-fast-flexible-calendars-in-react-native-with-flash-calendar): 日付ピッカーの構築は難しく、パフォーマンスを向上させるのはさらに困難です - Flash Calendarはこれを解決し、非常にカスタマイズ可能です。
+* 📜 [マルチプラットフォームのオンコールモバイルアプリの構築](https://incident.io/hubs/building-on-call/building-a-multi-platform-on-call-mobile-app): incident.ioからのケーススタディ
+* 📜 [イノベーションを推進: MyWheelsのRNC CLIからExpoへの移行の旅](https://expo.dev/blog/from-rnc-cli-to-expo)
+* 📦 [Bootsplash 6.0 - Expo Config Pluginをサポート](https://github.com/zoontek/react-native-bootsplash/releases/tag/6.0.0)
+* 📦 [React Native 0.75 rc.6](https://github.com/facebook/react-native/releases/tag/v0.75.0-rc.6)
+* 📦 [React Native向けTinyBaseの例](https://github.com/expo/examples/tree/master/with-tinybase): ローカルファーストアプリ構築の優れたスターター
+* 🎥 [Harry Tormey - Coinbaseの5600万ユーザーをReact Nativeに移行: 主要な教訓と要点](https://stepchange.work/blog/migrating-coinbases-56-million-users-to-react-native-key-lessons-and-takeaways)
+* 🎥 [Simon Grimm - 知っておくべき10のExpo Routerのヒント](https://www.youtube.com/watch?v=1hD1ZClxpfc)
+* 🎥 [Daniel Friyia - Expo、Skia、Reanimatedを使ったゲーム開発入門](https://www.youtube.com/watch?v=Af2-OT9mE14)
+* 🎥 [Reactiive - アニメーションスタックカード - interpolate関数の探求](https://www.youtube.com/watch?v=8_hvNoZJsc8)
+
+***
+
+## 🔀 Other {#other}
+
+* 👀 [新しいCSS Editor's Draft - Functions and Mixins Module](https://drafts.csswg.org/css-mixins/)
+* 📣 [CSS font-size-adjustがBaselineに追加](https://web.dev/blog/font-size-adjust)
+* 📜 [ECMAScript 2024におけるJavaScript開発者向けの新機能](https://thenewstack.io/whats-new-for-javascript-developers-in-ecmascript-2024/)
+* 📜 [TypeScript開発者から見たZig](https://effectivetypescript.com/2024/07/17/advent2023-zig/)
+* 📜 [@propertyを使用した型付きCSS変数](https://css-tip.com/typed-variables/)
+* 📜 [invokersの更新: HTMLにおけるInvokerコマンド](https://utilitybend.com/blog/an-update-on-invokers-invoker-commands-in-html)
+* 📜 [CSSの新機能: 相対色](https://www.stefanjudis.com/notes/new-in-css-relative-colors/)
+* 📜 [Nodeで新しいプロセスを生成するのがなぜこんなに遅いのか？](https://blog.val.town/blog/node-spawn-performance/)
+* 📦 [Poku - Node.js、Bun、Deno向けのクロスプラットフォームテストランナー](https://github.com/wellwelwel/poku)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/193/meme.jpg)](https://x.com/vinceflibustier/status/1814233715641389456)
+
+[![alt](/emails/issues/193/meme2.jpg)](https://x.com/birch_js/status/1815299684728201400)
+
+それでは！👋

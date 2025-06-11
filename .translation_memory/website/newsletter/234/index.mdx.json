@@ -1,0 +1,480 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/234/index.mdx",
+  "source_file_content_hash": "8437df171ca52bf510db9c25f08fa5cec4f8c2a7a58267db96cf772d9e51b415",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /234\ntitle: \"This Week In React #234: TanStack DB, TanStack Query, React Router, Vite, Redux Toolkit, Parcel | 0.80 RC, Expo, Legal, Re.Pack, Skia, Radon IDE, Rive | Rslib, Composites, Lightning CSS, Accessibility, V8\"\nauthors: [tboba, kacperkapusciak]\ndate: 05-14-2025\n---",
+      "source_content_hash": "75f0ce2d7b22f79fb29a512aa8872a3d244ddf38c074f0405a6f15afbdfa5827",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "**Kacper and Tymek from [Software Mansion](https://swmansion.com/?utm_source=thisweekinreact)** here 👋.",
+      "source_content_hash": "ad89fdf8ea7f4052430e09f68adb193c715c7a3716ee0c5c1df0dfe805c0098b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Software Mansion](https://swmansion.com/?utm_source=thisweekinreact)のKacperとTymek**です 👋。"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "With a slightly quieter week, we come mostly with great articles we think you might like, alongside a few interesting releases! We're so excited about the Vite team working on RSC support, a new React Query proposal, in conjunction with the features coming in React Native 0.80, but there are still many new topics here to look at.",
+      "source_content_hash": "f59c644ae1ed2bcdcaf934eb405f64bc5e7c5abb69a632e2ad3905accfd54c98",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週は比較的落ち着いた週でしたが、皆さんに気に入っていただけるような素晴らしい記事や興味深いリリースをご紹介します！ViteチームがRSCサポートに取り組んでいることや、新しいReact Queryの提案、React Native 0.80で導入される機能など、興奮するような話題が盛りだくさんです。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Let's dive in!",
+      "source_content_hash": "cc45dfce1fed2b9287eef463445c6df3e0386807de86fe31ec69cd1fa09e8d11",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "さっそく見ていきましょう！"
+      }
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6429a3aa"
+      }
+    },
+    {
+      "segment_id": "6c991806",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6c991806"
+      }
+    },
+    {
+      "segment_id": "8f488ab5",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_8f488ab5"
+      }
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "[![This is why you're not shipping](/emails/issues/234/posthog.jpg)](https://go.posthog.com/twir-may14)",
+      "source_content_hash": "6c921bca3c9d705b80a4f47c9e638ec4b6c62a191d0bf753d777bc2c572c6181",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![This is why you're not shipping](/emails/issues/234/posthog.jpg)](https://go.posthog.com/twir-may14)"
+      }
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "**[This is why you're not shipping](https://go.posthog.com/twir-may14)**",
+      "source_content_hash": "61cf5838137d4643b5072faa745c068bab3a4e318c755a60ac491804409c9c85",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[This is why you're not shipping](https://go.posthog.com/twir-may14)**"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "Some red flags [PostHog](https://go.posthog.com/twir-may14-ph) has found in teams failing to ship fast: waiting for 1:1s to solve problems, needing other teams to approve your work, and sales outnumbering engineering 🚩",
+      "source_content_hash": "b1bf267a541e173be2ea7b603a29fd1c948dddc7bbc2d73bd0bc82fa90531b1e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[PostHog](https://go.posthog.com/twir-may14-ph)が、製品を迅速にリリースできないチームに見られる赤旗を発見しました：1対1のミーティングで問題を解決するのを待つこと、他のチームの承認が必要なこと、エンジニアよりも営業の数が多いことなど 🚩"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "Learn how to identify and fix each of these (and more) in [the latest edition of their Product for Engineers newsletter](https://go.posthog.com/twir-may14) 💪",
+      "source_content_hash": "47f5db38cb1faf3bee712fa4d43829f52039b4c4a21670908403793659ab2acc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "これらの問題（およびその他）を特定して修正する方法を、[最新版のProduct for Engineersニュースレター](https://go.posthog.com/twir-may14)で学びましょう 💪"
+      }
+    },
+    {
+      "segment_id": "f1a2a0d3",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "109ace10",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "[![TanStackDB](/emails/issues/234/tanstackdb.jpg)](https://github.com/TanStack/db)",
+      "source_content_hash": "42445f8d76bb5b325b0b3e0be90526c7428feb66e46f22c105858d0ccb250658",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![TanStackDB](/emails/issues/234/tanstackdb.jpg)](https://github.com/TanStack/db)"
+      }
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "**[TanStack DB](https://github.com/TanStack/db)**",
+      "source_content_hash": "9b45715e0ec9e08497c623ad436f362784d4aa3b20e90a322dafdfba389a8fcb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[TanStack DB](https://github.com/TanStack/db)**"
+      }
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "A brand-new library from the TanStack team has been introduced in collaboration with ElectricSQL, which brings a lot of exciting features. It gives you a blazing fast query engine, fine-grained reactivity for minimal re-renders, robust transaction primitives and normalized data by default!",
+      "source_content_hash": "601abacc86f16d9222ce32c8975359e04a9b8a181b0122119b04c6769561490a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "TanStackチームからElectricSQLとのコラボレーションにより、新しいライブラリが発表されました。これは、高速なクエリエンジン、最小限の再レンダリングを実現する細かいリアクティビティ、堅牢なトランザクションプリミティブ、デフォルトでの正規化されたデータなど、多くの魅力的な機能を提供します。"
+      }
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "It is built on TanStack Store and is working with and alongside TanStack Query, which extends its capabilities with collections, live queries and optimistic mutations.",
+      "source_content_hash": "f354bda4a07810ac978893805fdd5c2baf8da0aaf8c893a1c5d20a71db7e3a00",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このライブラリはTanStack Storeを基盤として構築されており、TanStack Queryと連携して動作します。これにより、コレクション、ライブクエリ、楽観的ミューテーションなどの機能が拡張されます。"
+      }
+    },
+    {
+      "segment_id": "06784e79",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "cef3cb03",
+      "source_content": "* 💸 [Build professional design system in less than a day, using Hope AI, new model by Bit.Cloud](https://bit.cloud/solutions/design-systems?utm_source=ThisWeekInReact\\&campaign=DesignSystem)\n* 👀 [React PR - Integrate React RSC with Vite](https://github.com/facebook/react/pull/33152): An implementation of React Server Components support in Vite. There used to be a community proposal in the past but this time it's coming officially from the Vite team.\n* 👀 [React Query RFC - Unified Imperative Query Methods](https://github.com/TanStack/query/discussions/9135): As the API of TanStack Query grows, the creators proposed to reduce the number of six functions with similar functionality to two unique methods - `query()` and `infiniteQuery()`.\n* 📜 [Static as a Server](https://overreacted.io/static-as-a-server/): Dan draws parallels between the Astro and built-time React Server Components for creating static sites without a server.\n* 📜 [React Hook Factory - how to create custom hooks programmatically](https://tylur.blog/react-hook-factory/): A clever pattern to reduce boilerplate when setting up a new React Context.\n* 📜 [No, react context is not causing too many renders](https://blacksheepcode.com/posts/no_react_context_is_not_causing_too_many_renders): Argues that using React context is fine, and re-render problems are more likely related to large context values and controlled components.\n* 📜 [Dependency Inversion in React: Building Truly Testable Components](https://cekrem.github.io/posts/dependency-inversion-in-react/): Implementing the SOLID principle by passing dependencies as props.\n* 📜 [Using OpenAuth with React Router](https://seanpaulcampbell.com/blog/openauth-react-router/): Comprehensive 2-part tutorial explaining how to implement authentication using React Router, OpenAuth and deploying on AWS with SST.\n* 📜 [Client-Side React Rocks](https://marmelab.com/blog/2025/05/09/client-side-react-rocks.html): On the example of tabular layout, the author argues client-side React features like `useContext` and `createPortal` provide better DX than Server Components.\n* 📜 [The Limits of RSC: A Practitioner's Journey](https://www.nirtamir.com/articles/the-limits-of-rsc-a-practitioners-journey): Nir tried to implement infinite scrolling UI using Server Components, but ran into a wall. Spoiler: He used React Query instead.\n* 📜 [How to Build a Custom React Renderer](https://blog.swmansion.com/how-to-build-a-custom-react-renderer-595dc4a9cb1c): Using the `react-reconciler` package to build a video composition software.\n* 📜 [Patterns for state management with actors in React with XState](https://www.typeonce.dev/article/patterns-for-state-management-with-actors-in-react-with-xstate)\n* 📜 [How To Integrate React Query With AG Grid?](https://scientyficworld.org/how-to-integrate-react-query-with-ag-grid/)\n* 📦 [React Router 7.6 - new `routeDiscovery` option](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v760): New config option introduced granting more control over the Lazy Route Discovery feature.\n* 📦 [Redux Toolkit 2.8 - Infinite Query Page Params, RN compatibility](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.8.0)\n* 📦 [Parcel 2.15 - New HTML and SVG to JSX transformer](https://parceljs.org/blog/v2-15-0/)\n* 📦 [eslint-plugin-react-you-might-not-need-an-effect](https://github.com/NickvanDyke/eslint-plugin-react-you-might-not-need-an-effect)\n* 🎥 [Jack Herrington - Server Functions Don't Exist (It Matters)](https://www.youtube.com/watch?v=FPJvlhee04E)\n* 🎥 [Lee Robinson - Multi-tenant SaaS apps with Next.js and Vercel](https://www.youtube.com/watch?v=vVYlCnNjEWA)\n* 🎥 [Epic Web Conf 2025 - Talks are online](https://www.epicweb.dev/talks)\n* 🎙️ [PodRocket 563 - JSX over the wire with Dan Abramov](https://podrocket.logrocket.com/jsx-over-the-wire-dan-abramov)\n* 🎙️ [Syntax.fm 901 - New React & Svelte APIs, RSC Updates, Redwood and Storybook](https://syntax.fm/show/901/js-news-new-react-and-svelte-apis-rsc-updates-redwood-and-storybook)",
+      "source_content_hash": "7cfac1cacd1ddaff4396192e1e11d307ff929525a901cdb8472d3095a0c4c29c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {}
+    },
+    {
+      "segment_id": "4b067dc3",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_4b067dc3"
+      }
+    },
+    {
+      "segment_id": "3fa01396",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "b1cbdb65",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "afa378f7",
+      "source_content": "[![Introducing Clerk Billing](/emails/issues/234/clerk.jpg)](https://go.clerk.com/LphCouG)",
+      "source_content_hash": "a0a3e549dcf6b402356e16f6ff1309eb17e247e41ce1bcad6bff6d5282976c88",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Clerk Billingのご紹介](/emails/issues/234/clerk.jpg)](https://go.clerk.com/LphCouG)"
+      }
+    },
+    {
+      "segment_id": "e8e162a9",
+      "source_content": "**[Introducing Clerk Billing](https://go.clerk.com/LphCouG)**",
+      "source_content_hash": "10130a27d7bc03ffb723b7cc99d4b76d491f2543c818c9dddae452088ee74045",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Clerk Billingのご紹介](https://go.clerk.com/LphCouG)**"
+      }
+    },
+    {
+      "segment_id": "463ed165",
+      "source_content": "Set up subscriptions in your B2B or B2C app without writing custom payment code or building your own UI.",
+      "source_content_hash": "d7462983ef0beaf66e4e5b184f8923f8b089be59bcec6c862f9c04a58767ba54",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "カスタムの支払いコードを書いたり、独自のUIを構築することなく、B2BまたはB2Cアプリでサブスクリプションを設定できます。"
+      }
+    },
+    {
+      "segment_id": "536b7b6b",
+      "source_content": "* Create a pricing page with the `<PricingTable />` component\n* Connect with Stripe—no manual API calls, no manual syncing\n* Manage plans and entitlements all within the Clerk dashboard\n* `has()` helper to control access based on a customer’s plan, features, and permissions\n* Manage user and subscription data all in one place",
+      "source_content_hash": "df3e8520bbd5bfbf4d4b1eff337adf8c628d6639e5921606f339ced2ced6bafa",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* `<PricingTable />`コンポーネントで価格ページを作成\n* Stripeと接続—手動のAPI呼び出しや同期は不要\n* Clerkダッシュボード内でプランと権限を管理\n* 顧客のプラン、機能、権限に基づいてアクセスを制御する`has()`ヘルパー\n* ユーザーとサブスクリプションデータを一元管理"
+      }
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "Enable Billing, drop in `<PricingTable/>` on your `/pricing` page and [start monetizing your application](https://go.clerk.com/LphCouG).",
+      "source_content_hash": "7f02e72558747fe838a9adac875c28ffd2009d177acdca4086b5fa3665a76b9e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Billingを有効にし、`<PricingTable/>`を`/pricing`ページに配置して、[アプリケーションの収益化を開始](https://go.clerk.com/LphCouG)しましょう。"
+      }
+    },
+    {
+      "segment_id": "c9716ede",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "39db08de",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "785750ac",
+      "source_content": "[![MS Office uses React Native](/emails/issues/234/microsoft-uses-react-native.png)](https://devblogs.microsoft.com/react-native/2025-05-09-office-modernize/)",
+      "source_content_hash": "cc8ea992d4454a722fe4a95e23d3192a045b130fd14fe5f85a6e996108da59e7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![MS OfficeがReact Nativeを使用](/emails/issues/234/microsoft-uses-react-native.png)](https://devblogs.microsoft.com/react-native/2025-05-09-office-modernize/)"
+      }
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "**[How Office Is Modernizing Their App Suite's UI using Windows App SDK and React Native](https://devblogs.microsoft.com/react-native/2025-05-09-office-modernize/)**",
+      "source_content_hash": "a06c53382a3ab466428b9e49bd1b28e02b986b4c11c45cddb792971eb286e0e7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[OfficeがWindows App SDKとReact Nativeを使用してアプリスイートのUIを近代化する方法](https://devblogs.microsoft.com/react-native/2025-05-09-office-modernize/)**"
+      }
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "Chiara Mooney from Microsoft described how they use React Native to implement the newest Copilot features in their flagship MS Office suite used **by 600 million people**.",
+      "source_content_hash": "e2634a7e05b2b6b25b6b79369a0e2f539106db5e0040c202ab0cf0fc9561f68a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "MicrosoftのChiara Mooney氏は、**6億人**が利用するMS Officeスイートで最新のCopilot機能を実装するためにReact Nativeをどのように使用しているかを説明しました。"
+      }
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "They are using it with the island architecture, a pattern embraced in the frontend ecosystem by frameworks such as Astro.",
+      "source_content_hash": "af5b5f36ae5c2c2c8a681763f1ddd90555570a111b3b635aabcb6c407f3edbcb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "彼らは、Astroなどのフレームワークで採用されている「アイランドアーキテクチャ」というパターンを使用しています。"
+      }
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "Interesting to see how RN is used at the highest enterprise level on platforms which aren't just Android or iOS.",
+      "source_content_hash": "4c1f2fcc40e4775fecea3d2ab4ccb0b9ae507d3fcbccead1196efef1ac8d9a97",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React NativeがAndroidやiOS以外のプラットフォームでも、最高レベルのエンタープライズ環境で使用されているのは興味深いことです。"
+      }
+    },
+    {
+      "segment_id": "e9ae42a9",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "f6db2c30",
+      "source_content": "* 💸 [WithFrame - Pre-Built React Native Templates](https://withfra.me)\n* 🐦 [mrdoob - Honest question, why would anyone use Flutter instead of React Native?](https://x.com/mrdoob/status/1920861880911884771): Horizon broadening conversation between React Native and Flutter devs started by the Three.js creator.\n* 🗓 [React Universe Conf](https://www.reactuniverseconf.com/?utm_campaign=RUC2025\\&utm_source=TWIRpartnership\\&utm_content=savethedate) - 🇵🇱 Wrocław - 2-4 September. Star speakers announced! Get a 10% discount with code \"TWIR\".\n* 📜 [Expo - Faster local dev with build cache providers (Experimental)](https://expo.dev/blog/build-cache-providers-in-expo): Use remote build caching to avoid recompiling the same code twice and ship faster.\n* 📜 [Nightmare on Apple Street](https://byk.im/posts/apple-code-signing-x-platform/): Publishing your app to the App Store from the Linux could be a nightmare. Before you start trying it on your own, learn what are the hops and obstacles of pushing an iOS app from a Linux machine.\n* 📦 [React Native 0.80 RC.1](https://github.com/facebook/react-native/releases/tag/v0.80.0-rc.1): The upcoming version of React Native is now in RC. TypeScript improvements with new [Strict API](https://github.com/react-native-community/discussions-and-proposals/blob/main/proposals/0894-deprecate-subpath-imports.md#parallel-effort-strict-typescript-api), support of radial gradient, React 19.1.\n* 📦 [React Native Legal - Zero-Config OSS License Screens for Your App](https://www.callstack.com/blog/react-native-legal-acknowledge-open-source-libraries-in-your-app): The Callstack team introducing their recent zero-config, cross-platform library, that handles license metadata generation and in-app display for you.\n* 📦 [Re.Pack 5.1 - Preloading Remotes, Runtime Hooks, and Faster Startups](https://www.callstack.com/blog/new-in-re-pack-5-1): The release mainly focuses on a better Module Federation 2 support.\n* 📦 [TanStack Query 5.76 - DevTools for Expo/React Native](https://github.com/TanStack/query/releases/tag/v5.76.0)\n* 📦 [Radon IDE 1.6 - React Profiler integration, conditional & expression breakpoints, ​Expo SDK 53](https://github.com/software-mansion/radon-ide/releases/tag/v1.6.0)\n* 📦 [React Native Skia 2.0 - React 19 and React Native 0.78 minimum are required](https://github.com/Shopify/react-native-skia/releases/tag/v2.0.0)\n* 📦 [Rive React Native 9.3 - Data Binding support, new useRive() hook, simpler .riv file loading](https://github.com/rive-app/rive-react-native/releases/tag/v9.3.0)\n* 🎥 [Simon Grimm - React Native AI Apps can't get easier (Expo & Vercel AI SDK)](https://www.youtube.com/watch?v=W9bbVJwCyqo)\n* 🎙️ [React Native Radio 331 - New Architecture, New Era with Riccardo Cipolleschi](https://infinite.red/react-native-radio/rnr-331-new-architecture-new-era-with-riccardo-cipolleschi)\n* 🎙️ [Rocket Ship 68 - Expo SDK 53 Highlights, React Native AI, Worklets & No Apple App Store Commissions](https://podcast.galaxies.dev/episodes/068-expo-sdk-53-highlights-react-native-ai-worklets-no-apple-app-store-commissions)",
+      "source_content_hash": "98c6fb50bc6b3db7b0dfdd804468687c4a48141b7aea329a84db8e27494ca5a3",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [WithFrame - プリビルドされたReact Nativeテンプレート](https://withfra.me)\n* 🐦 [mrdoob - 率直な質問ですが、なぜFlutterではなくReact Nativeを使うのですか？](https://x.com/mrdoob/status/1920861880911884771): Three.jsの作者が始めたReact NativeとFlutter開発者間の視野を広げる議論。\n* 🗓 [React Universe Conf](https://www.reactuniverseconf.com/?utm_campaign=RUC2025\\&utm_source=TWIRpartnership\\&utm_content=savethedate) - 🇵🇱 ヴロツワフ - 9月2-4日。スタースピーカー発表！「TWIR」コードで10%オフ。\n* 📜 [Expo - ビルドキャッシュプロバイダーによる高速なローカル開発（実験的）](https://expo.dev/blog/build-cache-providers-in-expo): リモートビルドキャッシュを使用して同じコードの再コンパイルを回避し、迅速にリリース。\n* 📜 [Apple Streetの悪夢](https://byk.im/posts/apple-code-signing-x-platform/): LinuxからApp Storeにアプリを公開するのは悪夢かもしれません。独自に試す前に、LinuxマシンからiOSアプリを公開する際の障害について学びましょう。\n* 📦 [React Native 0.80 RC.1](https://github.com/facebook/react-native/releases/tag/v0.80.0-rc.1): 次のバージョンのReact NativeがRCに。[Strict API](https://github.com/react-native-community/discussions-and-proposals/blob/main/proposals/0894-deprecate-subpath-imports.md#parallel-effort-strict-typescript-api)によるTypeScriptの改善、放射状グラデーションのサポート、React 19.1対応。\n* 📦 [React Native Legal - アプリ内OSSライセンス表示のゼロコンフィグソリューション](https://www.callstack.com/blog/react-native-legal-acknowledge-open-source-libraries-in-your-app): Callstackチームが提供する、ライセンスメタデータ生成とアプリ内表示を自動化するクロスプラットフォームライブラリ。\n* 📦 [Re.Pack 5.1 - リモートプリロード、ランタイムフック、高速起動](https://www.callstack.com/blog/new-in-re-pack-5-1): 主にModule Federation 2のサポート強化に焦点。\n* 📦 [TanStack Query 5.76 - Expo/React Native向けDevTools](https://github.com/TanStack/query/releases/tag/v5.76.0)\n* 📦 [Radon IDE 1.6 - React Profiler統合、条件付きブレークポイント、Expo SDK 53対応](https://github.com/software-mansion/radon-ide/releases/tag/v1.6.0)\n* 📦 [React Native Skia 2.0 - React 19とReact Native 0.78以上が必須](https://github.com/Shopify/react-native-skia/releases/tag/v2.0.0)\n* 📦 [Rive React Native 9.3 - データバインディングサポート、新しいuseRive()フック、.rivファイル読み込み簡素化](https://github.com/rive-app/rive-react-native/releases/tag/v9.3.0)\n* 🎥 [Simon Grimm - React Native AIアプリがこれ以上簡単にならない（Expo & Vercel AI SDK）](https://www.youtube.com/watch?v=W9bbVJwCyqo)\n* 🎙️ [React Native Radio 331 - Riccardo Cipolleschiと語る新アーキテクチャと新時代](https://infinite.red/react-native-radio/rnr-331-new-architecture-new-era-with-riccardo-cipolleschi)\n* 🎙️ [Rocket Ship 68 - Expo SDK 53ハイライト、React Native AI、Worklets、Apple App Store手数料廃止](https://podcast.galaxies.dev/episodes/068-expo-sdk-53-highlights-react-native-ai-worklets-no-apple-app-store-commissions)"
+      }
+    },
+    {
+      "segment_id": "862bb4be",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "ed644f52",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "40a587f3",
+      "source_content": "* 🎥 [Matt Pocock - Arrays, objects... now `composites`?](https://www.youtube.com/watch?v=hFenspfGLTk): The exciting JS proposal that replaces Records and Tuples.\n* 📜 [Introducing Rslib: Build library with Rspack](https://lib.rsbuild.dev/blog/introducing-rslib): Developed by ByteDance Web Infra Team, Rslib is a library that aims to be an ideal library development tool that is easy to configure, offers comprehensive features, leverages a shared ecosystem with application building, and prioritizes performance.\n* 📜 [shape(): A New Powerful Drawing Syntax in CSS](https://frontendmasters.com/blog/shape-a-new-powerful-drawing-syntax-in-css/): A new function of clip-path is now supported, which lets you to clip your element using arbitrary and responsive shapes.\n* 📜 [The CSS Height Enigma](https://www.joshwcomeau.com/css/height-enigma/)\n* 📜 [How V8 JavaScript Engine Works Behind the Scenes](https://www.deepintodev.com/blog/how-v8-javascript-engine-works-behind-the-scenes)\n* 📜 [The Art of Accessibility](https://playfulprogramming.com/collections/art-of-accessibility)\n* 📜 [Making a new form control - with Custom Elements](https://plainvanillaweb.com/blog/articles/2025-05-09-form-control/)\n* 📦 [Lightning CSS 1.30 - Relative color spec, nesting spec for pseudo elements, build support on Android, and more](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.30.0)",
+      "source_content_hash": "c516839d222c96b36cf1a394611679e2a387bc849f7e8584b52485d98f95dd14",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 🎥 [Matt Pocock - 配列、オブジェクト...そして今 `composites`?](https://www.youtube.com/watch?v=hFenspfGLTk): RecordsとTuplesを置き換えるエキサイティングなJS提案。\n* 📜 [Rslibの紹介: Rspackでライブラリをビルド](https://lib.rsbuild.dev/blog/introducing-rslib): ByteDance Web Infra Teamによって開発されたRslibは、設定が簡単で包括的な機能を備え、アプリケーションビルドと共有エコシステムを活用し、パフォーマンスを優先する理想的なライブラリ開発ツールを目指しています。\n* 📜 [shape(): CSSの新しい強力な描画構文](https://frontendmasters.com/blog/shape-a-new-powerful-drawing-syntax-in-css/): clip-pathの新しい関数がサポートされ、任意のレスポンシブな形状で要素をクリップできるようになりました。\n* 📜 [CSSの高さの謎](https://www.joshwcomeau.com/css/height-enigma/)\n* 📜 [V8 JavaScriptエンジンの舞台裏](https://www.deepintodev.com/blog/how-v8-javascript-engine-works-behind-the-scenes)\n* 📜 [アクセシビリティの芸術](https://playfulprogramming.com/collections/art-of-accessibility)\n* 📜 [Custom Elementsを使った新しいフォームコントロールの作成](https://plainvanillaweb.com/blog/articles/2025-05-09-form-control/)\n* 📦 [Lightning CSS 1.30 - 相対色仕様、疑似要素のネスト仕様、Androidでのビルドサポートなど](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.30.0)"
+      }
+    },
+    {
+      "segment_id": "f1a2be1a",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "13292277",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "e478ec2c",
+      "source_content": "[![alt](/emails/issues/234/meme.png)](https://x.com/adamwathan/status/1922002165884682690)",
+      "source_content_hash": "b768e783bfea108f5eb3aba9a08a3d307db1836efe9c01138d2ec7be1d4d1eb6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/234/meme.png)](https://x.com/adamwathan/status/1922002165884682690)"
+      }
+    },
+    {
+      "segment_id": "534ac82e",
+      "source_content": "[![alt](/emails/issues/234/meme2.png)](https://x.com/Baconbrix/status/1922134704330854557)",
+      "source_content_hash": "70b2f9ac79b5759f4cd30a3768c5507c84a6b589dca7168c9c29adab34ffd401",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/234/meme2.png)](https://x.com/Baconbrix/status/1922134704330854557)"
+      }
+    },
+    {
+      "segment_id": "a9c2a503",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "またね！ 👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/234/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:39.264093+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "8437df171ca52bf510db9c25f08fa5cec4f8c2a7a58267db96cf772d9e51b415"
+  }
+}

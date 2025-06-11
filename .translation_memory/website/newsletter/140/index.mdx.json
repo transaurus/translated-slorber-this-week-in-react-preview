@@ -1,0 +1,572 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/140/index.mdx",
+  "source_file_content_hash": "6476e0ee062db010e68b3c6cecfc157e022327916cfcc7dc7fc0692ca488e90c",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /140\ntitle: \"This Week In React #140: React Labs, Server Components, Next.js, Remix, Storybook, Astro, refs, Ark, Impala, Docusaurus, Expo-Blur, WebView, AsyncContext...\"\nauthors: [slorber]\ndate: 04-04-2023\n---",
+      "source_content_hash": "12e9ca126b6eb8105dc2cfdce0f2962cd20b40e488f7e8ddadacca99366ecacf",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "I'm just back from vacations: we catch up with 2 weeks of news!",
+      "source_content_hash": "e806ea7c2bbe3257595a362caf39f42107c02fb4022acd58809621f1128ceb9b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "休暇から戻りました。2週間分のニュースをお届けします！"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "A new React Labs post now presents React Forget as a reactivity compiler.",
+      "source_content_hash": "b2e25fc4626f020dc0d6f4ce15e01042b8ccde8d073e052b9b62e6340275c7e1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "新しいReact Labsの投稿では、React Forgetがリアクティビティ・コンパイラとして紹介されています。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Server Components never cease to surprise. Many related innovations are not yet highlighted outside a few tweets.",
+      "source_content_hash": "0119036e987e4d01e300bee5419305336bec81aed574befe98377e06f4660b8d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Server Componentsは驚きの連続です。関連する多くのイノベーションは、いくつかのツイート以外ではまだ注目されていません。"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "For React-Native developers, **[Chain React](https://chainreactconf.com/)** is a great conf in the USA (Portland, May 18-19). They offer us a 10% discount with code `thisweekinreact`.",
+      "source_content_hash": "2e78c15f7934a03367b44a205d0b718105b0567953f476e194019fb52e3a6d50",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React-Native開発者の皆さんへ、**[Chain React](https://chainreactconf.com/)**はアメリカ（ポートランド、5月18-19日）で開催される素晴らしいカンファレンスです。コード`thisweekinreact`で10%割引が適用されます。"
+      }
+    },
+    {
+      "segment_id": "45c63027",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_45c63027"
+      }
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアル形式 🎨**"
+      }
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "0adfe0aa",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_0adfe0aa"
+      }
+    },
+    {
+      "segment_id": "1941846d",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_1941846d"
+      }
+    },
+    {
+      "segment_id": "a5403c6e",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "d06306f7",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "[![React-admin](/emails/issues/140/reactadmin.jpg)](https://marmelab.com/react-admin/?utm_source=newsletter\\&utm_term=this-week-in-react)",
+      "source_content_hash": "39c141a51f45a61087bc9821397489c40b529efadc1e128f23ba88f366c74b21",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![React-admin](/emails/issues/140/reactadmin.jpg)](https://marmelab.com/react-admin/?utm_source=newsletter\\&utm_term=this-week-in-react)"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "**[React-admin - The Open-Source Framework for B2B apps](https://marmelab.com/react-admin/?utm_source=newsletter\\&utm_term=this-week-in-react)**",
+      "source_content_hash": "ede1230634aa51817e790eb9386ea1a142ffb99d60c6bb04d423130add7b0844",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[React-admin - B2Bアプリのためのオープンソースフレームワーク](https://marmelab.com/react-admin/?utm_source=newsletter\\&utm_term=this-week-in-react)**"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "Single-Page-Apps are still the best choice to create admin panels, B2B apps, and ERP systems on top of REST/GraphQL APIs. [React-admin](https://marmelab.com/react-admin/?utm_source=newsletter\\&utm_term=this-week-in-react) is **the open-source framework of reference for building SPAs**.",
+      "source_content_hash": "392dbab0e8527802429ff454ef287c50d5c4c34e7f3e4d8c227aac519ff1dd68",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "シングルページアプリケーション（SPA）は、REST/GraphQL API上に管理画面、B2Bアプリ、ERPシステムを作成するのに依然として最適な選択肢です。[React-admin](https://marmelab.com/react-admin/?utm_source=newsletter\\&utm_term=this-week-in-react)は、**SPAを構築するためのリファレンスとなるオープンソースフレームワーク**です。"
+      }
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "React-admin offers a library of 150+ business-oriented components. It's not a UI kit: it leverages the best UI kit for React, MUI. React-admin boosts developer productivity by assembling the best-in-class libraries, managing all the repetitive stuff you shouldn’t have to deal with.",
+      "source_content_hash": "2e9a97495120eb990c53a80e1dd19625f4bbf4447483e95f5f3b5e878a4907e8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React-adminは150以上のビジネス向けコンポーネントを提供しています。これはUIキットではなく、React向けの最高のUIキットであるMUIを活用しています。React-adminは、開発者の生産性を向上させるために、ベスト・イン・クラスのライブラリを組み合わせ、あなたが扱うべきではない繰り返しの作業を管理します。"
+      }
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "Its strongest point? The best developer experience you'll ever have, backed by an awesome documentation and a vibrant community. [And it only takes 30 minutes to get started](https://marmelab.com/react-admin/Tutorial.html) 🚀",
+      "source_content_hash": "148ae058d94dbd781c252a1f9205a217b6a5c28dca400e85212ceafa8944128b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "その最大の強みは？これまでにない最高の開発者体験で、素晴らしいドキュメントと活気あるコミュニティに支えられています。[そして、始めるのにたった30分しかかかりません](https://marmelab.com/react-admin/Tutorial.html) 🚀"
+      }
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "React-admin has been actively **maintained for 5 years**, and has already convinced more than 20,000 developers worldwide. Come try it, it is free, forever! 😁",
+      "source_content_hash": "7c7af178890f603edb813995162753f181a326f67c83e1ac4dd22dc6ec5ec660",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React-adminは**5年間にわたって積極的にメンテナンス**されており、すでに世界中の20,000人以上の開発者に支持されています。無料で永遠に利用できますので、ぜひお試しください！😁"
+      }
+    },
+    {
+      "segment_id": "d4e0d4e1",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "8bddee80",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "[![React Labs](/emails/issues/140/reactlabs.jpg)](https://react.dev/blog/2023/03/22/react-labs-what-we-have-been-working-on-march-2023)",
+      "source_content_hash": "997babbca9abec6e468077b809ecbcd0dbebb7912a3dc0df9db431af32dd9ac5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![React Labs](/emails/issues/140/reactlabs.jpg)](https://react.dev/blog/2023/03/22/react-labs-what-we-have-been-working-on-march-2023)"
+      }
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "**[React Labs: What We've Been Working On – March 2023](https://react.dev/blog/2023/03/22/react-labs-what-we-have-been-working-on-march-2023)**",
+      "source_content_hash": "7f057138a646faff612e9dbb914c9cc8f9bf1cc8a77e0b505e2c311d02a64461",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[React Labs: 私たちが取り組んできたこと – 2023年3月](https://react.dev/blog/2023/03/22/react-labs-what-we-have-been-working-on-march-2023)**"
+      }
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "An official update from the R\\&D around React that addresses different topics:",
+      "source_content_hash": "8ec87b0bcc8ed830bb9ffc6108902fb5f713ecd10130b08b5bc1b57ceb030d09",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Reactに関する研究開発の公式アップデートで、以下のトピックが取り上げられています："
+      }
+    },
+    {
+      "segment_id": "157c9741",
+      "source_content": "* React Server Components. A nice implementation is already available in Next.js via App Router. RSCs with async/await should also be able to run in a client app. I have the impression they want to unify client/server side model and I think [AsyncContext](https://twitter.com/sebastienlorber/status/1639183216799100928) will be great for that!\n* Asset loading: integration with Suspense for loading CSS, font and images ([more details](https://twitter.com/acdlite/status/1637102880850059264)).\n* Document Metadata: first-class support for an API for `<head>` metadata with streaming support.\n* React Optimizing Compiler: no longer presented as an auto-memoizing compiler, but as a reactivity compiler. [React Forget has reached a milestone](https://twitter.com/en_JS/status/1641494974893281282), and they are focusing on integration.\n* Offscreen Rendering: an innovation I'm really looking forward to, which differentiates React from other frameworks. Meta is testing prerendering on React-Native apps with positive results.\n* Transition Tracing: permits to detect slow transitions.",
+      "source_content_hash": "abef61156dc6d400afc9686b13bfc1155d16eb5f4983bbfebbd5a712ffca2b41",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* React Server Components。Next.jsのApp Routerを介して、すでに優れた実装が利用可能です。async/awaitを伴うRSCはクライアントアプリでも実行可能になる予定です。クライアント/サーバーサイドのモデルを統一したいという意図があり、[AsyncContext](https://twitter.com/sebastienlorber/status/1639183216799100928)がその実現に大きく貢献すると考えられます！\n* アセットローディング：CSS、フォント、画像の読み込みに対するSuspenseとの統合（[詳細](https://twitter.com/acdlite/status/1637102880850059264)）。\n* ドキュメントメタデータ：`<head>`メタデータに対するストリーミングサポートを備えたファーストクラスAPIの提供。\n* React最適化コンパイラ：自動メモ化コンパイラとしてではなく、リアクティビティコンパイラとして紹介されています。[React Forgetは重要なマイルストーンに到達](https://twitter.com/en_JS/status/1641494974893281282)し、現在は統合作業に注力中です。\n* オフスクリーンレンダリング：Reactを他のフレームワークと差別化する、私が特に期待しているイノベーションです。MetaはReact-Nativeアプリでの事前レンダリングをテストし、良好な結果を得ています。\n* トランジション追跡：遅いトランジションを検出可能にします。"
+      }
+    },
+    {
+      "segment_id": "aa7d3f2b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "ea0c7bae",
+      "source_content": "* 🥇 [React.dev on ProductHunt - Product of the day](https://twitter.com/ProductHunt/status/1640956972450328577)\n* 👤 [Tom Occhino](https://twitter.com/tomocchino/status/1640800001625411606) and [Dominic Gannaway](https://twitter.com/trueadm/status/1640761270566633472) joined Vercel.\n* 👀 Server Components can [lazily send modules](https://twitter.com/dan_abramov/status/1638760757239087104) to client.\n* 👀 [Jarred Summer - \"Server Components is coming in Bun v0.6.0\"](https://twitter.com/jarredsumner/status/1642821108402630657)\n* 👀 [Lee Robinson - \"Improved sitemap support is coming to Nextjs\"](https://twitter.com/leeerob/status/1639639575843729409)\n* 👀 [Lee Robinson - \"The Next.js App Router now supports static exports!\"](https://twitter.com/leeerob/status/1640445075959484418)\n* 👀 [Astro roadmap - Client-side Routing](https://github.com/withastro/roadmap/issues/532): Astro plans to implement client-side navigation. Opt-in: Astro remains by default an MPA framework.\n* 👀 [Vercel - Remix without Limits](https://vercel.com/blog/vercel-remix-integration-with-edge-functions-support): Vercel now offers first-class integration with Remix.\n* 🐦 [Dan Abramov - \"we’ve changed our forms recommendations to emphasize uncontrolled inputs\"](https://twitter.com/dan_abramov/status/1641830612955803650)\n* 📜 [Learning React from two Angles in 2023](https://www.robinwieruch.de/learning-react/): it is possible to learn React as a library, or as a framework/architecture (Next.js). Not easy to know where to start for a beginner.\n* 📜 [Refs in React: from access to DOM to imperative API](https://www.developerway.com/posts/refs-from-dom-to-api): good intro to refs, forwardRef, useImperativeHandle.\n* 📜 [Rethinking React best practices](https://frontendmastery.com/posts/rethinking-react-best-practices/): describes well the trend of React which is progressively moving from a simple UI library to a full-stack architecture.\n* 📜 [isMounted tricks are code-smell](https://reacttraining.com/blog/isMounted-tricks-are-code-smell): if you use this kind of pattern, I think it will become a problem with the future Offscreen API.\n* 📜 [Setting State On An Unmounted Component](https://reacttraining.com/blog/setting-state-on-unmounted-component)\n* 📜 [The useEffect cleanup and the two circumstances it's called](https://reacttraining.com/blog/useEffect-cleanup)\n* 📜 [How Will the Future of Web Development Be Affected by Influential New React Docs?](https://luketheweb.dev/blog/how-will-the-future-of-web-development-be-affected-by-influential-new-react-docs)\n* 📜 [Making Tanstack Table 1000x faster with a 1 line change](https://jpcamara.com/2023/03/07/making-tanstack-table.html)\n* 📜 [How to build zero-CLS A/B tests with Next.js and Vercel Edge Config](https://vercel.com/blog/zero-cls-experiments-nextjs-edge-config)\n* 📜 [Custom fonts without compromise using Next.js and `next/font`](https://vercel.com/blog/nextjs-next-font)\n* 📜 [Animated page transitions with Remix's nested routes](https://www.jacobparis.com/guides/remix-animated-page-transitions)\n* 📦 [Storybook 7.0](https://github.com/storybookjs/storybook/releases/tag/v7.0.0): nice release with Vite, CSF3, API frameworks, MDX2... The new features have already been presented before, but we'll probably get a blog post soon?\n* 📦 [Server Components Demo updated](https://twitter.com/dan_abramov/status/1641596168290312195)\n* 📦 [Ark UI](https://ark-ui.com/): the Chakra UI team introduced a new universal UI lib (React, Vue, Solid) based on Zag.js state machines.\n* 📦 [Simple-RSC](https://github.com/bholmesdev/simple-rsc): simple and annotated Server Components implementation, related to a [long stream between Ben Holmes (Astro) and Dan Abramov](https://twitter.com/BHolmesDev/status/1641659705444401152).\n* 📦 [Impala - A very simple static React framework](https://github.com/ascorbic/impala)\n* 📦 [Webpack-RSC](https://twitter.com/unstubbable/status/1641495749627109380)\n* 📦 [MDX syntax highlighting VS Code extension](https://twitter.com/wooorm/status/1638898049404612608)\n* 📦 [ContentLayer 0.3.1 - React Server Components support](https://github.com/contentlayerdev/contentlayer/releases/tag/v0.3.1)\n* 📦 [Styling Addon: configure styles and themes in Storybook](https://storybook.js.org/blog/styling-addon-configure-styles-and-themes-in-storybook/)\n* 📦 [Docusaurus 2.4](https://docusaurus.io/blog/releases/2.4)\n* 📦 [Framer Motion 10.9 - Timelines](https://twitter.com/mattgperry/status/1639286184965750790)\n* 📦 [Planby 2.3.0 - Schedule / Timeline for React with](https://dev.to/kozerkarol/schedule-timeline-for-react-with-planby-223-2djf)\n* 📦 [Ionic 7](https://ionic.io/blog/ionic-7-is-here)\n* 🧑‍🎓 [React.gg](https://react.gg): new promising React course in private beta\n* 🎥 [Theo - So I had a call with Dan...](https://www.youtube.com/watch?v=qZzmUVspiEo): I agree that the client/server components naming is not ideal, and \"use interactive\" seems to me a good idea.\n* 🎥 [Smarter and Simpler React State](https://www.youtube.com/watch?v=Cp64YbYBNDA)\n* 🎥 [Next.js App Router: Routing, Data Fetching, Caching](https://www.youtube.com/watch?v=gSSsZReIFRk)\n* 🎥 [The official T3 Stack Tutorial](https://www.youtube.com/watch?v=YkOSUVzOAA4)",
+      "source_content_hash": "9681e05f3c6b3e95579db90682ff0bd076e6e3acc4075faa6e078235eb11a35a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 🥇 [React.devがProductHuntで「今日のプロダクト」に選出](https://twitter.com/ProductHunt/status/1640956972450328577)\n* 👤 [Tom Occhino](https://twitter.com/tomocchino/status/1640800001625411606)と[Dominic Gannaway](https://twitter.com/trueadm/status/1640761270566633472)がVercelに加入。\n* 👀 サーバーコンポーネントは[クライアントにモジュールを遅延送信可能](https://twitter.com/dan_abramov/status/1638760757239087104)。\n* 👀 [Jarred Summer - 「Bun v0.6.0でサーバーコンポーネントが導入予定」](https://twitter.com/jarredsumner/status/1642821108402630657)\n* 👀 [Lee Robinson - 「Next.jsでサイトマップサポートが改善予定」](https://twitter.com/leeerob/status/1639639575843729409)\n* 👀 [Lee Robinson - 「Next.js App Routerが静的エクスポートをサポート」](https://twitter.com/leeerob/status/1640445075959484418)\n* 👀 [Astroロードマップ - クライアントサイドルーティング](https://github.com/withastro/roadmap/issues/532)：Astroがクライアントサイドナビゲーションを実装予定。オプトイン方式で、デフォルトはMPAフレームワークのまま。\n* 👀 [Vercel - Remix without Limits](https://vercel.com/blog/vercel-remix-integration-with-edge-functions-support)：VercelがRemixとのファーストクラス統合を提供開始。\n* 🐦 [Dan Abramov - 「フォームの推奨方法を非制御入力重視に変更」](https://twitter.com/dan_abramov/status/1641830612955803650)\n* 📜 [2023年の2つの視点から学ぶReact](https://www.robinwieruch.de/learning-react/)：Reactをライブラリとして、またはフレームワーク/アーキテクチャ（Next.js）として学ぶ方法。初心者には開始点がわかりにくい。\n* 📜 [ReactのRefs：DOMアクセスから命令型APIまで](https://www.developerway.com/posts/refs-from-dom-to-api)：refs、forwardRef、useImperativeHandleの良い入門記事。\n* 📜 [Reactベストプラクティスの再考](https://frontendmastery.com/posts/rethinking-react-best-practices/)：Reactが単純なUIライブラリからフルスタックアーキテクチャへ移行するトレンドを的確に説明。\n* 📜 [isMountedトリックはコードスメル](https://reacttraining.com/blog/isMounted-tricks-are-code-smell)：この種のパターンを使用している場合、将来のOffscreen APIで問題になる可能性。\n* 📜 [アンマウント済みコンポーネントへの状態設定](https://reacttraining.com/blog/setting-state-on-unmounted-component)\n* 📜 [useEffectクリーンアップとそれが呼ばれる2つの状況](https://reacttraining.com/blog/useEffect-cleanup)\n* 📜 [新しいReactドキュメントがWeb開発の未来に与える影響](https://luketheweb.dev/blog/how-will-the-future-of-web-development-be-affected-by-influential-new-react-docs)\n* 📜 [Tanstack Tableを1行の変更で1000倍高速化](https://jpcamara.com/2023/03/07/making-tanstack-table.html)\n* 📜 [Next.jsとVercel Edge ConfigでゼロCLSのA/Bテストを構築](https://vercel.com/blog/zero-cls-experiments-nextjs-edge-config)\n* 📜 [Next.jsと`next/font`を使った妥協のないカスタムフォント](https://vercel.com/blog/nextjs-next-font)\n* 📜 [Remixのネストされたルートを使ったアニメーションページ遷移](https://www.jacobparis.com/guides/remix-animated-page-transitions)\n* 📦 [Storybook 7.0](https://github.com/storybookjs/storybook/releases/tag/v7.0.0)：Vite、CSF3、APIフレームワーク、MDX2などをサポートした素晴らしいリリース。新機能は既に紹介済みだが、近日中にブログ記事が公開されるかも？\n* 📦 [サーバーコンポーネントデモ更新](https://twitter.com/dan_abramov/status/1641596168290312195)\n* 📦 [Ark UI](https://ark-ui.com/)：Chakra UIチームがZag.jsステートマシンに基づく新しいユニバーサルUIライブラリ（React、Vue、Solid）を紹介。\n* 📦 [Simple-RSC](https://github.com/bholmesdev/simple-rsc)：シンプルで注釈付きのサーバーコンポーネント実装。[Ben Holmes（Astro）とDan Abramovの長い議論](https://twitter.com/BHolmesDev/status/1641659705444401152)に関連。\n* 📦 [Impala - 非常にシンプルな静的Reactフレームワーク](https://github.com/ascorbic/impala)\n* 📦 [Webpack-RSC](https://twitter.com/unstubbable/status/1641495749627109380)\n* 📦 [MDX構文ハイライトVS Code拡張機能](https://twitter.com/wooorm/status/1638898049404612608)\n* 📦 [ContentLayer 0.3.1 - サーバーコンポーネントサポート](https://github.com/contentlayerdev/contentlayer/releases/tag/v0.3.1)\n* 📦 [Styling Addon：Storybookでスタイルとテーマを設定](https://storybook.js.org/blog/styling-addon-configure-styles-and-themes-in-storybook/)\n* 📦 [Docusaurus 2.4](https://docusaurus.io/blog/releases/2.4)\n* 📦 [Framer Motion 10.9 - タイムライン](https://twitter.com/mattgperry/status/1639286184965750790)\n* 📦 [Planby 2.3.0 - React用スケジュール/タイムライン](https://dev.to/kozerkarol/schedule-timeline-for-react-with-planby-223-2djf)\n* 📦 [Ionic 7](https://ionic.io/blog/ionic-7-is-here)\n* 🧑‍🎓 [React.gg](https://react.gg)：プライベートベータ中の有望な新しいReactコース\n* 🎥 [Theo - ダンと電話したので...](https://www.youtube.com/watch?v=qZzmUVspiEo)：クライアント/サーバーコンポーネントの命名が理想的でないことに同意。「use interactive」は良いアイデアに思える。\n* 🎥 [よりスマートでシンプルなReact状態管理](https://www.youtube.com/watch?v=Cp64YbYBNDA)\n* 🎥 [Next.js App Router：ルーティング、データ取得、キャッシュ](https://www.youtube.com/watch?v=gSSsZReIFRk)\n* 🎥 [公式T3スタックチュートリアル](https://www.youtube.com/watch?v=YkOSUVzOAA4)"
+      }
+    },
+    {
+      "segment_id": "c6060e09",
+      "source_content": "<SubscribeFormEmbed />",
+      "source_content_hash": "2b5c5e42f4352c90b9647a9da7a0fb7ece8b8dc27440e42cdf85cbb6e1901b85",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_c6060e09"
+      }
+    },
+    {
+      "segment_id": "dd8754e7",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c7c92a79",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "f0984c2a",
+      "source_content": "[![Tina.io is a headless CMS for Markdown-powered sites](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter\\&utm_term=this-week-in-react)",
+      "source_content_hash": "7fba30c891e351ce58540384f77a55a466de7e2f43303229fce71a37868c3713",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Tina.ioはMarkdownベースのサイト向けヘッドレスCMSです](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter\\&utm_term=this-week-in-react)"
+      }
+    },
+    {
+      "segment_id": "a81544fd",
+      "source_content": "**[Tina.io is a headless CMS for Markdown-powered sites](https://tina.io/?utm_source=newsletter\\&utm_term=this-week-in-react)**",
+      "source_content_hash": "ede7d5f6175269367f5c80026ab1396bdf31c66dd35fadc398c7029d70fdd362",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Tina.ioはMarkdownベースのサイト向けヘッドレスCMSです](https://tina.io/?utm_source=newsletter\\&utm_term=this-week-in-react)**"
+      }
+    },
+    {
+      "segment_id": "5cb70a3d",
+      "source_content": "* Editing UI for your Markdown files\n* UI for MDX components\n* Supports static (SSG) and server-side rendering (SSR)\n* Option for visual editing (live-preview)\n* Build with reusable blocks",
+      "source_content_hash": "572c1d395257f2bd32877704a74f4efe0002fb86cc4969fdda9e44415712c5db",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* Markdownファイルの編集UI\n* MDXコンポーネントのUI\n* 静的生成（SSG）とサーバーサイドレンダリング（SSR）をサポート\n* ビジュアル編集（ライブプレビュー）オプション\n* 再利用可能なブロックで構築"
+      }
+    },
+    {
+      "segment_id": "44aaa880",
+      "source_content": "Test a starter site",
+      "source_content_hash": "00cfdd6dfc445a7df446241a49f872dd69eae76fb2b91f1adce9cd97ccd3a228",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "スターターサイトを試す"
+      }
+    },
+    {
+      "segment_id": "2a1e835c",
+      "source_content": "* [Docusaurus](https://github.com/tinacms/tinasaurus) (github.com)\n* [Next.js + Tailwind with visual editing](https://github.com/tinacms/tina-cloud-starter) (github.com)",
+      "source_content_hash": "f22bd46386cbb69c91336c5a043f5ae0765917ce68b6462634fa1466b9ad0d44",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* [Docusaurus](https://github.com/tinacms/tinasaurus) (github.com)\n* [Next.js + Tailwind（ビジュアル編集付き）](https://github.com/tinacms/tina-cloud-starter) (github.com)"
+      }
+    },
+    {
+      "segment_id": "a6c928a1",
+      "source_content": "Or run  `npx create-tina-app@latest` then visit `localhost:3000/admin`",
+      "source_content_hash": "3c38b4e8e7ed89fb82c1d7a4781a5edfb7e4fda07b6616777408937de6748b5d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "または `npx create-tina-app@latest` を実行し、`localhost:3000/admin` にアクセス"
+      }
+    },
+    {
+      "segment_id": "b6152880",
+      "source_content": "Watch the [4-min demo video](https://www.youtube.com/watch?v=zRkeKSZjlyw)",
+      "source_content_hash": "2a28b2aaced7040bc5de34214f8661699eb64901ddd6ce54922fe7b3e0a3a4b8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[4分のデモ動画](https://www.youtube.com/watch?v=zRkeKSZjlyw)を視聴"
+      }
+    },
+    {
+      "segment_id": "18fa676c",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "2bb63d77",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "a8198b43",
+      "source_content": "* 📜 [Storybook for React Native (6.5)](https://storybook.js.org/blog/storybook-for-react-native-6-5/): great news for Storybook users on React-Native, the integration is catching up with Storybook web, adopting CSF, Controls, Args, and should soon be compatible with Storybook 7.0. With the new Metro features (`require.context`), the need to generate a story index should soon disappear.\n* 📜 [How Migrating from Vanilla Redux to Redux Toolkit Improved State Management in Shopify POS](https://shopify.engineering/react-redux-toolkit-migration): feedback on an incremental migration to RTK, removing 3500 lines.\n* 👀 [RFC: DOM traversal and layout APIs in React Native](https://github.com/react-native-community/discussions-and-proposals/pull/607): new advanced API could unlock the implementation of features like `MutationObserver`, `IntersectionObserver`...\n* 👀 [View Flattening on iOS](https://twitter.com/SamuelSusla/status/1641086480675225601): React-Native could already optimize on Android by avoiding to create useless native views. Samuel explains how it works and announces that now it works for iOS too.\n* 👀 [Expo Router + Apple Handoff demo](https://twitter.com/Baconbrix/status/1641850192839180315): great iOS innovation to switch between web and mobile, and it should work well with universal Expo Router apps 👌\n* 🎥 [The Joy of Painting with React Native](https://www.youtube.com/watch?v=GQqL1OCoOFM): new style of Skia ASMR video by William Candillon 😄\n* 📦 [React-Native WebView 12.0](https://twitter.com/titozzz/status/1642147926762815490): new architecture support.\n* 📦 [React-Native 0.76.1](https://github.com/facebook/react-native/releases/tag/v0.71.6): new releases fixing XCode build issues.\n* 📦 [Expo-Blur - Android support](https://twitter.com/aleqsio/status/1638893843457212418): BlurView will soon be cross-platform.\n* 🐦 [Tzvetan Mikov - \"Messenger for MacOS is a React Native app.\"](https://twitter.com/tmikov/status/1642630975430754305)\n* 🎙️ [RNR 263 - Shopify Goes React Native!](https://reactnativeradio.com/episodes/rnr-263-shopify-goes-react-native)\n* 👥 [Chain React](https://chainreactconf.com/): conf in Portland, May 18-19 (-10% discount with \"thisweekinreact\" code).",
+      "source_content_hash": "2b274c5227f080711495a064c42d5b8f67bc2e6ea7a96d926142f6ee2a17fb76",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📜 [React Native向けStorybook（6.5）](https://storybook.js.org/blog/storybook-for-react-native-6-5/): React Nativeユーザーにとって朗報。Storybook Webとの統合が進み、CSF、Controls、Argsを採用。まもなくStorybook 7.0との互換性も予定。新しいMetro機能（`require.context`）により、ストーリーインデックスの生成が不要になる見込み。\n* 📜 [Vanilla ReduxからRedux Toolkitへの移行がShopify POSの状態管理を改善](https://shopify.engineering/react-redux-toolkit-migration): RTKへの段階的移行のフィードバック。3500行の削減を実現。\n* 👀 [RFC: React NativeにおけるDOMトラバーサルとレイアウトAPI](https://github.com/react-native-community/discussions-and-proposals/pull/607): `MutationObserver`、`IntersectionObserver`などの機能実装を可能にする新しい高度なAPI。\n* 👀 [iOSでのView Flattening](https://twitter.com/SamuelSusla/status/1641086480675225601): Androidでは不要なネイティブビューの作成を回避する最適化が可能だったが、Samuel氏がその仕組みを説明し、iOSでも機能するようになったと発表。\n* 👀 [Expo Router + Apple Handoffデモ](https://twitter.com/Baconbrix/status/1641850192839180315): Webとモバイル間の切り替えに優れたiOSイノベーション。ユニバーサルExpo Routerアプリと相性が良い。\n* 🎥 [React Nativeで絵を描く喜び](https://www.youtube.com/watch?v=GQqL1OCoOFM): William Candillon氏による新しいスタイルのSkia ASMR動画。\n* 📦 [React-Native WebView 12.0](https://twitter.com/titozzz/status/1642147926762815490): 新しいアーキテクチャをサポート。\n* 📦 [React-Native 0.76.1](https://github.com/facebook/react-native/releases/tag/v0.71.6): XCodeビルド問題を修正したリリース。\n* 📦 [Expo-Blur - Androidサポート](https://twitter.com/aleqsio/status/1638893843457212418): BlurViewがまもなくクロスプラットフォームに。\n* 🐦 [Tzvetan Mikov氏 - 「MacOS版MessengerはReact Nativeアプリです。」](https://twitter.com/tmikov/status/1642630975430754305)\n* 🎙️ [RNR 263 - ShopifyがReact Nativeを採用！](https://reactnativeradio.com/episodes/rnr-263-shopify-goes-react-native)\n* 👥 [Chain React](https://chainreactconf.com/): ポートランドでのカンファレンス、5月18-19日（「thisweekinreact」コードで10%割引）。"
+      }
+    },
+    {
+      "segment_id": "c63467a3",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "73776161",
+      "source_content": "## 🧑‍💻 Jobs {#jobs}",
+      "source_content_hash": "64cde6166f05bd39337c21ca10f52b6613641f23e0c97e204de33d6857fa16ed",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🧑‍💻 Jobs {#jobs}"
+      }
+    },
+    {
+      "segment_id": "f7e6e884",
+      "source_content": "🧑‍💼 [**Passionfroot - Senior Full-stack Engineer (Remix) - €160k+, Berlin/remote**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)",
+      "source_content_hash": "3532cb42fea164e6dcc868f5fea6ecb0e7fcb06975740df1803d78565f5e643e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🧑‍💼 [**Passionfroot - シニアフルスタックエンジニア（Remix） - €160k以上、ベルリン/リモート**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)"
+      }
+    },
+    {
+      "segment_id": "17b50e81",
+      "source_content": "Passionfroot's mission is to empower the independent businesses of tomorrow via YouTube, Podcasts, Social Media, and Newsletters. Join us in building a tool that will empower creators globally to build scalable, sustainable businesses.",
+      "source_content_hash": "071531677ae3763a43d70c7461fb6bad05d66e66663737b2158931a241a2c33c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Passionfrootのミッションは、YouTube、ポッドキャスト、ソーシャルメディア、ニュースレターを通じて、明日の独立したビジネスを支援することです。クリエイターがスケーラブルで持続可能なビジネスを構築できるツールの開発に参加してください。"
+      }
+    },
+    {
+      "segment_id": "719d3997",
+      "source_content": "🧑‍💼 [**Callstack - Senior React Native Developer - Fully Remote, PLN 21-32k net on B2B, monthly**](https://www.callstack.com/senior-react-native-developer)",
+      "source_content_hash": "6a76e4cede7e5d7fef90376d244177e3a889ea3b88ed1a9d60d116bb33a52f5b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🧑‍💼 [**Callstack - シニアReact Native開発者 - 完全リモート、B2B月額PLN 21-32k（ネット）**](https://www.callstack.com/senior-react-native-developer)"
+      }
+    },
+    {
+      "segment_id": "42d9ca67",
+      "source_content": "Do you want to work on the world's most used apps? Would you like to co-create the React Native technology? Join the Callstack team of React & React Native leaders. Check our website for more details. We are looking forward to seeing your application - show us what you've got!",
+      "source_content_hash": "d26d300a25c86c54931180669d1a8cce73f71a546a8457896fc0c835fb78d2d0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "世界で最も利用されているアプリに携わりたいですか？React Nativeテクノロジーの共創に興味はありませんか？React & React NativeのリーダーであるCallstackチームに参加してください。詳細はウェブサイトをご覧ください。あなたの応募をお待ちしています！"
+      }
+    },
+    {
+      "segment_id": "619c3209",
+      "source_content": "🧑‍💼 [**G2i - 100% Remote React Native Jobs**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\\&t=ArRLC77BpRwXXCdx8fnUqw)",
+      "source_content_hash": "5d3c54581f6c180e021405df5da2dff285c443814d1d5e6c5c09516b6002a38b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\\&t=ArRLC77BpRwXXCdx8fnUqw)"
+      }
+    },
+    {
+      "segment_id": "44285072",
+      "source_content": "We have several roles open for developers focused on React Native! Pay is \\~160k plus 10% bonus. You must have production experience with RN and be based in the US. DM [@gabe\\_g2i](https://twitter.com/gabe_g2i) to learn more and don't forget to mention This Week in React.",
+      "source_content_hash": "03109db05ba0c8c528483a4218dc3b2b0314cf5c6032f5eb3c7be604094658fd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React Nativeに特化した開発者向けの複数のポジションがあります！報酬は約160kドル＋10％のボーナスです。RNの実務経験があり、米国在住である必要があります。詳細は[@gabe\\_g2i](https://twitter.com/gabe_g2i)にDMでお問い合わせください。This Week in Reactを見たとお伝えください。"
+      }
+    },
+    {
+      "segment_id": "a8f09c71",
+      "source_content": "💡 [How to publish an offer?](https://thisweekinreact.com/sponsor)",
+      "source_content_hash": "d58176524c2d7675bf008e7b635d056628a0d092fb0152d6bbdfb97f4239d273",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "💡 [求人の掲載方法は？](https://thisweekinreact.com/sponsor)"
+      }
+    },
+    {
+      "segment_id": "c7daeccd",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "d4eab4a6",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "e258929d",
+      "source_content": "* [Updates from the 95th TC39 meeting](https://dev.to/hemanth/updates-from-the-95th-tc39-meeting-ne5): nice progressions, including [AsyncContext (stage 2)](https://twitter.com/sebastienlorber/status/1639183216799100928)!\n* [Node.js compatibility for Cloudflare Workers](https://blog.cloudflare.com/workers-node-js-asynclocalstorage/): including AsyncLocalStorage (\\~= server-side AsyncContext)\n* [WebKit Features in Safari 16.4](https://webkit.org/blog/13966/webkit-features-in-safari-16-4/)\n* [JavaScript import maps are now supported cross-browser](https://web.dev/import-maps-in-all-modern-browsers/)\n* [Push notifications are now supported cross-browser](https://web.dev/push-notifications-in-all-modern-browsers/)\n* [Types in JavaScript With Zod and JSDoc](https://blog.jim-nielsen.com/2023/types-in-jsdoc-with-zod/)\n* [Qwik 1.0 RC](https://www.builder.io/blog/qwik-rc-milestone)\n* [pnpm 8.0](https://twitter.com/pnpmjs/status/1640464273817362432)\n* [Tailwind 3.3](https://tailwindcss.com/blog/tailwindcss-v3-3)\n* [Deno 1.32: Enhanced Node.js Compatibility](https://deno.com/blog/v1.32)\n* [Rome v12](https://rome.tools/blog/2023/03/28/rome12/)\n* [Moon 1.0](https://twitter.com/tothemoonrepo/status/1640469052043980800)\n* [Bun 0.5.9](https://bun.sh/blog/bun-v0.5.9)",
+      "source_content_hash": "3a2ef5f138b67449028e9c2e7f78444bd5d17dde43a00f79068d3a4f1f39ed0f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* [第95回TC39会議のアップデート](https://dev.to/hemanth/updates-from-the-95th-tc39-meeting-ne5): [AsyncContext（ステージ2）](https://twitter.com/sebastienlorber/status/1639183216799100928)を含む進展！\n* [Cloudflare Workers向けNode.js互換性](https://blog.cloudflare.com/workers-node-js-asynclocalstorage/): AsyncLocalStorage（≒サーバーサイドAsyncContext）をサポート\n* [Safari 16.4のWebKit機能](https://webkit.org/blog/13966/webkit-features-in-safari-16-4/)\n* [JavaScript import mapsが全モダンブラウザでサポート](https://web.dev/import-maps-in-all-modern-browsers/)\n* [プッシュ通知が全モダンブラウザでサポート](https://web.dev/push-notifications-in-all-modern-browsers/)\n* [ZodとJSDocを使ったJavaScriptの型](https://blog.jim-nielsen.com/2023/types-in-jsdoc-with-zod/)\n* [Qwik 1.0 RC](https://www.builder.io/blog/qwik-rc-milestone)\n* [pnpm 8.0](https://twitter.com/pnpmjs/status/1640464273817362432)\n* [Tailwind 3.3](https://tailwindcss.com/blog/tailwindcss-v3-3)\n* [Deno 1.32: Node.js互換性の強化](https://deno.com/blog/v1.32)\n* [Rome v12](https://rome.tools/blog/2023/03/28/rome12/)\n* [Moon 1.0](https://twitter.com/tothemoonrepo/status/1640469052043980800)\n* [Bun 0.5.9](https://bun.sh/blog/bun-v0.5.9)"
+      }
+    },
+    {
+      "segment_id": "33b68b3f",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c66e62ef",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "fe25bd72",
+      "source_content": "[![alt](/emails/issues/140/meme.jpg)](https://twitter.com/thekitze/status/1638927506723033088)",
+      "source_content_hash": "b3fed16551911708aae7bb1bb850778f85d71a2a29a70df30bd1600968db4d35",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/140/meme.jpg)](https://twitter.com/thekitze/status/1638927506723033088)"
+      }
+    },
+    {
+      "segment_id": "c8a6ab3e",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "またね！👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/140/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:42.131305+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "6476e0ee062db010e68b3c6cecfc157e022327916cfcc7dc7fc0692ca488e90c"
+  }
+}

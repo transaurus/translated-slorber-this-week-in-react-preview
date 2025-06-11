@@ -1,0 +1,52 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/109-and-previous.mdx",
+  "source_file_content_hash": "cf479558bba028b8046fa9c35a400542e8bb3b72ebc5b708544aea6a4119392a",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /previous\ntitle: \"This Week In React #109 and before\"\nauthors: [slorber]\ndate: 01-01-2020\n---",
+      "source_content_hash": "717a02ae909906c661ad00d40bf2f7ac55a81516cfcdccb5f322fe3d54ae8c78",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Older issues of this newsletter are available on:",
+      "source_content_hash": "f64eb4d5891d2d5b649b0edb9c18ccacda7144f219b95b55678c02437feecf4e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このニュースレターの過去の号は以下で閲覧可能です:"
+      }
+    },
+    {
+      "segment_id": "4a5b6a68",
+      "source_content": "* [🇫🇷 Revue archive of React Hebdo](https://thisweekinreact.com/fr/archive): from issue #1\n* [🇬🇧 Revue archive of This Week In React](https://thisweekinreact.com/archive): from issue #73",
+      "source_content_hash": "77bf7b79ca99a6ec0e9bf198f6ef152d52f4860482bcfa3776a0b6810e5509a8",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* [🇫🇷 React HebdoのRevueアーカイブ](https://thisweekinreact.com/fr/archive): 第1号から\n* [🇬🇧 This Week In ReactのRevueアーカイブ](https://thisweekinreact.com/archive): 第73号から"
+      }
+    },
+    {
+      "segment_id": "2e76584d",
+      "source_content": ":::note\nThe English version of this newsletter was started after the French version.\n:::",
+      "source_content_hash": "faf07713a1d0bd39f82790186adb6cf5c683f4af7ccbd0ac896fbdd4bd546270",
+      "node_type": "containerDirective",
+      "translatable": true,
+      "translations": {
+        "ja": ":::note\nこのニュースレターの英語版はフランス語版の後に開始されました。\n:::"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/109-and-previous.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:36.700829+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "cf479558bba028b8046fa9c35a400542e8bb3b72ebc5b708544aea6a4119392a"
+  }
+}

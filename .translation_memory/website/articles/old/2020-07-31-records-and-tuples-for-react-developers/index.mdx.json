@@ -1,0 +1,102 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "articles/old/2020-07-31-records-and-tuples-for-react-developers/index.mdx",
+  "source_file_content_hash": "2aff0922652524834992e899b4626b30183159c46fd012c3c31b7fdaaeda2e35",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: records-and-tuples-for-react\ntitle: Records & Tuples for React\ndescription: .Records & Tuples for React... and how they are much more than immutable data structures.\nauthors: [slorber]\ntwitterThreadUrl: \"https://slo.im/thread\"\nimage: ./images/hero.png\n---",
+      "source_content_hash": "1297192a92d023323fc662c9fecf4f751d53bc7d3a4e7b8229ed00741f25e7ac",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "**Records & Tuples**, a very interesting **[proposal](https://github.com/tc39/proposal-record-tuple)**, has just reached **[stage 2](https://twitter.com/robpalmer2/status/1286040041089904640)** at **TC39**.",
+      "source_content_hash": "86eacece11c62592fb7f20db8b06ea4cc335ac80c5587f0df0b0bc6fef55b548",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**Records & Tuples**（レコードとタプル）は、非常に興味深い**[プロポーザル](https://github.com/tc39/proposal-record-tuple)**であり、**TC39**で**[ステージ2](https://twitter.com/robpalmer2/status/1286040041089904640)**に到達しました。"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "They bring **deeply immutable data structures** to JavaScript.",
+      "source_content_hash": "2b0f20655b6eeebfc0e11b3a039186926d64b3f3bafc51ea859b47adf4935904",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "これらはJavaScriptに**深い不変性を持つデータ構造**をもたらします。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "But don't overlook their **equality properties**, that are <u>**VERY**</u> interesting for **React**.",
+      "source_content_hash": "8d05124857cb5f2a59805a7722e985ebc9b6cece98a4b57c1e18371b306715b5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "しかし、**React**にとって<u>**非常に**</u>興味深い**等価性の特性**を見逃さないでください。"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "A whole category of **React bugs** are related to **unstable object identities**:",
+      "source_content_hash": "17dbaf0629835560314b3c94961d03bb8efb7db9b537d808d1b355987ece582d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**Reactのバグ**の一つのカテゴリは、**不安定なオブジェクト識別子**に関連しています："
+      }
+    },
+    {
+      "segment_id": "11c829ab",
+      "source_content": "* **Performance**: re-renders that could be avoided\n* **Behavior**: useless effect re-executions, infinite loops\n* **API surface**: unability to express when a stable object identity matters",
+      "source_content_hash": "3736769dda21dc6d81bf2f34314333df6988c35b12e6ffb69c7b9590bdca915c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* **パフォーマンス**: 避けられたはずの再レンダリング\n* **挙動**: 不要なエフェクトの再実行、無限ループ\n* **APIサーフェス**: 安定したオブジェクト識別子が重要な場合を表現できない"
+      }
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "I will explain the basics of **Records & Tuples**, and how they can solve **real world React issues**.",
+      "source_content_hash": "f0ed66d496495ab4cccb5c44e039a769756d57d0792ac6f18ddd772ae96f9765",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**Records & Tuples**の基本と、それらが**実際のReactの問題**をどのように解決できるかを説明します。"
+      }
+    },
+    {
+      "segment_id": "98cfbd53",
+      "source_content": "[![hero](./images/hero.png)](https://sebastienlorber.com/records-and-tuples-for-react)",
+      "source_content_hash": "955b549d22849f26f6842902f1380a2eabec2c195b629f0c9e64a3a381ecfc22",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![hero](./images/hero.png)](https://sebastienlorber.com/records-and-tuples-for-react)"
+      }
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "🔗 [**Read More**](https://sebastienlorber.com/records-and-tuples-for-react)",
+      "source_content_hash": "96522deb574690aaddd53b0b5239b22450416433db8b6bc952e19ed8682d7324",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🔗 [**続きを読む**](https://sebastienlorber.com/records-and-tuples-for-react)"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-articles/old/2020-07-31-records-and-tuples-for-react-developers/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:36.705136+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "2aff0922652524834992e899b4626b30183159c46fd012c3c31b7fdaaeda2e35"
+  }
+}

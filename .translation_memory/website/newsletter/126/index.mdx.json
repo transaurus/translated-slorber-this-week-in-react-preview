@@ -1,0 +1,582 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/126/index.mdx",
+  "source_file_content_hash": "3854512a6c41358e4802ba8c8c03dfdb32c732917e350283b44f7afe90bdc952",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /126\ntitle: \"This Week In React #126: React Perf, Progressive Enhancement, Remix, Storybook, React-Native, FlashList, Nitro, TC39...\"\nauthors: [slorber]\ndate: 11-29-2022\n---",
+      "source_content_hash": "fd1a807dced3b5ccae6c39119e1d315c552dcbac513044d3455c1a547771cc60",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "As you might expect with Thanksgiving, it's a rather quiet week in terms of React news.",
+      "source_content_hash": "21bbdd5c41f932ea8dcb9c9dc54aa83f357b27707da45d6f1358c421dab1e9bc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "サンクスギビングの影響もあり、今週のReact関連ニュースは比較的静かです。"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "It's the end of [Black Friday](https://thisweekinreact.com/black-friday), but some offers are still valid.",
+      "source_content_hash": "067e07b657719b3cbaaf44e5781b47b1a93a69321032e0c49ba81ed64c20de32",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[ブラックフライデー](https://thisweekinreact.com/black-friday)は終了しましたが、まだ有効な特典もあります。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "If your company is recruiting, I also offer a [**discount of -50% on job offer ads**](https://thisweekinreact.com/sponsor#sponsor-jobs). Don't hesitate to talk to your HR or your manager, it helps me a lot!",
+      "source_content_hash": "8b961597a0b8ef1fc97ff1f75f9f21db0518ef55e883b262013b694cfc92baa9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "採用中の企業様向けに、[**求人広告掲載料金を50%オフ**](https://thisweekinreact.com/sponsor#sponsor-jobs)で提供しています。ぜひ人事やマネージャーに相談してください。大きな助けになります！"
+      }
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6429a3aa"
+      }
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**💡 [Twitterでこのニュースレターをチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**"
+      }
+    },
+    {
+      "segment_id": "507b4652",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "fcd52337",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_fcd52337"
+      }
+    },
+    {
+      "segment_id": "42e34e45",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_42e34e45"
+      }
+    },
+    {
+      "segment_id": "caf67047",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "[![FlyCode Makes React Apps Editable without coding, Git based](/emails/issues/124/flycode.jpg)](https://bit.ly/3UPwAoJ)",
+      "source_content_hash": "b1c253f9a00e87fb27290d2b708379ae2c003b9fb3c37dbf215926813efd1bc8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![FlyCode - コーディング不要でReactアプリを編集可能、Gitベース](/emails/issues/124/flycode.jpg)](https://bit.ly/3UPwAoJ)"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "**[FlyCode Makes React Apps Editable without coding, Git based](https://bit.ly/3UPwAoJ)**",
+      "source_content_hash": "be0008c644c3577cba86de728a53d8c02539af2b4374d8c985b4b4d7109cc468",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[FlyCode - コーディング不要でReactアプリを編集可能、Gitベース](https://bit.ly/3UPwAoJ)**"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "[FlyCode](https://bit.ly/3wWSi00) (YC S22) makes React web apps editable in minutes so Product and UX teams can iterate and release products faster, so they don't have to wait on (or consume) developer time.",
+      "source_content_hash": "bbc101671f92785b8d72decafab66d491ddfe3120e508b897b8aef31b9c6c08a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[FlyCode](https://bit.ly/3wWSi00)（YC S22）は、Reactウェブアプリを数分で編集可能にし、プロダクトチームとUXチームが迅速に反復・リリースできるようにします。開発者の時間を待つ（または消費する）必要がなくなります。"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "FlyCode reads your regular React code and finds Texts, Images, Design tokens and Analytics event, then it let's non-coders collaborate and edit them and send back a pull request (they don't need access to GitHub!)",
+      "source_content_hash": "b0ca824c79705290430c561efbfcf98429b8f4bc63a90163188455e0ba905119",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "FlyCodeは通常のReactコードを読み取り、テキスト、画像、デザイントークン、分析イベントを特定します。その後、非エンジニアが共同で編集し、プルリクエストを送信できます（GitHubへのアクセス権は不要です）。"
+      }
+    },
+    {
+      "segment_id": "157151e9",
+      "source_content": "* Saves development time\n* No code integration, it just reads your code!\n* GitHub based, a bot is scanning the code and creates pull requests\n* Use your own stack and components\n* Retain codebase ownership",
+      "source_content_hash": "89eeeec285221e82fbb0cbcc28ac9fbc90be22ecaf0c14208cc29eb955fa4b2d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 開発時間の節約\n* コード統合不要、単にコードを読み取るだけ！\n* GitHubベース、ボットがコードをスキャンしてプルリクエストを作成\n* 既存のスタックとコンポーネントをそのまま使用可能\n* コードベースの所有権を保持"
+      }
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "You can get started here: [flycode.com/developers](https://www.flycode.com/developers)",
+      "source_content_hash": "170cfd801b0555f2b7855462fb99c62035d2b35b7721da4451de25d7460726a7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "こちらから始められます：[flycode.com/developers](https://www.flycode.com/developers)"
+      }
+    },
+    {
+      "segment_id": "06784e79",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c674e260",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "**[Is React going anywhere?](https://www.infoxicator.com/is-react-going-anywhere)**",
+      "source_content_hash": "c9642ace94e284c052cc0aa55909ec3f09dd2edd5ca074fc6a3bc25bd2017e9e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Reactはこの先どうなるのか？](https://www.infoxicator.com/is-react-going-anywhere)**"
+      }
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "Interesting reflection from Ruben, after meeting an e-commerce CTO who decided to abandon React for Vanilla JS. Is React really responsible for the poor performance of his app? Is adopting an alternative justified? Will React remain the leader for the next 5 or 10 years?",
+      "source_content_hash": "f55add1566fefc74dd3f163cc3e4c402cfada9554e2e2c89e517d18cbb6a3455",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Rubenによる興味深い考察。あるe-commerceのCTOがReactを放棄しVanilla JSに移行した事例を受けて。アプリのパフォーマンス低下は本当にReactの責任か？代替技術の採用は正当化されるか？Reactは今後5年、10年にわたってリーダーであり続けるのか？"
+      }
+    },
+    {
+      "segment_id": "b36c6338",
+      "source_content": "**[Improving React Interaction Times by 4x](https://www.causal.app/blog/react-perf)**",
+      "source_content_hash": "f22abae6ca3ba98e173a8841fa4de1b106daafdde191ed34fdbbb3e597165c53",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Reactのインタラクション時間を4倍改善](https://www.causal.app/blog/react-perf)**"
+      }
+    },
+    {
+      "segment_id": "b9aaa519",
+      "source_content": "Causal's cloud spreadsheet app had performance issues. They give us a detailed analysis of the problems and how they solved them via the Chrome profiler. Some issues related to AG Grid (which they patched). Others from their own code mainly related to memoization. They also tried to use Web Workers, but serialization was too expensive.",
+      "source_content_hash": "782d60bf4d246ab2c2b5f78fd70b2e5e596a530cb7284fc80026d1bb484ae074",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Causalのクラウドスプレッドシートアプリにパフォーマンス問題が発生。Chromeプロファイラーを使った詳細な問題分析と解決策を紹介。AG Grid関連の問題（彼らがパッチを当てた）と、メモ化に関する自社コードの問題。Web Workersの使用も試みたが、シリアライズのコストが高すぎた。"
+      }
+    },
+    {
+      "segment_id": "e3321a43",
+      "source_content": "* 📜 [Progressively enhance the useFetcher hook in Remix](https://sergiodxa.com/articles/progressively-enhance-the-usefetcher-hook-in-remix): little trick to support users with/without JS on Remix's useFetcher API: force a redirect for users without JS. In the same way, it is possible to handle [progressive enhancement on a file upload](https://twitter.com/ebey_jacob/status/1596223682246234113). All this is probably not essential for many apps, but it's good to know that it's possible if needed.\n* 📜 [Remix Deferred overview](https://gist.github.com/jacob-ebey/9bde9546c1aafaa6bc8c242054b1be26): an explanation of how [defer](https://github.com/remix-run/remix/issues/4486) works in Remix, which will allow to \"teleport\" a promise from the back to the front. For those who want to understand the inner workings of Remix.\n* 📜 [How to update the state of a sibling component in React?](https://alexsidorenko.com/blog/react-siblings/): short article that illustrates well the concept of \"Lifting the state up\".\n* 📜 [Minimal TypeScript Crash Course For React](https://profy.dev/article/react-typescript): to get started with TypeScript and React.\n* 📜 [Data Structures In Frontend JavaScript In The Real World - With React Code Examples](https://profy.dev/article/javascript-data-structures): to become familiar with data structures in a React context.\n* 📜 [ArConnect Migrates Its Chrome Extension to the Plasmo Framework](https://blog.plasmo.com/p/migrating-chrome-extension-to-plasmo): feedback on the use of [Plasmo](https://github.com/PlasmoHQ/plasmo): open-source React framework to create web extensions.\n* 📜 [Storybook for full-stack developers](https://storybook.js.org/blog/storybook-for-full-stack-developers/): a good overview of all that the Storybook ecosystem can do for you.\n* 📜 [Solid Final Form – Proof of Concept](https://erikras.com/blog/solid-final-form-poc): Erik explains that his lib [Final Form](https://final-form.org/react) (popular a few years ago) is decoupled from React and shows that it is possible to use it in a SolidJS context.\n* 📜 [Ant Design 5.0 - Component-level CSS-in-JS](https://ant.design/docs/blog/css-in-js): the React design system releases a new major version and explains how they have optimized their CSS-in-JS runtime.\n* 🎥 [On the merits & limitations of React & single-page apps](https://www.youtube.com/watch?v=ChfjZV-aA_Y): 2 hours debate between Alex Russell and Theo Browne. I haven't had time to watch yet. Alex is well known for his criticism of React and SPAs, and Theo should be a good defender of the React ecosystem.\n* 🎥 [React Dev, You Need To Know @container!](https://www.youtube.com/watch?v=ypN-Uwshc5M): good introduction to query containers, new CSS feature, presented in a React context in vanilla CSS + Tailwind. Firefox support is still missing, but there is a polyfill.\n* 🎥 [RTK Query Basics: Query Endpoints, Data Flow and TypeScript](https://egghead.io/courses/rtk-query-basics-query-endpoints-data-flow-and-typescript-57ea3c43): new free course on Egghead by Lenz one of the creators of RTK Query.\n* 🧑‍💻 [Remix PR - Add \"jump to definition\" support](https://github.com/remix-run/remix/pull/4689): tRPC contributors port their TypeScript learnings to Remix to improve its DX.\n* 📦 [react-three-editor](https://github.com/pmndrs/react-three-editor): a React-Three-Fiber scene editor is being created.\n* 📦 [Gatsby 5.1](https://www.gatsbyjs.com/docs/reference/release-notes/v5.1/)",
+      "source_content_hash": "0173f4ee3a1b652261656a5d162fb9be13f1d0ae44f2d504786198012130be6c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📜 [RemixのuseFetcherフックをプログレッシブに強化する](https://sergiodxa.com/articles/progressively-enhance-the-usefetcher-hook-in-remix): JS無効ユーザー向けにRemixのuseFetcher APIをサポートする小技 - JS無効時はリダイレクトを強制。同様に、[ファイルアップロードのプログレッシブエンハンスメント](https://twitter.com/ebey_jacob/status/1596223682246234113)も可能。多くのアプリでは必須ではないが、必要時に実装可能なことを知っておくと良い。\n* 📜 [Remix Deferredの概要](https://gist.github.com/jacob-ebey/9bde9546c1aafaa6bc8c242054b1be26): Remixの[defer](https://github.com/remix-run/remix/issues/4486)機能の解説。バックエンドからフロントエンドへPromiseを「転送」可能。Remixの内部動作を理解したい方向け。\n* 📜 [Reactで兄弟コンポーネントの状態を更新する方法](https://alexsidorenko.com/blog/react-siblings/): 「状態のリフトアップ」概念を簡潔に説明した記事。\n* 📜 [React向けTypeScript最短入門](https://profy.dev/article/react-typescript): TypeScriptとReactの基本を学ぶ。\n* 📜 [実践的なフロントエンドJavaScriptデータ構造 - Reactコード例付き](https://profy.dev/article/javascript-data-structures): Reactコンテキストでのデータ構造を習得。\n* 📜 [ArConnectがChrome拡張をPlasmoフレームワークに移行](https://blog.plasmo.com/p/migrating-chrome-extension-to-plasmo): [Plasmo](https://github.com/PlasmoHQ/plasmo)使用レポート - Web拡張作成用のオープンソースReactフレームワーク。\n* 📜 [フルスタック開発者向けStorybook](https://storybook.js.org/blog/storybook-for-full-stack-developers/): Storybookエコシステムの全機能概要。\n* 📜 [Solid Final Form - コンセプト実証](https://erikras.com/blog/solid-final-form-poc): Erikが自身のライブラリ[Final Form](https://final-form.org/react)（過去に人気）がReactから分離されていることを説明し、SolidJSコンテキストでの使用可能性を示す。\n* 📜 [Ant Design 5.0 - コンポーネントレベルのCSS-in-JS](https://ant.design/docs/blog/css-in-js): Reactデザインシステムの新メジャーバージョンリリースとCSS-in-JSランタイムの最適化手法を解説。\n* 🎥 [Reactとシングルページアプリの利点と限界](https://www.youtube.com/watch?v=ChfjZV-aA_Y): Alex RussellとTheo Browneの2時間討論。React批判で知られるAlexとReactエコシステムの擁護者Theoの対決。未視聴。\n* 🎥 [React開発者必見！@containerの活用](https://www.youtube.com/watch?v=ypN-Uwshc5M): 新しいCSS機能であるコンテナクエリをReactコンテキストで紹介（Vanilla CSS + Tailwind）。Firefox未対応だがポリフィル存在。\n* 🎥 [RTK Query基礎: クエリエンドポイント、データフローとTypeScript](https://egghead.io/courses/rtk-query-basics-query-endpoints-data-flow-and-typescript-57ea3c43): RTK Query作成者LenzによるEggheadの無料コース。\n* 🧑‍💻 [Remix PR - 「定義へジャンプ」機能追加](https://github.com/remix-run/remix/pull/4689): tRPCコントリビューターがTypeScript知見をRemixに移植しDX改善。\n* 📦 [react-three-editor](https://github.com/pmndrs/react-three-editor): React-Three-Fiberシーンエディタ開発中。\n* 📦 [Gatsby 5.1](https://www.gatsbyjs.com/docs/reference/release-notes/v5.1/)"
+      }
+    },
+    {
+      "segment_id": "68209f5c",
+      "source_content": "<SubscribeFormEmbed />",
+      "source_content_hash": "2b5c5e42f4352c90b9647a9da7a0fb7ece8b8dc27440e42cdf85cbb6e1901b85",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_68209f5c"
+      }
+    },
+    {
+      "segment_id": "fe5fa73a",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "98355e36",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "7736989b",
+      "source_content": "[![Yuzu is the Best Finance Data API for Frontends](/emails/issues/126/yuzu.png)](https://www.yuzu.dev/)",
+      "source_content_hash": "93a038e8c743778e8bae7d9a9499e2df586bd94d2d0019221b81b1a2e159cb60",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Yuzuはフロントエンド向け最高の金融データAPIです](/emails/issues/126/yuzu.png)](https://www.yuzu.dev/)"
+      }
+    },
+    {
+      "segment_id": "6270d577",
+      "source_content": "**[Yuzu is the Best Finance Data API for Frontends](https://www.yuzu.dev/)**",
+      "source_content_hash": "4c19431ac0759f356c607dd3ba4952a1c0b951c4081885d9ec5c3d653ff2b7ea",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Yuzuはフロントエンド向け最高の金融データAPIです](https://www.yuzu.dev/)**"
+      }
+    },
+    {
+      "segment_id": "a1fa5396",
+      "source_content": "Yuzu is designed to eliminate data engineering for frontend developers building with data sets like:",
+      "source_content_hash": "4aab65894de65bec5b4a1aca75d5b25cbe1cc9d70a6559b847079e93ece6d55b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Yuzuは、以下のようなデータセットを扱うフロントエンド開発者向けにデータエンジニアリングを不要にするように設計されています:"
+      }
+    },
+    {
+      "segment_id": "cc9271fb",
+      "source_content": "* Live Stock, crypto & forex prices\n* Up-to-the minute market news\n* ETF and Mutual fund details",
+      "source_content_hash": "c262f20db9b3ad27e3426ab5f82218f36d306b9f4489ad512881fb300041d2a3",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* リアルタイムの株式、暗号通貨、外国為替レート\n* 最新の市場ニュース\n* ETFおよび投資信託の詳細"
+      }
+    },
+    {
+      "segment_id": "0750bfa1",
+      "source_content": "Developers love Yuzu's GraphQL, Websockets, and SQL APIs because it allows them to flexibly grab any data, and focus on building end-user experiences, not on scraping, normalizing and maintaining data sets.",
+      "source_content_hash": "fb7f41b557202200e5b6e6a3116ee9448429469aff438e650bafd85379603e41",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "開発者がYuzuのGraphQL、WebSocket、SQL APIを高く評価している理由は、データを柔軟に取得でき、スクレイピングやデータセットの正規化・メンテナンスではなく、エンドユーザー体験の構築に集中できるからです。"
+      }
+    },
+    {
+      "segment_id": "86348f98",
+      "source_content": "Yuzu's professional-grade data is used by brokerages, analytical platforms, and investing apps ranging from emerging startups to established finance firms.",
+      "source_content_hash": "e8ea317a375aef027766c7cecc1dabcab90f7360ae1567ff22d62da95d5858b6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Yuzuのプロフェッショナルグレードのデータは、新興スタートアップから老舗金融企業まで、証券会社、分析プラットフォーム、投資アプリなどで利用されています。"
+      }
+    },
+    {
+      "segment_id": "6b77b644",
+      "source_content": "Best thing? Anyone can [start for free](https://www.yuzu.dev/pricing)!",
+      "source_content_hash": "79bee9896875fd9281baa269e7a498108372cc669b0933ee3d9048b82631ee8b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "最高の点は？[無料で始められる](https://www.yuzu.dev/pricing)ことです！"
+      }
+    },
+    {
+      "segment_id": "4f2104fa",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "f8edb6d2",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "1862c5fe",
+      "source_content": "**[React Native Core Contributor Summit 2022](https://reactnative.dev/blog/2022/11/22/react-native-core-contributor-summit-2022)**",
+      "source_content_hash": "136d962e3a6f4a811c95095db31c579c51d5c61443f9b1c3af5e4637ebc1706e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[React Nativeコアコントリビューターサミット2022](https://reactnative.dev/blog/2022/11/22/react-native-core-contributor-summit-2022)**"
+      }
+    },
+    {
+      "segment_id": "6ca4479f",
+      "source_content": "A good part of the React-Native contributors met at the beginning of September for the React-Native EU conference. They participated in a series of workshops and give us a report. Various topics were discussed, such as the new architecture, the Metro bundler or the release workflow.",
+      "source_content_hash": "52f49542f999832c24f39f4ba852091a6b6f1a2d5db2bed15f212ab8c246c0a8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React-Nativeのコントリビューターの多くが9月初旬にReact-Native EUカンファレンスに参加しました。彼らは一連のワークショップに参加し、その報告を公開しています。新しいアーキテクチャ、Metroバンドラー、リリースワークフローなど、さまざまなトピックが議論されました。"
+      }
+    },
+    {
+      "segment_id": "a2c0166e",
+      "source_content": "**[Shopify - Our Solution for Measuring React Native Rendering Times](https://shopify.engineering/measuring-react-native-rendering-times)**",
+      "source_content_hash": "f27d5a2c75fa433f7502f246979ef65d2d2fd3159166665dbb5b09f5e22ab6d0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Shopify - React Nativeのレンダリング時間計測ソリューション](https://shopify.engineering/measuring-react-native-rendering-times)**"
+      }
+    },
+    {
+      "segment_id": "c1eaf30b",
+      "source_content": "Presentation of the [react-native-performance](https://github.com/Shopify/react-native-performance) package which allows to generate [field / Real User Monitoring](https://web.dev/lab-and-field-data-differences/) performance reports (in JSON). It integrates easily with React-Navigation. You can send these reports to an analytics dashboard of your choice. This allows you to identify a specific screen that has performance issues in production. It reminds of existing web metrics: Core Web Vitals, TTI, INP and the Vercel/Netlify/Gatsby perf dashboards...",
+      "source_content_hash": "2c2490a8f388626f03e252fea47af68824ec0af4fe4362a0a5ab32368e3d8cc9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[react-native-performance](https://github.com/Shopify/react-native-performance)パッケージの紹介。このパッケージは[フィールド/実ユーザーモニタリング](https://web.dev/lab-and-field-data-differences/)のパフォーマンスレポート（JSON形式）を生成できます。React-Navigationと簡単に統合可能で、これらのレポートを任意の分析ダッシュボードに送信できます。これにより、本番環境でパフォーマンス問題のある特定の画面を特定できます。これは既存のWebメトリクス（Core Web Vitals、TTI、INP）やVercel/Netlify/Gatsbyのパフォーマンスダッシュボードを彷彿とさせます..."
+      }
+    },
+    {
+      "segment_id": "7a3b7c62",
+      "source_content": "* 📜 [Shopify - What We Learned from Open-Sourcing FlashList](https://shopify.engineering/what-we-learned-from-open-sourcing-flashlist): feedback on a successful open-source launch at Shopify. Marketing and planning is an important part of the success, and should not be neglected. See also my launch of [Docusaurus 2.0](https://www.indiehackers.com/post/1-on-product-hunt-thanks-to-newsletters-and-good-timing-2c7d8809d9).\n* 📜 [How to build a React Native app 5x faster with Nitro](https://blog.nitro.build/how-to-build-a-react-native-app-5x-faster-with-nitro-d7e512b18d90): Nitro is a tool (paid, in preview) that allows to significantly reduce React-Native CI build times when only the JS code has changed.\n* 📜 [React Native in 2022 and Beyond](https://semaphoreci.com/blog/react-native)\n* 📜 [How react-native became performant as native with the new architecture](https://medium.com/ocp-digital-factory/how-react-native-became-performant-as-native-with-the-new-architecture-6e678c3178aa)\n* 🐦 [setNativeProps is back on Fabric?](https://twitter.com/o_kwasniewski/status/1596090790350303233)\n* 🎨 [VisionCamera Frame Processor + Skia - Censor faces demo](https://twitter.com/mrousavy/status/1595746972190883840)\n* 📦 [React-Native 0.71.0-rc.2](https://twitter.com/Kelset/status/1595839212502261760)\n* 📦 [React Native Windows 0.69.14](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.69.14)",
+      "source_content_hash": "ecf4e0ff8084849d42373d6ba7c13b2f567b8559b998b75d3ecd7985cda216a5",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📜 [Shopify - FlashListのオープンソース化から学んだこと](https://shopify.engineering/what-we-learned-from-open-sourcing-flashlist): Shopifyでの成功したオープンソースリリースのフィードバック。マーケティングと計画は成功の重要な要素であり、軽視すべきではありません。[Docusaurus 2.0のリリース](https://www.indiehackers.com/post/1-on-product-hunt-thanks-to-newsletters-and-good-timing-2c7d8809d9)も参照。\n* 📜 [NitroでReact Nativeアプリを5倍速くビルドする方法](https://blog.nitro.build/how-to-build-a-react-native-app-5x-faster-with-nitro-d7e512b18d90): Nitroは（プレビュー段階の有料ツール）、JSコードのみが変更された場合にReact-NativeのCIビルド時間を大幅に短縮できます。\n* 📜 [2022年以降のReact Native](https://semaphoreci.com/blog/react-native)\n* 📜 [新しいアーキテクチャでReact Nativeがネイティブ並みのパフォーマンスを実現した方法](https://medium.com/ocp-digital-factory/how-react-native-became-performant-as-native-with-the-new-architecture-6e678c3178aa)\n* 🐦 [setNativePropsがFabricで復活？](https://twitter.com/o_kwasniewski/status/1596090790350303233)\n* 🎨 [VisionCameraフレームプロセッサー + Skia - 顔検出検閲デモ](https://twitter.com/mrousavy/status/1595746972190883840)\n* 📦 [React-Native 0.71.0-rc.2](https://twitter.com/Kelset/status/1595839212502261760)\n* 📦 [React Native Windows 0.69.14](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.69.14)"
+      }
+    },
+    {
+      "segment_id": "510c9c5b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "37fca32e",
+      "source_content": "## 🧑‍💻 Jobs {#jobs}",
+      "source_content_hash": "64cde6166f05bd39337c21ca10f52b6613641f23e0c97e204de33d6857fa16ed",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🧑‍💻 Jobs {#jobs}"
+      }
+    },
+    {
+      "segment_id": "a8610918",
+      "source_content": "🧑‍💼 [**Product Engineer at Causal, Remote/London/NY, \\$150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied\\&lever-source%5B%5D=thisweekinreact.com)",
+      "source_content_hash": "619d259d5aa4a364626fc41610dcf9f3ae0955a2e964969486ddfee2f179dbdb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🧑‍💼 [**Causal社 プロダクトエンジニア（リモート/ロンドン/NY、年収\\$150-250k）**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied\\&lever-source%5B%5D=thisweekinreact.com)"
+      }
+    },
+    {
+      "segment_id": "a6c928a1",
+      "source_content": "Causal is a Series A Startup (backed by Coatue/Accel) building an all-in-one tool for working with numbers and visualizing data. We're looking for strong React engineers who can solve difficult UX/performance challenges.",
+      "source_content_hash": "20bfaa3d377f2ddf3a9abbf4f1ce455c376710731cb5f7e58785d6741fc6377f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Causalは、数値データの処理と可視化のためのオールインワンツールを開発しているシリーズAスタートアップ（Coatue/Accel出資）です。困難なUX/パフォーマンス課題を解決できるReactエンジニアを募集しています。"
+      }
+    },
+    {
+      "segment_id": "b6152880",
+      "source_content": "🧑‍💼 [**Callstack - Senior React Native Developer - Fully Remote, PLN 21-32k net on B2B, monthly**](https://www.callstack.com/senior-react-native-developer)",
+      "source_content_hash": "6a76e4cede7e5d7fef90376d244177e3a889ea3b88ed1a9d60d116bb33a52f5b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🧑‍💼 [**Callstack - シニアReact Native開発者（完全リモート、B2B月額21-32k PLN net）**](https://www.callstack.com/senior-react-native-developer)"
+      }
+    },
+    {
+      "segment_id": "b9331170",
+      "source_content": "Do you want to work on the world's most used apps? Would you like to co-create the React Native technology? Join the Callstack team of React & React Native leaders. Check our website for more details. We are looking forward to seeing your application - show us what you've got!",
+      "source_content_hash": "d26d300a25c86c54931180669d1a8cce73f71a546a8457896fc0c835fb78d2d0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "世界で最も利用されているアプリの開発に携わりたいですか？React Native技術の共創に興味はありませんか？React & React Nativeのリーダー集団であるCallstackチームに参加してください。詳細は当社ウェブサイトをご覧ください。あなたの応募をお待ちしています - 実力を存分に発揮してください！"
+      }
+    },
+    {
+      "segment_id": "8fcdd6d4",
+      "source_content": "🧑‍💼 [**G2i - 100% Remote React Native Jobs**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\\&t=ArRLC77BpRwXXCdx8fnUqw)",
+      "source_content_hash": "5d3c54581f6c180e021405df5da2dff285c443814d1d5e6c5c09516b6002a38b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\\&t=ArRLC77BpRwXXCdx8fnUqw)"
+      }
+    },
+    {
+      "segment_id": "53aa2b95",
+      "source_content": "We have several roles open for developers focused on React Native! Pay is \\~160k plus 10% bonus. You must have production experience with RN and be based in the US. DM [@gabe\\_g2i](https://twitter.com/gabe_g2i) to learn more and don't forget to mention This Week in React.",
+      "source_content_hash": "03109db05ba0c8c528483a4218dc3b2b0314cf5c6032f5eb3c7be604094658fd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React Nativeに特化した開発者向けに複数のポジションを開設中です！報酬は約160kドル＋10%のボーナスです。RNの実務経験があり、米国在住であることが条件です。詳細は[@gabe\\_g2i](https://twitter.com/gabe_g2i)までDMでお問い合わせください。This Week in Reactからの紹介をお忘れなく。"
+      }
+    },
+    {
+      "segment_id": "9c9e2b64",
+      "source_content": "💡 [How to publish an offer?](https://thisweekinreact.com/sponsor)",
+      "source_content_hash": "d58176524c2d7675bf008e7b635d056628a0d092fb0152d6bbdfb97f4239d273",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "💡 [求人を掲載する方法は？](https://thisweekinreact.com/sponsor)"
+      }
+    },
+    {
+      "segment_id": "dc45ba24",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "a461a67b",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "1fe5236e",
+      "source_content": "* [Agenda for the 93rd meeting of Ecma TC39](https://github.com/tc39/agendas/blob/main/2022/11.md): a meeting is in progress! I'm particularly interested in the new [Async Context proposal](https://github.com/legendecas/proposal-async-context)!\n* [Advanced web font optimization techniques](https://pixelpoint.io/blog/advanced-web-font-optimization-techniques/): explains well how to optimize your fonts: reduce the size, avoid layout shifts and adjust the vertical alignment.\n* [Octoverse 2022 - The state of open source software](https://octoverse.github.com/)\n* [A first look at SolidStart](https://ajcwebdev.com/2022/11/20/a-first-look-at-solidstart/)\n* [How to split JavaScript strings into sentences, words or graphemes with \"Intl.Segmenter\"](https://www.stefanjudis.com/today-i-learned/how-to-split-javascript-strings-with-intl-segmenter/)\n* [How we lost our slick new npm package name (and then got it back)](https://reactflow.dev/blog/reactflow-npm-package-name/)\n* [JavaScript from ES6 to ES12 in 2022](https://medium.com/@bluetch/javascript-es6-es7-es8-es9-es10-es11-and-es12-519d8be7d48c)\n* [Color Formats in CSS](https://www.joshwcomeau.com/css/color-formats/)\n* [TypeScript 5.0 is coming...](https://www.youtube.com/watch?v=PTU-H6Wwbh8)\n* [The Complete Guide to the Fastify Plugin System](https://www.nearform.com/blog/complete-guide-fastify-plugin-system/)\n* [GitHub Copilot CLI](https://githubnext.com/projects/copilot-cli/)\n* [Wasmer 3.0](https://wasmer.io/posts/announcing-wasmer-3.0)\n* [WebAssembly: TinyGo vs Rust vs AssemblyScript](https://ecostack.dev/posts/wasm-tinygo-vs-rust-vs-assemblyscript/)\n* [The large, small, and dynamic viewport units](https://web.dev/viewport-units/)\n* [Node.js Architecture Pitfalls to Avoid](https://blog.appsignal.com/2022/11/23/nodejs-architecture-pitfalls-to-avoid.html)\n* [Cloudflare - Server-side render full stack applications with Pages Functions](https://blog.cloudflare.com/pages-full-stack-frameworks/)\n* [Vercel - Edge Config: Ultra-low latency data at the edge](https://vercel.com/blog/edge-config-ultra-low-latency-data-at-the-edge)",
+      "source_content_hash": "94675647bfb8cb5a434d189070d9b12f4219ca5b0cb7b17bde622f6b8deda8d9",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* [Ecma TC39第93回会議の議題](https://github.com/tc39/agendas/blob/main/2022/11.md): 会議が進行中です！特に新しい[Async Context提案](https://github.com/legendecas/proposal-async-context)に興味があります！\n* [高度なWebフォント最適化技術](https://pixelpoint.io/blog/advanced-web-font-optimization-techniques/): フォントの最適化方法を詳しく説明しています。サイズの削減、レイアウトシフトの回避、垂直方向の調整など。\n* [Octoverse 2022 - オープンソースソフトウェアの現状](https://octoverse.github.com/)\n* [SolidStartを初めて見る](https://ajcwebdev.com/2022/11/20/a-first-look-at-solidstart/)\n* [「Intl.Segmenter」でJavaScriptの文字列を文、単語、書記素に分割する方法](https://www.stefanjudis.com/today-i-learned/how-to-split-javascript-strings-with-intl-segmenter/)\n* [私たちが新しいnpmパッケージ名を失い（そして取り戻した）経緯](https://reactflow.dev/blog/reactflow-npm-package-name/)\n* [2022年のJavaScript ES6からES12まで](https://medium.com/@bluetch/javascript-es6-es7-es8-es9-es10-es11-and-es12-519d8be7d48c)\n* [CSSのカラーフォーマット](https://www.joshwcomeau.com/css/color-formats/)\n* [TypeScript 5.0がやってくる...](https://www.youtube.com/watch?v=PTU-H6Wwbh8)\n* [Fastifyプラグインシステムの完全ガイド](https://www.nearform.com/blog/complete-guide-fastify-plugin-system/)\n* [GitHub Copilot CLI](https://githubnext.com/projects/copilot-cli/)\n* [Wasmer 3.0](https://wasmer.io/posts/announcing-wasmer-3.0)\n* [WebAssembly: TinyGo vs Rust vs AssemblyScript](https://ecostack.dev/posts/wasm-tinygo-vs-rust-vs-assemblyscript/)\n* [大きな、小さな、そして動的なビューポート単位](https://web.dev/viewport-units/)\n* [避けるべきNode.jsアーキテクチャの落とし穴](https://blog.appsignal.com/2022/11/23/nodejs-architecture-pitfalls-to-avoid.html)\n* [Cloudflare - Pages Functionsでフルスタックアプリケーションをサーバーサイドレンダリング](https://blog.cloudflare.com/pages-full-stack-frameworks/)\n* [Vercel - Edge Config: エッジでの超低遅延データ](https://vercel.com/blog/edge-config-ultra-low-latency-data-at-the-edge)"
+      }
+    },
+    {
+      "segment_id": "c66a3543",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c6b2ca77",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "dce16ab4",
+      "source_content": "[![alt](/emails/issues/126/meme.png)](https://twitter.com/addyosmani/status/1595470573001314309)",
+      "source_content_hash": "0d8e31b3064def73d6c0df2158c6a90341bc060ddf9ededa43a469b0ea814f88",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/126/meme.png)](https://twitter.com/addyosmani/status/1595470573001314309)"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/126/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:39.991759+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "3854512a6c41358e4802ba8c8c03dfdb32c732917e350283b44f7afe90bdc952"
+  }
+}

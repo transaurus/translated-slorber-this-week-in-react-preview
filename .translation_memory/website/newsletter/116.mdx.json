@@ -1,0 +1,342 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/116.mdx",
+  "source_file_content_hash": "185d6b6dc5dde417c49060fbdffb93f4dc88f0707dd61491dfe2246313d62231",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /116\ntitle: \"This Week In React #116: Next.js, Gatsby, Blitz, Fresh, Astro, Preact, Redwood, Deno, Remotion, React-Native, Expo, TypeScript, Lightning CSS...\"\nauthors: [slorber]\ndate: 09-09-2022\n---",
+      "source_content_hash": "dbd3472ed08e2a3363bbe7afb8363fd9a65b45c32edca5e3c0441590674b78f5",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "I'm glad to inform you that my first email sent from [ConvertKit](https://thisweekinreact.com/convertkit) has been received by most of you: my email provider migration is successful!",
+      "source_content_hash": "edee3a14d795530b7e6bdd29562fec6971eb5c61c41ac28784761dca5f6c7eb5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[ConvertKit](https://thisweekinreact.com/convertkit)から初めて送信したメールがほとんどの方に届いたことを嬉しく思います。メールプロバイダーの移行は成功しました！"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "And I'm also very happy with the reception of my [article on `useSyncExternalStore`](https://thisweekinreact.com/articles/useSyncExternalStore-the-underrated-react-api)! Thanks for your many feedbacks, I will try to write more soon. The idea is to have a 100% dedicated email on a specific topic, to learn something new in a short time.",
+      "source_content_hash": "8a0047546e0ac9bf9ff2258894b57163ad068c5eeab0452fcfef4514720c4f88",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "また、私が書いた[`useSyncExternalStore`に関する記事](https://thisweekinreact.com/articles/useSyncExternalStore-the-underrated-react-api)への反響も非常に嬉しく思っています。多くのフィードバックをありがとうございます。近いうちにもっと書いていきたいと思います。特定のトピックに100%焦点を当てたメールを送り、短時間で新しいことを学べるようにするのが目的です。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Otherwise, the weekly curation newsletter is back. This is a bit of a special edition: I've put all the interesting links from the last few weeks. There are way too many and I can't comment on them this time 😅 Don't worry, we'll resume the usual format with my comments at the end of September when I get back from vacation!",
+      "source_content_hash": "7ba0dfecb07f6404f912da207adea6597a193ece10616f746d7c90cb9e8cf4d3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "それ以外では、週刊のキュレーションニュースレターが戻ってきました。今回は特別版で、ここ数週間の興味深いリンクをすべてまとめました。多すぎて今回はコメントできません😅 心配しないでください、9月末に休暇から戻ったら通常の形式で私のコメント付きで再開します！"
+      }
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6429a3aa"
+      }
+    },
+    {
+      "segment_id": "7f7f1cb2",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "**To support me:**",
+      "source_content_hash": "23bcc16120bd65c115b80999ce669ef9ec990102617f81025dbee1e30a08fa89",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**サポート方法:**"
+      }
+    },
+    {
+      "segment_id": "da23c906",
+      "source_content": "* 😘 **Recommend the newsletter to your friends**: it really helps!\n* 💸 [**Sponsor the newsletter**](https://thisweekinreact.com/sponsor) or [**sponsor me**](https://github.com/sponsors/slorber)\n* 🧵 [**Retweet the latest Twitter thread**](https://slo.im/thread)\n* 📨 Reply to this [**email**](mailto\\:sebastien@thisweekinreact.com): feedback is welcome",
+      "source_content_hash": "eb004b0f56042b8b449d907ed9bc0c8957992d1f15df73aab2a6babf62870a31",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 😘 **ニュースレターを友人に薦める**: 本当に助かります！\n* 💸 [**ニュースレターをスポンサーする**](https://thisweekinreact.com/sponsor) または [**私をスポンサーする**](https://github.com/sponsors/slorber)\n* 🧵 [**最新のTwitterスレッドをリツイートする**](https://slo.im/thread)\n* 📨 この[**メール**](mailto\\:sebastien@thisweekinreact.com)に返信: フィードバックは歓迎です"
+      }
+    },
+    {
+      "segment_id": "358a309f",
+      "source_content": "<SubscribeFormEmbed />",
+      "source_content_hash": "2b5c5e42f4352c90b9647a9da7a0fb7ece8b8dc27440e42cdf85cbb6e1901b85",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_358a309f"
+      }
+    },
+    {
+      "segment_id": "8b52fbba",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "48847fd4",
+      "source_content": "## 💸 Sponsor",
+      "source_content_hash": "8bb2edc4a4e477d1017adf2374809ad8b499cc08bda84575b39514987d8adc00",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 スポンサー"
+      }
+    },
+    {
+      "segment_id": "4daf5cdd",
+      "source_content": "[![Storyblok](/emails/issues/116/storyblok.png)](https://www.storyblok.com/?utm_source=thisweekinreact\\&utm_medium=display\\&utm_campaign=AWA_SPON_TWIREACT_TRA\\&utm_content=thisweekinreact_en)",
+      "source_content_hash": "2e65c46f4df850b9ea2e8e294c975a87632a2e036bb05a773241652b8166e2f4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Storyblok](/emails/issues/116/storyblok.png)](https://www.storyblok.com/?utm_source=thisweekinreact\\&utm_medium=display\\&utm_campaign=AWA_SPON_TWIREACT_TRA\\&utm_content=thisweekinreact_en)"
+      }
+    },
+    {
+      "segment_id": "bdc231b1",
+      "source_content": "Have you already tried [Storyblok](https://www.storyblok.com/?utm_source=thisweekinreact\\&utm_medium=display\\&utm_campaign=AWA_SPON_TWIREACT_TRA\\&utm_content=thisweekinreact_en)? It's the headless CMS with a Visual Editor designed for both developers and marketers!",
+      "source_content_hash": "a8b734507b2646ef1147095ab666676345a4d30e1aafc93f3f19fef7bcafe19f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[Storyblok](https://www.storyblok.com/?utm_source=thisweekinreact\\&utm_medium=display\\&utm_campaign=AWA_SPON_TWIREACT_TRA\\&utm_content=thisweekinreact_en)を試したことはありますか？開発者とマーケターの両方のために設計されたビジュアルエディタを備えたヘッドレスCMSです！"
+      }
+    },
+    {
+      "segment_id": "97ae4a01",
+      "source_content": "Use Storyblok React SDK to quickly build reusable components and fetch the content to create your React, Next.js, Remix, or even React-Native applications, websites or eCommerces.",
+      "source_content_hash": "4c198441a421364cdb4c872d1b63a852a09b754924f954d95f63ed8a34b0dba1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Storyblok React SDKを使用して再利用可能なコンポーネントを迅速に構築し、React、Next.js、Remix、さらにはReact-Nativeのアプリケーション、ウェブサイト、またはeコマースを作成するためのコンテンツを取得できます。"
+      }
+    },
+    {
+      "segment_id": "c3a738de",
+      "source_content": "Check out [Technology Hub](https://www.storyblok.com/technologies?utm_source=thisweekinreact\\&utm_medium=display\\&utm_campaign=AWA_SPON_TWIREACT_TRA\\&utm_content=thisweekinreact_en) and find it out yourself!",
+      "source_content_hash": "9e3aff9efb9ff983ffa4147088e4761ded16d0e6fd901a20ffd500f2a0e5463e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[Technology Hub](https://www.storyblok.com/technologies?utm_source=thisweekinreact\\&utm_medium=display\\&utm_campaign=AWA_SPON_TWIREACT_TRA\\&utm_content=thisweekinreact_en)をチェックして、自分で確かめてみてください！"
+      }
+    },
+    {
+      "segment_id": "bd7c9323",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "06c0f776",
+      "source_content": "## ⚛️ React",
+      "source_content_hash": "e023e197e421045f7dd683535d2cbc78b80692c75b5ba7a265f2df27ad1bd53b",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React"
+      }
+    },
+    {
+      "segment_id": "4c077b92",
+      "source_content": "* 📜 [Improving INP with React 18 and Suspense](https://vercel.com/blog/improving-interaction-to-next-paint-with-react-18-and-suspense)\n* 📜 [PureComponents vs Functional Components with hooks](https://www.developerway.com/posts/pure-components-vs-functional-and-hooks)\n* 📜 [Why React Re-Renders](https://www.joshwcomeau.com/react/why-react-re-renders/)\n* 📜 [Understanding useMemo and useCallback](https://www.joshwcomeau.com/react/usememo-and-usecallback/)\n* 📜 [Avoiding useEffect with callback refs](https://tkdodo.eu/blog/avoiding-use-effect-with-callback-refs)\n* 📜 [React Query meets React Router](https://tkdodo.eu/blog/react-query-meets-react-router)\n* 📜 [(Re-) Introducing Gatsby, A Reactive Site Generator](https://www.gatsbyjs.com/blog/re-introducing-gatsby-a-reactive-site-generator/)\n* 📜 [Advanced React component composition](https://frontendmastery.com/posts/advanced-react-component-composition-guide/)\n* 📜 [Can We All Just Admit React Hooks Were a Bad Idea? Part 2](https://medium.com/codex/can-we-all-just-admit-react-hooks-were-a-bad-idea-795505b0485d)\n* 📜 [Why Storybook in 2022?](https://storybook.js.org/blog/why-storybook-in-2022/) + [7.0 design alpha](https://storybook.js.org/blog/7-0-design-alpha/) + [Writing stories in TypeScript](https://storybook.js.org/blog/writing-stories-in-typescript/)\n* 📜 [A Complete Guide to React Router: Everything You Need to Know](https://ui.dev/react-router-tutorial)\n* 📜 [9 Bad React Habits to Kick From Your Life](https://cult.honeypot.io/reads/bad-react-habits-to-kick/)\n* 📜 [Validating Remix Form Data Using Zod and TypeScript in Action Functions](https://egghead.io/blog/validating-remix-form-data-using-zod-and-typescript-in-action-functions)\n* 📜 [The minimum TypeScript you need for React](https://ente.io/blog/tech/typescript-for-react/)\n* 📜 [Patterns.dev - Rendering Patterns](https://www.patterns.dev/posts/rendering-introduction/)\n* 📜 [We measured the SSR performance of 6 JS frameworks](https://dev.to/kaspera/we-measured-the-ssr-performance-of-6-js-frameworks-heres-what-we-found-1ck0)\n* 📜 [Should You Use A ClassName Prop?](https://www.chakshunyu.com/blog/should-you-use-a-classname-prop/)\n* 📜 [Avoiding dynamic CSS-in-JS styles in React](https://nickb.dev/blog/avoid-dynamic-css-in-js-styles-in-react/)\n* 📜 [Frontend security primer](https://frontendmastery.com/posts/frontend-security-primer/)\n* 📜 [React Error Boundaries: A Complete Guide](https://meticulous.ai/blog/react-error-boundaries-complete-guide/)\n* 📜 [The GPU Banana Stand](https://acko.net/blog/the-gpu-banana-stand/)\n* 📜 [A first look at create-t3-app](https://dev.to/ajcwebdev/a-first-look-at-create-t3-app-1i8f)\n* 📜 [Moving House to Next.js](https://blog.benchsci.com/moving-house-to-next.js)\n* 📜 [Bringing Together Keyboard-only and Click-based UI Tests with keyboard-testing-library](https://testingaccessibility.com/introducing-keyboard-testing-library-by-grunet)\n* 📜 [5 Most Common useState Mistakes React Developers Often Make](https://refine.dev/blog/common-usestate-mistakes-and-how-to-avoid/)\n* 📜 [Transform content at the edge with Netlify’s Next.js Runtime](https://www.netlify.com/blog/nextjs-advanced-middleware-better-runtime-that-extends-nextjs/)\n* 📜 [Scaling RSG Builds With Gatsby’s Data Layer](https://www.gatsbyjs.com/blog/scaling-rsg-builds-with-gatsbys-data-layer/)\n* 📜 [Is Gatsby In Decline?](https://deliciousreverie.co.uk/posts/is-gatsby-decline/)\n* 📖 [Separating Events from Effects](https://beta.reactjs.org/learn/separating-events-from-effects)\n* 📖 [Removing Effect Dependencies](https://beta.reactjs.org/learn/removing-effect-dependencies)\n* 👥 [Next.js Conf 2022](https://vercel.com/blog/nextjs-conf-2022)\n* 🎥 [Creating F1 graphics in JavaScript](https://www.youtube.com/watch?v=sA-X0Bw_7Gg)\n* ⏱ [Comparing website performance: Gatsby vs Next vs Nuxt](https://www.gatsbyjs.com/blog/comparing-website-performance-gatsby-vs-next-vs-nuxt/)\n* 📦 [Redwood v3.0.0 RC](https://community.redwoodjs.com/t/redwood-v3-0-0-rc-is-now-available/3836)\n* 📦 [Next.js 12.3](https://nextjs.org/blog/next-12-3)\n* 📦 [Preact Signals](https://preactjs.com/blog/introducing-signals/)\n* 📦 [Blitz 2.0 beta](https://github.com/blitz-js/blitz/releases/tag/v2.0.0-beta.1)\n* 📦 [Astro 1.0](https://astro.build/blog/astro-1/)\n* 📦 [Fresh 1.1](https://deno.com/blog/fresh-1.1)\n* 📦 [Mailing](https://www.mailing.run/)\n* 📦 [Remotion 3.2](https://www.remotion.dev/blog/3-2)\n* 📦 Gatsby [v4.20](https://www.gatsbyjs.com/docs/reference/release-notes/v4.20/) + [v4.21](https://www.gatsbyjs.com/docs/reference/release-notes/v4.21/) + [v4.22](https://www.gatsbyjs.com/docs/reference/release-notes/v4.22/)",
+      "source_content_hash": "15c16379716fba880e0723305d15b772ddcdd738934dd5d3f9075f343ad93124",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📜 [React 18とSuspenseでINPを改善する](https://vercel.com/blog/improving-interaction-to-next-paint-with-react-18-and-suspense)\n* 📜 [PureComponents vs フックを使った関数コンポーネント](https://www.developerway.com/posts/pure-components-vs-functional-and-hooks)\n* 📜 [Reactが再レンダリングする理由](https://www.joshwcomeau.com/react/why-react-re-renders/)\n* 📜 [useMemoとuseCallbackの理解](https://www.joshwcomeau.com/react/usememo-and-usecallback/)\n* 📜 [コールバックrefでuseEffectを避ける](https://tkdodo.eu/blog/avoiding-use-effect-with-callback-refs)\n* 📜 [React QueryとReact Routerの統合](https://tkdodo.eu/blog/react-query-meets-react-router)\n* 📜 [Gatsbyの再紹介：リアクティブなサイトジェネレーター](https://www.gatsbyjs.com/blog/re-introducing-gatsby-a-reactive-site-generator/)\n* 📜 [高度なReactコンポーネント構成](https://frontendmastery.com/posts/advanced-react-component-composition-guide/)\n* 📜 [Reactフックは悪いアイデアだったと認めよう（パート2）](https://medium.com/codex/can-we-all-just-admit-react-hooks-were-a-bad-idea-795505b0485d)\n* 📜 [2022年におけるStorybookの意義](https://storybook.js.org/blog/why-storybook-in-2022/) + [7.0デザインアルファ](https://storybook.js.org/blog/7-0-design-alpha/) + [TypeScriptでのストーリー作成](https://storybook.js.org/blog/writing-stories-in-typescript/)\n* 📜 [React Router完全ガイド](https://ui.dev/react-router-tutorial)\n* 📜 [捨てるべき9つの悪いReact習慣](https://cult.honeypot.io/reads/bad-react-habits-to-kick/)\n* 📜 [ZodとTypeScriptを使ったRemixフォームデータの検証](https://egghead.io/blog/validating-remix-form-data-using-zod-and-typescript-in-action-functions)\n* 📜 [Reactに必要な最低限のTypeScript](https://ente.io/blog/tech/typescript-for-react/)\n* 📜 [Patterns.dev - レンダリングパターン](https://www.patterns.dev/posts/rendering-introduction/)\n* 📜 [6つのJSフレームワークのSSR性能を測定](https://dev.to/kaspera/we-measured-the-ssr-performance-of-6-js-frameworks-heres-what-we-found-1ck0)\n* 📜 [classNameプロップを使うべきか？](https://www.chakshunyu.com/blog/should-you-use-a-classname-prop/)\n* 📜 [Reactでの動的CSS-in-JSスタイルの回避](https://nickb.dev/blog/avoid-dynamic-css-in-js-styles-in-react/)\n* 📜 [フロントエンドセキュリティ入門](https://frontendmastery.com/posts/frontend-security-primer/)\n* 📜 [Reactエラーバウンダリー完全ガイド](https://meticulous.ai/blog/react-error-boundaries-complete-guide/)\n* 📜 [GPUバナナスタンド](https://acko.net/blog/the-gpu-banana-stand/)\n* 📜 [create-t3-app初見](https://dev.to/ajcwebdev/a-first-look-at-create-t3-app-1i8f)\n* 📜 [Next.jsへの移行](https://blog.benchsci.com/moving-house-to-next.js)\n* 📜 [キーボード専用テストとクリックベースUIテストの統合](https://testingaccessibility.com/introducing-keyboard-testing-library-by-grunet)\n* 📜 [React開発者が犯しがちなuseStateの5つの間違い](https://refine.dev/blog/common-usestate-mistakes-and-how-to-avoid/)\n* 📜 [NetlifyのNext.jsランタイムでエッジコンテンツを変換](https://www.netlify.com/blog/nextjs-advanced-middleware-better-runtime-that-extends-nextjs/)\n* 📜 [GatsbyデータレイヤーでRSGビルドをスケーリング](https://www.gatsbyjs.com/blog/scaling-rsg-builds-with-gatsbys-data-layer/)\n* 📜 [Gatsbyは衰退しているのか？](https://deliciousreverie.co.uk/posts/is-gatsby-decline/)\n* 📖 [イベントとエフェクトの分離](https://beta.reactjs.org/learn/separating-events-from-effects)\n* 📖 [エフェクト依存関係の削除](https://beta.reactjs.org/learn/removing-effect-dependencies)\n* 👥 [Next.js Conf 2022](https://vercel.com/blog/nextjs-conf-2022)\n* 🎥 [JavaScriptでF1グラフィックスを作成](https://www.youtube.com/watch?v=sA-X0Bw_7Gg)\n* ⏱ [ウェブサイトパフォーマンス比較：Gatsby vs Next vs Nuxt](https://www.gatsbyjs.com/blog/comparing-website-performance-gatsby-vs-next-vs-nuxt/)\n* 📦 [Redwood v3.0.0 RC](https://community.redwoodjs.com/t/redwood-v3-0-0-rc-is-now-available/3836)\n* 📦 [Next.js 12.3](https://nextjs.org/blog/next-12-3)\n* 📦 [Preact Signals](https://preactjs.com/blog/introducing-signals/)\n* 📦 [Blitz 2.0ベータ](https://github.com/blitz-js/blitz/releases/tag/v2.0.0-beta.1)\n* 📦 [Astro 1.0](https://astro.build/blog/astro-1/)\n* 📦 [Fresh 1.1](https://deno.com/blog/fresh-1.1)\n* 📦 [Mailing](https://www.mailing.run/)\n* 📦 [Remotion 3.2](https://www.remotion.dev/blog/3-2)\n* 📦 Gatsby [v4.20](https://www.gatsbyjs.com/docs/reference/release-notes/v4.20/) + [v4.21](https://www.gatsbyjs.com/docs/reference/release-notes/v4.21/) + [v4.22](https://www.gatsbyjs.com/docs/reference/release-notes/v4.22/)"
+      }
+    },
+    {
+      "segment_id": "46cf9aca",
+      "source_content": "<SubscribeFormEmbed />",
+      "source_content_hash": "2b5c5e42f4352c90b9647a9da7a0fb7ece8b8dc27440e42cdf85cbb6e1901b85",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_46cf9aca"
+      }
+    },
+    {
+      "segment_id": "233bb60e",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "bd30d33e",
+      "source_content": "## 📱 React-Native",
+      "source_content_hash": "a54c51123f2f64df89946c306816642cf99ad9766b489818537d40f93b5785aa",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native"
+      }
+    },
+    {
+      "segment_id": "023197ab",
+      "source_content": "* 📦 [Announcing React Native 0.70](https://reactnative.dev/blog/2022/09/05/version-070)\n* 📜 [The New Expo CLI](https://blog.expo.dev/the-new-expo-cli-f4250d8e3421)\n* 📜 [EAS Build Changelog](https://blog.expo.dev/eas-build-changelog-43b886b2fa24)\n* 📜 [Instant Performance Upgrade: From FlatList to FlashList](https://shopify.engineering/instant-performance-upgrade-flatlist-flashlist)\n* 📜 [Ditch the Simulator — Running Expo Dev Client natively on an M1 Mac](https://medium.com/@derekstavis/ditch-the-simulator-running-expo-dev-client-natively-on-an-m1-mac-28d269e9af17)\n* 📜 [Setting Max Width When Supporting Web and Mobile in React Native](https://www.reactnativeschool.com/setting-max-width-when-supporting-web-and-mobile-in-react-native)\n* 🚧 [Metro `require.context`](https://github.com/facebook/metro/pull/822) + [Expo file-system routing demo](https://twitter.com/Baconbrix/status/1560353229241831425)\n* 🎥 [React-Native EU 2022](https://www.youtube.com/playlist?list=PLZ3MwD-soTTE-qcA0MrcvZBdmkHJSIjJX)\n* 💬 [Umbrella issue - Add support for Web styles](https://github.com/facebook/react-native/issues/34425)\n* 💬 [RFC: Reduce API fragmentation across platforms](https://github.com/react-native-community/discussions-and-proposals/pull/496)\n* 💬 [Major Pain Points to Migrate to the New Architecture](https://github.com/reactwg/react-native-new-architecture/discussions/68)\n* 🎨 [Expo + white-label apps demo](https://twitter.com/Baconbrix/status/1557773847717416964)\n* 🎨 [Baran animations demos](https://twitter.com/barany6m)\n* 🎨 [Flight animation demo](https://twitter.com/lima_lucas3)\n* 📡 [Meta working on Yoga successor?](https://github.com/facebook/yoga/pull/1116#issuecomment-1201813564)\n* 🎙️ [React-Native-Radio #243-246](https://reactnativeradio.com/episodes)\n* 🎙️ [React Native Show #15 - Reassure](https://www.youtube.com/watch?v=8pTQKBHFs-8)",
+      "source_content_hash": "8b7bee876ad29636db2d2f1ba92015a93ed091b7fbf2cf1925740dc2047dbee0",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📦 [React Native 0.70の発表](https://reactnative.dev/blog/2022/09/05/version-070)\n* 📜 [新しいExpo CLI](https://blog.expo.dev/the-new-expo-cli-f4250d8e3421)\n* 📜 [EAS Build 変更履歴](https://blog.expo.dev/eas-build-changelog-43b886b2fa24)\n* 📜 [即時パフォーマンス向上: FlatListからFlashListへ](https://shopify.engineering/instant-performance-upgrade-flatlist-flashlist)\n* 📜 [シミュレーターを捨てよう - M1 MacでネイティブにExpo Dev Clientを実行](https://medium.com/@derekstavis/ditch-the-simulator-running-expo-dev-client-natively-on-an-m1-mac-28d269e9af17)\n* 📜 [React NativeでWebとモバイルをサポートする際の最大幅設定](https://www.reactnativeschool.com/setting-max-width-when-supporting-web-and-mobile-in-react-native)\n* 🚧 [Metro `require.context`](https://github.com/facebook/metro/pull/822) + [Expoファイルシステムルーティングデモ](https://twitter.com/Baconbrix/status/1560353229241831425)\n* 🎥 [React-Native EU 2022](https://www.youtube.com/playlist?list=PLZ3MwD-soTTE-qcA0MrcvZBdmkHJSIjJX)\n* 💬 [包括的な課題 - Webスタイルのサポート追加](https://github.com/facebook/react-native/issues/34425)\n* 💬 [RFC: プラットフォーム間のAPIフラグメンテーション削減](https://github.com/react-native-community/discussions-and-proposals/pull/496)\n* 💬 [新アーキテクチャ移行における主要な課題点](https://github.com/reactwg/react-native-new-architecture/discussions/68)\n* 🎨 [Expo + ホワイトラベルアプリデモ](https://twitter.com/Baconbrix/status/1557773847717416964)\n* 🎨 [Baranアニメーションデモ](https://twitter.com/barany6m)\n* 🎨 [フライトアニメーションデモ](https://twitter.com/lima_lucas3)\n* 📡 [MetaがYogaの後継を開発中？](https://github.com/facebook/yoga/pull/1116#issuecomment-1201813564)\n* 🎙️ [React-Native-Radio #243-246](https://reactnativeradio.com/episodes)\n* 🎙️ [React Native Show #15 - Reassure](https://www.youtube.com/watch?v=8pTQKBHFs-8)"
+      }
+    },
+    {
+      "segment_id": "0c6c4220",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "ab39e8a7",
+      "source_content": "## 🧑‍💻 Jobs",
+      "source_content_hash": "64ea4c54fde46cf169d450c6e06662f65a6798d3d6aa09cf7e50740e89edd904",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🧑‍💻 求人情報"
+      }
+    },
+    {
+      "segment_id": "d21af28f",
+      "source_content": "🧑‍💼 [**G2i - 100% Remote JavaScript Jobs**](https://www.g2i.co/)",
+      "source_content_hash": "3aa92b512e4ef202203e8667fbadfb1f8aec7b708f2d2ddad6d3efe807d30fdd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🧑‍💼 [**G2i - 100%リモートJavaScript求人**](https://www.g2i.co/)"
+      }
+    },
+    {
+      "segment_id": "44aaa880",
+      "source_content": "The only hiring platform that puts developer health first. We connect React and React Native freelancers with great companies committed to improving developers' mental, physical, and emotional health and well-being.",
+      "source_content_hash": "6cd2dffcdf84d7fcd9db1e58fa43e096578bd19ef88b8684897613ab79f85894",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "開発者の健康を第一に考える唯一の採用プラットフォーム。ReactとReact Nativeのフリーランサーを、開発者の精神的・身体的・感情的な健康と幸福を向上させることに取り組む優良企業と結びつけます。"
+      }
+    },
+    {
+      "segment_id": "396efb28",
+      "source_content": "💡 [How to publish an offer ?](https://thisweekinreact.com/sponsor)",
+      "source_content_hash": "d6c087944e448872ec417c1d10891f84e5b868b45b5d74dc4903752d88de502d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "💡 [求人を掲載する方法](https://thisweekinreact.com/sponsor)"
+      }
+    },
+    {
+      "segment_id": "256e0c86",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "64d57278",
+      "source_content": "## 🔀 Other",
+      "source_content_hash": "5e9e14c91030985b0d7f3c4a400f56d8d242e3126a9e79a6b5de37d51f2f95d3",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 その他"
+      }
+    },
+    {
+      "segment_id": "0aa939cf",
+      "source_content": "* [Lightning CSS](https://lightningcss.dev/)\n* [Announcing TypeScript 4.8](https://devblogs.microsoft.com/typescript/announcing-typescript-4-8/)\n* [TypeScript 4.9 Iteration Plan](https://github.com/microsoft/TypeScript/issues/50457)\n* [Oven.sh](https://oven.sh/)\n* [New to the web platform in August](https://web.dev/web-platform-08-2022/)\n* [New in Chrome 105](https://developer.chrome.com/blog/new-in-chrome-105/)\n* [Why is CrUX data different from my RUM data?](https://web.dev/crux-and-rum-differences/)\n* [Rewriting tests from Cypress to Playwright using GPT3](https://contra.com/p/PWBcPYZc-rewriting-tests-from-cypress-to-playwright-using-gpt-3)\n* [Critical CSS? Not So Fast!](https://csswizardry.com/2022/09/critical-css-not-so-fast/)\n* [GraphiQL 2.0](https://github.com/graphql/graphiql/releases/tag/graphiql%402.0.0)\n* [Bunchee - zero config bundler for ECMAScript libraries](https://github.com/huozhi/bunchee)\n* [Resumability, WTF?](https://dev.to/this-is-learning/resumability-wtf-2gcm)\n* [The JavaScript Paradox](https://dev.to/this-is-learning/the-javascript-paradox-2njj)\n* [CSS container queries are finally here](https://ishadeed.com/article/container-queries-are-finally-here/)\n* [Using :has() as a CSS Parent Selector and much more](https://webkit.org/blog/13096/css-has-pseudo-class/)\n* [Use the Right Container Query Syntax](https://www.oddbird.net/2022/08/18/cq-syntax/)\n* [Big Changes Ahead for Deno](https://deno.com/blog/changes) + [Deno 1.25](https://deno.com/blog/v1.25)\n* [PlanetScale serverless driver for JavaScript](https://planetscale.com/blog/introducing-the-planetscale-serverless-driver-for-javascript)\n* [A first look at Bun: is it really 3x faster than Node.js and Deno?](https://dev.to/builderio/a-first-look-at-bun-is-it-really-3x-faster-than-nodejs-and-deno-45od)\n* [Can browsers optimize the loading of third-party resources?](https://developer.chrome.com/blog/third-party-scripts/)",
+      "source_content_hash": "b2c13a8fce92848cbf0c53e5272f4fcc268623512aa9bc3a748818c12d537e53",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* [Lightning CSS](https://lightningcss.dev/)\n* [TypeScript 4.8の発表](https://devblogs.microsoft.com/typescript/announcing-typescript-4-8/)\n* [TypeScript 4.9のイテレーションプラン](https://github.com/microsoft/TypeScript/issues/50457)\n* [Oven.sh](https://oven.sh/)\n* [8月のWebプラットフォーム新機能](https://web.dev/web-platform-08-2022/)\n* [Chrome 105の新機能](https://developer.chrome.com/blog/new-in-chrome-105/)\n* [CrUXデータとRUMデータが異なる理由](https://web.dev/crux-and-rum-differences/)\n* [GPT3を使用してCypressからPlaywrightへのテスト書き換え](https://contra.com/p/PWBcPYZc-rewriting-tests-from-cypress-to-playwright-using-gpt-3)\n* [Critical CSS？ まだ早い！](https://csswizardry.com/2022/09/critical-css-not-so-fast/)\n* [GraphiQL 2.0](https://github.com/graphql/graphiql/releases/tag/graphiql%402.0.0)\n* [Bunchee - ECMAScriptライブラリ向けゼロコンフィグバンドラー](https://github.com/huozhi/bunchee)\n* [再開可能性とは？](https://dev.to/this-is-learning/resumability-wtf-2gcm)\n* [JavaScriptのパラドックス](https://dev.to/this-is-learning/the-javascript-paradox-2njj)\n* [CSSコンテナクエリがついに登場](https://ishadeed.com/article/container-queries-are-finally-here/)\n* [:has()をCSS親セレクターとして使用する方法とその他](https://webkit.org/blog/13096/css-has-pseudo-class/)\n* [正しいコンテナクエリ構文を使用する](https://www.oddbird.net/2022/08/18/cq-syntax/)\n* [Denoに大きな変化が到来](https://deno.com/blog/changes) + [Deno 1.25](https://deno.com/blog/v1.25)\n* [PlanetScaleのJavaScript向けサーバーレスドライバー](https://planetscale.com/blog/introducing-the-planetscale-serverless-driver-for-javascript)\n* [Bun初見: Node.jsやDenoよりも本当に3倍速いのか？](https://dev.to/builderio/a-first-look-at-bun-is-it-really-3x-faster-than-nodejs-and-deno-45od)\n* [ブラウザはサードパーティリソースの読み込みを最適化できるか？](https://developer.chrome.com/blog/third-party-scripts/)"
+      }
+    },
+    {
+      "segment_id": "294e85af",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "be17ccc3",
+      "source_content": "[![meme](/emails/issues/116/meme.png)](https://twitter.com/Keithamus/status/1562894696476999682)",
+      "source_content_hash": "6464ebae2bc7b262f74616ac4ab7efb3311d8180c1c9a3408b387bc8686a6a84",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![ミーム](/emails/issues/116/meme.png)](https://twitter.com/Keithamus/status/1562894696476999682)"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/116.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:36.720072+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "185d6b6dc5dde417c49060fbdffb93f4dc88f0707dd61491dfe2246313d62231"
+  }
+}

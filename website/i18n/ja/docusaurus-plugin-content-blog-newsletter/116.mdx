@@ -1,0 +1,149 @@
+---
+slug: /116
+title: "This Week In React #116: Next.js, Gatsby, Blitz, Fresh, Astro, Preact, Redwood, Deno, Remotion, React-Native, Expo, TypeScript, Lightning CSS..."
+authors: [slorber]
+date: 09-09-2022
+---
+
+みなさん、こんにちは！
+
+[ConvertKit](https://thisweekinreact.com/convertkit)から初めて送信したメールがほとんどの方に届いたことを嬉しく思います。メールプロバイダーの移行は成功しました！
+
+また、私が書いた[`useSyncExternalStore`に関する記事](https://thisweekinreact.com/articles/useSyncExternalStore-the-underrated-react-api)への反響も非常に嬉しく思っています。多くのフィードバックをありがとうございます。近いうちにもっと書いていきたいと思います。特定のトピックに100%焦点を当てたメールを送り、短時間で新しいことを学べるようにするのが目的です。
+
+それ以外では、週刊のキュレーションニュースレターが戻ってきました。今回は特別版で、ここ数週間の興味深いリンクをすべてまとめました。多すぎて今回はコメントできません😅 心配しないでください、9月末に休暇から戻ったら通常の形式で私のコメント付きで再開します！
+
+<!-- truncate -->
+
+***
+
+**サポート方法:**
+
+* 😘 **ニュースレターを友人に薦める**: 本当に助かります！
+* 💸 [**ニュースレターをスポンサーする**](https://thisweekinreact.com/sponsor) または [**私をスポンサーする**](https://github.com/sponsors/slorber)
+* 🧵 [**最新のTwitterスレッドをリツイートする**](https://slo.im/thread)
+* 📨 この[**メール**](mailto\:sebastien@thisweekinreact.com)に返信: フィードバックは歓迎です
+
+<SubscribeFormEmbed />
+
+***
+
+## 💸 スポンサー
+
+[![Storyblok](/emails/issues/116/storyblok.png)](https://www.storyblok.com/?utm_source=thisweekinreact\&utm_medium=display\&utm_campaign=AWA_SPON_TWIREACT_TRA\&utm_content=thisweekinreact_en)
+
+[Storyblok](https://www.storyblok.com/?utm_source=thisweekinreact\&utm_medium=display\&utm_campaign=AWA_SPON_TWIREACT_TRA\&utm_content=thisweekinreact_en)を試したことはありますか？開発者とマーケターの両方のために設計されたビジュアルエディタを備えたヘッドレスCMSです！
+
+Storyblok React SDKを使用して再利用可能なコンポーネントを迅速に構築し、React、Next.js、Remix、さらにはReact-Nativeのアプリケーション、ウェブサイト、またはeコマースを作成するためのコンテンツを取得できます。
+
+[Technology Hub](https://www.storyblok.com/technologies?utm_source=thisweekinreact\&utm_medium=display\&utm_campaign=AWA_SPON_TWIREACT_TRA\&utm_content=thisweekinreact_en)をチェックして、自分で確かめてみてください！
+
+***
+
+## ⚛️ React
+
+* 📜 [React 18とSuspenseでINPを改善する](https://vercel.com/blog/improving-interaction-to-next-paint-with-react-18-and-suspense)
+* 📜 [PureComponents vs フックを使った関数コンポーネント](https://www.developerway.com/posts/pure-components-vs-functional-and-hooks)
+* 📜 [Reactが再レンダリングする理由](https://www.joshwcomeau.com/react/why-react-re-renders/)
+* 📜 [useMemoとuseCallbackの理解](https://www.joshwcomeau.com/react/usememo-and-usecallback/)
+* 📜 [コールバックrefでuseEffectを避ける](https://tkdodo.eu/blog/avoiding-use-effect-with-callback-refs)
+* 📜 [React QueryとReact Routerの統合](https://tkdodo.eu/blog/react-query-meets-react-router)
+* 📜 [Gatsbyの再紹介：リアクティブなサイトジェネレーター](https://www.gatsbyjs.com/blog/re-introducing-gatsby-a-reactive-site-generator/)
+* 📜 [高度なReactコンポーネント構成](https://frontendmastery.com/posts/advanced-react-component-composition-guide/)
+* 📜 [Reactフックは悪いアイデアだったと認めよう（パート2）](https://medium.com/codex/can-we-all-just-admit-react-hooks-were-a-bad-idea-795505b0485d)
+* 📜 [2022年におけるStorybookの意義](https://storybook.js.org/blog/why-storybook-in-2022/) + [7.0デザインアルファ](https://storybook.js.org/blog/7-0-design-alpha/) + [TypeScriptでのストーリー作成](https://storybook.js.org/blog/writing-stories-in-typescript/)
+* 📜 [React Router完全ガイド](https://ui.dev/react-router-tutorial)
+* 📜 [捨てるべき9つの悪いReact習慣](https://cult.honeypot.io/reads/bad-react-habits-to-kick/)
+* 📜 [ZodとTypeScriptを使ったRemixフォームデータの検証](https://egghead.io/blog/validating-remix-form-data-using-zod-and-typescript-in-action-functions)
+* 📜 [Reactに必要な最低限のTypeScript](https://ente.io/blog/tech/typescript-for-react/)
+* 📜 [Patterns.dev - レンダリングパターン](https://www.patterns.dev/posts/rendering-introduction/)
+* 📜 [6つのJSフレームワークのSSR性能を測定](https://dev.to/kaspera/we-measured-the-ssr-performance-of-6-js-frameworks-heres-what-we-found-1ck0)
+* 📜 [classNameプロップを使うべきか？](https://www.chakshunyu.com/blog/should-you-use-a-classname-prop/)
+* 📜 [Reactでの動的CSS-in-JSスタイルの回避](https://nickb.dev/blog/avoid-dynamic-css-in-js-styles-in-react/)
+* 📜 [フロントエンドセキュリティ入門](https://frontendmastery.com/posts/frontend-security-primer/)
+* 📜 [Reactエラーバウンダリー完全ガイド](https://meticulous.ai/blog/react-error-boundaries-complete-guide/)
+* 📜 [GPUバナナスタンド](https://acko.net/blog/the-gpu-banana-stand/)
+* 📜 [create-t3-app初見](https://dev.to/ajcwebdev/a-first-look-at-create-t3-app-1i8f)
+* 📜 [Next.jsへの移行](https://blog.benchsci.com/moving-house-to-next.js)
+* 📜 [キーボード専用テストとクリックベースUIテストの統合](https://testingaccessibility.com/introducing-keyboard-testing-library-by-grunet)
+* 📜 [React開発者が犯しがちなuseStateの5つの間違い](https://refine.dev/blog/common-usestate-mistakes-and-how-to-avoid/)
+* 📜 [NetlifyのNext.jsランタイムでエッジコンテンツを変換](https://www.netlify.com/blog/nextjs-advanced-middleware-better-runtime-that-extends-nextjs/)
+* 📜 [GatsbyデータレイヤーでRSGビルドをスケーリング](https://www.gatsbyjs.com/blog/scaling-rsg-builds-with-gatsbys-data-layer/)
+* 📜 [Gatsbyは衰退しているのか？](https://deliciousreverie.co.uk/posts/is-gatsby-decline/)
+* 📖 [イベントとエフェクトの分離](https://beta.reactjs.org/learn/separating-events-from-effects)
+* 📖 [エフェクト依存関係の削除](https://beta.reactjs.org/learn/removing-effect-dependencies)
+* 👥 [Next.js Conf 2022](https://vercel.com/blog/nextjs-conf-2022)
+* 🎥 [JavaScriptでF1グラフィックスを作成](https://www.youtube.com/watch?v=sA-X0Bw_7Gg)
+* ⏱ [ウェブサイトパフォーマンス比較：Gatsby vs Next vs Nuxt](https://www.gatsbyjs.com/blog/comparing-website-performance-gatsby-vs-next-vs-nuxt/)
+* 📦 [Redwood v3.0.0 RC](https://community.redwoodjs.com/t/redwood-v3-0-0-rc-is-now-available/3836)
+* 📦 [Next.js 12.3](https://nextjs.org/blog/next-12-3)
+* 📦 [Preact Signals](https://preactjs.com/blog/introducing-signals/)
+* 📦 [Blitz 2.0ベータ](https://github.com/blitz-js/blitz/releases/tag/v2.0.0-beta.1)
+* 📦 [Astro 1.0](https://astro.build/blog/astro-1/)
+* 📦 [Fresh 1.1](https://deno.com/blog/fresh-1.1)
+* 📦 [Mailing](https://www.mailing.run/)
+* 📦 [Remotion 3.2](https://www.remotion.dev/blog/3-2)
+* 📦 Gatsby [v4.20](https://www.gatsbyjs.com/docs/reference/release-notes/v4.20/) + [v4.21](https://www.gatsbyjs.com/docs/reference/release-notes/v4.21/) + [v4.22](https://www.gatsbyjs.com/docs/reference/release-notes/v4.22/)
+
+<SubscribeFormEmbed />
+
+***
+
+## 📱 React-Native
+
+* 📦 [React Native 0.70の発表](https://reactnative.dev/blog/2022/09/05/version-070)
+* 📜 [新しいExpo CLI](https://blog.expo.dev/the-new-expo-cli-f4250d8e3421)
+* 📜 [EAS Build 変更履歴](https://blog.expo.dev/eas-build-changelog-43b886b2fa24)
+* 📜 [即時パフォーマンス向上: FlatListからFlashListへ](https://shopify.engineering/instant-performance-upgrade-flatlist-flashlist)
+* 📜 [シミュレーターを捨てよう - M1 MacでネイティブにExpo Dev Clientを実行](https://medium.com/@derekstavis/ditch-the-simulator-running-expo-dev-client-natively-on-an-m1-mac-28d269e9af17)
+* 📜 [React NativeでWebとモバイルをサポートする際の最大幅設定](https://www.reactnativeschool.com/setting-max-width-when-supporting-web-and-mobile-in-react-native)
+* 🚧 [Metro `require.context`](https://github.com/facebook/metro/pull/822) + [Expoファイルシステムルーティングデモ](https://twitter.com/Baconbrix/status/1560353229241831425)
+* 🎥 [React-Native EU 2022](https://www.youtube.com/playlist?list=PLZ3MwD-soTTE-qcA0MrcvZBdmkHJSIjJX)
+* 💬 [包括的な課題 - Webスタイルのサポート追加](https://github.com/facebook/react-native/issues/34425)
+* 💬 [RFC: プラットフォーム間のAPIフラグメンテーション削減](https://github.com/react-native-community/discussions-and-proposals/pull/496)
+* 💬 [新アーキテクチャ移行における主要な課題点](https://github.com/reactwg/react-native-new-architecture/discussions/68)
+* 🎨 [Expo + ホワイトラベルアプリデモ](https://twitter.com/Baconbrix/status/1557773847717416964)
+* 🎨 [Baranアニメーションデモ](https://twitter.com/barany6m)
+* 🎨 [フライトアニメーションデモ](https://twitter.com/lima_lucas3)
+* 📡 [MetaがYogaの後継を開発中？](https://github.com/facebook/yoga/pull/1116#issuecomment-1201813564)
+* 🎙️ [React-Native-Radio #243-246](https://reactnativeradio.com/episodes)
+* 🎙️ [React Native Show #15 - Reassure](https://www.youtube.com/watch?v=8pTQKBHFs-8)
+
+***
+
+## 🧑‍💻 求人情報
+
+🧑‍💼 [**G2i - 100%リモートJavaScript求人**](https://www.g2i.co/)
+
+開発者の健康を第一に考える唯一の採用プラットフォーム。ReactとReact Nativeのフリーランサーを、開発者の精神的・身体的・感情的な健康と幸福を向上させることに取り組む優良企業と結びつけます。
+
+💡 [求人を掲載する方法](https://thisweekinreact.com/sponsor)
+
+***
+
+## 🔀 その他
+
+* [Lightning CSS](https://lightningcss.dev/)
+* [TypeScript 4.8の発表](https://devblogs.microsoft.com/typescript/announcing-typescript-4-8/)
+* [TypeScript 4.9のイテレーションプラン](https://github.com/microsoft/TypeScript/issues/50457)
+* [Oven.sh](https://oven.sh/)
+* [8月のWebプラットフォーム新機能](https://web.dev/web-platform-08-2022/)
+* [Chrome 105の新機能](https://developer.chrome.com/blog/new-in-chrome-105/)
+* [CrUXデータとRUMデータが異なる理由](https://web.dev/crux-and-rum-differences/)
+* [GPT3を使用してCypressからPlaywrightへのテスト書き換え](https://contra.com/p/PWBcPYZc-rewriting-tests-from-cypress-to-playwright-using-gpt-3)
+* [Critical CSS？ まだ早い！](https://csswizardry.com/2022/09/critical-css-not-so-fast/)
+* [GraphiQL 2.0](https://github.com/graphql/graphiql/releases/tag/graphiql%402.0.0)
+* [Bunchee - ECMAScriptライブラリ向けゼロコンフィグバンドラー](https://github.com/huozhi/bunchee)
+* [再開可能性とは？](https://dev.to/this-is-learning/resumability-wtf-2gcm)
+* [JavaScriptのパラドックス](https://dev.to/this-is-learning/the-javascript-paradox-2njj)
+* [CSSコンテナクエリがついに登場](https://ishadeed.com/article/container-queries-are-finally-here/)
+* [:has()をCSS親セレクターとして使用する方法とその他](https://webkit.org/blog/13096/css-has-pseudo-class/)
+* [正しいコンテナクエリ構文を使用する](https://www.oddbird.net/2022/08/18/cq-syntax/)
+* [Denoに大きな変化が到来](https://deno.com/blog/changes) + [Deno 1.25](https://deno.com/blog/v1.25)
+* [PlanetScaleのJavaScript向けサーバーレスドライバー](https://planetscale.com/blog/introducing-the-planetscale-serverless-driver-for-javascript)
+* [Bun初見: Node.jsやDenoよりも本当に3倍速いのか？](https://dev.to/builderio/a-first-look-at-bun-is-it-really-3x-faster-than-nodejs-and-deno-45od)
+* [ブラウザはサードパーティリソースの読み込みを最適化できるか？](https://developer.chrome.com/blog/third-party-scripts/)
+
+***
+
+[![ミーム](/emails/issues/116/meme.png)](https://twitter.com/Keithamus/status/1562894696476999682)

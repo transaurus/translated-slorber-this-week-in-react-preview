@@ -1,0 +1,156 @@
+---
+slug: /175
+title: "This Week In React #175: RSC, useSyncExternalStore, Vinxi, Server Actions, Next.js, Remix, margins, WakuLand, R3F-uikit, React-Forget, RN releases, Bridgeless, Expo Fingerprint, Flash Calendar, Zeego, RN Reusables..."
+authors: [slorber, bndkt]
+date: 02-28-2024
+---
+
+みなさん、こんにちは！
+
+今週はリリースが比較的少ないですが、読むべき素晴らしい記事がたくさんあります！
+
+先週はすみません、メールが長すぎてリンクを削除したにも関わらず、Gmailで途中で切れてしまいました😅。
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアル形式 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Appルーティング対応のNext.js向けインライン視覚編集CMS](/emails/issues/169/reactbricks.jpg)](https://reactbricks.com/?utm_source=twir\&utm_campaign=twir_2024\&utm_medium=email)
+
+**[Appルーティング対応のNext.js向けインライン視覚編集CMS](https://reactbricks.com/?utm_source=twir\&utm_campaign=twir_2024\&utm_medium=email)**
+
+[**1分でプロジェクトをセットアップ**](https://reactbricks.com/sign-up?utm_source=twir\&utm_campaign=twir_2024\&utm_medium=email) CLIを使って、任意のCSSフレームワークでピクセルパーフェクトな企業ブランドを表現するための独自のビジュアルブロックをReactコンポーネントとして定義できます。Server Componentsを使った新しいNext.jsスターターをお試しください！
+
+コンテンツ編集者は、ワードプロセッサのように視覚的にページを構成するコンテンツブロックを簡単に使用でき、デザインを損なうことなく作業できます。
+
+React Bricksは、デジタルアセット管理、高度なSEO、リアルタイムコラボレーション、スケジュールされた公開、多言語対応、外部APIとの統合、承認ワークフロー、複数環境、変更履歴など、エンタープライズ向けの機能を備えています。
+
+The Weather Channel、Deel.com、La Banque Postaleなどの企業クライアントや、主要なeCommerceサイト、世界中の9,000人以上のユーザーに信頼されています。\
+[**今日から始めましょう！**](https://reactbricks.com/sign-up?utm_source=twir\&utm_campaign=twir_2024\&utm_medium=email)
+
+***
+
+## ⚛️ React {#react}
+
+[![React Server Componentsを使ったインスタント検索パラメータ](/emails/issues/175/next-search.jpg)](https://buildui.com/posts/instant-search-params-with-react-server-components)
+
+**[React Server Componentsを使ったインスタント検索パラメータ](https://buildui.com/posts/instant-search-params-with-react-server-components)**
+
+React Server Componentsの世界でUIの状態をクエリ文字列に保持しつつ即時のユーザーフィードバックを提供するのが意外に難しいことを示す素晴らしいインタラクティブ記事です。URLを更新するとサーバーラウンドトリップが発生します。新しい`useOptimistic`フックはこの問題をうまく解決します。また、CSSの`:has()`を使って`startTransition`の保留状態をホイスティングせずに済む良いユースケースも紹介されています。
+
+***
+
+[![VinxiでReactメタフレームワークを構築](/emails/issues/175/vinxi.jpg)](https://www.brenelz.com/posts/building-a-react-metaframework-with-vinxi/)
+
+**[VinxiでReactメタフレームワークを構築](https://www.brenelz.com/posts/building-a-react-metaframework-with-vinxi/)**
+
+[Vinxi](https://vinxi.vercel.app/)について初めて知りました。ViteとNitroの上に構築されたツールボックスで、SSR、ルーティング規約、サーバー関数など、独自のメタフレームワークを簡単に作成できるようにします。Solid Startは内部でこれを使用していますが、フレームワークに依存しないSDKです。[TanStack Startもこれを使う予定](https://twitter.com/sebastienlorber/status/1762809340719780080)のようです！この記事ではReactで使う方法を説明しています。
+
+***
+
+* 💸 [Reactで機能豊富なPDFビューアを構築する方法をApryseのレンダリングエンジンで探る。UIのカスタマイズ、スクロール、ズーム、注釈付き検索が可能。](https://apryse.com/blog/build-custom-react-pdf-viewer?utm_source=thisweekinreact2\&utm_medium=email\&utm_campaign=newsletter2)
+* 📜 [useSyncExternalStoreでハイドレーションミスマッチを回避する](https://tkdodo.eu/blog/avoiding-hydration-mismatches-with-use-sync-external-store): Dominikによる素晴らしい記事で、`useSyncExternalStore`とその2つのクライアント/サーバースナップショットコールバックがハイドレーションミスマッチを防ぐのにどのように役立つかを解説。ローカライズされた日付のレンダリングや、クライアント専用のラッパーコンポーネント作成など、多くのユースケースでuseEffectよりも優れた代替手段となり得ます。
+* 📜 [Server Actionsを使ったNext.jsフォームの探求](https://www.robinwieruch.de/next-forms/): 新しいReact/Next.jsのフォームプリミティブを抽象化せずに使用するための非常に包括的なステップバイステップチュートリアル。途中で犯しがちな小さなミスも網羅。
+* 📜 [外側のマージンをなくす](https://kyleshevlin.com/no-outer-margin/): コンポーネントのルート内にマージンを適用するのではなく、親コンポーネントにレイアウトを任せるべき理由を説明。マージンが最初に思い浮かびますが、コンポーネントのカプセル化を破る他のCSSルールもあります。この問題に関して削除された素晴らしい記事を復元しました: [レイアウト分離されたコンポーネント](https://web.archive.org/web/20201024040746/https://visly.app/blog/layout-isolated-components)。
+* 📜 [Vjeux - Metaでの12年間](https://blog.vjeux.com/2024/project/12-years-at-meta.html): 新しいReact開発者ならChristopher Chedeauの名前を知らないかもしれませんが、彼は私たちのコミュニティで最も影響力のあるメンバーの一人です。彼が作成または大きく貢献したもの: React、React Native、Yoga、CSS-in-JS、Prettier、Excalidraw、Docusaurus、GraphQL…
+* 📜 [Solidの4つの主要プリミティブを学ぶ](https://www.brenelz.com/posts/learning-four-key-primitives-in-solid/): タイトルに惑わされないでください、React開発者にとって素晴らしい記事で、SolidとReact、Next.js、Remixを4つの興味深いトピックで比較しています。Next.jsのRSCコンポーネントは、プリロード関数を使用しない限りデフォルトでウォーターフォールになることを知りました。
+* 📜 [RemixでJSONとFormDataの両方を処理する](https://www.jacobparis.com/content/conform-json-formdata): Jacobは、フォーム入力を使用する場合と、イベントハンドラーで手動でFormDataまたはJSONペイロードを作成する場合のトレードオフを説明。ZodとConformを使用して、JSONとFormDataの両方のペイロードを便利に受け入れるRemixの抽象化を作成する方法を示します。
+* 📜 [Waku Landの紹介](https://interbolt.org/blog/waku-land/): すべてのWaku例のライブデプロイメント。
+* 📜 [2024年にRemixアプリをホストする場所](https://www.jacobparis.com/content/where-to-host-remix?ref=twitter): 2月25日更新。
+* 📜 [HTMX vs React - 完全な比較](https://semaphoreci.com/blog/htmx-react): 記事では、リッチなWeb体験にはReactを、よりシンプルなインタラクティビティのページにはHTMXを使用することを提案しています。
+* 📜 [Next.js vs. Remix - 開発者のジレンマ](https://blog.saeloun.com/2024/02/21/next.js-vs-remix/)
+* 📜 [コンパイラ理論とリアクティビティ](https://www.recompiled.dev/blog/ssa/): SathyaはReact Forgetで作業しており、Static Single Assignment形式と呼ばれるコンパイラ理論パスを使用していることを説明。正直なところ、少し理解に苦しみます😅。彼の以前の記事[Alias analysis](https://www.recompiled.dev/blog/alias-analysis/)の方が理解しやすいです。
+* 📜 [Next.js App Routerでアクティブリンクをスタイルする方法](https://spacejelly.dev/posts/how-to-style-active-links-in-next-js-app-router)
+* 📜 [PagesまたはAppディレクトリを使用してNext.jsウェブサイトに動的サイトマップを追加する](https://claritydev.net/blog/nextjs-dynamic-sitemap-pages-app-directory)
+* 📦 [@react-three/uikit - react-three/fiberとyogaを使用してパフォーマンスの高い3Dユーザーインターフェースを構築](https://github.com/pmndrs/uikit): Poimandresコレクティブの新しいパッケージプレビューで、印象的な🐦 [デモ](https://twitter.com/0xca0a/status/1762069894932160943)
+* 🎥 [Ryan Toronto - React 19でのアセット読み込み](https://www.youtube.com/watch?v=dxWLp-8mXes): ナビゲーション遷移を完了する前に次のページのアセット（ここではCSS）を読み込むことができる、あまり知られていないがエキサイティングな今後のReact機能を説明。
+* 🎥 [Jack Herrington - React Hook Form & React 19フォームアクション、正しい方法](https://www.youtube.com/watch?v=VLk45JBe8L8)
+* 🎥 [Fireship - 彼らはReactを再び偉大にしたのか？（React Labs）](https://www.youtube.com/watch?v=4k6Xgjqkad4)
+* 🎥 [Fireship - このUIコンポーネントライブラリは驚異的（Aceternity Components）](https://www.youtube.com/watch?v=RPa3_AD1_Vs)
+* 🎙️ [PodRocket - Naman GoelとのStyleX](https://podrocket.logrocket.com/stylex-naman-goel)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![最も包括的なユーザー管理プラットフォーム](/emails/issues/172/clerk.jpg)](https://clerk.com/?utm_source=sponsorship\&utm_medium=newsletter\&utm_campaign=thisweekinreact\&utm_term=02-28-24)
+
+**[最も包括的なユーザー管理プラットフォーム](https://clerk.com/?utm_source=sponsorship\&utm_medium=newsletter\&utm_campaign=thisweekinreact\&utm_term=02-28-24)**
+
+ClerkはReactアプリの認証とユーザー管理を合理化し、モダンなWeb向けに迅速なセットアップを実現します。
+
+Clerkの利点を体験してください:
+
+* 💅 サインイン、サインアップ、ユーザープロファイル、組織向けの事前構築済みUIコンポーネント。任意のCSSライブラリでカスタマイズ可能で、独自ドメインにデプロイ可能
+* 📦 React、React Native、Next.js、Redwood、Remixなどのフレームワーク向けSDK
+* ⚡ Firebase、Supabase、ConvexなどのBaaSプロバイダーとの統合
+* 🎁 ユーザー管理、ソーシャルログイン、マジックリンク、多要素認証などがすぐに利用可能
+
+Clerkの[クイックスタートとチュートリアル](https://clerk.com/docs/quickstarts/overview?utm_source=sponsorship\&utm_medium=newsletter\&utm_campaign=thisweekinreact\&utm_term=02-28-24)でプロジェクトを始めましょう🚀
+
+***
+
+## 📱 React-Native {#react-native}
+
+このセクションは現在[Benedikt](https://twitter.com/bndkt)と共同執筆されています。メールまたは[Twitter](https://twitter.com/bndkt)でコメントをお寄せください！
+
+今週は、大きなReact Nativeのニュースから一息つけた週でした（何か見落としていたら[@me](https://twitter.com/bndkt)まで）。Expo 50、visionOS、React Nativeの現状、react-strict-domなどの話題が続いた後の穏やかな期間だったかもしれません。しかし、React Nativeの世界が停滞しているわけではありません。近い将来のReact Nativeを垣間見せる小さな発表がいくつかありました。[RN 0.74](https://github.com/facebook/react-native/blob/ee2bc59dfe4579cad3b7f0b5de667a89fcac8710/CHANGELOG.md#0740-rc0)の最初のリリース候補が公開されました。多くの改善点とともに、いくつかの非推奨化や破壊的変更も含まれていますが、一見したところアップグレード作業を心配するような大きな変更はなさそうです。特に、0.74ではブリッジレスモードが新たなデフォルトになります（ただしNew Archが有効な場合のみ）。ブリッジレスモードは、すでに導入されているTurboModulesと新しいレンダラー（Fabric）に続く、New Archの第三の柱です。New Archとデフォルト設定について言えば、RN 0.75からNew Archをデフォルトにする[PR](https://github.com/facebook/react-native/pull/43135)がマージされました（ただしオプトアウトは可能です）。また、[React Native Frameworks](https://github.com/react-native-community/discussions-and-proposals/blob/main/proposals/0759-react-native-frameworks.md)の定義に関するRFCもマージされ、RNとその上に構築されるフレームワークの責任範囲が明確化されました。
+
+***
+
+* 💸 [React Universe Conf - 今すぐ最低価格でカンファレンスに参加しよう。限定数のブラインドバードチケットが利用可能です。](https://www.reactuniverseconf.com/)
+* 📜 [React NativeプロジェクトにネイティブiOSコードを統合する方法](https://www.themorrow.digital/blog/how-to-integrate-native-modules-in-react-native-ios-apps): iOS向けネイティブコードに取り組む前に知っておくべき、ブリッジングヘッダーや@objcなどの基本を紹介した良い入門記事。
+* 📜 [react-strict-dom、なぜこんなに素晴らしいのか？](https://szymonrybczak.dev/blog/react-strict-dom) `<html.div>`がiOSのネイティブコンポーネントとしてどのように機能するのか知りたい方は、react-strict-domの短いまとめを読んでみてください。
+* 📜 [Expoプッシュ通知をFCM V1に移行](https://expo.dev/blog/expo-push-notifications-migrating-to-fcm-v1): 6月にはFCM LegacyがGoogleのサービス終了リストに加わります。今こそ移行の時です！
+* 📜 [@expo/fingerprint 🤝 GitHub Actions](https://expo.dev/blog/expo-fingerprint-github-actions): 個人的には、FingerprintはExpo SDK 50で最も過小評価されている機能だと思います。この記事では、Fingerprintが必要と判断したらすぐに新しいネイティブビルドを開始するというキラーユースケースを紹介しています。
+* 📜 [ユニバーサルアプリ：モバイル、デスクトップ、Web、TVを統合した単一のコードベース？](https://www.reactnativetv.com/blog/universal-apps-powering-seven-platforms) 2024年に私が最も興奮しているトピックの1つ、1つのアプリで全てのプラットフォームをカバーするという聖杯のような話です。この記事には興味深い考察が含まれています。
+* 📜 [ExpoとLegend Stateを使ってオフラインファーストアプリを構築する方法](https://expo.dev/blog/offline-first-apps-with-expo-and-legend-state)
+* 📦 [React Native 0.74-rc.1](https://github.com/facebook/react-native/releases/tag/v0.74.0-rc.1)
+* 📦 [React Native v0.73.5](https://github.com/facebook/react-native/releases/tag/v0.73.5)
+* 📦 [react-native-visionos 0.73.6](https://github.com/callstack/react-native-visionos/releases/tag/v0.73.6-visionos): マルチウィンドウサポートと[新しいドキュメント](https://callstack.github.io/react-native-visionos-docs/)が追加されました！
+* 📦 [Zeego 1.8 + 1.9 - ユニバーサルクロスプラットフォームメニュー - 水平グループとグループラベル](https://github.com/nandorojo/zeego/releases)
+* 📦 [react-native-image-editor 4.0 - base64出力、フォーマットプロパティ、メタデータ返却](https://github.com/callstack/react-native-image-editor/releases/tag/4.0.0)
+* 📦 [React Native Flash Calendar - Shopify FlashListを使用した高速で柔軟なカレンダー](https://github.com/MarceloPrado/flash-calendar)
+* 📦 [react-native-reusables](https://github.com/mrzachnugent/react-native-reusables): Web向けUIライブラリであるshadcn/uiが大好きな方へ、これをReact Nativeに移植しました！
+* 🎥 [Fireship - 100秒でわかるExpo](https://www.youtube.com/watch?v=vFW_TxKLyrE)
+* 🎥 [Theo Brown - Reactの次の大きな変化？（react strict dom）](https://www.youtube.com/watch?v=hz5gbCXJ-vA)
+* 🎥 [Expo - Expo SDK 50でTVアプリを構築する方法](https://www.youtube.com/watch?v=PUMBWeLVuiw)
+* 🎙️ [Rocket Ship 031 - Kacper Kapuściakと語るReact Nativeジェスチャー＆マイクロインタラクション](https://share.transistor.fm/s/64cd1071)
+* 🎙️ [RNR 289 - 実践React Native: David Leulietteが語る小売シェイクスキャナー](https://www.reactnativeradio.com/episodes/rnr-289-real-life-react-native-david-leuliette-talks-retail-shake-scanner)
+
+***
+
+## 🔀 Other {#other}
+
+* 📣 [AppleがEUでPWAを廃止 - 緊急の対応が必要](https://open-web-advocacy.org/apple-attempts-killing-webapps/)
+* 👀 [TypeScript PR - 制御フロー分析を用いた関数本体からの型述語推論](https://github.com/microsoft/TypeScript/pull/57465)
+* 👀 [Rsbuild v1.0 リリース計画 - 2024年7月までにRspack v1とRsbuild v1をリリース](https://github.com/web-infra-dev/rsbuild/discussions/1678)
+* 📜 [CSS :has() インタラクティブガイド](https://ishadeed.com/article/css-has-guide/)
+* 📜 [TypeScript構文の代替としてのJSDoc](https://alexharri.com/blog/jsdoc-as-an-alternative-typescript-syntax)
+* 📜 [Node.js 2023年回顧録](https://blog.rafaelgss.dev/nodejs-2023-year-in-review)
+* 📦 [Babel 7.24 - デコレータの更新とJSONモジュールインポート](https://babeljs.io/blog/2024/02/28/7.24.0)
+* 📦 [TypeScript 5.4 RC - NoInfetユーティリティ型、クロージャ内での型絞り込み改善](https://devblogs.microsoft.com/typescript/announcing-typescript-5-4-rc/)
+* 📦 [LightningCSS 1.42 - light-dark()、システムカラー、カスタムプロパティの重複排除](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.24.0)
+* 📦 [Chrome 122 - パフォーマンスDevTools、Storage Buckets、非同期クリップボード](https://developer.chrome.com/blog/new-in-chrome-122/)
+* 📦 [PGlite - WASM上のPostgres](https://github.com/electric-sql/pglite)
+* 📦 [snap - node:test用スナップショットテストツール](https://github.com/mcollina/snap)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/175/meme.jpg)](https://twitter.com/sebastienlorber/status/1760963583603581163)
+
+それでは！ 👋

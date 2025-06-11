@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "ニュースレター",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "This Week In React キュレーションニュースレターの週刊号",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "号",
+    "description": "The label for the left sidebar"
+  }
+}

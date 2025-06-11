@@ -1,0 +1,134 @@
+---
+slug: /119
+title: "This Week In React #119: React OG Images, Tremor, Storybook, Decoupling, Rendering, Data-Fetching, Remix, Qwik, TypeScript, Playwright..."
+authors: [slorber]
+date: 10-11-2022
+---
+
+みなさん、こんにちは！
+
+今週はReactに関する多様で質の高い記事が多く、React Native側は落ち着いています。
+
+[ViteConf](https://viteconf.org/)が始まったばかりで、来週には何か発表があるかもしれません ;)
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Storyblok](/emails/issues/116/storyblok.png)](https://www.storyblok.com/?utm_source=thisweekinreact\&utm_medium=display\&utm_campaign=AWA_SPON_TWIREACT_TRA\&utm_content=thisweekinreact_en)
+
+[Storyblok](https://www.storyblok.com/?utm_source=thisweekinreact\&utm_medium=display\&utm_campaign=AWA_SPON_TWIREACT_TRA\&utm_content=thisweekinreact_en)を試したことはありますか？開発者とマーケターの両方のために設計されたビジュアルエディタを備えたヘッドレスCMSです！
+
+Storyblok React SDKを使用して再利用可能なコンポーネントを迅速に構築し、React、Next.js、Remix、さらにはReact-Nativeのアプリケーション、ウェブサイト、またはeコマースを作成するためのコンテンツを取得できます。
+
+[Technology Hub](https://www.storyblok.com/technologies?utm_source=thisweekinreact\&utm_medium=display\&utm_campaign=AWA_SPON_TWIREACT_TRA\&utm_content=thisweekinreact_en)をチェックして、自分で確かめてみてください！
+
+***
+
+## ⚛️ React {#react}
+
+**[Vercel OG Image Generation: エッジでの高速で動的なソーシャルカード画像生成](https://vercel.com/blog/introducing-vercel-og-image-generation-fast-dynamic-social-card-images)**
+
+Vercelは、Vercel Edge Functionsで動的なソーシャルカードを生成するための新しい非常に効率的なソリューションを発表しました。実用的な点として、追加の設定なしでJSX、Reactコンポーネント（ステートレス）、およびTailwindを使用できます。これらがどのように機能するかを説明する[このスレッド](https://twitter.com/shuding_/status/1579607964549513217)をお勧めします。非常に興味深いです！彼らはReact-NativeのレイアウトエンジンであるYogaさえ使用しています 🤭
+
+**[Reactにおけるレンダリングの未来](https://prateeksurana.me/blog/future-of-rendering-in-react/)**
+
+React 18以降のレンダリングパターンをよく説明した記事です。SSRストリーミングの仕組み、Suspense、React lazy、Server Componentsでの機能フラグの実装などについての情報が得られます。
+
+**[Reactプロジェクトでよくある問題の克服](https://dinosaurs-with-jetpacks.com/posts/react-problems)**
+
+JavaScriptアプリをフレームワーク（Reactなど）から切り離すことを推奨しています。よりシンプルなアプローチへの回帰を促しています。賛同を得られないかもしれないいくつかの意見も含まれています。
+
+**[StorybookでのMaterial UI](https://storybook.js.org/blog/material-ui-in-storybook/)**
+
+特に興味深いセクションを含むチュートリアルで、基盤となるUIライブラリのTypeScriptタイプを再利用してStorybookコントロールを自動生成する方法を説明しています。プロパティを転送する際に非常に便利です。`Pick`や`Omit`のようなヘルパーもサポートしています。
+
+* 👤 Sathya Gunasekaran（元V8）が[Reactコアチームに加入](https://twitter.com/_gsathya/status/1578816177371250688)、おそらく[React-Forgetコンパイラの作業に携わる](https://twitter.com/Huxpro/status/1578865666010263552)予定
+* 👥 [Next.js Conf 2022のスピーカー](https://twitter.com/vercel/status/1578401243243741185)
+* 📖 ベータ版ドキュメント: [React.Children](https://twitter.com/dan_abramov/status/1578457525628047360) + [useId](https://twitter.com/dan_abramov/status/1577283961763467265) + [createElement](https://twitter.com/dan_abramov/status/1577463721193897985) + [useImperativeHandle](https://twitter.com/dan_abramov/status/1577717226269966336)
+* 📖 [Next.js on Vercelドキュメントの改善](https://twitter.com/leeerob/status/1577788730349436928)
+* 🌶 [ReactとNext.jsは終わった――ついに（完全に）置き換わる新たな何か](https://javascript.plainenglish.io/react-and-next-js-is-dead-something-new-is-finally-replacing-it-for-good-c792c48806f6): QwikフレームワークがReactよりも優れたモデルを提供する方法を解説。釣りタイトルだが、非常に興味深い記事。
+* 📜 [Reactカスタムレンダラーの構築 - パート1](https://www.markcodes.dev/posts/build-react-custom-renderer-part-1): Reactレンダラーを作成する方法を示す新シリーズ。現時点では追いやすい内容だが、更新機能はまだサポートされていない。
+* 📜 [Remix、React、そして状態管理](https://blog.jim-nielsen.com/2022/remix-react-and-state/): Remixのメンタルモデルを、エンドツーエンド/フルスタックな方法でReactの状態と調和させる。
+* 📜 [独自の状態管理ライブラリの書き方](https://judehunter.dev/blog/how-to-write-your-own-state-management-library): 状態管理ライブラリの動作原理と、セレクターシステムの実装方法を理解するのに有用。
+* 📜 [パフォーマンスを考慮したReactでのデータ取得方法](https://www.developerway.com/posts/how-to-fetch-data-in-react): Reactでのデータ取得が単純ではない理由を解説。パフォーマンスはUX/知覚に関連。ウォーターフォール、ブラウザのリクエスト制限など...
+* 📜 [React、TypeScript、xStateで不可能なUI状態を回避](https://whereisthemouse.com/avoid-impossible-ui-states-with-react-typescript-and-xstate): TypeScriptの判別共用体型は不可能な状態を回避し、XStateは不可能な状態遷移を防ぐ。
+* 📜 [新しいJavaScriptフレームワーク作成について考えを改めた](https://whitep4nth3r.com/blog/write-a-new-javascript-framework/): SSG + SSRの両方をサポートするフレームワークは4つだけ - Eleventy、Next.js、Gatsby、Redwood。
+* 📜 [Sandpackをコードデモに活用する方法](https://www.ctnicholas.dev/articles/how-to-use-sandpack-for-code-demos): [最新のSandpack機能で更新された記事](https://twitter.com/ctnicholasdev/status/1577683748878884864)、ライブコードプレイグラウンドを作成するこのCodesandboxツール。Reactベータ版ドキュメントやJosh Comeauなどで使用。
+* 📦 [Tremor 1.0](https://www.tremor.so/): ダッシュボード分析を作成するためのReact UIコンポーネントライブラリ。
+* 🐦 [W3C Trusted Types + React + XSS](https://twitter.com/sebastienlorber/status/1579485631260286977): 新しいHTML提案はXSS脆弱性を防ぐネイティブソリューションを提供し、将来的には`dangerouslySetInnerHTML`の必要性をなくすかもしれない？
+
+<SubscribeFormEmbed />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[**React Brussels - 対面＆オンラインReactカンファレンス - 2022年10月14日**](https://www.react.brussels/)
+
+React Brusselsがヨーロッパの中心で初の**ハイブリッド**版として帰ってきます。**最先端の技術とスキル**（Playwright、WebVR、useEffect、データ取得、Remixなど）に関する講演が予定されており、React界の**最も優れた頭脳**たちが登壇します：
+
+* テジャス・クマール: DevRelディレクター - **Xata**
+* キャスリーン・マクマホン: シニアデザインシステムエンジニア - **ノースウェスタン・ミューチュアル**
+* デビッド・クアシッド: 創業者 - **ステートリー**
+* シャウンダイ・パーソン: シニアソフトウェアエンジニア - **Netflix**
+* デビー・オブライエン: シニアプログラムマネージャー - **マイクロソフト**
+
+アフターパーティー、コンテスト、求人情報、ベルギービール🍺、スワッグ、シティツアー... すべてが用意されており、カンファレンス終了後も楽しみが続きます！
+
+残念ながら現地チケットは**完売**しました！しかし、オンラインで参加することは可能です！[**30€のオンラインチケット🎟**](https://ti.to/bejs/react-brussels-2022/discount/online_lastweek)を購入して、ぜひご参加ください😜
+
+***
+
+## 📱 React-Native {#react-native}
+
+* 🎥 [React-Nativeでできるか？ - シーズン5予告編](https://www.youtube.com/watch?v=GArbi97dV08)
+* 🚧 [Expo Router 0.0.26](https://twitter.com/Baconbrix/status/1578805793733763072): [useHref / リンクコピー](https://twitter.com/Baconbrix/status/1578176991441784833) + [スプラッシュスクリーン調整](https://twitter.com/Baconbrix/status/1577690073906257921)
+* 📖 [React-Nativeドキュメント完全バイリンガル化 - Java + Kotlin](https://twitter.com/reactnative/status/1578332414145105921)
+* 🎨 [Reanimated - useAnimatedKeyboard()デモ](https://twitter.com/swmansion/status/1579471824831725571)
+* 📦 [react-native-test-app 2.0](https://twitter.com/lord_sherlock/status/1578312268663906304): Expo Configプラグインサポート
+* 📦 [react-native-quick-sqlite 5.0](https://twitter.com/ospfranco/status/1578145916510273536): Promise API対応
+
+***
+
+## 🧑‍💻 Jobs {#jobs}
+
+🧑‍💼 [**Causal社のプロダクトエンジニア、リモート/ロンドン/NY、\$150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied\&lever-source%5B%5D=thisweekinreact.com)
+
+Causalは、数字を扱いデータを可視化するためのオールインワンツールを構築しているSeries Aスタートアップ（Coatue/Accel出資）です。難しいUX/パフォーマンス課題を解決できるReactエンジニアを募集しています。
+
+🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\&t=ArRLC77BpRwXXCdx8fnUqw)
+
+React Nativeに特化した開発者向けに複数のポジションを開設中です！報酬は約160kドル＋10%ボーナス。RNの実務経験があり、米国在住であることが条件です。詳細は[@gabe\_g2i](https://twitter.com/gabe_g2i)までDMでお問い合わせください。This Week in Reactからの紹介をお忘れなく。
+
+💡 [求人を掲載する方法は？](https://thisweekinreact.com/sponsor)
+
+***
+
+## 🔀 Other {#other}
+
+* [Playwright Locators APIsがTesting Libraryにインスパイアされた](https://twitter.com/diegohaz/status/1578567655493193728)
+* [Deno - ウェブの未来はエッジにある](https://deno.com/blog/the-future-of-web-is-on-the-edge)
+* [素晴らしいアプリのための新しいパターン](https://web.dev/new-patterns-for-amazing-apps/)
+* [長時間タスクの最適化](https://web.dev/optimize-long-tasks/)
+* [Interaction to Next Paint (INP)の最適化](https://speaking.jeremy.codes/GptKXg/optimizing-interaction-to-next-paint-inp)
+* [Cloudflare PagesがEarly Hintsでさらに高速化](https://blog.cloudflare.com/early-hints-on-cloudflare-pages/)
+* [Codesandbox - 統一されたCodeSandbox体験](https://codesandbox.io/post/a-unified-codesandbox-experience)
+* [Safari Technology Preview 155](https://webkit.org/blog/13338/release-notes-for-safari-technology-preview-155/)
+* [Axios 1.0](https://github.com/axios/axios/releases/tag/v1.0.0)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![Kent C. DoddsのTwitter編集ミーム - リックロール](/emails/issues/119/meme.png)](https://twitter.com/kentcdodds/status/1578334293863956480/history)

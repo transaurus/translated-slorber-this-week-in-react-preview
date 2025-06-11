@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "記事",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "This Week In Reactブログで公開された記事",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "記事一覧",
+    "description": "The label for the left sidebar"
+  }
+}

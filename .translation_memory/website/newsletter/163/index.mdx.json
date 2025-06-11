@@ -1,0 +1,622 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/163/index.mdx",
+  "source_file_content_hash": "4a028e189d73ffe79429816bb5cc31e1645b235adfe1ebf54d26e7eb9250fb02",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /163\ntitle: \"This Week In React #163: React-Query, React-Forget, Rspress, Remix Vite, Next.js Barrels, Storybook, Memo, Transitions, Gluestack, VisionCamera, Unistyles, VisionOS, Expo debugging...\"\nauthors: [slorber]\ndate: 10-17-2023\n---",
+      "source_content_hash": "33f8cc8cd17724b7e41190e427d63435ad5e42e9eb0a6a03497a443957a71b9f",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "There's a lot of content this week! Releases, but also some very good React articles. And there's no end in sight, with some great React conferences coming up: React Advanced, Next.js Conf, reactjsday...",
+      "source_content_hash": "1cba63313e68c0dec643f0e39a0fcea6a0224abfa44c47f6a6bab5cdd50ca527",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週はたくさんのコンテンツがあります！リリース情報に加え、素晴らしいReact関連の記事も多数掲載しています。そして、React Advanced、Next.js Conf、reactjsdayなど、これから開催される素晴らしいReactカンファレンスも控えています。"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "I've also got some great news to share with you in advance: I'm about to become the father of a little girl 🤗",
+      "source_content_hash": "a81177704edc86ca12a637939b053fc2cccd9208490214d76fd726c0f6b91443",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "また、事前にお知らせしたい嬉しいニュースがあります：私は間もなく女の子の父親になります🤗"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "For the 1st time ever, the newsletter will be taking a long break of several weeks, starting now. The next newsletter issue is scheduled for November 29.",
+      "source_content_hash": "2ec15b3ff2c6b0d9bbf83814ddcc4dab535ea3e7a0dd713e9e0f0ffb577e78cb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ニュースレターは初めてとなる長い休暇に入ります。次回の配信は11月29日を予定しています。"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Otherwise I'm staying on course to pass 30,000 subscribers by the end of the year. While I'm away, you can keep bringing me new mates 😜",
+      "source_content_hash": "88bf5d5a7fafa15214f6261a5e01f16213c21add1b5084b9602d4408b46349c9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "その間も、年末までに30,000人の購読者を突破する目標に向けて進んでいきます。休暇中も、新しい仲間を増やし続けてくださいね😜"
+      }
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "Thank you and see you soon 👋",
+      "source_content_hash": "e5bd31692e7c99696bcd91964cd42330d195e25275139efe21acfb16f9c3e7ae",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ありがとうございます。また近いうちにお会いしましょう👋"
+      }
+    },
+    {
+      "segment_id": "c6da205d",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_c6da205d"
+      }
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット🎨**"
+      }
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "cf4363fc",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_cf4363fc"
+      }
+    },
+    {
+      "segment_id": "2a3434e4",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_2a3434e4"
+      }
+    },
+    {
+      "segment_id": "2b28cb1b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "b25f21be",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "[![Frontendmasters](/emails/issues/158/frontendmasters.jpg)](https://frontendmasters.com/learn/react/?utm_source=newsletter\\&utm_medium=thisweekinreact\\&utm_campaign=reactpath)",
+      "source_content_hash": "4870a04cddc7e27094e63c6c1f902d69a8d940bfb7aab0b40b1dd9b5ee29b99d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Frontendmasters](/emails/issues/158/frontendmasters.jpg)](https://frontendmasters.com/learn/react/?utm_source=newsletter\\&utm_medium=thisweekinreact\\&utm_campaign=reactpath)"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "**[FrontendMasters – Complete React.js Learning Path to Senior React Developer](https://frontendmasters.com/learn/react/?utm_source=newsletter\\&utm_medium=thisweekinreact\\&utm_campaign=reactpath)**",
+      "source_content_hash": "fcb1a9888c2735f02024ea531a9a7251abb64c2e4f0405911367f1045daa4eb6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[FrontendMasters – シニアReact開発者を目指すReact.js完全学習パス](https://frontendmasters.com/learn/react/?utm_source=newsletter\\&utm_medium=thisweekinreact\\&utm_campaign=reactpath)**"
+      }
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "Learn React.js from the ground up to advanced topics like performance, testing, and code quality. Start by building a real-world app in the Complete Introduction to React. Continue with Intermediate React, integrating the most popular tools from the ecosystem. Then learn performance, TypeScript, and even Next.js, the fullstack React framework!",
+      "source_content_hash": "e17c755b1aba7ee0aa6d9a6d04fb708ada63619379555fc2d4d852b7115f5723",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React.jsを基礎から学び、パフォーマンス、テスト、コード品質などの上級トピックまでカバーします。「React完全入門」で実践的なアプリケーションを構築し、「中級React」でエコシステムの人気ツールを統合します。さらに、パフォーマンス、TypeScript、そしてフルスタックReactフレームワークであるNext.jsも学べます！"
+      }
+    },
+    {
+      "segment_id": "5ef5fda3",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "8d04259b",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "[![TanStack Query v5](/emails/issues/163/tanstack-query-v5.jpg)](https://tanstack.com/blog/announcing-tanstack-query-v5)",
+      "source_content_hash": "04f5d16a840e98a8b1fcf287415a502ec12399fa3214751a118927e523943f6c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![TanStack Query v5](/emails/issues/163/tanstack-query-v5.jpg)](https://tanstack.com/blog/announcing-tanstack-query-v5)"
+      }
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "[**TanStack Query v5**](https://tanstack.com/blog/announcing-tanstack-query-v5)",
+      "source_content_hash": "de0bcfe1c5be63e04d2b0f7aaf2cd9b74a404376c50c940dc3439ba7dfd551c2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**TanStack Query v5**](https://tanstack.com/blog/announcing-tanstack-query-v5)"
+      }
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "After many pre-releases, TanStack Query v5.0 stable is out, including the React Query package. In particular, it includes",
+      "source_content_hash": "de2fd18019dc7fbcc7af0497863286b8d4c913c6c0df7735d1df274ebd220d5f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "多くのプレリリースを経て、TanStack Query v5.0の安定版がリリースされました。React Queryパッケージも含まれています。特に以下の機能が含まれています："
+      }
+    },
+    {
+      "segment_id": "40251870",
+      "source_content": "* a unified, better-typed API, with no overloads\n* stable Suspense support. Streaming, React Server Components (experimental)\n* many other improvements: infinite queries, persistence, devtools, optimistic updates, useMutationState...",
+      "source_content_hash": "188b1a535bd790de47ff12add9e9c074576660a8b67599010a5e959e04a4ecfb",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 統一された、より型安全なAPI（オーバーロードなし）\n* 安定版のSuspenseサポート。ストリーミング、React Server Components（実験的）\n* その他多くの改善：無限クエリ、永続化、開発者ツール、楽観的更新、useMutationStateなど"
+      }
+    },
+    {
+      "segment_id": "49d8fe2a",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "b9aaa519",
+      "source_content": "[![Rspress v1.0 - A fast Rspack-based static site generator](/emails/issues/163/rspress.jpg)](https://github.com/orgs/web-infra-dev/discussions/5)",
+      "source_content_hash": "d61a044d4b8fa72a6a43603965c93b6701b9eeb1d1d65ef669852d5402ccd64a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Rspress v1.0 - Rspackベースの高速静的サイトジェネレーター](/emails/issues/163/rspress.jpg)](https://github.com/orgs/web-infra-dev/discussions/5)"
+      }
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "[**Rspress v1.0 - A fast Rspack-based static site generator**](https://github.com/orgs/web-infra-dev/discussions/5)",
+      "source_content_hash": "8749ef0b656ebe5bafc1cbabea8abe090574253408653ceda8e725c170d14303",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**Rspress v1.0 - Rspackベースの高速静的サイトジェネレーター**](https://github.com/orgs/web-infra-dev/discussions/5)"
+      }
+    },
+    {
+      "segment_id": "40158b4b",
+      "source_content": "First stable release for this new static site generator from the ByteDance team. Based on Rust, React and MDX. A serious contender for Docusaurus, Nextra, Vitepress, Starlight and other content-oriented solutions. Rspress is performant, while offering an impressive list of features: i18n, versioning, search, etc. The competition is getting tough, and that's motivating me even more to add some Rust to Docusaurus 😄!",
+      "source_content_hash": "8f96c6b57cd104a35d129264f03720784cce5b8a8f2be12c4cfd5d887a7b0963",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ByteDanceチームによる新しい静的サイトジェネレーターの最初の安定版リリースです。Rust、React、MDXを基盤としており、Docusaurus、Nextra、Vitepress、Starlightなどのコンテンツ指向ソリューションにとっての強力な競合です。Rspressは高性能でありながら、i18n、バージョニング、検索など、印象的な機能リストを提供します。競争が激化していますが、それがDocusaurusにRustを導入するモチベーションをさらに高めてくれています😄！"
+      }
+    },
+    {
+      "segment_id": "818747ba",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "79ad944d",
+      "source_content": "[![Remix - Vite Support](/emails/issues/163/remix-vite.jpg)](https://remix.run/docs/en/dev/future/vite)",
+      "source_content_hash": "61e610e97e38624ceb2f3a4104681971482b68120d95ffe09ffc17d25920bea7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Remix - Viteサポート](/emails/issues/163/remix-vite.jpg)](https://remix.run/docs/en/dev/future/vite)"
+      }
+    },
+    {
+      "segment_id": "531437ca",
+      "source_content": "[**Remix - Vite Support (Unstable)**](https://remix.run/docs/en/dev/future/vite)",
+      "source_content_hash": "a3421fc62a0f5736ac899c8e432131d1a26bed056e9ac5bd0c3206c4e374530e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**Remix - Viteサポート（不安定版）**](https://remix.run/docs/en/dev/future/vite)"
+      }
+    },
+    {
+      "segment_id": "06e24cc0",
+      "source_content": "Remix explains its decision to become a Vite plugin in this [proposal](https://github.com/remix-run/remix/discussions/7632). This enables to open up its compiler and become more flexible by allowing users to add their own Vite plugins, and handle various scenarios: MDX, GraphQL, Tailwind, path aliases, etc.",
+      "source_content_hash": "15d9fd174ee9c9793ee63c380996451bab0b694d4ad0aa34c2ab0dc20f7881a5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Remixはこの[提案](https://github.com/remix-run/remix/discussions/7632)で、Viteプラグイン化する決定について説明しています。これによりコンパイラを開放し、ユーザーが独自のViteプラグインを追加できるようになることで柔軟性が向上し、MDXやGraphQL、Tailwind、パスエイリアスなど様々なシナリオに対応可能になります。"
+      }
+    },
+    {
+      "segment_id": "a635fada",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "147e8550",
+      "source_content": "[![Statically analysing React components for fun and profit](/emails/issues/163/react-forget.jpg)](https://www.youtube.com/watch?v=kjOacmVsLSE)",
+      "source_content_hash": "d5da38552c2cf1605a490654abb4829412b88e2924a8b51d4f67ea35fae682d5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Reactコンポーネントの静的解析を楽しみながら利益を得る](/emails/issues/163/react-forget.jpg)](https://www.youtube.com/watch?v=kjOacmVsLSE)"
+      }
+    },
+    {
+      "segment_id": "883231d4",
+      "source_content": "🎥 [**Statically analysing React components for fun and profit**](https://www.youtube.com/watch?v=kjOacmVsLSE)",
+      "source_content_hash": "3b8022d20c08f5e8b46f24d003d690cf1ba8108a8cff0388df2b1f8f34e31369",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🎥 [**Reactコンポーネントの静的解析を楽しみながら利益を得る**](https://www.youtube.com/watch?v=kjOacmVsLSE)"
+      }
+    },
+    {
+      "segment_id": "6cc549f2",
+      "source_content": "Sathya is working on React-Forget, the long-awaited compiler. This talk reveals some interesting details:",
+      "source_content_hash": "2c76e1fbb1bd4a76d97cabf4374445171d6b818e2d5f1452889e7fa4e71bbd0e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Sathya氏は待望のコンパイラ「React-Forget」の開発に取り組んでいます。この講演ではいくつかの興味深い詳細が明かされています："
+      }
+    },
+    {
+      "segment_id": "6384b3d4",
+      "source_content": "* Compiling is possible thanks to React's new model, which no longer uses classes or `this`\n* It reasons locally, is able to optimise in parallel, and can be adopted incrementally\n* It works on untyped JavaScript, and understands React conventions such as hooks and the \"use\" prefix\n* Its alias analysis system is even more complete than that of the V8 engine",
+      "source_content_hash": "1f36e7be8aa2c17047f4c93cfc3a617837f0959a5e9ee98130ef3835c83ef0c5",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* コンパイルが可能なのは、Reactの新しいモデルがクラスや`this`を使用しなくなったため\n* ローカルに推論し、並列で最適化でき、段階的に導入可能\n* 型なしJavaScriptでも動作し、フックや\"use\"プレフィックスといったReactの慣習を理解\n* エイリアス解析システムはV8エンジンよりもさらに高度"
+      }
+    },
+    {
+      "segment_id": "a5c5772a",
+      "source_content": "Sathya says we should be hearing more about React-Forget in the coming weeks, including in the talk [\"Understanding Idiomatic React\" at React Advanced](https://reactadvanced.com/schedule-offline) in just 2 days. In short, we can't wait to hear more!",
+      "source_content_hash": "330f1678baef05bb6ad81bc2f27942eac88f4a8b0b2abdcde3d227ac179cce11",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Sathya氏によると、今後数週間でReact-Forgetに関するさらなる情報が公開される予定で、2日後に開催されるReact Advancedカンファレンスの[\"Understanding Idiomatic React\"講演](https://reactadvanced.com/schedule-offline)でも触れられるそうです。要するに、待ちきれないほど楽しみな内容です！"
+      }
+    },
+    {
+      "segment_id": "4e1804a3",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "e032fbc6",
+      "source_content": "* 💸 [Create collaborative applications like Figma and Miro in a few lines of code with Ably's in-app collaboration SDK](https://hubs.la/Q023nqgg0)\n* 📜 [Vercel - How we optimized package imports in Next.js](https://vercel.com/blog/how-we-optimized-package-imports-in-next-js): explains how `optimizePackageImports` works, an option added in the latest version of Next.js to optimize the import of \"Barrel files\", those `index.js` that re-export several modules and cause performance problems.\n* 📜 [Unlocking the Power of Storybook](https://formidable.com/blog/2023/unlocking-the-power-of-storybook/): an excellent article that shares many pragmatic tips on using Storybook to iterate faster. If you have a Storybook, I strongly advise you to try visual regression tests.\n* 📜 [React useTransition: performance game changer or...?](https://www.developerway.com/posts/use-transition): great interactive article illustrating a classic case where a React update blocks the main thread. Explains how to use transitions and concurrent rendering correctly to improve the UX.\n* 📜 [React memo is good actually](https://timtech.blog/posts/react-memo-is-good-actually/): interesting reflections on the use of memoization in React. One point on which I disagree: for me [🐦 optimisations should be encapsulated](https://twitter.com/sebastienlorber/status/1709258823582564644).\n* 📜 [A love letter to the Remix loader](https://laconicwit.com/a-love-letter-to-the-remix-loader/): an apology for the Remix loader, an elegant, dynamic abstraction that's easy to type. It also describes some of the challenges to be overcome.\n* 📜 [Programmatic SEO in Next.js](https://practicalprogrammatic.com/blog/programmatic-seo-in-nextjs/): generates Next.js pages with RSCs based on a dataset.\n* 📜 [Classed Components](https://flexible.dev/blog/single-line-components/): proposes to simplify the use of Tailwind by re-using a styled-components api and `@tw-classed/react`.\n* 📜 [The Rise of Next.js: Why It's the Full-Stack Framework of Choice for Modern Websites](https://www.felixvemmer.com/blog/why-next-js/): well-documented article giving good reasons to use Next.js\n* 📜 [Embedding Remix in Directus](https://echobind.com/post/embedding-remix-in-directus)\n* 📜 [Storybook - Introducing the Theme Switcher addon](https://storybook.js.org/blog/introducing-theme-switcher-addon/)\n* 📜 [Benchmarking MobX-State-Tree Performance](https://coolsoftware.dev/blog/benchmarking-mobx-state-tree/)\n* 📦 [Remix v2.1 - Experimental support for View Transitions](https://github.com/remix-run/remix/releases/tag/remix%402.1.0)\n* 📦 [Astro v3.3 - New experimental Picture component, shikiji syntax highlighting](https://astro.build/blog/astro-330/)\n* 📦 [create-t3-app v7.22 - add Next.js App Router option](https://github.com/t3-oss/create-t3-app/releases/tag/create-t3-app%407.22.0)\n* 📦 [Legend-State v2.0 - Performance, Persistence, DX improvements](https://legendapp.com/open-source/legend-state-v2/)\n* 📦 [Next-international v1.1 - Improved App Router support](https://github.com/QuiiBz/next-international/releases/tag/1.1.0)\n* 👥 [Next.js Conf - 26 October - Speakers announced](https://nextjs.org/conf/speakers)\n* 👥 [React Advanced](https://reactadvanced.com/?utm_source=email\\&utm_medium=thisweekinreact) (London 🇬🇧, October 20-23) is offering us [-10% - code \"REACT10\"](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)",
+      "source_content_hash": "b9bf16e66bc7a0d21a870c2aaf0b29158325a8c9a8bb783a485c2bcaa7b4750e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [FigmaやMiroのようなコラボレーションアプリケーションを数行のコードで作成 - Ablyのin-appコラボレーションSDK](https://hubs.la/Q023nqgg0)\n* 📜 [Vercel - Next.jsでのパッケージインポート最適化手法](https://vercel.com/blog/how-we-optimized-package-imports-in-next-js): Next.js最新版に追加された`optimizePackageImports`オプションの仕組みを解説。「Barrel files」（複数モジュールを再エクスポートする`index.js`）によるパフォーマンス問題を最適化する方法。\n* 📜 [Storybookの真価を引き出す](https://formidable.com/blog/2023/unlocking-the-power-of-storybook/): Storybookを効率的に活用する実践的なヒントを多数紹介。Storybookをお持ちなら、ビジュアルリグレッションテストの導入を強く推奨。\n* 📜 [React useTransition: パフォーマンスの救世主か...？](https://www.developerway.com/posts/use-transition): メインスレッドをブロックする典型的なReact更新ケースをインタラクティブに解説。UX改善のためのトランジションとコンカレントレンダリングの正しい使い方。\n* 📜 [React memoは実際に有用です](https://timtech.blog/posts/react-memo-is-good-actually/): Reactにおけるメモ化使用に関する考察。一点異論あり：[🐦 最適化はカプセル化すべき](https://twitter.com/sebastienlorber/status/1709258823582564644)という立場。\n* 📜 [Remix loaderへのラブレター](https://laconicwit.com/a-love-letter-to-the-remix-loader/): 型付けが容易で動的なRemix loaderの美点を讃える。同時に克服すべき課題も解説。\n* 📜 [Next.jsでのプログラムmatic SEO](https://practicalprogrammatic.com/blog/programmatic-seo-in-nextjs/): データセットに基づいてRSCでNext.jsページを生成する手法。\n* 📜 [Classed Components](https://flexible.dev/blog/single-line-components/): Tailwind使用を簡素化するため、styled-components APIと`@tw-classed/react`を活用する提案。\n* 📜 [Next.js台頭の理由：モダンWebサイトにおけるフルスタックフレームワークとしての選択](https://www.felixvemmer.com/blog/why-next-js/): Next.js採用の正当な理由を豊富に解説した記事。\n* 📜 [Directus内にRemixを組み込む](https://echobind.com/post/embedding-remix-in-directus)\n* 📜 [Storybook - テーマスイッチャーアドオンの紹介](https://storybook.js.org/blog/introducing-theme-switcher-addon/)\n* 📜 [MobX-State-Treeパフォーマンスのベンチマーク](https://coolsoftware.dev/blog/benchmarking-mobx-state-tree/)\n* 📦 [Remix v2.1 - View Transitionsの実験的サポート](https://github.com/remix-run/remix/releases/tag/remix%402.1.0)\n* 📦 [Astro v3.3 - 実験的なPictureコンポーネント、shikijiシンタックスハイライト](https://astro.build/blog/astro-330/)\n* 📦 [create-t3-app v7.22 - Next.js App Routerオプション追加](https://github.com/t3-oss/create-t3-app/releases/tag/create-t3-app%407.22.0)\n* 📦 [Legend-State v2.0 - パフォーマンス、永続性、DX改善](https://legendapp.com/open-source/legend-state-v2/)\n* 📦 [Next-international v1.1 - App Routerサポート強化](https://github.com/QuiiBz/next-international/releases/tag/1.1.0)\n* 👥 [Next.js Conf - 10月26日 - スピーカー発表](https://nextjs.org/conf/speakers)\n* 👥 [React Advanced](https://reactadvanced.com/?utm_source=email\\&utm_medium=thisweekinreact) (ロンドン 🇬🇧, 10月20-23日) で[-10%割引 - コード「REACT10」](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)を提供中"
+      }
+    },
+    {
+      "segment_id": "488abec8",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_488abec8"
+      }
+    },
+    {
+      "segment_id": "04837130",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "d1f76d04",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "6693c38c",
+      "source_content": "[![CoderPad: Code together before you work together](/emails/issues/154/coderpad.png)](https://coderpad.io/?utm_medium=3pmedia\\&utm_source=ThisWeekInReact\\&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)",
+      "source_content_hash": "76085f1419aa35aff3d4f24d1be3c86c069e2d72be9a11b2f1e1ea7de8abeba2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![CoderPad: 一緒にコードを書いてから一緒に働こう](/emails/issues/154/coderpad.png)](https://coderpad.io/?utm_medium=3pmedia\\&utm_source=ThisWeekInReact\\&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)"
+      }
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "**[CoderPad: Code together before you work together](https://coderpad.io/?utm_medium=3pmedia\\&utm_source=ThisWeekInReact\\&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)**",
+      "source_content_hash": "eabfe29aeae50eff7dd4ee5c0d3eee9335aca91b8d3ebd3e8db3142de409553b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[CoderPad: 一緒にコードを書いてから一緒に働こう](https://coderpad.io/?utm_medium=3pmedia\\&utm_source=ThisWeekInReact\\&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)**"
+      }
+    },
+    {
+      "segment_id": "1b4de6df",
+      "source_content": "Hiring front-end developers is hard. 😩 But 4,000+ engineering teams — including at Netflix, Spotify and LinkedIn — have found a better way! 🤠 Skip the algorithm interviews and **run front-end interviews in a fully customizable and collaborative IDE** - where you can:",
+      "source_content_hash": "6ebc9a07062ff9a3a43dafc39ce4bc008a9cb41ade32c8ce653ce07f1ac84838",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "フロントエンド開発者の採用は難しいです。😩 しかし、Netflix、Spotify、LinkedInを含む4,000以上のエンジニアリングチームがより良い方法を見つけました！🤠 アルゴリズム面接をスキップして、**完全にカスタマイズ可能でコラボレーティブなIDEでフロントエンド面接を実施**できます："
+      }
+    },
+    {
+      "segment_id": "2ddd26d5",
+      "source_content": "* drag and drop a React (and Angular or Vue) repo\n* add packages with npm install\n* let candidates use ChatGPT live in the interview\n* watch & share code playback after the interview",
+      "source_content_hash": "5fd0292e3e3c00011172f3db44c8c375739d3f618e6c50158393908055b2d1df",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* React（およびAngularやVue）のリポジトリをドラッグ＆ドロップ\n* npm installでパッケージを追加\n* 面接中に候補者がChatGPTをライブで使用できるようにする\n* 面接後にコードの再生を視聴・共有"
+      }
+    },
+    {
+      "segment_id": "f38d1cb0",
+      "source_content": "Use CoderPad to run fast, fair and real coding interviews that candidates and interviewers trust. [Sign up for free today & hire with confidence](https://coderpad.io/?utm_medium=3pmedia\\&utm_source=ThisWeekInReact\\&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter).",
+      "source_content_hash": "ee83c9ea896c9c808b76fe0ebfd66a00a772f4970572b797aede8aafaa1b62e6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "CoderPadを使用して、候補者と面接官が信頼する迅速で公平な実際のコーディング面接を実施しましょう。[今すぐ無料で登録して、自信を持って採用しましょう](https://coderpad.io/?utm_medium=3pmedia\\&utm_source=ThisWeekInReact\\&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)。"
+      }
+    },
+    {
+      "segment_id": "3d477c19",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "36d6c3de",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "c364340c",
+      "source_content": "[![Gluestack](/emails/issues/163/gluestack.jpg)](https://gluestack.io/ui/v1)",
+      "source_content_hash": "367a9633c69fa936b01b31028dffe3d0d5c9d02e033e01cded086116188f0ad8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Gluestack](/emails/issues/163/gluestack.jpg)](https://gluestack.io/ui/v1)"
+      }
+    },
+    {
+      "segment_id": "f45239ba",
+      "source_content": "[**Gluestack-ui v1.0 - Universal & Accessible UI Components for React Native & Web, Unstyled & Themed**](https://gluestack.io/ui/v1)",
+      "source_content_hash": "ede939ee346c4e947a671a1bb2692a32302f9830e24644f38b849e53bca6a76d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**Gluestack-ui v1.0 - React Native & Web向けのユニバーサルでアクセシブルなUIコンポーネント、未スタイル＆テーマ付き**](https://gluestack.io/ui/v1)"
+      }
+    },
+    {
+      "segment_id": "692c6053",
+      "source_content": "Stable v1.0 release for this new cross-platform styling solution and component library in React-Native. There's already quite a lot included in this first version: VSCode plugin, Figma kit, Expo and Next.js support, headless and styled primitives. We're going to have to take a closer look at all that! I think the RSC support with Next.js is still limited and will require the 'use client' directive.",
+      "source_content_hash": "ae39abdbb7bf2c44ae99a21e49359584338a3a6605cb8890bceb659b2076291a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React-Native向けの新しいクロスプラットフォームスタイリングソリューションおよびコンポーネントライブラリの安定版v1.0がリリースされました。この最初のバージョンには既に多くの機能が含まれています：VSCodeプラグイン、Figmaキット、ExpoおよびNext.jsサポート、ヘッドレスおよびスタイル付きプリミティブ。これらすべてを詳しく見ていく必要があります！Next.jsのRSCサポートはまだ限定的で、「use client」ディレクティブが必要になると思います。"
+      }
+    },
+    {
+      "segment_id": "f1a2be1a",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "9ceae896",
+      "source_content": "* 💸 [Moropo - build and scale open-source React Native tests 10x quicker](https://www.moropo.com/for-react-native?utm_source=newsletter\\&utm_medium=emails\\&utm_campaign=twir-20231018)\n* 📜 [Expo - Three ways to use network debugging](https://blog.expo.dev/three-ways-to-use-network-debugging-75fa6118fac6)\n* 📦 [React-Native 0.72.6 - CocoaPods installs fix](https://github.com/facebook/react-native/releases/tag/v0.72.6)\n* 📦 [react-native-visionos](https://github.com/callstack/react-native-visionos): Callstack's React-Native fork, which runs React-Native on VisionOS, has been open-sourced.\n* 📦 [react-native-unistyles v1.0](https://github.com/jpudysz/react-native-unistyles): stable version of this new cross-platform styling solution, which improves on React-Native StyleSheet DX.\n* 📦 [VisionCamera v3.4 - 7x faster](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.4.0)\n* 📦 [React-Native-Screens v3.26 - useAnimatedHeaderHeight](https://github.com/software-mansion/react-native-screens/releases/tag/3.26.0)\n* 📦 [react-native-vercel-ai - cross-platform interface to Vercel AI](https://github.com/bidah/react-native-vercel-ai)\n* 📦 [radix-ui-react-native-icons](https://github.com/Eronred/radix-ui-react-native-icons)",
+      "source_content_hash": "b4cf28a03bb2a862703299acde4c4db3945c41cdaee96d24cfb18b5c133c3ff9",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Moropo - オープンソースのReact Nativeテストを10倍速く構築・スケール](https://www.moropo.com/for-react-native?utm_source=newsletter\\&utm_medium=emails\\&utm_campaign=twir-20231018)\n* 📜 [Expo - ネットワークデバッグの3つの方法](https://blog.expo.dev/three-ways-to-use-network-debugging-75fa6118fac6)\n* 📦 [React-Native 0.72.6 - CocoaPodsインストールの修正](https://github.com/facebook/react-native/releases/tag/v0.72.6)\n* 📦 [react-native-visionos](https://github.com/callstack/react-native-visionos): CallstackのReact-Nativeフォークで、React-NativeをVisionOS上で実行できるようにしたものがオープンソース化されました。\n* 📦 [react-native-unistyles v1.0](https://github.com/jpudysz/react-native-unistyles): この新しいクロスプラットフォームスタイリングソリューションの安定版で、React-Native StyleSheetのDXを改善しています。\n* 📦 [VisionCamera v3.4 - 7倍高速化](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.4.0)\n* 📦 [React-Native-Screens v3.26 - useAnimatedHeaderHeight](https://github.com/software-mansion/react-native-screens/releases/tag/3.26.0)\n* 📦 [react-native-vercel-ai - Vercel AIへのクロスプラットフォームインターフェース](https://github.com/bidah/react-native-vercel-ai)\n* 📦 [radix-ui-react-native-icons](https://github.com/Eronred/radix-ui-react-native-icons)"
+      }
+    },
+    {
+      "segment_id": "af4523c9",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "35353302",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "f4e38e16",
+      "source_content": "* 👀 [TC39-TG4 - New Task Group created to standardize Source Maps](https://www.ecma-international.org/news/ecma-tc39-ecmascript-initiates-a-new-task-group-to-standardize-source-maps//)\n* 📜 [You can't get faster than No Build](https://world.hey.com/dhh/you-can-t-get-faster-than-no-build-7a44131c)\n* 📜 [Why Fetch Promise Doesn't Reject on Error Responses](https://kettanaito.com/blog/why-fetch-promise-doesnt-reject-on-error-responses)\n* 📜 [DefinitelyTyped is a monorepo!](https://jakebailey.dev/posts/pnpm-dt-3/)\n* 📦 [Node.js v21 - stable fetch/WebStreams, default module system flag, V8 11.8, v20 going LTS...](https://openjsf.org/announcement/2023/10/17/node-js-21-available-now/)\n* 📦 [Parcel v2.10 - big performance improvements](https://github.com/parcel-bundler/parcel/releases/tag/v2.10.0)\n* 📦 [Oslo - A collection of auth-related utilities](https://github.com/pilcrowOnPaper/oslo)\n* 📦 [async-cache-dedupe v2](https://github.com/mcollina/async-cache-dedupe)",
+      "source_content_hash": "5e8ee1fe7f3afdfbd2db9248c3530e70c534ec91f579c762f0e5ba8032a48d5b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 👀 [TC39-TG4 - ソースマップの標準化に向けた新たなタスクグループが設立](https://www.ecma-international.org/news/ecma-tc39-ecmascript-initiates-a-new-task-group-to-standardize-source-maps//)\n* 📜 [「No Build」以上の速さは実現できない](https://world.hey.com/dhh/you-can-t-get-faster-than-no-build-7a44131c)\n* 📜 [Fetch PromiseがエラーレスポンスでRejectしない理由](https://kettanaito.com/blog/why-fetch-promise-doesnt-reject-on-error-responses)\n* 📜 [DefinitelyTypedがモノレポに！](https://jakebailey.dev/posts/pnpm-dt-3/)\n* 📦 [Node.js v21 - fetch/WebStreamsの安定版、デフォルトモジュールシステムフラグ、V8 11.8、v20がLTS化...](https://openjsf.org/announcement/2023/10/17/node-js-21-available-now/)\n* 📦 [Parcel v2.10 - 大幅なパフォーマンス改善](https://github.com/parcel-bundler/parcel/releases/tag/v2.10.0)\n* 📦 [Oslo - 認証関連ユーティリティのコレクション](https://github.com/pilcrowOnPaper/oslo)\n* 📦 [async-cache-dedupe v2](https://github.com/mcollina/async-cache-dedupe)"
+      }
+    },
+    {
+      "segment_id": "d26d4100",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "7312e69e",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "2dbfc5f7",
+      "source_content": "[![alt](/emails/issues/163/meme.jpg)](https://twitter.com/BHolmesDev/status/1713177728143241403)",
+      "source_content_hash": "65f2fd1f04c76cfab12305470df9aaf4cd29cf325769b1d1ac082c580dc2373d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/163/meme.jpg)](https://twitter.com/BHolmesDev/status/1713177728143241403)"
+      }
+    },
+    {
+      "segment_id": "6b40e7a2",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "それではまた！ 👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/163/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:40.570433+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "4a028e189d73ffe79429816bb5cc31e1645b235adfe1ebf54d26e7eb9250fb02"
+  }
+}

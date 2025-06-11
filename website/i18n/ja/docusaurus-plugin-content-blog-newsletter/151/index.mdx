@@ -1,0 +1,177 @@
+---
+slug: /151
+title: "This Week In React #151: Remotion, Next.js, SVG-in-JS, TypeScript, Expo, VisionCamera, Conform, TinyBase, i18n, App Clips, ES2023, CommonJS..."
+authors: [slorber]
+date: 07-04-2023
+---
+
+みなさん、こんにちは！
+
+今週はRemotion 4とExpo SDK 49のベータ版など、素晴らしいリリースがありました。Next.jsの開発者はDXの最適化に取り組んでいます。React + SVGとVisionCameraに関する記事は非常に興味深い内容です。
+
+[Remotion 4.0が本日ProductHuntに掲載されています](https://www.producthunt.com/posts/remotion-4-0)：ぜひ投票してください！👍
+
+来週はニュースレターをお休みします。7月18日にまたお会いしましょう👋
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアル形式🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Frontendmasters](/emails/issues/151/frontendmasters.png)](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email\&utm_medium=thisweekinreact\&utm_content=uidev)
+
+**[Enterprise UI Development (With React): Testing & Code Quality](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email\&utm_medium=thisweekinreact\&utm_content=uidev)**
+
+大規模なアプリやコードベースの管理や移行を行っていますか？このビデオコースでは、効率的にスケールしながらコード品質を維持するために必要な知識をカバーしています。単体テスト、CIパイプライン、モック、コードカバレッジなどについて解説しています。
+
+***
+
+## ⚛️ React {#react}
+
+[![Remotion 4.0](/emails/issues/151/remotion4.jpg)](https://www.remotion.dev/blog/4-0)
+
+**[Remotion 4.0](https://www.remotion.dev/blog/4-0)**
+
+RemotionはReactを使って動画を作成できるツールです。今週は[Remotion v4のローンチウィーク](https://www.remotion.dev/4)が始まり、[キーノート](https://www.youtube.com/watch?v=S3C9wlPNhkQ)で新しい3D SVG機能がデモンストレーションされました。新機能の発表が毎日予定されており、ブログ記事でも詳細が説明されています。以下はいくつかのハイライトです：
+
+* Remotion Studio: Zodベースのビジュアルプロップス編集、レンダーボタン...
+* Rustベースのアーキテクチャ、FFmpeg組み込み、2倍速いOffthreadVideo
+* SVG 3Dエンジン
+* Tailwind、Rive統合
+
+また、本日[ProductHuntでのローンチ](https://www.producthunt.com/posts/remotion-4-0)もありますので、ぜひ投票してください;)
+
+***
+
+[![RBreaking Up with SVG-in-JS in 2023](/emails/issues/151/svginjs.jpg)](https://kurtextrem.de/posts/svg-in-js)
+
+**[2023年にSVG-in-JSと別れる](https://kurtextrem.de/posts/svg-in-js)**
+
+ReactアプリでSVGを使用するさまざまな方法と、それらがパフォーマンスに与える影響についての非常に包括的な記事です。
+「SVG-in-JS」には反対しています：SVGマークアップをReactコンポーネント経由でレンダリングしたり、SVGコードをJSバンドルに含めたりするのは避けるべきです。SVGRローダーなどのソリューションも含まれます。いくつかの例外を除き、HTMLにSVGをインラインで埋め込むのも避けるのが最善です。React Server Componentsも必ずしも理想的な解決策ではありません。SVGスプライトは良い解決策です。
+
+***
+
+* 👀 [React.dev PR - TypeScript概要ページを追加](https://github.com/reactjs/react.dev/pull/6120): React APIをTypeScriptで使用するためのドキュメントページが近日公開予定。
+* 👀 [Next.js - next/imageのサポート改善](https://twitter.com/leeerob/status/1674250190432116736)
+* 📜 [Conform、Zod、Remixを使ったフォームバリデーション](https://www.jacobparis.com/content/remix-conform): Conformはサーバー側でFormDataを検証し、Remixのプログレッシブエンハンスメントを尊重してクライアントにエラーを表示するライブラリ。[Next.js Server Actionsでも後ほど使用可能になる](https://twitter.com/sebastienlorber/status/1676210400256204800)かもしれません。
+* 📜 [TypeScript 5.1でのJSX型宣言](https://blog.logrocket.com/declaring-jsx-types-typescript-5-1/): React向けのJSXタイピングの最近の改善点を解説。
+* 📜 [データ遷移中の空UIフラッシュを防ぐReact Hook](https://www.jameskerr.blog/posts/use-data-transition/)
+* 📜 [Storybook - 新規ユーザー向けアプリ内ツアー](https://storybook.js.org/blog/in-app-tour-for-new-users/)
+* 📜 [next-translateでNextJs URLを国際化](https://dev.to/martinratinaud/internationalize-nextjs-urls-with-next-translate-49d8)
+* 📜 [Reactでシームレスな多言語ユーザーインターフェースを作成](https://www.honeybadger.io/blog/creating-multi-language-user-interface-with-react/)
+* 📜 [ReactでのAria-Liveリージョン](https://dev.to/abbeyperini/live-regions-in-react-4dmd)
+* 📦 [Next.js 13.4.8 - ローカルサーバー起動1.5倍高速化、更新54%高速化](https://twitter.com/nextjs/status/1675929873720680459): VercelがNext.js DX改善のためのパフォーマンス最適化に取り組んでいます。詳細はTim Neutkensの[コメント](https://github.com/vercel/next.js/issues/48748#issuecomment-1614456247)を参照。
+* 📦 [Styled-Components v6](https://github.com/styled-components/styled-components/releases/tag/v6.0.0): アップグレードガイドに記載された破壊的変更あり。
+* 📦 [Astro Starlight](https://starlight.astro.build/): ドキュメント向け公式Astroテンプレート。低炭素フットプリントでReactとMDXの使用が可能。
+* 📦 [next-international v0.5 - App Routerの初期サポート](https://twitter.com/tomlienard/status/1675512683007705090)
+* 📦 [TinyBase v4.0 - ローカルファーストアプリ向けリアクティブデータストア - SQLiteとCRDT統合](https://twitter.com/tinybasejs/status/1674826869169070080)
+* 📦 [Bun-Remix](https://github.com/jacob-ebey/bun-remix)
+* 🎙️ [Reactiflux - 今月のReact - 2023年6月](https://podcasters.spotify.com/pod/show/reactiflux/episodes/This-Month-in-React--June-2023-e26dgii)
+* 🎥 [Mark Eriksonと語るReduxの今後](https://www.youtube.com/watch?v=n5FK8_EXcbs)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![React BricksはNext.js、Remix、Gatsby向けのビジュアル編集可能なCMSです。](/emails/issues/148/reactbricks.png)](https://reactbricks.com/?utm_source=thisweekinreact)
+
+**[React BricksはNext.js、Remix、Gatsby向けのビジュアル編集可能なCMSです。](https://reactbricks.com/?utm_source=thisweekinreact)**
+
+**開発者向けの柔軟性**: Reactコンポーネントで独自のデザインシステムを作成可能。JSXに真のインライン・ビジュアル編集を追加し、背景色などのプロパティを編集するサイドバーコントロールを追加できます。Next.js、Remix、Gatsbyのいずれかと任意のCSSフレームワークを選択可能！
+
+**コンテンツ編集者**は、デザインシステムを壊すことなくインラインで簡単にコンテンツを編集できます。WordやPagesを使うのと同じくらい簡単で、開発者リソースに依存せずに数分でランディングページを作成できます。
+
+**エンタープライズ対応**で、コラボレーション、タイムマシン、シングルサインオン、GDPR準拠のデータセンター、最適化された画像のためのグローバルCDN、Eコマース統合、細かい権限制御、スケジュールされた公開などが可能です。
+
+**こちらから始めましょう: [https://reactbricks.com](https://reactbricks.com/?utm_source=thisweekinreact)**
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![Expo SDK 49 ベータ版が利用可能に](/emails/issues/151/expo49beta.jpg)](https://blog.expo.dev/expo-sdk-49-beta-is-now-available-6373e78f8624)
+
+**[Expo SDK 49 ベータ版が利用可能に](https://blog.expo.dev/expo-sdk-49-beta-is-now-available-6373e78f8624)**
+
+新しいSDK 49が約1週間のベータ期間でリリースされました。多くの素晴らしい改善が詰め込まれており、すべてをリストアップするのは難しいですが、以下が主なハイライトです:
+
+* React-Native v0.72
+* Expo Router v2 RC
+* Reanimated v3
+* ネットワークデバッグ、VS Codeデバッグ
+* 組み込みReact devtools
+* 環境変数
+* ローカルExpoモジュール
+* expo-dev-clientでのFabricの実験的サポート
+
+***
+
+[![カメラ処理の革新 - TensorFlow Lite GPUをJavaScriptから直接実行](/emails/issues/151/visioncamera.jpg)](https://mrousavy.com/blog/Reinventing-Camera-Processing)
+
+**[カメラ処理の革新 - TensorFlow Lite GPUをJavaScriptから直接実行](https://mrousavy.com/blog/Reinventing-Camera-Processing)**
+
+Marc Rousavyが、React-Native Vision Camera v3でTensorFlowモデルを実行する方法を説明しています（[デモ](https://twitter.com/mrousavy/status/1674791891823648770)）。彼のプラグインは[VisionCamera v3 rc.3](https://twitter.com/mrousavy/status/1675883155822202880)でオープンソース化されました。この記事は内部的な仕組みを詳しく説明しており、60+FPSで動作する方法を解説しています。要約すると、TensorFlowモデルをVision Cameraに統合し、React-Native-Skiaを通じてリアルタイムフィードバックを描画することが非常に簡単になりました。ネイティブコードを書く必要はなく、このロジックはOTAアップデートでデプロイすることも可能です！
+
+***
+
+* 📦 [React-Native v0.72.1](https://github.com/facebook/react-native/releases/tag/v0.72.1)
+* 📦 [App Icon Badge](https://github.com/obytes/app-icon-badge): 環境（開発、ステージングなど）に応じて異なるアイコンを生成する便利なExpo Configプラグイン
+* 📜 [iOS App Clips: より速く、スムーズなユーザー体験](https://www.bam.tech/en/article/app-clips-ios-experience-utilisateur): iOS App ClipsのUXメリットとReact-Nativeアプリへの統合方法を説明。10MBの制限を超えないようにする必要があります。
+* 🧵 [Expo週間ドキュメント更新](https://twitter.com/amanhimself/status/1675794149424115714)
+* 🎥 [Colo LocoでXcodeをハック！](https://www.youtube.com/watch?v=ucEBfIZOap8)
+* 🎥 [React Native 0.72の新機能は？](https://www.youtube.com/watch?v=XNeoSaacyX4)
+
+***
+
+## 🧑‍💻 Jobs {#jobs}
+
+🧑‍💼 [**Passionfroot - シニアフルスタックエンジニア（Remix） - €160k以上、ベルリン/リモート**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+Passionfrootのミッションは、YouTube、ポッドキャスト、ソーシャルメディア、ニュースレターを通じて、明日の独立したビジネスを支援することです。クリエイターがスケーラブルで持続可能なビジネスを構築できるツールを共に作りましょう。
+
+🧑‍💼 [**Callstack - シニアReact Native開発者 - 完全リモート、B2Bで月額21-32k PLN（税抜き）**](https://www.callstack.com/senior-react-native-developer)
+
+世界で最も使われているアプリで働きたいですか？React Native技術の共創に参加しませんか？React & React NativeのリーダーであるCallstackチームに加わってください。詳細はウェブサイトをご覧ください。あなたの応募をお待ちしています - 実力を示してください！
+
+🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\&t=ArRLC77BpRwXXCdx8fnUqw)
+
+React Nativeに特化した開発者向けの複数のポジションを募集しています！報酬は約160kドル＋10％のボーナスです。RNの実務経験があり、米国在住である必要があります。詳細は[@gabe\_g2i](https://twitter.com/gabe_g2i)までDMでお問い合わせください。This Week in Reactからの紹介をお忘れなく。
+
+💡 [求人を掲載する方法は？](https://thisweekinreact.com/sponsor)
+
+***
+
+## 🔀 Other {#other}
+
+* [Ecma InternationalがES2023を承認](https://www.ecma-international.org/news/ecma-international-approves-new-standards-at-the-125th-general-assembly-27-june-2023/)。注: Change Array By Copyは、[本日リリースされたFirefox v115](https://twitter.com/sebastienlorber/status/1676139862745923585)ですべてのブラウザで利用可能になりました。
+* [TypeScript 5.2 Beta](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2-beta/)
+* [Qwik 1.2](https://www.builder.io/blog/qwik-1-2-performance-autopilot)
+* [Ember 5.0](https://blog.emberjs.com/ember-5-0-released/)
+* [CSS: The Good Parts](https://www.builder.io/blog/css-the-good-parts)
+* [W3C First Public Working Draft: CSS Anchor Positioning](https://twitter.com/sebastienlorber/status/1675900466553659396)
+* [6月のWebプラットフォーム新機能](https://web.dev/web-platform-06-2023/)
+* [SVGパスの理解](https://www.nan.fyi/svg-paths)
+* [npmエコシステムの巨大なバグ](https://blog.vlt.sh/blog/the-massive-hole-in-the-npm-ecosystem)
+* [RustでNodeライブラリを書く](https://blog.metlo.com/writing-a-node-library-in-rust/)
+* [CommonJSはなくならない](https://bun.sh/blog/commonjs-is-not-going-away)
+* [CommonJSはJavaScriptを傷つけている](https://deno.com/blog/commonjs-is-hurting-javascript)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/151/meme.jpg)](https://twitter.com/localhost_5173/status/1675142562473185281)
+
+またね！👋

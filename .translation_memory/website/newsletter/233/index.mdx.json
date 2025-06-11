@@ -1,0 +1,522 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/233/index.mdx",
+  "source_file_content_hash": "1ddda682ad6ba0e6da6e6e0b2e973e6a8df641c62acebb9d92aa515530b6c425",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /233\ntitle: \"This Week In React #233: RSC, Next.js, Compiler, Unhead, Shadcn, Relay, Mantine | Expo, WebGPU, Skia, Apple fees, Reanimated, Fragment Refs | Node.js, TS, Prisma, Deno, GSAP\"\nauthors: [slorber]\ndate: 05-07-2025\n---",
+      "source_content_hash": "2c840d998cdf8cfba8771f829e2fecdd28c830dcfc37f5f15272a3dcfb1a4e0b",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week we don't have one, but 2 interesting blog posts from Dan Abramov, and various React releases.",
+      "source_content_hash": "e540eee3751d961c167f3b6402a50dd64d29634a5b228bb1c1bc871e9f545b90",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週は、Dan Abramovの興味深いブログ記事が2つと、さまざまなReactのリリースがあります。"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "I found the mobile news particularly interesting, with Expo 53, Skia Graphite, Reanimated Shared Elements Transitions, and the Apple fees court injunction.",
+      "source_content_hash": "52e601963a4eb115c66617ad491974af4e500b95af3c68c5737d4b1d88d46758",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "特にモバイル関連のニュースが興味深く、Expo 53、Skia Graphite、Reanimated Shared Elements Transitions、そしてAppleの手数料に関する裁判差し止め命令などがありました。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "My fellows at ui.dev are also launching the final content of their [react.gg](https://react.gg/?ref=twir) course (30% off now), designed to teach you all the brand-new React 19 concepts from first principles. I got access to review it and can assure you that it's a really playful way to learn React, full of interactive examples, visualizations and pragmatic quizzes.",
+      "source_content_hash": "db4f710161c64e956ab1e626da01121d3ac6ae7b3ac98d15189b1d3b8572e50c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ui.devの仲間たちも、[react.gg](https://react.gg/?ref=twir)コースの最終コンテンツをリリースしています（現在30%オフ）。このコースは、React 19の新しいコンセプトを基礎から学ぶために設計されており、インタラクティブな例、ビジュアライゼーション、実践的なクイズが満載です。レビューのためにアクセスしましたが、Reactを学ぶのに非常に遊び心のある方法だと確信しています。"
+      }
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6429a3aa"
+      }
+    },
+    {
+      "segment_id": "6c991806",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6c991806"
+      }
+    },
+    {
+      "segment_id": "8f488ab5",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_8f488ab5"
+      }
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "[![Cut React Code Review Time & Bugs in Half](/emails/issues/233/coderabbit.jpg)](https://coderabbit.link/this-week-in-react-7may-2025)",
+      "source_content_hash": "f252d28d949870202a0096f378d5fec9708e034518a39372d0379ebb3b1a190d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Reactのコードレビュー時間とバグを半減](/emails/issues/233/coderabbit.jpg)](https://coderabbit.link/this-week-in-react-7may-2025)"
+      }
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "**[Cut React Code Review Time & Bugs in Half](https://coderabbit.link/this-week-in-react-7may-2025)**",
+      "source_content_hash": "81a6e8d43c0dd6b98ddd3d6c39b87d65e468253ea31628f8ad709c01b1d7dba3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Reactのコードレビュー時間とバグを半減](https://coderabbit.link/this-week-in-react-7may-2025)**"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "Code reviews are critical but time-consuming. CodeRabbit acts as your AI co-pilot, providing instant Code review comments and potential impacts of every pull request.",
+      "source_content_hash": "d4dc5c87a27dd428494b18f89be3724778a83dbe9473b5d56ddd68f24b02e365",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "コードレビューは重要ですが、時間がかかります。CodeRabbitはAIコパイロットとして機能し、プルリクエストごとに即座にコードレビューコメントと潜在的な影響を提供します。"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "Beyond just flagging issues, CodeRabbit provides one-click fix suggestions and lets you define custom code quality rules using AST Grep patterns, catching subtle issues that traditional static analysis tools might miss.",
+      "source_content_hash": "52c2493f49ddd9a07ffdd56b9b8d9489dd7702c05c5fe106c8c1ac89c80cb6d7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "問題を指摘するだけでなく、CodeRabbitはワンクリックで修正提案を行い、AST Grepパターンを使用してカスタムコード品質ルールを定義できるため、従来の静的解析ツールでは見逃しがちな微妙な問題も捕捉できます。"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "CodeRabbit has so far reviewed more than 5 million PRs, installed on 1 million repositories, and used by 50 thousand Open-source projects. CodeRabbit is free for all open-source repo's. [Get started today!](https://coderabbit.link/this-week-in-react-7may-2025)",
+      "source_content_hash": "0b310c7d359b78760aae574232a499ccef9cead0bedfc68c01787807fc9a0866",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "CodeRabbitはこれまでに500万以上のPRをレビューし、100万のリポジトリにインストールされ、5万のオープンソースプロジェクトで使用されています。オープンソースリポジトリでは無料で利用できます。[今すぐ始めましょう！](https://coderabbit.link/this-week-in-react-7may-2025)"
+      }
+    },
+    {
+      "segment_id": "b0e5a8f2",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "80d9e13c",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "e7bc8c38",
+      "source_content": "* 💸 [Product for Engineers - What engineers get wrong about communication](https://go.posthog.com/twir-may7)\n* 👀 [Next.js Docs - New `runAfterProductionCompile` lifecycle hook](https://nextjs.org/docs/architecture/nextjs-compiler#runafterproductioncompile): Upcoming (unreleased) feature already documented.\n* 💬 [React Compiler oxc plugin](https://github.com/oxc-project/oxc/issues/10048): Interesting discussions between the React Compiler team and the oxc team to integrate the compiler as an oxc plugin for upcoming usage with Vite and Oxc/Rolldown. The React team suggests making it happen in 2 steps (make it work, then make it fast).\n* 🧵 [shadcn introducing the registry MCP - One command to make any component registry mcp-compatible.](https://threadreaderapp.com/thread/1917597228513853603.html)\n* 📜 [Functional HTML](https://overreacted.io/functional-html/): Dan gradually reinvents the HTML he wants from first principles, leading to an RSC implementation.\n* 📜 [RSC for Astro Developers](https://overreacted.io/rsc-for-astro-developers/): RSC and Astro have 2 remarkably similar mental models, but Dan exposes some interesting subtle differences. RSCs may feel less intuitive at first, but they also solve some of Astro’s limitations.\n* 📜 [The future of AI interaction: Beyond just text](https://www.epicai.pro/the-future-of-ai-interaction-beyond-just-text-w22ps): Kent argues that MCPs could have a role to play in implementing generative UIs with React Server Components. He wants the protocol to allow richer return types like html and RSC payloads.\n* 📜 [Frontends are hard](https://sst.dev/blog/frontends-are-hard): The devs at SST reflect on the challenges of self-hosting modern meta-frameworks, including React ones, that led them to start the OpenNext initiative.\n* 📜 [Add a Color Scheme Toggle in React Router](https://sergiodxa.com/tutorials/add-a-color-scheme-toggle-in-react-router): This method avoids FOUC with a cookie instead of inlined JS.\n* 📜 [Robust Data Fetching Architecture For Complex React/Next.js Apps](https://www.trevorlasn.com/blog/fetching-data-for-complex-next-and-react-apps): Suggests using 3 layers: Server Components, React Query, and Optimistic Updates.\n* 📜 [Server Components Give You Optionality](https://saewitz.com/server-components-give-you-optionality): They give flexibility to choose in which environments your components run in (Server, Server+Client, or Client) and when.\n* 📜 [How We Fell Out of Love with Next.js and Back in Love with Ruby on Rails & Inertia.js](https://hardcover.app/blog/part-1-how-we-fell-out-of-love-with-next-js-and-back-in-love-with-ruby-on-rails-inertia-js)\n* 📜 [Why Kleinanzeigen.de Picked Astro Over Next.js](https://d13z.dev/blog/07-why-kleinanzeigen-picked-astro-over-nextjs/)\n* 📜 [When You Might Need to Override the Defaults in TanStack Query](https://www.kxlaa.com/articles/when-you-might-need-to-override-the-defaults-in-tanstack-query)\n* 💸 [React.gg - The interactive way to master modern React, including new v19 modules - 30% off during launch week](https://react.gg/?ref=twir)\n* 📦 [Unhead 2.0 - The full stack \\<head> package for any framework](https://unhead.unjs.io/v2): This framework-agnostic package from the UnJS ecosystem now includes React bindings. This could be a great drop-in alternative to `react-helmet` with React 19 support if the new built-in APIs are not good enough for you (see [my comment here](https://github.com/staylor/react-helmet-async/issues/239#issuecomment-2565685131)).\n* 📦 [Blade - Build instant web apps with React](https://github.com/ronin-co/blade): A new opinionated React meta-framework with Server Components support, that purposefully doesn’t comply with the RSC spec.\n* 📦 [Relay 19.0 - `@alias` required on conditional fragments, support React 19](https://relay.dev/blog/2025/04/02/relay-19/)\n* 📦 [Mantine 8.0 - Updated dates package, new TimePicker, Heatmap, CodeHighlight components, nested menus and more](https://mantine.dev/changelog/8-0-0/)\n* 📦 [React Error Boundary 6.0 - ESM-only](https://github.com/bvaughn/react-error-boundary/releases/tag/6.0.0)\n* 📦 [React Admin 5.8 - InPlaceEditor, DataTable, AuthLayout, MUI v7, CSS vars, theming](https://github.com/marmelab/react-admin/releases/tag/v5.8.0)\n* 📦 [Unverceled Next.js - A Next.js 15 Starter Kit Deployed to Cloudflare using OpenNext](https://github.com/ixahmedxi/unverceled-nextjs)\n* 📦 [Radix UI - New unstable PasswordToggleField and Checkbox parts](https://www.radix-ui.com/primitives/docs/overview/releases#may-5-2025)\n* 📦 [React Router DevTools 5.0 - Complete overhaul of the routes tab](https://github.com/forge-42/react-router-devtools/releases/tag/v5.0.0)\n* 📦 [MUI 7.1 - Support for Tailwind CSS 4](https://github.com/mui/material-ui/releases/tag/v7.1.0)\n* 🎥 [Jack Herrington - React's New Activity Component: Huge Performance Win!](https://www.youtube.com/watch?v=gRKVL5w-2Lc)\n* 🎥 [Fireship - The growing divide among React developers…](https://www.youtube.com/watch?v=lLJbHHeFSsE)\n* 🎙️ [Front-end Fire 93 - React Activity, Storybook 9 Beta, and AI as a Collaborator](https://front-end-fire.com/episodes/93/)",
+      "source_content_hash": "d20be503f4df0a6666dbd28a1b7c3b1529b55f4856e28fff9a2f84cc85d313aa",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Product for Engineers - エンジニアがコミュニケーションについて誤解していること](https://go.posthog.com/twir-may7)\n* 👀 [Next.js Docs - 新しい`runAfterProductionCompile`ライフサイクルフック](https://nextjs.org/docs/architecture/nextjs-compiler#runafterproductioncompile): 未リリースの新機能がすでにドキュメント化されています。\n* 💬 [React Compiler oxcプラグイン](https://github.com/oxc-project/oxc/issues/10048): React Compilerチームとoxcチームの間で、ViteやOxc/Rolldownでの使用に向けてコンパイラをoxcプラグインとして統合するための興味深い議論。Reactチームは2段階での実装を提案（まず動作させ、その後高速化）。\n* 🧵 [shadcnがレジストリMCPを導入 - 任意のコンポーネントをMCP互換にするワンコマンド](https://threadreaderapp.com/thread/1917597228513853603.html)\n* 📜 [Functional HTML](https://overreacted.io/functional-html/): Danが基本原理から欲しいHTMLを徐々に再発明し、RSC実装へと導く。\n* 📜 [Astro開発者向けRSC](https://overreacted.io/rsc-for-astro-developers/): RSCとAstroは驚くほど似たメンタルモデルを持つが、Danは興味深い微妙な違いを指摘。RSCは最初は直感的でないかもしれないが、Astroの制限の一部も解決する。\n* 📜 [AIインタラクションの未来：テキストを超えて](https://www.epicai.pro/the-future-of-ai-interaction-beyond-just-text-w22ps): Kentは、MCPがReact Server Componentsを使った生成UIの実装に役立つ可能性があると主張。htmlやRSCペイロードのようなよりリッチな戻り値の型を許可するプロトコルを求めている。\n* 📜 [フロントエンドは難しい](https://sst.dev/blog/frontends-are-hard): SSTの開発者たちは、OpenNextイニシアチブを始めるきっかけとなった、Reactを含むモダンメタフレームワークのセルフホスティングの課題について振り返る。\n* 📜 [React Routerでカラースキームトグルを追加](https://sergiodxa.com/tutorials/add-a-color-scheme-toggle-in-react-router): この方法では、インラインJSの代わりにクッキーを使用してFOUCを回避。\n* 📜 [複雑なReact/Next.jsアプリのための堅牢なデータ取得アーキテクチャ](https://www.trevorlasn.com/blog/fetching-data-for-complex-next-and-react-apps): 3層（Server Components、React Query、Optimistic Updates）の使用を提案。\n* 📜 [Server Componentsは選択肢を与える](https://saewitz.com/server-components-give-you-optionality): コンポーネントが実行される環境（Server、Server+Client、またはClient）とタイミングを柔軟に選択可能。\n* 📜 [Next.jsへの愛を失い、Ruby on Rails & Inertia.jsへ再び恋をするまで](https://hardcover.app/blog/part-1-how-we-fell-out-of-love-with-next-js-and-back-in-love-with-ruby-on-rails-inertia-js)\n* 📜 [Kleinanzeigen.deがNext.jsではなくAstroを選んだ理由](https://d13z.dev/blog/07-why-kleinanzeigen-picked-astro-over-nextjs/)\n* 📜 [TanStack Queryのデフォルトをオーバーライドする必要がある場合](https://www.kxlaa.com/articles/when-you-might-need-to-override-the-defaults-in-tanstack-query)\n* 💸 [React.gg - モダンなReact（v19モジュールを含む）をマスターするインタラクティブな方法 - ローンチ週間中30%オフ](https://react.gg/?ref=twir)\n* 📦 [Unhead 2.0 - あらゆるフレームワークに対応したフルスタック\\<head>パッケージ](https://unhead.unjs.io/v2): UnJSエコシステムのこのフレームワーク非依存パッケージにReactバインディングが追加。React 19の組み込みAPIが十分でない場合（[こちらのコメント参照](https://github.com/staylor/react-helmet-async/issues/239#issuecomment-2565685131)）、`react-helmet`の優れた代替となる可能性。\n* 📦 [Blade - Reactで即時ウェブアプリを構築](https://github.com/ronin-co/blade): RSC仕様に意図的に準拠しない、Server Componentsをサポートした新しいオピニオネイテッドなReactメタフレームワーク。\n* 📦 [Relay 19.0 - 条件付きフラグメントに`@alias`必須、React 19サポート](https://relay.dev/blog/2025/04/02/relay-19/)\n* 📦 [Mantine 8.0 - 日付パッケージ更新、新しいTimePicker、Heatmap、CodeHighlightコンポーネント、ネストされたメニューなど](https://mantine.dev/changelog/8-0-0/)\n* 📦 [React Error Boundary 6.0 - ESMのみ](https://github.com/bvaughn/react-error-boundary/releases/tag/6.0.0)\n* 📦 [React Admin 5.8 - InPlaceEditor、DataTable、AuthLayout、MUI v7、CSS変数、テーマ設定](https://github.com/marmelab/react-admin/releases/tag/v5.8.0)\n* 📦 [Unverceled Next.js - OpenNextを使用してCloudflareにデプロイするNext.js 15スターターキット](https://github.com/ixahmedxi/unverceled-nextjs)\n* 📦 [Radix UI - 新しい不安定版PasswordToggleFieldとCheckboxパーツ](https://www.radix-ui.com/primitives/docs/overview/releases#may-5-2025)\n* 📦 [React Router DevTools 5.0 - ルートタブの全面的な見直し](https://github.com/forge-42/react-router-devtools/releases/tag/v5.0.0)\n* 📦 [MUI 7.1 - Tailwind CSS 4サポート](https://github.com/mui/material-ui/releases/tag/v7.1.0)\n* 🎥 [Jack Herrington - Reactの新しいActivityコンポーネント：大きなパフォーマンス向上！](https://www.youtube.com/watch?v=gRKVL5w-2Lc)\n* 🎥 [Fireship - React開発者の間で広がる溝…](https://www.youtube.com/watch?v=lLJbHHeFSsE)\n* 🎙️ [Front-end Fire 93 - React Activity、Storybook 9 Beta、そして協力者としてのAI](https://front-end-fire.com/episodes/93/)"
+      }
+    },
+    {
+      "segment_id": "3a0902ca",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_3a0902ca"
+      }
+    },
+    {
+      "segment_id": "803be95a",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "d422fb13",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "f01228d3",
+      "source_content": "[![App Translation Simplified with Tolgee](/emails/issues/233/tolgee.jpg)](https://tolg.ee/y1z3eb)",
+      "source_content_hash": "30bc1aa6747c14fc9756a8c619dba5187721d96afe04c189dacdab352e35df5e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Tolgeeでアプリ翻訳をシンプルに](/emails/issues/233/tolgee.jpg)](https://tolg.ee/y1z3eb)"
+      }
+    },
+    {
+      "segment_id": "afa378f7",
+      "source_content": "**[App Translation Simplified with Tolgee](https://tolg.ee/y1z3eb)**",
+      "source_content_hash": "d8400a4aecc9ab277b868995d73e6fb3be4e564e972b644b003f771a106ebfc3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Tolgeeでアプリ翻訳をシンプルに](https://tolg.ee/y1z3eb)**"
+      }
+    },
+    {
+      "segment_id": "e8e162a9",
+      "source_content": "[Tolgee](https://tolg.ee/y1z3eb) is an **open-source** tool that simplifies **localization** by saving developers time and eliminating endless spreadsheets of text to translate 🌎",
+      "source_content_hash": "d56f3d297589c61477fc6d0b03d66747837a1edc4341f5bccbb42de6e74349c1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[Tolgee](https://tolg.ee/y1z3eb)は**オープンソース**のツールで、開発者の時間を節約し、翻訳用の終わりのないスプレッドシートをなくすことで**ローカライゼーション**を簡素化します🌎"
+      }
+    },
+    {
+      "segment_id": "463ed165",
+      "source_content": "Speed up your work now! Tolgee helps with:",
+      "source_content_hash": "45084dde73c3ff7dc524f6a33340ae41176e6900fad9de60ef13046bf47ba4e9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今すぐ作業を効率化しましょう！Tolgeeは以下の点で役立ちます："
+      }
+    },
+    {
+      "segment_id": "536b7b6b",
+      "source_content": "* Delegating translation to other team members - save the developer's time!\n* In-context translation\n* Click to translate with the browser extension\n* Get rid of unorganized spreadsheets and JSONs",
+      "source_content_hash": "ed08d2f06e66a39ec76ee528972a06cccee1d616efc57f852a812b2b1eed4d40",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 翻訳を他のチームメンバーに委任 - 開発者の時間を節約！\n* コンテキスト内翻訳\n* ブラウザ拡張機能でクリックして翻訳\n* 整理されていないスプレッドシートやJSONから解放"
+      }
+    },
+    {
+      "segment_id": "2547a6bb",
+      "source_content": "**No credit card is needed** for the free version, perfect for smaller projects! You can try all the features and integrate it into your project right away to prepare it to meet a global audience.",
+      "source_content_hash": "7f9a01d0f0b3d467ea7cfab056f86698b24b5231adfced7f0ca769c9aaaa397c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "無料版では**クレジットカード不要**で、小規模プロジェクトに最適です！すべての機能を試して、プロジェクトにすぐに統合し、グローバルな観客に対応できるように準備できます。"
+      }
+    },
+    {
+      "segment_id": "233bb60e",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "bd30d33e",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "6b77b644",
+      "source_content": "[![Expo SDK 53](/emails/issues/233/expo53.jpg)](https://expo.dev/changelog/sdk-53)",
+      "source_content_hash": "27c0797a1829e185cb5f18e237322bae14b4d91a0c4cc3a7bf95bb8463ab4543",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Expo SDK 53](/emails/issues/233/expo53.jpg)](https://expo.dev/changelog/sdk-53)"
+      }
+    },
+    {
+      "segment_id": "a311e967",
+      "source_content": "**[Expo SDK 53](https://expo.dev/changelog/sdk-53)**",
+      "source_content_hash": "3b9eb4597dd98b1d19e1a6beafa979889c2694fb4a7d2adab3c5adb6ebad449f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Expo SDK 53](https://expo.dev/changelog/sdk-53)**"
+      }
+    },
+    {
+      "segment_id": "eb51d107",
+      "source_content": "This is quite an impressive Expo release, with highlights:",
+      "source_content_hash": "9b4d9822e7074ec3501c59d42662d54a70233336084e5059fbf1134f6598b67e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "非常に印象的なExpoリリースで、主なハイライトは以下の通りです："
+      }
+    },
+    {
+      "segment_id": "85aeef6c",
+      "source_content": "* Upgrades to React Native 0.79, React 19, and RNW 0.20\n* Turns the New Arch on by default\n* Edge-to-edge on Android is enabled by default\n* New [Expo BackgroundTask](https://expo.dev/blog/goodbye-background-fetch-hello-expo-background-task), a modern, reliable, power-efficient, and future-proof way to run background tasks using Android `WorkManager` and iOS `BGTaskScheduler` system APIs\n* New [Expo Maps](https://expo.dev/blog/introducing-expo-maps-a-modern-maps-api-for-expo-developers) (alpha) built on Expo Modules API, using SwiftUI and Jetpack Compose, expose platform default Apple Maps and Google Maps components.\n* Metro `package.json#exports` resolution enabled by default\n* Deploy development builds to TestFlight with `npx testflight`\n* Improve Android build times up to 25% with prebuilt Expo Modules\n* And way more!",
+      "source_content_hash": "2ff65639ad8156a5de0b18114dbecde23cb07380b1f9d7c728fa436fe3121f16",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* React Native 0.79、React 19、RNW 0.20へのアップグレード\n* New Archをデフォルトで有効化\n* Androidでエッジツーエッジがデフォルトで有効化\n* 新しい[Expo BackgroundTask](https://expo.dev/blog/goodbye-background-fetch-hello-expo-background-task)、Androidの`WorkManager`とiOSの`BGTaskScheduler`システムAPIを使用した、モダンで信頼性が高く、電力効率の良い、将来性のあるバックグラウンドタスク実行方法\n* 新しい[Expo Maps](https://expo.dev/blog/introducing-expo-maps-a-modern-maps-api-for-expo-developers)（アルファ）、Expo Modules APIを基に構築され、SwiftUIとJetpack Composeを使用し、プラットフォームデフォルトのApple MapsとGoogle Mapsコンポーネントを公開\n* Metroの`package.json#exports`解決がデフォルトで有効化\n* `npx testflight`で開発ビルドをTestFlightにデプロイ\n* 事前ビルドされたExpo ModulesでAndroidのビルド時間を最大25%改善\n* その他多数！"
+      }
+    },
+    {
+      "segment_id": "a81544fd",
+      "source_content": "See also the [Expo Router v5](https://expo.dev/blog/expo-router-v5) related release with its own highlights:",
+      "source_content_hash": "a885bc72c4fbb5495a35d4aa32d1172925d3907f91242ed14b1bdfe32c030315",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "関連リリースの[Expo Router v5](https://expo.dev/blog/expo-router-v5)もご覧ください："
+      }
+    },
+    {
+      "segment_id": "5cb70a3d",
+      "source_content": "* Requires React 19 / Expo 53\n* Improves DX, error screen and logging, leverages React owner stacks\n* Deploy versioned API Routes in production with EAS Hosting\n* React Server Functions in beta\n* Protected routes",
+      "source_content_hash": "aa1c72d42968c8795d8b5031725319333092462e171dedd063d2654103f03f4b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* React 19 / Expo 53が必要\n* DX、エラー画面とロギングを改善、React owner stacksを活用\n* EAS Hostingでバージョン管理されたAPIルートを本番環境にデプロイ\n* React Server Functionsがベータ版\n* 保護されたルート"
+      }
+    },
+    {
+      "segment_id": "55ba2007",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "396efb28",
+      "source_content": "[![Game On - Bringing WebGPU to React Native](/emails/issues/233/skia.jpg)](https://www.youtube.com/watch?v=t9t-VXwIc4I)",
+      "source_content_hash": "a2ecb18365c93b9c6ea68a6d2aeff232d7cff133f98213a92d47f76290b2c55c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Game On - React NativeにWebGPUをもたらす](/emails/issues/233/skia.jpg)](https://www.youtube.com/watch?v=t9t-VXwIc4I)"
+      }
+    },
+    {
+      "segment_id": "558df877",
+      "source_content": "**[🎥 Game On - Bringing WebGPU to React Native](https://www.youtube.com/watch?v=t9t-VXwIc4I)**",
+      "source_content_hash": "758186d1463959b7e2a78eb16a117c8b0774b461c7218dab0d3e4789eff1a7cc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[🎥 Game On - React NativeにWebGPUをもたらす](https://www.youtube.com/watch?v=t9t-VXwIc4I)**"
+      }
+    },
+    {
+      "segment_id": "f38d1cb0",
+      "source_content": "In a 37-minute video packed with exciting announcements, William Candillon and guests gave us a glimpse into the future of drawing and animation. Supported by Shopify, he’s bringing modern WebGPU support (Vulkan and Metal) to React Native.",
+      "source_content_hash": "46547604f1e35d329068aae1a3ac90c0d1aee6bc259f56754c3abeda78ff6f65",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "37分間のビデオで、William Candillonとゲストが描画とアニメーションの未来を垣間見せてくれました。Shopifyのサポートを受けて、彼はモダンなWebGPUサポート（VulkanとMetal）をReact Nativeにもたらしています。"
+      }
+    },
+    {
+      "segment_id": "5f82a1e9",
+      "source_content": "By aligning to the web APIs, it's possible to copy/paste existing web examples (including Three.js) and make them work on all platforms. It also enables general-purpose use of the GPU (AI, TensorFlow\\.js), which you may achieve more easily thanks to a convenient low-level TypeGPU library.",
+      "source_content_hash": "0be75749fd199109b8fe3a8d1f6b642d8adbc95b9ad46698481ff699c2dbce5d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Web APIに準拠することで、既存のWebサンプル（Three.jsを含む）をコピー/ペーストしてすべてのプラットフォームで動作させることが可能です。また、GPUの汎用的な使用（AI、TensorFlow\\.js）も可能になり、便利な低レベルTypeGPUライブラリのおかげでより簡単に実現できます。"
+      }
+    },
+    {
+      "segment_id": "6fc234cf",
+      "source_content": "All this work was needed to create a new experimental Skia Graphite backend based on WebGPU. It enables composing and interleaving 2D/3D experiences in a performant way, like on the web, but across all platforms, with full Reanimated integration. Along the way, Skia doesn’t come with any new feature, but has significantly improved performance, reduced, crashes, and supports 3 new platforms: tvOS, macOS and Node. Keep massaging that octopus William!",
+      "source_content_hash": "b5ecafc7a31ae812943b246873fe9fab05ce000130db7ad91605db942aad20bf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このすべての作業は、WebGPUをベースにした新しい実験的なSkia Graphiteバックエンドを作成するために必要でした。これにより、ウェブと同様に、すべてのプラットフォームで2D/3D体験をパフォーマンスを維持しながら合成およびインターリーブできるようになり、Reanimatedとの完全な統合も実現しています。その過程で、Skiaには新機能は追加されていませんが、パフォーマンスが大幅に向上し、クラッシュが減少し、3つの新しいプラットフォーム（tvOS、macOS、Node）がサポートされました。ウィリアム、そのタコをマッサージし続けてください！"
+      }
+    },
+    {
+      "segment_id": "714b728f",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "cd2fd2f2",
+      "source_content": "* 💸 [React Universe Conf 2025 adds new speakers: V. Morozov & K. Hosany (Microsoft), K. Hansen (MongoDB), Z. Chapple (Zephyr Cloud) and more.](https://www.reactuniverseconf.com/?utm_campaign=7310698-RUC%202025\\&utm_source=TWIR\\&utm_content=New%20Speakers)\n* ⚖️ [Epic Games Wins Major Victory as Apple is Ordered to Comply With App Store Anti-Steering Injunction](https://www.macrumors.com/2025/04/30/apple-app-store-anti-steering-injunction-violation/): A court judged that Apple purposefully did not comply with a former injunction to let apps use alternative payment methods and bypass the 30% fee on in-app purchases. “For this Court, there is no second bite at the apple”. A major event for the mobile industry that enables Fortnite to return, the Kindle app to finally sell e-books directly, and new business models. Check [Expo](https://expo.dev/blog/mobile-app-payment-processing-best-practices) and [Vercel](https://vercel.com/blog/ios-developers-can-now-offer-commission-free-payments-on-web) guides and starters to avoid the fee.\n* 👀 [React Core PR - Add Fragment Refs to Fabric with intersection observer support](https://github.com/facebook/react/pull/33056): The recent React Labs post briefly mentioned an upcoming [Fragment Refs](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more#fragment-refs) feature. It looks like in the future we’ll be able to use a web-like IntersectionObserver to know when a React fragment enters the screen. Still research/work-in-progress, but exciting new features ahead.\n* 👀 [Reanimated PR - Shared Elements Transitions on the New Architecture](https://github.com/software-mansion/react-native-reanimated/pull/7466): Exciting draft PR from Software Mansion that plans to stabilize Shared Elements Transitions for the New Architecture (that enables sharing C++ code between platforms).\n* 📜 [Sirens, Sagas, and Stack Traces: A React Native Upgrade Odyssey](https://shift.infinite.red/sirens-sagas-and-stack-traces-a-react-native-upgrade-odyssey-52db6beb0aac)\n* 🔨 [Package Checker - Check for New Architecture compatibility](https://react-native-package-checker.vercel.app/)\n* 📦 [Compose Multiplatform 1.8 - Compose Multiplatform for iOS Is Stable and Production-Ready](https://blog.jetbrains.com/kotlin/2025/05/compose-multiplatform-1-8-0-released-compose-multiplatform-for-ios-is-stable-and-production-ready/): The cross-platform UI toolkit from JetBrains enables code sharing between iOS and Android. Unlike React Native, the iOS (and web) support is based on Skia, not using UIKit native elements.\n* 📦 [Zustand 5.0.4 + Jotai 2.12.4](https://github.com/pmndrs/jotai/discussions/3041): Fixing an incompatibility issue with RN 0.79 / Expo 53 / Metro 0.82.\n* 📦 [Nitro Audio Manager - Nitro module for AVAudioSession/AudioManager APIs](https://github.com/ChristopherGabba/react-native-nitro-audio-manager)\n* 📦 [Expo Build Disk Cache - A plugin for Expo CLI to improve build time](https://github.com/WookieFPV/expo-build-disk-cache)\n* 📦 [Expo App Template - Modern, sensible defaults and fast Expo app template](https://github.com/nkzw-tech/expo-app-template)\n* 🎥 [Jamon Holmgren - How to build a Mac app with React Native for macOS](https://www.youtube.com/watch?v=0h-owMCfy5s)\n* 🎥 [React Universe Meetup - 3 new videos from April: Polygen, File-based router, native feel](https://www.youtube.com/playlist?list=PLZ3MwD-soTTEFaxmATqOTcitPEK5iaz1z)\n* 🎥 [Simon Grimm - Finally React Native UI Components (Expo 53)](http://youtube.com/watch?v=kGUrNO8WmCU)\n* 🎙️ [React Native Radio 330 - and Accessibility with Karly Lamm](https://infinite.red/react-native-radio/rnr-330-react-native-and-accessibility-with-karly-lamm)\n* 🎙️ [Rocket Ship 67 - Quitting RN, React Compiler, Legend List & RN Performance](https://share.transistor.fm/s/18111ecc)",
+      "source_content_hash": "fd9cabe626d09fc1b7e53fb2cc95a4c6acb53975b072a8468ad940c7212df2b6",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [React Universe Conf 2025に新たなスピーカーが追加: V. Morozov & K. Hosany (Microsoft)、K. Hansen (MongoDB)、Z. Chapple (Zephyr Cloud) など](https://www.reactuniverseconf.com/?utm_campaign=7310698-RUC%202025\\&utm_source=TWIR\\&utm_content=New%20Speakers)\n* ⚖️ [Epic Gamesが大勝利 - AppleにApp Storeのアンチスティアリング禁止命令遵守を命じる判決](https://www.macrumors.com/2025/04/30/apple-app-store-anti-steering-injunction-violation/): 裁判所は、Appleが意図的に代替決済方法を許可し、アプリ内課金の30%手数料を回避する以前の禁止命令に従わなかったと判断。「この裁判所にとって、Appleに二度目のチャンスはない」。Fortniteの復帰、Kindleアプリでの電子書籍直接販売、新たなビジネスモデルを可能にするモバイル業界の大事件。[Expo](https://expo.dev/blog/mobile-app-payment-processing-best-practices)と[Vercel](https://vercel.com/blog/ios-developers-can-now-offer-commission-free-payments-on-web)のガイドで手数料回避の方法を確認。\n* 👀 [React Core PR - Fragment RefsをFabricに追加（Intersection Observerサポート付き）](https://github.com/facebook/react/pull/33056): 最近のReact Labs投稿で言及された[Fragment Refs](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more#fragment-refs)機能。将来的にはWebのようなIntersectionObserverを使用してReactフラグメントが画面に入るタイミングを検知可能に。まだ研究段階だが、興味深い新機能。\n* 👀 [Reanimated PR - 新アーキテクチャでのShared Elements Transitions](https://github.com/software-mansion/react-native-reanimated/pull/7466): Software MansionによるドラフトPR。プラットフォーム間でC++コードを共有可能にする新アーキテクチャ向けShared Elements Transitionsの安定化を計画。\n* 📜 [サイレン、サガ、スタックトレース: React Nativeアップグレードの冒険](https://shift.infinite.red/sirens-sagas-and-stack-traces-a-react-native-upgrade-odyssey-52db6beb0aac)\n* 🔨 [Package Checker - 新アーキテクチャ互換性チェックツール](https://react-native-package-checker.vercel.app/)\n* 📦 [Compose Multiplatform 1.8 - iOS向けCompose Multiplatformが安定版&本番環境対応に](https://blog.jetbrains.com/kotlin/2025/05/compose-multiplatform-1-8-0-released-compose-multiplatform-for-ios-is-stable-and-production-ready/): JetBrainsのクロスプラットフォームUIツールキットがiOSとAndroid間のコード共有を実現。React Nativeとは異なり、iOS（とWeb）サポートはUIKitネイティブ要素ではなくSkiaベース。\n* 📦 [Zustand 5.0.4 + Jotai 2.12.4](https://github.com/pmndrs/jotai/discussions/3041): RN 0.79 / Expo 53 / Metro 0.82との非互換性問題を修正。\n* 📦 [Nitro Audio Manager - AVAudioSession/AudioManager API向けNitroモジュール](https://github.com/ChristopherGabba/react-native-nitro-audio-manager)\n* 📦 [Expo Build Disk Cache - Expo CLIのビルド時間改善プラグイン](https://github.com/WookieFPV/expo-build-disk-cache)\n* 📦 [Expo App Template - モダンで合理的なデフォルト設定の高速Expoアプリテンプレート](https://github.com/nkzw-tech/expo-app-template)\n* 🎥 [Jamon Holmgren - React Native for macOSでMacアプリを構築する方法](https://www.youtube.com/watch?v=0h-owMCfy5s)\n* 🎥 [React Universe Meetup - 4月の新動画3本: Polygen、ファイルベースルーター、ネイティブ感覚](https://www.youtube.com/playlist?list=PLZ3MwD-soTTEFaxmATqOTcitPEK5iaz1z)\n* 🎥 [Simon Grimm - ついにReact Native UIコンポーネント（Expo 53）](http://youtube.com/watch?v=kGUrNO8WmCU)\n* 🎙️ [React Native Radio 330 - Karly Lammと考えるアクセシビリティ](https://infinite.red/react-native-radio/rnr-330-react-native-and-accessibility-with-karly-lamm)\n* 🎙️ [Rocket Ship 67 - RN離れ、React Compiler、Legend List & RNパフォーマンス](https://share.transistor.fm/s/18111ecc)"
+      }
+    },
+    {
+      "segment_id": "f97c407b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "3cd8185f",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "a627a446",
+      "source_content": "* 👀 [TypeScript 5.9 Iteration Plan](https://github.com/microsoft/TypeScript/issues/61648)\n* 📖 [Node.js Docs - Publishing a package](https://nodejs.org/en/learn/modules/publishing-a-package): A new official guide that also covers ESM/CJS subtleties.\n* 📜 [Converting values to strings in JavaScript has pitfalls](https://2ality.com/2025/04/stringification-javascript.html)\n* 📜 [Seeking an Answer: Why can’t HTML alone do includes?](https://frontendmasters.com/blog/seeking-an-answer-why-cant-html-alone-do-includes/)\n* 📦 [Node 24.0](https://nodejs.org/en/blog/release/v24.0.0): The new Node.js version is out and set to become LTS in October, including npm 11, `AsyncLocalStorage` perf improvements, the `URLPattern` API and a major V8 upgrade to v13.6 that unlocks cool new JS APIs such as Explicit Resource Management (`using`) or `RegExp.escape()` (which is now [available everywhere](https://web-platform-dx.github.io/web-features-explorer/features/regexp-escape/)).\n* 📦 [GSAP 3.13 - JS animations library - Now 100% free, including all plugins](https://gsap.com/blog/3-13/)\n* 📦 [Deno 2.3 - Improved deno compile, local npm packages, deno fmt in tagged templates, and more](https://deno.com/blog/v2.3)\n* 📦 [Prisma 6.7 - ORM without Rust, multi-file schemas](https://github.com/prisma/prisma/releases/tag/6.7.0)",
+      "source_content_hash": "466ec0364fe82e6ffd5b0a1b1e3caacba7ff17cba6c6401784d9e6b1db4dcca7",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 👀 [TypeScript 5.9 イテレーションプラン](https://github.com/microsoft/TypeScript/issues/61648)\n* 📖 [Node.js ドキュメント - パッケージの公開](https://nodejs.org/en/learn/modules/publishing-a-package): ESM/CJSの微妙な違いもカバーする新しい公式ガイド。\n* 📜 [JavaScriptでの値の文字列化には落とし穴がある](https://2ality.com/2025/04/stringification-javascript.html)\n* 📜 [疑問を探る: なぜHTML単体ではインクルードができないのか？](https://frontendmasters.com/blog/seeking-an-answer-why-cant-html-alone-do-includes/)\n* 📦 [Node 24.0](https://nodejs.org/en/blog/release/v24.0.0): 新しいNode.jsバージョンがリリースされ、10月にLTSとなる予定です。npm 11、`AsyncLocalStorage`のパフォーマンス改善、`URLPattern` API、そしてV8 v13.6へのメジャーアップグレードが含まれています。これにより、Explicit Resource Management (`using`)や`RegExp.escape()`といった新しいJS APIが利用可能になります（[こちら](https://web-platform-dx.github.io/web-features-explorer/features/regexp-escape/)で現在どこで利用できるか確認できます）。\n* 📦 [GSAP 3.13 - JSアニメーションライブラリ - すべてのプラグインを含め100%無料化](https://gsap.com/blog/3-13/)\n* 📦 [Deno 2.3 - deno compileの改善、ローカルnpmパッケージ、タグ付きテンプレートでのdeno fmtなど](https://deno.com/blog/v2.3)\n* 📦 [Prisma 6.7 - RustなしのORM、マルチファイルスキーマ](https://github.com/prisma/prisma/releases/tag/6.7.0)"
+      }
+    },
+    {
+      "segment_id": "c7daeccd",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "d4eab4a6",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "0ddaa835",
+      "source_content": "[![alt](/emails/issues/233/meme.jpg)](https://x.com/sebastienlorber/status/1920045489371951117)",
+      "source_content_hash": "da7c57a9f3422a1819d811327eae1d1f273312d86167157867ad2cd2c228be50",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/233/meme.jpg)](https://x.com/sebastienlorber/status/1920045489371951117)"
+      }
+    },
+    {
+      "segment_id": "fd7ed056",
+      "source_content": "[![alt](/emails/issues/233/meme2.jpg)](https://x.com/kzzzf/status/1920091355868520557)",
+      "source_content_hash": "dfbf36e5b27da8d67c8ccfdce6bd12e77c7479363ad4b2a1f728abe3fb6e8c5d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/233/meme2.jpg)](https://x.com/kzzzf/status/1920091355868520557)"
+      }
+    },
+    {
+      "segment_id": "b08ad0b4",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "またね！ 👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/233/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:39.119894+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "1ddda682ad6ba0e6da6e6e0b2e973e6a8df641c62acebb9d92aa515530b6c425"
+  }
+}

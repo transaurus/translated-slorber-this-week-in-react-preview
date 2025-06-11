@@ -1,0 +1,492 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/207/index.mdx",
+  "source_file_content_hash": "0fbf1b26c5e750cfa8691b3cdb6bf7189b6e903b18ef03b65d3dd60a95fc35be",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /207\ntitle: \"This Week In React #207: Next.js, use cache, shadcn/ui, Headless UI, RN 0.76, New Architecture, NativeWind, Expo 52, Edge-to-Edge, RNTL, Reassure, Bottom Tabs, Flutter, Node.js...\"\nauthors: [slorber]\ndate: 10-30-2024\n---",
+      "source_content_hash": "85d713f12044058bda30f1e080b2ed9901bea07b0009c27b47c2272376ade26b",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This is another great React week.",
+      "source_content_hash": "bfe39ad370d1fd6b3c673c9914d7390a7e848ea5e10ed8363371b8a6bb47b1e4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週も素晴らしいReactのニュースが盛りだくさんです。"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Vercel has unveiled new super-interesting caching APIs for Next.js, and the React Native ecosystem is on fire!",
+      "source_content_hash": "c570ab613f9bdf3efa047ca87285356c72f9951ac9aa692699a8cc0b36deefad",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "VercelはNext.js向けに非常に興味深い新しいキャッシュAPIを発表し、React Nativeエコシステムも盛り上がっています！"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "On my side, I'm a bit tired of Twitter penalizing me for commenting external links. I'm giving Bluesky a try ([@sebastienlorber.com](https://bsky.app/profile/sebastienlorber.com)). Come say hi if you are there.",
+      "source_content_hash": "713a2ee2f8ef5ef61f8ac0221a14ae38e32d05b97e21d1bce47c527d95c19f1f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "個人的には、Twitterが外部リンクへのコメントをペナルティ対象とするのに少し疲れました。Blueskyを試しています（[@sebastienlorber.com](https://bsky.app/profile/sebastienlorber.com)）。もしBlueskyにいる方がいれば、ぜひ挨拶してください。"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Don't forget to fill in the [State of React survey](https://survey.devographics.com/en-US/survey/state-of-react/2024?source=this_week_in_react), and mention that you read the newsletter 😇.",
+      "source_content_hash": "173d205d1758a63131973da9fc5f652ce5a44c88dc422bd1355e86f9ce96732f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[State of React調査](https://survey.devographics.com/en-US/survey/state-of-react/2024?source=this_week_in_react)への回答もお忘れなく。このニュースレターを読んだことを記載してください😇。"
+      }
+    },
+    {
+      "segment_id": "45c63027",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_45c63027"
+      }
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット🎨**"
+      }
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "0adfe0aa",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_0adfe0aa"
+      }
+    },
+    {
+      "segment_id": "1941846d",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_1941846d"
+      }
+    },
+    {
+      "segment_id": "a5403c6e",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "d06306f7",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "[![Build a full stack app using React Native & Expo](/emails/issues/207/clerk.jpg)](https://go.clerk.com/5INu2lf)",
+      "source_content_hash": "91f4df45ee4d5a0996bb0e5d72617c437c4e7f49f6a9b988cb7c6658c117174b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![React Native & Expoを使用したフルスタックアプリの構築](/emails/issues/207/clerk.jpg)](https://go.clerk.com/5INu2lf)"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "**[Build a full stack app using React Native & Expo](https://go.clerk.com/5INu2lf)**",
+      "source_content_hash": "1f66601ff2404f0d3df00588e4d178938d6fa1f98a029613222c647ca0f1a529",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[React Native & Expoを使用したフルスタックアプリの構築](https://go.clerk.com/5INu2lf)**"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "🛠️ Build a cross-platform full-stack app using a single codebase with scalable, real-time backend support and user management.",
+      "source_content_hash": "6a16e1c089471e267359404bebc82e2ea4eff44b9c740bb362d7f11be74a9e50",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🛠️ 単一のコードベースでクロスプラットフォームなフルスタックアプリを構築。スケーラブルなリアルタイムバックエンドサポートとユーザー管理機能を備えています。"
+      }
+    },
+    {
+      "segment_id": "91afe33f",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "782c902a",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "[![Next.js Conf 2024 Recap](/emails/issues/207/nextjsconf.jpg)](https://vercel.com/blog/recap-next-js-conf-2024)",
+      "source_content_hash": "3c3af55d3e250c04cbd7a9a256055d43779a6680fda328f346152bd2e4cb95a9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Next.js Conf 2024 レキャップ](/emails/issues/207/nextjsconf.jpg)](https://vercel.com/blog/recap-next-js-conf-2024)"
+      }
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "[**Next.js Conf 2024 Recap**](https://vercel.com/blog/recap-next-js-conf-2024)",
+      "source_content_hash": "83a24e5cd8f66155b28fc22e5f3b0285b3915e24b8c937decf549f5365e6f510",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**Next.js Conf 2024 レキャップ**](https://vercel.com/blog/recap-next-js-conf-2024)"
+      }
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "Last week, the community gathered at the Next.js conference. This recap is a nice overview of the highlights, including:",
+      "source_content_hash": "3db9b684fc3666e95e757cd7013439a2a45ca549e384630f328ab43dd8b82577",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "先週、コミュニティがNext.jsカンファレンスに集結しました。このレキャップでは、以下のハイライトをわかりやすくまとめています："
+      }
+    },
+    {
+      "segment_id": "cef3cb03",
+      "source_content": "* Next.js 15 stable\n* Turbopack Dev stable\n* Simpler caching, reduced complexity\n* Self-hosting improvements and templates",
+      "source_content_hash": "42ee3df1ffb41ad9f3f79aa8186f6dd4dfaade0672ae5ea32ba7ba66e19dc4c5",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* Next.js 15 安定版\n* Turbopack Dev 安定版\n* キャッシュの簡素化と複雑性の低減\n* セルフホスティングの改善とテンプレート"
+      }
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "The sister blog post [Our Journey with Caching](https://nextjs.org/blog/our-journey-with-caching) is particularly interesting, introducing new experimental caching semantics and APIs such as `use cache`, `cacheTag`, and `cacheLife`. It’s a more flexible system, and super cool that you don’t even need to provide a cache key.",
+      "source_content_hash": "19a367ea4c1c71598a66f8694e39bc716787f899e61fab5135cd28aba17a4be7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "姉妹記事[Our Journey with Caching](https://nextjs.org/blog/our-journey-with-caching)は特に興味深く、`use cache`、`cacheTag`、`cacheLife`といった新しい実験的なキャッシュセマンティクスとAPIを紹介しています。より柔軟なシステムで、キャッシュキーを提供する必要さえないのは非常にクールです。"
+      }
+    },
+    {
+      "segment_id": "51029da6",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "36ab8340",
+      "source_content": "* 💸 [Product for Engineers - A/B testing mistakes I learned the hard way](https://dub.sh/twir-oct30)\n* 📖 [Using shadcn/ui with Next.js 15 and React 19](https://ui.shadcn.com/docs/react-19): Explains how to handle peer deps, gives status of React 19 support of underlying libs.\n* 📣 [Netlify Joins OpenNext](https://www.netlify.com/blog/netlify-joins-opennext/): They moved their adapter to the OpenNext org and started collaborating with Cloudclare and SST to make Next.js more portable.\n* 🗓️ [React Day Berlin](https://reactday.berlin/?utm_source=Newsletter\\&utm_medium=thisweekinreact) - 🇩🇪 Berlin - 13 & 16 December - [Free remote tickets are available now, click here !](https://gitnation.com/badges/react-day-berlin-2024/sara_vieira?from=This+Week+In+React)\n* 📜 [Live Streaming with React — More Rust in the JavaScript Ecosystem](https://blog.swmansion.com/live-streaming-with-react-more-rust-in-the-javascript-ecosystem-f83a0371e16c): This innovative project uses a custom React renderer to control a media server doing live video mixing. The article explains their implementation decisions.\n* 📜 [Conditional React hooks pattern](https://robinmalfait.com/blog/conditional-react-hooks-pattern): Maintainer of Headless UI shares trick he uses in the library, passing `enabled` as first parameter to hooks.\n* 📜 [HTML Form Validation is heavily underused](https://expressionstatement.com/html-form-validation-is-heavily-underused): Creates a convenient React abstraction on top of `input.setCustomValidity`.\n* 📜 [Using Shadcn UI without a Tailwind Config File](https://www.luisball.com/blog/shadcn-ui-with-tailwind-v4): Use Tailwind v4 (alpha) with shadcn/ui in a Next.js 15 app. Unfortunately you’ll have to copy/paste the components/dependencies manually until the CLI gets updated.\n* 📜 [Add an RSS Feed to a Next.js Blog](https://didoesdigital.com/blog/nextjs-blog-09-rss/): Use a static route returning XML. Note I beg you to add an RSS feed, otherwise I have to pay Inoreader 0.20€/month to track your blog through selectors 😅.\n* 📜 [How to roll your own auth in JavaScript & TypeScript](https://www.robinwieruch.de/how-to-roll-your-own-auth/): Step-by-step guide to implement auth in Next.js 15.\n* 📜 [useContextSelector: Speeding Up React Apps With Large Context](https://marmelab.com/blog/2024/10/16/usecontextselector-a-faster-usecontext-for-react.html)\n* 📜 [When to use redirect() vs. router.push() in Next.js](https://darios.blog/posts/redirect-vs-router-push-in-nextjs)\n* 📜 [How To Set Up Next.js 15 For Production In 2024](https://janhesters.com/blog/how-to-set-up-nextjs-15-for-production-in-2024)\n* 📦 [Headless UI 2.2 - React 19 support](https://github.com/tailwindlabs/headlessui/releases/tag/%40headlessui%2Freact%40v2.2.0)\n* 📦 [MDX 3.1](https://github.com/mdx-js/mdx/releases/tag/3.1.0)\n* 📦 [Medusa 2.0 - Next.js and Remix starters](https://medusajs.com/starters/): This open source alternative to Shopify launched new major version, including various React-based e-commerce storefront starters.\n* 🎥 [Alem Tuzlak - When are React Server Components finally coming to React Router!?](https://www.youtube.com/watch?v=JF9eS2bOAsM)\n* 🎥 [UI Engineering - Why \"Stale Closure\" Misleads React Devs](https://www.youtube.com/watch?v=7yw_D3h4xSo)",
+      "source_content_hash": "14b0dc39149001bc1c6c5c11588f3078e032f662d465f9b4ddef7dee4b98bfca",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Product for Engineers - 私が苦労して学んだA/Bテストの失敗談](https://dub.sh/twir-oct30)\n* 📖 [Next.js 15とReact 19でshadcn/uiを使用する](https://ui.shadcn.com/docs/react-19): ピア依存関係の扱い方や、基盤ライブラリのReact 19サポート状況を解説。\n* 📣 [NetlifyがOpenNextに参加](https://www.netlify.com/blog/netlify-joins-opennext/): アダプターをOpenNext組織に移管し、CloudflareやSSTと協力してNext.jsの移植性向上に取り組む。\n* 🗓️ [React Day Berlin](https://reactday.berlin/?utm_source=Newsletter\\&utm_medium=thisweekinreact) - 🇩🇪 ベルリン - 12月13日＆16日 - [無料リモートチケット配布中！](https://gitnation.com/badges/react-day-berlin-2024/sara_vieira?from=This+Week+In+React)\n* 📜 [Reactを使ったライブストリーミング — JavaScriptエコシステムにおけるRustのさらなる活用](https://blog.swmansion.com/live-streaming-with-react-more-rust-in-the-javascript-ecosystem-f83a0371e16c): カスタムReactレンダラーでライブ映像ミキシングを制御する革新的なプロジェクトの実装解説。\n* 📜 [条件付きReactフックパターン](https://robinmalfait.com/blog/conditional-react-hooks-pattern): Headless UIメンテナーがライブラリで使用するテクニック、フックの第一引数に`enabled`を渡す方法。\n* 📜 [HTMLフォームバリデーションは過小評価されている](https://expressionstatement.com/html-form-validation-is-heavily-underused): `input.setCustomValidity`を便利に抽象化したReactラッパー。\n* 📜 [Tailwind設定ファイルなしでShadcn UIを使用する](https://www.luisball.com/blog/shadcn-ui-with-tailwind-v4): Next.js 15アプリでTailwind v4（アルファ）とshadcn/uiを併用。CLIが更新されるまではコンポーネント/依存関係を手動コピーする必要あり。\n* 📜 [Next.jsブログにRSSフィードを追加](https://didoesdigital.com/blog/nextjs-blog-09-rss/): XMLを返す静的ルートを使用。RSSフィードがないとInoreaderで0.20€/月の費用がかかるのでぜひ実装を😅。\n* 📜 [JavaScript & TypeScriptで独自認証を実装する方法](https://www.robinwieruch.de/how-to-roll-your-own-auth/): Next.js 15で認証を段階的に実装するガイド。\n* 📜 [useContextSelector: 大規模コンテキストでReactアプリを高速化](https://marmelab.com/blog/2024/10/16/usecontextselector-a-faster-usecontext-for-react.html)\n* 📜 [Next.jsでredirect()とrouter.push()を使い分けるタイミング](https://darios.blog/posts/redirect-vs-router-push-in-nextjs)\n* 📜 [2024年におけるNext.js 15の本番環境セットアップ方法](https://janhesters.com/blog/how-to-set-up-nextjs-15-for-production-in-2024)\n* 📦 [Headless UI 2.2 - React 19サポート](https://github.com/tailwindlabs/headlessui/releases/tag/%40headlessui%2Freact%40v2.2.0)\n* 📦 [MDX 3.1リリース](https://github.com/mdx-js/mdx/releases/tag/3.1.0)\n* 📦 [Medusa 2.0 - Next.jsとRemixスターター](https://medusajs.com/starters/): Shopifyのオープンソース代替であるこのプロジェクトがメジャーアップデートを発表、Reactベースのeコマースストアフロントスターターを追加。\n* 🎥 [Alem Tuzlak - React RouterにReact Server Componentsはいつ実装されるのか？](https://www.youtube.com/watch?v=JF9eS2bOAsM)\n* 🎥 [UI Engineering - 「Stale Closure」がReact開発者を誤解させる理由](https://www.youtube.com/watch?v=7yw_D3h4xSo)"
+      }
+    },
+    {
+      "segment_id": "091b48eb",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_091b48eb"
+      }
+    },
+    {
+      "segment_id": "254ea949",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "2fd0be2a",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "6270d577",
+      "source_content": "[![Run GitHub Actions up to 2x faster at half the cost](/emails/issues/207/github.jpg)](https://blacksmith.sh/?utm_source=thisweekinreact\\&utm_medium=classified\\&utm_campaign=oct-30\\&utm_term=react)",
+      "source_content_hash": "dd1b4bf899aae9dca0c36e849c819814ab40dadb5bbe7ad4591749eeee39de54",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![GitHub Actionsを最大2倍高速化、コスト半減で実行](/emails/issues/207/github.jpg)](https://blacksmith.sh/?utm_source=thisweekinreact\\&utm_medium=classified\\&utm_campaign=oct-30\\&utm_term=react)"
+      }
+    },
+    {
+      "segment_id": "a1fa5396",
+      "source_content": "**[Run GitHub Actions up to 2x faster at half the cost](https://blacksmith.sh/?utm_source=thisweekinreact\\&utm_medium=classified\\&utm_campaign=oct-30\\&utm_term=react)**",
+      "source_content_hash": "53bfd9f25f361373fdffbad3320ae10f55b2b8f20807fe362842794236c48f22",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[GitHub Actionsを最大2倍高速化、コスト半減で実行](https://blacksmith.sh/?utm_source=thisweekinreact\\&utm_medium=classified\\&utm_campaign=oct-30\\&utm_term=react)**"
+      }
+    },
+    {
+      "segment_id": "ec619944",
+      "source_content": "Blacksmith runs your GitHub Actions substantially faster by running them on modern gaming CPUs. Integrating Blacksmith is a one-line code change. 100+ companies like Ashby, GitBook, Superblocks, and Slope use Blacksmith to help developers merge code faster.",
+      "source_content_hash": "e91be491078bfeaf09aac05154b108b47d2d6e4a7f4153a5e2a0dc928658c17e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Blacksmithは最新のゲーミングCPU上でGitHub Actionsを実行することで、大幅な高速化を実現します。Blacksmithの導入は1行のコード変更で完了します。Ashby、GitBook、Superblocks、Slopeなど100社以上の企業が、開発者がより迅速にコードをマージできるようBlacksmithを活用しています。"
+      }
+    },
+    {
+      "segment_id": "8b0ba3cf",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "90d35b51",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "86348f98",
+      "source_content": "[![New Architecture by default, DevTools, and more](/emails/issues/207/newarch.jpg)](https://reactnative.dev/blog/2024/10/23/release-0.76-new-architecture)",
+      "source_content_hash": "52dfebf64ee858d7ccb049cca723f13c3ef384333707a3a30f773fcdf94fac3b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![新アーキテクチャがデフォルトに、DevToolsなど新機能](/emails/issues/207/newarch.jpg)](https://reactnative.dev/blog/2024/10/23/release-0.76-new-architecture)"
+      }
+    },
+    {
+      "segment_id": "6b77b644",
+      "source_content": "[**React Native 0.76 - New Architecture by default, DevTools, and more**](https://reactnative.dev/blog/2024/10/23/release-0.76-new-architecture)",
+      "source_content_hash": "21f33423fbd2aa90fe38598fc7b41f8742fc45715ed02a4825e6cb3bd58f550d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**React Native 0.76 - 新アーキテクチャがデフォルトに、DevToolsなど新機能**](https://reactnative.dev/blog/2024/10/23/release-0.76-new-architecture)"
+      }
+    },
+    {
+      "segment_id": "a311e967",
+      "source_content": "React Native 0.76 is out with major updates! The New Architecture is now enabled by default, there's a new React Native DevTools for improved debugging, and CSS support for `boxShadow` and `filter` for enhanced UI effects (available only with the new architecture). Be aware of some breaking changes: minimum SDK requirements have been raised to iOS 15.1 and Android SDK 24 (Android 7). Time to upgrade and check it out!",
+      "source_content_hash": "ab21232ceb15e772d9c379098bae8dbb9c745c58196ecbba3678e80073a76536",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React Native 0.76がリリースされ、重要なアップデートが行われました！新アーキテクチャがデフォルトで有効化され、デバッグを改善する新しいReact Native DevToolsが追加され、UI効果を強化する`boxShadow`と`filter`のCSSサポートが追加されました（新アーキテクチャでのみ利用可能）。いくつかの破壊的変更に注意してください：最低SDK要件がiOS 15.1とAndroid SDK 24（Android 7）に引き上げられています。アップグレードしてチェックしてみましょう！"
+      }
+    },
+    {
+      "segment_id": "eb51d107",
+      "source_content": "v0.76 is cool, but what’s even better is that the [New Architecture is here](https://reactnative.dev/blog/2024/10/23/the-new-architecture-is-here) and officially declared ready to be used in production! This is a multi-year effort and a huge milestone for the React Native ecosystem! At this point, you probably already heard about JSI, Fabric, Turbomodules, synchronous low-overhead bridgeless communication, interop mode, and more. It’s not just about performance, but also solving important UX/DX problems such as being able to measure views synchronously to position a tooltip, or having `useLayoutEffect` work like on the web. What excites me most is also probably the most underrated: React Native can finally use React 18+ concurrent features, notably transitions, Suspense, and what’s coming next.",
+      "source_content_hash": "2fc898e31aa2dd3f0c25bbe96672eb52667be01f344ce91370ab225014e2f322",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "v0.76は素晴らしいですが、さらに良いのは[新アーキテクチャが本番環境での使用準備完了](https://reactnative.dev/blog/2024/10/23/the-new-architecture-is-here)と公式に宣言されたことです！これは数年にわたる取り組みの成果であり、React Nativeエコシステムにとって大きなマイルストーンです！この時点で、JSI、Fabric、Turbomodules、同期型でオーバーヘッドの少ないブリッジレス通信、相互運用モードなどについてすでにご存知かもしれません。これはパフォーマンスだけでなく、ツールチップの位置決めのためにビューを同期的に計測できるようにするなど、重要なUX/DXの問題を解決するものです。私が最も興奮しているのは、おそらく最も過小評価されている機能でもあります：React NativeはついにReact 18+のコンカレント機能、特にトランジション、Suspense、そして次に来るものを利用できるようになりました。"
+      }
+    },
+    {
+      "segment_id": "7fc4bca5",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "2d15468d",
+      "source_content": "* 💸 [Expo Starter Kit - The Swiss Army Knife of Mobile App Building](https://expostarter.com?utm_source=this-week-in-react\\&utm_medium=newsletter\\&utm_campaign=this-week-in-react-10-30-2024)\n* 📣 [React Native Announcement - Handling Android 15's edge-to-edge enforcement](https://github.com/react-native-community/discussions-and-proposals/discussions/827): Android 15 changes how content is displayed on screen. SafeAreaView is going to be deprecated. The new library [react-native-edge-to-edge](https://github.com/zoontek/react-native-edge-to-edge) is an alternative to fully embrace edge-to-edge rendering. Note it just reached 1.0 and is supported by Expo.\n* 📣 [Flipper repository is being archived](https://fbflipper.com/blog/2024/10/24/changes-to-oss-flipper/)\n* 🗓️ [RNLConf](https://www.reactnativelondon.co.uk/?utm_source=thisweekinreact) - 🇬🇧 London - 14 & 15 November - Last chance to grab a ticket ! Don’t forget your discount with code “TWIR”.\n* 📜 [React Native, and “the native feel”](https://mozzius.dev/post/3l777nhz4h32w): Bluesky dev explains how they made their Expo app feel native. It’s the sum of many little details, such as hairlineWidth, bottom sheets, animations, navigation.\n* 📜 [Animated Spiral with React Native Skia](https://reactiive.io/articles/animated-spiral): Reactiive just relaunched his blog with greatly interactive animated Skia playgrounds, very satisfying to look at!\n* 📜 [Enhance App Performance and Business Growth With Real User Monitoring (RUM)](https://www.callstack.com/blog/enhance-app-performance-and-business-with-real-user-monitoring-rum)\n* 📜 [Improve User Experience and First-Time App Load with Expo and libSQL](https://www.expostarter.com/blog/expo-libsql-improve-app-performance)\n* 📜 [We're forking Flutter. This is why](https://flutterfoundation.dev/blog/posts/we-are-forking-flutter-this-is-why/)\n* 📦 [Expo SDK 52 beta](https://expo.dev/changelog/2024/10-24-sdk-52-beta): Huge release including New Architecture, DOM Components, Expo Router 4, preview of Server Components… We’ll cover all this in a few weeks once it’s table!\n* 📦 [NativeWind 4.1](https://www.nativewind.dev/v4-1-announcement): NativeWind v4 is finally published as latest on npm and ready for production!\n* 📦 [Jetpack Compose React Native](https://github.com/andrew-levy/jetpack-compose-react-native/): Andrew first created SwiftUI bindings and now working on an equivalent for Jetpack Compose. These are cool libraries that may help native developers join our community!\n* 📦 [React Native Bottom Tabs 0.1 + 0.2 - New Architecture by default, Apple TV support, long press, Expo config plugin](https://github.com/okwasniewski/react-native-bottom-tabs/releases)\n* 📦 [React Native visionOS 0.76 - New Architecture by default, debugger support](https://github.com/callstack/react-native-visionos/releases/tag/v0.76.0-visionos)\n* 📦 [React Native for TV 0.76 - New Architecture by default, support for NativeWind](https://github.com/react-native-tvos/react-native-tvos/releases/tag/v0.76.0-0)\n* 📦 [React Native Testing Library 12.8 - Option to enable New Architecture concurrent rendering](https://github.com/callstack/react-native-testing-library/releases/tag/v12.8.0)\n* 📦 [Reassure 1.3 - Improves `measureRenders` precision](https://github.com/callstack/reassure/releases/tag/reassure%401.3.0)\n* 📦 [React Native 0.76.1 - Bugfixes](https://github.com/facebook/react-native/releases/tag/v0.76.1)\n* 📦 [Radon IDE 0.0.21-beta](https://github.com/software-mansion/radon-ide/releases/tag/v0.0.21-beta)\n* 🎥 [Expo - Can you migrate a React website to native with Expo DOM components?](https://www.youtube.com/watch?v=lLlu4fPMXes)\n* 🎥 [Catalin Miron - React Native Onboarding Pagination Indicator - Reanimated](https://www.youtube.com/watch?v=m8ATJwrAif0)\n* 🎙️ [RNR 312 - App Center's Retirement - With React Universe On Air and Expo](https://reactnativeradio.com/episodes/rnr-312-app-centers-retirement)",
+      "source_content_hash": "3340d398169db4a6f8d2a39534033cb94a7e69e00a84ec150ab8dcff64c326b6",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Expoスターターキット - モバイルアプリ構築の万能ツール](https://expostarter.com?utm_source=this-week-in-react\\&utm_medium=newsletter\\&utm_campaign=this-week-in-react-10-30-2024)\n* 📣 [React Nativeアナウンス - Android 15のエッジツーエッジ強制への対応](https://github.com/react-native-community/discussions-and-proposals/discussions/827): Android 15では画面表示方法が変更されます。SafeAreaViewは非推奨となります。新しいライブラリ[react-native-edge-to-edge](https://github.com/zoontek/react-native-edge-to-edge)がエッジツーエッジレンダリングを完全にサポートする代替手段です。Expoでサポートされたばかりの1.0リリースであることに注意してください。\n* 📣 [Flipperリポジトリがアーカイブ化されます](https://fbflipper.com/blog/2024/10/24/changes-to-oss-flipper/)\n* 🗓️ [RNLConf](https://www.reactnativelondon.co.uk/?utm_source=thisweekinreact) - 🇬🇧 ロンドン - 11月14日＆15日 - チケット購入のラストチャンス！「TWIR」コードで割引を忘れずに。\n* 📜 [React Nativeと「ネイティブ感」](https://mozzius.dev/post/3l777nhz4h32w): Bluesky開発者がExpoアプリにネイティブ感を実現した方法を解説。hairlineWidth、ボトムシート、アニメーション、ナビゲーションなど、細部の積み重ねが重要です。\n* 📜 [React Native Skiaでアニメーションスパイラルを作成](https://reactiive.io/articles/animated-spiral): ReactiiveがインタラクティブなSkiaプレイグラウンドを備えたブログをリニューアル。見ているだけで満足感のあるアニメーションです！\n* 📜 [リアルユーザーモニタリング(RUM)でアプリパフォーマンスとビジネス成長を向上](https://www.callstack.com/blog/enhance-app-performance-and-business-with-real-user-monitoring-rum)\n* 📜 [ExpoとlibSQLでユーザー体験と初回アプリ起動を改善](https://www.expostarter.com/blog/expo-libsql-improve-app-performance)\n* 📜 [私たちがFlutterをフォークする理由](https://flutterfoundation.dev/blog/posts/we-are-forking-flutter-this-is-why/)\n* 📦 [Expo SDK 52ベータ](https://expo.dev/changelog/2024/10-24-sdk-52-beta): 新アーキテクチャ、DOMコンポーネント、Expo Router 4、サーバーコンポーネントのプレビューなど大規模リリース。安定版リリース後に詳しくカバーします！\n* 📦 [NativeWind 4.1](https://www.nativewind.dev/v4-1-announcement): NativeWind v4がnpmでlatestとして公開され、本番環境対応が完了！\n* 📦 [Jetpack Compose React Native](https://github.com/andrew-levy/jetpack-compose-react-native/): AndrewはSwiftUIバインディングに続き、Jetpack Compose向け同等ライブラリを開発中。ネイティブ開発者をコミュニティに迎えるのに役立つ可能性があります！\n* 📦 [React Native Bottom Tabs 0.1 + 0.2 - 新アーキテクチャデフォルト対応、Apple TVサポート、長押し、Expo設定プラグイン](https://github.com/okwasniewski/react-native-bottom-tabs/releases)\n* 📦 [React Native visionOS 0.76 - 新アーキテクチャデフォルト対応、デバッガーサポート](https://github.com/callstack/react-native-visionos/releases/tag/v0.76.0-visionos)\n* 📦 [React Native for TV 0.76 - 新アーキテクチャデフォルト対応、NativeWindサポート](https://github.com/react-native-tvos/react-native-tvos/releases/tag/v0.76.0-0)\n* 📦 [React Native Testing Library 12.8 - 新アーキテクチャ同時レンダリング有効化オプション](https://github.com/callstack/react-native-testing-library/releases/tag/v12.8.0)\n* 📦 [Reassure 1.3 - `measureRenders`の精度向上](https://github.com/callstack/reassure/releases/tag/reassure%401.3.0)\n* 📦 [React Native 0.76.1 - バグ修正](https://github.com/facebook/react-native/releases/tag/v0.76.1)\n* 📦 [Radon IDE 0.0.21ベータ](https://github.com/software-mansion/radon-ide/releases/tag/v0.0.21-beta)\n* 🎥 [Expo - ReactウェブサイトをExpo DOMコンポーネントでネイティブに移行できるか？](https://www.youtube.com/watch?v=lLlu4fPMXes)\n* 🎥 [Catalin Miron - React Nativeオンボーディングページネーションインジケーター - Reanimated](https://www.youtube.com/watch?v=m8ATJwrAif0)\n* 🎙️ [RNR 312 - App Centerの引退 - React Universe On AirとExpoとの対談](https://reactnativeradio.com/episodes/rnr-312-app-centers-retirement)"
+      }
+    },
+    {
+      "segment_id": "43fd0c1b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "23b96cc0",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "4b530389",
+      "source_content": "* 📊 [State of Frontend 2024 - Survey results](https://tsh.io/state-of-frontend/)\n* 📊 [State of CSS 2024 - Survey results](https://2024.stateofcss.com/en-US)\n* 📜 [The Difference Between Clearing, Resetting, and Restoring Mocks](https://www.epicweb.dev/the-difference-between-clearing-resetting-and-restoring-mocks)\n* 📦 [Babel 7.26 - Stage 4 features enabled by default, new experimental code printer](https://babeljs.io/blog/2024/10/25/7.26.0)\n* 📦 [Node.js 22.11 - Enters active LTS](https://nodejs.org/en/blog/release/v22.11.0): v22 is officially ready production usage. And yes, this includes require(esm)!\n* 📦 [Node 23.1 - JSON modules and import attributes stable, MockTimers, resizable Buffer](https://nodejs.org/en/blog/release/v23.1.0)\n* 📦 [Safari Technology Preview 206](https://webkit.org/blog/16186/release-notes-for-safari-technology-preview-206/): Iterator helpers are almost available everywhere!",
+      "source_content_hash": "f46789fb559d86187f2e16a5a318a986c03badf11d2e12d14789cb9342e3af86",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📊 [State of Frontend 2024 - 調査結果](https://tsh.io/state-of-frontend/)\n* 📊 [State of CSS 2024 - 調査結果](https://2024.stateofcss.com/en-US)\n* 📜 [モックのクリア、リセット、復元の違い](https://www.epicweb.dev/the-difference-between-clearing-resetting-and-restoring-mocks)\n* 📦 [Babel 7.26 - Stage 4機能がデフォルトで有効化、新しい実験的コードプリンター](https://babeljs.io/blog/2024/10/25/7.26.0)\n* 📦 [Node.js 22.11 - アクティブLTS版リリース](https://nodejs.org/en/blog/release/v22.11.0): v22が正式に本番環境対応となりました。require(esm)もサポートされています！\n* 📦 [Node 23.1 - JSONモジュールとimport属性が安定版に、MockTimers、リサイズ可能なBuffer](https://nodejs.org/en/blog/release/v23.1.0)\n* 📦 [Safari Technology Preview 206](https://webkit.org/blog/16186/release-notes-for-safari-technology-preview-206/): Iteratorヘルパーがほぼすべての環境で利用可能に！"
+      }
+    },
+    {
+      "segment_id": "efbc76b7",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c6868a9f",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "bb1346b6",
+      "source_content": "[![alt](/emails/issues/207/meme.jpg)](https://x.com/t3dotgg/status/1849572068297408568)",
+      "source_content_hash": "c92bde989a24b6b1b1b28b650180f7db8c09be598ce1bea4f7de8e0eefc6abd3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/207/meme.jpg)](https://x.com/t3dotgg/status/1849572068297408568)"
+      }
+    },
+    {
+      "segment_id": "8664ed0b",
+      "source_content": "[![alt](/emails/issues/207/meme2.jpg)](https://x.com/o_kwasniewski/status/1850966131361649120)",
+      "source_content_hash": "2daafd0942616ce177d2ba5eb7ed45a7098794ca1bb55f71bdd2af6738cfd1df",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/207/meme2.jpg)](https://x.com/o_kwasniewski/status/1850966131361649120)"
+      }
+    },
+    {
+      "segment_id": "9e90a9b3",
+      "source_content": "[![alt](/emails/issues/207/meme3.jpg)](https://x.com/cortinico/status/1849278806718128379)",
+      "source_content_hash": "81ea020b0bb6c93bdf7e8424b67a657bf36fb880ea446122ccb4dbba4be66904",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/207/meme3.jpg)](https://x.com/cortinico/status/1849278806718128379)"
+      }
+    },
+    {
+      "segment_id": "681ef526",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "それでは！👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/207/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:41.375117+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "0fbf1b26c5e750cfa8691b3cdb6bf7189b6e903b18ef03b65d3dd60a95fc35be"
+  }
+}

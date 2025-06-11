@@ -1,0 +1,183 @@
+---
+slug: /155
+title: "This Week In React #155: RSC DevTools, Next.js Caching, Radix Themes, Expo Party, Graph Gallery, Astro, Apollo, Storybook, Remix, Reanimated, Apple Settings, Stable Diffusion..."
+authors: [slorber]
+date: 08-08-2023
+---
+
+みなさん、こんにちは！
+
+今週は比較的静かだと思っていましたが、ReactとReact Nativeの両方で興味深い情報がたくさん見つかりました！
+
+このニュースレターは[25,000人の購読者を突破](https://twitter.com/sebastienlorber/status/1689285394855022592)しました！毎週読んでいただき、この冒険を続けられることに感謝します。
+
+<!-- truncate -->
+
+**💡 [Twitterでこのニュースレターをチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![React向けドロップイン認証＆ユーザー管理](/emails/issues/155/clerk.jpg)](https://clerk.com/?utm_source=sponsorship\&utm_medium=newsletter\&utm_campaign=thisweekinreact\&utm_term=08_08_2023)
+
+**[React向けドロップイン認証＆ユーザー管理](https://clerk.com/?utm_source=sponsorship\&utm_medium=newsletter\&utm_campaign=thisweekinreact\&utm_term=08_08_2023)**
+
+Clerkは、Reactアプリに認証とユーザー管理を追加する最も簡単な方法です。モダンなWeb向けに特別に構築されており、数分で使い始められるように設計されています。
+
+Clerkでは以下の機能を利用できます：
+
+* 💅 サインイン、サインアップ、ユーザープロフィール、組織向けのプリビルドUIコンポーネント
+* 📦 React、React Native、Next.js、Redwood、Remixなどのフレームワーク向けSDK
+* ⚡ Firebase、Supabase、ConvexなどのBaaSプロバイダーとの統合
+* 🎁 ユーザー管理、ソーシャルログイン、マジックリンク、多要素認証などがすぐに利用可能
+
+Clerkの[クイックスタートとチュートリアル](https://clerk.com/docs/quickstarts/overview?utm_source=sponsorship\&utm_medium=newsletter\&utm_campaign=thisweekinreact\&utm_term=08_08_2023)で始めましょう 🚀
+
+***
+
+## ⚛️ React {#react}
+
+[![React Server Components向けDevtools](/emails/issues/155/rscdevtools.jpg)](https://www.alvar.dev/blog/creating-devtools-for-react-server-components)
+
+[**React Server Components向けDevtools**](https://www.alvar.dev/blog/creating-devtools-for-react-server-components)
+
+React Server Componentsのリリース後、Alvarはクライアントとサーバー間のネットワーク通信に解読が難しいフォーマットが使用されていることに気づきました。そこで彼は、ペイロードをより便利に検査できるウェブサイト[RSC Parser](https://rsc-parser.vercel.app/)の開発を開始しました。これは機能しましたが、UXは理想的ではありませんでした。その後、彼はChromeのNetwork DevToolsのように機能する本格的なブラウザ拡張機能の開発に取り組みました。このツールには、時間経過とともにペイロードを表示するタイムラインや、Suspenseを使ったストリーミングサポートも含まれています。このツールにより、彼は自身のブログで過度に大きなペイロードを検出し、最適化することができました。
+
+これはまだ開発中の有望なツールで、注目に値します。拡張機能はまだブラウザストアでは利用できませんが、近日中に公開される予定です。この[Twitterスレッド](https://twitter.com/sebastienlorber/status/1689203357368365056)でいくつかのデモ動画を確認できます。
+
+***
+
+[![Next.jsのキャッシュ](/emails/issues/155/cachinginnextjs.jpg)](https://nextjs.org/docs/app/building-your-application/caching)
+
+[**Next.jsのキャッシュ**](https://nextjs.org/docs/app/building-your-application/caching)
+
+Next.jsの新しいドキュメントページでは、4つのキャッシュレベル（Request Memoization、Data Cache、Full Route Cache、Router Cache）がどのように機能し、なぜ存在するのか、そしてそれらをバイパスする方法について包括的に説明されています。
+
+* リクエストメモ化
+* データキャッシュ
+* フルルートキャッシュ
+* ルーターキャッシュ
+
+Routerキャッシュをバイパスすることはできません。この問題は[この動画](https://www.youtube.com/watch?v=_yhSh4g0NSk)で指摘されています。
+
+***
+
+[![Radix UI Themes](/emails/issues/155/radix.jpg)](https://www.radix-ui.com/)
+
+[**Radix UI Themes**](https://www.radix-ui.com/)
+
+Radix UIは最近多くの称賛を集めているヘッドレスReactライブラリで、特にそのAPIのエレガントな設計が評価されています。彼らは先日、プリミティブコンポーネントに加えてスタイル付きコンポーネントのセットを提供することを（[Twitter](https://twitter.com/radix_ui/status/1688889619314585600)で素敵なトレーラー付きで）発表しました。
+
+***
+
+* 💬 [Metaのstylexはどうなったのか？](https://www.reddit.com/r/reactjs/comments/13akbvu/what_happened_to_metas_stylex/): CSS-in-JSライブラリのリリースはさまざまな理由で遅れていますが、間もなく公開される予定です。
+* 📜 [The React Graph Gallery](https://datavizuniverse.substack.com/p/the-react-graph-gallery): Yanは、npmのチャートライブラリを使用するのではなく、彼のサイトで利用可能な多くのReact + D3の例からインスピレーションを得ることを推奨しています。現在のレシピキットのトレンド（Shadcn UI、Tailwind Catalystなど）についても言及しています。
+* 📜 [ブログをGatsbyからAstroに移行した話](https://sapegin.me/blog/gatsby-to-astro/): AstroとVanilla-Extractへの移行を行いましたが、後者にはあまり満足していません。
+* 📜 [API経由でUIを送信する](https://www.builder.io/blog/ui-over-apis): Server-Driven UIの概念を紹介し、いくつかのReactの例を挙げています。RSCsもこのカテゴリに含まれると考えています。
+* 📜 [パッケージをESMにモダナイズする経験](https://blog.isquaredsoftware.com/2023/08/esm-modernization-lessons/): Mark EriksonがReduxパッケージにESMサポートを提供する際の複雑さを詳述しています。RSCsの導入はこれを助けていません。
+* 📜 [クリーンでメンテナブルなReactコンポーネントテストの実現](https://medium.com/globant/achieving-clean-and-maintainable-react-component-tests-b3d5e0483307)
+* 📜 [useStateフックを共有するためのcreateStateContextの使用](https://www.jacobparis.com/content/use-state-context)
+* 📜 [Next.js 13のContextはクライアントでアプリ全体を再レンダリングさせるのか？](https://www.perssondennis.com/articles/do-contexts-in-nextjs-13-make-the-whole-app-render-on-the-client)
+* 📜 [React FlowとResendを使ったメール自動化システムの構築](https://novu.co/blog/building-an-email-automation-system-with-react-flow-and-resend/)
+* 📜 [Markprompt + Algolia: ドキュメント向けのプロンプトとインスタント検索の組み合わせ](https://markprompt.com/blog/algolia)
+* 📜 [Leptos Queryの鍛造 - RustでのTanStack Query](https://www.nicoburniske.com/thoughts/forging_leptos_query)
+* 📦 [Astro 2.10: ビュートランジションでの永続的な状態](https://astro.build/blog/astro-2100/): Astroはさらに限界を押し広げ、ステートフルなアイランド間でナビゲーションをまたいで状態を永続化する可能性を導入しました。Astro v3は現在ベータ版です。
+* 📦 [Next.js Commerce 2.0](https://vercel.com/blog/introducing-next-js-commerce-2-0): VercelによるApp Routerサポートのeコマーステンプレートで、Shopifyとの公式統合を備えています。このテンプレートが優れたパフォーマンスを達成する方法を詳しく説明した記事です。
+* 📦 [Apollo Client 3.8 - React Suspense統合](https://www.apollographql.com/blog/announcement/frontend/wait-for-it-announcing-apollo-client-3-8-with-react-suspense-integration/): Suspenseとの統合のための3つの新しいフックや、GraphQLの`__typename`を削除するLinkなど、いくつかの新機能が追加されました。
+* 📦 [Storybook - Visual Testsアドオンスニークピーク - Chromaticを使用](https://storybook.js.org/blog/visual-tests-addon-sneak-peek/)
+* 📦 [Remix Dev Tools v2.0 - 新しい設定タブ](https://github.com/Code-Forge-Net/Remix-Dev-Tools/releases/tag/v2.0.0)
+* 📦 [Remix-Workers-POC - Service Workersでローダー/アクションを実行し、オフラインファーストサポートを有効化](https://github.com/scandinavianairlines/remix-workers-poc)
+* 🎥 [HTMX: Reactのゲームチェンジャーとなる代替手段](https://www.youtube.com/watch?v=DuGyH5RvfbY)
+* 🎥 [Remotionの新機能 – 2023年7月](https://www.youtube.com/watch?v=ABQErIOxUNg)
+* 🎥 [Radix UIとは何か？](https://www.youtube.com/watch?v=1JnwJBtg4VA)
+* 🎙️ [Software Engineering Daily - Sébastien Lorberによるドキュメントの簡素化](https://softwareengineeringdaily.com/2023/08/03/simplifying-documentation/)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Google Formsに代わる非クラウド型の包括的ソリューション](/emails/issues/155/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact\&utm_medium=email)
+
+**[Google Formsに代わる非クラウド型の包括的ソリューション](https://surveyjs.io/?utm_source=thisweekinreact\&utm_medium=email)**
+
+データフローを完全に制御可能な堅牢なフォーム管理システムを構築したい場合、そしてその導入に何ヶ月も数千ドルも費やしたくない場合、SurveyJSが最適な選択肢です！
+
+SurveyJSは4つのオープンソースJavaScriptライブラリから成るプロダクトスイートで、ドラッグ＆ドロップのフォームビルダーで動的なJSONベースのフォームを作成・編集し、Reactアプリでレンダリングし、機密性の高い調査データを自社インフラ内に保存できます。さらに、カスタム調査をブラウザ上で編集可能なPDFファイルとして表示したり、インタラクティブなチャートやテーブルで調査結果を可視化したりできます。[詳細はこちら](https://surveyjs.io/?utm_source=thisweekinreact\&utm_medium=email)。
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![Expo Launch Party](/emails/issues/155/expolaunchparty.jpg)](https://expo.dev/launch-party)
+
+[**Expo Launch Party**](https://expo.dev/launch-party)
+
+今週、Expoは多くの新機能を発表予定です。現時点で公開されている情報：
+
+* [機能プレビュー：シングルサインオン(SSO)](https://blog.expo.dev/feature-preview-single-sign-on-sso-9c1a7d50c1a9)
+* [機能プレビュー：EAS Updateのロールアウト](https://blog.expo.dev/feature-preview-rollouts-for-eas-update-4eac28596470)
+* [expo-updates向けuseUpdates() API](https://expo.dev/changelog/2023/08-08-use-updates-api)
+* [Expo Orbit：ビルドのダウンロードと起動](https://expo.dev/changelog/2023/08-09-orbit)
+
+***
+
+* 💬 [React NativeのテストをKotlin化する手伝いを - 第2弾](https://github.com/facebook/react-native/issues/38825): React Native開発チームが再度、コードベースのJavaからKotlinへの変換作業への協力を呼びかけています。
+* 🐦 [Reanimatedのワークレットによるバックグラウンドタスクのサポートが近づいている？](https://twitter.com/tomekzaw_/status/1688565879456350208)
+* 🐦 [Wishlistアップデート - 近日公開予定](https://twitter.com/margelo_io/status/1689270087583195136)
+* 📜 [React NativeでStable Diffusionを使いiOS上でAI生成画像を作成する方法](https://andreizgirvaci.com/blog/how-to-create-ai-generated-images-on-ios-in-react-native-using-stable-diffusion): Andreiが、新しい[expo-stable-diffusion](https://github.com/andrei-zgirvaci/expo-stable-diffusion)パッケージを使用して、iPhone上で直接AI画像を生成する方法を解説しています。
+* 📜 [React NativeでRustを使用する - 記事とビデオチュートリアル](https://ospfranco.notion.site/Rust-in-React-Native-43316cdc499f43b48e9bc014074d3f72)
+* 📦 [Expo Config Plugins - Apple Settings](https://github.com/expo/config-plugins/tree/main/packages/apple-settings)
+* 📦 [React-Native Testing Library v12.2.0 - 新しいUser Event API](https://callstack.github.io/react-native-testing-library/docs/user-event)
+* 📦 [React-Native-Wireframe-UI - React Native用ワイヤーフレームUIキット](https://github.com/rborn/react-native-wireframe-ui)
+* 📦 [React-Native-Bootsplash v5 beta - AndroidX廃止、ダークモード + ブランド画像サポート、useHideAnimationフックなど](https://github.com/zoontek/react-native-bootsplash/pull/475)
+* 🎥 [SDKをReact Native向けに作成または移植する](https://www.youtube.com/watch?v=A0JtWXt75yw)
+* 🎥 [React Native Reanimatedでアニメーションするグラデーションピッカーを作成する方法](https://www.youtube.com/watch?v=_FehNLxxpRY)
+* 👥 [React Native EU 2023](https://www.react-native.eu/) (2023年9月7-8日、ポーランド・ヴロツワフ) では、コード「thisweekinreact15」で[カンファレンスチケットが15%オフ](https://ti.to/react-native-eu/2023/discount/thisweekinreact15)になります。
+
+***
+
+## 🧑‍💻 Jobs {#jobs}
+
+🧑‍💼 [**Passionfroot - シニアフルスタックエンジニア (Remix) - €160k以上、ベルリン/リモート**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+Passionfrootのミッションは、YouTube、ポッドキャスト、ソーシャルメディア、ニュースレターを通じて、明日の独立系ビジネスを支援することです。クリエイターがスケーラブルで持続可能なビジネスを構築できるツールの開発に参加してください。
+
+🧑‍💼 [**Callstack - シニアReact Native開発者 - 完全リモート、B2B契約で月額PLN 21-32k（税抜）**](https://www.callstack.com/senior-react-native-developer)
+
+世界で最も利用されているアプリの開発に携わりたいですか？React Nativeテクノロジーの共創に興味はありませんか？React & React NativeのリーダーであるCallstackチームに参加してください。詳細はウェブサイトをご確認ください。あなたの応募をお待ちしています - あなたのスキルを見せてください！
+
+🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\&t=ArRLC77BpRwXXCdx8fnUqw)
+
+React Nativeに特化した開発者向けに複数のポジションを募集しています！報酬は約160kドル＋10%のボーナスです。RNの実務経験があり、米国在住である必要があります。詳細は[@gabe\_g2i](https://twitter.com/gabe_g2i)にDMでお問い合わせください。This Week in Reactからの紹介であることをお忘れなく。
+
+💡 [スポンサー募集の方法](https://thisweekinreact.com/sponsor)
+
+***
+
+## 🔀 Other {#other}
+
+* 👀 [Project IDX - AIアシスタント搭載のGoogle製ブラウザベースコード環境](https://idx.dev/)
+* 📜 [Atlassian - 「バターのように滑らかなレンダリング」- Confluenceホワイトボードの技術記事](https://www.atlassian.com/engineering/rendering-like-butter-a-confluence-whiteboards-story)
+* 📜 [821日間TypeScript ORMを開発した結果](https://medium.com/@aleksandrblokh/weve-built-typescript-orm-for-821-days-then-this-happened-71282a8b0206)
+* 📜 [SharpをWebAssemblyとWebContainersに移植](https://blog.stackblitz.com/posts/bringing-sharp-to-wasm-and-webcontainers/)
+* 📜 [パターンマッチングの魔法を解き明かす](https://www.swan.io/blog-posts/unraveling-the-magic-of-pattern-matching)
+* 📦 [VitePress v1.0 RCリリース](https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md)
+* 📦 [Deno 1.36: 柔軟なセキュリティ設定と拡張テストAPI](https://deno.com/blog/v1.36)
+* 📦 [Dioxus 0.4 - Rust製React風UIライブラリ](https://dioxuslabs.com/blog/release-040)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/155/meme.jpg)](https://twitter.com/fireship_dev/status/1687106416614764547)
+
+それではまた！👋

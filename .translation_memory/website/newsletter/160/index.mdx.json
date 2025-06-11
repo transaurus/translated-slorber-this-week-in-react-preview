@@ -1,0 +1,502 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/160/index.mdx",
+  "source_file_content_hash": "713f60363e93c5afe1a213104491e5746d3c2f2f795201774cc15c49aea31f9e",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /160\ntitle: \"This Week In React #160: Remix, Next.js, Expo API Routes, Ladle, MDXEditor, Sonner, Docusaurus, AbortController, Query String, Menubar, VisionCamera, Victory Native XL, Bun, ESLint, TC39...\"\nauthors: [slorber]\ndate: 09-27-2023\n---",
+      "source_content_hash": "9637217dd4a1e4968a01c9e7696ea52695a3e072448299c3e5df050a6ea3a882",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "After a little break, we're catching up on 2 weeks of news this week!",
+      "source_content_hash": "b41ca2a7fffad1fa063b0d21ad7105f8d178de2a9c2c9d17f23a16d0924532c3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "少しの休憩を挟んで、今週は2週間分のニュースをお届けします！"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "There's been quite a few releases, including Remix and Next.js, but also some lesser-known packages that are well worth your attention.",
+      "source_content_hash": "d626770448f28fa4445b6e2fc411419ed09cd3322b826693dc5f71ca53075fde",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "RemixやNext.jsを含む多くのリリースがありましたが、注目に値するあまり知られていないパッケージもいくつかあります。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Super excited to see Expo finally venturing server-side!",
+      "source_content_hash": "076f5ac51f662ca25124f0a6ca717d64deca6e4308882b0a124ca5b187a22f84",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Expoがついにサーバーサイドに進出するのを見るのがとても楽しみです！"
+      }
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6429a3aa"
+      }
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**"
+      }
+    },
+    {
+      "segment_id": "507b4652",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "fcd52337",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_fcd52337"
+      }
+    },
+    {
+      "segment_id": "42e34e45",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_42e34e45"
+      }
+    },
+    {
+      "segment_id": "caf67047",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "[![Frontendmasters](/emails/issues/158/frontendmasters.jpg)](https://frontendmasters.com/learn/react/?utm_source=newsletter\\&utm_medium=thisweekinreact\\&utm_campaign=reactpath)",
+      "source_content_hash": "4870a04cddc7e27094e63c6c1f902d69a8d940bfb7aab0b40b1dd9b5ee29b99d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Frontendmasters](/emails/issues/158/frontendmasters.jpg)](https://frontendmasters.com/learn/react/?utm_source=newsletter\\&utm_medium=thisweekinreact\\&utm_campaign=reactpath)"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "**[FrontendMasters – Complete React.js Learning Path to Senior React Developer](https://frontendmasters.com/learn/react/?utm_source=newsletter\\&utm_medium=thisweekinreact\\&utm_campaign=reactpath)**",
+      "source_content_hash": "fcb1a9888c2735f02024ea531a9a7251abb64c2e4f0405911367f1045daa4eb6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[FrontendMasters – シニアReact開発者への完全なReact.js学習パス](https://frontendmasters.com/learn/react/?utm_source=newsletter\\&utm_medium=thisweekinreact\\&utm_campaign=reactpath)**"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "Learn React.js from the ground up to advanced topics like performance, testing, and code quality. Start by building a real-world app in the Complete Introduction to React. Continue with Intermediate React, integrating the most popular tools from the ecosystem. Then learn performance, TypeScript, and even Next.js, the fullstack React framework!",
+      "source_content_hash": "e17c755b1aba7ee0aa6d9a6d04fb708ada63619379555fc2d4d852b7115f5723",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React.jsを基礎から学び、パフォーマンス、テスト、コード品質などの高度なトピックまでカバーします。まずは「React完全入門」で実践的なアプリを構築し、その後「中級React」でエコシステムの人気ツールを統合します。さらに、パフォーマンス、TypeScript、そしてフルスタックReactフレームワークであるNext.jsも学べます！"
+      }
+    },
+    {
+      "segment_id": "b0e5a8f2",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "80d9e13c",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "[![Remix v2](/emails/issues/160/remix-v2.jpg)](https://remix.run/blog/remix-v2)",
+      "source_content_hash": "fa9457565b639912e202aececca4cf47d944b8b43cdcaf1993d2c9ef2da54692",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Remix v2](/emails/issues/160/remix-v2.jpg)](https://remix.run/blog/remix-v2)"
+      }
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "[**Remix v2**](https://remix.run/blog/remix-v2)",
+      "source_content_hash": "4e71b4ad12fc9deb95731a9f822ad688597e907ded59db6d2b1261ce4cc0b755",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**Remix v2**](https://remix.run/blog/remix-v2)"
+      }
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "As expected, Remix v2 should be a relatively straightforward upgrade, since many v2 features were already available in v1 as opt-in 'future flags'. This article gives an overview of all the flags that were delivered in v1 and are now enabled by default in v2. Remix also offers retro-compatibility packages for those who preferred some v1 conventions. React Server Component support should land in Remix v3.",
+      "source_content_hash": "509003865d814cc2937bbad3e4c2de993bed6891490839f778d1b8ab41c0b5fa",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "予想通り、Remix v2は比較的スムーズなアップグレードとなるでしょう。多くのv2機能はv1でオプトインの「future flags」としてすでに利用可能でした。この記事では、v1で提供され、v2でデフォルトで有効になったすべての機能の概要を説明しています。Remixはまた、v1の慣習を好むユーザーのために後方互換性パッケージを提供しています。React Server ComponentのサポートはRemix v3で実装される予定です。"
+      }
+    },
+    {
+      "segment_id": "06784e79",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "[![Next.js 13.5](/emails/issues/160/next-13.5.jpg)](https://nextjs.org/blog/next-13-5)",
+      "source_content_hash": "391ce6150fb94cfc90d4825a0d7f3bf457edb7e50f003a2b2023d0d3282c0625",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Next.js 13.5](/emails/issues/160/next-13.5.jpg)](https://nextjs.org/blog/next-13-5)"
+      }
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "[**Next.js 13.5**](https://nextjs.org/blog/next-13-5)",
+      "source_content_hash": "20d0da5f2ce3a6a6e8cbb60a3609534df1fb595f241050c549575595ee2f59f9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**Next.js 13.5**](https://nextjs.org/blog/next-13-5)"
+      }
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "Many developers complained about the slowness of the Next.js dev server lately. Vercel heard us and came up with another rlease that significantly improves things.",
+      "source_content_hash": "bca84ce6045916ca569e7350148800b9c88f93cb43597a756ae81d6f8946f1ec",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "最近、Next.jsの開発サーバーの遅さについて多くの開発者が不満を述べていました。Vercelはこの声を受け、大幅に改善されたリリースを提供しました。"
+      }
+    },
+    {
+      "segment_id": "49d8fe2a",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "9b797309",
+      "source_content": "* 💸 [Ably Realtime Hackathon - Create a real-time React app, win \\$19,000 in prizes - from real-time dashboards to collaborative experiences!](https://ably.devpost.com/?utm_campaign=23-hackathon\\&utm_source=thisweekinreact\\&utm_medium=referral)\n* 🐦 [\"StyleX documentation site is nearly ready for launch\"](https://twitter.com/naman34/status/1703576411330810282)\n* ❓ [Did the React team forget the React Forget compiler?](https://www.reddit.com/r/reactjs/comments/16nnh4z/did_the_react_team_forget_the_react_forget/): Joseph and Sathya respond on Reddit. They are making progress and starting to experiment in production. We'll know more at React Advanced next month.\n* 👀 [Vercel v0 alpha - \"Midjourney for React\"](https://v0.dev/): Vercel introduced a preview of an impressive AI capable of writing React components based on shadcn UI and Tailwind, and easy to copy/paste.\n* 💡 [Await Component - Use Suspense without creating a new component](https://buildui.com/recipes/await-component): a useful technique inspired by Remix.\n* 📜 [Speeding up the JavaScript ecosystem - Polyfills gone rogue](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-6/): many ESLint plugins like `eslint-plugin-react` come with a lot of unnecessary dependencies.\n* 📜 [The State of Web Frameworks on Deno](https://deno.com/blog/web-frameworks-on-deno): gives a good overview of the React frameworks that can be hosted on Deno Deploy. Next.js support is limited, but Remix and Astro seem to be well-supported. I've discovered that they've migrated their docs to Docusaurus 🥲.\n* 📜 [Abort Async Calls Inside Remix Loaders and Actions](https://sergiodxa.com/tutorials/abort-async-calls-inside-remix-loaders-and-actions): explains how to correctly manage the AbortSignal received in a Remix loader. There are a few pitfalls to avoid.\n* 📜 [Build a server-side filter UI with Remix](https://www.jacobparis.com/content/remix-filter-bar): offers a complete solution and a great demo for creating advanced filters inspired by the Linear app. TIL about the OData spec, which defines how to serialize filters as query string.\n* 📜 [Storing React state in the URL with Next.js](https://francoisbest.com/posts/2023/storing-react-state-in-the-url-with-nextjs): eencourages the use of the query string via a `next-usequerystate` package. v1.8 is out and supports Next.js App Router. Also shares a few details I didn't know about, such as the browser rate-limit on `history.replaceState` calls.\n* 📜 [Displaying Local Times in Next.js](https://francoisbest.com/posts/2023/displaying-local-times-in-nextjs): interesting tips to avoid hydration mismatch problems.\n* 📜 [Islands & Server Components & Resumability, Oh My!](https://dev.to/this-is-learning/islands-server-components-resumability-oh-my-319d): the 3 approaches are orthogonal and could converge?\n* 📜 [A First Look at HTMX and How it Compares to React](https://www.builder.io/blog/htmx-vs-react)\n* 📜 [React Server Components Made Our Site Faster](https://frigade.com/blog/bundle-size-reduction-with-rsc-and-frigade)\n* 📜 [Building Low Level Components the Radix Way](https://alexkondov.com/building-low-level-components-the-radix-way/)\n* 📜 [Exploring React Server Components and Server Actions with Next.js](https://www.antstack.com/blog/exploring-react-server-components-and-server-actions-with-next-js/)\n* 📦 [Ladle v3 - Uber seamless alternative to Storybook - SWC, Node 18, MDX stories...](https://ladle.dev/blog/ladle-v3/)\n* 📦 [Docusaurus v3 beta - MDX 2, React 18, TypeScript 5, Mermaid 10](https://github.com/facebook/docusaurus/discussions/9312)\n* 📦 [TanStack Query v5 RC.1 - Last call to report bugs](https://github.com/TanStack/query/releases/tag/v5.0.0-rc.1)\n* 📦 [Million v2.6 - HMR fixes, Million CLI, better pre-evaluation](https://github.com/aidenybai/million/releases/tag/v2.6.0)\n* 📦 [Mantine v7.0 - Fully featured React components library - Native CSS, App Router support](https://mantine.dev/changelog/7-0-0/)\n* 📦 [MDX Editor v1.0 - A rich text editor React component for markdown](https://github.com/mdx-editor/editor)\n* 📦 [Sonner v1.0 - An opinionated toast component for React - RSC support](https://sonner.emilkowal.ski/)\n* 📦 [Remix DevTools v3 - Remix v2 support, ESM, new dev server](https://github.com/Code-Forge-Net/Remix-Dev-Tools/releases/tag/v3.0.0)\n* 🎥 [Theo - React Wasn't Built For The Web](https://www.youtube.com/watch?v=Y12sGu8-qFE\\&t=2s)\n* 🎥 [Jack Herrington & Ben Holmes - Future Astro and React Advanced!](https://www.youtube.com/watch?v=sbiuZj2s5fs)\n* 🎥 [Lee Robinson - Using Forms in Next.js (Server Actions, Revalidating Data)](https://www.youtube.com/watch?v=dDpZfOQBMaU)\n* 👥 [reactjsday](https://2023.reactjsday.it/) (Verona 🇮🇹, Octobre 27) is offering us [-10% - code \"media\\_TWIR\"](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR)\n* 👥 [React Advanced](https://reactadvanced.com/?utm_source=email\\&utm_medium=thisweekinreact) (London 🇬🇧, Octobre 20-23) is offering us [-10% - code \"REACT10\"](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)\n* 👥 [Next.js Conf](https://nextjs.org/conf): online, 26th of October",
+      "source_content_hash": "7c02271024229d9ef57e9ac51f5457da372882d98184b8ee890ec3526060ec1f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Ably Realtime Hackathon - リアルタイムReactアプリを作成し、\\$19,000の賞金を獲得 - リアルタイムダッシュボードからコラボレーション体験まで！](https://ably.devpost.com/?utm_campaign=23-hackathon\\&utm_source=thisweekinreact\\&utm_medium=referral)\n* 🐦 [\"StyleXのドキュメントサイトがまもなく公開されます\"](https://twitter.com/naman34/status/1703576411330810282)\n* ❓ [ReactチームはReact Forgetコンパイラを忘れたのか？](https://www.reddit.com/r/reactjs/comments/16nnh4z/did_the_react_team_forget_the_react_forget/): JosephとSathyaがRedditで回答。進展があり、プロダクションでの実験を開始している。来月のReact Advancedでさらに詳しい情報が得られる予定。\n* 👀 [Vercel v0 alpha - 「React用のMidjourney」](https://v0.dev/): Vercelが、shadcn UIとTailwindを基にReactコンポーネントを生成する印象的なAIのプレビューを公開。コピー/ペーストが簡単。\n* 💡 [Await Component - 新しいコンポーネントを作成せずにSuspenseを使用](https://buildui.com/recipes/await-component): Remixにインスパイアされた便利なテクニック。\n* 📜 [JavaScriptエコシステムの高速化 - 暴走するポリフィル](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-6/): `eslint-plugin-react`のような多くのESLintプラグインには不要な依存関係が多数含まれている。\n* 📜 [DenoにおけるWebフレームワークの現状](https://deno.com/blog/web-frameworks-on-deno): Deno Deployでホスト可能なReactフレームワークの概要を提供。Next.jsのサポートは限定的だが、RemixとAstroは良好にサポートされている。ドキュメントをDocusaurusに移行したことを発見 🥲。\n* 📜 [Remix LoaderとAction内での非同期呼び出しの中断](https://sergiodxa.com/tutorials/abort-async-calls-inside-remix-loaders-and-actions): Remix loaderで受け取ったAbortSignalを正しく管理する方法を説明。避けるべき落とし穴がいくつかある。\n* 📜 [RemixでサーバーサイドフィルターUIを構築](https://www.jacobparis.com/content/remix-filter-bar): Linearアプリにインスパイアされた高度なフィルター作成のための完全なソリューションと優れたデモを提供。クエリ文字列としてフィルターをシリアライズする方法を定義するOData仕様について学んだ。\n* 📜 [Next.jsでReactの状態をURLに保存](https://francoisbest.com/posts/2023/storing-react-state-in-the-url-with-nextjs): `next-usequerystate`パッケージを介してクエリ文字列の使用を推奨。v1.8がリリースされ、Next.js App Routerをサポート。`history.replaceState`呼び出しのブラウザレートリミットなど、知らなかった詳細も共有。\n* 📜 [Next.jsで現地時間を表示](https://francoisbest.com/posts/2023/displaying-local-times-in-nextjs): ハイドレーションミスマッチの問題を回避するための興味深いヒント。\n* 📜 [Islands & Server Components & Resumability, Oh My!](https://dev.to/this-is-learning/islands-server-components-resumability-oh-my-319d): 3つのアプローチは直交しており、収束する可能性がある？\n* 📜 [HTMXの初見とReactとの比較](https://www.builder.io/blog/htmx-vs-react)\n* 📜 [React Server Componentsでサイトを高速化](https://frigade.com/blog/bundle-size-reduction-with-rsc-and-frigade)\n* 📜 [Radix方式で低レベルコンポーネントを構築](https://alexkondov.com/building-low-level-components-the-radix-way/)\n* 📜 [Next.jsでReact Server ComponentsとServer Actionsを探索](https://www.antstack.com/blog/exploring-react-server-components-and-server-actions-with-next-js/)\n* 📦 [Ladle v3 - Storybookの代替となるUberのシームレスなツール - SWC、Node 18、MDXストーリー...](https://ladle.dev/blog/ladle-v3/)\n* 📦 [Docusaurus v3 beta - MDX 2、React 18、TypeScript 5、Mermaid 10](https://github.com/facebook/docusaurus/discussions/9312)\n* 📦 [TanStack Query v5 RC.1 - バグ報告の最終呼びかけ](https://github.com/TanStack/query/releases/tag/v5.0.0-rc.1)\n* 📦 [Million v2.6 - HMR修正、Million CLI、より良い事前評価](https://github.com/aidenybai/million/releases/tag/v2.6.0)\n* 📦 [Mantine v7.0 - 完全機能のReactコンポーネントライブラリ - ネイティブCSS、App Routerサポート](https://mantine.dev/changelog/7-0-0/)\n* 📦 [MDX Editor v1.0 - マークダウン用のリッチテキストエディタReactコンポーネント](https://github.com/mdx-editor/editor)\n* 📦 [Sonner v1.0 - React用の意見のあるトーストコンポーネント - RSCサポート](https://sonner.emilkowal.ski/)\n* 📦 [Remix DevTools v3 - Remix v2サポート、ESM、新しい開発サーバー](https://github.com/Code-Forge-Net/Remix-Dev-Tools/releases/tag/v3.0.0)\n* 🎥 [Theo - ReactはWeb用に構築されていない](https://www.youtube.com/watch?v=Y12sGu8-qFE\\&t=2s)\n* 🎥 [Jack Herrington & Ben Holmes - AstroとReact Advancedの未来！](https://www.youtube.com/watch?v=sbiuZj2s5fs)\n* 🎥 [Lee Robinson - Next.jsでのフォームの使用（Server Actions、データの再検証）](https://www.youtube.com/watch?v=dDpZfOQBMaU)\n* 👥 [reactjsday](https://2023.reactjsday.it/) (イタリア・ヴェローナ、10月27日) が[-10% - コード「media\\_TWIR」](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR)を提供\n* 👥 [React Advanced](https://reactadvanced.com/?utm_source=email\\&utm_medium=thisweekinreact) (イギリス・ロンドン、10月20-23日) が[-10% - コード「REACT10」](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)を提供\n* 👥 [Next.js Conf](https://nextjs.org/conf): オンライン、10月26日"
+      }
+    },
+    {
+      "segment_id": "bfba2ea7",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_bfba2ea7"
+      }
+    },
+    {
+      "segment_id": "2a9ed33d",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "ec8ed2a1",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "[![CoderPad: Code together before you work together](/emails/issues/154/coderpad.png)](https://coderpad.io/?utm_medium=3pmedia\\&utm_source=ThisWeekInReact\\&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)",
+      "source_content_hash": "76085f1419aa35aff3d4f24d1be3c86c069e2d72be9a11b2f1e1ea7de8abeba2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![CoderPad: 一緒に働く前に一緒にコードを書こう](/emails/issues/154/coderpad.png)](https://coderpad.io/?utm_medium=3pmedia\\&utm_source=ThisWeekInReact\\&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)"
+      }
+    },
+    {
+      "segment_id": "785750ac",
+      "source_content": "[**CoderPad: Code together before you work together**](https://coderpad.io/?utm_medium=3pmedia\\&utm_source=ThisWeekInReact\\&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)",
+      "source_content_hash": "024461f813d0b7644eac997fec67b8963a2680a7da9cdc20e7bac7909517a5eb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**CoderPad: 一緒に働く前に一緒にコードを書こう**](https://coderpad.io/?utm_medium=3pmedia\\&utm_source=ThisWeekInReact\\&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)"
+      }
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "Hiring front-end developers is hard. 😩 But 4,000+ engineering teams — including at Netflix, Spotify and LinkedIn — have found a better way! 🤠 Skip the algorithm interviews and **run front-end interviews in a fully customizable and collaborative IDE** - where you can:",
+      "source_content_hash": "c7c9fdc3fd74b29d1f9dbbe15455fc2031e30d38eb0b686a0ca491e7605f86ff",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "フロントエンド開発者の採用は難しいです。😩 しかし、Netflix、Spotify、LinkedInを含む4,000以上のエンジニアリングチームが、より良い方法を見つけました！🤠 アルゴリズム面接をスキップして、**完全にカスタマイズ可能で共同作業可能なIDEでフロントエンド面接を実施**できます。ここでは次のことが可能です:"
+      }
+    },
+    {
+      "segment_id": "dee20070",
+      "source_content": "* drag and drop a React (and Angular or Vue) repo\n* add packages with npm install\n* let candidates use ChatGPT live in the interview\n* watch & share code playback after the interview",
+      "source_content_hash": "5fd0292e3e3c00011172f3db44c8c375739d3f618e6c50158393908055b2d1df",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* React（およびAngularやVue）のリポジトリをドラッグ＆ドロップ\n* npm installでパッケージを追加\n* 面接中に候補者がChatGPTをライブで使用\n* 面接後にコードの再生を視聴・共有"
+      }
+    },
+    {
+      "segment_id": "a2c0166e",
+      "source_content": "Use CoderPad to run fast, fair and real coding interviews that candidates and interviewers trust. [Sign up for free today & hire with confidence](https://coderpad.io/?utm_medium=3pmedia\\&utm_source=ThisWeekInReact\\&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter).",
+      "source_content_hash": "feaf501e70c805287a7adef31401729fa680ae8f9d38f19252b7dd9c39911d05",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "CoderPadを使用して、候補者と面接官が信頼できる、迅速で公平な実際のコーディング面接を実施しましょう。[今日無料で登録して、自信を持って採用しましょう](https://coderpad.io/?utm_medium=3pmedia\\&utm_source=ThisWeekInReact\\&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)。"
+      }
+    },
+    {
+      "segment_id": "05765487",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "1f4b3b94",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "a81544fd",
+      "source_content": "[![Expo Router RFC - API Routes](/emails/issues/160/expo-api-routes.jpg)](https://blog.expo.dev/rfc-api-routes-cce5a3b9f25d)",
+      "source_content_hash": "a9774afd570140a32c84748c39bba1659a3dfd040b2539b62de03f41bb44acd8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Expo Router RFC - APIルート](/emails/issues/160/expo-api-routes.jpg)](https://blog.expo.dev/rfc-api-routes-cce5a3b9f25d)"
+      }
+    },
+    {
+      "segment_id": "0801d969",
+      "source_content": "[**Expo Router RFC - API Routes**](https://blog.expo.dev/rfc-api-routes-cce5a3b9f25d)",
+      "source_content_hash": "1ac9d5991a9c434ea424ab5c8de67b3fc3ca392e9b877d0a14652f303aa4d20e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**Expo Router RFC - APIルート**](https://blog.expo.dev/rfc-api-routes-cce5a3b9f25d)"
+      }
+    },
+    {
+      "segment_id": "3c19e221",
+      "source_content": "I've been looking forward to this! Expo is getting into server-side features by offering to deploy API Routes via an Expo Router convention. You can deploy these routes yourself, and soon on popular hosts, but it's clear that the long-term goal is to suggest hosting the server runtime in EAS.",
+      "source_content_hash": "6928bbb75b80026c5612e987abe198d4705d855538afec02a9e3f14215d60b40",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "待ち望んでいた機能です！Expoは、Expo Routerの規約を通じてAPIルートをデプロイするサービスを提供することで、サーバーサイド機能に参入します。これらのルートは自分でデプロイできますし、近い将来人気のあるホストでもデプロイ可能になりますが、長期的な目標はサーバーランタイムをEASでホストすることを推奨することです。"
+      }
+    },
+    {
+      "segment_id": "d21af28f",
+      "source_content": "This marks the start of a new era for Expo. Having solved the problem of native mobile, it's now time to make cross-platform a mainstream reality by filling the gaps in web support with Server Side Rendering and React Server Components.",
+      "source_content_hash": "2bf273550ed38f033faea677a7ad0896f1a9468be3ad5de0f82ac96bb9b135cf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "これはExpoにとって新たな時代の始まりです。ネイティブモバイルの問題を解決した今、サーバーサイドレンダリングとReact Server Componentsでウェブサポートのギャップを埋めることで、クロスプラットフォームを主流の現実にする時が来ました。"
+      }
+    },
+    {
+      "segment_id": "55ba2007",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "2a1e835c",
+      "source_content": "* 💸 [Blitz - Build React Native Apps Faster for iOS, Android, and Web!](https://www.blitz-rn.com/)\n* 👀 [Expo - Support for Bun in EAS and Expo CLI](https://expo.dev/changelog/2023/09-25-eas-bun-support)\n* 📜 [Level up React Native styles. A fresh take on StyleSheet API for adaptive layouts](https://www.reactnativecrossroads.com/posts/level-up-react-native-styles)\n* 📜 [5+ Github Actions to Automate Your React Native Workflow](https://elazizi.com/posts/5-github-actions-to-automate-your-react-native-workflow/)\n* 📜 [Comparing iOS rendering performance: SwiftUI vs. React Native vs. Flutter](https://blog.theodo.com/2023/09/ios-rendering-performance/)\n* 📦 [React Native v0.72.5 - Fix XCode 15 compat](https://github.com/facebook/react-native/releases/tag/v0.72.5)\n* 📦 [React Native Menubar Extra - Easily add native MenuBar (NSMenu) to your React Native MacOS App](https://github.com/okwasniewski/react-native-menubar-extra)\n* 📦 [Victory Native XL - Charting library - Faster, rewritten with React-Native-Skia](https://github.com/FormidableLabs/victory-native-xl)\n* 📦 [React Native VisionCamera v3.1 - useCameraDevice, useCameraFormat, useCameraPermission, resizeMode ...](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.1.0)\n* 📦 [React Native Gesture Handler 2.13 - Universal Hover gesture, 𝚊𝚌𝚝𝚒𝚟𝚎𝙲𝚞𝚛𝚜𝚘𝚛 prop](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.13.0)\n* 🎥 [React Native EU 2023 - YouTube playlist](https://www.youtube.com/playlist?list=PLZ3MwD-soTTEm5KtB2AoZuM7fiYRR69k8)\n* 🎥 [Static Hermes: the Next Generation of Hermes - Tzvetan Mikov](https://www.youtube.com/watch?v=q-xKYA0EO-c)\n* 🎥 [React Native Podcast & React Native Radio cross-over - React Native news, insights & gossip](https://www.youtube.com/watch?v=xc15HtMuMhs)\n* 🎥 [Can it be done in React Native? - Telegram Dark Mode](https://www.youtube.com/watch?v=vKYEFpO06Tk)\n* 🎙️ [React Native Radio 275 - Recapping RN EU](https://reactnativeradio.com/episodes/rnr-275-recapping-rn-eu)",
+      "source_content_hash": "fa45bffb156c032f8acf26a9eca6c632a4112d5178a31567df74f5606c951d0a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Blitz - iOS、Android、Web向けのReact Nativeアプリをより高速に構築！](https://www.blitz-rn.com/)\n* 👀 [Expo - EASとExpo CLIでのBunサポート](https://expo.dev/changelog/2023/09-25-eas-bun-support)\n* 📜 [React Nativeスタイルをレベルアップ。適応レイアウトのためのStyleSheet APIの新たなアプローチ](https://www.reactnativecrossroads.com/posts/level-up-react-native-styles)\n* 📜 [React Nativeワークフローを自動化する5つ以上のGitHub Actions](https://elazizi.com/posts/5-github-actions-to-automate-your-react-native-workflow/)\n* 📜 [iOSレンダリングパフォーマンス比較: SwiftUI vs. React Native vs. Flutter](https://blog.theodo.com/2023/09/ios-rendering-performance/)\n* 📦 [React Native v0.72.5 - XCode 15互換性の修正](https://github.com/facebook/react-native/releases/tag/v0.72.5)\n* 📦 [React Native Menubar Extra - React Native MacOSアプリにネイティブMenuBar（NSMenu）を簡単に追加](https://github.com/okwasniewski/react-native-menubar-extra)\n* 📦 [Victory Native XL - チャートライブラリ - より高速に、React-Native-Skiaで書き直し](https://github.com/FormidableLabs/victory-native-xl)\n* 📦 [React Native VisionCamera v3.1 - useCameraDevice、useCameraFormat、useCameraPermission、resizeMode...](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.1.0)\n* 📦 [React Native Gesture Handler 2.13 - ユニバーサルHoverジェスチャー、𝚊𝚌𝚝𝚒𝚟𝚎𝙲𝚞𝚛𝚜𝚘𝚛 prop](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.13.0)\n* 🎥 [React Native EU 2023 - YouTubeプレイリスト](https://www.youtube.com/playlist?list=PLZ3MwD-soTTEm5KtB2AoZuM7fiYRR69k8)\n* 🎥 [Static Hermes: 次世代のHermes - Tzvetan Mikov](https://www.youtube.com/watch?v=q-xKYA0EO-c)\n* 🎥 [React Native Podcast & React Native Radioクロスオーバー - React Nativeニュース、インサイト、ゴシップ](https://www.youtube.com/watch?v=xc15HtMuMhs)\n* 🎥 [React Nativeでできるか？ - Telegramダークモード](https://www.youtube.com/watch?v=vKYEFpO06Tk)\n* 🎙️ [React Native Radio 275 - RN EUの振り返り](https://reactnativeradio.com/episodes/rnr-275-recapping-rn-eu)"
+      }
+    },
+    {
+      "segment_id": "f1a2be1a",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "13292277",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "292df6cb",
+      "source_content": "* 🐦 [CSS `:has()` ships in Firefox 119 (beta) - Now supported in all browsers](https://twitter.com/sebastienlorber/status/1706976759269224724)\n* 👀 [Agenda for the 98th meeting of Ecma TC39 - 26-28 September](https://github.com/tc39/agendas/blob/main/2023/09.md#agenda-for-the-98th-meeting-of-ecma-tc39)\n* 📊 [State of HTML 2023 - Survey Open](https://survey.devographics.com/en-US/survey/state-of-html/2023)\n* 📜 [Svelte - Introducing runes](https://svelte.dev/blog/runes)\n* 📜 [Bun hype. How we learned nothing from Yarn](https://dev.to/thejaredwilcurt/bun-hype-how-we-learned-nothing-from-yarn-2n3j)\n* 📜 [Bun: lessons from disrupting a tech ecosystem](https://blog.pragmaticengineer.com/bun-lessons-from-disrupting/)\n* 📜 [One Thing Nobody Explained To You About TypeScript](https://redd.one/blog/one-thing-nobody-explained-to-you-about-typescript)\n* 📜 [ESLint - Preparing your custom rules for v9](https://eslint.org/blog/2023/09/preparing-custom-rules-eslint-v9/)\n* 📦 [Safari 17.0 - CSS, search element, popover, storage API, Set operations, URL.canParse...](https://webkit.org/blog/14445/webkit-features-in-safari-17-0/)\n* 🎥 [TypeScript Origins - The Documentary](https://www.youtube.com/watch?v=U6s2pdxebSo)\n* 🔗 [FirstIssue.dev - Make your next open-source contribution](https://firstissue.dev/)",
+      "source_content_hash": "d9defc2c9ef706447e87593ca56e14379b958646932c296e3b0bc72fe4fd406f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 🐦 [CSS `:has()` が Firefox 119（ベータ版）で実装 - 全ブラウザ対応完了](https://twitter.com/sebastienlorber/status/1706976759269224724)\n* 👀 [Ecma TC39 第98回会議の議題 - 9月26-28日](https://github.com/tc39/agendas/blob/main/2023/09.md#agenda-for-the-98th-meeting-of-ecma-tc39)\n* 📊 [State of HTML 2023 - 調査実施中](https://survey.devographics.com/en-US/survey/state-of-html/2023)\n* 📜 [Svelte - runesの紹介](https://svelte.dev/blog/runes)\n* 📜 [Bunの誇大広告。私たちがYarnから何も学んでいないこと](https://dev.to/thejaredwilcurt/bun-hype-how-we-learned-nothing-from-yarn-2n3j)\n* 📜 [Bun: 技術エコシステムを破壊した教訓](https://blog.pragmaticengineer.com/bun-lessons-from-disrupting/)\n* 📜 [TypeScriptについて誰も教えてくれなかったこと](https://redd.one/blog/one-thing-nobody-explained-to-you-about-typescript)\n* 📜 [ESLint - カスタムルールをv9向けに準備する](https://eslint.org/blog/2023/09/preparing-custom-rules-eslint-v9/)\n* 📦 [Safari 17.0 - CSS、search要素、popover、storage API、Set操作、URL.canParse...](https://webkit.org/blog/14445/webkit-features-in-safari-17-0/)\n* 🎥 [TypeScriptの起源 - ドキュメンタリー](https://www.youtube.com/watch?v=U6s2pdxebSo)\n* 🔗 [FirstIssue.dev - 次のオープンソース貢献を始めよう](https://firstissue.dev/)"
+      }
+    },
+    {
+      "segment_id": "74a488b8",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "b77e7669",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "619c3209",
+      "source_content": "[![alt](/emails/issues/160/meme.jpg)](https://twitter.com/HODLFrance/status/1704507457555284348)",
+      "source_content_hash": "f3998c2b1ca3a6a7cad7ab5b5045460c7b9f95088f0bcc1ef7f1ead34fa58aa9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/160/meme.jpg)](https://twitter.com/HODLFrance/status/1704507457555284348)"
+      }
+    },
+    {
+      "segment_id": "44285072",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "それでは！ 👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/160/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:38.109632+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "713f60363e93c5afe1a213104491e5746d3c2f2f795201774cc15c49aea31f9e"
+  }
+}

@@ -1,0 +1,592 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/149/index.mdx",
+  "source_file_content_hash": "c2c527cd2794893127b3aa8403a08f95793590242073cc3684d773b4db1e5e9c",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /149\ntitle: \"This Week In React #149: Panda CSS, React-Native 0.72, Server Actions, Isograph, MDX, Remix, Gatsby, Storybook, OpenNext, Wrap-Balancer, Fresh, Docusaurus, surveys... \"\nauthors: [slorber]\ndate: 06-20-2023\n---",
+      "source_content_hash": "194602e76d648fd8fc46e2770561148f33f9e9cd97e5960c575a965e36b55580",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week has been busier than last. In particular, there have been 2 great releases, one of them I was [eagerly waiting for](https://twitter.com/sebastienlorber/status/1671433559280607235) to hit publish!",
+      "source_content_hash": "da1559d4030b0a54394ecd2e636f92ca49aefa181b4d630aa461a917a401e844",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週は先週よりも忙しい週でした。特に、2つの素晴らしいリリースがあり、そのうちの1つは[待ち望んでいた](https://twitter.com/sebastienlorber/status/1671433559280607235)ものでした！"
+      }
+    },
+    {
+      "segment_id": "143e51c1",
+      "source_content": "* Panda CSS: a very promising CSS-in-JS library\n* React-Native 0.72: great improvements, particularly those related to Metro",
+      "source_content_hash": "f1b835b54303ee922b7e38f5ee377f2282b931cb214048ab7230dfefd4d496e3",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* Panda CSS: 非常に有望なCSS-in-JSライブラリ\n* React-Native 0.72: Metro関連を中心に大幅な改善"
+      }
+    },
+    {
+      "segment_id": "28a64196",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_28a64196"
+      }
+    },
+    {
+      "segment_id": "42ad8e83",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**💡 [Twitterでこのニュースレターをチェック](https://slo.im/thread) - ビジュアル形式 🎨**"
+      }
+    },
+    {
+      "segment_id": "ade2cf6a",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "0271a665",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_0271a665"
+      }
+    },
+    {
+      "segment_id": "b7a64917",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_b7a64917"
+      }
+    },
+    {
+      "segment_id": "eaf571f0",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "fa430ad4",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "4b1d2d7d",
+      "source_content": "[![Tina.io is a headless CMS for Markdown-powered sites](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter\\&utm_term=this-week-in-react)",
+      "source_content_hash": "7fba30c891e351ce58540384f77a55a466de7e2f43303229fce71a37868c3713",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Tina.ioはMarkdownベースのサイト向けヘッドレスCMSです](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter\\&utm_term=this-week-in-react)"
+      }
+    },
+    {
+      "segment_id": "dfe931a2",
+      "source_content": "**[Tina.io is a headless CMS for Markdown-powered sites](https://tina.io/?utm_source=newsletter\\&utm_term=this-week-in-react)**",
+      "source_content_hash": "ede7d5f6175269367f5c80026ab1396bdf31c66dd35fadc398c7029d70fdd362",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Tina.ioはMarkdownベースのサイト向けヘッドレスCMSです](https://tina.io/?utm_source=newsletter\\&utm_term=this-week-in-react)**"
+      }
+    },
+    {
+      "segment_id": "cd471e4e",
+      "source_content": "* Editing UI for your Markdown files\n* UI for MDX components\n* Supports static (SSG) and server-side rendering (SSR)\n* Option for visual editing (live-preview)\n* Build with reusable blocks",
+      "source_content_hash": "572c1d395257f2bd32877704a74f4efe0002fb86cc4969fdda9e44415712c5db",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* Markdownファイルの編集UI\n* MDXコンポーネントのUI\n* 静的生成（SSG）とサーバーサイドレンダリング（SSR）をサポート\n* ビジュアル編集（ライブプレビュー）オプション\n* 再利用可能なブロックでの構築"
+      }
+    },
+    {
+      "segment_id": "c3a738de",
+      "source_content": "Test a starter site",
+      "source_content_hash": "00cfdd6dfc445a7df446241a49f872dd69eae76fb2b91f1adce9cd97ccd3a228",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "スターターサイトを試す"
+      }
+    },
+    {
+      "segment_id": "8a01ee7b",
+      "source_content": "* [Docusaurus](https://github.com/tinacms/tinasaurus) (Github)\n* [Next.js + Tailwind with visual editing](https://github.com/tinacms/tina-cloud-starter) (Github)",
+      "source_content_hash": "719feee1a4858d105969829dd198209df621c0575a698809c59b8937aa377097",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* [Docusaurus](https://github.com/tinacms/tinasaurus) (Github)\n* [Next.js + Tailwind（ビジュアル編集対応）](https://github.com/tinacms/tina-cloud-starter) (Github)"
+      }
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "Or run  `npx create-tina-app@latest` then visit `localhost:3000/admin`",
+      "source_content_hash": "3c38b4e8e7ed89fb82c1d7a4781a5edfb7e4fda07b6616777408937de6748b5d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "または `npx create-tina-app@latest` を実行後、`localhost:3000/admin` にアクセス"
+      }
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "Watch the [4-min demo video](https://www.youtube.com/watch?v=zRkeKSZjlyw)",
+      "source_content_hash": "2a28b2aaced7040bc5de34214f8661699eb64901ddd6ce54922fe7b3e0a3a4b8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[4分のデモ動画を視聴](https://www.youtube.com/watch?v=zRkeKSZjlyw)"
+      }
+    },
+    {
+      "segment_id": "406f2538",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "6d28a77c",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "[![Panda CSS](/emails/issues/149/panda.jpg)](https://panda-css.com/)",
+      "source_content_hash": "2b2963b43c709ba0d3f26b5c5158cd65a0cb6e02be7b57757d38aed48a1d5dce",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Panda CSS](/emails/issues/149/panda.jpg)](https://panda-css.com/)"
+      }
+    },
+    {
+      "segment_id": "b36c6338",
+      "source_content": "**[Panda CSS](https://panda-css.com/)**",
+      "source_content_hash": "dac82759e67c1cb483b9c102d7b4e45fac575b6a802ff21c2edbe4b48dbdf18a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Panda CSS](https://panda-css.com/)**"
+      }
+    },
+    {
+      "segment_id": "b9aaa519",
+      "source_content": "Segun Adebayo (creator of Chakra UI) unveils his long-awaited CSS-in-JS library ([trailer](https://twitter.com/thesegunadebayo/status/1669732623994834946)). It offers very great DX, is based on modern CSS features (cascade layers), is performant (static analysis at build time, no runtime, atomic CSS)... In short, it ticks a lot of boxes and is generating a lot of interest. It integrates particularly well with React (JSX style props, React Server Components compatible, etc.), but can also be used with other frameworks.",
+      "source_content_hash": "3a5dd6d3b7eef39c35368a4b8dcc2fd6a748bcc11a3ee7b73ce101d2ad9a6819",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Chakra UIの作者であるSegun Adebayoが、待望のCSS-in-JSライブラリを公開しました（[トレーラー](https://twitter.com/thesegunadebayo/status/1669732623994834946)）。優れた開発者体験を提供し、モダンなCSS機能（カスケードレイヤー）をベースに、パフォーマンスにも優れています（ビルド時の静的解析、ランタイムなし、アトミックCSSなど）。要するに、多くの要件を満たしており、大きな注目を集めています。Reactとの統合（JSXスタイルプロップ、React Server Components互換など）に特に優れていますが、他のフレームワークでも使用可能です。"
+      }
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "This is a library to keep a close eye on and one that could well compete with Tailwind: it integrates better with the target frameworks and doesn't force you to use a lengthy `className`.",
+      "source_content_hash": "f712c570d3b2e683fee57810ba4b998e11bbf6e3442e385cf753b3be5adde5ee",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "これは要注目のライブラリで、Tailwindと競合する可能性があります。ターゲットフレームワークとの統合性が高く、長い`className`の使用を強制しません。"
+      }
+    },
+    {
+      "segment_id": "b760ab3f",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "24c174ca",
+      "source_content": "* 👀 [State of React - Survey Preview](https://github.com/Devographics/surveys/issues/85#issuecomment-1586439053): design of the new React survey is almost complete. You can have a [preview](https://survey.devographics.com/en-US/survey/state-of-react/2023) and give feedback.\n* 👀 [Lee Robinson - \"Dev server performance is our top priority\"](https://twitter.com/leeerob/status/1671260151347830784): Next.js' dev server app dir has been criticised for its slowness, but Vercel plans to remedy this.\n* 👀 [Remix - Dev Server v2 is now stable](https://twitter.com/pcattori/status/1669828506044203008): can be activated in v1 with a flag.\n* 👀 [MDX - new GitHub syntax highlighting](https://twitter.com/wooorm/status/1671159366085672968)\n* 👀 [MDX - new playground options](https://twitter.com/sebastienlorber/status/1669332176431894533)\n* 📊 [Stack Overflow Developer Survey 2023](https://survey.stackoverflow.co/2023/): as expected, React remains the most widely used web framework this year and Next.js has moved up the rankings.\n* 💬 [Gatsby RFC - Adapters](https://github.com/gatsbyjs/gatsby/discussions/38231): a new type of plugin to adapt the build to a deployment platform (Vercel, Netlify...) regarding caching, headers, redirects...\n* 📖 [Improved Next.js image docs](https://twitter.com/leeerob/status/1670815761508581376)\n* 📜 [Introduction to Next.js Server Actions](https://makerkit.dev/blog/tutorials/nextjs-server-actions): great overview of Server Actions in Next.js 13.4. TIL that they can be invoked from a button.\n* 📜 [Introducing Isograph](https://isograph.substack.com/p/introducing-isograph): Robert Balicki (ex Relay) shares the POC of a new GraphQL client for React based on the concept of resolvers.\n* 📜 [SpiderMonkey Newsletter - Firefox 114-115](https://spidermonkey.dev/blog/2023/06/09/newsletter-firefox-114-115.html): Firefox devs announced that they are working on optimisations for frameworks such as React. With Firefox 115, [all browsers now support Change Array By Copy](https://twitter.com/sebastienlorber/status/1671166785738133505), a new ES2023 feature super useful to update your React state.\n* 📜 [React Admin June 2023 Update](https://marmelab.com/blog/2023/06/13/react-admin-june-2023-update.html): presents a fine list of features introduced over the last 3 months.\n* 📜 [Ryan Bigg - Rails 7, React, TypeScript, ESBuild and View Components](https://ryanbigg.com/2023/06/rails-7-react-typescript-setup): explain how to manually integrate React into a Rails app. SPA mode, or with several entry points.\n* 📜 [Replay for Test Suites](https://blog.replay.io/replay-for-test-suites): the time-travel debugging tool integrates with Cypress and raises \\$13m.\n* 📜 [Storybook - New API references, TypeScript code snippets, and docs DX](https://storybook.js.org/blog/docs-updates/)\n* 📜 [A Visual Guide to Layouts in Next.js 13](https://www.builder.io/blog/layouts-in-nextjs-13-visual)\n* 📜 [Building a `<Button>` in React](https://catjam.fi/articles/ultimate-button-component)\n* 📜 [Test your React hooks with Vitest efficiently](https://mayashavin.com/articles/test-react-hooks-with-vitest)\n* 📜 [Add Prisma to a Remix app](https://www.jacobparis.com/content/remix-prisma)\n* 📦 [Docusaurus v3 alpha - MDX 2 + React 18](https://twitter.com/docusaurus/status/1669370649326895105)\n* 📦 [Vercel AI SDK](https://vercel.com/blog/introducing-the-vercel-ai-sdk)\n* 📦 [React Wrap Balancer v1.0 - now uses the native CSS feature](https://twitter.com/shuding_/status/1669602326481387522)\n* 📦 [OpenNext 2.0 - revamped ISR support](https://twitter.com/fanjiewang/status/1670941900302368768)\n* 📦 [Fresh 1.2 – welcoming a full-time maintainer, sharing state between islands...](https://deno.com/blog/fresh-1.2)\n* 📦 [Melange 1.0 - compiles OCaml / Reason to JavaScript](https://buttondown.email/anmonteiro/archive/melange-hits-v10/)\n* 📦 [Waku 0.12](https://twitter.com/dai_shi/status/1670650381762961408)\n* 🎥 [Are React client components bad?](https://www.youtube.com/watch?v=6jM_0wDOw4g)\n* 🎥 [React Summit 2023 - Youtube Playlist](https://www.youtube.com/playlist?list=PLNBNS7NRGKME880lcYdw9QwkCiDYQFgCK)",
+      "source_content_hash": "30977855b1433aff4765da793383ca8a3814b90469147b2837c330316c091964",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 👀 [State of React - 調査プレビュー](https://github.com/Devographics/surveys/issues/85#issuecomment-1586439053): 新しいReact調査の設計がほぼ完了。プレビューを確認し、フィードバックを提供可能。\n* 👀 [Lee Robinson - 「開発サーバーのパフォーマンスが最優先事項」](https://twitter.com/leeerob/status/1671260151347830784): Next.jsのapp dir開発サーバーの遅さが批判されていたが、Vercelが改善を計画中。\n* 👀 [Remix - Dev Server v2が安定版に](https://twitter.com/pcattori/status/1669828506044203008): v1でフラグを有効にすることで利用可能。\n* 👀 [MDX - 新しいGitHubシンタックスハイライト](https://twitter.com/wooorm/status/1671159366085672968)\n* 👀 [MDX - 新しいプレイグラウンドオプション](https://twitter.com/sebastienlorber/status/1669332176431894533)\n* 📊 [Stack Overflow Developer Survey 2023](https://survey.stackoverflow.co/2023/): 予想通り、Reactが今年も最も使用されているWebフレームワークで、Next.jsが順位を上げた。\n* 💬 [Gatsby RFC - アダプター](https://github.com/gatsbyjs/gatsby/discussions/38231): デプロイプラットフォーム(Vercel、Netlifyなど)向けにビルドを適応させる新しいプラグインタイプ。\n* 📖 [Next.js画像ドキュメントの改善](https://twitter.com/leeerob/status/1670815761508581376)\n* 📜 [Next.js Server Actions入門](https://makerkit.dev/blog/tutorials/nextjs-server-actions): Next.js 13.4のServer Actionsの概要。ボタンから呼び出せることを学んだ。\n* 📜 [Isographの紹介](https://isograph.substack.com/p/introducing-isograph): Robert Balicki(ex Relay)がリゾルバー概念に基づく新しいGraphQLクライアントのPOCを共有。\n* 📜 [SpiderMonkey Newsletter - Firefox 114-115](https://spidermonkey.dev/blog/2023/06/09/newsletter-firefox-114-115.html): Firefox開発者がReactなどのフレームワーク向け最適化作業を発表。Firefox 115で全ブラウザがChange Array By Copyをサポート。\n* 📜 [React Admin 2023年6月アップデート](https://marmelab.com/blog/2023/06/13/react-admin-june-2023-update.html): 過去3ヶ月で導入された機能リストを紹介。\n* 📜 [Ryan Bigg - Rails 7, React, TypeScript, ESBuildとView Components](https://ryanbigg.com/2023/06/rails-7-react-typescript-setup): RailsアプリにReactを手動統合する方法を解説。\n* 📜 [テストスイート向けReplay](https://blog.replay.io/replay-for-test-suites): タイムトラベルデバッグツールがCypressと統合し、1300万ドル調達。\n* 📜 [Storybook - 新しいAPIリファレンス、TypeScriptコードスニペット、ドキュメントDX](https://storybook.js.org/blog/docs-updates/)\n* 📜 [Next.js 13のレイアウトビジュアルガイド](https://www.builder.io/blog/layouts-in-nextjs-13-visual)\n* 📜 [Reactで`<Button>`を構築](https://catjam.fi/articles/ultimate-button-component)\n* 📜 [VitestでReactフックを効率的にテスト](https://mayashavin.com/articles/test-react-hooks-with-vitest)\n* 📜 [RemixアプリにPrismaを追加](https://www.jacobparis.com/content/remix-prisma)\n* 📦 [Docusaurus v3 alpha - MDX 2 + React 18](https://twitter.com/docusaurus/status/1669370649326895105)\n* 📦 [Vercel AI SDK](https://vercel.com/blog/introducing-the-vercel-ai-sdk)\n* 📦 [React Wrap Balancer v1.0 - ネイティブCSS機能を採用](https://twitter.com/shuding_/status/1669602326481387522)\n* 📦 [OpenNext 2.0 - ISRサポート刷新](https://twitter.com/fanjiewang/status/1670941900302368768)\n* 📦 [Fresh 1.2 – フルタイムメンテナー迎え、アイランド間状態共有...](https://deno.com/blog/fresh-1.2)\n* 📦 [Melange 1.0 - OCaml/ReasonをJavaScriptにコンパイル](https://buttondown.email/anmonteiro/archive/melange-hits-v10/)\n* 📦 [Waku 0.12](https://twitter.com/dai_shi/status/1670650381762961408)\n* 🎥 [Reactクライアントコンポーネントは悪いのか？](https://www.youtube.com/watch?v=6jM_0wDOw4g)\n* 🎥 [React Summit 2023 - YouTubeプレイリスト](https://www.youtube.com/playlist?list=PLNBNS7NRGKME880lcYdw9QwkCiDYQFgCK)"
+      }
+    },
+    {
+      "segment_id": "3ca4b8b0",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_3ca4b8b0"
+      }
+    },
+    {
+      "segment_id": "945bf499",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "e33a2404",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "[![Leverage the power of React in prototyping](/emails/issues/149/uxpin.png)](https://www.uxpin.com/merge/developers?utm_source=partnerships\\&utm_medium=partner\\&utm_campaign=thisweekinreact_newsletter_merge_for_devs_05_23)",
+      "source_content_hash": "c230cbc5ba78b89d0be40f5fcfb33fd5a1d1ba8f122eebe2165fdb6ea55a6169",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![プロトタイピングでReactの力を活用](/emails/issues/149/uxpin.png)](https://www.uxpin.com/merge/developers?utm_source=partnerships\\&utm_medium=partner\\&utm_campaign=thisweekinreact_newsletter_merge_for_devs_05_23)"
+      }
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "**[Leverage the power of React in prototyping.](https://www.uxpin.com/merge/developers?utm_source=partnerships\\&utm_medium=partner\\&utm_campaign=thisweekinreact_newsletter_merge_for_devs_05_23)**",
+      "source_content_hash": "d6a5cbbbf124c259622a1de4a7cd1964e15a544cad110a8f80178807eea58b71",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[プロトタイピングでReactの力を活用しましょう。](https://www.uxpin.com/merge/developers?utm_source=partnerships\\&utm_medium=partner\\&utm_campaign=thisweekinreact_newsletter_merge_for_devs_05_23)**"
+      }
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "Bring React components into the design process and let designers prototype with the same elements that you use to build the end product.",
+      "source_content_hash": "8f363af167c0f09d90deef425339a6b9104db3f00fe24a000932872c92cdebd3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "デザインプロセスにReactコンポーネントを取り込み、エンドプロダクトを構築する際に使用するのと同じ要素でデザイナーがプロトタイプを作成できるようにします。"
+      }
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "Remove the disconnect between design & code and release products faster!",
+      "source_content_hash": "396bce80e309235c8ff6909bf4e4f04d2feefc8ed5ac2df2a17b4541774275c4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "デザインとコードの間の隔たりを取り除き、製品をより迅速にリリースしましょう！"
+      }
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "[Try component-driven prototyping with UXPin Merge.](https://www.uxpin.com/merge/developers?utm_source=partnerships\\&utm_medium=partner\\&utm_campaign=thisweekinreact_newsletter_merge_for_devs_05_23)",
+      "source_content_hash": "8e62f1f5123adbe00f5445f1712e81693a4b53f7781cb0e03c4b46db22280cad",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[UXPin Mergeでコンポーネント駆動のプロトタイピングを試す。](https://www.uxpin.com/merge/developers?utm_source=partnerships\\&utm_medium=partner\\&utm_campaign=thisweekinreact_newsletter_merge_for_devs_05_23)"
+      }
+    },
+    {
+      "segment_id": "f414353c",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "f947c8e4",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "7bc8bb24",
+      "source_content": "[![RN 0.72](/emails/issues/149/rn.jpg)](https://reactnative.dev/blog/2023/06/21/0.72-metro-package-exports-symlinks)",
+      "source_content_hash": "669480a7f321932557e283ee6890d3b133ee095f9678c2a05e74765b90c34e72",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![RN 0.72](/emails/issues/149/rn.jpg)](https://reactnative.dev/blog/2023/06/21/0.72-metro-package-exports-symlinks)"
+      }
+    },
+    {
+      "segment_id": "6693c38c",
+      "source_content": "**[React Native 0.72 - Symlink Support, Better Errors, and more](https://reactnative.dev/blog/2023/06/21/0.72-metro-package-exports-symlinks)**",
+      "source_content_hash": "dc74b6b011a027a4e2be40c7b8734170c769aee3dcf59f2ec61d54fa77944fae",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[React Native 0.72 - シンボリックリンクサポート、エラー改善など](https://reactnative.dev/blog/2023/06/21/0.72-metro-package-exports-symlinks)**"
+      }
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "After several Golden RCs, the latest version of React-Native has finally been released and will shortly be used in the Expo 49 SDK. There are quite a few improvements mentioned (DX, Hermes, performance...) and some breaking changes. I particularly like these 2 new features in the Metro bundler:",
+      "source_content_hash": "780e0c9f44b31a5604c9bfd62805b9c2ad675c19e4e87da227142609ea57c8b1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "数回のGolden RCを経て、React-Nativeの最新バージョンがついにリリースされ、まもなくExpo 49 SDKで使用される予定です。DX、Hermes、パフォーマンスなど多くの改善点と、いくつかの破壊的変更が含まれています。特にMetroバンドラーの以下の2つの新機能が気に入っています："
+      }
+    },
+    {
+      "segment_id": "2890f5b2",
+      "source_content": "* Symlinks (beta): long-awaited feature to simplify monorepo and pnpm support\n* [Package Exports](https://reactnative.dev/blog/2023/06/21/package-exports-support) (beta): better encapsulation of libs, compatibility with the rest of the frontend ecosystem and ability to expose a specific React-Native entry point.",
+      "source_content_hash": "60266bfd53ec2d553d778656f4816f175b9511e257ce77ec77edc98e047aab90",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* シンボリックリンク（ベータ）：モノレポやpnpmサポートを簡素化するために長らく待望されていた機能\n* [パッケージエクスポート](https://reactnative.dev/blog/2023/06/21/package-exports-support)（ベータ）：ライブラリのカプセル化の向上、フロントエンドエコシステムとの互換性、特定のReact-Nativeエントリーポイントを公開する機能"
+      }
+    },
+    {
+      "segment_id": "513f3dff",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "10e4f9ca",
+      "source_content": "* 📜 [Environment Variables in React Native: The Right Way](https://elazizi.com/posts/environment-variables-in-react-native-the-right-way/): great article on typesafe management of environment variables in the Expo context.\n* 💬 [New Renderer Interop Layer](https://twitter.com/cortinico/status/1671089178107363329): with RN v0.72, an experimental interop layer allows legacy React-Native components to be used with the new Fabric renderer. This enables an incremental adoption of the new architecture.\n* 💬 [Upcoming changes for libraries in React Native 0.73 - Android](https://github.com/react-native-community/discussions-and-proposals/issues/671): you will need to add a namespace to the Gradle build.\n* 👀 [React-Native macOS 0.71 - New Architecture on init template](https://github.com/microsoft/react-native-macos/pull/1853)\n* 👀 [1/5 of the top 100 Medical apps in the App Store use React Native](https://twitter.com/Baconbrix/status/1671171049336221697)\n* 👀 [Expo Updates - upcoming Brotli compression support](https://twitter.com/JI/status/1671368239463690240)\n* 📦 [react-native-colo-loco 1.1 - Colocate native and js code](https://twitter.com/jamonholmgren/status/1671009094545846273)\n* 📦 [react-native-mmkv 2.9 - RN 0.73 support](https://twitter.com/mrousavy/status/1671127232113266689)\n* 📦 [Maestro 1.29](https://twitter.com/mobile__dev/status/1670940310460043266)\n* 🎙️ [RNR 269 - React Native VisionCamera v3 with Marc Rousavy](https://reactnativeradio.com/episodes/rnr-269-react-native-visioncamera-v3-with-marc-rousavy)",
+      "source_content_hash": "eea14f42380b6c5ad24957118b871e8c680479d7b1fe6dc3bc1dac68729f7cc1",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📜 [React Nativeにおける環境変数：正しい方法](https://elazizi.com/posts/environment-variables-in-react-native-the-right-way/): Expo環境での型安全な環境変数管理に関する優れた記事。\n* 💬 [新しいレンダラー相互運用レイヤー](https://twitter.com/cortinico/status/1671089178107363329): RN v0.72では、実験的な相互運用レイヤーにより、従来のReact-Nativeコンポーネントを新しいFabricレンダラーで使用可能に。これにより新アーキテクチャの段階的導入が可能に。\n* 💬 [React Native 0.73におけるライブラリの変更予定 - Android](https://github.com/react-native-community/discussions-and-proposals/issues/671): Gradleビルドに名前空間を追加する必要があります。\n* 👀 [React-Native macOS 0.71 - 新アーキテクチャ対応initテンプレート](https://github.com/microsoft/react-native-macos/pull/1853)\n* 👀 [App Storeの医療アプリトップ100の1/5がReact Nativeを採用](https://twitter.com/Baconbrix/status/1671171049336221697)\n* 👀 [Expo Updates - 近日追加予定のBrotli圧縮サポート](https://twitter.com/JI/status/1671368239463690240)\n* 📦 [react-native-colo-loco 1.1 - ネイティブコードとJSコードの同配置](https://twitter.com/jamonholmgren/status/1671009094545846273)\n* 📦 [react-native-mmkv 2.9 - RN 0.73サポート](https://twitter.com/mrousavy/status/1671127232113266689)\n* 📦 [Maestro 1.29](https://twitter.com/mobile__dev/status/1670940310460043266)\n* 🎙️ [RNR 269 - Marc RousavyによるReact Native VisionCamera v3](https://reactnativeradio.com/episodes/rnr-269-react-native-visioncamera-v3-with-marc-rousavy)"
+      }
+    },
+    {
+      "segment_id": "cf542fb4",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "d53c8ed4",
+      "source_content": "## 🧑‍💻 Jobs {#jobs}",
+      "source_content_hash": "64cde6166f05bd39337c21ca10f52b6613641f23e0c97e204de33d6857fa16ed",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🧑‍💻 Jobs {#jobs}"
+      }
+    },
+    {
+      "segment_id": "1ecf0882",
+      "source_content": "🧑‍💼 [**Passionfroot - Senior Full-stack Engineer (Remix) - €160k+, Berlin/remote**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)",
+      "source_content_hash": "3532cb42fea164e6dcc868f5fea6ecb0e7fcb06975740df1803d78565f5e643e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🧑‍💼 [**Passionfroot - シニアフルスタックエンジニア（Remix） - €160k+、ベルリン/リモート**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)"
+      }
+    },
+    {
+      "segment_id": "e77cf7c6",
+      "source_content": "Passionfroot's mission is to empower the independent businesses of tomorrow via YouTube, Podcasts, Social Media, and Newsletters. Join us in building a tool that will empower creators globally to build scalable, sustainable businesses.",
+      "source_content_hash": "071531677ae3763a43d70c7461fb6bad05d66e66663737b2158931a241a2c33c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Passionfrootの使命は、YouTube、ポッドキャスト、ソーシャルメディア、ニュースレターを通じて明日の独立系ビジネスを支援することです。クリエイターがスケーラブルで持続可能なビジネスを構築できるツールの開発に参加してください。"
+      }
+    },
+    {
+      "segment_id": "bb1346b6",
+      "source_content": "🧑‍💼 [**Callstack - Senior React Native Developer - Fully Remote, PLN 21-32k net on B2B, monthly**](https://www.callstack.com/senior-react-native-developer)",
+      "source_content_hash": "6a76e4cede7e5d7fef90376d244177e3a889ea3b88ed1a9d60d116bb33a52f5b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🧑‍💼 [**Callstack - シニアReact Native開発者 - 完全リモート、B2B月額PLN 21-32k（税抜）**](https://www.callstack.com/senior-react-native-developer)"
+      }
+    },
+    {
+      "segment_id": "8664ed0b",
+      "source_content": "Do you want to work on the world's most used apps? Would you like to co-create the React Native technology? Join the Callstack team of React & React Native leaders. Check our website for more details. We are looking forward to seeing your application - show us what you've got!",
+      "source_content_hash": "d26d300a25c86c54931180669d1a8cce73f71a546a8457896fc0c835fb78d2d0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "世界で最も利用されているアプリの開発に携わりたいですか？React Native技術の共創に興味はありますか？React & React Nativeのリーダー集団であるCallstackチームに参加してください。詳細は当社ウェブサイトをご覧ください。あなたの応募をお待ちしています - あなたの実力を見せてください！"
+      }
+    },
+    {
+      "segment_id": "9e90a9b3",
+      "source_content": "🧑‍💼 [**G2i - 100% Remote React Native Jobs**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\\&t=ArRLC77BpRwXXCdx8fnUqw)",
+      "source_content_hash": "5d3c54581f6c180e021405df5da2dff285c443814d1d5e6c5c09516b6002a38b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\\&t=ArRLC77BpRwXXCdx8fnUqw)"
+      }
+    },
+    {
+      "segment_id": "681ef526",
+      "source_content": "We have several roles open for developers focused on React Native! Pay is \\~160k plus 10% bonus. You must have production experience with RN and be based in the US. DM [@gabe\\_g2i](https://twitter.com/gabe_g2i) to learn more and don't forget to mention This Week in React.",
+      "source_content_hash": "03109db05ba0c8c528483a4218dc3b2b0314cf5c6032f5eb3c7be604094658fd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React Nativeに特化した開発者向けに複数のポジションを用意しています！報酬は約160kドル＋10%のボーナス。RNの実務経験があり、米国在住である必要があります。詳細は[@gabe\\_g2i](https://twitter.com/gabe_g2i)にDMでお問い合わせください。This Week in Reactからの紹介であることをお忘れなく。"
+      }
+    },
+    {
+      "segment_id": "be17ccc3",
+      "source_content": "💡 [How to publish an offer?](https://thisweekinreact.com/sponsor)",
+      "source_content_hash": "d58176524c2d7675bf008e7b635d056628a0d092fb0152d6bbdfb97f4239d273",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "💡 [求人を掲載する方法](https://thisweekinreact.com/sponsor)"
+      }
+    },
+    {
+      "segment_id": "ac00ead3",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "671cbf7c",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "1852dfef",
+      "source_content": "* [Chrome for Testing: reliable downloads for browser automation](https://developer.chrome.com/blog/chrome-for-testing/)\n* [Miško Hevery's Take on a Unified Theory of Reactivity](https://www.builder.io/blog/unified-reactivity-theory)\n* [Modern component-driven HTML email](https://fullystacked.net/posts/modern-component-driven-email/)\n* [The 2023 State of CSS survey is now open](https://dev.to/sachagreif/the-2023-state-of-css-survey-is-now-open-18bk)\n* [The gotchas of CSS Nesting](https://kilianvalkhof.com/2023/css-html/the-gotchas-of-css-nesting/)\n* [NestJS 10.0](https://trilon.io/blog/nestjs-10-is-now-available)\n* [Rspack v0.2.3](https://twitter.com/rspack_dev/status/1671035874770038784)\n* [TypeScript 5.2's New Keyword: 'using'](https://www.totaltypescript.com/typescript-5-2-new-keyword-using)\n* [Vitest 1.0 Roadmap](https://twitter.com/sheremet_va/status/1669740155391864833)",
+      "source_content_hash": "bf504c1a45b801c5b99f4efc652d087d5e7003bb6f72f84f6d84c7868faa5076",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* [Chrome for Testing: ブラウザ自動化のための信頼性の高いダウンロード](https://developer.chrome.com/blog/chrome-for-testing/)\n* [Miško Heveryによるリアクティビティの統一理論に関する見解](https://www.builder.io/blog/unified-reactivity-theory)\n* [モダンなコンポーネント駆動型HTMLメール](https://fullystacked.net/posts/modern-component-driven-email/)\n* [2023年State of CSS調査が開始](https://dev.to/sachagreif/the-2023-state-of-css-survey-is-now-open-18bk)\n* [CSSネスティングの落とし穴](https://kilianvalkhof.com/2023/css-html/the-gotchas-of-css-nesting/)\n* [NestJS 10.0リリース](https://trilon.io/blog/nestjs-10-is-now-available)\n* [Rspack v0.2.3公開](https://twitter.com/rspack_dev/status/1671035874770038784)\n* [TypeScript 5.2の新キーワード: 'using'](https://www.totaltypescript.com/typescript-5-2-new-keyword-using)\n* [Vitest 1.0ロードマップ](https://twitter.com/sheremet_va/status/1669740155391864833)"
+      }
+    },
+    {
+      "segment_id": "1af652fb",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "3f77c6a0",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "39f476dc",
+      "source_content": "[![alt](/emails/issues/149/meme.jpg)](https://twitter.com/JLarky/status/1669741878324113408)",
+      "source_content_hash": "36ec84f82497cd03c482252b812315bc8ab1231add435cc4ee72127a6fd6160f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/149/meme.jpg)](https://twitter.com/JLarky/status/1669741878324113408)"
+      }
+    },
+    {
+      "segment_id": "827eb9a3",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "それでは！ 👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/149/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:42.251015+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "c2c527cd2794893127b3aa8403a08f95793590242073cc3684d773b4db1e5e9c"
+  }
+}

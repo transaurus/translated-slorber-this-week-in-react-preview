@@ -1,0 +1,168 @@
+---
+slug: /169
+title: "This Week In React #169: useMemo, 2 Reacts, Next.js, Remix, JS Rising Stars, Docusaurus, Astro, Fresnel, Mutative, JSX emails, Expo usage, React-Native releases, Reanimated, VisionCamera, TypeScript, Rspack, Biome..."
+authors: [slorber, bndkt]
+date: 01-09-2024
+---
+
+みなさん、こんにちは！
+
+今週は、Reactとメモ化の未来に関する興味深い先行プレビューと、Lee Robinson関連のコンテンツが盛りだくさんです😄
+
+ExpoはReact-Nativeエコシステムとアプリストアで勢いを増しています💪
+
+[JavaScript Rising Stars 2023](https://risingstars.js.org/2023/en)が公開されました。今年はReactセクションのコメントを担当する機会をいただきました。shadcn/uiとBunが世界を席巻しました。また、Theoが彼の[トレンド分析動画](https://www.youtube.com/watch?v=5lkMs_WEoto)でこのニュースレターを紹介してくれたことにも感謝します：最近登録された皆さん、ようこそ🙏
+
+パリ2024はオリンピックだけではありません：私たちはReactカンファレンスの世界の中心にも戻ってきました！
+React Europeの終了以来、パリでは素晴らしいReactカンファレンスが不足していました。ついに3つの素晴らしいカンファレンスで解決されます👌
+
+* 📅 3月22日 - [React Paris](https://react.paris/) - React BrusselsとBeJSを手掛けたチームがパリで新たなカンファレンスを開催し、素晴らしいラインナップが本日発表されました！
+
+* 📅 4月22-23日 - [React Connection](https://reactconnection.io/) + [React-Native Connection](https://reactnativeconnection.io/) - 昨年私が企画に携わった半日のReact-Nativeカンファレンスは大成功でした。今年は1日+1日のカンファレンスとして戻ってきて、より旅行の価値があります。CFPは2月3日まで開いています。
+
+私は両方に参加する予定で、そこで皆さんにお会いできるのを楽しみにしています！
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Nlux ― 会話型AIウェブアプリを作成する新しいReact / JSライブラリ](/emails/issues/169/nlux.png)](https://nlux.ai/?c-twr1-h)
+
+**[Nlux ― 会話型AIウェブアプリを作成する新しいReact / JSライブラリ](https://nlux.ai/?c-twr1-h)**
+
+[NLUX](https://nlux.ai?c-twr1-p1) *(Natural Language User Experienceの略)* は、ChatGPTのような強力な大規模言語モデル（LLM）をウェブアプリやウェブサイトに簡単に統合できる新しい[オープンソース](https://github.com/nluxai/nlux)のReact / Javascriptライブラリです。わずか数行のコードで、会話型AIの機能を追加し、お気に入りのLLMと対話できます。
+
+主な特徴 🌟：
+
+* **数分でAIチャットインターフェースを構築** - わずか数行のコードで高品質な会話型AIインターフェースを実現。
+* **Reactコンポーネント＆フック** - UI用の`<AiChat />`と簡単な統合用の`useAdapter`フック。
+* **柔軟なLLMアダプター** - `ChatGPT`と`HuggingFace`、そして任意のLLM用に**独自のアダプターを作成**するためのAPI。
+* **カスタマイズ可能なチャットペルソナ** - ボットとユーザーの画像、名前、説明を設定してパーソナライズされた対話を実現。
+* **ゼロ依存関係** - LLMフロントエンドライブラリを除き、軽量なコードベースで依存関係なし。
+
+詳細、例、ドキュメントは[Nlux.ai](https://nlux.ai?c-twr1-p2)でご覧ください。
+
+***
+
+## ⚛️ React {#react}
+
+[![React.useとReact.useMemoの未来 - コンテキストセレクターの強力な代替手段](/emails/issues/169/useMemo.jpg)](https://interbolt.org/blog/react-use-selector-optimization/)
+
+**[React.useとReact.useMemoの未来 - コンテキストセレクターの強力な代替手段](https://interbolt.org/blog/react-use-selector-optimization/)**
+
+Colinは、Reactコンテキストがパフォーマンス問題を引き起こす可能性があること、コンテキストセレクターAPIの不足、そしてDaishi Katoによるユーザーランド実装[use-context-selector](https://github.com/dai-shi/use-context-selector)を活用してアプリのパフォーマンスを最適化した方法について説明しています。
+
+最も興味深い部分は、[最近のTwitterディスカッション](https://twitter.com/sebastienlorber/status/1741218919732429108)の優れたまとめです。Dan Abramovは、コンテキストセレクターがうまく構成できないことを説明しました。Andrew Clarkは、`useMemo()`を拡張し、その内部で他のフックを使用できるようにする計画を共有しました。これは、[任意のUsableタイプ](https://github.com/acdlite/rfcs/blob/first-class-promises/text/0000-first-class-support-for-promises.md#other-usable-types)（現在はコンテキストとプロミスですが、将来的にはObservablesやストアも含まれるかもしれません）とuseフックで動作しますが、[サードパーティのフック](https://twitter.com/BenJ_Ayc0/status/1742499230525067408)とも互換性があります！これにより、細かい選択問題がパフォーマンス良く構成可能な方法で解決され、今後のReact Forgetコンパイラとも互換性があります。
+
+***
+
+[![2つのReact](/emails/issues/169/2reacts.jpg)](https://overreacted.io/the-two-reacts/)
+
+**[2つのReact](https://overreacted.io/the-two-reacts/)**
+
+Dan Abramovによる素晴らしい記事で、コードをローカルで実行する（即時フィードバック）理由と、リモートで実行する（データソースに近い）理由の両方を示しています。彼は新しいReactの公式を提案しています：`UI = f(data, state)`。ここで`f`は、2つの異なる環境で実行されるあなたのReactアプリ全体を表します。
+
+これは、この問題を解決するためにReact Server Componentsを発明するかどうかを暗に問う素晴らしい質問で締めくくられています。
+
+> Reactの優れた点を保ちつつ、コンポーネントをあなたのコンピュータと私のコンピュータの間で分割する方法はあるでしょうか？2つの異なる環境からのコンポーネントを組み合わせてネストできるでしょうか？それはどのように機能するでしょうか？
+
+***
+
+* 💸 [DreamweaverからJSXへ: Web向けビジュアル開発ツールの進化](https://mightymeld.com/blog/browser-dev-tools-understand-code?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=link1)
+* 🌟 [2023年JavaScript Rising Stars](https://risingstars.js.org/2023/en): [Reactセクション](https://risingstars.js.org/2023/en#section-react)に関する私のコメントを参照。
+* 🐦 [Next.jsがローカルでHTTPS実行可能に](https://twitter.com/leeerob/status/1743709145386131906)
+* 📖 [Remix Docs - 新しいClient Dataガイド](https://remix.run/docs/en/main/guides/client-data)
+* 📜 [Next.js App Routerでのよくある間違いとその修正方法](https://vercel.com/blog/common-mistakes-with-the-next-js-app-router-and-how-to-fix-them): Lee Robinsonは数百人のNext.js開発者と接点を持ち、最も一般的な間違いをまとめました。[動画版](https://www.youtube.com/watch?v=RBM03RihZVs)も利用可能。redirect関数がnever型を返し、Next.js固有のエラーをスローするという設計には驚きました。
+* 📜 [2024年における私のCSSの書き方](https://leerob.io/blog/css): Lee Robinsonは2024年のCSSが気に入っています。優れたUX/DXを実現するための制約や、ビルドステップ、コンパイラ、ストリーミングの役割について説明しています。CSS Modules、Tailwind CSS、StyleXを推奨。
+* 📜 [Reactのリリース状況についてますます不満](https://macwright.com/2024/01/03/miffed-about-react): 550日間安定版リリースなしは有害と考えます。
+* 📜 [Reactコンポーネント内で危険に注入されたスクリプトを実行する](https://macarthur.me/posts/script-tags-in-react): dangerouslySetInnerHTMLを通じて注入されたスクリプトを、Document Fragmentsを使用してセキュリティ制限を回避し実行する興味深いテクニック。
+* 📜 [誰もが知っておくべき28の高度なNextJS機能](https://codedrivendevelopment.com/posts/rarely-known-nextjs-features): 著者がこれまで関わったアプリでは見かけなかった様々な知られざる機能のリストと解説。
+* 📜 [ReactのDXを向上させるために私が変更したいこと](https://codedrivendevelopment.com/posts/things-i-would-change-about-react): 私も同意できるReactの課題点と、それらを修正するための大まかな提案（すべてが優れているわけでも、実現可能なわけでもないと思いますが）。
+* 📜 [有害な複雑さ: 静的なコンテンツにReactを使用すること](https://gomakethings.com/harmful-complexity-using-react-for-static-content/): 興味深い意見ですが、私は著者の考えを覆し、特にRSCsを使用すれば静的なコンテンツにもReactが適していることを証明したいと考えています。
+* 📜 [2024年向けの新しいブログ](https://chrisnicholas.dev/blog/a-new-blog-for-2024): Catalyst、TWC、Contentlayer、Tailwind、Next.jsなどのモダンなツールを使用。
+* 📜 [Reactアプリでソフトナビゲーションのレポートを設定する方法](https://www.debugbear.com/blog/soft-navigations-react-tutorial): CRAアプリでGoogleのweb-vitals npmパッケージを使用する方法を示しています。
+* 📜 [Superglueの紹介: React ❤️ Rails](https://thoughtbot.com/blog/introducing-superglue): 「SuperglueはReactとReduxをHotwire、Turbo、Stimulusと同じくらい生産的にします」
+* 📜 [Lee Robinsonがゲストブックを作成した方法と、あなたもできること](https://bejamas.io/blog/how-to-create-a-guestbook/?ck_subscriber_id=887776054)
+* 📜 [JavaScriptフロントエンドフレームワークメンテナーによる2024年予測](https://thenewstack.io/2024-predictions-by-javascript-frontend-framework-maintainers/)
+* 📦 [Fresnel 7.0 - React 18サポート - レスポンシブレイアウトのためのSSR互換アプローチ](https://github.com/artsy/fresnel/releases/tag/v7.0.0)
+* 📦 [@tanstack/router-vite-plugin - ルーターCLIのVite代替](https://tanstack.com/router/v1/docs/api/router-vite-plugin)
+* 📦 [Docusaurus 3.1 - 組み込みの壊れたアンカー検出器、`parseFrontMatter`フック](https://docusaurus.io/blog/releases/3.1)
+* 📦 [Astro 4.1 - アクセシビリティ監査ルール、client:visible rootMargin、カスタムクッキーエンコーディング](https://astro.build/blog/astro-410/)
+* 📦 [Mutative 1.0 - 効率的な不変更新、Immerよりも10倍高速](https://dev.to/unadlib/announcing-mutative-10-a-new-era-in-efficient-immutable-updates-nml)
+* 📦 [JSX email 1.7 - 改善を続けるreact-emailのフォーク](https://github.com/shellscape/jsx-email)
+* 🔨 [Palettify - テーマの即時プレビューを取得 - shadcn/uiをサポート、近日中にMUIも](https://palettify.co/)
+* 🔗 [Remixリソース - コミュニティテンプレート、スタック、ライブラリ](https://remix.run/resources)
+* 🎥 [Jack Herrington - React開発者向けHTMXを10分で](https://www.youtube.com/watch?v=r0XBULqzsT0)
+* 🎥 [Lee Robinson - React Server Components: 良い点、悪い点、そして醜い点](https://www.youtube.com/watch?v=8DyzsSWNcDE)
+* 🎥 [Remix Singles - 「Trellix」 - クッキー、認証、ドラッグ＆ドロップ](https://www.youtube.com/watch?v=RTHzZVbTl6c\&list=PLXoynULbYuED9b2k5LS44v9TQjfXifwNu): Remixチームによる15のショートビデオ、Trelloクローンを構築（[デモアプリ](https://trellix.fly.dev/)を参照）。
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Next.js、Remix、Gatsby向けインライン視覚編集CMS](/emails/issues/169/reactbricks.jpg)](https://reactbricks.com?utm_source=twir\&utm_campaign=twir_2024\&utm_medium=email)
+
+**[Next.js、Remix、Gatsby向けインライン視覚編集CMS](https://reactbricks.com?utm_source=twir\&utm_campaign=twir_2024\&utm_medium=email)**
+
+[**1分でプロジェクトをセットアップ**](https://reactbricks.com/sign-up?utm_source=twir\&utm_campaign=twir_2024\&utm_medium=email) CLIを使用し、任意のCSSフレームワークでピクセルパーフェクトなコーポレートブランドを表現するためのビジュアルブロックをReactコンポーネントとして定義できます。
+
+コンテンツ編集者は、デザインシステムを損なうことなく、ワードプロセッサのようにこれらのブロックを使用して視覚的にページを構成できます。
+
+React Bricksは、デジタルアセット管理、高度なSEO、コラボレーション、スケジュールされた公開、多言語対応、外部データソースとの統合、承認ワークフロー、シングルサインオン、複数環境、バックアップ、変更履歴など、企業向けの機能を備えています。
+
+The Weather Channel、Deel.com、La Banque Postaleなどの企業クライアントや、主要なeCommerceサイト、全世界8,500人以上のユーザーに信頼されています。\
+[**今すぐ始めましょう！**](https://reactbricks.com/sign-up?utm_source=twir\&utm_campaign=twir_2024\&utm_medium=email)
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![2024年にExpo OSSを使用しているのは誰か](/emails/issues/169/expo.jpg)](https://evanbacon.dev/blog/expo-2024)
+
+**[2024年にExpo OSSを使用しているのは誰か](https://evanbacon.dev/blog/expo-2024)**
+
+Evan Baconは、Expoライブラリ（したがってReact Native）を使用している1,599のアプリの印象的なリストをまとめました。このリストには、Pizza Hut、Burger King、Microsoft、Discord、Shopify、NFL、Walgreens、Amazon、CNNなどの有名企業が含まれています。React Nativeが繁栄していることは私たちにとってニュースではありませんが、App Storeのトップアプリを見ると、その大きな役割を確認できるのは励みになります。
+
+***
+
+* 💸 [Galaxies.dev - React Nativeマスター & PRO版25%オフ（コード: GALAXIES24）](https://galaxies.dev?utm_source=thisweekinreact.com)
+* 👀 [提案: iPad / Apple Vision Pro向けホバースタイルAPI](https://github.com/react-native-community/discussions-and-proposals/pull/750) iPadはマウス/トラックパッドユーザー向けにホバー効果をサポートしており、これはAppleの新製品Vision Proでも有用です。Vision Proでは、ユーザーが要素を見つめるとナビゲーション要素がハイライト表示されます。
+* 📜 [Reanimated入門](https://www.reactiive.io/articles/introduction-to-reanimated): RN向け人気アニメーションライブラリの基本概念（共有値、再アニメーション化されたスタイル、アニメーションビュー）を学べる良い導入記事です。
+* 📦 [React-Native v0.73.2 + v0.72.9 + v0.71.15](https://github.com/facebook/react-native/issues/42180): 新リリースでは「Error installing boost Verification checksum」などのiOSビルドエラーが修正されました。
+* 📦 [react-native-vision-camera 3.7.0](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.7.0): 完全ネイティブなQR/バーコードスキャナーを簡単に有効化できるExpo設定プラグインが追加されました。
+* 🎥 [Theo - React Nativeからの移行](https://www.youtube.com/watch?v=gntZth3mIbM): 釣りタイトルですが有益な内容。「バニラ」React-NativeからExpoへの移行について。
+* 🎥 [Szymon Rybczak - React Server ComponentsをReact Nativeに導入](https://portal.gitnation.org/contents/brining-react-server-components-to-react-native)
+* 🎥 [Simon Grimm - 2024年向けReact Nativeテックスタック](https://www.youtube.com/watch?v=Xwk4rcB6qVQ)
+
+***
+
+## 🔀 Other {#other}
+
+* 👀 [TypeScript 5.4イテレーションプラン - `NoInfer<T>`、throw式...](https://github.com/microsoft/TypeScript/issues/56948)
+* 📜 [Daniel Rosenwasserが語るTypeScriptと2024年の展望](https://thenewstack.io/daniel-rosenwasser-on-typescript-and-whats-ahead-in-2024/)
+* 📜 [エンジニアが信じるWeb開発に関する奇妙なこと](https://birtles.blog/2024/01/06/weird-things-engineers-believe-about-development/)
+* 📜 [ウェブサイト vs Webアプリの二分法は存在しない](https://jakelazaroff.com/words/the-website-vs-web-app-dichotomy-doesnt-exist/)
+* 📜 [Interop 2024の人気投票結果](https://frontendmasters.com/blog/the-popular-vote-of-interop-2024/)
+* 📦 [Biome 1.5 - Prettier 97%互換 + 2024年ロードマップ](https://biomejs.dev/blog/roadmap-2024/)
+* 📦 [Node 20.11 - test\_runner、import.meta、パフォーマンス改善...](https://nodejs.org/en/blog/release/v20.11.0)
+* 📦 [Rspact 0.5 - モジュールフェデレーション対応](https://www.rspack.dev/blog/announcing-0.5)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/169/meme.jpg)](https://twitter.com/sebastienlorber/status/1744853546556649773)
+
+それでは！👋

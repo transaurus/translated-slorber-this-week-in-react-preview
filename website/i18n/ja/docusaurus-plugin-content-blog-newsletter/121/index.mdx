@@ -1,0 +1,166 @@
+---
+slug: /121
+title: "This Week In React #121: Next.js, experimental_cache, CSS-in-JS, Qwikify, Typesafety, 3D, Vitest Preview, Outstatic, Remix, React-Native..."
+authors: [slorber]
+date: 10-25-2022
+---
+
+みなさん、こんにちは！
+
+先週、間違えて220号の代わりに120号を送信してしまいました😅 誰も気づかなかったので、大した問題ではなかったようです！
+
+カンファレンスシーズンです：ViteConfのリプレイが公開され、React Advancedが終了し、さらに続きます。
+
+Next.jsカンファレンスは数時間後に始まります。おそらくNext.js 13の発表、ネストされたレイアウト、そしてTurboで始まる他のスーパークールな機能があるでしょう🤭。来週それについて話しましょう。
+
+また、Netlify、Cloudflare、Microsoftなど、すべてのホストが同時にNext.jsのサポートを改善することに同意しています。
+
+William CandillonのReact-Nativeビデオシーズン5が今日から始まるので見逃さないでください！
+
+先月、[PodRocketでDocusaurus 2.0についてのポッドキャストエピソードを録音しました](https://podrocket.logrocket.com/docusaurus)。完全に言い忘れていました😅 今後もっとポッドキャストエピソードをやりたいので、ぜひ招待してください！😉
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Sizzy - 開発者向けブラウザ](/emails/issues/220/sizzy.jpg)](https://sizzy.co/?utm_campaign=newsletter\&utm_source=thisweekinreact)
+
+なぜ他の業界のプロフェッショナルは専門的なツールを使っているのに、ウェブ開発者はまだおばあちゃんがAmazonで買い物するのに使っているブラウザを使い続けているのでしょうか？
+
+Sizzy以外のブラウザでlocalhost:3000を開いているなら、貴重な時間を無駄にしています。
+
+**Sizzy以前:** ウェブ開発はストレスが多く、レスポンシブデザインは難しく、開いているタブやアプリが多すぎて圧倒されます。
+
+**Sizzy以後:** 必要なツールがすべて一箇所にあり、レスポンシブデザインは簡単で、コンテキストスイッチングはなくなります。
+
+[ここからダウンロード](https://sizzy.co/?utm_campaign=newsletter\&utm_source=thisweekinreact)して、14日間無料で試してみてください！
+
+***
+
+## ⚛️ React {#react}
+
+**[なぜ私たちはCSS-in-JSと別れるのか](https://dev.to/srmagura/why-were-breaking-up-wiht-css-in-js-4g9b)**
+
+Samは、最も人気のあるCSS-in-JSライブラリの1つであるEmotionのメンテナーです。彼はCSS-in-JSの利点と欠点を説明し、特にランタイムライブラリの問題に焦点を当てています。彼の会社Spotでは、スタイルのシリアライズのコストが高すぎました。彼らはEmotionをSassモジュール（CSSモジュール + Sass）とCSSユーティリティシステムに置き換えました。Docusaurusでは、私たちはCSSモジュールを使用しており、ランタイムなしで比較的シンプルな代替手段であることを確認しています。開発者体験（DX）はそれほど良くありませんが、まだ許容範囲内です。
+
+この記事は多くの興味深い議論を引き起こしました。ランタイムを持つCSS-in-JSライブラリがパフォーマンス問題を引き起こすことは以前から知られていました。[Dan Abramovも確認し](https://twitter.com/dan_abramov/status/1584835028986793984)、[新しいReactドキュメントサイトではランタイムを使用したくないと述べています](https://github.com/reactjs/reactjs.org/issues/5115)。Ryan Florenceは[Chakraでのパフォーマンス問題について言及しています](https://twitter.com/ryanflorence/status/1582835729360572416)。ChakraはEmotionを使用しています。
+
+Tailwindも優れた代替手段です。私にとっては、特にJSXを通じてTailwindのスタイリングを行うReactコンテキストでは、ランタイム不要のCSS-in-JSカテゴリーに分類できます。その[メンテナンス性](https://twitter.com/hi__mayank/status/1584261503670448128)について疑問を呈する声もありますが、実際には非常にうまく機能します。
+
+**[Qwik React](https://qwik.builder.io/qwikcity/integrations/react/)**
+
+Qwikは、[クライアントサイドハイドレーションに関連するパフォーマンス問題を回避](https://www.builder.io/blog/hydration-is-pure-overhead)する革新的なSPAフレームワークです。`qwikify$()`関数を使用して既存のReactコンポーネントをラップすることで、Reactとの統合が可能になりました。`client:`ディレクティブ（Astroにインスパイアされた）により、Reactコンポーネントがハイドレートされるタイミングを細かく制御できます。デモではQwikアプリにMaterial UIを統合しています。[この動画](https://www.youtube.com/watch?v=fLH28rDu97I)も参照してください。この新しいフレームワークに一気に移行せず、段階的に試す良い解決策だと思います。Reactのクロスプラットフォーム特性を維持しつつ、Web上のパフォーマンスを向上させるためにQwikを採用できます。
+
+**[完全に型付けされたWebアプリ](https://www.epicweb.dev/fully-typed-web-apps)**
+
+Kent C. Doddsは、DBからUIまで、ネットワーク、ローカルストレージ、DBなどの異なる境界を越えてエンドツーエンドの型安全性を持つことの利点を説明しています。検証（スキーマ、型ガード）、型生成（Prisma）、規約（Remix）について語っています。Remixでは推論のおかげでこの体験が可能であり、`as`よりも`typeof`を使用する方が良いと説明しています。
+
+**[Next.jsでインタラクティブなWebGL体験を構築する](https://vercel.com/blog/building-an-interactive-webgl-experience-in-next-js)**
+
+Vercelは、React-Three-Fiberを基盤とした[Next.jsカンファレンスの印象的な没入型サインアップ体験](https://nextjs.org/conf)をどのように作成したかを説明しています。3D/WebGL/Three.jsの経験がなければ理解するのはまだ複雑ですが、段階的な分解は興味深く、クリエイティブな開発の考え方を垣間見せてくれます。
+
+* 👀 [React Cache APIのプルリクエスト](https://github.com/facebook/react/pull/25506): 新しい`React.experimental_cache` APIを公開
+* 📖 [新ベータ版ドキュメント - cloneElement](https://twitter.com/dan_abramov/status/1582814754426433537)
+* 📦 [Vitest Preview](https://www.vitest-preview.com/): Vitestテストを視覚的にデバッグ可能。[Jest Preview](https://www.jest-preview.com/)の弟分的なツール
+* 📦 [Outstatic - Next.js向け静的CMS](https://outstatic.com/): Next.jsとシームレスに連携するGitベースの新CMS。画像アップロード機能を備えたシンプルでユーザーフレンドリーなエディター
+* 📜 [Netlify - Next.jsのバックグラウンドおよびスケジュールAPIルート](https://www.netlify.com/blog/new-background-scheduled-api-routes-nextjs/): Netlifyがバックグラウンド関数を使用してcron式に基づきNext.js APIを呼び出し
+* 📜 [Cloudflare PagesのNext.js Edge Runtimeサポート](https://blog.cloudflare.com/next-on-pages/): CloudflareがNext.jsをサポート（Node.jsランタイムではなく`experimental-edge`ランタイムのみ）。[Vercel Build Output API](https://vercel.com/blog/build-output-api)ベースのソリューションで、エッジファーストフレームワークのクラウド間移植性向上に寄与
+* 📜 [Microsoft - Azure Static Web AppsでのNext.jsサポート拡張](https://techcommunity.microsoft.com/t5/apps-on-azure-blog/extending-next-js-support-in-azure-static-web-apps/ba-p/3627975): AzureがNext.js SSRをサポート（従来はSSGのみ）
+* 📜 [Remixでフォーム送信後に入力値を保持する方法](https://sergiodxa.com/articles/persist-inputs-after-a-form-submit-in-remix): フォーム送信後の値保持のためのプログレッシブエンハンスメントソリューションを提案。2つの方法：Remixアクションで値を返すか、フラッシュセッションを使用
+* 📜 [Next.jsでのカリー化レイアウトコンポーネントパターン](https://creativedesignsguru.com/currying-nextjs-layout/): Next.jsの`getLayout`をパラメータ化してレイアウトバリアントを作成し、アンマウント/再マウントを防ぐ手法を提案。今は便利だが、ネストされたレイアウトサポートが来ると重要性が低下する可能性
+* 📜 [Remixでのレスポンスのthrow vs return](https://sergiodxa.com/articles/throwing-vs-returning-responses-in-remix)
+* 📜 [Recoil.js移行から得た教訓](https://kitemaker.co/blog/lessons-learned-from-moving-to-recoil)
+* 📜 [ReactアプリでのAPIレイヤー分離](https://profy.dev/article/react-architecture-api-layer)
+* 🎥 [新しいReact useフックは足元を撃つ銃か？](https://www.youtube.com/watch?v=ytXM05PVcFU)
+* 🎥 [React Advanced London 2022 - Day 1](https://www.youtube.com/watch?v=1x7mI_xuVVo)
+* 🧵 [Lottie vs Rive](https://twitter.com/guidorosso/status/1582086637328031745): Reactエコシステムで人気のLottieに対し、競合のRiveは実行時のパフォーマンスが大幅に優れている
+* 🐦 [Zustandコードを1ツイートで](https://twitter.com/dai_shi/status/1583082766081531905)
+* 🔗 [Storybookの新ウェブサイト](https://twitter.com/storybookjs/status/1583175829009289216)
+
+<SubscribeFormEmbed />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Sunsama - 何千人ものソフトウェアエンジニアが燃え尽きずに生産性を維持する方法](/emails/issues/121/sunsama.jpg)](https://www.sunsama.com/a/this-week-in-react)
+
+**[何千人ものソフトウェアエンジニアが燃え尽きずに生産性を維持する方法](https://www.sunsama.com/a/this-week-in-react)**
+
+仕事の成果は投入時間よりも重要です。[Sunsama](https://www.sunsama.com/a/this-week-in-react)は、少ない労働時間でより多くの成果を上げるために何千人もの開発者が使用している内輪の秘密ツールです。
+
+JIRA、Github、Notionとの連携で終わりのないタブ切り替えを解消。1日の作業時間を区切り、趣味やサイドプロジェクトのための時間を作り出せます。
+
+何より嬉しいのは、**[14日間の無料トライアル](https://www.sunsama.com/a/this-week-in-react)**（クレジットカード不要）を提供していること。今日からより多くの成果を上げる第一歩を踏み出せます。
+
+***
+
+## 📱 React-Native {#react-native}
+
+* 🎥 [Headspace Player - 「React Nativeで実現できるか？」](https://www.youtube.com/watch?v=pErnuAx5GjE): シーズン5が本日スタート 🤗
+* 🤫 [Expo SDK 47に関する噂が流れています](https://twitter.com/tsapeta/status/1582831949030522881): 期待のSDK！
+* 🗣 [新アーキテクチャが到来…次は？ 3.0](https://twitter.com/Kelset/status/1583416697741975552): Lorenzo（Microsoft）によるReact Advancedカンファレンスのスライド。
+* 📈 [React-Nativeパフォーマンスベンチマーク](https://twitter.com/almouro/status/1584628478963777537): Alexandreが日々ベンチマークを実施し、新旧アーキテクチャの様々なシナリオにおけるパフォーマンスを比較。
+* 📖 [Reassureドキュメント](https://callstack.github.io/reassure/): Reassureが新しいDocusaurusドキュメントサイトを公開 🤗
+* 📖 [Expoドキュメント更新 - 新しいFlipperプラグイン統合ガイド](https://twitter.com/amanhimself/status/1583202477469765633)
+* 📦 [create-react-native-library 0.25](https://twitter.com/satya164/status/1583462129235263490): Kotlin Turboモジュールテンプレート
+* 📦 [Expo Router 0.0.31](https://twitter.com/Baconbrix/status/1582875434567409664)
+* 📦 [Expo Router 0.0.33](https://twitter.com/Baconbrix/status/1584289284713947136)
+* 📦 [Realm JavaScript v11 - Hermesサポート、Realm React、Flipper、その他多数](https://www.mongodb.com/developer/products/realm/realm-javascript-v11-react-native/)
+* 🎙️ [RNR 249 - Reduxメンテナーが語るRTK vs MSTの考察](https://reactnativeradio.com/episodes/rnr-249-a-redux-maintainers-thoughts-on-rtk-vs-mst)
+
+***
+
+## 🧑‍💻 Jobs {#jobs}
+
+🧑‍💼 [**Causal社 Product Engineer（リモート/ロンドン/NY、\$150-250k）**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied\&lever-source%5B%5D=thisweekinreact.com)
+
+Causalは、数値データの処理と可視化のためのオールインワンツールを開発するSeries Aスタートアップ（Coatue/Accel出資）です。困難なUX/パフォーマンス課題を解決できるReactエンジニアを募集しています。
+
+🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\&t=ArRLC77BpRwXXCdx8fnUqw)
+
+React Nativeに特化した開発者向けの複数のポジションを開設中！報酬は約160kドル＋10％ボーナス。RNの実務経験があり、米国在住であることが条件です。詳細は[@gabe\_g2i](https://twitter.com/gabe_g2i)までDMでお問い合わせください（This Week in Reactからの応募であることをお忘れなく）。
+
+💡 [求人を掲載する方法は？](https://thisweekinreact.com/sponsor)
+
+***
+
+## 🔀 Other {#other}
+
+* [Webコンポーネントについて語ろう](https://bradfrost.com/blog/post/lets-talk-about-web-components/): Brad FrostによるWebコンポーネントに関する興味深い考察。Reactと必ずしも互換性がないわけではなく、補完し合える（例：Reactアプリ内のデザインシステム）。現在の課題（SSR）もいずれ克服されるだろう。
+* [Replitアプリ](https://twitter.com/amasad/status/1582754714575257600): スマホでコーディングする新しいアプリ（[Expo](https://twitter.com/amasad/status/1582968657675661314)で作成）。Next.js用のテンプレートも用意されている。
+* [Node.js 19の紹介](https://www.redhat.com/en/blog/introducing-nodejs-19) - 注記: Node.js 18が本日LTS入り！
+* [Stately Studio 1.0の紹介](https://stately.ai/blog/introducing-stately-studio-10): XStateステートマシンエディタ
+* [Vite 4の計画](https://github.com/vitejs/vite/discussions/10570): Rollup 3へのアップグレード、es2020互換性...
+* [ViteConf 2022のアーカイブ](https://viteconf.org/2022/replay)
+* [Turborepo 1.6 - 非モノレポでもTurborepoを利用可能](https://twitter.com/turborepo/status/1583518617970233346)
+* [Solid 1.6](https://twitter.com/solid_js/status/1583016386984480768)
+* [未来のCSS](https://www.smashingmagazine.com/2022/10/futuristic-css/)
+* [今のCSSは多すぎるのか？](https://css-tricks.com/is-there-too-much-css-now/)
+* [npm binスクリプトの混乱: 'bin'を悪用して'node'コマンドを乗っ取る](https://socket.dev/blog/npm-bin-script-confusion)
+* [Tailwind CSS v3.2: 動的ブレークポイント、マルチ設定、コンテナクエリ](https://twitter.com/adamwathan/status/1582793658168152065)
+* [Tailwind CSS v3.2: 「機能過多」警告を再考](https://www.brycewray.com/posts/2022/10/tailwind-css-v3-2-revisiting-feature-creep-warning/)
+* [Can I DevTools - ブラウザのDevTools機能を比較](https://canidev.tools)
+* [Vercel - リージョナルエッジ関数](https://vercel.com/blog/regional-execution-for-ultra-low-latency-rendering-at-the-edge)
+* [Deno - サーバーレスエッジプラットフォームで最速のgitデプロイはどれか？](https://deno.com/blog/fastest-git-deploys-to-the-edge)
+* [Cloudflare Workersとマイクロフロントエンド: 互いのために作られた](https://blog.cloudflare.com/better-micro-frontends/)
+* [Blink: 実装予定: CSS Color Module Level 4 + color-mix()](https://twitter.com/intenttoship/status/1583110354074116096)
+* [Safari Technology Preview 156のリリースノート](https://webkit.org/blog/13394/release-notes-for-safari-technology-preview-156/)
+* [Safari 16.1のWebKit機能](https://webkit.org/blog/13399/webkit-features-in-safari-16-1/)
+* [2022-03デコレータAPIを使ったJavaScriptメタプログラミング](https://2ality.com/2022/10/javascript-decorators.html)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![ミーム - iWatchで動くVSCode](/emails/issues/121/meme.png)](https://twitter.com/rohanpdofficial/status/1583455633134977026)

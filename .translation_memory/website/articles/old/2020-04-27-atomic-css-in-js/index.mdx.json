@@ -1,0 +1,82 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "articles/old/2020-04-27-atomic-css-in-js/index.mdx",
+  "source_file_content_hash": "edd0c9dba926f7718332a34141e40a64dba5e858f8b7e424aa197f126dec06fc",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: atomic-css-in-js\ntitle: Atomic CSS-in-JS\ndescription: Atomic CSS-in-JS... or how to scale your CSS-in-JS.\nauthors: [slorber]\ntwitterThreadUrl: \"https://slo.im/thread\"\nimage: ./images/hero.png\n---",
+      "source_content_hash": "27b79d83c61c88b89027f55d6ec77102a9eea9f9e13138af1644ea6ed0579e28",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "With recent production deployments from Facebook and Twitter, I think a new trend is slowly growing: atomic CSS-in-JS.",
+      "source_content_hash": "0b50883e91190c71adbea7b57a4218da6e24b3cb9d8a47e9addcb6bfb0e32100",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "FacebookやTwitterの最近の本番環境での導入事例から、新しいトレンドが徐々に広がりつつあると考えられます：それはAtomic CSS-in-JSです。"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "In this post, we'll see what atomic CSS is, how it relates to functional / utility-first CSS like TailwindCSS, and that big players are adopting it in their modern React codebases.",
+      "source_content_hash": "da9bc93e3d149c10868604d36a5e2b5f70f781da9bb772228608a8c512f4fe21",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "この記事では、Atomic CSSとは何か、TailwindCSSのような機能的な/ユーティリティファーストなCSSとの関係、そして大手企業が最新のReactコードベースで採用している理由について解説します。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "As I'm not a expert of this subject, don't expect a deep dive about the pros and cons. I just hope you get an idea about what it's about.",
+      "source_content_hash": "c55b38c1dc33fd94859ab6748a82a2b53d380d18ff4533e40c8725f014383265",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "私はこの分野の専門家ではないため、長所と短所についての深い分析は期待しないでください。ただ、これがどのようなものなのか、概要を理解していただければと思います。"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "**Note**: Atomic CSS is not really related to [Atomic Design](https://atomicdesign.bradfrost.com/).",
+      "source_content_hash": "adb4e0c83b661d8784e1e1f8c2777ade319c232e4aca70c1fd595d1a979359cc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**注記**: Atomic CSSは[Atomic Design](https://atomicdesign.bradfrost.com/)とは直接の関係はありません。"
+      }
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "[![hero](./images/hero.png)](https://sebastienlorber.com/atomic-css-in-js)",
+      "source_content_hash": "2b3360baca490e00511e8bd5c4735f12f6684dfc8c9af5c847d9fd219f6d1f10",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![hero](./images/hero.png)](https://sebastienlorber.com/atomic-css-in-js)"
+      }
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "🔗 [**Read More**](https://sebastienlorber.com/atomic-css-in-js)",
+      "source_content_hash": "681fa3dec40b161c52a9b4ff92e56629159fc253169c43b979f9d49e72e9b270",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🔗 [**続きを読む**](https://sebastienlorber.com/atomic-css-in-js)"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-articles/old/2020-04-27-atomic-css-in-js/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:36.703547+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "edd0c9dba926f7718332a34141e40a64dba5e858f8b7e424aa197f126dec06fc"
+  }
+}

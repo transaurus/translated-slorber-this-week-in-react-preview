@@ -1,0 +1,145 @@
+---
+slug: /219
+title: "This Week In React #219: CRA, Next.js, Remix, Tremor, SaaS-Starter, Local-First, JSDom, 2n8, RN-Windows, OTA, Polygen, Audio API, Debugging, Shopify, Bottom Tabs, Reanimated, Tailwind, Standard Schema, TypeScript..."
+authors: [slorber]
+date: 01-29-2025
+---
+
+皆さん、こんにちは！
+
+先週に比べて比較的静かな週でしたが、特筆すべきヘッドラインは見つかりませんでした！
+
+私たちのエコシステムにとって最も重要なニュースは、おそらくCreate React Appの正式な非推奨化でしょう。また、Tailwind v4とStandard Schema v1のリリースもあります。
+
+TypeScript 5.8で導入予定の`erasableSyntaxOnly`フラグは、enumなどの機能の使用を禁止するもので、非常に興味深いです。これは、アプリをNode.jsの組み込みサポートと互換性を持たせるための道であり、将来的にはブラウザでも同様のサポートが得られるかもしれません。
+
+パートナーカンファレンス[dotJS 2025](https://www.dotjs.io/?utm_source=thisweekinreact)をチェックしてください - 🇫🇷 パリ - 4月3日 - スピーカーが発表されました！Node.jsの生みの親であるRyan Dahl、GoogleのエンジニアリングディレクターSarah Drasner、Syntax.fmポッドキャストの共同ホストWes Bosが登壇します。コード「TWIR」でチケットを15%オフで購入できます。
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Convex: Web開発者のためのリアクティブデータベース](/emails/issues/219/convexbanner.jpg)](https://convex.link/thisweek)
+
+**[Convex: Web開発者のためのリアクティブデータベース](https://convex.link/thisweek)**
+
+Convexは、本番環境に対応したバックエンドを構築、公開、スケーリングするために必要なすべてを提供するオールインワンプラットフォームです。
+
+TypeScriptを活用して、自動的にキャッシュされリアルタイムで動作する[クエリをコードとして記述](https://docs.convex.dev/functions/query-functions/)でき、ACID準拠の[リアクティブデータベース](https://docs.convex.dev/database)を利用できます。
+
+そして、これだけではありません。Convexでは以下のことが可能です：
+
+* 簡単に関数をスケジュールし、cronジョブを記述
+* ファイルストレージを設定
+* 効率的なサーバー関数を記述
+* お気に入りのAIコーディングツールでバックエンドを生成
+* その他多くの機能…
+
+[今日すぐクイックスタートを試す](https://docs.convex.dev/quickstarts)
+
+***
+
+## ⚛️ React {#react}
+
+* 💸 [Clerk - ReactとExpressでセッションベースの認証を構築](https://go.clerk.com/HRqsMAP)
+* 📣 [VercelがTremorを買収し、オープンソースのReactコンポーネントに投資](https://vercel.com/blog/vercel-acquires-tremor): ダッシュボード構築用のプレミアムライブラリが無料でオープンソース化
+* 👀 [CRAがReact 19で動作しなくなり、非推奨通知が必要に](https://github.com/facebook/create-react-app/issues/17004): 様々な議論を経て、Create-React-Appが正式に非推奨化されました！
+* 👀 [Next.js PR - `dynamicIO`なしで使用可能な新しいスタンドアロン`experimental.useCache`フラグ](https://github.com/vercel/next.js/pull/75240)
+* 👀 [Next.js PR - コンパイルに時間がかかるモジュールを報告する`experimental.slowModuleDetection`フラグ](https://github.com/vercel/next.js/pull/75368)
+* 👀 [Remix PR - クライアントサイド`routerContext`のサポート](https://github.com/remix-run/react-router/pull/12515)
+* 🐦 [React Three Fiber v9 RC版リリース、React 19とThree.js WebGPURendererをサポート](https://x.com/0xca0a/status/1882441755368563114)
+* 📜 [DexieJs: Reactでのリアクティブなローカル状態管理](https://www.typeonce.dev/article/dexie-js-reactive-local-state-in-react): Reactの状態管理ライブラリが不要になるかも？ブラウザには組み込みのリアクティブIndexedDBがあります。この記事ではReact 19の最新機能を使ってすべて（ライブクエリとアクション）を接続する方法を紹介しています。
+* 📜 [Next.js: 正直なレビュー](https://beeps.dev/blog/nextjs-an-honest-review): プロダクションアプリでNext.jsを使用する際の長所/短所を実用的にリストアップした興味深い記事
+* 📜 [なぜ私はJSDOMを使わないのか](https://www.epicweb.dev/why-i-won-t-use-jsdom): JSDOMのようなポリフィルされたNode.js環境ではなく、Vitest Browser ModeとPlaywrightを使用して実際のブラウザでフロントエンドコンポーネントをテストすることを推奨。Reactの統合はReact Testing Libraryの使用と似ています。
+* 📜 [UX++とDX++を実現するSync Engines](https://www.carlassmann.com/blog/improve-ux-dx-with-sync-engines): React Queryでクエリの無効化や楽観的UIの実装が難しい理由を説明し、Replicacheを使ったローカルファーストモデルの採用を提案
+* 📜 [Reactからの移行、1年後の振り返り](https://kellysutton.com/2025/01/18/moving-on-from-react-a-year-later.html): サーバーサイドレンダリングするRailsアプリケーションからReactを削除したフィードバック。JSをハンディキャップと捉える視点
+* 📜 [サーバーサイドReactでpng、pdf、またはインタラクティブなウェブアプリとしてレンダリング](https://swizec.com/blog/server-side-react-that-renders-as-png-pdf-or-interactive-webapp/): TanStack Startアプリで検索パラメータを使用してPDFまたはpngを返す方法
+* 📜 [Remixで複数の同時送信を処理する方法](https://tigerabrodi.blog/how-to-handle-multiple-concurrent-submissions-in-remix)
+* 📜 [React Server Componentsが実際に有益な理由とは？](https://tigerabrodi.blog/why-is-react-server-components-actually-beneficial-full-history)
+* 📜 [数百万人が利用するReactアプリの状態管理ライブラリ選定（そしてMobXを選んだ理由）](https://www.photoroom.com/inside-photoroom/picking-a-state-management-library-why-we-went-with-mobx-)
+* 📜 [useAsyncFetcher: Remixアプリで非同期フェッチ関数を実装する方法](https://www.cerbos.dev/blog/useasyncfetcher-implement-asynchronous-fetch-in-remix)
+* 📜 [Formik入門](https://playfulprogramming.com/posts/formik-intro)
+* 📜 [React-AdminでCMSを構築する方法](https://marmelab.com/blog/2025/01/24/how-to-build-a-cms-with-react-admin.html)
+* 📦 [Vercel Next.js SaaSスターター](https://github.com/nextjs/saas-starter): Lee Robinsonによって最初に作成され、現在はVercelによってメンテナンスされている公式パッケージ。有料のボイラープレートを購入する必要はないかもしれません。
+* 📦 [2n8 - クラスベースのReactストア](https://2n8.wstone.uk/): MobXとZustandの興味深い融合
+* 🎥 [Theo - なぜReactサイトはこんなに遅いのか？](https://www.youtube.com/watch?v=INLq9RPAYUw)
+* 🎥 [Youssef Benlemlih - TanStack Router完全コース](https://www.youtube.com/watch?v=fpXOT8SNTpY)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![ReactアプリのUXを再考するReactile](/emails/issues/216/reactile.jpg)](https://www.reactile.net/?utm_source=ThisweekinReact)
+
+**[ReactアプリのUXを再考するReactile](https://www.reactile.net/?utm_source=ThisweekinReact)**
+
+Reactileは、直感的なタイル表示とワークスペースを備えたUI/UXのターンキーフレームワークです。単一のブラウザタブ内で大規模なWebソリューション向けに並列ワークロードを促進します。Reactを使用して独自のビューコンテナ、ウィジェット、ロジックを実装し、表示はReactileに任せることができます。
+
+さらに、Reactileは以下を提供します:
+
+* 時間や複数デバイス間で統一されたワークフローを可能にするPromiseベースの永続化メカニズム
+* タイルにネストされたタブを使用する機能
+* シンプルなグローバル検索メカニズム
+* CSS @containerベースのレスポンシブ対応
+* その他多くの機能
+
+バージョン2が間もなくリリースされます。30日間の無料トライアルで始めましょう。詳細はreactile.netでご確認ください。
+
+[Reactile - 新しいReact UI管理システム](https://www.reactile.net/price?utm_source=ThisweekinReact)
+
+***
+
+## 📱 React-Native {#react-native}
+
+* 💸 [PostHog - Swypeがモバイルセッションリプレイをテストとユーザーインサイトに活用する方法](https://dub.link/twir-jan29)
+* 📣 [React Native 0.79 - Chrome経由のリモートJSデバッグの削除](https://github.com/react-native-community/discussions-and-proposals/discussions/872)
+* 🐦 [Fernando Rojoが「React Nativeの新しいバージョンでは`<Text>`コンポーネントのコストが低減されている」と指摘](https://x.com/FernandoTheRojo/status/1882111985661415556): v0.75以降（正確には不明）、単純な文字列子要素を持つテキストコンポーネントのパフォーマンスが大幅に向上。
+* 🐦 [ShopifyにおけるReact Native - CTOの視点](https://x.com/jmwind/status/1882071857098080653): 元Shopify CTOが長文ツイートで最近のShopifyブログ記事を補完。RN採用の決定には数年を要し、現在の状態ではなく可能性に基づいた技術とコミュニティへの賭けだった。
+* 🐦 [Expo RouterでのiOS App Clipデモ](https://x.com/Baconbrix/status/1882141919574360421): アプリストアからインストールせずにリンクをクリックするだけでネイティブiOSアプリ画面を実行。
+* 🐦 [iPadOSでのマルチウィンドウデモ](https://x.com/o_kwasniewski/status/1882388170643272130): 新機能「React Native Factory」がブラウンフィールドとマルチウィンドウの新たな可能性を解禁。
+* 📜 [美しいReact Nativeボトムタブの構築方法](https://expo.dev/blog/how-to-build-beautiful-react-native-bottom-tabs)
+* 📜 [React Native Audio APIの紹介](https://blog.swmansion.com/hello-react-native-audio-api-bb0f10347211)
+* 📜 [Zephyrを使ったOver the Air（OTA）更新](https://zephyr-cloud.io/blog/ota-with-zephyr): スーパーアプリがサブモジュールを独立して更新可能に。
+* 📦 [Polygen - インタプリタなしで静的にWebAssemblyモジュールをアプリ内で実行](https://github.com/callstackincubator/polygen): Callstackのプレビュー版パッケージ。WasmをCに変換しJSI経由で呼び出し高いパフォーマンスを実現。
+* 📦 [Hot Updater - React Native向けセルフホスト可能なOTA更新ソリューション](https://github.com/gronxb/hot-updater): CodePushの代替として興味深い。プラグインでJSバンドルのホスティング先（S3/Supabase/PostgreSQL等）を選択可能。
+* 📦 [React Native Windows 0.77](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.77.0)、[MacOS 0.77](https://github.com/microsoft/react-native-macos/pull/2333)も間もなくリリース予定
+* 📦 [React Native 0.74.7](https://github.com/facebook/react-native/releases/tag/v0.74.7): サポート終了リリース。0.74.xシリーズはこれでサポート終了。
+* 📦 [Reanimated 4向けReact Native CSSアニメーションプリセット](https://github.com/software-mansion-labs/react-native-css-animations)
+* 🎥 [Fernando Rojo - SwiftUIでReact Nativeボトムシートを構築](https://www.youtube.com/watch?v=TFEPTgGJ2iU)
+* 🎥 [Jack Herrington - React Nativeでのマイクロフロントエンド！モバイルアプリのゲームチェンジャー](https://www.youtube.com/watch?v=Lp-5wSsd5Do)
+* 🎥 [Simon Grimm - React Nativeアニメーションが大幅に簡素化（Reanimated v4）](https://www.youtube.com/watch?v=QgCLSR9EbDc)
+* 🎙️ [React Universe On Air 47 - Zephyr CloudとRe.Packを使ったモバイルマイクロフロントエンド](https://www.youtube.com/watch?v=9fHpEngW2lU)
+* 🎙️ [RNR 319 - ShopifyがMustafa Aliと共にReact Nativeに全力注力](https://www.reactnativeradio.com/episodes/rnr-319-shopify-goes-full-throttle-on-react-native-with-mustafa-ali)
+* 🎙️ [PodRocket - Mo Khazaliと語るユニバーサルReact](https://podrocket.logrocket.com/universal-react-mo-khazali)
+* 🎙️ [Rocket Ship 59 - Evan Baconと語るExpo Router、RSC & DOMコンポーネント](https://share.transistor.fm/s/df636b75)
+
+***
+
+## 🔀 Other {#other}
+
+* 👀 [TypeScript 5.8 イテレーションプラン · `erasableSyntaxOnly`、require(esm)、依存型の絞り込み](https://github.com/microsoft/TypeScript/issues/61023)
+* 📜 [TypeScript 5.8 リリース --erasableSyntaxOnly で Enum を無効化](https://www.totaltypescript.com/erasable-syntax-only)
+* 📜 [コンテナクエリの解放](https://www.joshwcomeau.com/css/container-queries-unleashed/)
+* 📜 [JavaScript Temporal がやってくる](https://developer.mozilla.org/en-US/blog/javascript-temporal-is-coming/)
+* 📜 [Linting と TypeScript で `any` を避ける](https://typescript-eslint.io/blog/avoiding-anys/)
+* 📜 [現代的な JavaScript サーバーの書き方](https://marvinh.dev/blog/modern-way-to-write-javascript-servers/)
+* 📦 [Tailwind CSS 4.0 - 高性能エンジン、CSSファースト設定、モダンCSS、Viteプラグイン](https://tailwindcss.com/blog/tailwindcss-v4)
+* 📦 [Standard Schema 1.0 - TypeScript バリデーションライブラリの共通インターフェース](https://standardschema.dev/)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/219/meme.jpg)](https://x.com/dcorbacho/status/1655443576195538946)
+
+[![alt](/emails/issues/219/meme2.jpg)](https://x.com/thekitze/status/1883985586194706537)
+
+それではまた！ 👋

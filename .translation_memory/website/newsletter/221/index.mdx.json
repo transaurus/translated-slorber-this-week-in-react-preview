@@ -1,0 +1,502 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/221/index.mdx",
+  "source_file_content_hash": "df67960d143f58f2359701f97b896d4ca0a0b214fb2822f89da886f371b61736",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /221\ntitle: \"This Week In React #221: State of React, React Router, Rsbuild, ProseMirror, Redux, React Hook Form, Base UI, RSC, React Admin | AI & RN, Expo, Strict DOM, Polygen, Ignite, New Arch, Radon, macOS, Universal RSC, Gesture Handler | TypeScript, Prettier, esbuild...\"\nauthors: [cyrilbo, matthieugicquel]\ndate: 02-12-2025\n---",
+      "source_content_hash": "d155c298d27e7919619f2aec1d9001b6d68428bef436b951365b4e02950d2a10",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Cyril and Matthieu from [Theodo Apps](https://apps.theodo.com/en?utm_source=thisweekinreact) here 👋, standing in for Seb to bring you the latest news from React and React Native!",
+      "source_content_hash": "435da33c5d7b912e2748076fee1a554b0625b1890a3b6ab34a9bbe5514860ee5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[Theodo Apps](https://apps.theodo.com/en?utm_source=thisweekinreact)のCyrilとMatthieuです 👋。Sebに代わって、ReactとReact Nativeの最新ニュースをお届けします！"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "This week we’ve been carefully reading the [State of React 2024](https://2024.stateofreact.com) survey results, and also found quite a few interesting articles. Things have been quieter when it comes to new releases.",
+      "source_content_hash": "2bca6a97e887c6875881765dd2a41c85f328bef9c30329a5f0a82cfcf85f5f76",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週は、[State of React 2024](https://2024.stateofreact.com)の調査結果を詳しく読み込み、興味深い記事もいくつか見つけました。新しいリリースについては比較的静かな週でした。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Check our partner conf [App.js](https://appjs.co?utm_source=thisweekinreact), happening May 28-30 in 🇵🇱 Kraków! The biggest React Native and Expo-focused conference gives us a 15% discount with code \"TWIR\". Want to [submit a talk](https://docs.google.com/forms/u/1/d/e/1FAIpQLSeKSqxwrTdJJavOFgK-UA25K-hJPmZ5wnZDY7UUo9ULDuckkA/viewform?usp=send_form)? Hurry—CFP is closing soon!",
+      "source_content_hash": "a868641a11d5a86ce4d2f3712bc5bd883c8f3de7259a986e68045ad6de66f420",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "パートナーカンファレンス[App.js](https://appjs.co?utm_source=thisweekinreact)（5月28-30日、🇵🇱クラクフ開催）をチェックしてください！React NativeとExpoに特化した最大級のカンファレンスで、コード「TWIR」を使うと15%オフになります。[トークを応募](https://docs.google.com/forms/u/1/d/e/1FAIpQLSeKSqxwrTdJJavOFgK-UA25K-hJPmZ5wnZDY7UUo9ULDuckkA/viewform?usp=send_form)したい方は急いでください - CFPは間もなく締め切られます！"
+      }
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6429a3aa"
+      }
+    },
+    {
+      "segment_id": "6c991806",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6c991806"
+      }
+    },
+    {
+      "segment_id": "8f488ab5",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_8f488ab5"
+      }
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "[![EAS Workflows: Fast, flexible React Native CI/CD](/emails/issues/221/eas-workflows.jpg)](https://expo.dev/eas/workflows?utm_source=twir+newsletter\\&utm_medium=email\\&utm_campaign=twir-workflows\\&utm_id=TWIR)",
+      "source_content_hash": "15cc0233758bfbee06606a3c5a96c10f5af2b4dfe6cd6ccb291eeb60917bd201",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![EAS Workflows: Fast, flexible React Native CI/CD](/emails/issues/221/eas-workflows.jpg)](https://expo.dev/eas/workflows?utm_source=twir+newsletter\\&utm_medium=email\\&utm_campaign=twir-workflows\\&utm_id=TWIR)"
+      }
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "**[EAS Workflows: Fast, flexible React Native CI/CD](https://expo.dev/eas/workflows?utm_source=twir+newsletter\\&utm_medium=email\\&utm_campaign=twir-workflows\\&utm_id=TWIR)**",
+      "source_content_hash": "b93beb73c87b669c3ab623b10ac9f454349ec3314a622e9919967bfa37c3b96e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[EAS Workflows: 高速で柔軟なReact Native CI/CD](https://expo.dev/eas/workflows?utm_source=twir+newsletter\\&utm_medium=email\\&utm_campaign=twir-workflows\\&utm_id=TWIR)**"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "When you wake up in the morning how many different yaml files do you want to manage? With EAS Workflows, you have **everything in one place**.",
+      "source_content_hash": "88916083d1b3eac6b556075b7f60e4139bbb2e923fe0085c1794324f3124e644",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "朝起きた時、いくつの異なるyamlファイルを管理したいですか？EAS Workflowsなら、**すべてを一箇所で**管理できます。"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "• Automate builds\\\n• Run e2e tests\\\n• Send previews\\\n• Submit to stores\\\n• GitHub triggers, lint checks, slack notifications...so much more",
+      "source_content_hash": "7fe0001fde0bd8085a670f8caf9095af91d0d839b3d0d38e6a69f140ef71b5db",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "• ビルドの自動化\\\n• e2eテストの実行\\\n• プレビューの送信\\\n• ストアへの提出\\\n• GitHubトリガー、lintチェック、Slack通知...その他多数"
+      }
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "With EAS Workflows you can **automate and sequence** all your builds/updates/submissions. Package up all the commands in a workflow and go drink a coffee. You deserve it.",
+      "source_content_hash": "c387299c96ecd3812877f6c1ae66498d4b5deaab81f8657f0f9afc744cd09b3b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "EAS Workflowsを使えば、すべてのビルド/更新/提出を**自動化して順序立てて**実行できます。ワークフローにコマンドをまとめて、コーヒーを飲みに行きましょう。あなたはそれに値します。"
+      }
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "[Start building and deploying faster for FREE today →](https://expo.dev/eas/workflows?utm_source=twir+newsletter\\&utm_medium=email\\&utm_campaign=twir-workflows\\&utm_id=TWIR)",
+      "source_content_hash": "9e46448e49f5c6cb3558ae877892b991f39d35458f0fe5eee3ec6f9b845c9075",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[今日から無料でより速くビルド＆デプロイを開始 →](https://expo.dev/eas/workflows?utm_source=twir+newsletter\\&utm_medium=email\\&utm_campaign=twir-workflows\\&utm_id=TWIR)"
+      }
+    },
+    {
+      "segment_id": "602e59c7",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "54268405",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "[![State of React 2024 - Survey Results](/emails/issues/221/state-of-react.png)](https://2024.stateofreact.com)",
+      "source_content_hash": "d7369a9ec00406c56035f067644c8aa113e7d44802deec6f81a8d53e4f452fb0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![State of React 2024 - 調査結果](/emails/issues/221/state-of-react.png)](https://2024.stateofreact.com)"
+      }
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "**[State of React 2024 - Survey Results](https://2024.stateofreact.com)**",
+      "source_content_hash": "18b59430449b3236e0a8c7024d0ff71f991830ae7fac2462350a201296a33733",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[State of React 2024 - 調査結果](https://2024.stateofreact.com)**"
+      }
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "The results of State of React 2024 are out. It is a gold mine of information and we can’t possibly talk about everything here but here are a few highlights:",
+      "source_content_hash": "9df7dfab0fb88413bee7e9b724235c49803d37049bcfb10d2e76a46af6e8a0be",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "State of React 2024の結果が公開されました。情報の宝庫であり、ここですべてを語ることはできませんが、いくつかのハイライトをご紹介します："
+      }
+    },
+    {
+      "segment_id": "b4ef1e56",
+      "source_content": "* Of the “new” React features, Server Components are the most popular with 40% of the \\~7000 respondents having “used it”, probably thanks to Next.js…\n* `forwardRef` is the most disliked React API, and is going away!\n* Have you heard about React’s Taint API? It looks like 80% of React devs have not, which is understandable since it’s experimental.\n* There’s not that much movement in the #1 spot: Next.js, TanStack Query, Axios, Jest, and Zod are still the most frequently used.\n* A few rising stars: Zustand and Vitest got more users, TanStack Start is #1 in interest even though almost no one has used it yet.",
+      "source_content_hash": "121a9573028b9ea5bc5a3d53756ee3520d0878f96282e1a37acb2c23b975e2f2",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 「新しい」React機能の中では、Server Componentsが最も人気で、約7000人の回答者の40%が「使用したことがある」と回答（Next.jsのおかげかもしれません…）\n* `forwardRef`は最も嫌われているReact APIで、廃止予定です！\n* ReactのTaint APIについて聞いたことがありますか？80%のReact開発者は知らないようで、これは実験的な機能なので理解できます。\n* 1位の位置に大きな変動はありません：Next.js、TanStack Query、Axios、Jest、Zodが依然として最も頻繁に使用されています。\n* いくつかの新星：ZustandとVitestのユーザーが増加、TanStack Startはまだほとんど使われていませんが、関心度では1位です。"
+      }
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "Seb wrote the [survey conclusion](https://2024.stateofreact.com/en-US/conclusion/) — be sure to check it out! 🙂",
+      "source_content_hash": "6f7e6f9e2642bcdc5e560db580212d989db160435b68e15d6f13b49cbca62097",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Sebが[調査の結論](https://2024.stateofreact.com/en-US/conclusion/)を書いています - 必ずチェックしてください！🙂"
+      }
+    },
+    {
+      "segment_id": "b760ab3f",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "24c174ca",
+      "source_content": "* 💸 [Meet Harmony - An open source library for composing consistent and highly performant platforms from independent business features](https://bit.dev/blog/meet-harmony-a-practical-solution-for-composability?utm_source=This-Week-In-React\\&utm_id=7\\&utm_medium=newsletter)\n* 👀 [@rsbuild/plugin-react-router](https://github.com/rspack-contrib/rsbuild-plugin-react-router): Not yet on npm, but may soon be a faster alternative to Vite for bundling React Router apps in framework mode.\n* 📜 [How React Router works under the hood](https://tigerabrodi.blog/how-react-router-works-under-the-hood): From initial request to hydration, client-side navigation and actions.\n* 📜 [Why I rebuilt ProseMirror’s renderer in React](https://smoores.dev/post/why_i_rebuilt_prosemirror_view/): Prosemirror (a text editor) manages its own state and virtual DOM, and it did not play well with React. This is a deep dive on the issues it caused, and the solution: using React directly instead of trying to “bridge the gap”.\n* 📜 [Promises across the void: Streaming data with RSC](https://edspencer.net/2024/7/12/promises-across-the-void-react-server-components): React can send not-yet resolved promises from the server and finish awaiting them on the client. This article from a few months ago explains how this works.\n* 📜 [What Do We Do with You, Old React?](https://www.manuelsanchezdev.com/blog/what-to-do-with-old-react-upgrading-to-modern-react): Tips on upgrading codebases that still use class components and “old” Redux.\n* 📜 [We Replaced Our React Frontend with Go and WebAssembly](https://dagger.io/blog/replaced-react-with-go): They explain why this was the right choice for them, but probably don’t do this at home.\n* 📜 [Handling Relationships in React Admin](https://marmelab.com/blog/2025/02/06/handling-relationships-in-react-admin.html): The included components (`<ReferenceField>` and its friends) usually do what you need, but this also explains how to build custom ones.\n* 📜 [Create React App Officially Deprecated Amid React 19 Compatibility Issues](https://socket.dev/blog/create-react-app-officially-deprecated?utm_medium=feed): If you’ve not heard about this, catch up with this recap.\n* 📜 [How to start a React Project in 2025](https://www.robinwieruch.de/react-starter/)\n* 📜 [Master Redux Action Best Practices & Make Debugging Easy](https://janhesters.com/blog/master-redux-action-best-practices-and-make-debugging-easy)\n* 📦 [React Hook Form resolvers 4.0](https://github.com/react-hook-form/resolvers/releases/tag/v4.0.0): Adds a [standard-schema](https://github.com/standard-schema/standard-schema) resolver, so you can switch easily between validation libraries that conform to the standard-schema specification.\n* 📦 [Base UI v1.0.0 alpha 6](https://github.com/mui/base-ui/releases/tag/v1.0.0-alpha.6): This eagerly awaited collection of unstyled components is making its way through the alpha phase\n* 🎥 [Jack Herrington - Proof That React With RSCs is 2X Faster!](https://www.youtube.com/watch?v=AJvbnNFHx0A)\n* 🎙️ [Rocket Ship 60 - Module Federation, RSCs & Universal Apps with Jack Herrington](https://share.transistor.fm/s/144c4947)",
+      "source_content_hash": "8f5c2b11f7ff2557a50ebd41e38008c73dff5a3bf55e4556cccd3794eb5a046f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Meet Harmony - 独立したビジネス機能から一貫性と高性能なプラットフォームを構築するためのオープンソースライブラリ](https://bit.dev/blog/meet-harmony-a-practical-solution-for-composability?utm_source=This-Week-In-React\\&utm_id=7\\&utm_medium=newsletter)\n* 👀 [@rsbuild/plugin-react-router](https://github.com/rspack-contrib/rsbuild-plugin-react-router): npmにはまだ公開されていませんが、フレームワークモードでReact Routerアプリをバンドルする際にViteよりも高速な代替手段となる可能性があります。\n* 📜 [React Routerの内部動作](https://tigerabrodi.blog/how-react-router-works-under-the-hood): 初期リクエストからハイドレーション、クライアントサイドナビゲーションとアクションまで。\n* 📜 [ProseMirrorのレンダラーをReactで再構築した理由](https://smoores.dev/post/why_i_rebuilt_prosemirror_view/): ProseMirror（テキストエディタ）は独自の状態管理と仮想DOMを持っており、Reactとうまく連携しませんでした。この記事ではその問題点と解決策（「ギャップを埋める」のではなくReactを直接使用する方法）について深く掘り下げています。\n* 📜 [voidを越えるPromise: RSCを使ったストリーミングデータ](https://edspencer.net/2024/7/12/promises-across-the-void-react-server-components): Reactはサーバーから未解決のPromiseを送信し、クライアント側で解決を完了させることができます。数ヶ月前のこの記事ではその仕組みを説明しています。\n* 📜 [古いReactとどう向き合うか？](https://www.manuelsanchezdev.com/blog/what-to-do-with-old-react-upgrading-to-modern-react): クラスコンポーネントや「古い」Reduxを使用しているコードベースをアップグレードするためのヒント。\n* 📜 [ReactフロントエンドをGoとWebAssemblyに置き換えた](https://dagger.io/blog/replaced-react-with-go): 彼らにとっては正しい選択だった理由を説明していますが、自宅ではおそらく真似しないでください。\n* 📜 [React Adminでのリレーションシップの扱い方](https://marmelab.com/blog/2025/02/06/handling-relationships-in-react-admin.html): 組み込みコンポーネント（`<ReferenceField>`など）は通常必要なことを行いますが、カスタムコンポーネントを構築する方法も説明しています。\n* 📜 [Create React Appが公式に非推奨に - React 19の互換性問題により](https://socket.dev/blog/create-react-app-officially-deprecated?utm_medium=feed): このニュースをまだ知らない方は、こちらのまとめでキャッチアップしてください。\n* 📜 [2025年にReactプロジェクトを始める方法](https://www.robinwieruch.de/react-starter/)\n* 📜 [Reduxアクションのベストプラクティスをマスターし、デバッグを容易にする](https://janhesters.com/blog/master-redux-action-best-practices-and-make-debugging-easy)\n* 📦 [React Hook Form resolvers 4.0](https://github.com/react-hook-form/resolvers/releases/tag/v4.0.0): [standard-schema](https://github.com/standard-schema/standard-schema)リゾルバを追加し、standard-schema仕様に準拠する検証ライブラリ間で簡単に切り替えられるようになりました。\n* 📦 [Base UI v1.0.0 alpha 6](https://github.com/mui/base-ui/releases/tag/v1.0.0-alpha.6): 待望の非スタイルコンポーネントコレクションがアルファ段階を進んでいます。\n* 🎥 [Jack Herrington - RSCを使ったReactが2倍速いという証明！](https://www.youtube.com/watch?v=AJvbnNFHx0A)\n* 🎙️ [Rocket Ship 60 - Jack HerringtonとのModule Federation、RSC＆ユニバーサルアプリ](https://share.transistor.fm/s/144c4947)"
+      }
+    },
+    {
+      "segment_id": "95729a46",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_95729a46"
+      }
+    },
+    {
+      "segment_id": "0170c674",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "8a9b6c26",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "a1fa5396",
+      "source_content": "[![Optimizing Vercel Costs: Real-World Strategies](/emails/issues/221/pagepro.jpg)](https://pagepro.co/nextjs-hosting-cost-optimization?utm_source=newsletter\\&utm_medium=email\\&utm_campaign=this-week-in-react-expert-session\\&utm_id=this-week-in-react)",
+      "source_content_hash": "b10be68a0b8cbd4a6356847624446ff4808db301901fae9ba2d5966e3e9818b5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Vercelコスト最適化：実戦的戦略](/emails/issues/221/pagepro.jpg)](https://pagepro.co/nextjs-hosting-cost-optimization?utm_source=newsletter\\&utm_medium=email\\&utm_campaign=this-week-in-react-expert-session\\&utm_id=this-week-in-react)"
+      }
+    },
+    {
+      "segment_id": "ec619944",
+      "source_content": "**[Optimizing Vercel Costs: Real-World Strategies](https://pagepro.co/nextjs-hosting-cost-optimization?utm_source=newsletter\\&utm_medium=email\\&utm_campaign=this-week-in-react-expert-session\\&utm_id=this-week-in-react)**",
+      "source_content_hash": "a25682100b6b543062ce4b771e1720f0feca4f87dee11405f0f89f590b8ba680",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Vercelコスト最適化：実践的戦略](https://pagepro.co/nextjs-hosting-cost-optimization?utm_source=newsletter\\&utm_medium=email\\&utm_campaign=this-week-in-react-expert-session\\&utm_id=this-week-in-react)**"
+      }
+    },
+    {
+      "segment_id": "2547a6bb",
+      "source_content": "Deploying Next.js apps on Vercel is easy, but optimizing hosting costs? That’s a different story.",
+      "source_content_hash": "fa50cb557dfd5631d2e9afcdf505618073057c6ca54a0b8dedb5318c70edcfb7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Next.jsアプリをVercelにデプロイするのは簡単ですが、ホスティングコストの最適化は別の話です。"
+      }
+    },
+    {
+      "segment_id": "0750bfa1",
+      "source_content": "Join Chris Lojniewski and Jakub Dakowicz of Pagepro on **February 20th, 11 AM EST** for a deep analysis of Vercel cost optimization strategies. Learn how to identify what drives your costs and reduce them with **code-level optimizations** like adjusting prefetching to avoid excessive function calls, choosing proper rendering methods, and trimming unnecessary data transfers.",
+      "source_content_hash": "b0386400d4dd86bcf0d31dd710138f3da9baa305bcae250bb61f01848deb8284",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "PageproのChris LojniewskiとJakub Dakowiczによる**2月20日午前11時（EST）**のディープ分析セッションに参加しましょう。Vercelのコスト最適化戦略について学び、**コードレベルの最適化**（過剰な関数呼び出しを避けるためのプリフェッチ調整、適切なレンダリング方法の選択、不要なデータ転送の削除など）を通じてコスト削減する方法を理解しましょう。"
+      }
+    },
+    {
+      "segment_id": "86348f98",
+      "source_content": "They’ll also show you how to **minimize reliance on Vercel’s premium features** with feature externalization - offloading analytics, image optimization, and password protection. Plus, they’ll break down when enterprise pricing is worth considering and when you’re better off with alternatives. **Stop overpaying, and [register today](https://pagepro.co/nextjs-hosting-cost-optimization?utm_source=newsletter\\&utm_medium=email\\&utm_campaign=this-week-in-react-expert-session\\&utm_id=this-week-in-react)**.",
+      "source_content_hash": "8d3874083cf90233cf442d25caae188b2ee1e3e3abc1054b10f0ff4091a3a39f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "さらに、**Vercelのプレミアム機能への依存を最小化**する方法（分析、画像最適化、パスワード保護を外部サービスにオフロードする「機能の外部化」）や、エンタープライズプランが価値があるケースと代替手段が適しているケースの見極め方についても解説します。**無駄な出費を止め、[今すぐ登録](https://pagepro.co/nextjs-hosting-cost-optimization?utm_source=newsletter\\&utm_medium=email\\&utm_campaign=this-week-in-react-expert-session\\&utm_id=this-week-in-react)**してください。"
+      }
+    },
+    {
+      "segment_id": "f6b04a59",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "a311e967",
+      "source_content": "[![Bolt x Expo](/emails/issues/221/bolt-expo.jpg)](https://expo.dev/blog/bolt-expo-integration-announcement)",
+      "source_content_hash": "d6da5fa2c6a290acda37cbcaccc962f4a4ad660a724604c915e7d66d2c908434",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Bolt x Expo](/emails/issues/221/bolt-expo.jpg)](https://expo.dev/blog/bolt-expo-integration-announcement)"
+      }
+    },
+    {
+      "segment_id": "eb51d107",
+      "source_content": "**Building apps with AI**",
+      "source_content_hash": "017cad7c5c9f7dc43914ed085a4e463377ac81a3ba93182b635b55877e75fe06",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**AIを使ったアプリ開発**"
+      }
+    },
+    {
+      "segment_id": "1862c5fe",
+      "source_content": "We don't talk too much about LLMs in this newsletter (we guess you already hear about it more than enough 😅) but with all the announcements this week we thought it was a good time to give you an update.",
+      "source_content_hash": "c6f4a5d6330442502bc7e6d3c70cdf35b9b5440ee75d96e6701d899946a86330",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このニュースレターではLLMについてあまり取り上げませんが（すでに十分な情報があるでしょう😅）、今週の発表を踏まえて最新動向をお伝えします。"
+      }
+    },
+    {
+      "segment_id": "6ca4479f",
+      "source_content": "The big news: **[Bolt and Expo have partnered](https://expo.dev/blog/bolt-expo-integration-announcement)** to add (React-)Native mobile apps support to Bolt. Right now you can preview your AI-generated apps on the web, but you need to download the code to go further. They plan to add an integration with EAS to deploy to production in the future.",
+      "source_content_hash": "cc2e24136bd57e6c8cbb8528fb3d6dc40ca7a895b0345b1c924627448f5fc46b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "大きなニュース：**[BoltとExpoが提携](https://expo.dev/blog/bolt-expo-integration-announcement)**し、AI生成アプリのReact Nativeモバイルアプリ対応を追加しました。現在はWeb上でプレビュー可能ですが、さらに進めるにはコードをダウンロードする必要があります。将来的にはEASとの連携で本番環境へのデプロイも可能にする予定です。"
+      }
+    },
+    {
+      "segment_id": "a2c0166e",
+      "source_content": "Some competitors also had things to announce:",
+      "source_content_hash": "a2858b839e26001c406451f361fdc298f8a0d4b2cf9a1c6fc3db0a37776fcac6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "競合他社の動向もご紹介："
+      }
+    },
+    {
+      "segment_id": "cd1d0fe2",
+      "source_content": "* There's now an official Expo template in Replit, and [a demo video you can watch](https://www.youtube.com/watch?v=mTm_dCF53qk). Replit has an app, so you can build apps from an app.\n* A startup called a0 [launched a v0-like service](https://a0.dev) to generate RN apps.",
+      "source_content_hash": "859668ca85c57cfe621ef1471922e36d1037fcd6f8af18cf951561332642d959",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* Replitに公式Expoテンプレートが追加され、[デモ動画も公開されています](https://www.youtube.com/watch?v=mTm_dCF53qk)。Replitにはアプリもあるため、アプリからアプリを構築できます。\n* スタートアップのa0が[v0に似たReact Nativeアプリ生成サービス](https://a0.dev)をローンチしました。"
+      }
+    },
+    {
+      "segment_id": "04837130",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "38417f80",
+      "source_content": "* 💸 [Codemagic - a great App Center alternative for React Native devs! 8x faster builds, CodePush, automated distribution. 1-month free trial!](https://codemagic.io/migration-from-app-center/?utm_source=newsletter\\&utm_medium=email\\&utm_campaign=app_center_this_week_react)\n* 🐦 [This is not React Native](https://x.com/mrousavy/status/1889358737930068051): Mark is working on a new UI library based based React, JSI and NitroModules but **without** React Native. It uses SwiftUI and Compose under the hood.\n* 🐦 [DeepSeek R1 running locally in a React App:](https://x.com/SzymonRybczak/status/1889412928694002004) The repo is open-sourced [here](https://github.com/callstackincubator/ai). Please note that it is highly experimental and may add up to 1GB to your app.\n* 👀 [Expo Universal React Server Components + AI chat app demo](https://github.com/EvanBacon/expo-ai): Evan Bacon just open-sourced the app he demoed on various conf talks.\n* 💬 [React Strict DOM - Production readiness and adoption](https://github.com/facebook/react-strict-dom/discussions/270): Nicolas Gallagher shared an interesting update, mentioning RSD is used in production by Meta.\n* 🗓 [React Universe Conf](https://www.reactuniverseconf.com/?utm_campaign=RUC2025\\&utm_source=TWIRpartnership\\&utm_content=savethedate) - 🇵🇱 Wrocław - 2-4 September. Call for Papers is now open! Get a 10% discount with code \"TWIR\".\n* 📜 [Bringing WebAssembly to React Native With Polygen](https://www.callstack.com/blog/bringing-webassembly-to-react-native-with-polygen): Polygen allows WebAssembly to run in React Native with near-native performance by compiling modules to native code, overcoming iOS JIT restrictions. This is a novel approach compared to existing solutions like react-native-webassembly, which relied on Wasm interpretation.\n* 📜 [Increase your Expo-nent power with Ignite Generators](https://expo.dev/blog/increase-your-expo-power-with-ignite-generators): Ignite is a well known React Native app boilerplate, but it can be leveraged as a generator in any React Native project, including Expo apps, to automate the creation of screens, components, and state slices.\n* 📜 [How does React Native's New Architecture affect performance?](https://dev.to/anishamalde/how-does-react-natives-new-architecture-affect-performance-1dkf): Anisha conducted a benchmark revealing performance improvements of up to 1000ms when enabling the New Architecture for a React Native TV app, where performance is crucial.\n* 📜 [Bridgeless Native Development](https://www.callstack.com/blog/bridgeless-native-development): Short summary of the methods used over the years to bridge native code (NativeModule, TurboModule, NitroModule).\n* 📜 [How to Profile Native Code in React Native Using Tracy](https://www.callstack.com/blog/how-to-profile-native-code-react-native-with-tracy)\n* 📜 [How to build a live activity with Expo, SwiftUI and React Native](https://christopher.engineering/en/blog/live-activity-with-react-native/)\n* 📦 [Radon IDE v1.3](https://github.com/software-mansion/radon-ide/releases/tag/v1.3.0): built-in Network Inspector, Redux DevTools support, debugger improvements.\n* 📦 [React Native Gesture Handler v2.23](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.23.0): The old API will be deprecated.\n* 📦 [React Native macOS v0.77](https://github.com/microsoft/react-native-macos/releases/tag/react-native-macos%400.77.0)\n* 📦 [React Native Reanimated Carousel v4.0](https://rn-carousel.dev/migration-v4): Container Styling, Minimum Scroll Distance, Fixed Direction Scrolling, Progress Change Handling, Enhanced Pagination Components, Improved Web Support.\n* 🎙️ [RNR 321 - Expo DOM with Evan Bacon](https://www.reactnativeradio.com/episodes/rnr-321-expo-dom-with-evan-bacon)",
+      "source_content_hash": "fc9816a9832c03b448b58463b0fb5f5e4e5e8c1ba1bef272c14db037770d80b6",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Codemagic - React Native開発者向けの素晴らしいApp Center代替サービス！ビルド速度8倍、CodePush、自動配布。1ヶ月無料トライアル！](https://codemagic.io/migration-from-app-center/?utm_source=newsletter\\&utm_medium=email\\&utm_campaign=app_center_this_week_react)\n* 🐦 [これはReact Nativeではありません](https://x.com/mrousavy/status/1889358737930068051): MarkはReact、JSI、NitroModulesを基にした新しいUIライブラリを開発中ですが、**React Nativeは使用していません**。内部ではSwiftUIとComposeを利用しています。\n* 🐦 [Reactアプリでローカル実行されるDeepSeek R1:](https://x.com/SzymonRybczak/status/1889412928694002004) リポジトリは[こちら](https://github.com/callstackincubator/ai)でオープンソース化されています。ただし、これは実験的なものであり、アプリサイズを最大1GB増加させる可能性があることに注意してください。\n* 👀 [Expo Universal React Server Components + AIチャットアプリのデモ](https://github.com/EvanBacon/expo-ai): Evan Baconがカンファレンスでデモしたアプリをオープンソース化しました。\n* 💬 [React Strict DOM - 本番環境での準備状況と採用事例](https://github.com/facebook/react-strict-dom/discussions/270): Nicolas Gallagherが興味深いアップデートを共有し、RSDがMetaで本番環境で使用されていることを明らかにしました。\n* 🗓 [React Universe Conf](https://www.reactuniverseconf.com/?utm_campaign=RUC2025\\&utm_source=TWIRpartnership\\&utm_content=savethedate) - 🇵🇱 ポーランド・ヴロツワフ - 9月2-4日開催。Call for Papers受付中！コード「TWIR」で10%割引。\n* 📜 [PolygenによるReact NativeへのWebAssembly導入](https://www.callstack.com/blog/bringing-webassembly-to-react-native-with-polygen): PolygenはWebAssemblyモジュールをネイティブコードにコンパイルすることで、iOSのJIT制限を克服し、React Nativeでネイティブに近い性能を実現します。これはreact-native-webassemblyのような既存のWasm解釈ベースのソリューションとは異なる新しいアプローチです。\n* 📜 [Ignite GeneratorsでExpoの力をさらに引き出す](https://expo.dev/blog/increase-your-expo-power-with-ignite-generators): Igniteは有名なReact Nativeアプリのボイラープレートですが、Expoアプリを含むあらゆるReact Nativeプロジェクトでジェネレーターとして活用でき、画面、コンポーネント、状態スライスの作成を自動化できます。\n* 📜 [React Nativeの新アーキテクチャがパフォーマンスに与える影響は？](https://dev.to/anishamalde/how-does-react-natives-new-architecture-affect-performance-1dkf): Anishaが実施したベンチマークでは、React Native TVアプリ（パフォーマンスが重要な分野）で新アーキテクチャを有効にすることで最大1000msの性能向上が確認されました。\n* 📜 [ブリッジレスネイティブ開発](https://www.callstack.com/blog/bridgeless-native-development): これまで使用されてきたネイティブコードブリッジ手法（NativeModule、TurboModule、NitroModule）の簡潔なまとめ。\n* 📜 [Tracyを使用したReact Nativeのネイティブコードプロファイリング方法](https://www.callstack.com/blog/how-to-profile-native-code-react-native-with-tracy)\n* 📜 [Expo、SwiftUI、React Nativeを使用したライブアクティビティの構築方法](https://christopher.engineering/en/blog/live-activity-with-react-native/)\n* 📦 [Radon IDE v1.3](https://github.com/software-mansion/radon-ide/releases/tag/v1.3.0): 組み込みネットワークインスペクター、Redux DevToolsサポート、デバッガー改善。\n* 📦 [React Native Gesture Handler v2.23](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.23.0): 旧APIは非推奨となります。\n* 📦 [React Native macOS v0.77](https://github.com/microsoft/react-native-macos/releases/tag/react-native-macos%400.77.0)\n* 📦 [React Native Reanimated Carousel v4.0](https://rn-carousel.dev/migration-v4): コンテナスタイリング、最小スクロール距離、固定方向スクロール、進捗変更処理、強化されたページネーションコンポーネント、改善されたWebサポート。\n* 🎙️ [RNR 321 - Evan BaconとのExpo DOMについて](https://www.reactnativeradio.com/episodes/rnr-321-expo-dom-with-evan-bacon)"
+      }
+    },
+    {
+      "segment_id": "566c958b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c35e5786",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "d8460b5b",
+      "source_content": "* 👀 [`require(esm)` has been backported to Node.js 20](https://github.com/nodejs/node/pull/56927)\n* 📜 [TypeScript: the `satisfies` operator](https://2ality.com/2025/02/satisfies-operator.html): Confirming object shape correctness without altering types, validating optional properties in objects, checking the structure of enum-like objects, ensuring proper object keys for APIs and more…\n* 📜 [There are a lot of ways to break up long tasks in JavaScript](https://macarthur.me/posts/long-tasks/)\n* 📜 [Style-observer: JS to observe CSS property changes, for reals](https://lea.verou.me/blog/2025/style-observer/)\n* 📜 [Optimizing Images for Web Performance](https://frontendmasters.com/blog/optimizing-images-for-web-performance/)\n* 📜 [CSS Custom Functions experiments in Chrome Canary](https://www.bram.us/2025/02/09/css-custom-functions-teaser/)\n* 📦 [Prettier 3.5 - TS config file, `objectWrap` option, `experimentalOperatorPosition` option](https://prettier.io/blog/2025/02/09/3.5.0)\n* 📦 [esbuild 0.25 - Various fixes and some backwards-incompatible changes](https://github.com/evanw/esbuild/releases/tag/v0.25.0)",
+      "source_content_hash": "b22e07e2e5fb773a217c8fd7e3af3e2d71d14251c42a2f6ad10faa72e73d88d0",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 👀 [`require(esm)`がNode.js 20にバックポートされました](https://github.com/nodejs/node/pull/56927)\n* 📜 [TypeScript: `satisfies`演算子](https://2ality.com/2025/02/satisfies-operator.html): 型を変更せずにオブジェクト形状の正確性を確認、オブジェクト内のオプショナルプロパティの検証、列挙型ライクなオブジェクトの構造チェック、API向けの適切なオブジェクトキーの保証など…\n* 📜 [JavaScriptで長いタスクを分割する方法はたくさんあります](https://macarthur.me/posts/long-tasks/)\n* 📜 [Style-observer: CSSプロパティの変更を実際に監視するJS](https://lea.verou.me/blog/2025/style-observer/)\n* 📜 [Webパフォーマンスのための画像最適化](https://frontendmasters.com/blog/optimizing-images-for-web-performance/)\n* 📜 [Chrome CanaryでのCSSカスタム関数実験](https://www.bram.us/2025/02/09/css-custom-functions-teaser/)\n* 📦 [Prettier 3.5 - TS設定ファイル、`objectWrap`オプション、`experimentalOperatorPosition`オプション](https://prettier.io/blog/2025/02/09/3.5.0)\n* 📦 [esbuild 0.25 - 様々な修正と一部の後方互換性のない変更](https://github.com/evanw/esbuild/releases/tag/v0.25.0)"
+      }
+    },
+    {
+      "segment_id": "8144f6e8",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "0d5321b7",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "cfeb9eb1",
+      "source_content": "[![React npm screenshot with downdloads at 0](/emails/issues/221/meme.jpg)](https://x.com/andrii_sherman/status/1887492134426558849)",
+      "source_content_hash": "7c101c40f6068348912f88584ca5cfb05583a0cbbbb11ee0d11dbdab8d2d33df",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![ダウンロード数が0のReact npmスクリーンショット](/emails/issues/221/meme.jpg)](https://x.com/andrii_sherman/status/1887492134426558849)"
+      }
+    },
+    {
+      "segment_id": "f7e6e884",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "またね！ 👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/221/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:38.694551+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "df67960d143f58f2359701f97b896d4ca0a0b214fb2822f89da886f371b61736"
+  }
+}

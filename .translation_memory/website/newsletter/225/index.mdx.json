@@ -1,0 +1,462 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/225/index.mdx",
+  "source_file_content_hash": "b71bec387068cd68be11bd80c352de081577b01bdd4ab67e52851e82db10f2fd",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /225\ntitle: \"This Week In React #225: React Router, React Aria, Ark, moveBefore(), Ark | JSC, Lynx, Metro, Reanimated, AI, Radon, Galeria, Zeego, Legal | TypeScript, Deno, Web Almanac\"\nauthors: [slorber]\ndate: 03-12-2025\n---",
+      "source_content_hash": "903de9a06a7514f6b87c7f10a396274a4089512b018e6813bde9aab12d54c673",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week we have:",
+      "source_content_hash": "a6352a9b027570377cc0a88e9522887265e6d3f6c6f031ce612f64761e19d181",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週の注目コンテンツ："
+      }
+    },
+    {
+      "segment_id": "143e51c1",
+      "source_content": "* **React**: A good variety of articles, and great releases from React Router and React Aria.\n* **React Native**: Lots of cool things happening, and the community reacting to Lynx.\n* **Other**: TypeScript announcing an exciting port to Go.",
+      "source_content_hash": "171ebbbda816ac18b0d20cb3eb5fad113983c929ee81c05b5b341103eecd7fee",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* **React**: 多様な記事やReact Router、React Ariaの素晴らしいリリースが目白押し\n* **React Native**: Lynxへの反響を含め、活発な動きがあります\n* **その他**: Goへの移植が発表されたTypeScriptなど"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Check our partner conf 🗓 [Future Frontend](https://futurefrontend.com/?utm_source=thisweekinreact) - 🇫🇮 Espoo - 26-28 May. A single track conference in Finland to give you a glimpse of the future!",
+      "source_content_hash": "b8bc96880d8c64666f42d050102a2e1c8b90947ba7da56b7b05fb3eec38e67c7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "パートナーカンファレンス🗓 [Future Frontend](https://futurefrontend.com/?utm_source=thisweekinreact) - 🇫🇮 エスポー - 5月26-28日。フィンランドで開催されるシングルトラックカンファレンスで未来のフロントエンドを体感しましょう！"
+      }
+    },
+    {
+      "segment_id": "45c63027",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_45c63027"
+      }
+    },
+    {
+      "segment_id": "92f4ea84",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_92f4ea84"
+      }
+    },
+    {
+      "segment_id": "5dfba1c3",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_5dfba1c3"
+      }
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "[![Cut React Code Review Time & Bugs in Half](/emails/issues/225/coderabbit.jpg)](https://www.coderabbit.ai?utm_source=newsletter\\&utm_medium=email\\&utm_campaign=this_week_in_react_mar25)",
+      "source_content_hash": "0bdc055390172e2ff0a14cb652c83ac0b934d39c01c183fae40d14bb077696f2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Reactコードレビュー時間とバグを半減](/emails/issues/225/coderabbit.jpg)](https://www.coderabbit.ai?utm_source=newsletter\\&utm_medium=email\\&utm_campaign=this_week_in_react_mar25)"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "**[Cut React Code Review Time & Bugs in Half](https://www.coderabbit.ai?utm_source=newsletter\\&utm_medium=email\\&utm_campaign=this_week_in_react_mar25)**",
+      "source_content_hash": "fc328e1cc1edb755f884ac580ddce968765764931fcc7e02383bcfaf4cc64425",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Reactコードレビュー時間とバグを半減](https://www.coderabbit.ai?utm_source=newsletter\\&utm_medium=email\\&utm_campaign=this_week_in_react_mar25)**"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "Code reviews are critical but time-consuming. CodeRabbit acts as your AI co-pilot, providing instant Code review comments and potential impacts of every pull request.",
+      "source_content_hash": "d4dc5c87a27dd428494b18f89be3724778a83dbe9473b5d56ddd68f24b02e365",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "コードレビューは重要ですが時間がかかります。CodeRabbitはAIコパイロットとして、プルリクエストごとに即座にレビューコメントと潜在的な影響を提供します。"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "Beyond just flagging issues, CodeRabbit provides one-click fix suggestions and lets you define custom code quality rules using AST Grep patterns, catching subtle issues that traditional static analysis tools might miss.",
+      "source_content_hash": "52c2493f49ddd9a07ffdd56b9b8d9489dd7702c05c5fe106c8c1ac89c80cb6d7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "問題指摘だけでなく、ワンクリック修正提案やAST Grepパターンを使ったカスタムコード品質ルール定義により、従来の静的解析ツールでは見逃しがちな微妙な問題も捕捉します。"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "CodeRabbit has so far reviewed more than 5 million PRs, installed on 1 million repositories, and used by 50 thousand Open-source projects. CodeRabbit is free for all open-source repo's. [Get started today!](https://www.coderabbit.ai?utm_source=newsletter\\&utm_medium=email\\&utm_campaign=this_week_in_react_mar25)",
+      "source_content_hash": "4fe29cbcabeb0adf1d6c189a1dfc0b67bdfbc979e02b9f239f175aac5cd83035",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "CodeRabbitはこれまで500万以上のPRをレビューし、100万リポジトリに導入され、5万のオープンソースプロジェクトで利用されています。オープンソースリポジトリは無料で利用可能。[今すぐ始めましょう！](https://www.coderabbit.ai?utm_source=newsletter\\&utm_medium=email\\&utm_campaign=this_week_in_react_mar25)"
+      }
+    },
+    {
+      "segment_id": "91afe33f",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "782c902a",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "[![React Router 7.3 - Route Middleware](/emails/issues/225/rr.jpg)](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v730)",
+      "source_content_hash": "1f1a6c7c264cdd2c70d1d0fd7e7358bee0933a5b731a967576546bb25faecbbe",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![React Router 7.3 - ルートミドルウェア](/emails/issues/225/rr.jpg)](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v730)"
+      }
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "**[React Router 7.3 - Route Middleware](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v730)**",
+      "source_content_hash": "3407cb4c64edcc8f29bf64bbd93117cf2addc503c14f065a08d993f4962970fa",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[React Router 7.3 - ルートミドルウェア](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v730)**"
+      }
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "This React Router release introduces a major new middleware feature. It’s not production-ready yet but you can turn it on with the `future.unstable_middleware` future flag. You can use it in framework or library mode. There’s a distinction between client and server middleware. You can use it to implement logging, authentication, and other cross-cutting concerns.",
+      "source_content_hash": "62901f9819c047263a03ee0d56cd7acb39be213a1a878876a5dbbb682e567663",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このReact Routerリリースでは主要な新機能としてミドルウェアが導入されました。まだ本番環境対応ではありませんが、`future.unstable_middleware`フラグで有効化可能です。フレームワーク/ライブラリ両モードで利用でき、クライアントとサーバーミドルウェアが区別されています。ロギング、認証など横断的関心事の実装に使用できます。"
+      }
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "Additional related community resources:",
+      "source_content_hash": "b652b3b5a32bf7ee1959f29b6e7feed45aadc7b45033a6c4c098258a5ce2ee0b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "関連コミュニティリソース："
+      }
+    },
+    {
+      "segment_id": "40251870",
+      "source_content": "* 📜 [Use middleware in React Router](https://sergiodxa.com/tutorials/use-middleware-in-react-router)\n* 📜 [Test Middleware in React Router](https://sergiodxa.com/tutorials/test-middleware-in-react-router)\n* 📜 [How to Create a Per-Request Singleton with React Router Middleware](https://sergiodxa.com/tutorials/create-a-per-request-singleton-with-react-router-middleware)\n* 🎥 [Alem Tuzlak - React Router middleware is here!](https://www.youtube.com/watch?v=H9WmtBchWtQ)",
+      "source_content_hash": "93e716c2ad2319cc6cf9cdda5e16307a9ea818e56c3a897ea8c69ca0b1eb3182",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📜 [React Routerでミドルウェアを使用する](https://sergiodxa.com/tutorials/use-middleware-in-react-router)\n* 📜 [React Routerミドルウェアのテスト](https://sergiodxa.com/tutorials/test-middleware-in-react-router)\n* 📜 [React Routerミドルウェアでリクエストごとのシングルトンを作成する方法](https://sergiodxa.com/tutorials/create-a-per-request-singleton-with-react-router-middleware)\n* 🎥 [Alem Tuzlak - React Routerミドルウェアが登場！](https://www.youtube.com/watch?v=H9WmtBchWtQ)"
+      }
+    },
+    {
+      "segment_id": "51029da6",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "36ab8340",
+      "source_content": "* 💸 [Product for Engineers - WTF is activation and why should engineers care?](https://dub.link/twir-mar12)\n* 👀 [React `moveBefore()` + `<ViewTransition>` demo](https://bsky.app/profile/did\\:plc\\:hxmev3uady7j4litwnr5fzbg/post/3lk6phwfik226): This exciting browser feature permits to move/reorder DOM nodes while preserving their state (useful for video players, iframes…). It has been recently added to the DOM Living Standard, is supported in Chrome 133, and has just been enabled in the React DOM reconciler (experimental release only for now). I made a demo to see it in action combined with the upcoming ViewTransition component.\n* 🗓️ [dotJS 2025](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - 03 April - 3 weeks left before dotJS! Chat 1:1 with top contributors who are rarely in Europe – Ryan Dahl, Wes Bos and more. Secure your spot now and get 15% off tickets with code \"TWIR”.\n* 🗓 [StrapiConf](https://conf.strapi.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - 13 May. Don't miss our keynote speaker reveal : Sébastien Chopin, Matt Kane, Haris Ali Khan ! Get a 10% discount with code \"TWIR\".\n* 📜 [React Router - Split Route Modules](https://remix.run/blog/split-route-modules): Explains how a new future flag enables React Router 7.2 to split a route module into multiple parts to avoid network waterfalls.\n* 📜 [Beyond React.memo: Smarter Ways to Optimize Performance](https://cekrem.github.io/posts/beyond-react-memo-smarter-performance-optimization/): Before reaching for memoization, try to restructure your app and embrace composition.\n* 📜 [Server Actions with Toast Feedback (useActionState)](https://www.robinwieruch.de/react-server-actions-toast-useactionstate/): Exploring multiple ways to display a toast notification after a Server Action. I prefer this version, not relying on `useEffect`.\n* 📜 [React Router error reporting from scratch](https://programmingarehard.com/2025/03/11/react-router-error-reporting.html/): A pretty cool article showing how to send React Router loader errors to an email address with a great DX, reading source maps and displaying original source code around the error for each stack frame. Lessons are applicable in other JS contexts.\n* 📜 [How The New York Times systematically migrated from Enzyme into React Testing Library](https://open.nytimes.com/how-the-new-york-times-systematically-migrated-from-enzyme-into-react-testing-library-b3ea538d001c): Using an incremental migration strategy, starting with the simplest tests so that contributors have templates to get inspired from.\n* 📜 [Rails views, web components, React. Why make a choice?](https://www.aha.io/engineering/articles/rails-views-web-components-react): Each technology has its sweet spot. They use React only for rich, stateful interactions.\n* 📜 [How much traffic can a pre-rendered Next.js site really handle?](https://martijnhols.nl/blog/how-much-traffic-can-a-pre-rendered-nextjs-site-handle): Author load testing his self-hosted Next.js blog with pre-rendering and SSR to see how many requests per second it can handle.\n* 💸 [VS Code extension: Visualize how and where components (and their props) are used](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-mar-2025)\n* 📦 [React Aria - March 5, 2025 Release - Toast, Tree, Virtualizer, Tailwind 4, improved Autocomplete, Command Palette, DatePicker RTL, fix `usePress`, and more](https://react-spectrum.adobe.com/releases/2025-03-05.html)\n* 📦 [Ark UI 5.0 - Cross-framework headless UI library - Now faster and smaller](https://ark-ui.com/react/docs/overview/changelog#:~\\:text=.-,%5B5.0.0%5D%20%2D%202025%2D03%2D06)\n* 🎥 [Jack Herrington - React/Solid-JS Module Federation on TanStack!](https://www.youtube.com/watch?v=e8yY9ZgPozw)\n* 🎙️ [Front-end Fire 84 - TanStack Form v1, ByteDance Debuts Lynx, & VS Code AI Levels Up](https://front-end-fire.com/episodes/84/)",
+      "source_content_hash": "d15f7ad31f46fa6a4bee85f058dacc3754d9430802c096f871a4207da3494523",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [エンジニア向けプロダクト - アクティベーションとは何か、なぜエンジニアは気にするべきか？](https://dub.link/twir-mar12)\n* 👀 [React `moveBefore()` + `<ViewTransition>` デモ](https://bsky.app/profile/did\\:plc\\:hxmev3uady7j4litwnr5fzbg/post/3lk6phwfik226): この画期的なブラウザ機能により、DOMノードを状態を保持したまま移動/並べ替え可能（動画プレイヤーやiframeに有用）。最近DOM Living Standardに追加され、Chrome 133でサポート開始。React DOMレコンサイラでも実験的リリースとして有効化されました。ViewTransitionコンポーネントとの連動デモを公開。\n* 🗓️ [dotJS 2025](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 パリ - 4月3日 - 開催まであと3週間！欧州では稀なトップコントリビューター（Ryan Dahl、Wes Bosら）と1対1で交流可能。コード「TWIR」でチケット15%OFF。\n* 🗓 [StrapiConf](https://conf.strapi.io/?utm_source=thisweekinreact) - 🇫🇷 パリ - 5月13日。基調講演者発表：Sébastien Chopin、Matt Kane、Haris Ali Khan！コード「TWIR」で10%割引。\n* 📜 [React Router - ルートモジュール分割](https://remix.run/blog/split-route-modules): React Router 7.2の新機能フラグでネットワークウォーターフォールを回避するルートモジュール分割を解説。\n* 📜 [React.memoを超えて：よりスマートなパフォーマンス最適化手法](https://cekrem.github.io/posts/beyond-react-memo-smarter-performance-optimization/): メモ化前にアプリ構造の見直しとコンポジション活用を推奨。\n* 📜 [Toastフィードバック付きServer Actions（useActionState）](https://www.robinwieruch.de/react-server-actions-toast-useactionstate/): Server Action後のToast表示方法を多角的に検証。`useEffect`依存しない実装がおすすめ。\n* 📜 [React Routerエラー報告をゼロから構築](https://programmingarehard.com/2025/03/11/react-router-error-reporting.html/): ソースマップを読み込みエラー周辺のオリジナルコードを表示するメール送信システムを実装。他のJS環境でも応用可能な知見。\n* 📜 [ニューヨーク・タイムズがEnzymeからReact Testing Libraryへ体系移行した方法](https://open.nytimes.com/how-the-new-york-times-systematically-migrated-from-enzyme-into-react-testing-library-b3ea538d001c): 単純なテストから段階的移行し、コントリビューター向けテンプレートを提供。\n* 📜 [Railsビュー、Webコンポーネント、React。なぜ選択が必要？](https://www.aha.io/engineering/articles/rails-views-web-components-react): 各技術に適した用途があり、状態管理が必要なリッチインタラクションにのみReactを採用。\n* 📜 [プリレンダリングNext.jsサイトの実際のトラフィック耐性](https://martijnhols.nl/blog/how-much-traffic-can-a-pre-rendered-nextjs-site-handle): 自己ホスト型Next.jsブログのプリレンダリング+SSRで秒間リクエスト処理能力を負荷テスト。\n* 💸 [VS Code拡張: コンポーネント（とそのprops）の使用箇所を可視化](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-mar-2025)\n* 📦 [React Aria - 2025年3月5日リリース - Toast、Tree、Virtualizer、Tailwind 4対応、Autocomplete改善、Command Palette、DatePicker RTL、`usePress`修正など](https://react-spectrum.adobe.com/releases/2025-03-05.html)\n* 📦 [Ark UI 5.0 - クロスフレームワークヘッドレスUIライブラリ - 更に高速・軽量化](https://ark-ui.com/react/docs/overview/changelog#:~\\:text=.-,%5B5.0.0%5D%20%2D%202025%2D03%2D06)\n* 🎥 [Jack Herrington - TanStackでのReact/Solid-JSモジュール連携！](https://www.youtube.com/watch?v=e8yY9ZgPozw)\n* 🎙️ [Front-end Fire 84 - TanStack Form v1、ByteDanceがLynx発表、VS Code AI進化](https://front-end-fire.com/episodes/84/)"
+      }
+    },
+    {
+      "segment_id": "68209f5c",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_68209f5c"
+      }
+    },
+    {
+      "segment_id": "fe5fa73a",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "98355e36",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "7736989b",
+      "source_content": "[![Rethink your React apps' UX with Reactile](/emails/issues/216/reactile.jpg)](https://www.reactile.net/?utm_source=ThisweekinReact)",
+      "source_content_hash": "804609ec6328a8526330cfc5adad935be6f942c9f6bea83ca6b8e73fae6136fe",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![ReactアプリのUXを再考するReactile](/emails/issues/216/reactile.jpg)](https://www.reactile.net/?utm_source=ThisweekinReact)"
+      }
+    },
+    {
+      "segment_id": "6270d577",
+      "source_content": "**[Rethink your React apps' UX with Reactile](https://www.reactile.net/?utm_source=ThisweekinReact)**",
+      "source_content_hash": "f7b9f2aa5aa41fe9981609c34e5443470e14f2d217842e63a917f26b83c5fe9c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[ReactアプリのUXを再考するReactile](https://www.reactile.net/?utm_source=ThisweekinReact)**"
+      }
+    },
+    {
+      "segment_id": "a1fa5396",
+      "source_content": "Reactile is an UI/UX turnkey framework which features an out-of-the-box, intuitive tiling display with workspaces. It encourages parallel workloads for large web solutions within a single browser tab. Implement your own view containers, widgets and logic using React and let Reactile handle the display for you.",
+      "source_content_hash": "df73b3ca217de2b962e5f9e6cd04001a923739eb32f5ef2c9f7e34d980f99a23",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Reactileは、直感的なタイル表示とワークスペースを備えたUI/UXのターンキーフレームワークです。単一のブラウザタブ内で大規模なWebソリューション向けに並列ワークロードを促進します。Reactを使用して独自のビューコンテナ、ウィジェット、ロジックを実装し、表示はReactileに任せることができます。"
+      }
+    },
+    {
+      "segment_id": "ec619944",
+      "source_content": "On top of that, Reactile also offers:",
+      "source_content_hash": "c71c565a82c8c75ce60dc4fa8883e82871fe706100891d309b282c994e5f5106",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "さらに、Reactileは以下も提供します:"
+      }
+    },
+    {
+      "segment_id": "887c863e",
+      "source_content": "* A promise-based persistence mechanism which permits a uniform workflow across time and on multiple devices.\n* The possibility to use nested tabs for your tiles.\n* A simplified global search mechanism.\n* CSS @container based responsiveness.\n* And much more.",
+      "source_content_hash": "b8ff9cb4505614f519f9fd1159e45db804e4b9a8651cecfccb0d5344ab964d2f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 時間や複数デバイス間で統一されたワークフローを可能にするPromiseベースの永続化メカニズム\n* タイルにネストされたタブを使用する機能\n* 簡素化されたグローバル検索メカニズム\n* CSS @containerベースのレスポンシブ対応\n* その他多くの機能"
+      }
+    },
+    {
+      "segment_id": "6b77b644",
+      "source_content": "Version 2 coming out soon. Get started with your unique 30-day free trial. Learn more about it on reactile.net.",
+      "source_content_hash": "67c06d71c49f49d579b37262a90ca57cbc84ba8a53365d4b68cfd595d40324e4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "バージョン2が間もなくリリース予定です。30日間の無料トライアルを開始しましょう。詳細はreactile.netでご確認ください。"
+      }
+    },
+    {
+      "segment_id": "a311e967",
+      "source_content": "[Reactile - The new React UI management system](https://www.reactile.net/price?utm_source=ThisweekinReact)",
+      "source_content_hash": "ab4c3876551f7d8cd91e51fc877e8f8c6ce9cc36641b0f39ded9e98c4305f5b9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[Reactile - 新しいReact UI管理システム](https://www.reactile.net/price?utm_source=ThisweekinReact)"
+      }
+    },
+    {
+      "segment_id": "ab3df6e6",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c19de48a",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "2d15468d",
+      "source_content": "* 💸 [Introducing native Passkeys support for Expo - Unlock one of the fastest growing auth strategies for your next project](https://go.clerk.com/I4o9cHy)\n* 🧵 [Callstack’s Lynx Deep Dive - The takeaways from a 3h livestream](https://threadreaderapp.com/thread/1898114457634500692.html)\n* 📜 [How React Native Reanimated Updates the Styles](https://blog.swmansion.com/how-react-native-reanimated-updates-the-styles-a-deep-dive-338ab22e9f21): A deep dive explaining how UI and native props are handled differently\n* 📜 [Local LLMs on Mobile Are a Gimmick—For Now](https://www.callstack.com/blog/local-llms-on-mobile-are-a-gimmick): An overview of the challenges running AI models on-device, such as model size/format, CPU/battery consumption, and quality/speed tradeoffs.\n* 📜 [Transitive Dependencies and React Native Autolinking](https://shift.infinite.red/transitive-dependencies-and-react-native-autolinking-d4d4b7a651cf): Transitive dependencies are not auto-linked for good reasons, and you need to declare them explicitly as `peerDependencies`.\n* 📜 [How to build a solid test harness for Expo apps](https://expo.dev/blog/how-to-build-a-solid-test-harness-for-expo-apps): Helps you adopt the right mindset to test your RN apps.\n* 📜 [React Native vs Lynx JS](https://shift.infinite.red/react-native-vs-lynx-js-b1fffb0f0152)\n* 📜 [An Android Developer's Guide to React Native](https://dev.to/amazonappdev/an-android-developers-guide-to-react-native-j66)\n* 📦 [React Native JavaScriptCore](https://github.com/react-native-community/javascriptcore): The Hermes runtime is widely used now, and the React Native team is extracting the JSC engine to a separate community repository. If you want to use JSC over Hermes, you can opt-in for it in RN 0.79. The built-in JSC will be removed in RN 0.81 or 0.82.\n* 📦 [Metro 0.82 - Enables `package.json#exports` resolution and lazy file hashing](https://github.com/facebook/metro/releases/tag/v0.82.0): Upgrade included in RN 0.79.\n* 📦 [React Native Worklets 0.1](https://github.com/software-mansion/react-native-reanimated/tree/main/packages/react-native-worklets): Software Mansion is extracting its Reanimated worklet system to a standalone multithreading library. WIP, we’ll probably know more soon.\n* 📦 [Galeria 1.0 - Universal image viewer](https://github.com/nandorojo/galeria/releases/tag/v1.0.0): Supports New Arch, Web, and works with any image component.\n* 📦 [Zeego 3.0 - Universal menus/dropdowns](https://github.com/nandorojo/zeego/releases/tag/v3.0.1): Supports New Arch, RN 0.77, Expo 52\n* 📦 [React Native Legal - Automagically generate dependency/license acknowledgment screens](https://github.com/callstackincubator/react-native-legal)\n* 📦 [React Native Executorch 0.3 - On-device AI experiences - Speech to Text, OCR](https://github.com/software-mansion/react-native-executorch/releases/tag/v0.3.0)\n* 📦 [Radon IDE 1.4 - React Query DevTools, React Scan re-render outliner, JS sampling profiler](https://github.com/software-mansion/radon-ide/releases/tag/v1.4.0)\n* 📦 [Testing Library 13.1 - React 19 / React Native 0.78 support](https://github.com/callstack/react-native-testing-library/releases/tag/v13.1.0)\n* 📦 [React Native Emoji Popup - using native primitives - MCEmojiPicker on iOS, Emoji2 on Android](https://github.com/okwasniewski/react-native-emoji-popup)\n* 🎥 [Theo - Lynx is incredible (deep dive into Tiktok's React Native killer)](https://www.youtube.com/watch?v=No0k-TMRuMA)\n* 🎥 [Simon Grimm - Is React Native in trouble? (Lynx, React Native Framework & Vercel)](https://www.youtube.com/watch?v=aqgQatFPNSw)\n* 🎥 [Catalin Miron - Circular Carousel with Reanimated](https://www.youtube.com/watch?v=6Va1yBFdUxI)\n* 🎙️ [React Native Radio 324 - Migrating to Expo with Alfred Lieth Årøe](https://infinite.red/react-native-radio/rnr-324-migrating-to-expo-with-alfred-lieth-are)\n* 🎙️ [Rocket Ship 62 - Navigation, Styling & The State of React Native with Beto](https://share.transistor.fm/s/6a224b64)",
+      "source_content_hash": "909125988289b844140b600ef052e1420d5b44e74a756e3582a1c96965e9d096",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Expo向けネイティブPasskeysサポートの導入 - 次世代プロジェクトで急成長中の認証戦略を活用](https://go.clerk.com/I4o9cHy)\n* 🧵 [CallstackのLynx深堀り - 3時間ライブストリームの要点](https://threadreaderapp.com/thread/1898114457634500692.html)\n* 📜 [React Native Reanimatedがスタイルを更新する仕組み](https://blog.swmansion.com/how-react-native-reanimated-updates-the-styles-a-deep-dive-338ab22e9f21): UIプロパティとネイティブプロパティの違いを解説する技術解説\n* 📜 [モバイル向けローカルLLMは現時点ではギミック](https://www.callstack.com/blog/local-llms-on-mobile-are-a-gimmick): オンデバイスAIモデル実行の課題（モデルサイズ/フォーマット、CPU/バッテリー消費、品質/速度のトレードオフ）の概要\n* 📜 [推移的依存関係とReact Native Autolinking](https://shift.infinite.red/transitive-dependencies-and-react-native-autolinking-d4d4b7a651cf): 推移的依存関係は自動リンクされない正当な理由があり、明示的に`peerDependencies`として宣言する必要がある\n* 📜 [Expoアプリ向け堅牢なテストハーネスの構築方法](https://expo.dev/blog/how-to-build-a-solid-test-harness-for-expo-apps): RNアプリテストに適したマインドセットを養う\n* 📜 [React Native vs Lynx JS](https://shift.infinite.red/react-native-vs-lynx-js-b1fffb0f0152)\n* 📜 [Android開発者向けReact Nativeガイド](https://dev.to/amazonappdev/an-android-developers-guide-to-react-native-j66)\n* 📦 [React Native JavaScriptCore](https://github.com/react-native-community/javascriptcore): Hermesランタイムが主流となる中、React NativeチームはJSCエンジンを別リポジトリに分離。RN 0.79でJSCを選択可能に。組み込みJSCはRN 0.81/0.82で削除予定\n* 📦 [Metro 0.82 - `package.json#exports`解決と遅延ファイルハッシュをサポート](https://github.com/facebook/metro/releases/tag/v0.82.0): RN 0.79に含まれるアップデート\n* 📦 [React Native Worklets 0.1](https://github.com/software-mansion/react-native-reanimated/tree/main/packages/react-native-worklets): Software MansionがReanimatedのワークレットシステムを独立したマルチスレッドライブラリとして分離。開発中\n* 📦 [Galeria 1.0 - ユニバーサル画像ビューア](https://github.com/nandorojo/galeria/releases/tag/v1.0.0): New Arch/Web対応、任意の画像コンポーネントと連携可能\n* 📦 [Zeego 3.0 - ユニバーサルメニュー/ドロップダウン](https://github.com/nandorojo/zeego/releases/tag/v3.0.1): New Arch/RN 0.77/Expo 52対応\n* 📦 [React Native Legal - 依存関係/ライセンス確認画面を自動生成](https://github.com/callstackincubator/react-native-legal)\n* 📦 [React Native Executorch 0.3 - オンデバイスAI体験（音声認識/OCRなど）](https://github.com/software-mansion/react-native-executorch/releases/tag/v0.3.0)\n* 📦 [Radon IDE 1.4 - React Query DevTools/React Scan再レンダリング可視化/JSサンプリングプロファイラ](https://github.com/software-mansion/radon-ide/releases/tag/v1.4.0)\n* 📦 [Testing Library 13.1 - React 19/React Native 0.78サポート](https://github.com/callstack/react-native-testing-library/releases/tag/v13.1.0)\n* 📦 [React Native Emoji Popup - ネイティブプリミティブ使用（iOSはMCEmojiPicker/AndroidはEmoji2）](https://github.com/okwasniewski/react-native-emoji-popup)\n* 🎥 [Theo - Lynxは驚異的（TikTokのReact Nativeキラー技術解説）](https://www.youtube.com/watch?v=No0k-TMRuMA)\n* 🎥 [Simon Grimm - React Nativeは危機か？（Lynx/React Native Framework/Vercel）](https://www.youtube.com/watch?v=aqgQatFPNSw)\n* 🎥 [Catalin Miron - Reanimatedを使った円形カルーセル](https://www.youtube.com/watch?v=6Va1yBFdUxI)\n* 🎙️ [React Native Radio 324 - Alfred Lieth Årøeと語るExpo移行](https://infinite.red/react-native-radio/rnr-324-migrating-to-expo-with-alfred-lieth-are)\n* 🎙️ [Rocket Ship 62 - Betoと語るナビゲーション/スタイリング/React Nativeの現状](https://share.transistor.fm/s/6a224b64)"
+      }
+    },
+    {
+      "segment_id": "3d477c19",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "36d6c3de",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "d9b1e67e",
+      "source_content": "* 📜 [Microsoft - A 10x Faster TypeScript](https://devblogs.microsoft.com/typescript/typescript-native-port/): The compiler is being ported to Go, should become 10x and land in TS 7.0. Learn more in this [Syntax.fm podcast](https://www.youtube.com/watch?v=ZlGza4oIleY) interview with the TypeScript team, notably why they choose to use Go over Rust.\n* 📜 [Web Almanac 2024 - JavaScript](https://almanac.httparchive.org/en/2024/javascript): The final chapter (JS) just dropped. React was found on 10% of pages (+25%) but still tiny compared to JQuery (74%).\n* 📜 [Node just added TypeScript support. What does that mean for Deno?](https://deno.com/blog/typescript-in-node-vs-deno): The 2 runtimes support TS in different ways. For example, Deno has built-in type-checking and JSX/TSX support.\n* 📜 [Inline rendering with document​.currentScript](https://leanrada.com/notes/inline-rendering-currentscript/)\n* 📜 [Reproducibility vs. Provenance: Trusting the JavaScript Supply Chain](https://blog.vlt.sh/blog/reproducibility)\n* 📦 [Fast-check 4.0 - Property-based testing framework](https://fast-check.dev/blog/2025/03/10/whats-new-in-fast-check-4-0-0/)",
+      "source_content_hash": "ed39894151373a1f1d5b59b9556b1e161a2aeac21ae585d781067ea34e853801",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📜 [Microsoft - 10倍高速なTypeScript](https://devblogs.microsoft.com/typescript/typescript-native-port/): コンパイラがGoに移植中で、10倍高速化されTS 7.0でリリース予定。詳しくは[Syntax.fmポッドキャスト](https://www.youtube.com/watch?v=ZlGza4oIleY)でTypeScriptチームへのインタビューをチェック（RustではなくGoを選んだ理由など）。\n* 📜 [Web Almanac 2024 - JavaScript](https://almanac.httparchive.org/en/2024/javascript): 最終章（JS編）が公開。Reactの採用率は10%（+25%）だが、JQuery（74%）に比べるとまだ小規模。\n* 📜 [NodeがTypeScriptサポートを追加。Denoへの影響は？](https://deno.com/blog/typescript-in-node-vs-deno): 2つのランタイムは異なる方法でTSをサポート。例えばDenoは組み込みの型チェックとJSX/TSXサポートを有する。\n* 📜 [document.currentScriptを使ったインラインレンダリング](https://leanrada.com/notes/inline-rendering-currentscript/)\n* 📜 [再現性 vs. プロビナンス: JavaScriptサプライチェーンの信頼性](https://blog.vlt.sh/blog/reproducibility)\n* 📦 [Fast-check 4.0 - プロパティベーステストフレームワーク](https://fast-check.dev/blog/2025/03/10/whats-new-in-fast-check-4-0-0/)"
+      }
+    },
+    {
+      "segment_id": "efbc76b7",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c6868a9f",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "bb1346b6",
+      "source_content": "[![alt](/emails/issues/225/meme.jpg)](https://x.com/schlimmson/status/1895489183101440486)",
+      "source_content_hash": "50a3c87ecf154d9922a363d816add60d4eeda06a456bdfeaeef29e6c9d9eb9b8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/225/meme.jpg)](https://x.com/schlimmson/status/1895489183101440486)"
+      }
+    },
+    {
+      "segment_id": "8664ed0b",
+      "source_content": "[![alt](/emails/issues/225/meme2.jpg)](https://x.com/sebastienlorber/status/1899482883472961833)",
+      "source_content_hash": "c4e706ab43caf4aea2e1227ca32feee159bd90b2268a365a4b552026ef7d350f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/225/meme2.jpg)](https://x.com/sebastienlorber/status/1899482883472961833)"
+      }
+    },
+    {
+      "segment_id": "9e90a9b3",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "それでは！👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/225/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:41.027223+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "b71bec387068cd68be11bd80c352de081577b01bdd4ab67e52851e82db10f2fd"
+  }
+}

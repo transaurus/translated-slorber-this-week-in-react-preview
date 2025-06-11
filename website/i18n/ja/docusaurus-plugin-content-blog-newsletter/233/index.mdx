@@ -1,0 +1,170 @@
+---
+slug: /233
+title: "This Week In React #233: RSC, Next.js, Compiler, Unhead, Shadcn, Relay, Mantine | Expo, WebGPU, Skia, Apple fees, Reanimated, Fragment Refs | Node.js, TS, Prisma, Deno, GSAP"
+authors: [slorber]
+date: 05-07-2025
+---
+
+みなさん、こんにちは！
+
+今週は、Dan Abramovの興味深いブログ記事が2つと、さまざまなReactのリリースがあります。
+
+特にモバイル関連のニュースが興味深く、Expo 53、Skia Graphite、Reanimated Shared Elements Transitions、そしてAppleの手数料に関する裁判差し止め命令などがありました。
+
+ui.devの仲間たちも、[react.gg](https://react.gg/?ref=twir)コースの最終コンテンツをリリースしています（現在30%オフ）。このコースは、React 19の新しいコンセプトを基礎から学ぶために設計されており、インタラクティブな例、ビジュアライゼーション、実践的なクイズが満載です。レビューのためにアクセスしましたが、Reactを学ぶのに非常に遊び心のある方法だと確信しています。
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Reactのコードレビュー時間とバグを半減](/emails/issues/233/coderabbit.jpg)](https://coderabbit.link/this-week-in-react-7may-2025)
+
+**[Reactのコードレビュー時間とバグを半減](https://coderabbit.link/this-week-in-react-7may-2025)**
+
+コードレビューは重要ですが、時間がかかります。CodeRabbitはAIコパイロットとして機能し、プルリクエストごとに即座にコードレビューコメントと潜在的な影響を提供します。
+
+問題を指摘するだけでなく、CodeRabbitはワンクリックで修正提案を行い、AST Grepパターンを使用してカスタムコード品質ルールを定義できるため、従来の静的解析ツールでは見逃しがちな微妙な問題も捕捉できます。
+
+CodeRabbitはこれまでに500万以上のPRをレビューし、100万のリポジトリにインストールされ、5万のオープンソースプロジェクトで使用されています。オープンソースリポジトリでは無料で利用できます。[今すぐ始めましょう！](https://coderabbit.link/this-week-in-react-7may-2025)
+
+***
+
+## ⚛️ React {#react}
+
+* 💸 [Product for Engineers - エンジニアがコミュニケーションについて誤解していること](https://go.posthog.com/twir-may7)
+* 👀 [Next.js Docs - 新しい`runAfterProductionCompile`ライフサイクルフック](https://nextjs.org/docs/architecture/nextjs-compiler#runafterproductioncompile): 未リリースの新機能がすでにドキュメント化されています。
+* 💬 [React Compiler oxcプラグイン](https://github.com/oxc-project/oxc/issues/10048): React Compilerチームとoxcチームの間で、ViteやOxc/Rolldownでの使用に向けてコンパイラをoxcプラグインとして統合するための興味深い議論。Reactチームは2段階での実装を提案（まず動作させ、その後高速化）。
+* 🧵 [shadcnがレジストリMCPを導入 - 任意のコンポーネントをMCP互換にするワンコマンド](https://threadreaderapp.com/thread/1917597228513853603.html)
+* 📜 [Functional HTML](https://overreacted.io/functional-html/): Danが基本原理から欲しいHTMLを徐々に再発明し、RSC実装へと導く。
+* 📜 [Astro開発者向けRSC](https://overreacted.io/rsc-for-astro-developers/): RSCとAstroは驚くほど似たメンタルモデルを持つが、Danは興味深い微妙な違いを指摘。RSCは最初は直感的でないかもしれないが、Astroの制限の一部も解決する。
+* 📜 [AIインタラクションの未来：テキストを超えて](https://www.epicai.pro/the-future-of-ai-interaction-beyond-just-text-w22ps): Kentは、MCPがReact Server Componentsを使った生成UIの実装に役立つ可能性があると主張。htmlやRSCペイロードのようなよりリッチな戻り値の型を許可するプロトコルを求めている。
+* 📜 [フロントエンドは難しい](https://sst.dev/blog/frontends-are-hard): SSTの開発者たちは、OpenNextイニシアチブを始めるきっかけとなった、Reactを含むモダンメタフレームワークのセルフホスティングの課題について振り返る。
+* 📜 [React Routerでカラースキームトグルを追加](https://sergiodxa.com/tutorials/add-a-color-scheme-toggle-in-react-router): この方法では、インラインJSの代わりにクッキーを使用してFOUCを回避。
+* 📜 [複雑なReact/Next.jsアプリのための堅牢なデータ取得アーキテクチャ](https://www.trevorlasn.com/blog/fetching-data-for-complex-next-and-react-apps): 3層（Server Components、React Query、Optimistic Updates）の使用を提案。
+* 📜 [Server Componentsは選択肢を与える](https://saewitz.com/server-components-give-you-optionality): コンポーネントが実行される環境（Server、Server+Client、またはClient）とタイミングを柔軟に選択可能。
+* 📜 [Next.jsへの愛を失い、Ruby on Rails & Inertia.jsへ再び恋をするまで](https://hardcover.app/blog/part-1-how-we-fell-out-of-love-with-next-js-and-back-in-love-with-ruby-on-rails-inertia-js)
+* 📜 [Kleinanzeigen.deがNext.jsではなくAstroを選んだ理由](https://d13z.dev/blog/07-why-kleinanzeigen-picked-astro-over-nextjs/)
+* 📜 [TanStack Queryのデフォルトをオーバーライドする必要がある場合](https://www.kxlaa.com/articles/when-you-might-need-to-override-the-defaults-in-tanstack-query)
+* 💸 [React.gg - モダンなReact（v19モジュールを含む）をマスターするインタラクティブな方法 - ローンチ週間中30%オフ](https://react.gg/?ref=twir)
+* 📦 [Unhead 2.0 - あらゆるフレームワークに対応したフルスタック\<head>パッケージ](https://unhead.unjs.io/v2): UnJSエコシステムのこのフレームワーク非依存パッケージにReactバインディングが追加。React 19の組み込みAPIが十分でない場合（[こちらのコメント参照](https://github.com/staylor/react-helmet-async/issues/239#issuecomment-2565685131)）、`react-helmet`の優れた代替となる可能性。
+* 📦 [Blade - Reactで即時ウェブアプリを構築](https://github.com/ronin-co/blade): RSC仕様に意図的に準拠しない、Server Componentsをサポートした新しいオピニオネイテッドなReactメタフレームワーク。
+* 📦 [Relay 19.0 - 条件付きフラグメントに`@alias`必須、React 19サポート](https://relay.dev/blog/2025/04/02/relay-19/)
+* 📦 [Mantine 8.0 - 日付パッケージ更新、新しいTimePicker、Heatmap、CodeHighlightコンポーネント、ネストされたメニューなど](https://mantine.dev/changelog/8-0-0/)
+* 📦 [React Error Boundary 6.0 - ESMのみ](https://github.com/bvaughn/react-error-boundary/releases/tag/6.0.0)
+* 📦 [React Admin 5.8 - InPlaceEditor、DataTable、AuthLayout、MUI v7、CSS変数、テーマ設定](https://github.com/marmelab/react-admin/releases/tag/v5.8.0)
+* 📦 [Unverceled Next.js - OpenNextを使用してCloudflareにデプロイするNext.js 15スターターキット](https://github.com/ixahmedxi/unverceled-nextjs)
+* 📦 [Radix UI - 新しい不安定版PasswordToggleFieldとCheckboxパーツ](https://www.radix-ui.com/primitives/docs/overview/releases#may-5-2025)
+* 📦 [React Router DevTools 5.0 - ルートタブの全面的な見直し](https://github.com/forge-42/react-router-devtools/releases/tag/v5.0.0)
+* 📦 [MUI 7.1 - Tailwind CSS 4サポート](https://github.com/mui/material-ui/releases/tag/v7.1.0)
+* 🎥 [Jack Herrington - Reactの新しいActivityコンポーネント：大きなパフォーマンス向上！](https://www.youtube.com/watch?v=gRKVL5w-2Lc)
+* 🎥 [Fireship - React開発者の間で広がる溝…](https://www.youtube.com/watch?v=lLJbHHeFSsE)
+* 🎙️ [Front-end Fire 93 - React Activity、Storybook 9 Beta、そして協力者としてのAI](https://front-end-fire.com/episodes/93/)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Tolgeeでアプリ翻訳をシンプルに](/emails/issues/233/tolgee.jpg)](https://tolg.ee/y1z3eb)
+
+**[Tolgeeでアプリ翻訳をシンプルに](https://tolg.ee/y1z3eb)**
+
+[Tolgee](https://tolg.ee/y1z3eb)は**オープンソース**のツールで、開発者の時間を節約し、翻訳用の終わりのないスプレッドシートをなくすことで**ローカライゼーション**を簡素化します🌎
+
+今すぐ作業を効率化しましょう！Tolgeeは以下の点で役立ちます：
+
+* 翻訳を他のチームメンバーに委任 - 開発者の時間を節約！
+* コンテキスト内翻訳
+* ブラウザ拡張機能でクリックして翻訳
+* 整理されていないスプレッドシートやJSONから解放
+
+無料版では**クレジットカード不要**で、小規模プロジェクトに最適です！すべての機能を試して、プロジェクトにすぐに統合し、グローバルな観客に対応できるように準備できます。
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![Expo SDK 53](/emails/issues/233/expo53.jpg)](https://expo.dev/changelog/sdk-53)
+
+**[Expo SDK 53](https://expo.dev/changelog/sdk-53)**
+
+非常に印象的なExpoリリースで、主なハイライトは以下の通りです：
+
+* React Native 0.79、React 19、RNW 0.20へのアップグレード
+* New Archをデフォルトで有効化
+* Androidでエッジツーエッジがデフォルトで有効化
+* 新しい[Expo BackgroundTask](https://expo.dev/blog/goodbye-background-fetch-hello-expo-background-task)、Androidの`WorkManager`とiOSの`BGTaskScheduler`システムAPIを使用した、モダンで信頼性が高く、電力効率の良い、将来性のあるバックグラウンドタスク実行方法
+* 新しい[Expo Maps](https://expo.dev/blog/introducing-expo-maps-a-modern-maps-api-for-expo-developers)（アルファ）、Expo Modules APIを基に構築され、SwiftUIとJetpack Composeを使用し、プラットフォームデフォルトのApple MapsとGoogle Mapsコンポーネントを公開
+* Metroの`package.json#exports`解決がデフォルトで有効化
+* `npx testflight`で開発ビルドをTestFlightにデプロイ
+* 事前ビルドされたExpo ModulesでAndroidのビルド時間を最大25%改善
+* その他多数！
+
+関連リリースの[Expo Router v5](https://expo.dev/blog/expo-router-v5)もご覧ください：
+
+* React 19 / Expo 53が必要
+* DX、エラー画面とロギングを改善、React owner stacksを活用
+* EAS Hostingでバージョン管理されたAPIルートを本番環境にデプロイ
+* React Server Functionsがベータ版
+* 保護されたルート
+
+***
+
+[![Game On - React NativeにWebGPUをもたらす](/emails/issues/233/skia.jpg)](https://www.youtube.com/watch?v=t9t-VXwIc4I)
+
+**[🎥 Game On - React NativeにWebGPUをもたらす](https://www.youtube.com/watch?v=t9t-VXwIc4I)**
+
+37分間のビデオで、William Candillonとゲストが描画とアニメーションの未来を垣間見せてくれました。Shopifyのサポートを受けて、彼はモダンなWebGPUサポート（VulkanとMetal）をReact Nativeにもたらしています。
+
+Web APIに準拠することで、既存のWebサンプル（Three.jsを含む）をコピー/ペーストしてすべてのプラットフォームで動作させることが可能です。また、GPUの汎用的な使用（AI、TensorFlow\.js）も可能になり、便利な低レベルTypeGPUライブラリのおかげでより簡単に実現できます。
+
+このすべての作業は、WebGPUをベースにした新しい実験的なSkia Graphiteバックエンドを作成するために必要でした。これにより、ウェブと同様に、すべてのプラットフォームで2D/3D体験をパフォーマンスを維持しながら合成およびインターリーブできるようになり、Reanimatedとの完全な統合も実現しています。その過程で、Skiaには新機能は追加されていませんが、パフォーマンスが大幅に向上し、クラッシュが減少し、3つの新しいプラットフォーム（tvOS、macOS、Node）がサポートされました。ウィリアム、そのタコをマッサージし続けてください！
+
+***
+
+* 💸 [React Universe Conf 2025に新たなスピーカーが追加: V. Morozov & K. Hosany (Microsoft)、K. Hansen (MongoDB)、Z. Chapple (Zephyr Cloud) など](https://www.reactuniverseconf.com/?utm_campaign=7310698-RUC%202025\&utm_source=TWIR\&utm_content=New%20Speakers)
+* ⚖️ [Epic Gamesが大勝利 - AppleにApp Storeのアンチスティアリング禁止命令遵守を命じる判決](https://www.macrumors.com/2025/04/30/apple-app-store-anti-steering-injunction-violation/): 裁判所は、Appleが意図的に代替決済方法を許可し、アプリ内課金の30%手数料を回避する以前の禁止命令に従わなかったと判断。「この裁判所にとって、Appleに二度目のチャンスはない」。Fortniteの復帰、Kindleアプリでの電子書籍直接販売、新たなビジネスモデルを可能にするモバイル業界の大事件。[Expo](https://expo.dev/blog/mobile-app-payment-processing-best-practices)と[Vercel](https://vercel.com/blog/ios-developers-can-now-offer-commission-free-payments-on-web)のガイドで手数料回避の方法を確認。
+* 👀 [React Core PR - Fragment RefsをFabricに追加（Intersection Observerサポート付き）](https://github.com/facebook/react/pull/33056): 最近のReact Labs投稿で言及された[Fragment Refs](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more#fragment-refs)機能。将来的にはWebのようなIntersectionObserverを使用してReactフラグメントが画面に入るタイミングを検知可能に。まだ研究段階だが、興味深い新機能。
+* 👀 [Reanimated PR - 新アーキテクチャでのShared Elements Transitions](https://github.com/software-mansion/react-native-reanimated/pull/7466): Software MansionによるドラフトPR。プラットフォーム間でC++コードを共有可能にする新アーキテクチャ向けShared Elements Transitionsの安定化を計画。
+* 📜 [サイレン、サガ、スタックトレース: React Nativeアップグレードの冒険](https://shift.infinite.red/sirens-sagas-and-stack-traces-a-react-native-upgrade-odyssey-52db6beb0aac)
+* 🔨 [Package Checker - 新アーキテクチャ互換性チェックツール](https://react-native-package-checker.vercel.app/)
+* 📦 [Compose Multiplatform 1.8 - iOS向けCompose Multiplatformが安定版&本番環境対応に](https://blog.jetbrains.com/kotlin/2025/05/compose-multiplatform-1-8-0-released-compose-multiplatform-for-ios-is-stable-and-production-ready/): JetBrainsのクロスプラットフォームUIツールキットがiOSとAndroid間のコード共有を実現。React Nativeとは異なり、iOS（とWeb）サポートはUIKitネイティブ要素ではなくSkiaベース。
+* 📦 [Zustand 5.0.4 + Jotai 2.12.4](https://github.com/pmndrs/jotai/discussions/3041): RN 0.79 / Expo 53 / Metro 0.82との非互換性問題を修正。
+* 📦 [Nitro Audio Manager - AVAudioSession/AudioManager API向けNitroモジュール](https://github.com/ChristopherGabba/react-native-nitro-audio-manager)
+* 📦 [Expo Build Disk Cache - Expo CLIのビルド時間改善プラグイン](https://github.com/WookieFPV/expo-build-disk-cache)
+* 📦 [Expo App Template - モダンで合理的なデフォルト設定の高速Expoアプリテンプレート](https://github.com/nkzw-tech/expo-app-template)
+* 🎥 [Jamon Holmgren - React Native for macOSでMacアプリを構築する方法](https://www.youtube.com/watch?v=0h-owMCfy5s)
+* 🎥 [React Universe Meetup - 4月の新動画3本: Polygen、ファイルベースルーター、ネイティブ感覚](https://www.youtube.com/playlist?list=PLZ3MwD-soTTEFaxmATqOTcitPEK5iaz1z)
+* 🎥 [Simon Grimm - ついにReact Native UIコンポーネント（Expo 53）](http://youtube.com/watch?v=kGUrNO8WmCU)
+* 🎙️ [React Native Radio 330 - Karly Lammと考えるアクセシビリティ](https://infinite.red/react-native-radio/rnr-330-react-native-and-accessibility-with-karly-lamm)
+* 🎙️ [Rocket Ship 67 - RN離れ、React Compiler、Legend List & RNパフォーマンス](https://share.transistor.fm/s/18111ecc)
+
+***
+
+## 🔀 Other {#other}
+
+* 👀 [TypeScript 5.9 イテレーションプラン](https://github.com/microsoft/TypeScript/issues/61648)
+* 📖 [Node.js ドキュメント - パッケージの公開](https://nodejs.org/en/learn/modules/publishing-a-package): ESM/CJSの微妙な違いもカバーする新しい公式ガイド。
+* 📜 [JavaScriptでの値の文字列化には落とし穴がある](https://2ality.com/2025/04/stringification-javascript.html)
+* 📜 [疑問を探る: なぜHTML単体ではインクルードができないのか？](https://frontendmasters.com/blog/seeking-an-answer-why-cant-html-alone-do-includes/)
+* 📦 [Node 24.0](https://nodejs.org/en/blog/release/v24.0.0): 新しいNode.jsバージョンがリリースされ、10月にLTSとなる予定です。npm 11、`AsyncLocalStorage`のパフォーマンス改善、`URLPattern` API、そしてV8 v13.6へのメジャーアップグレードが含まれています。これにより、Explicit Resource Management (`using`)や`RegExp.escape()`といった新しいJS APIが利用可能になります（[こちら](https://web-platform-dx.github.io/web-features-explorer/features/regexp-escape/)で現在どこで利用できるか確認できます）。
+* 📦 [GSAP 3.13 - JSアニメーションライブラリ - すべてのプラグインを含め100%無料化](https://gsap.com/blog/3-13/)
+* 📦 [Deno 2.3 - deno compileの改善、ローカルnpmパッケージ、タグ付きテンプレートでのdeno fmtなど](https://deno.com/blog/v2.3)
+* 📦 [Prisma 6.7 - RustなしのORM、マルチファイルスキーマ](https://github.com/prisma/prisma/releases/tag/6.7.0)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/233/meme.jpg)](https://x.com/sebastienlorber/status/1920045489371951117)
+
+[![alt](/emails/issues/233/meme2.jpg)](https://x.com/kzzzf/status/1920091355868520557)
+
+またね！ 👋

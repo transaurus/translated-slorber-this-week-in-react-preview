@@ -1,0 +1,181 @@
+---
+slug: /139
+title: "This Week In React #139: React.dev, Remix, next export, Server Components, i18n, Error Boundary, Wakuwork, Astro, React-Native, Bottom Sheet, TypeScript, TC39..."
+authors: [slorber]
+date: 03-21-2023
+---
+
+みなさん、こんにちは！
+
+新しいReactのサイトがついに公開され、それは間違いなく素晴らしいものです 🤗 関連するリンクをいくつか掲載しましたので、ぜひご自身で判断してください！
+
+また、本当にクールな記事もあります。React APIのインタラクティブマップ、Remixのv2における破壊的変更へのアプローチ、React-Server-Componentsを翻訳に使用する方法などが気に入りました。
+
+React-Nativeに関しては、v0.72の最初のRCがリリースされました。Metro 0.76の待望の新機能（シンボリックリンクのサポートなど）も間もなく利用可能になる予定です！
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Suncel](/emails/issues/136/suncel.jpg)](https://suncel.io/)
+
+**[再利用可能なブロックを構築。コンテンツを迅速に公開。Core Web VitalsとSEOを向上。](https://suncel.io/)**
+
+**コンテンツ編集者** : 多くのコンテンツを制作し、強力なSEO戦略を必要とする企業にとってゲームチェンジャーです。マーケターやコンテンツ編集者は複雑さなくページを編集・公開できます。長い遅延を排除し、即座に公開できます。Next.jsを利用してページと画像が最適化され、完璧なCore Web Vitalsスコアを達成します。
+
+**開発者** : 既存のNext.jsアプリにプラグアンドプレイで接続可能。Suncel CMSを開発者として利用するメリット:
+
+* Reactで再利用可能なブロックを構築
+* SEOメタとサイトマップが自動生成（SEOモジュールのおかげ）
+* Reactで独自のカスタム設定を作成
+* Reactでカスタマイズ可能な管理画面
+* CMSに合わせたルーティングシステム不要
+
+**[Suncel.ioを訪問](https://suncel.io/)** | **[5分デモ動画](https://www.youtube.com/watch?v=LUupLEZKp3w)**
+
+***
+
+## ⚛️ React {#react}
+
+[![Introducing react.dev](/emails/issues/139/reactdev.jpg)](https://react.dev/blog/2023/03/16/introducing-react-dev)
+
+**[react.devの紹介](https://react.dev/blog/2023/03/16/introducing-react-dev)**
+
+新しいReactのウェブサイトがついにオンラインになりました！このローンチに伴い、新しい記事も公開されています。これは技術とコンテンツの両面で非常に大きなプロジェクトであり、数年もの努力と多くの協力者が必要でした。
+
+特に気に入った点:
+
+* フックと関数コンポーネントに焦点を当てていること
+* 多くの図表、イラスト、インタラクティブな課題を含むガイド
+* Reactをウェブのみならずクロスプラットフォームソリューションとして強調していること
+* APIページが参照/使用法、現在/非推奨、クライアント/サーバーで明確に分離されていること
+* 全体を通した一貫性のある体験
+
+今週はいくつかの変更が議論を呼びました。特に、新しいReactプロジェクトを開始する際に推奨されるフレームワークのリストが限定的（Next.js、Remix、Gatsby、Expo）で、他の多くの選択肢（Vite、Create-React-App、クライアントサイドSPAなど）が推奨されていない点です。
+
+**関連記事:**
+
+* 📜 [新しいReactドキュメントはSPAの存在を無視している](https://wasp-lang.dev/blog/2023/03/17/new-react-docs-pretend-spas-dont-exist)
+* 📜 [2023年にReactプロジェクトを始める方法](https://www.robinwieruch.de/react-starter/)
+* 🧵 [Dan Abramovが新しいReact.devウェブサイトのリリースについて](https://twitter.com/dan_abramov/status/1638004334544707584)
+* 🧵 [Dan AbramovがCRAの将来について - 「クライアントのみは意味がない。制限が多すぎる」](https://twitter.com/dan_abramov/status/1636827365677383700)
+* 🧵 [Dan Abramov - 「SPA、MPA、SSR、SSGといった用語を廃止する請願。これらは前世代のツールを表している」](https://twitter.com/dan_abramov/status/1636943182322704385)
+* 🧵 [Dan Abramov - 「最新のReactフレームワークの多くはNode.jsサーバーを必要としなくなった。必要なら追加できるだけ」](https://twitter.com/dan_abramov/status/1636716018973257728)
+* 🧵 [Dan Abramov - Next.jsの例 - 純粋なクライアントサイドSPA（Node.jsサーバー不要、100%静的バンドル）](https://twitter.com/dan_abramov/status/1636886736784457734)
+
+***
+
+[![React APIのマップ](/emails/issues/139/reactmap.jpg)](https://julesblom.com/writing/map-of-react-api)
+
+**[React APIのマップ](https://julesblom.com/writing/map-of-react-api)**
+
+React APIの空間的でインタラクティブな表現で、各APIごとに優れた外部記事への参照が含まれています。これは素晴らしいアイデアで、公式ドキュメントへの良い意見の補完だと思います。
+
+***
+
+* 👀 [React PR - Suspend commit without blocking render](https://github.com/facebook/react/pull/26398): a feature that will be used internally first, especially on resources (CSS, font, images). When navigating with startTransition, React will be able to wait a bit until the images of the next page are loaded before commiting the transition ([details](https://twitter.com/acdlite/status/1637102880850059264)).
+* 👀 [React PR - Remove layout effect warning on the server](https://github.com/facebook/react/pull/26395): the SSR warning for useLayoutEffect will be removed. Dan Abramov comments on [useIsomorphicLayoutEffect](https://twitter.com/dan_abramov/status/1636176793592905729).
+* 🧵 [Tim Neutkens on improving `next export`](https://twitter.com/timneutkens/status/1636693508223270912): compatible with App Router, Server Components...
+* 📜 [Future Proofing Your Remix App](https://remix.run/blog/future-flags): Remix explains their strategy for deploying breaking changes on major releases. They plan to introduce "Future flags" that allow you to opt-in for planned breaking changes in advance. If you managed to activate all flags in v1, it should be easy to upgrade to v2.
+* 📜 [Internationalization In Next.js 13 With React Server Components](https://www.smashingmagazine.com/2023/03/internationalization-nextjs-13-react-server-components/): Server Components will have a big impact on the way we translate our React apps, especially on performance, code splitting and bundle size. This article introduces the topic well. I give some more extra details in this [thread](https://twitter.com/sebastienlorber/status/1638528549056311297).
+* 📜 [Hooks You Probably Don't Need](https://reacttraining.com/blog/hooks-you-probably-dont-need): presentation of the lesser known hooks of React, classified by chance to need them (hello `useInsertionEffect` 😅). I liked the last section presenting a common anti-pattern and how `useLayoutEffect` prevents it. I think [useSyncExternalStore is great](https://twitter.com/sebastienlorber/status/1615329010761842689) for reading browser APIs such as `localStorage`.
+* 📜 [Front-Commerce is getting a Remix](https://developers.front-commerce.com/changelog/front-commerce-is-getting-a-remix): after Shopify, it is now Front-Commerce that decides to base itself on Remix. This has many advantages, such as the possibility of using progressive enhancement, an MPA mode, and being less coupled to React.
+* 📜 [Astro: How Good Is the New JavaScript Framework?](https://cult.honeypot.io/reads/astro-the-new-javascript-framework/)
+* 📜 [Reducing 97% of the Open UI site's JavaScript by migrating to Astro](https://blog.andri.co/023-migrating-open-ui-site-from-gatsby-to-astro/)
+* 📦 [React-Error-Boundary v4](https://twitter.com/sebastienlorber/status/1638465247886426113): new `useErrorBoundary` API to trigger error boundaries for non-render errors, and reset the boundary easily from anywhere.
+* 📦 [Wakuwork](https://github.com/dai-shi/wakuwork): Daishi Kato works on a minimalistic React framework with React Server Components support.
+* 📦 [Framer-Motion 10.5](https://twitter.com/mattgperry/status/1636714500731592706): `useAnimate()`
+* 📦 [Remix-Sitemap](https://github.com/fedeya/remix-sitemap)
+* 🎥 [Will React's New Cache Fix Its "Use" Hook?](https://www.youtube.com/watch?v=T3m-MZkuadU)
+* 🎥 [State Management for NextJS 13 Server and Client Components](https://www.youtube.com/watch?v=dRLjoT4r-jc)
+* 🎥 [Understanding React's types](https://www.youtube.com/watch?v=u_zoRJh9krU)
+* 🎙️ [The future of React](https://changelog.com/jsparty/267)
+
+<SubscribeFormEmbed />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+**[![スケーラブルな合成モニタリングを構築・実行](/emails/issues/134/checkly.jpg)](https://www.checklyhq.com/product/monitoring-as-code/?utm_medium=email\&utm_source=newsletter\&utm_campaign=this-week-in-react)**
+
+**[スケーラブルな合成モニタリングを構築・実行](https://www.checklyhq.com/product/monitoring-as-code/?utm_medium=email\&utm_source=newsletter\&utm_campaign=this-week-in-react)**
+
+「あなたが構築し、あなたが所有する」——これはソフトウェア開発を長年支えてきたシンプルな理念です。しかし、複雑なReactアプリケーションを監視する最良の方法とは何でしょうか？
+
+第一に：Playwrightを使用して重要なユーザーフローをシミュレートし、アプリが正常に動作することを保証します。第二に：ミッションクリティカルなAPIが稼働中であることを確信します。
+
+モニタリング・アズ・コードは、Playwrightベースのテストと監視設定全体をコードから直接定義、テスト、デプロイする新しい方法です。Checkly CLIをnpm create @checkly/cliで始めましょう。
+
+Checkly CLIの詳細は[こちら](https://www.checklyhq.com/docs/cli/?utm_medium=email\&utm_source=newsletter\&utm_campaign=this-week-in-react)をご覧ください。
+
+[QA、開発、運用チームをChecklyで統合](https://www.checklyhq.com/product/monitoring-as-code/?utm_medium=email\&utm_source=newsletter\&utm_campaign=this-week-in-react)
+
+***
+
+## 📱 React-Native {#react-native}
+
+* 👀 [Expoにおけるコード分割の利点](https://twitter.com/Baconbrix/status/1636398236373078018): コード分割（resolveWeak、Metro 0.76、React-Native 0.72で可能）がExpo Routerに多くの利点をもたらす可能性があります！
+* 👀 [Expo SDK 49で組み込みのTypeScriptエイリアス/絶対パスが導入予定](https://twitter.com/Baconbrix/status/1636048353799684115)
+* 👀 [Docusaurus上で動作するReanimatedの例](https://twitter.com/kacperkapusciak/status/1638539744635174914)
+* 📦 [React-Native v0.72 RC.0](https://github.com/facebook/react-native/releases/tag/v0.72.0-rc.0): 今後のv0.72の機能は[Road to 0.72.0](https://github.com/reactwg/react-native-releases/discussions/54)に記載されています：Metro（シンボリックリンク、エクスポート、resolveWeak）、Hermes...
+* 📦 [Bottom Sheet v5 Alpha](https://twitter.com/gorhom/status/1637237501294268416): Reanimated v3、Gesture Handler v2、Webサポート
+* 📦 [React-Native-Permissions v3.8](https://github.com/zoontek/react-native-permissions/releases/tag/3.8.0): 新しいアーキテクチャのサポート
+* 📦 [React-Native-PDF-Renderer v1](https://github.com/douglasjunior/react-native-pdf-renderer): ネイティブPDFレンダラー
+* 📦 [React-Native-Testing-Library v12](https://twitter.com/mdj_dev/status/1635927436947865600)
+* 📜 [Expo Router Alphaを探索する](https://www.g2i.co/blog/explore-expo-router-alpha)
+* 📜 [ExpoでReact Native開発を簡素化](https://thoughtbot.com/blog/simplifying-react-native-development-with-expo)
+* 🎥 [Expo、React-Native、Swift、Kotlinでネイティブビューライブラリを構築](https://www.youtube.com/watch?v=c-tFADXScEI)
+* 🎥️ [The React Native Show #21 - ネイティブとReact Nativeでのプロファイリング](https://www.youtube.com/watch?v=IyFxgEit3Jc)
+
+***
+
+## 🧑‍💻 Jobs {#jobs}
+
+🧑‍💼 [**Callstack - シニアReact Native開発者 - 完全リモート、B2B月額21-32k PLN（税抜）**](https://www.callstack.com/senior-react-native-developer)
+
+世界で最も使われているアプリで働きたいですか？React Nativeテクノロジーの共創に参加しませんか？React & React NativeのリーダーであるCallstackチームに参加してください。詳細は当社ウェブサイトをご覧ください。あなたの応募をお待ちしています - あなたの実力を見せてください！
+
+🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\&t=ArRLC77BpRwXXCdx8fnUqw)
+
+React Nativeに特化した開発者向けの複数のポジションを募集しています！報酬は約160kドル＋10％のボーナスです。RNの実務経験があり、米国在住であることが条件です。詳細は[@gabe\_g2i](https://twitter.com/gabe_g2i)までDMでお問い合わせください。This Week in Reactからの紹介であることをお忘れなく。
+
+💡 [求人を掲載する方法は？](https://thisweekinreact.com/sponsor)
+
+***
+
+## 🔀 Other {#other}
+
+* [Ecma TC39第95回会議のアジェンダ](https://github.com/tc39/agendas/blob/main/2023/03.md): 会議進行中。[Async Context](https://twitter.com/sebastienlorber/status/1620391460679065601)がステージ2候補に 👌 また、いくつかの新しい[Promise関連の提案](https://twitter.com/sebastienlorber/status/1638130215443390464)も。
+* [Rspackの発表](https://www.rspack.dev/blog/announcement.html): 新しいRustバンドラーの公式紹介記事
+* [Farm - Rust製の超高速Webビルドツール](https://github.com/farm-fe/farm): また別のツール 😄
+* [TypeScript 5.0](https://twitter.com/typescript/status/1636416665071288321): デコレータ、新しい設定オプション...
+* [Prettier 2.8.5](https://twitter.com/PrettierCode/status/1637707276286062593): TypeScript 5.0サポート
+* [Vite 4.2](https://twitter.com/vite_js/status/1636362767744765952)
+* [Signals vs. Observables、何がそんなに話題なの？](https://www.builder.io/blog/signals-vs-observables)
+* [フロントエンド開発の終焉](https://www.joshwcomeau.com/blog/the-end-of-frontend-development/)
+* [独自のリアクティブSignalライブラリを書く](https://www.lksh.dev/blog/writing-your-own-reactive-signal-library/)
+* [Denoがpackage.jsonサポートを追加した理由](https://deno.com/blog/package-json-support)
+* [JavaScriptエコシステムの高速化 - npmスクリプト](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-4/)
+* [2023年にフロントエンド開発者が知っておくべき6つのCSSスニペット](https://web.dev/6-css-snippets-every-front-end-developer-should-know-in-2023/)
+* [Drizzle - SQLをそのまま書けるORM](https://www.propelauth.com/post/drizzle-an-orm-that-lets-you-just-write-sql)
+* [「safe npm」の紹介、Socketのnpmラッパー](https://socket.dev/blog/introducing-safe-npm)
+* [Turbowatch - 超高速ファイル変更検出ツール](https://github.com/gajus/turbowatch)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/139/meme.jpg)](https://twitter.com/trashh_dev/status/1636743375956348928)
+
+それでは！👋

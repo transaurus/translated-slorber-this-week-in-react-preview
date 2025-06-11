@@ -1,0 +1,160 @@
+---
+slug: /214
+title: "This Week In React #214: Base UI, Custom Elements, Next.js, React Router, TanStack, i18n, OG, Apollo, Android XR, iOS targets, Nitro, RNTL, Volume Manager, Drag Select, brownfield, Zod, Node, SourceMaps, Bun, State Of JS..."
+authors: [slorber]
+date: 12-18-2024
+---
+
+みなさん、こんにちは！
+
+今週は、有望な新しいヘッドレスコンポーネントライブラリに興奮しています。また、React開発者に関連するWeb Componentsについての興味深い記事をいくつか見つけました。
+
+モバイル分野では、GoogleがAndroid XRを発表し、React Nativeのサポートもすでに進行中です！
+
+🎄 クリスマス休暇を取ります。次回のニュースレターは1月8日までお休みです。\
+🧑‍🎄 皆さんから素晴らしい贈り物をいただきました。[State of JS 2024調査結果](https://2024.stateofjs.com/en-US/resources/)によると、私たちは現在4番目に人気のあるJSニュースレターになりました。
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Become a better engineer one newsletter at a time.](/emails/issues/183/posthog.jpg)](https://dub.link/twir-dec18)
+
+**[ニュースレターで少しずつ優れたエンジニアになりましょう。](https://dub.link/twir-dec18)**
+
+[Product for Engineers](https://dub.link/twir-dec18)は、エンジニアが製品スキルを向上させるのに役立つPostHogのニュースレターです。
+
+3万人以上の購読者を抱えるこのニュースレターは、製品とエンジニアリングのギャップを埋め、ユーザーが愛する製品をリリースする手助けをします。
+
+適切な技術の選び方、スタートアップを失敗させる非自明な行動、そして彼らが苦労して学んだA/Bテストの失敗などについて取り上げています。完全無料で、今後も無料のままです。
+
+[**無料で購読する。**](https://dub.link/twir-dec18)
+
+***
+
+## ⚛️ React {#react}
+
+[![Base UI 1.0 alpha](/emails/issues/214/base-ui.jpg)](https://base-ui.com/)
+
+[**Base UI 1.0 alpha**](https://base-ui.com/)
+
+私は通常UIライブラリには興味がありません。しかし、Radix、MUI、Floating UIの開発者たちが集まって、25のスタイルなしでアクセシブルで構成可能なプリミティブコンポーネントを作成し、細部までこだわっているのを見ると、注目する価値があると思います！Radixは現在非常に人気があります（特にshadcn/uiのおかげで）が、最近は[メンテナンスがやや減少](https://github.com/radix-ui/primitives/graphs/contributors)しており、新しいヘッドレスライブラリの登場は常に歓迎です！
+
+***
+
+**React 19とカスタム要素**
+
+興味深い関連記事をいくつか見つけました：
+
+* 📜 [React 19とWeb Componentの例](https://frontendmasters.com/blog/react-19-and-web-component-examples/): Chris CoyierがReact 19のカスタム要素サポートをテストし、Lit要素を作成してJSX経由でレンダリングしています。オブジェクトをプロパティとしてシームレスに渡せますが、イベントハンドラにはカスタムイベントのディスパッチが必要な場合があります。
+* 📜 [React 19がカスタム要素の完全サポートを導入](https://aleks-elkin.github.io/posts/2024-12-06-react-19/): React 18とReact 19のサポート改善を比較しています。
+* 📜 [Sweet Suspense](https://plainvanillaweb.com/blog/articles/2024-09-09-sweet-suspense/): Reactのlazy/Suspense/ErrorBoundaryをカスタム要素で再現する楽しい実験です。
+* 📜 [Isomorphic Web Components](https://jakelazaroff.com/words/isomorphic-web-components/): Reactは使用していませんが、Web Componentsのサーバーサイドレンダリングサポートについての有用な概要です。
+
+***
+
+* 💸 [React Bricks – React向けビジュアルCMSがよりアクセスしやすくなり、低価格のエントリープランと柔軟な従量課金オプションを提供。無料でスタート！](https://www.reactbricks.com/?utm_source=twir\&utm_campaign=ql24)
+* 🐦 [Lee Robinsonが、Next.jsをローカルで実行時のページ遷移に時間がかかる理由を説明](https://x.com/leeerob/status/1869095675201192335)
+* 👀 [Next.js PR - `unstable_rootParams()`](https://github.com/vercel/next.js/pull/72837): ルートレイアウトまでのすべてのパスセグメントからパラメータを返す便利な新しい実験的API。i18nの`[locale]`パラメータへのアクセスに特に有用。
+* 👀 [Next.js PR - `experimental.newDevOverlay`](https://github.com/vercel/next.js/pull/73977): 新しい開発オーバーレイが導入され、機能フラグが既に存在。
+* 👀 [Rsbuild PR - plugin-react-router](https://github.com/web-infra-dev/rsbuild/pull/4186): React Routerのフレームワーク機能（Remix）がViteプラグインとして実装され、他のバンドラーもReact Routerをフレームワーク化できる可能性。
+* 🎄 [GitHub Unwrapped 2024](https://githubunwrapped.com/): Remotionベースのプロジェクトが2024年版に更新。
+* 📜 [React i18nextアプリケーションの検証方法](https://lingual.dev/blog/how-to-validate-your-react-i18next-application/): 欠落、未使用、無効な翻訳キーを防ぐreact-i18nextベースのワークフローを紹介。react-intlユーザー向けの別記事もあり。
+* 📜 [Rails + Stimulus + React - 統合の決定版](https://blog.codeminer42.com/rails-stimulus-react/): Stimulusのデータ属性を使用してRailsページにReactのオートコンプリートコンポーネントをマウント。
+* 📜 [Remixでのビルド時Open Graph画像生成](https://kettanaito.com/blog/build-time-og-images-in-remix): Satoriの制限を説明し、Chromiumインスタンスを生成する新しいremix-og-image Viteプラグインを紹介。
+* 📜 [ReactでINPを効果的に最適化する5つのヒント](https://calendar.perfplanet.com/2024/5-tips-to-effectively-optimize-inp-in-react/): DOMサイズの削減、コンポーネント分割、Suspenseの使用、ハイドレーションエラーの回避、同期可能なuseEffectへの注意。
+* 📜 [Reactフォームライブラリが不要な場合](https://www.robinwieruch.de/react-form-validation/): ライブラリなしでサーバーサイドとクライアントサイドのフォーム検証を実装する方法を紹介。
+* 📜 [TanStack Startの紹介](https://frontendmasters.com/blog/introducing-tanstack-start/)
+* 📜 [2025年のReactテックスタック](https://www.robinwieruch.de/react-tech-stack/)
+* 📜 [サーバーとクライアント間での型とコードの共有](https://echobind.com/post/sharing-types-and-code-between-the-server-and-client)
+* 📜 [Storybookタグ - 作業スタイルに合わせてコンポーネントとストーリーを整理](https://storybook.js.org/blog/storybook-tags/)
+* 📜 [サーバーコンポーネントのメンタルモデル](https://saewitz.com/the-mental-model-of-server-components)
+* 📜 [ReactアプリのDocker化方法](https://www.docker.com/blog/how-to-dockerize-react-app/)
+* 📦 [Inertia 2.0 - Laravel向けフロントエンド開発の再定義](https://blog.laravel.com/announcing-inertia-20-redefining-frontend-development-for-laravel): ReactをPHPバックエンドにシームレスに統合するツールの新メジャーバージョン。新機能: 非同期リクエスト、遅延プロップ、プリフェッチ、ポーリング。
+* 📦 [Apollo Client 3.12 - GraphQLフラグメントデータマスキング](https://www.apollographql.com/blog/more-resilient-code-with-data-masking-in-apollo-client-3-12): Relayと同様に、Apollo Clientがコロケーション、カプセル化、パフォーマンスを改善。コンポーネントは必要なフィールドのみを受け取り、余分なデータは含まれない。
+* 📦 [Virtua 0.39 - ゼロ設定、高速で軽量な仮想リスト - React 19サポート](https://github.com/inokawa/virtua)
+* 📦 [Material UI年末アップデート - MUI v5/6がReact 19と互換性](https://mui.com/blog/material-ui-2024-updates/)
+* 📦 [Roadmap UI - インタラクティブなロードマップ構築のためのコンポーザブルコンポーネント - ガント、かんばん、カレンダー、リスト、テーブル](https://www.roadmap-ui.com/)
+* 🎥 [Justin Poli - Reactのルールを破るとどうなるか？](https://www.youtube.com/watch?v=NsFD-1HkJNU): Mobx-State-Treeメンテナーが、React Compilerとの互換性を持たせるための計画を説明。
+* 🎥 [Wawa Sensei - Three.js & React Three FiberでVR/ARリズムゲームをコーディングした道のり](https://www.youtube.com/watch?v=jBh4ftHqC5U)
+* 🎥 [Theo - AstroがNextのお気に入り機能を奪った（そして興奮している）](https://www.youtube.com/watch?v=3xqa0SsRbdM)
+* 🎥 [Shruti Kapoor - React 19: 本当に欲しい機能](https://www.youtube.com/watch?v=Hek-Ux9jha8)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![StreamのReact SDKで簡単にインタラクティブチャットを実装。](/emails/issues/214/stream.jpg)](https://getstream.io/chat/react-chat/tutorial/?utm_source=newsletter\&utm_medium=referral\&utm_content=\&utm_campaign=thisweekinreact)
+
+**[StreamのReact SDKで簡単にインタラクティブチャットを実装。](https://getstream.io/chat/react-chat/tutorial/?utm_source=newsletter\&utm_medium=referral\&utm_content=\&utm_campaign=thisweekinreact)**
+
+**🔧 開発者による、開発者のためのツール:**
+
+* 完全にカスタマイズ可能なUIコンポーネントとフック。
+* 迅速な統合のための包括的なドキュメントとクイックスタートテンプレート。
+
+**⚡ 超高速パフォーマンス:**
+
+* 50ms未満のメッセージ配信。
+* 信頼性の高いインフラで数百万ユーザーまでスケーラブル。
+
+**✨ すぐに使える機能:**
+
+* タイピングインジケーター、リアクション、スレッド。
+* ファイルや画像共有を含むリッチメディアサポート。
+
+🚀 高速開発。 effortlessなスケーリング。 [Streamで始める](https://getstream.io/try-for-free/?utm_source=newsletter\&utm_medium=referral\&utm_content=\&utm_campaign=thisweekinreact)。
+
+***
+
+## 📱 React-Native {#react-native}
+
+* 💸 [デモ - Reanimated、Gesture Handler、Skiaを使用して作成された90以上のReact Nativeアニメーション by Reactiive](https://reactiive.io/demos?utm_source=thisweekinreact)
+* 📊 [State of React Native 2024 - 調査開始、回答してください！](https://survey.stateofreactnative.com/)
+* 🐦 [Evan Baconの`npx create-target demo`](https://x.com/Baconbrix/status/1868672438898455023): Expoアプリと共存し、共有ストレージを通じて通信可能なiOSターゲット（ウィジェット、共有拡張機能）を作成する新しいCLI。
+* 🧵 [Infinite Red - 2024年トップReact Native記事](https://x.com/infinite_red/status/1869104889777020951)
+* 📣 [Android XR SDK Developer Preview](https://developers.googleblog.com/en/introducing-android-xr-sdk-developer-preview/): Googleが拡張現実ヘッドセット向けの新しいAndroidプラットフォームを発表。Oskar氏によると、React Nativeサポートも予定されています（[デモ](https://x.com/o_kwasniewski/status/1868645896239690009)）
+* 📣 [Expo - 今後のAppleプッシュ通知サービス証明書変更について](https://expo.dev/blog/upcoming-apple-push-notification-service-certificate-change): Expo Push Serviceユーザーは何もする必要はありません。
+* 📜 [SignalオープンソースアプリにReact Nativeを追加](https://blog.swmansion.com/add-react-native-to-the-signal-open-source-app-part-2-android-803c1b726582): 既存アプリへのReact Native統合作業をiOSとAndroidの2部構成で解説。
+* 📜 [ブラウンフィールドアプリケーションでReact Nativeをアップグレードする方法](https://www.callstack.com/blog/how-to-upgrade-react-native-in-a-brownfield-application)
+* 📜 [Expoを使用してMarathonでソーシャルシェアリングを促進する方法](https://expo.dev/blog/how-we-promote-social-sharing-on-marathon-with-expo)
+* 📜 [Expo Routerでのシームレスなナビゲーション構築: タブ、モーダル、スタック](https://medium.com/@coby09/building-seamless-navigation-in-expo-router-tabs-modals-and-stacks-2df1a5522321)
+* 📦 [React Native Image Playground](https://github.com/Ucekay/react-native-image-playground): iOS 18.2+のApple Intelligence Image Playgroundをアプリに統合し、AI画像を生成するツール。
+* 📦 [Nitro 0.19 - Swiftエラー、双方向Promise、型消去](https://github.com/mrousavy/nitro/releases/tag/v0.19.0)
+* 📦 [Nitro Palette 1.0 - 画像からの高速カラーパレット抽出](https://github.com/Ucekay/nitro-palette/releases/tag/v1.0.0)
+* 📦 [React Native Volume Manager 2.0 - 新アーキテクチャ、0.76+、iOS 15+、Expo 52+対応](https://github.com/hirbod/react-native-volume-manager/releases/tag/v2.0.1)
+* 📦 [Drag Select 0.1 - リスト内のアイテムを自動選択するパンジェスチャー作成ユーティリティ](https://github.com/osamaqarem/drag-select)
+* 📦 [React Native Testing Library 13.0 RC - デフォルトで並列レンダリングを有効化、Jestマッチャーを自動拡張](https://github.com/callstack/react-native-testing-library/releases/tag/v13.0.0-rc.0)
+* 🎥 [Dan's Lab - React-Native Skiaを使った線形代数と基本的な3Dグラフィックス](https://www.youtube.com/watch?v=uZBGcbKFhXE)
+* 🎥 [Expo - ユニバーサルフルスタックExpo Stripe支払い統合](https://www.youtube.com/watch?v=J0tyxUV_omY)
+* 🎙️ [Rocket Ship 56 - BlueskyのReact Nativeアプリ＆AT Protocol with Samuel Newman](https://share.transistor.fm/s/2134db4c)
+* 🎙️ [React Universe On Air - Nitro搭載のReact Native FastIO: パフォーマンスブースト](https://www.youtube.com/watch?v=u4PBBLujv7I)
+
+***
+
+## 🔀 Other {#other}
+
+* 📣 [Ecma 426 - ソースマップフォーマット仕様](https://ecma-international.org/publications-and-standards/standards/ecma-426/): 信じられないかもしれませんが、これまで標準化されていませんでした。
+* 📊 [State of JavaScript 2024](https://2024.stateofjs.com/en-US)
+* 📊 [State of Node.js Performance 2024](https://nodesource.com/blog/State-of-Nodejs-Performance-2024)
+* 📦 [Zod 3.24 - 標準スキーマ仕様を実装した最初のバージョン](https://github.com/colinhacks/zod/releases/tag/v3.24.0)
+* 📦 [Node 23.4 - `node:sqlite`モジュールのフラグ解除、`--trace-env`、`assert.partialDeepStrictEqual`](https://nodejs.org/en/blog/release/v23.4.0)
+* 📜 [Bunの新しいテキストベースのロックファイル](https://bun.sh/blog/bun-lock-text-lockfile)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/214/meme.jpg)](https://x.com/jordwalke/status/1868092255879540957)
+
+[![alt](/emails/issues/214/meme2.jpg)](https://x.com/wesbos/status/1869032343526322378)
+
+それでは！ 👋

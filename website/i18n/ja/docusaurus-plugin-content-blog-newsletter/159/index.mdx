@@ -1,0 +1,168 @@
+---
+slug: /159
+title: "React Hebdo #159: Bun, Static Hermes, Next.js, Redwood, Marz, React Aria Components, Next Nav, visionOS, Reanimated, Flame, Skia Fonts, Stagger, Tamagui, TypeScript, Tauri..."
+authors: [slorber]
+date: 09-13-2023
+---
+
+みなさん、こんにちは！
+
+今週はランタイムが注目されています。もちろん、BunとStatic Hermesについても取り上げます。
+
+今週のTwitterでの激しい議論は控えます😅 ポジティブな話題に集中しましょう。
+
+Reactのエキスパート向けに、10月20日から23日までロンドンで開催される[React Advanced](https://reactadvanced.com/?utm_source=email\&utm_medium=thisweekinreact)カンファレンスをチェックしてください（[-10%割引 - コード「REACT10」](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)）。
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアル形式 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![エンタープライズグレードのAPI for Feeds, Chat, & Video!](/emails/issues/153/stream.jpg)](https://getstream.io/video/voice-calling/?utm_source=thisweekinreact\&utm_medium=sponsorship\&utm_content=\&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+[**エンタープライズグレードのAPI for Feeds, Chat, & Video!**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact\&utm_medium=sponsorship\&utm_content=\&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+Streamは、エンタープライズグレードの**API**と**SDK**を提供し、プロダクトとエンジニアリングチームがスケール時に直面する2つの一般的な問題（アプリ内チャットとソーシャルアクティビティフィード）を解決します。
+
+Streamを使用すると、開発者はこれらの機能をゼロから構築する時間のほんの一部で、あらゆるタイプのメッセージングやフィード体験をアプリに統合できます。Stream Chatは、リッチでリアルタイムなメッセージングをアプリケーションに簡単に統合できるようにします。
+
+Streamは、[**React**](https://getstream.io/chat/sdk/react/?utm_source=thisweekinreact\&utm_medium=sponsorship\&utm_content=\&utm_campaign=thisweekinreact_July2023_video_klmh22)、[**React-Native**](https://getstream.io/chat/sdk/react-native/?utm_source=thisweekinreact\&utm_medium=sponsorship\&utm_content=\&utm_campaign=thisweekinreact_July2023_video_klmh22)、Expo、Flutter、Android、Angular、Compose、Unreal、iOSなど、人気のあるフレームワーク向けの堅牢なクライアントサイドSDKを提供します。
+スタートアップやサイドプロジェクト向けに、Makerアカウントでエンタープライズグレードの機能、関数、UIコンポーネントを完全無料で利用できます。
+
+[**新しいReact Videoチュートリアルを試してみてください！**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact\&utm_medium=sponsorship\&utm_content=\&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+***
+
+## ⚛️ React {#react}
+
+[![Bun 1.0](/emails/issues/159/bun.jpg)](https://bun.sh/blog/bun-v1.0)
+
+[**Bun 1.0**](https://bun.sh/blog/bun-v1.0)
+
+今週は見逃せないニュースです：Bunが安定版v1.0としてリリースされました。このニュースは直接Reactに関連するものではありませんが、いずれすべてのReact開発者に影響を与えるでしょう。
+
+Bunは、WebkitをベースにZigで書かれたJavaScriptとTypeScriptのための完全なツールチェーンです。現在使用している多くのフロントエンドツール（Node.js、npx、Babel、esbuild、swc、webpack、Jest、Vitest、npm、Yarn、pnpmなど）に対する超高速な代替手段です。ベンチマークは非常に印象的で、間違いなく本物です。
+
+既存のツールとの互換性とESM/CJSの混合サポートにより、Bunは簡単にドロップイン代替として導入できます。Bunは一般的にコードを変更せずにそのまま実行可能です（そうでない場合は[🐦バグと見なされます](https://twitter.com/jarredsumner/status/1700497869160268155)）。Next.js、Remix、AstroなどのReactフレームワークは既にサポートされています。npm/Yarn/pnpmやJest/Vitestの代替として使用するのは良い導入点であり、リスクも少ないでしょう。
+
+**その他の有用なリンク:**
+
+* 📣 [Vercel - Bun installがゼロ設定でサポートされました](https://vercel.com/changelog/bun-install-is-now-supported-with-zero-configuration)
+* 👀 [React-Native CLI PR - initコマンドでBunをサポート](https://github.com/react-native-community/cli/pull/2073)
+* 🐦 [BunコンソールがJSXをサポート](https://twitter.com/jarredsumner/status/1701499357080736047)
+* 🐦 [Bun + create-expo-app = 12倍高速な初期化](https://twitter.com/notbrent/status/1701044351177244790)
+* 📜 [Matteo Collina - Bunとその他の冒険についての考え](https://adventures.nodeland.dev/archive/my-thoughts-on-bun/)
+* 📦 [Marz - Bun向けの高速で軽量なReact Server Componentsフレームワーク](https://github.com/hex2f/marz)
+* 🎥 [公式リリース動画 - Bun 1.0が登場](https://www.youtube.com/watch?v=BsnCpESUEqM)
+* 🎥 [Fireship - BunがJavaScript界を混乱させている](https://www.youtube.com/watch?v=dWqNgzZwVJQ)
+* 🎥 [Lee Robinson - Bunについての考え](https://www.youtube.com/watch?v=z_66kDwxwBI)
+
+***
+
+* 💸 [Zero To Shipped - 高速フルスタック開発をマスターし、**ついに**プロダクトをリリース](https://www.zerotoshipped.com/)
+* 🐦 [Next.js - コンソール出力の再設計](https://twitter.com/leeerob/status/1701775526459756620)
+* 👀 [RedwoodJS - React Server Actionsのサポート](https://community.redwoodjs.com/t/react-server-components-rsc/5081/7): 現時点では限定サポートで、サーバーアクションは別ファイルに記述する必要あり。
+* 👀 [React.gg](https://react.gg/) と [The Joy of React](https://www.joyofreact.com/): 最も待望されていた2つのReactコースがリリースされました！
+* 📜 [Next.js、一体なぜ？](https://pilcrow.vercel.app/blog/nextjs-why)
+* 📜 [Relayを使用したフロントエンドアプリチームのスケーリング](https://hasura.io/blog/scaling-frontend-app-teams-using-relay/)
+* 📜 [Reactアプリにおける自動テストの広範な視点](https://reacthandbook.dev/automated-testing)
+* 📜 [TailwindでReact Selectをスタイリング](https://www.jussivirtanen.fi/writing/styling-react-select-with-tailwind)
+* 📜 [カスタマイズされたFlowsでアプリケーションの複雑さを克服](https://www.40seas.com/blog/overcoming-application-complexity-with-customized-flows)
+* 📜 [Storybookでの自動ビジュアルテスト、さらにReact+TSのビルド時間2.2倍高速化](https://storybook.js.org/blog/automatic-visual-tests-plus-2x-faster-react-ts/)
+* 📜 [数学で描く: レイマーチングの優しい学び](https://blog.maximeheckel.com/posts/painting-with-math-a-gentle-study-of-raymarching/)
+* 📦 [React Aria Components - ベータ版リリース](https://react-spectrum.adobe.com/releases/2023-09-07.html)
+* 📦 [Ariakit React 0.3](https://github.com/ariakit/ariakit/releases/tag/@ariakit/react@0.3.0)
+* 📦 [Next Admin - Next.jsとPrisma向けのフル機能管理画面](https://github.com/premieroctet/next-admin)
+* 📦 [Next Nav - Next.jsルートのナビゲーションと作成用VSCode拡張](https://www.next-nav.com/)
+* 👥 [reactjsday](https://2023.reactjsday.it/) (イタリア・ヴェローナ、10月27日) が [-10% 割引コード "media_TWIR"](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR) を提供中
+* 👥 [React Advanced](https://reactadvanced.com/?utm_source=email\&utm_medium=thisweekinreact) (ロンドン、10月20-23日) が [-10% 割引コード "REACT10"](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10) を提供中
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![highlight.io - オープンソースのフルスタック監視プラットフォーム](/emails/issues/159/highlight.jpg)](http://highlight.io)
+
+[**highlight.io - オープンソースのフルスタック監視プラットフォーム**](http://highlight.io)
+
+[**highlight.io**](http://highlight.io) は、次世代プロジェクト向けの真のオープンソースセッションリプレイ、エラーモニタリング、ロギングプラットフォームです。
+
+バグ発生の原因を推測する時間を無駄にしないでください。highlightを使用すれば、ブラウザやサーバーサイドアプリケーションで起きていることを明確に把握できます。
+
+お気に入りのフレームワークに簡単に導入可能: [React.js](https://www.highlight.io/docs/getting-started/client-sdk/reactjs)、[Next.js](https://www.highlight.io/docs/getting-started/fullstack-frameworks/next-js)、[Remix](https://www.highlight.io/docs/getting-started/fullstack-frameworks/remix)、その他何でも！
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![Static Hermes](/emails/issues/159/hermes.jpg)](https://speakerdeck.com/tmikov2023/static-hermes-react-native-eu-2023-announcement)
+
+[**Static Hermes**](https://speakerdeck.com/tmikov2023/static-hermes-react-native-eu-2023-announcement)
+
+Static Hermesは先週React-Native EUで発表されました。私は現地にいなかったため、動画がYouTubeに公開される前にスライドを読んで理解した内容を説明します。
+
+Static Hermesは実験的なプロジェクトで、TypeScript（またはFlow）コードの一部をネイティブコードにコンパイルするオプションを提供します。これにより、Hermesの通常のバイトコードインタプリタモードと比べて大幅なパフォーマンス向上（10～20倍）が得られます。また、TypeScriptコードから直接ネイティブAPIと統合できるようになります（ゼロコストのFFI、JSIラッパー比15～80倍高速）。
+
+これを有効にするには、まずTypeScriptを「健全な」言語にする必要があります。Static HermesはJavaScriptのセマンティクスを変更し、宣言された型が実行時の型と一致することを保証します。このスライドが概念をよく説明しています：
+
+[![Static Hermes makes TypeScript sound](/emails/issues/159/hermes2.jpg)](https://speakerdeck.com/tmikov2023/static-hermes-react-native-eu-2023-announcement?slide=14)
+
+非常に興味深いアイデアで、将来的にはReact-Nativeエコシステム以外にも影響を与える可能性があるかもしれません。
+
+**その他の有用なリンク：**
+
+* 📜 [マイクロベンチマークを300倍高速化する方法（不正行為なし）](https://tmikov.blogspot.com/2023/09/how-to-speed-up-micro-benchmark-300x.html)
+* 🐦 [OTA（Over-The-Air）更新サポートの計画](https://twitter.com/mdj_dev/status/1700424775116493053)
+
+***
+
+* 💸 [Blitz - iOS、Android、Web向けのReact Nativeアプリをより速く構築！](https://www.blitz-rn.com/)
+* 🐦 [Microsoftには1000人以上のReact Native開発者がいる](https://twitter.com/thymikee/status/1700100221940662684)
+* 🐦 [Apple Vision Proシミュレータでネイティブ動作するReact Nativeデモ](https://twitter.com/o_kwasniewski/status/1701626162521190688)
+* 🧵 [React-Native EUのスケッチ](https://twitter.com/DelphineBugner/status/1700077346852622504)
+* 📜 [React NativeコアにE2Eテストを導入](https://www.callstack.com/blog/introducing-e2e-tests-to-react-native-core)
+* 📜 [Expo Launch Partyの振り返り](https://blog.expo.dev/expo-launch-party-recap-697d7b7739e8)
+* 📦 [React-Native macOS 0.72](https://github.com/microsoft/react-native-macos/releases/tag/v0.72.0)
+* 📦 [Reanimated 3.5.0 - Windows/macOSサポート、createWorkletRuntime、reduceMotion...](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.5.0)
+* 📦 [Stagger - クロスプラットフォームなReanimated staggerコンポーネント](https://github.com/animate-react-native/stagger)
+* 📦 [Flame AI - AI駆動のインタラクティブなReact Nativeアップグレード用CLI](https://github.com/infinitered/flame)
+* 📦 [React-Native-Skia - フォントマネージャー、システムおよびカスタムフォントのサポート](https://shopify.github.io/react-native-skia/docs/text/fonts/)
+* 📦 [react-native-secure-window - スクリーンキャプチャ時にReact Nativeビューを非表示にする](https://github.com/bufgix/react-native-secure-window)
+* 📦 [Tamagui 1.62 - ゼロコンフィグサポート](https://github.com/tamagui/tamagui/releases/tag/v1.62.0)
+* 🎙️ [React Native Radio 274 - React Native CI & 自動デプロイ](https://reactnativeradio.com/episodes/rnr-274-react-native-ci-automated-deployments)
+
+***
+
+## 🔀 Other {#other}
+
+* 👀 [Node.js 16 サポート終了](https://nodejs.org/en/blog/announcements/nodejs16-eol)
+* 📜 [Tauri 2.0へのロードマップ - モバイルアップデート](https://beta.tauri.app/blog/roadmap-to-tauri-2-0/)
+* 📜 [TypeScriptは悪いこと...そして良いことも防ぐ](https://kyleshevlin.com/typescript-prevents-bad-things-and-good-things)
+* 📜 [Deno Deployでのネイティブnpmサポート発表](https://deno.com/blog/npm-on-deno-deploy)
+* 📜 [あなたのキャッシュヘッダーはもっと積極的にできるはず](https://www.macarthur.me/posts/more-aggressive-cache-headers)
+* 📜 [大規模プロジェクトはTypeScriptを捨てているのか？](https://www.totaltypescript.com/are-big-projects-ditching-typescript)
+* 📜 [2023年の25以上のUIコンポーネントライブラリ概要](https://www.builder.io/blog/25-plus-ui-component-libraries)
+* 📜 [Node.js vs. Deno vs. Bun: JavaScriptランタイム比較](https://snyk.io/fr/blog/javascript-runtime-compare-node-deno-bun/)
+* 📜 [Vercel - GoからRustへのTurborepo段階的移行でZigを活用](https://vercel.com/blog/how-we-continued-porting-turborepo-to-rust)
+* 📦 [Chrome 117 - 配列グループ化、CSSサブグリッド、transition-behavior...](https://developer.chrome.com/en/blog/new-in-chrome-117/)
+* 📦 [Skott - JS、TS、Node.jsの依存関係グラフを分析・検索・可視化する開発ツール](https://dev.to/antoinecoulon/introducing-skott-the-new-madge-1bfl)
+* 📦 [Vest 5.0 - 宣言型バリデーションフレームワーク](https://github.com/ealush/vest/releases/tag/vest%405.0.1)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/159/meme.jpg)](https://twitter.com/sebastienlorber/status/1701293733822541931)
+
+それではまた！👋

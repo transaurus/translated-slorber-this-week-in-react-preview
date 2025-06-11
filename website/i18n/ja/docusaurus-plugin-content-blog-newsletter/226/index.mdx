@@ -1,0 +1,143 @@
+---
+slug: /226
+title: "This Week In React #226: Parcel, TanStack, Astro, React-Scan, React-Router | Worklets, Enterprise Framework, Perf, Expo UI, FlatList, BackgroundTask | Node.js, Oxc Minifier, Oxlint, Valibot"
+authors: [matthieugicquel, cyrilbo]
+date: 03-19-2025
+---
+
+みなさん、こんにちは！
+
+Theodo AppsのCyrilとMatthieuです 👋。ReactとReact Nativeに関する大きなアップデートをお届けします！
+
+React Server ComponentsがParcelでサポートされるようになり、モダンなアプリケーションにとってより実用的なバンドラーとなりました。Callstackはエンタープライズチーム向けの新しいReact Nativeフレームワークに取り組んでおり、ビルドキャッシュの改善を約束しています。React Native WorkletsはReact Nativeに真のマルチスレッドを導入し、ついにアニメーションから切り離されました。また、React 19への移行が加速しており、各チームが変更への適応に関する知見を共有しています。
+
+エキサイティングな時代がやってきました—さっそく見ていきましょう！ 🚀
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![プロダクトエンジニア向け初のニュースレター](/emails/issues/226/dub.jpg)](https://dub.link/twir-mar19)
+
+**[プロダクトエンジニア向け初のニュースレター](https://dub.link/twir-mar19)**
+
+[Product for Engineers](https://dub.link/twir-mar19)は、エンジニアがプロダクトスキルを強化するためのPostHogのニュースレターです。
+
+5万人以上の購読者を抱え、プロダクトとエンジニアリングのギャップを埋め、ユーザーが愛するプロダクトをリリースする手助けをします。
+
+締め切りがなぜ悪いのか、スタートアップを殺す非自明な行動、そして彼らが苦労して学んだ失敗などについて取り上げています。何より、完全に無料です。
+
+[**無料で購読する。**](https://dub.link/twir-mar19)
+
+***
+
+## ⚛️ React {#react}
+
+[![Parcel v2.14.0](/emails/issues/226/parcel.jpg)](https://parceljs.org/blog/v2-14-0/)
+
+[**Parcel v2.14.0**](https://parceljs.org/blog/v2-14-0/)
+
+Parcelは非常に興味深い存在です：非常に堅牢で機能が充実したバンドラーです。主要なReactフレームワークでは使用/サポートされていませんが、v2.14.0でいくつかの大きな機能が追加されました：
+
+* クライアント、サーバー、静的レンダリングを備えたServer Components
+* Rustライブラリ`mdx-rs`を使用した統合MDXサポート
+* `create-react-app`の代替となる`create-parcel` CLI
+* 新しいReactエラーオーバーレイ
+
+「独自のフレームワークを構築している」場合やニッチなユースケースがある場合、これらすべてがParcelをさらに魅力的な選択肢にします。
+
+***
+
+* 💸 [ConvexがMCPサーバーをリリース](https://convex.link/thisweekmcp)
+* 🐦 [React Queryにストリーミングサポートが追加予定](https://bsky.app/profile/tkdodo.eu/post/3lkiuj7362k2a)
+* 🗓 [StrapiConf](https://conf.strapi.io/?utm_source=thisweekinreact) - 🇫🇷 パリ - 5月13日。Shruti Kapoor、Quentin de Quelen、Sebastien Chopinら豪華ラインナップをチェック！「TWIR」コードで10%オフ
+* 🗓 [Future Frontend](https://futurefrontend.com/?utm_source=thisweekinreact) - 🇫🇮 エスポー - 5月26-28日。Web開発/デザインとAIが融合したシングルトラック。「TWIR」コードで10%オフ
+* 📣 [TanStackとNetlifyが提携](https://tanstack.com/blog/netlify-partnership)
+* 📜 [Live Mode](https://www.openstatus.dev/blog/live-mode-infinite-query): TanStackのInfinite Queriesを使ったReactでのライブデータ更新
+* 📜 [MUI XをReact 19に移行した方法](https://mui.com/blog/react-19-update/): refsやStrictModeに破壊的変更がある中でReact 18との互換性を維持する必要があった
+* 📜 [ViteとReactで静的サイトを構築](https://blog.carlosn.com.br/post/writing-static-websites-with-vite-and-react/): 実験的な`vite-ssg-react`パッケージの仕組みと今後の計画
+* 📜 [React開発者向けSSR深掘り](https://www.developerway.com/posts/ssr-deep-dive-for-react-developers): フレームワーク任せにせず、自ら実装する方法とその仕組みを学ぶ
+* 📜 [Reactライブラリの共通アーキテクチャ](https://www.felgus.dev/blog/common-react-lib-architecture#react-19)
+* 📜 [ReactがLLMワークフローに最適な理由](https://www.gensx.com/blog/why-react-is-the-best-backend-workflow-engine)
+* 💸 [VS Code拡張: Reactコンポーネントの使用状況を可視化](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-mar-2025)
+* 📦 [Astro 5.5 - タイプセーフなセッション、Mermaid図の統合強化](https://astro.build/blog/astro-550/)
+* 📦 [React Scan 0.3 - レンダリングされたコンポーネントの親を確認](https://github.com/aidenybai/react-scan/releases/tag/v0.3.0)
+* 📦 [TanStack Form 1.1 - フォームリセットユーティリティ](https://github.com/TanStack/form/releases/tag/v1.1.0)
+* 📦 [React Router 7.4](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v740)
+* 🎥 [Theo - Tannerがフォームを修正](https://www.youtube.com/watch?v=aezimBnSJqY)
+* 🎥 [Epic Web Dev - React Routerのアップグレード](https://www.epicweb.dev/tips/upgrading-react-router)
+* 🎥 [Web Dev Simplified - Next.jsがついにキャッシュ問題を解決](https://www.youtube.com/watch?v=nHnw3pusFXw)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![テストは不要に - Meticulous登場](/emails/issues/217/meticulous.jpg)](https://www.meticulous.ai?utm_source=thisweekinreact\&utm_campaign=mar19th)
+
+**[テストは不要に - Meticulous登場](https://www.meticulous.ai?utm_source=thisweekinreact\&utm_campaign=mar19th)**
+
+Meticulousは開発者の労力**ゼロ**で包括的なe2e UIテストスイートを作成・維持します。
+
+Dropbox、Bilt Rewards、Latticeなど数百のエンジニアリング組織がフロントエンドテストにMeticulousを採用しています。
+
+TrabaのCTOによるこの言葉が製品を最もよく表しています：「Meticulousは私たちのウェブアプリケーションにおけるフロントエンドテストのアプローチを根本的に変え、フロントエンドテストを一切書く必要をなくしました。このソフトウェアは、あらゆる変更が完全に回帰テストされることを保証し、コードのバグを大幅に減らしながら迅速にリリースできる自信を与えてくれます。」
+
+Palantirで大規模なエンジニアリンググループを率いていた当社のCTOによるこの[記事](https://www.meticulous.ai/blog/lessons-from-a-decade?utm_source=thisweekinreact\&utm_campaign=jan15th)では、網羅的なテストがエンジニアリングの速度を2倍にできる背景が説明されています。
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![React Native Worklets RFC](/emails/issues/226/worklets.jpg)](https://github.com/software-mansion/react-native-reanimated/discussions/7264)
+
+[**React Native Worklets RFC**](https://github.com/software-mansion/react-native-reanimated/discussions/7264)
+
+React Native Workletsは、Reanimatedから抽出された新しいライブラリで、React Nativeで真のマルチスレッドを実現します。複数のランタイムでJavaScriptコードを実行できるようになります。新しいメモリモデルでは、ランタイム間でデータを扱うために`Serializables`、`Shareables`、`Synchronizables`が導入されています。
+
+マルチスレッドをアニメーションから切り離すことで、Reanimatedはより軽量になり、特にバンドルサイズを小さくしたいウェブアプリにとって有益です。同時に、開発者はアニメーションライブラリに依存せずに、非UIタスク（非同期ストレージ、データベース操作、リアルタイムオーディオ処理、AIを活用した計算など）にマルチスレッドを利用できるようになります。
+
+***
+
+* 💸 [PostHog - React Nativeリモート設定のセットアップ方法（Expo Router使用）](https://dub.link/twir-mar19-rn)
+* 🐦 [ネイティブアプリ内でのReact Native：戦略と障壁](https://x.com/_atlj/status/1901990291306873047)
+* 🐦 [React Nativeボトムタブが他のネイティブUI要素とシームレスに統合](https://x.com/o_kwasniewski/status/1884537940736393426)
+* 🐦 [expo/uiがExpo SDK 53でリリース予定](https://x.com/aleqsio/status/1902034184920584538): 完全なネイティブ入力コンポーネント、iOSフォームセクション、コンテキストメニュー、iOSプレビューが含まれます。
+* 🐦 [Expo RouterでのReact Server Functions](https://x.com/Baconbrix/status/1900547469374574966)
+* 📊 [RevenueCat サブスクリプションアプリの現状 2025](https://www.revenuecat.com/state-of-subscription-apps-2025/): クロスプラットフォームサブスクリプションアプリ（特にReact Native製）は、ネイティブアプリと比較してリテンションと収益化のパフォーマンスが優れています。最上位のアプリは、オンボーディングの最適化、早期のペイウォール表示、ハイブリッド収益化の活用によって優れた結果を出しています。
+* 📖 [React Native最適化究極ガイド 2025](https://www.callstack.com/ebook/the-ultimate-guide-to-react-native-optimization): Callstackが最新版ガイドを公開しました。
+* 📖 [Expoドキュメント - プッシュ通知の使用方法](https://docs.expo.dev/guides/using-push-notifications-services/): Expoアプリでプッシュ通知を実装する際に利用可能なサービスについての最新リマインダー。
+* 📜 [新しいReact Nativeフレームワークを構築中](https://www.callstack.com/blog/were-building-a-new-react-native-framework): CallstackのMichałが、大規模モバイルチームを対象としたReact Nativeフレームワークの機能を公開しました。高速なネイティブビルドキャッシュを重視しています。まだオープンソース化されていません。
+* 📜 [FlatList最適化：アイテム追加・削除時の再レンダリングを回避](https://brainsandbeards.com/blog/2025-dont-rerender-new-flatlist-items/)
+* 📦 [Expo BackgroundTask Beta](https://docs.expo.dev/versions/latest/sdk/background-task/)
+* 📦 [Create React Native Library 0.48: Nitroモジュール用テンプレート追加](https://github.com/callstack/react-native-builder-bob/releases/tag/create-react-native-library%400.48.0)
+* 📦 [Galeria 1.1 - 新アーキテクチャ問題の修正、エッジツーエッジ対応](https://github.com/nandorojo/galeria/releases/tag/v1.1.0)
+* 🎙️ [RNR 325 - Jay MeistrichとのLegend List](https://infinite.red/react-native-radio/rnr-325-legend-list-with-jay-meistrich)
+
+***
+
+## 🔀 Other {#other}
+
+* 👀 [Node.js TSC - CorepackをNode.jsディストリビューションに残すべきか？](https://github.com/nodejs/TSC/pull/1697): CorepackはNode.js v25以降、ディストリビューションから除外されます。
+* 📜 [Node.jsがDiscord上に公式コミュニティスペースを開設](https://nodejs.org/en/blog/announcements/official-discord-launch-announcement)
+* 📜 [ESLintにCSSとBaselineのサポートが実装](https://web.dev/blog/eslint-baseline-integration?hl=en)
+* 📦 [Oxc Minifier Alphaリリース](https://oxc.rs/blog/2025-03-13-minifier-alpha): esbuildを上回る性能を持つ新しいミニファイア。Rolldownと連携しており、Viteの次期デフォルトバンドラーを目指しています。
+* 📦 [Oxlint Betaリリース](https://oxc.rs/blog/2025-03-15-oxlint-beta): 500以上の組み込みリンルールを備え、大幅なパフォーマンス向上を実現。中小規模プロジェクトではESLintを完全に置き換え可能。ESLintプラグイン＆カスタムルールサポートは次期メジャーリリースで予定。
+* 📦 [Valibot 1.0リリース - Zodの1kB代替ライブラリ](https://valibot.dev/blog/valibot-v1-the-1-kb-schema-library/)
+* 📦 [Node.js 23.10リリース - 新機能`--experimental-config-file`追加](https://nodejs.org/en/blog/release/v23.10.0)
+* 📦 [Node.js 20.19リリース - require(esm)有効化](https://nodejs.org/en/blog/release/v20.19.0)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![TypeScriptをRustで書き直す](/emails/issues/226/ts-go.jpg)](https://x.com/IroncladDev/status/1899870309152342367)
+
+それでは！ 👋

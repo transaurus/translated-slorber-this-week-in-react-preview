@@ -1,0 +1,582 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/159/index.mdx",
+  "source_file_content_hash": "68055341481807192247a0bb6e3cf078b574e8cc5ae5c398bcb3d938ebebfa4c",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /159\ntitle: \"React Hebdo #159: Bun, Static Hermes, Next.js, Redwood, Marz, React Aria Components, Next Nav, visionOS, Reanimated, Flame, Skia Fonts, Stagger, Tamagui, TypeScript, Tauri...\"\nauthors: [slorber]\ndate: 09-13-2023\n---",
+      "source_content_hash": "7c562133649816af2f7aee8ba7247a629abfc49f3f7215d35475a8bc5efd823d",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week, the runtimes are in the spotlight. Of course, we'll be talking about Bun and Static Hermes.",
+      "source_content_hash": "4ea4a90b4e11cff4f4978057a56c528e791871ca01d46f8b2f50ae27cef9d5e2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週はランタイムが注目されています。もちろん、BunとStatic Hermesについても取り上げます。"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "I'll spare you the heated debates on Twitter this week 😅 let's stick to positive vibes.",
+      "source_content_hash": "d32f9e1bff9a92a32adb4f3b92b2bbd9954a3851e93df3e61a64e722e16e5d27",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週のTwitterでの激しい議論は控えます😅 ポジティブな話題に集中しましょう。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "For React experts, check out the [React Advanced](https://reactadvanced.com/?utm_source=email\\&utm_medium=thisweekinreact) conf in London from 20 to 23 October ([-10% - code \"REACT10\"](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)).",
+      "source_content_hash": "780e2b55190898c4ce1bcf438265fd550b34049f0d1a1d0dda745ba69f3b4b51",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Reactのエキスパート向けに、10月20日から23日までロンドンで開催される[React Advanced](https://reactadvanced.com/?utm_source=email\\&utm_medium=thisweekinreact)カンファレンスをチェックしてください（[-10%割引 - コード「REACT10」](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)）。"
+      }
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6429a3aa"
+      }
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアル形式 🎨**"
+      }
+    },
+    {
+      "segment_id": "507b4652",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "fcd52337",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_fcd52337"
+      }
+    },
+    {
+      "segment_id": "42e34e45",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_42e34e45"
+      }
+    },
+    {
+      "segment_id": "caf67047",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "[![Enterprise Grade APIs for Feeds, Chat, & Video!](/emails/issues/153/stream.jpg)](https://getstream.io/video/voice-calling/?utm_source=thisweekinreact\\&utm_medium=sponsorship\\&utm_content=\\&utm_campaign=thisweekinreact_July2023_video_klmh22)",
+      "source_content_hash": "55a337297540c87cdce419e786c293f69162be9febc6552ecf55d1728e6423b4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![エンタープライズグレードのAPI for Feeds, Chat, & Video!](/emails/issues/153/stream.jpg)](https://getstream.io/video/voice-calling/?utm_source=thisweekinreact\\&utm_medium=sponsorship\\&utm_content=\\&utm_campaign=thisweekinreact_July2023_video_klmh22)"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "[**Enterprise Grade APIs for Feeds, Chat, & Video!**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact\\&utm_medium=sponsorship\\&utm_content=\\&utm_campaign=thisweekinreact_July2023_video_klmh22)",
+      "source_content_hash": "ca0d5ac1def28adaad19c514c51d7da341221a8e294440e4dfab9c41879c0fca",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**エンタープライズグレードのAPI for Feeds, Chat, & Video!**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact\\&utm_medium=sponsorship\\&utm_content=\\&utm_campaign=thisweekinreact_July2023_video_klmh22)"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "Stream is the maker of enterprise-grade **APIs** and **SDKs** that help product and engineering teams solve two common problems at scale: in-app chat and social activity feeds.",
+      "source_content_hash": "05dbd4e953d38d36460ebb9e37d1f04584951effef9ed2729a75d53bf17c3888",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Streamは、エンタープライズグレードの**API**と**SDK**を提供し、プロダクトとエンジニアリングチームがスケール時に直面する2つの一般的な問題（アプリ内チャットとソーシャルアクティビティフィード）を解決します。"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "With Stream, developers can integrate any type of messaging or feed experience into their app in a fraction of the time it would take to build these features from scratch. Stream Chat makes it easy for developers to integrate rich, real-time messaging into their applications.",
+      "source_content_hash": "d69cfc6b1f18fddf8be7fbf319171f3f7b8c563e6532a28dc86f5864a667c6ea",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Streamを使用すると、開発者はこれらの機能をゼロから構築する時間のほんの一部で、あらゆるタイプのメッセージングやフィード体験をアプリに統合できます。Stream Chatは、リッチでリアルタイムなメッセージングをアプリケーションに簡単に統合できるようにします。"
+      }
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "Stream provides robust client-side SDKs for popular frameworks such as [**React**](https://getstream.io/chat/sdk/react/?utm_source=thisweekinreact\\&utm_medium=sponsorship\\&utm_content=\\&utm_campaign=thisweekinreact_July2023_video_klmh22), [**React-Native**](https://getstream.io/chat/sdk/react-native/?utm_source=thisweekinreact\\&utm_medium=sponsorship\\&utm_content=\\&utm_campaign=thisweekinreact_July2023_video_klmh22), Expo, Flutter, Android, Angular, Compose, Unreal, and iOS.\nUnlock enterprise-grade features, functions, and UI components completely free for your startup or side project with the Maker Account.",
+      "source_content_hash": "45f73afd0be3dc2a0957c66fb3e5d80f7578775d3918484299a53a76ff73fe25",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Streamは、[**React**](https://getstream.io/chat/sdk/react/?utm_source=thisweekinreact\\&utm_medium=sponsorship\\&utm_content=\\&utm_campaign=thisweekinreact_July2023_video_klmh22)、[**React-Native**](https://getstream.io/chat/sdk/react-native/?utm_source=thisweekinreact\\&utm_medium=sponsorship\\&utm_content=\\&utm_campaign=thisweekinreact_July2023_video_klmh22)、Expo、Flutter、Android、Angular、Compose、Unreal、iOSなど、人気のあるフレームワーク向けの堅牢なクライアントサイドSDKを提供します。\nスタートアップやサイドプロジェクト向けに、Makerアカウントでエンタープライズグレードの機能、関数、UIコンポーネントを完全無料で利用できます。"
+      }
+    },
+    {
+      "segment_id": "3cfe6286",
+      "source_content": "[**Try the new React Video tutorial!**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact\\&utm_medium=sponsorship\\&utm_content=\\&utm_campaign=thisweekinreact_July2023_video_klmh22)",
+      "source_content_hash": "d395ed504f447ff0641debf36d3cb7119f7edf24599d7a5a8faa1740cb259664",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**新しいReact Videoチュートリアルを試してみてください！**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact\\&utm_medium=sponsorship\\&utm_content=\\&utm_campaign=thisweekinreact_July2023_video_klmh22)"
+      }
+    },
+    {
+      "segment_id": "76a8033c",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "35a77014",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "[![Bun 1.0](/emails/issues/159/bun.jpg)](https://bun.sh/blog/bun-v1.0)",
+      "source_content_hash": "0b0798a9f9f26cc6519abcecea847ee923430704916bb1f9c3743984c33e210d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Bun 1.0](/emails/issues/159/bun.jpg)](https://bun.sh/blog/bun-v1.0)"
+      }
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "[**Bun 1.0**](https://bun.sh/blog/bun-v1.0)",
+      "source_content_hash": "e3c7790989ce8c071dde87656de7bd9ce7e6621d275832938dade35c99f11f1d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**Bun 1.0**](https://bun.sh/blog/bun-v1.0)"
+      }
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "It's impossible to miss it this week: Bun has just been released as stable v1.0. This news isn't directly related to React, but it will undoubtedly affect all React developers out there at some point.",
+      "source_content_hash": "feed1d206550dcabb96a7641d9a221d25fd3e40f0f62f5c7179e4fb58bde1756",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週は見逃せないニュースです：Bunが安定版v1.0としてリリースされました。このニュースは直接Reactに関連するものではありませんが、いずれすべてのReact開発者に影響を与えるでしょう。"
+      }
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "Bun is a complete toolchain for JavaScript and TypeScript based on Webkit and written in Zig. It is a new ultra-fast alternative to a whole host of front-end tools we use today: Node.js, npx, Babel, esbuild, swc, webpack, Jest, Vitest, npm, Yarn, pnpm... The benchmarks are super impressive and definitively real.",
+      "source_content_hash": "1732561c98b5b4a8d9f37479e4440cbb44ee98312a86e2d4bdb4771805075c16",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Bunは、WebkitをベースにZigで書かれたJavaScriptとTypeScriptのための完全なツールチェーンです。現在使用している多くのフロントエンドツール（Node.js、npx、Babel、esbuild、swc、webpack、Jest、Vitest、npm、Yarn、pnpmなど）に対する超高速な代替手段です。ベンチマークは非常に印象的で、間違いなく本物です。"
+      }
+    },
+    {
+      "segment_id": "d3649a1e",
+      "source_content": "Its compatibility with the existing tools and its mixed ESM/CJS support make it quite easy to adopt as a drop-in replacement. Bun is generally able to run your code as is, without any changes (otherwise it's [🐦 considered a bug](https://twitter.com/jarredsumner/status/1700497869160268155)). React frameworks like Next.js, Remix and Astro are already supported. Using it as a replacement for npm/Yarn/pnpm or Jest/Vitest is probably a good entry point and not too risky.",
+      "source_content_hash": "564151885152761c9292cff90b569541d04fb1fb9c09c0aff13114582e46490b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "既存のツールとの互換性とESM/CJSの混合サポートにより、Bunは簡単にドロップイン代替として導入できます。Bunは一般的にコードを変更せずにそのまま実行可能です（そうでない場合は[🐦バグと見なされます](https://twitter.com/jarredsumner/status/1700497869160268155)）。Next.js、Remix、AstroなどのReactフレームワークは既にサポートされています。npm/Yarn/pnpmやJest/Vitestの代替として使用するのは良い導入点であり、リスクも少ないでしょう。"
+      }
+    },
+    {
+      "segment_id": "4d52a261",
+      "source_content": "**Other useful links:**",
+      "source_content_hash": "73853c4508952fcaaf9b9abde7f8ada68b257bf4e078580b1cf0546679300adf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**その他の有用なリンク:**"
+      }
+    },
+    {
+      "segment_id": "30193704",
+      "source_content": "* 📣 [Vercel - Bun install is now supported with zero configuration](https://vercel.com/changelog/bun-install-is-now-supported-with-zero-configuration)\n* 👀 [React-Native CLI PR - support Bun in init command](https://github.com/react-native-community/cli/pull/2073)\n* 🐦 [Bun console supports JSX](https://twitter.com/jarredsumner/status/1701499357080736047)\n* 🐦 [Bun + create-expo-app = 12x faster init](https://twitter.com/notbrent/status/1701044351177244790)\n* 📜 [Matteo Collina - My thoughts on Bun and other Adventures](https://adventures.nodeland.dev/archive/my-thoughts-on-bun/)\n* 📦 [Marz - A Fast and Lightweight React Server Components Framework for Bun](https://github.com/hex2f/marz)\n* 🎥 [Official launch video - Bun 1.0 is here](https://www.youtube.com/watch?v=BsnCpESUEqM)\n* 🎥 [Fireship - Bun is disrupting JavaScript land](https://www.youtube.com/watch?v=dWqNgzZwVJQ)\n* 🎥 [Lee Robinson - My thoughts on Bun](https://www.youtube.com/watch?v=z_66kDwxwBI)",
+      "source_content_hash": "476b1262489f45a56809a8a15b251abf367d1b2b44d7388d393ccb5b85f203bb",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📣 [Vercel - Bun installがゼロ設定でサポートされました](https://vercel.com/changelog/bun-install-is-now-supported-with-zero-configuration)\n* 👀 [React-Native CLI PR - initコマンドでBunをサポート](https://github.com/react-native-community/cli/pull/2073)\n* 🐦 [BunコンソールがJSXをサポート](https://twitter.com/jarredsumner/status/1701499357080736047)\n* 🐦 [Bun + create-expo-app = 12倍高速な初期化](https://twitter.com/notbrent/status/1701044351177244790)\n* 📜 [Matteo Collina - Bunとその他の冒険についての考え](https://adventures.nodeland.dev/archive/my-thoughts-on-bun/)\n* 📦 [Marz - Bun向けの高速で軽量なReact Server Componentsフレームワーク](https://github.com/hex2f/marz)\n* 🎥 [公式リリース動画 - Bun 1.0が登場](https://www.youtube.com/watch?v=BsnCpESUEqM)\n* 🎥 [Fireship - BunがJavaScript界を混乱させている](https://www.youtube.com/watch?v=dWqNgzZwVJQ)\n* 🎥 [Lee Robinson - Bunについての考え](https://www.youtube.com/watch?v=z_66kDwxwBI)"
+      }
+    },
+    {
+      "segment_id": "379d3a5b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "af6ca965",
+      "source_content": "* 💸 [Zero To Shipped - Master Fast-Paced Fullstack Development and **Finally** ship that product](https://www.zerotoshipped.com/)\n* 🐦 [Next.js - Redesigned console output](https://twitter.com/leeerob/status/1701775526459756620)\n* 👀 [RedwoodJS - Support for React Server Actions](https://community.redwoodjs.com/t/react-server-components-rsc/5081/7): limited support for now, server actions need to be put in a separate file.\n* 👀 [React.gg](https://react.gg/) and [The Joy of React](https://www.joyofreact.com/): the 2 most eagerly awaited React courses have just been released!\n* 📜 [Next.js, just why?](https://pilcrow.vercel.app/blog/nextjs-why)\n* 📜 [Scaling frontend app teams using Relay](https://hasura.io/blog/scaling-frontend-app-teams-using-relay/)\n* 📜 [A Wide View of Automated Testing in React Apps](https://reacthandbook.dev/automated-testing)\n* 📜 [Styling React Select with Tailwind](https://www.jussivirtanen.fi/writing/styling-react-select-with-tailwind)\n* 📜 [Overcoming application complexity with customized Flows](https://www.40seas.com/blog/overcoming-application-complexity-with-customized-flows)\n* 📜 [Automatic visual tests in Storybook, plus 2.2x faster build times for React+TS](https://storybook.js.org/blog/automatic-visual-tests-plus-2x-faster-react-ts/)\n* 📜 [Painting with Math: A Gentle Study of Raymarching](https://blog.maximeheckel.com/posts/painting-with-math-a-gentle-study-of-raymarching/)\n* 📦 [React Aria Components - Now in beta](https://react-spectrum.adobe.com/releases/2023-09-07.html)\n* 📦 [Ariakit React 0.3](https://github.com/ariakit/ariakit/releases/tag/@ariakit/react@0.3.0)\n* 📦 [Next Admin - Full-featured admin for Next.js and Prisma](https://github.com/premieroctet/next-admin)\n* 📦 [Next Nav - VSCode extension to navigate and create Next.js routes](https://www.next-nav.com/)\n* 👥 [reactjsday](https://2023.reactjsday.it/) (Verona 🇮🇹, Octobre 27) is offering us [-10% - code \"media\\_TWIR\"](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR)\n* 👥 [React Advanced](https://reactadvanced.com/?utm_source=email\\&utm_medium=thisweekinreact) (London 🇬🇧, Octobre 20-23) is offering us [-10% - code \"REACT10\"](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)",
+      "source_content_hash": "db809a497ac415c3d268d631c9489d862d34090aae03879438e9a28e19cb9e9d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Zero To Shipped - 高速フルスタック開発をマスターし、**ついに**プロダクトをリリース](https://www.zerotoshipped.com/)\n* 🐦 [Next.js - コンソール出力の再設計](https://twitter.com/leeerob/status/1701775526459756620)\n* 👀 [RedwoodJS - React Server Actionsのサポート](https://community.redwoodjs.com/t/react-server-components-rsc/5081/7): 現時点では限定サポートで、サーバーアクションは別ファイルに記述する必要あり。\n* 👀 [React.gg](https://react.gg/) と [The Joy of React](https://www.joyofreact.com/): 最も待望されていた2つのReactコースがリリースされました！\n* 📜 [Next.js、一体なぜ？](https://pilcrow.vercel.app/blog/nextjs-why)\n* 📜 [Relayを使用したフロントエンドアプリチームのスケーリング](https://hasura.io/blog/scaling-frontend-app-teams-using-relay/)\n* 📜 [Reactアプリにおける自動テストの広範な視点](https://reacthandbook.dev/automated-testing)\n* 📜 [TailwindでReact Selectをスタイリング](https://www.jussivirtanen.fi/writing/styling-react-select-with-tailwind)\n* 📜 [カスタマイズされたFlowsでアプリケーションの複雑さを克服](https://www.40seas.com/blog/overcoming-application-complexity-with-customized-flows)\n* 📜 [Storybookでの自動ビジュアルテスト、さらにReact+TSのビルド時間2.2倍高速化](https://storybook.js.org/blog/automatic-visual-tests-plus-2x-faster-react-ts/)\n* 📜 [数学で描く: レイマーチングの優しい学び](https://blog.maximeheckel.com/posts/painting-with-math-a-gentle-study-of-raymarching/)\n* 📦 [React Aria Components - ベータ版リリース](https://react-spectrum.adobe.com/releases/2023-09-07.html)\n* 📦 [Ariakit React 0.3](https://github.com/ariakit/ariakit/releases/tag/@ariakit/react@0.3.0)\n* 📦 [Next Admin - Next.jsとPrisma向けのフル機能管理画面](https://github.com/premieroctet/next-admin)\n* 📦 [Next Nav - Next.jsルートのナビゲーションと作成用VSCode拡張](https://www.next-nav.com/)\n* 👥 [reactjsday](https://2023.reactjsday.it/) (イタリア・ヴェローナ、10月27日) が [-10% 割引コード \"media_TWIR\"](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR) を提供中\n* 👥 [React Advanced](https://reactadvanced.com/?utm_source=email\\&utm_medium=thisweekinreact) (ロンドン、10月20-23日) が [-10% 割引コード \"REACT10\"](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10) を提供中"
+      }
+    },
+    {
+      "segment_id": "897e0025",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_897e0025"
+      }
+    },
+    {
+      "segment_id": "c9716ede",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "39db08de",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "785750ac",
+      "source_content": "[![highlight.io - The open-source, full-stack Monitoring Platform](/emails/issues/159/highlight.jpg)](http://highlight.io)",
+      "source_content_hash": "3d0597ed2b578709ab2bd0ef5de3530895c07cacb7bf88b3462ded06abce934e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![highlight.io - オープンソースのフルスタック監視プラットフォーム](/emails/issues/159/highlight.jpg)](http://highlight.io)"
+      }
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "[**highlight.io - The open-source, full-stack Monitoring Platform**](http://highlight.io)",
+      "source_content_hash": "f83a7dc38fee6742b9bf1403e8fbd50fcbd9168615c89094beb27f86ff17f508",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**highlight.io - オープンソースのフルスタック監視プラットフォーム**](http://highlight.io)"
+      }
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "[**highlight.io**](http://highlight.io) is a truly open-source Session Replay, Error Monitoring, and Logging platform for your next project.",
+      "source_content_hash": "3d9dc24b36dfde375fcc553c228ba7ef0f482f1302eb73b3d0ecf4e74320c46c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**highlight.io**](http://highlight.io) は、次世代プロジェクト向けの真のオープンソースセッションリプレイ、エラーモニタリング、ロギングプラットフォームです。"
+      }
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "Don't waste time trying to guess why a bug occurs. Instead, use highlight and get a clear picture of whatever happens in the browser and on your server-side application.",
+      "source_content_hash": "c1810d432ee588181addfc21454b0c99fb53f07752003a1f3daa4dcb72ae2fc2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "バグ発生の原因を推測する時間を無駄にしないでください。highlightを使用すれば、ブラウザやサーバーサイドアプリケーションで起きていることを明確に把握できます。"
+      }
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "It is super easy to install in your favorite framework: [React.js,](https://www.highlight.io/docs/getting-started/client-sdk/reactjs) [Next.js,](https://www.highlight.io/docs/getting-started/fullstack-frameworks/next-js) [Remix](https://www.highlight.io/docs/getting-started/fullstack-frameworks/remix), or anything else!",
+      "source_content_hash": "893e0b51e284af646b945fe0f9951bc28f6e3c50fbd495e39bac60bf88edf59f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "お気に入りのフレームワークに簡単に導入可能: [React.js](https://www.highlight.io/docs/getting-started/client-sdk/reactjs)、[Next.js](https://www.highlight.io/docs/getting-started/fullstack-frameworks/next-js)、[Remix](https://www.highlight.io/docs/getting-started/fullstack-frameworks/remix)、その他何でも！"
+      }
+    },
+    {
+      "segment_id": "e9ae42a9",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "42a5832e",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "0e80209e",
+      "source_content": "[![Static Hermes](/emails/issues/159/hermes.jpg)](https://speakerdeck.com/tmikov2023/static-hermes-react-native-eu-2023-announcement)",
+      "source_content_hash": "b25810d31d1e52576b5095be492c9d5db3e9ddcf8de7c6b286a4365c4653a973",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Static Hermes](/emails/issues/159/hermes.jpg)](https://speakerdeck.com/tmikov2023/static-hermes-react-native-eu-2023-announcement)"
+      }
+    },
+    {
+      "segment_id": "7bc8bb24",
+      "source_content": "[**Static Hermes**](https://speakerdeck.com/tmikov2023/static-hermes-react-native-eu-2023-announcement)",
+      "source_content_hash": "f8043c2bc7f5414f0761436e2b062646a19a1fefff405593b77781da8c07db26",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**Static Hermes**](https://speakerdeck.com/tmikov2023/static-hermes-react-native-eu-2023-announcement)"
+      }
+    },
+    {
+      "segment_id": "6693c38c",
+      "source_content": "Static Hermes was announced at React-Native EU last week. I wasn't there, so I'm trying to explain what I understood by reading the slides, as the video isn't on YouTube yet.",
+      "source_content_hash": "2ddd0e1cc889fee5685c9c982f8c36aaa6cc58119b2b5961479af3c62ee3f9e9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Static Hermesは先週React-Native EUで発表されました。私は現地にいなかったため、動画がYouTubeに公開される前にスライドを読んで理解した内容を説明します。"
+      }
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "Static Hermes is an experimental project that allows you to optionally compile some of your TypeScript (or Flow) code into native code. This offers significant performance gains (x10-20) compared to Hermes usual mode based in bytecode interpretation. It also enables easy integration with native APIs directly from your TypeScript code (zero-cost FFI, x15-80 faster than a JSI wrapper).",
+      "source_content_hash": "c7ad983450a845f8add419f25cb7f653ecb7353f8e741f2f6e8f55944529b277",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Static Hermesは実験的なプロジェクトで、TypeScript（またはFlow）コードの一部をネイティブコードにコンパイルするオプションを提供します。これにより、Hermesの通常のバイトコードインタプリタモードと比べて大幅なパフォーマンス向上（10～20倍）が得られます。また、TypeScriptコードから直接ネイティブAPIと統合できるようになります（ゼロコストのFFI、JSIラッパー比15～80倍高速）。"
+      }
+    },
+    {
+      "segment_id": "1b4de6df",
+      "source_content": "To enable this, TypeScript must first become a \"sound\" language. Static Hermes will modify the semantics of JavaScript to ensure that the declared types matches the runtime types. This slide explains the concept well:",
+      "source_content_hash": "c295f301ac6ebb74325f514c0c2001468ae963e81482f652d1e3e7b4e9e003f8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "これを有効にするには、まずTypeScriptを「健全な」言語にする必要があります。Static HermesはJavaScriptのセマンティクスを変更し、宣言された型が実行時の型と一致することを保証します。このスライドが概念をよく説明しています："
+      }
+    },
+    {
+      "segment_id": "1958bc43",
+      "source_content": "[![Static Hermes makes TypeScript sound](/emails/issues/159/hermes2.jpg)](https://speakerdeck.com/tmikov2023/static-hermes-react-native-eu-2023-announcement?slide=14)",
+      "source_content_hash": "1fa9d07dd21de851698ea6dd38dbb3ac4bfc12ddc0f56c7662e67fc27b5a9aad",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Static Hermes makes TypeScript sound](/emails/issues/159/hermes2.jpg)](https://speakerdeck.com/tmikov2023/static-hermes-react-native-eu-2023-announcement?slide=14)"
+      }
+    },
+    {
+      "segment_id": "a8610918",
+      "source_content": "A very interesting idea that could maybe one day have an impact outside the React-Native ecosystem?",
+      "source_content_hash": "becdda95de2174250334c4e834f0701aaef86919a8b25f71136b6d3c56b4e20f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "非常に興味深いアイデアで、将来的にはReact-Nativeエコシステム以外にも影響を与える可能性があるかもしれません。"
+      }
+    },
+    {
+      "segment_id": "a6c928a1",
+      "source_content": "**Other useful links:**",
+      "source_content_hash": "73853c4508952fcaaf9b9abde7f8ada68b257bf4e078580b1cf0546679300adf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**その他の有用なリンク：**"
+      }
+    },
+    {
+      "segment_id": "82abb0a4",
+      "source_content": "* 📜 [How to speed up a micro-benchmark by 300x without cheating](https://tmikov.blogspot.com/2023/09/how-to-speed-up-micro-benchmark-300x.html)\n* 🐦 [Plan to support Over-The-Air updates](https://twitter.com/mdj_dev/status/1700424775116493053)",
+      "source_content_hash": "d04f9a1a9cc57c5bef33c1cfe34655e8a6c42ae00d3f7abdfb87cf5c89c0d2ce",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📜 [マイクロベンチマークを300倍高速化する方法（不正行為なし）](https://tmikov.blogspot.com/2023/09/how-to-speed-up-micro-benchmark-300x.html)\n* 🐦 [OTA（Over-The-Air）更新サポートの計画](https://twitter.com/mdj_dev/status/1700424775116493053)"
+      }
+    },
+    {
+      "segment_id": "ce5ba214",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "d9b1e67e",
+      "source_content": "* 💸 [Blitz - Build React Native Apps Faster for iOS, Android, and Web!](https://www.blitz-rn.com/)\n* 🐦 [There's more than 1000 devs using React Native at Microsoft](https://twitter.com/thymikee/status/1700100221940662684)\n* 🐦 [React-Native running natively on Apple Vision Pro simulator demo](https://twitter.com/o_kwasniewski/status/1701626162521190688)\n* 🧵 [React-Native EU Sketches](https://twitter.com/DelphineBugner/status/1700077346852622504)\n* 📜 [Introducing E2E tests to React Native Core](https://www.callstack.com/blog/introducing-e2e-tests-to-react-native-core)\n* 📜 [Expo Launch Party Recap](https://blog.expo.dev/expo-launch-party-recap-697d7b7739e8)\n* 📦 [React-Native macOS 0.72](https://github.com/microsoft/react-native-macos/releases/tag/v0.72.0)\n* 📦 [Reanimated 3.5.0 - Windows/macOS support, createWorkletRuntime, reduceMotion...](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.5.0)\n* 📦 [Stagger - Cross-platform Reanimated stagger component](https://github.com/animate-react-native/stagger)\n* 📦 [Flame AI - CLI for Interactive AI-Powered React Native Upgrades](https://github.com/infinitered/flame)\n* 📦 [React-Native-Skia - Font Manager, support for system and custom fonts](https://shopify.github.io/react-native-skia/docs/text/fonts/)\n* 📦 [react-native-secure-window - Hide react native views when capturing screen](https://github.com/bufgix/react-native-secure-window)\n* 📦 [Tamagui 1.62 - Zero config support](https://github.com/tamagui/tamagui/releases/tag/v1.62.0)\n* 🎙️ [React Native Radio 274 - React Native CI & Automated Deployments](https://reactnativeradio.com/episodes/rnr-274-react-native-ci-automated-deployments)",
+      "source_content_hash": "c84e54bdfe73970c6f23172546501c181cc6be61f26be81fe405e9f450b61a54",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Blitz - iOS、Android、Web向けのReact Nativeアプリをより速く構築！](https://www.blitz-rn.com/)\n* 🐦 [Microsoftには1000人以上のReact Native開発者がいる](https://twitter.com/thymikee/status/1700100221940662684)\n* 🐦 [Apple Vision Proシミュレータでネイティブ動作するReact Nativeデモ](https://twitter.com/o_kwasniewski/status/1701626162521190688)\n* 🧵 [React-Native EUのスケッチ](https://twitter.com/DelphineBugner/status/1700077346852622504)\n* 📜 [React NativeコアにE2Eテストを導入](https://www.callstack.com/blog/introducing-e2e-tests-to-react-native-core)\n* 📜 [Expo Launch Partyの振り返り](https://blog.expo.dev/expo-launch-party-recap-697d7b7739e8)\n* 📦 [React-Native macOS 0.72](https://github.com/microsoft/react-native-macos/releases/tag/v0.72.0)\n* 📦 [Reanimated 3.5.0 - Windows/macOSサポート、createWorkletRuntime、reduceMotion...](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.5.0)\n* 📦 [Stagger - クロスプラットフォームなReanimated staggerコンポーネント](https://github.com/animate-react-native/stagger)\n* 📦 [Flame AI - AI駆動のインタラクティブなReact Nativeアップグレード用CLI](https://github.com/infinitered/flame)\n* 📦 [React-Native-Skia - フォントマネージャー、システムおよびカスタムフォントのサポート](https://shopify.github.io/react-native-skia/docs/text/fonts/)\n* 📦 [react-native-secure-window - スクリーンキャプチャ時にReact Nativeビューを非表示にする](https://github.com/bufgix/react-native-secure-window)\n* 📦 [Tamagui 1.62 - ゼロコンフィグサポート](https://github.com/tamagui/tamagui/releases/tag/v1.62.0)\n* 🎙️ [React Native Radio 274 - React Native CI & 自動デプロイ](https://reactnativeradio.com/episodes/rnr-274-react-native-ci-automated-deployments)"
+      }
+    },
+    {
+      "segment_id": "ce87f480",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "a0d0e29e",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "739843fe",
+      "source_content": "* 👀 [Node.js 16 End-of-Life](https://nodejs.org/en/blog/announcements/nodejs16-eol)\n* 📜 [Roadmap to Tauri 2.0 - The Mobile Update](https://beta.tauri.app/blog/roadmap-to-tauri-2-0/)\n* 📜 [Typescript Prevents Bad Things... and Good Things](https://kyleshevlin.com/typescript-prevents-bad-things-and-good-things)\n* 📜 [Announcing native npm support on Deno Deploy](https://deno.com/blog/npm-on-deno-deploy)\n* 📜 [Your Cache Headers Could Probably be More Aggressive](https://www.macarthur.me/posts/more-aggressive-cache-headers)\n* 📜 [Are Big Projects Ditching TypeScript?](https://www.totaltypescript.com/are-big-projects-ditching-typescript)\n* 📜 [An Overview of 25+ UI Component Libraries in 2023](https://www.builder.io/blog/25-plus-ui-component-libraries)\n* 📜 [Node.js vs. Deno vs. Bun: JavaScript runtime comparison](https://snyk.io/fr/blog/javascript-runtime-compare-node-deno-bun/)\n* 📜 [Vercel - Using Zig in our incremental Turborepo migration from Go to Rust](https://vercel.com/blog/how-we-continued-porting-turborepo-to-rust)\n* 📦 [Chrome 117 - Array grouping, CSS subgrid, transition-behavior...](https://developer.chrome.com/en/blog/new-in-chrome-117/)\n* 📦 [Skott - Devtool to analyze, search and visualize dependency graphs from JS, TS and Node.js](https://dev.to/antoinecoulon/introducing-skott-the-new-madge-1bfl)\n* 📦 [Vest 5.0 - Declarative validations framework](https://github.com/ealush/vest/releases/tag/vest%405.0.1)",
+      "source_content_hash": "933522fdf74262ee47b4280e1ff91865197f0320b96a71a0313b431860f4c5db",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 👀 [Node.js 16 サポート終了](https://nodejs.org/en/blog/announcements/nodejs16-eol)\n* 📜 [Tauri 2.0へのロードマップ - モバイルアップデート](https://beta.tauri.app/blog/roadmap-to-tauri-2-0/)\n* 📜 [TypeScriptは悪いこと...そして良いことも防ぐ](https://kyleshevlin.com/typescript-prevents-bad-things-and-good-things)\n* 📜 [Deno Deployでのネイティブnpmサポート発表](https://deno.com/blog/npm-on-deno-deploy)\n* 📜 [あなたのキャッシュヘッダーはもっと積極的にできるはず](https://www.macarthur.me/posts/more-aggressive-cache-headers)\n* 📜 [大規模プロジェクトはTypeScriptを捨てているのか？](https://www.totaltypescript.com/are-big-projects-ditching-typescript)\n* 📜 [2023年の25以上のUIコンポーネントライブラリ概要](https://www.builder.io/blog/25-plus-ui-component-libraries)\n* 📜 [Node.js vs. Deno vs. Bun: JavaScriptランタイム比較](https://snyk.io/fr/blog/javascript-runtime-compare-node-deno-bun/)\n* 📜 [Vercel - GoからRustへのTurborepo段階的移行でZigを活用](https://vercel.com/blog/how-we-continued-porting-turborepo-to-rust)\n* 📦 [Chrome 117 - 配列グループ化、CSSサブグリッド、transition-behavior...](https://developer.chrome.com/en/blog/new-in-chrome-117/)\n* 📦 [Skott - JS、TS、Node.jsの依存関係グラフを分析・検索・可視化する開発ツール](https://dev.to/antoinecoulon/introducing-skott-the-new-madge-1bfl)\n* 📦 [Vest 5.0 - 宣言型バリデーションフレームワーク](https://github.com/ealush/vest/releases/tag/vest%405.0.1)"
+      }
+    },
+    {
+      "segment_id": "c7daeccd",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "d4eab4a6",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "0ddaa835",
+      "source_content": "[![alt](/emails/issues/159/meme.jpg)](https://twitter.com/sebastienlorber/status/1701293733822541931)",
+      "source_content_hash": "e6b278a81c331c8d32d13e359c3f60e506915f565adbe4006486302bb57954f6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/159/meme.jpg)](https://twitter.com/sebastienlorber/status/1701293733822541931)"
+      }
+    },
+    {
+      "segment_id": "fd7ed056",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "それではまた！👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/159/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:37.929614+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "68055341481807192247a0bb6e3cf078b574e8cc5ae5c398bcb3d938ebebfa4c"
+  }
+}

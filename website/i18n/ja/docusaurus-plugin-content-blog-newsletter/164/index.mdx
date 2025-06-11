@@ -1,0 +1,173 @@
+---
+slug: /164
+title: "This Week In React #164: so back! 30k, Next.js, Remix, Taint API, Activity, RSCs, React-Forget, Docusaurus, MDX, Storybook, Expo Orbit, Ignite, Victory XL, Reanimated, TypeScript..."
+authors: [slorber]
+date: 11-29-2023
+---
+
+皆さん、こんにちは！
+
+久しぶりです、あまり寂しがっていなかったらいいのですが 😄
+
+私は育児休暇を取得し、可愛いルイーズと過ごす時間を楽しみました 👨‍🍼😍。
+
+どうやら私の不在もこのニュースレターの成長を妨げることはなく、[30,000人の購読者を突破](https://www.indiehackers.com/product/french-react-newsletter/30-000-subscribers--NkKag3m683I_z7J3TCI)しました！ 🥳️
+
+こんなに長い休暇（5週間）を取るのは初めてで、復帰するのは大変です。私は徹底的にやりたい性格ですが、前回の号以降に起こったすべてを読み、コメントするのは不可能です 😅。要するに、このメールには多くの興味深いリンクが含まれていますが、必ずしも解説付きではありません。来週はもっと頑張ります、約束します！
+
+将来的には、もっとプロフェッショナルに、毎週確実に発行したいと考えています。[手伝ってくれる人を探しています](https://thisweekinreact.com/job)。興味のある方はぜひ応募してください（有償）。
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアル形式 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Frontendmasters](/emails/issues/158/frontendmasters.jpg)](https://frontendmasters.com/learn/react/?utm_source=newsletter\&utm_medium=thisweekinreact\&utm_campaign=reactpath)
+
+**[FrontendMasters – シニアReact開発者への完全なReact.js学習パス](https://frontendmasters.com/learn/react/?utm_source=newsletter\&utm_medium=thisweekinreact\&utm_campaign=reactpath)**
+
+React.jsを基礎から学び、パフォーマンス、テスト、コード品質などの高度なトピックまでカバーします。まずは「React完全入門」で実践的なアプリを構築しましょう。続けて「中級React」でエコシステムの人気ツールを統合します。さらにパフォーマンス、TypeScript、そしてフルスタックReactフレームワークであるNext.jsも学べます！
+
+***
+
+## ⚛️ React {#react}
+
+[![Next.js 14](/emails/issues/164/nextjs-14.jpg)](https://nextjs.org/blog/next-14)
+
+[**Next.js 14**](https://nextjs.org/blog/next-14)
+
+Next.js 14がNext.js confで発表され、以下が含まれます：
+
+* Server Actionsが安定版に
+* Turbopackがほぼ安定版に
+* Partial Pre-Renderingの導入（実験的）
+* 新しい学習リソース
+
+関連情報：
+
+* 🎥 [Next.js confのYouTubeプレイリスト](https://www.youtube.com/playlist?list=PLBnKlKpPeagl57K9bCw_IXShWQXePnXjY)
+* 📜 [VercelでのNext.js 14](https://vercel.com/changelog/next-js-14)
+* 📜 [VercelでのNext.js 14のPartial Prerenderingについて](https://vercel.com/blog/partial-prerendering-with-next-js-creating-a-new-default-rendering-model)
+
+***
+
+* 🐦 [React CanaryでServer Actionsが利用可能に](https://twitter.com/reactjs/status/1716573234160967762)
+* 🐦 [Andrew Clark - 「React 19が間もなくリリース」](https://twitter.com/acdlite/status/1719474730363662473)
+* 🐦 [Ryan Florence - 「RemixのロードマップにReact Server Componentsが追加」](https://twitter.com/ryanflorence/status/1729274387671760936)
+* 👀 [React PR - `<Offscreen>`が`<Activity>`に改名](https://github.com/facebook/react/pull/27640): Dan Abramovが、この今後のConcurrent React機能に対して`<Offscreen>`という名前が誤解を招くと説明。
+* 👀 [React PR - 本番ビルド成果物にソースマップを生成](https://github.com/facebook/react/pull/26446): SentryやReplayなど、本番バンドル上でデバッグを可能にする多くのツールのDX向上に役立つ朗報。
+* 👀 [React Canary 変更履歴](https://github.com/facebook/react/blob/main/CHANGELOG-canary.md): 計画通り、React Canaryリリースが適切にドキュメント化され始めました。
+* 📖 [React ドキュメント - "use server"](https://react.dev/reference/react/use-server)
+* 📖 [React ドキュメント - Taint API](https://react.dev/reference/react/experimental_taintObjectReference): RSCコンテキストでクライアントに機密データを送信しないようにするための新しい実験的API。
+* 📖 [Redux Toolkit 2.0 + Redux core 5.0 移行ガイド](https://deploy-preview-3089--redux-starter-kit-docs.netlify.app/migrations/migrating-1.x-to-2.x): RTK、React-Redux、Redux coreの新バージョンがRC段階。
+* 📜 [Vercel - Next.jsにおけるセキュリティの考え方](https://nextjs.org/blog/security-nextjs-server-components-actions): RSCとServer Actionsに関連するセキュリティ問題を回避するための優れたアドバイスを提供。特に、安全でない入力の検証、アクセス制御チェックの追加、データアクセス層の使用、新しいReact Taint APIのテストなどを推奨。
+* 📜 [Next.jsアプリをホストするためにVercelではなくAWSを使用する理由](https://graphite.dev/blog/why-we-use-aws-instead-of-vercel): GraphiteはエッジランタイムではなくEC2コンテナを使用することを決定。驚くべきことにパフォーマンスは同程度。
+* 📜 [JotaiでuseSyncExternalStoreが使用されない理由](https://blog.axlight.com/posts/why-use-sync-external-store-is-not-used-in-jotai/): useTransitionとuseSyncExternalStoreを同時に動作させる難しさについて。
+* 📜 [ReactとTypeScriptにおけるイベントタイプ](https://www.totaltypescript.com/event-types-in-react-and-typescript): イベントハンドラに使用する型を覚えていられない場合に役立つテクニック。
+* 📜 [React Queryが必要な理由](https://tkdodo.eu/blog/why-you-want-react-query): useEffectベースの独自データフェッチ実装を避けるべき強力な理由を提示。見た目以上に複雑。
+* 📜 [フレームワークなしでReact Server Components？](https://timtech.blog/posts/react-server-components-rsc-no-framework/): RSCの内部動作を理解するための優れた技術記事。シンプルなCRAアプリをカスタムRSCセットアップに移行。
+* 📜 [Remix ❤️ Vite](https://remix.run/blog/remix-heart-vite): Remix 2.2で、RemixをViteプラグインとして使用可能に。興味深い利点が付随。
+* 📜 [私がNext.jsを使用する理由](https://leerob.io/blog/using-nextjs)
+* 📜 [私がNext.jsを使用しない理由](https://www.epicweb.dev/why-i-wont-use-nextjs)
+* 📜 [React Forgetについて私たちが知っていること](https://www.code-insights.dev/posts/what-do-we-konw-about-react-forget)
+* 📜 [ReactでSelectlistを使用する](https://polypane.app/blog/using-selectlist-in-react/)
+* 📜 [Next.jsでCookieを使用する完全ガイド](https://www.propelauth.com/post/cookies-in-next-js)
+* 📜 [PierreのNext.jsキャッシュ戦略](https://pierre.co/share/fe34c8b7-4054-4e07-b108-c6c8230cfab1)
+* 📜 [React Server Components - 導入と背景](https://jessedit.tech/articles/react-server-components/1-background/)
+* 📜 [クライアントとサーバーの混合について](https://matt-rickard.com/on-mixing-client-and-server)
+* 📜 [ドロワーコンポーネントの構築 - Vaul](https://emilkowal.ski/ui/building-a-drawer-component)
+* 📜 [Remixにおける型安全なサーバーサイドDOMイベントリスナー](https://alemtuzlak.hashnode.dev/typed-server-safe-dom-event-listeners-in-remix)
+* 📜 [Viteを使ったRemixの探索](https://alemtuzlak.hashnode.dev/exploring-remix-with-vite)
+* 📜 [VercelとNext.js 14で最も野心的なWebサイトを構築](https://vercel.com/blog/building-the-most-ambitious-sites-on-the-web-with-vercel-and-next-js-14)
+* 📜 [re-re-reselect — React状態管理の簡素化](https://causal.app/blog/re-re-reselect)
+* 📜 [Markdownコンテンツ変更時にNext.js App Routerを更新](https://www.steveruiz.me/posts/nextjs-refresh-content)
+* 📜 [忙しい人のためのReact Suspenseとuseフックガイド](https://sinja.io/blog/guide-to-react-suspense)
+* 📜 [忙しい人のためのReact 18の並行性](https://sinja.io/blog/guide-to-concurrency-in-react-18)
+* 📜 [React-Admin - オープンソースを利益に変える: 私たちの旅](https://marmelab.com/blog/2023/11/08/open-source-profit-1.html)
+* 📜 [カーソルを静止させろ！](https://giacomocerquone.com/keep-input-cursor-still/)
+* 📜 [すべてのNext.js Canaryリリースに対するテスト](https://francoisbest.com/posts/2023/testing-against-every-nextjs-canary-release)
+* 📜 [単一要素Reactコンポーネントに反対する](https://www.jameskerr.blog/posts/against-single-element-react-components/)
+* 📜 [Reactの動作原理](https://incepter.github.io/how-react-works/)
+* 📜 [順不同ストリーミングをゼロから実装](https://gal.hagever.com/posts/out-of-order-streaming-from-scratch)
+* 📜 [daily.dev - Reactへの回帰](https://daily.dev/blog/moving-back-to-react)
+* 📜 [Headless Component: React UIを構成するパターン](https://martinfowler.com/articles/headless-component.html)
+* 📜 [shadcn/uiを使用すべきでない場合](https://mwskwong.com/blog/when-not-to-use-shadcn-ui)
+* 📜 [React Queryでの認証トークン更新](https://elazizi.com/posts/react-query-auth-token-refresh/)
+* 📦 [Docusaurus v3.0 - MDX 3、TS/ESM設定、非公開機能...](https://docusaurus.io/blog/releases/3.0)
+* 📦 [React Aria Components RC](https://react-spectrum.adobe.com/releases/2023-11-8.html)
+* 📦 [MDX v3 - Node更新、awaitサポート...](https://mdxjs.com/blog/v3/)
+* 📦 [Remix v2.3](https://github.com/remix-run/remix/blob/main/CHANGELOG.md#v230)
+* 📦 [Astro 4.0 beta](https://astro.build/blog/astro-4-beta/?tw)
+* 📦 [Storybook 7.5 - Vite 5、Next.js改善、高速化...](https://storybook.js.org/blog/storybook-7-5/)
+* 🎥 [React Forgetコンパイラ - 慣用的なReactの理解](https://portal.gitnation.org/contents/understanding-idiomatic-react)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![React向けノーコードフォームビルダー](/emails/issues/164/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact\&utm_medium=email)
+
+**[React向けノーコードフォームビルダー](https://surveyjs.io/?utm_source=thisweekinreact\&utm_medium=email)**
+
+SurveyJSは、**堅牢なフォーム管理システム**を構築できるオープンソースのJavaScriptライブラリスイートです。ITインフラに完全に統合可能です。
+
+**ドラッグ＆ドロップ式のフォームビルダーと統合テーマエディター**を使用して、複数のJSONベースのフォームを作成・編集できます。UIテーマ設定を調整し、独自のフォームデザインを実現可能です。Reactアプリケーションでカスタムフォームをレンダリングし、ユーザーからの回答を収集、**データフローを完全に制御**できます。これらのライブラリはサーバーコードやデータベースと直接やり取りしません。[https://surveyjs.io/](https://surveyjs.io/) にアクセスし、無料のフルスケールデモをお試しいただき、多数のコード例をご覧ください。
+
+***
+
+## 📱 React-Native {#react-native}
+
+* 💸 [Moropo - 6週間でアプリのUIテストカバレッジを60%達成しなければ料金不要](https://www.moropo.com/automation-offer?utm_source=newsletter\&utm_medium=emails\&utm_campaign=twir-20231129)
+* 🐦 [Amazonは長年React-Nativeを使用、メインのAmazon Shoppingアプリも含む](https://twitter.com/reactnative/status/1722025802974277983)
+* 🐦 [Static Hermesデモ - C++に匹敵するJSパフォーマンス](https://twitter.com/tmikov/status/1720103356738474060)
+* 👀 [RFC - create-react-native-libraryのゴールデンテンプレート](https://github.com/react-native-community/discussions-and-proposals/pull/721)
+* 👀 [RFC - package.jsonへのreactNativeManifest導入](https://github.com/react-native-community/discussions-and-proposals/pull/717)
+* 📖 [Expoでアプリを開発 - 概要](https://docs.expo.dev/workflow/overview/)
+* 📜 [ユニバーサルリンクの重要性](https://evanbacon.dev/blog/universal-links)
+* 📜 [Expo CNGを使ったAppleホームスクリーンウィジェット](https://evanbacon.dev/blog/apple-home-screen-widgets)
+* 📜 [SSLピニングでReact Nativeアプリをセキュアにする](https://www.bam.tech/article/securing-your-react-native-app-with-ssl-pinning)
+* 📜 [Alan社におけるモバイルアプリ開発のReact NativeからExpoへの移行の旅](https://medium.com/alan/our-journey-from-react-native-to-expo-for-mobile-app-development-at-alan-%EF%B8%8F-3b1569e8ab7c)
+* 📜 [Node.js mobileの再起動](https://nodejs-mobile.github.io/blog/reboot)
+* 📜 [Victory Nativeが40バージョンに到達](https://formidable.com/blog/2023/victory-native-turns-40/)
+* 📦 [Expo Orbit v1 - macOSメニューバーアプリ](https://expo.dev/changelog/2023/11-14-orbit-v1)
+* 📦 [React-Native 0.73 RC.6](https://github.com/facebook/react-native/releases/tag/v0.73.0-rc.6)
+* 📦 [Reanimated 3.6 - マルチスレッディング、Webでのレイアウトアニメーション...](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.6.0)
+* 📦 [Ignite 9.0 - これまで以上にExpoにフォーカス](https://shift.infinite.red/announcing-ignite-9-0-exp-ress-o-89ab5801937d)
+* 📦 [react-native-testing-library 12.4 - 組み込みJestマッチャー](https://github.com/callstack/react-native-testing-library/releases/tag/v12.4.0)
+* 📦 [react-native-ai - クロスプラットフォームモバイルAIアプリ構築のためのフルスタックフレームワーク](https://github.com/dabit3/react-native-ai)
+* 🎥 [より良い開発者体験への道](https://www.youtube.com/watch?v=YA0PMPm12SU): KrzysztofがVSCode拡張としての非常に有望なReact-Native IDEのデモを発表。この[🐦スレッド](https://twitter.com/kzzzf/status/1722973994368762335)も参照。
+
+***
+
+## 🔀 Other {#other}
+
+* 📊 [State of JavaScript 2023 - 調査が開始されました](https://survey.devographics.com/en-US/survey/state-of-js/2023)
+* 📜 [CSS Gridのインタラクティブガイド](https://www.joshwcomeau.com/css/interactive-guide-to-grid/)
+* 📦 [TypeScript 5.3 - import属性、型の絞り込み...](https://devblogs.microsoft.com/typescript/announcing-typescript-5-3/)
+* 📦 [Rspack 0.4 - Rsbuild 0.1](https://www.rspack.dev/blog/announcing-0.4.html)
+* 📦 [Yarn 4.0 - ハードニングモード](https://yarnpkg.com/blog/release/4.0)
+* 📦 [Deno v1.38 - HTMLドキュメント生成とHMR](https://deno.com/blog/v1.38)
+* 📦 [Vite 5.0 - Rollup 4とクリーンアップ](https://vitejs.dev/blog/announcing-vite5)
+* 📦 [Prettier 3.1 - 新しい三項演算子のフォーマット](https://prettier.io/blog/2023/11/13/3.1.0)
+* 📦 [Biome 1.4 - Prettierと96%互換のフォーマッター](https://biomejs.dev/blog/biome-wins-prettier-challenge)
+* 📦 [Mock Service Worker 2.0](https://github.com/mswjs/msw/releases/tag/v2.0.0)
+* 📦 [Hono 3.10 - JSXでの非同期コンポーネントとSuspenseのサポート](https://github.com/honojs/hono/releases/tag/v3.10.0)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/164/meme.jpg)](https://twitter.com/sebastienlorber/status/1719831082235801974)
+
+ではまた！👋

@@ -1,0 +1,143 @@
+---
+slug: /161
+title: "This Week In React #161: useFormState, Memo, Conform, Progressive Enhancement, Astro, Radix, React-Aria, Rustymotion, Ecctrl, Expo Apple Settings, Unistyles, TypeScript, TC39..."
+authors: [slorber]
+date: 10-04-2023
+---
+
+みなさん、こんにちは！
+
+今週のReactエコシステムは比較的静かでしたが、読む価値のある素晴らしい記事がいくつかあります。
+
+RemixとNext.jsの両方で、Reactのプログレッシブエンハンスメントが注目されています！
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![エンタープライズグレードのAPI（フィード、チャット、ビデオ対応）](/emails/issues/153/stream.jpg)](https://getstream.io/video/voice-calling/?utm_source=thisweekinreact\&utm_medium=sponsorship\&utm_content=\&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+[**エンタープライズグレードのAPI（フィード、チャット、ビデオ対応）**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact\&utm_medium=sponsorship\&utm_content=\&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+Streamは、エンタープライズグレードの**API**と**SDK**を提供し、プロダクトチームとエンジニアリングチームがスケール時に直面する2つの一般的な課題（アプリ内チャットとソーシャルアクティビティフィード）を解決する手助けをします。
+
+Streamを使用すれば、開発者はこれらの機能を一から構築する時間のほんの一部で、あらゆるタイプのメッセージングやフィード体験をアプリに統合できます。Stream Chatは、リッチでリアルタイムなメッセージングをアプリケーションに簡単に統合することを可能にします。
+
+Streamは、[**React**](https://getstream.io/chat/sdk/react/?utm_source=thisweekinreact\&utm_medium=sponsorship\&utm_content=\&utm_campaign=thisweekinreact_July2023_video_klmh22)、[**React-Native**](https://getstream.io/chat/sdk/react-native/?utm_source=thisweekinreact\&utm_medium=sponsorship\&utm_content=\&utm_campaign=thisweekinreact_July2023_video_klmh22)、Expo、Flutter、Android、Angular、Compose、Unreal、iOSなど、人気のあるフレームワーク向けの堅牢なクライアントサイドSDKを提供しています。
+スタートアップやサイドプロジェクト向けに、メーカーアカウントでエンタープライズグレードの機能、関数、UIコンポーネントを完全無料で利用できます。
+
+[**新しいReact Videoチュートリアルを試してみよう！**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact\&utm_medium=sponsorship\&utm_content=\&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+***
+
+## ⚛️ React {#react}
+
+[![メモ化の上り坂](/emails/issues/161/memo.jpg)](https://tkdodo.eu/blog/the-uphill-battle-of-memoization)
+
+[**メモ化の上り坂**](https://tkdodo.eu/blog/the-uphill-battle-of-memoization)
+
+私たちは高性能なアプリケーションを作成したいと考えており、そのために`React.memo`を使用して不要な再レンダリングを回避します。しかし、これらの最適化は簡単に破綻してしまいます。Dominikは、インラインオブジェクト/コールバックの使用や、`children`のようなプロップスを持つJSXスロットの使用など、パフォーマンス低下を引き起こすいくつかのシナリオを共有しています。
+
+私はこの機会に[Twitterで意見を述べました](https://twitter.com/sebastienlorber/status/1709258817844752794)：Reactコンポーネントのパフォーマンスは、よりカプセル化されるべきです。React-Forgetコンパイラを待つ間、Babelプラグインの使用など、あまり知られていないアプローチを探ってみる価値があります。
+
+***
+
+[![アクセシブルでタイプセーフ、プログレッシブエンハンスメントされたモダンなWebフォーム](/emails/issues/161/epicweb.jpg)](https://www.epicweb.dev/accessible-typesafe-progressively-enhanced-modern-web-forms)
+
+[**アクセシブルで型安全、プログレッシブエンハンスメントを備えたモダンなWebフォーム**](https://www.epicweb.dev/accessible-typesafe-progressively-enhanced-modern-web-forms)
+
+Kent氏は、Remixのコード例をいくつか紹介し、保留中のUIや楽観的UIを実装するのがいかに簡単かを示しています。彼は、フロントエンドでフォームを検証するために共有のZodスキーマを使用し、バックエンドで追加のルールを加えるためにそれを拡張することを推奨しています。[conform](https://conform.guide/)は、`FormData`を検証するためにZodスキーマを使用することを容易にし、Reactフォームをローカルステートからサーバーまで管理するための過小評価されている解決策のように思えます。
+
+***
+
+* 💸 [Ably Realtime Hackathon - リアルタイムReactアプリを作成し、19,000ドルの賞金を獲得 - リアルタイムダッシュボードからコラボレーティブな体験まで！](https://ably.devpost.com/?utm_campaign=23-hackathon\&utm_source=thisweekinreact\&utm_medium=referral)
+* 👀 [Next.js PR - フォーム状態のプログレッシブエンハンスメント](https://github.com/vercel/next.js/pull/55584): Next.jsには、JavaScriptが無効でもサーバーアクションのフィードバック/レスポンスを管理できる新しい`useFormState` Reactコアフック（`useFormStatus`と混同しないように）が含まれています。
+* 👀 [React core PR - サーバーコンテキスト廃止予定の警告を追加](https://github.com/facebook/react/pull/27424): 非公開フック`createServerContext`は廃止予定で、削除されます。
+* 👀 [Panda CSS 公開ロードマップ - コンテナクエリ、Panda Studio](https://panda-css.canny.io/)
+* 🐦 [Astro View Transition + 永続的なReact-Three-Fiberモデルのデモ](https://twitter.com/astrodotbuild/status/1707918024471355406)
+* 🐦 [RemotionのGitHub契約 - GitHub Unwrapped 2023動画制作のためにチームを結成](https://twitter.com/Remotion/status/1707664519403614323)
+* 📜 [Islandsアーキテクチャでの状態共有](https://frontendatscale.com/blog/islands-architecture-state/): Astro/ReactコンテキストでIslands間の通信を実現するためのいくつかの解決策を分析した、よく説明された記事。
+* 📜 [Next.js 13 vs Remix: 詳細なケーススタディ](https://prateeksurana.me/blog/nextjs-13-vs-remix-an-in-depth-case-study/): Next.jsとRemixの多くの機能を並べて比較した、詳細でよくドキュメント化された記事。
+* 📜 [React Google Maps: 描画ツール](https://sudolabs.com/insights/react-google-maps-drawing-tools)
+* 📜 [Docusaurus - v3 + MDX 2に向けたサイトの準備](https://docusaurus.io/blog/preparing-your-site-for-docusaurus-v3)
+* 📦 [Astro 3.2 - View Transitionsの改善](https://astro.build/blog/astro-320/)
+* 📦 [Radix Themes 2.0 - 新しいカラー、Tailwind互換性の向上、多くのコンポーネント改善](https://www.radix-ui.com/themes/docs/overview/releases#200)
+* 📦 [React Aria - 2023年10月2日リリース - クライアントサイドルーティング統合](https://react-spectrum.adobe.com/releases/2023-10-02.html)
+* 📦 [Rustymotion - Remotion動画のRustベースレンダラー](https://github.com/clearlysid/rustymotion)
+* 📦 [Ecctrl - React-Three-Fiberキャラクターコントローラー](https://github.com/pmndrs/ecctrl)
+* 🎥 [Theo T3 - FacebookはTailwindを試し、代わりにこれを構築した（styleX）](https://www.youtube.com/watch?v=PHV94q7BivI)
+* 🎙️ [This Month in React – 2023年9月](https://podcasters.spotify.com/pod/show/reactiflux/episodes/This-Month-in-React--September-2023-e29vb6o)
+* 👥 [reactjsday](https://2023.reactjsday.it/) (イタリア・ヴェローナ、10月27日) が提供する[-10% - コード "media\_TWIR"](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR)
+* 👥 [React Advanced](https://reactadvanced.com/?utm_source=email\&utm_medium=thisweekinreact) (イギリス・ロンドン、10月20-23日) が提供する[-10% - コード "REACT10"](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Google Formsの非クラウド代替で全てを備えたSurveyJS](/emails/issues/155/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact\&utm_medium=email)
+
+**[Google Formsに代わる非クラウド型の完全なフォームソリューション](https://surveyjs.io/?utm_source=thisweekinreact\&utm_medium=email)**
+
+**ITインフラに完全統合された堅牢なフォーム管理システム**を構築し、**データフローを完全に制御**したい場合、かつ、立ち上げに数ヶ月と数千ドルを費やしたくないなら、SurveyJSが最適です！
+
+SurveyJSは4つのオープンソースJavaScriptライブラリから成る製品スイートで、**動的なJSONベースのフォーム**をドラッグ＆ドロップのフォームビルダーで作成・編集し、Reactアプリでレンダリング、**機密性の高い調査データを自社インフラ内に保存**できます。さらに**カスタム調査フォームを編集可能なPDFファイル**としてブラウザで表示したり、**インタラクティブなチャートや表**で結果を可視化できます。[詳細はこちら](https://surveyjs.io/?utm_source=thisweekinreact\&utm_medium=email)。
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![Expoで作るカスタムApple設定UI](/emails/issues/161/exposettings.jpg)](https://evanbacon.dev/blog/apple-settings)
+
+[**Expoで作るカスタムApple設定UI**](https://evanbacon.dev/blog/apple-settings)
+
+EvanはiOS設定画面を利用する利点を指摘しています。ネイティブ実装は手間がかかりROIも低いですが、彼のExpo Config Pluginが作業を簡素化します。アプリのサウンドをスイッチで切り替える方法や、ソフトウェアライセンス表示を自動化する方法を解説しています。
+
+***
+
+* 💸 [Blitz - iOS/Android/Web向けReact Nativeアプリを高速開発！](https://www.blitz-rn.com/)
+* 📜 [Expo EAS - XCode 15とiOS 17のサポート](https://expo.dev/changelog/2023/09-28-new-xcode-ios)
+* 📖 [Expoドキュメント - Continuous Native Generation (CNG)](https://docs.expo.dev/workflow/continuous-native-generation/): Expo Prebuildを使った継続的なネイティブプラットフォーム生成の概念を紹介
+* 📦 [create-react-native-library v0.34 - ローカルライブラリサポート](https://github.com/callstack/react-native-builder-bob/releases/tag/create-react-native-library%400.34.0): React-Native vanillaでローカルライブラリを簡単生成。Expoも対応
+* 📦 [react-native-unistyles - React Native StyleSheetを強化、クロスプラットフォーム＆スケーラブルに](https://github.com/jpudysz/react-native-unistyles)
+* 📦 [react-native-compressor - アップロード前の画像/動画/音声圧縮](https://github.com/numandev1/react-native-compressor)
+* 📦 [Expo-Image 1.3.4 - libwebpセキュリティ問題修正](https://expo.dev/changelog/2023/09-29-libwebp)
+* 📦 [React-Native-Skia v0.1.211 beta - アニメーション画像対応](https://shopify.github.io/react-native-skia/docs/animated-images/)
+* 🎥 [アプリクラシュの原因調査法 - Logcat & macOS Consoleデバッグ](https://www.youtube.com/watch?v=LvCci4Bwmpc)
+* 🎥 [Airbnbが2018年にReact Nativeを廃止した判断は誤りだった](https://www.youtube.com/watch?v=RwUQnfcxH0o)
+* 🎙 [React Native Radio 276 - Ignite v9発表](https://reactnativeradio.com/episodes/rnr-276-announcing-ignite-v9-expresso)
+
+***
+
+## 🔀 Other {#other}
+
+* 📜 [第98回TC39会議のアップデート - Resizable ArrayBuffer、ShadowRealm、RegExエスケープなど](https://dev.to/hemanth/updates-from-the-98th-tc39-meeting-1lcf)
+* 📜 [2023年、ソフトウェア開発者が知っておくべきUnicodeの絶対的最小知識](https://tonsky.me/blog/unicode/)
+* 📜 [CSS Subgrid - Chrome 117ですべてのブラウザで利用可能に](https://web.dev/css-subgrid/)
+* 📜 [CSSネスティングとカスケード](https://webkit.org/blog/14571/css-nesting-and-the-cascade/)
+* 📜 [9月のWebプラットフォーム新機能](https://web.dev/web-platform-09-2023/)
+* 📦 [TypeScript 5.3 Beta - Import Attributes、型インポート用の"resolution-mode"など](https://devblogs.microsoft.com/typescript/announcing-typescript-5-3-beta/)
+* 📦 [string-ts - 厳密に型付けされた文字列関数](https://github.com/gustavoguichard/string-ts)
+* 📦 [every-ts - TypeScriptのあらゆるバージョンをビルド・二分探索するユーティリティ](https://github.com/jakebailey/every-ts)
+* 📦 [pattycake - ゼロランタイムパターンマッチング - ts-pattern用最適化コンパイラ](https://github.com/aidenybai/pattycake)
+* 📦 [Node.js 20.8 - 注目のパフォーマンス改善](https://nodejs.org/en/blog/release/v20.8.0)
+* 📦 [Vitest 1.0 beta](https://github.com/vitest-dev/vitest/releases/tag/v1.0.0-beta.0)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/161/meme.jpg)](https://twitter.com/creatine_cycle/status/1706912311309652159)
+
+またね！👋

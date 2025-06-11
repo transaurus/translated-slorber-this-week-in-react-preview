@@ -1,0 +1,532 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/114.mdx",
+  "source_file_content_hash": "6bced1e7093a298ec6c46b7c7708e7833d814d4956152bef65322a14fcae60df",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /114\ntitle: \"This Week In React #114: 🎉 official launch of Docusaurus 2.0 🥳️\"\nauthors: [slorber]\ndate: 08-01-2022\n---",
+      "source_content_hash": "bd804c6c289d22e49a39bb1265cd66a785f9098f0b33cd9a22aeee1f40e7239a",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "This Week In React #114: 🎉 official launch of Docusaurus 2.0 🥳️",
+      "source_content_hash": "04f623ba0514ad68fb2d7ee7b157dd62e99120b7e718f89cc7eb8063a4b13173",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "This Week In React #114: 🎉 Docusaurus 2.0公式リリース 🥳️"
+      }
+    },
+    {
+      "segment_id": "fc91ee08",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_fc91ee08"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Hello everyone!",
+      "source_content_hash": "2151adce5b055402b1d03a650e5993e3d4c4b99287a27d008a0343af9dd5a691",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "皆さん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "🎉 It is the [**official launch of Docusaurus 2.0**](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)!",
+      "source_content_hash": "e8bf9980757b94da2683b18ab9d5abc8cd78da77d2a4428b36477a20693bd10a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🎉 [**Docusaurus 2.0の公式リリース**](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)です！"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "It is the **Meta Open Source (Facebook)** project I maintain: a documentation static-site-generator, based on Node.js and React. It allows you to focus on content: just write Markdown files. Docusaurus is truly customizable and respects your company's branding. It is already powering many great docs sites you know: React-Native, Supabase, Redux, Tauri, Electron, Courier, Ionic, Figma, Snapchat, Prettier, Babel, Solana, Cardano...",
+      "source_content_hash": "f06f2b280480073013bd86ac26a6fce55c438990171a07eb6be2eea288cee22a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "これは私がメンテナンスしている**Meta Open Source（Facebook）**のプロジェクトで、Node.jsとReactベースのドキュメント用静的サイトジェネレーターです。コンテンツ作成に集中できるよう設計されており、Markdownファイルを書くだけで利用できます。Docusaurusは真にカスタマイズ可能で、企業のブランディングにも対応しています。React-Native、Supabase、Redux、Tauri、Electron、Courier、Ionic、Figma、Snapchat、Prettier、Babel、Solana、Cardanoなど、多くの有名なドキュメントサイトですでに採用されています。"
+      }
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "🙏 We are also launching [**ProductHunt**](https://www.producthunt.com/posts/docusaurus-2-0?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter), [**Hacker News**](https://news.ycombinator.com/item?id=32303052\\&utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter) and [**Twitter**](https://twitter.com/docusaurus/status/1554000364432769025?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter): if you like the project, please **vote** and share your opinion 😃",
+      "source_content_hash": "ee5d7c8f872659a292c9c45db0cc6205f28c0848dd283a8b835e3c8bf705c4e6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🙏 また、[**ProductHunt**](https://www.producthunt.com/posts/docusaurus-2-0?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)、[**Hacker News**](https://news.ycombinator.com/item?id=32303052\\&utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)、[**Twitter**](https://twitter.com/docusaurus/status/1554000364432769025?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)でも公開しています。プロジェクトが気に入ったら、ぜひ**投票**して意見を共有してください😃"
+      }
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "🎙️ My podcast on Docusaurus with [The Developer's Bakery](https://thebakery.dev/39/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter) just came out too 😉",
+      "source_content_hash": "c7883ac9ca6a7a1b5c4a1e9c6499cda8be2810bcf58c30f574d2bee9a6dd55f1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🎙️ [The Developer's Bakery](https://thebakery.dev/39/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)でのDocusaurusに関する私のポッドキャストも公開されました😉"
+      }
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "98cfbd53",
+      "source_content": "[![](https://s3.amazonaws.com/revue/items/images/017/224/019/mail/social-card.png?1659345670)](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)",
+      "source_content_hash": "0aa16707532c253b38fdd3a79c00b4095feb1da5e8ccdbd0b6dfee09a173765f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![](https://s3.amazonaws.com/revue/items/images/017/224/019/mail/social-card.png?1659345670)](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)"
+      }
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "**Note**: make sure to read the official [**Announcing Docusaurus 2.0**](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0) post: it is more detailed than this one, which is my personal summary.",
+      "source_content_hash": "55bd60e29ce64704bbeb3c82f6018170e86bcc91a2991d84a3c6f34cca2ab629",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**注**: 公式の[**Announcing Docusaurus 2.0**](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0)記事も必ずお読みください。こちらは私の個人的なまとめですが、公式記事の方がより詳細です。"
+      }
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## What is Docusaurus?",
+      "source_content_hash": "355d26c0bd4e064a138bd1e89218b1772523e21469e58950647adde0e1e58b4d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## Docusaurusとは？"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "Meta has a lot of internal/external projects, which have to be documented each time. It's hard enough to write docs, and if you have to customize a site each time, it becomes a time sink.",
+      "source_content_hash": "f7536246524c807b4e3c50b71368e4a856803fd9d0be024380ea2b80e4945ae0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Metaには多くの内部/外部プロジェクトがあり、それぞれにドキュメントが必要です。ドキュメント作成自体が大変な作業なのに、サイトのカスタマイズまで行うと時間がかかりすぎます。"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "In 2017 they started copy/pasting a Jekyll template for each project, but it quickly became difficult to maintain.",
+      "source_content_hash": "7076b467ccf6da3ec53d87f72cd29214c066c7abd035bf13411acf93b949e676",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "2017年、彼らは各プロジェクトごとにJekyllテンプレートをコピー＆ペーストし始めましたが、すぐにメンテナンスが困難になりました。"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "In 2017, they decided to create Docusaurus, a React-based static site generator in Node.js, which will \"hide\" the technical stack of the site and allow to **focus on the content**: writing **Markdown** files. It is a bit like Create-React-App, but for creating content sites: docs, blog, landing pages...",
+      "source_content_hash": "2890f580856fc8866f775f045355bed6d9a84fdcb73720b4cf4fee51e698eca8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "2017年、彼らはDocusaurusの開発を決定しました。これはNode.js上で動作するReactベースの静的サイトジェネレーターで、サイトの技術スタックを「隠蔽」し、**コンテンツ作成**（**Markdown**ファイルの記述）に集中できるようにするものです。Create-React-Appのようなものですが、コンテンツサイト（ドキュメント、ブログ、ランディングページなど）作成に特化しています。"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "The v1 of Docusaurus quickly became popular, used by React-Native, Jest, Babel, Prettier...",
+      "source_content_hash": "7eebe1aec0e6e8beb7c6e0fff7d5c3aa262a1b588b5627bd458da87a80f7db54",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Docusaurus v1はすぐに人気を博し、React-Native、Jest、Babel、Prettierなどで採用されました。"
+      }
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "![Sites using Docusaurus v1](https://s3.amazonaws.com/revue/items/images/017/224/025/original/v1.gif?1659345706)",
+      "source_content_hash": "c17f7be446fa8421f3f9aecc2ecf5df760fde736d81ca1df2d6f769f3706e80a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "![Docusaurus v1を使用しているサイト](https://s3.amazonaws.com/revue/items/images/017/224/025/original/v1.gif?1659345706)"
+      }
+    },
+    {
+      "segment_id": "5ef5fda3",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "8d04259b",
+      "source_content": "## Toward Docusaurus v2",
+      "source_content_hash": "b00b32db5004edb55b8f70d24b64606b5011f5c07caea718f3a812cc8a3ff9a7",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## Docusaurus v2への道"
+      }
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "Following the release of v1, Meta realized some limitations of v1:",
+      "source_content_hash": "40f19ee379c55098e6239e791572b65d4ad5caba822a10d9b0c4d3ad6f16abbb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "v1のリリース後、Metaはv1のいくつかの制限に気づきました:"
+      }
+    },
+    {
+      "segment_id": "824626b3",
+      "source_content": "* uses React but only on the server side: no hydration nor Single-Page-App navigation\n* the repo was quite monolithic, difficult to maintain and test\n* not very extensible, there was no plugin system\n* the theming was relatively limited, and v1 sites look very similar",
+      "source_content_hash": "3222724fec8c8ce457da127d9d752743f116ee7ffcaabfc34c2fa99ce493a064",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* Reactを使用しているがサーバーサイドのみ: ハイドレーションやシングルページアプリケーションのナビゲーションは不可\n* リポジトリがモノリシックで、メンテナンスやテストが困難\n* 拡張性が低く、プラグインシステムが存在しない\n* テーマ設定が比較的限定的で、v1サイトは非常に似た見た目になる"
+      }
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "In 2018, Meta decided to **re-create Docusaurus from scratch**, with a brand new architecture:",
+      "source_content_hash": "cf6d2928b99a50f0e7c2a03d129c816e4d821281e4e3b922edc6c6877df7c84b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "2018年、Metaは**Docusaurusをゼロから再構築**することを決定し、全く新しいアーキテクチャを採用しました:"
+      }
+    },
+    {
+      "segment_id": "310e47b7",
+      "source_content": "* React used client and server side (like Next.js, Remix, Gatsby...)\n* Plugin system: allows the community to contribute useful features (OpenAPI integration, local search engine, Sass support...)\n* Much more flexible theming system: possible to override any React component of the theme\n* MDX (Markdown + React) to make your documentation interactive",
+      "source_content_hash": "37950abac42e4413bed0e72df2b54f6e6c82baf1627d7f62e5d786eaf0dcbc79",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* クライアントとサーバーサイドの両方でReactを使用（Next.js、Remix、Gatsbyなどと同様）\n* プラグインシステム: コミュニティが有用な機能を提供可能（OpenAPI統合、ローカル検索エンジン、Sassサポートなど）\n* より柔軟なテーマシステム: テーマの任意のReactコンポーネントをオーバーライド可能\n* MDX（Markdown + React）を使用してドキュメントをインタラクティブに"
+      }
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "Docusaurus 2.0 has been in alpha/beta for **4 years** 🤪, and we finally released the **first stable version**! We delayed this release because it wasn't obvious to respect Semantic Versioning before.",
+      "source_content_hash": "f3b04f0a27c5be0e3e610e469a654b7b5b1f7e14164e38626a5ebe7111c76648",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Docusaurus 2.0は**4年間**にわたってアルファ/ベータ版として開発され🤪、ついに**最初の安定版**をリリースしました！セマンティックバージョニングを遵守することが明らかでなかったため、このリリースは遅れました。"
+      }
+    },
+    {
+      "segment_id": "40158b4b",
+      "source_content": "Today, Docusaurus v2 is available with a lot of features, and it would be difficult to list them all: docs, blog, versioning, theming, dark mode, i18n, a11y, SEO, TypeScript, PWA, Algolia DocSearch, MDX...",
+      "source_content_hash": "9d3c21da0e7f41d9c15fa5207b7df1e7899fe7c2254e5c4be9b8cbfaaa970e9e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "現在、Docusaurus v2は多くの機能を備えて利用可能で、それらをすべて列挙するのは困難です: ドキュメント、ブログ、バージョニング、テーマ設定、ダークモード、国際化、アクセシビリティ、SEO、TypeScript、PWA、Algolia DocSearch、MDX..."
+      }
+    },
+    {
+      "segment_id": "818747ba",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c315c636",
+      "source_content": "## Who uses Docusaurus 2.0?",
+      "source_content_hash": "139974976c2469157a07fac02b6138574e546ea893cb93cce3fdad4ca245d279",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## Docusaurus 2.0のユーザーは？"
+      }
+    },
+    {
+      "segment_id": "531437ca",
+      "source_content": "A lot of companies have already adopted Docusaurus 2.0 despite the fact that it is in beta. The v2 is already much more popular than the v1, and we have almost half of the npm downloads of Gatsby!",
+      "source_content_hash": "79f4e1e8328f44356957d2de28464ef640a5252cfc57f99c7c03209adea1ba1a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "多くの企業がベータ版にもかかわらず既にDocusaurus 2.0を採用しています。v2はv1よりもはるかに人気があり、npmダウンロード数はGatsbyのほぼ半分に達しています！"
+      }
+    },
+    {
+      "segment_id": "06e24cc0",
+      "source_content": "![npm growth](https://s3.amazonaws.com/revue/items/images/017/224/035/mail/npm-downloads.png?1659345822)",
+      "source_content_hash": "5fb524ed7c57bf0a4e56b526f19bc7a81016c2cc9a89456d563d81bb14a88984",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "![npm成長率](https://s3.amazonaws.com/revue/items/images/017/224/035/mail/npm-downloads.png?1659345822)"
+      }
+    },
+    {
+      "segment_id": "7f71ff2a",
+      "source_content": "Our [**site showcase**](https://docusaurus.io/showcase?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter) already contains almost 300 sites.",
+      "source_content_hash": "8d0c3a2c069c9fe28e8032b8bc72f0892dc2e0369902e7e7c49f963c12b150f2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "私たちの[**サイトショーケース**](https://docusaurus.io/showcase?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)には既に約300サイトが掲載されています。"
+      }
+    },
+    {
+      "segment_id": "147e8550",
+      "source_content": "And it is far from being exhaustive since so many sites have not yet been added: [Figma](https://www.figma.com/plugin-docs/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter), [Snapchat](https://docs.snap.com/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter), [Courier](https://www.courier.com/docs/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter), [1Password](https://developer.1password.com/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)...",
+      "source_content_hash": "387e3728a285568f820575dea60df5881d2898533578e3760769cd6428dc82ac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "そしてこれはまだ網羅的とは言えません。多くのサイトがまだ追加されていません:[Figma](https://www.figma.com/plugin-docs/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)、[Snapchat](https://docs.snap.com/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)、[Courier](https://www.courier.com/docs/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)、[1Password](https://developer.1password.com/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)..."
+      }
+    },
+    {
+      "segment_id": "883231d4",
+      "source_content": "Not to mention the many internal sites of companies like Microsoft, LinkedIn, Shopify...",
+      "source_content_hash": "8d5f67d41bf96cb49922cceb12aef384abc9f37df706fdbcfd864037e7cd0c96",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Microsoft、LinkedIn、Shopifyなどの企業の多くの内部サイトは言うまでもありません..."
+      }
+    },
+    {
+      "segment_id": "6cc549f2",
+      "source_content": "Some examples:",
+      "source_content_hash": "682a7827d9d4c48c4cc733ee4391e7d69f07bb54218a7f232ae4db61ff08635b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "いくつかの例:"
+      }
+    },
+    {
+      "segment_id": "6384b3d4",
+      "source_content": "* **Big tech**: Microsoft, Snapchat, Shopify, LinkedIn, Meta, SAP, ByteDance, Lacework, Palo Alto Network...\n* **Startups**: Supabase, Ionic, Hasura, Figma, Courier, CodeSandbox, StackBlitz, Redis, Algolia, Hashnode...\n* **OSS**: React-Native, Redux, React-Navigation, Jest, Testing Library, Gulp, Babel, Lerna, pnpm, Electron, Tauri...\n* **Web3**: Iota, Solana, Cardano, Neo, SushiSwap...",
+      "source_content_hash": "c5f044779d4ce4116f9964c8807018537a89aaabdb1897996367d2d99f997ca9",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* **大手テック企業**: Microsoft、Snapchat、Shopify、LinkedIn、Meta、SAP、ByteDance、Lacework、Palo Alto Network...\n* **スタートアップ**: Supabase、Ionic、Hasura、Figma、Courier、CodeSandbox、StackBlitz、Redis、Algolia、Hashnode...\n* **OSS**: React-Native、Redux、React-Navigation、Jest、Testing Library、Gulp、Babel、Lerna、pnpm、Electron、Tauri...\n* **Web3**: Iota、Solana、Cardano、Neo、SushiSwap..."
+      }
+    },
+    {
+      "segment_id": "a5c5772a",
+      "source_content": "We also have a lot of sites with beautiful customizations that really respect the brand image of the company.",
+      "source_content_hash": "170912bf53f9168714b07fe0bf62e3711346e51759dfb7415d76d7c8f40b4635",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "また、企業のブランドイメージを忠実に反映した美しいカスタマイズを施したサイトも多数あります。"
+      }
+    },
+    {
+      "segment_id": "fbc2db85",
+      "source_content": "![Sites using Docusaurus v2](https://s3.amazonaws.com/revue/items/images/017/224/051/original/showcase-2.gif?1659345869)",
+      "source_content_hash": "3bacfb012811b9303b4844e73e9d53bcf0dec61daeb44c4297044c92730f3e1e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "![Docusaurus v2を使用したサイト](https://s3.amazonaws.com/revue/items/images/017/224/051/original/showcase-2.gif?1659345869)"
+      }
+    },
+    {
+      "segment_id": "be625c00",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "3a8d2b95",
+      "source_content": "## My role in all this?",
+      "source_content_hash": "e51540963d1aaa8ac9c8611143a1b057ba6c5688d30ab6df5fa8a0d793de37dd",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 私の役割は？"
+      }
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "Two years ago, I was scrolling on Twitter when I came across this:",
+      "source_content_hash": "205f273ae215c7606c8a5cd59c6b7916b079301b9c9538886eda8e177d3e7adb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "2年前、Twitterをスクロールしているとこんな投稿に出会いました:"
+      }
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "[![](https://user-images.githubusercontent.com/749374/182660849-cc39d9d0-85ad-481c-a681-743a9c5b20c7.png)](https://twitter.com/sebastienlorber/status/1232059882091749376)",
+      "source_content_hash": "7b1fd8bbc1a796244d6004b58600cac114f0eda3ec62921e9eba3a31e2cabab6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![](https://user-images.githubusercontent.com/749374/182660849-cc39d9d0-85ad-481c-a681-743a9c5b20c7.png)](https://twitter.com/sebastienlorber/status/1232059882091749376)"
+      }
+    },
+    {
+      "segment_id": "785750ac",
+      "source_content": "**Pro tip**: join Twitter and be open 😄 It can lead to interesting career opportunities!",
+      "source_content_hash": "7a19791b18a135b96ad7fe57474c92a48181e0e1b5b68bdd5c7c5c7586e43d8a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**プロのアドバイス**: Twitterに参加してオープンでいましょう 😄 面白いキャリアの機会につながるかもしれません！"
+      }
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "I thought it was a great opportunity: working for Facebook as a freelancer on an open-source project doesn't happen every day. It was supposed to last 3 months, but it ended up lasting much longer: I've been working on Docusaurus for more than 2 years now!",
+      "source_content_hash": "378a8efd2fddfc75fb458724bbceae5917652ed8ad58de0794ad78aeefd7a307",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "これは素晴らしい機会だと思いました: Facebookのフリーランスとしてオープンソースプロジェクトに携わるのは日常茶飯事ではありません。当初は3ヶ月の予定でしたが、結局もっと長く続くことになり、私はDocusaurusに2年以上も関わっています！"
+      }
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "I have the chance to work in a very flexible way, with great autonomy, which also allows me to run this newsletter on the side.",
+      "source_content_hash": "1ba980ce3cdb669890561f005ca4a08824dfa3c5537348b93a45978cc51a6460",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "非常に柔軟な働き方ができ、大きな自律性も与えられているので、このニュースレターを並行して運営することも可能です。"
+      }
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "It's really cool to see Docusaurus becoming popular, I really feel like my work has a real impact. I hope I've inspired you to try this tool and I can't wait to see the sites you create! Don't forget to send them to our [site showcase](https://docusaurus.io/showcase?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)!",
+      "source_content_hash": "bc4ad57ab2a64863d35fe4c5d7c6a28cbf46d2a211c39d1fe207c008438e9066",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Docusaurusが人気を集めるのを見るのは本当に嬉しく、自分の仕事が実際に影響を与えていると実感できます。このツールを試すきっかけになれば幸いです。皆さんが作成するサイトを見るのが楽しみです！ぜひ[サイトショーケース](https://docusaurus.io/showcase?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)に送ってください！"
+      }
+    },
+    {
+      "segment_id": "4c30a6aa",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "54bafb10",
+      "source_content": "## Help us",
+      "source_content_hash": "f5bedfbc77d717c71d233046fcc49d3d4155c6098a1c1c18822ffba5ae000c67",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ご協力のお願い"
+      }
+    },
+    {
+      "segment_id": "4be28ed1",
+      "source_content": "I would really appreciate if you could help us **make the launch a success**. An upvote, retweet, or comment helps us a lot!",
+      "source_content_hash": "52977f3a1d7f93e9a8952b7014496b873db670c0b4367f37bdc8e5d93994d805",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**ローンチを成功させるため**に、アップボート、リツイート、コメントなどでご協力いただけると大変ありがたいです！"
+      }
+    },
+    {
+      "segment_id": "0e80209e",
+      "source_content": "The main platforms we are launching on:",
+      "source_content_hash": "aa6bee48ee06de887a89501851189913db8dc88f1657b7a438c876840335a4ab",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "主な公開プラットフォームはこちら:"
+      }
+    },
+    {
+      "segment_id": "38417f80",
+      "source_content": "* [Twitter](https://twitter.com/docusaurus/status/1554000364432769025?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* [Product Hunt](https://www.producthunt.com/posts/docusaurus-2-0?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* [Hacker News](https://news.ycombinator.com/item?id=32303052\\&utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)",
+      "source_content_hash": "9e4e41eb68822130d978a8f3ec4471aecab3203ab2f7bf148cb89cce8febc7f5",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* [Twitter](https://twitter.com/docusaurus/status/1554000364432769025?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* [Product Hunt](https://www.producthunt.com/posts/docusaurus-2-0?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* [Hacker News](https://news.ycombinator.com/item?id=32303052\\&utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)"
+      }
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "Thanks and see you soon with some fresh React news :)",
+      "source_content_hash": "14189d1124d170c4726a59e2618b62b6a0b62aaa63c62451fd41fc5737b06918",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ありがとうございます。また新鮮なReactニュースをお届けできるのを楽しみにしています :)"
+      }
+    },
+    {
+      "segment_id": "1b4de6df",
+      "source_content": "![Our cutest mascot Slash 💕](https://s3.amazonaws.com/revue/items/images/017/224/190/mail/CleanShot_2022-08-01_at_11.08.03_402x.png?1659346116)",
+      "source_content_hash": "4f39bc14001bdada72e32163e9045743f8d8d6eb5cc7f41a877285b91112ba35",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "![私たちの最もキュートなマスコットSlash 💕](https://s3.amazonaws.com/revue/items/images/017/224/190/mail/CleanShot_2022-08-01_at_11.08.03_402x.png?1659346116)"
+      }
+    },
+    {
+      "segment_id": "1958bc43",
+      "source_content": "Our cutest mascot Slash 💕",
+      "source_content_hash": "769190ed54dbc8e921543ceb3cc18fc1d165e8a758ea2923d6c62f33457f68e3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "私たちの最もキュートなマスコットSlash 💕"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/114.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:36.722682+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "6bced1e7093a298ec6c46b7c7708e7833d814d4956152bef65322a14fcae60df"
+  }
+}

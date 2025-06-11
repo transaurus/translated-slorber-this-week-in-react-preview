@@ -1,0 +1,143 @@
+---
+slug: /conferences/2024/react-summit-us-recap
+title: "📅 React Summit US 2024 - Conf Recap"
+authors:
+  - name: "Anton Meleshkin"
+    url: https://www.linkedin.com/in/anton-meleshkin-b226b5184/
+    image_url: https://github.com/Kragov.png
+    title: "Developer at FocusReactive"
+    socials:
+      github: https://github.com/Kragov
+      linkedin: https://www.linkedin.com/in/anton-meleshkin-b226b5184/
+      blog: https://focusreactive.com/blog/author/AntonMeleshkin/
+  - name: "Sergey Labuts"
+    url: https://www.linkedin.com/in/siarhei-labuts-aa3139125/
+    image_url: https://github.com/o8o0o8o.png
+    title: "Developer at FocusReactive"
+    socials:
+      github: https://github.com/o8o0o8o
+      linkedin: https://www.linkedin.com/in/siarhei-labuts-aa3139125/
+      blog: https://focusreactive.com/blog/author/SergeyLabuts/
+  - name: "Gleb Makhankov"
+    url: https://www.linkedin.com/in/gleb-makhankov/
+    image_url: https://github.com/user-attachments/assets/8235e2f0-c5d8-4dd5-89ea-305fb47a8285
+    title: "Developer at FocusReactive"
+    socials:
+      linkedin: https://www.linkedin.com/in/gleb-makhankov/
+      blog: https://focusreactive.com/blog/author/GlebMakhankov/
+  - slorber
+
+date: 11-26-2024
+---
+
+月曜日にこんな凝ったメール？実は新しい試みをしています！
+
+先週、**[React Summit US 2024](https://reactsummit.us?utm_source=Newsletter\&utm_medium=thisweekinreact)**がニューヨークで開催されました。[動画は近日公開予定](https://gitnation.com/events/react-summit-us-2024/talks)です。それまでの間、主催者と協力して選りすぐりの講演のまとめをお届けします。
+
+<!-- truncate -->
+
+![conf picture](/emails/conferences/2024/react-summit-us/conf.jpg)
+
+**[Focus Reactive](https://focusreactive.com?utm_source=Newsletter\&utm_medium=thisweekinreact)**の開発者がまとめを執筆しました。彼らはパフォーマンス、スケーラビリティ、SEOに最適化された先進的なコンテンツプラットフォームを提供する信頼できる技術パートナーです。Next.js、Headless CMS、eコマース、AI統合の専門家で、Vercel、Shopify、Sanityのパートナーです。[詳細はこちら](https://focusreactive.com?utm_source=Newsletter\&utm_medium=thisweekinreact)。
+
+米国版のカンファレンスは終了しましたが、**[React Summit 2025](https://reactsummit.com?utm_source=Newsletter\&utm_medium=thisweekinreact)**（🇳🇱アムステルダム版 - 2025年6月13-17日）が発表されました！昨年と同じく素晴らしいイベントが、ユニークな会場で開催されます。早期割引チケットは現在販売中です！
+
+このようなコンテンツを送信するのは初めてです。今後もこのようなReactカンファレンスのまとめを受け取りたいですか？
+
+さて、ここからは私たちが選んだ6つの講演をご紹介します！
+
+<SubscribeFormEmbed placement="top" />
+
+***
+
+## Chrome DevTools: State of the Union 2024 - Reactのデバッグとその先へ
+
+![Addy speaking](/emails/conferences/2024/react-summit-us/addy.jpg)
+
+**[Addy Osmani](https://bsky.app/profile/addyosmani.bsky.social)**（Chrome DX責任者）が最新のChrome DevTools機能を紹介し、INPメトリックについて解説しました。主なポイントは以下の通りです：
+
+* **DevTools内のGemini AI**：UIの変更、エラーの解決、開発中の課題に対する支援を依頼できます。
+* **React DevToolsの「Memo」タグとServer Components**：Next.jsではブラウザコンソールにサーバーログが表示され、Suspenseのローディング状態を管理しやすくなります。
+* **useDebugValue**：カスタムフックのデバッグに役立ちます。
+* **フォントカラーコントラスト修正ツール**：カラーピッカーに直接組み込まれました。
+* **XHRとFetchリクエストのオーバーライド**：モックデータを注入でき、ヘッダーもモック可能です。
+
+## アブラカダブラ：消えるネットワーク
+
+![Kent speaking](/emails/conferences/2024/react-summit-us/kent.jpg)
+
+ウェブアプリ開発は、ユーザーと開発者の要求に応じて進化してきました。**[Kent C. Dodds](https://bsky.app/profile/kentcdodds.com)**は、マルチページアプリケーション（MPA）からReact Server Components（RSC）までの進化を辿ります。講演で強調された主な進化段階は以下の通りです：
+
+* **マルチページアプリケーション（MPA）**：シンプルで効果的ですが、ページ全体の再読み込みが必要です。
+* **プログレッシブエンハンスドMPA（PEMPA）**：部分的な更新とUX向上のためにJavaScriptを導入しましたが、複雑さとサーバー-クライアントの重複が増えました。
+* **シングルページアプリケーション（SPA）**：インタラクティブ性が向上しましたが、クライアントサイドのネットワーキングとローディング状態の管理が必要で、複雑さが増しました。
+* **プログレッシブエンハンスドSPA（PESPA）**：サーバーサイドのフェッチとレンダリングによりUXが向上しました。しかし、ロジックをルートに紐付けることで再利用可能なコンポーネントが制限されました。
+* **React Server Components**：フルスタックで再利用可能なコンポーネントを可能にし、ワークフローを簡素化しながら速度とスケーラビリティを向上させます。
+
+## 順不同ストリーミング - 現代のReactを支える秘密の力
+
+![Theo speaking](/emails/conferences/2024/react-summit-us/theo.jpg)
+
+**[Theo Browne](https://bsky.app/profile/t3.gg)** は、Reactの最も革新的な進化の1つである「順不同ストリーミング」について探求しています。ウェブアプリケーションにおけるHTMLストリーミングにより、ブラウザは**到着した不完全なHTMLを段階的にレンダリング**できるようになり、**体感パフォーマンス**が大幅に向上します。これはSSRにおいて特に価値があります。唯一の制限は要素の順序でした。HTMLは線形であるため、HTMLの上部にある遅いコンポーネントが下部の他のコンポーネントをブロックしてしまいます。
+
+この制限はRSCを使用することで解決されました。`<template/>`と`<script/>`タグを使用して、未解決のコンテンツのプレースホルダーを識別し、データが利用可能になったときに動的に置き換えます。
+
+**Next.jsにおける部分プリレンダリングや動的IO**などの最近の進歩により、静的レンダリングと動的レンダリングが組み合わさっています。このハイブリッドアプローチにより、初期の静的コンテンツをCDNにキャッシュして高速に読み込むことができ、その後動的な更新をサーバーからストリーミングすることで、速度と開発者のワークフローの両方を最適化します。これらの方法は、UXを向上させ、複雑なウェブインタラクションをシームレスにサポートすることで、SSRに革命をもたらしています。
+
+<SubscribeFormEmbed placement="middle" />
+
+## React 19について知っておくべきすべて
+
+![Shruti speaking](/emails/conferences/2024/react-summit-us/shruti.jpg)
+
+**[Shruti Kapoor](https://bsky.app/profile/shrutikapoor08.bsky.social)**（Slackのフロントエンドエンジニア）は、Reactライブラリの今後の安定版アップデートについて概説し、多くの新しくエキサイティングな機能を約束しています。この新しいバージョンのReactの主な機能は以下の通りです：
+
+* **Reactアクション**: 非同期トランジションを使用する関数。サーバー側でもサポートされます。
+* **新しいフック**: `useActionState`と`useFormStatus`はフォームの構築を容易にします。`useOptimistic`はUIをスムーズにする洗練された方法を提供します。
+* **Reactコンパイラ**: Reactの新しいプラグインで、`useMemo`と`useCallback`に別れを告げます。
+* **新しいAPI**: `use` - コンポーネント内でリソースやPromiseを読み取ります。
+* **`ref`の変更**: ついにpropになり、`forwardRef`に別れを告げます。
+* **エラーの改善**: エラーメッセージがより詳細になりました。
+* **コンテキストの変更**: `<Context.Provider>`の代わりに`<Context>`をレンダリングします。
+
+## AIがUIを革命する
+
+![Jack speaking](/emails/conferences/2024/react-summit-us/jack.jpg)
+
+**[Jack Herrington](https://bsky.app/profile/jherr.dev)** は、アプリケーションでAIを使用しようとする際の一般的な問題を示しています：
+
+* モデルに提供する必要がある超大規模なコンテキスト
+* 適切なデータをどのように取得するか？
+* AIは複数のデータリクエストを実行できない
+* AIはUIを管理できない
+
+彼は、AIをアプリケーションに統合する方法を説明し、明確な例を示しています：
+
+* ツールを使用することが、RAG（Retrieval Augmented Generation）を実現する最も簡単な方法です。
+* UIのためにサーバー側とクライアント側の両方でツールを使用できます。
+* AIは使用するツールを選択できます。
+* Vercel AIライブラリやOpenAIを使用する必要はありません。ローカルのLLMを使用することも可能です。
+
+## AIとアクセシビリティ：議論する価値のある話題
+
+![Cat speaking](/emails/conferences/2024/react-summit-us/cat.jpg)
+
+アクセシビリティは開発においてしばしば見落とされますが、**[Cat Johnson](https://www.linkedin.com/in/catandthemachines/)** は、AIが既にどのように違いを生んでいるか、そして開発者が今できることを強調しています。
+
+AIは、改善されたテキスト読み上げ、自動化された会議メモ、高度な音声コマンドなどのツールをもたらしました。「Be My Eyes」のようなアプリは、AIを使用して電話のカメラで撮影した物体を説明し、視覚障害のあるユーザーに貴重なサポートを提供しています。
+
+開発者は、適切なタグと属性を持つクリーンなHTMLを書くことでアクセシビリティを向上させることができます。アクセシビリティツールを使用して作業が機能することをテストし、確認できます。CI/CDパイプラインに**axe-core**や**lighthouse-cli**などのアクセシビリティスキャンを追加することで、このプロセスをさらに効率化できます。
+
+AIを活用し、ベストプラクティスに従うことで、誰もが利用しやすいテクノロジーを実現できます。
+
+***
+
+以上です！
+
+最後に、以下のことを確認してください：
+
+* [React Summit 2025](https://reactsummit.com?utm_source=Newsletter\&utm_medium=thisweekinreact)で早期割引チケットをチェック。
+* Next.js CMSとeコマースの専門知識を持つ[FocusReactive](https://focusreactive.com/?utm_source=Newsletter\&utm_medium=thisweekinreact)を採用。
+* フィードバックをお寄せください - このメールは気に入りましたか？返信で教えてください！
+
+それではまた！👋

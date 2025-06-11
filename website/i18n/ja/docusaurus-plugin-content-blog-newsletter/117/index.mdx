@@ -1,0 +1,143 @@
+---
+slug: /117
+title: "This Week In React #117: React criticism, useEvent, Next.js, Remix, Gatsby, Expo, Storybook, Ignite, React-Native, TypeScript, Qwik..."
+authors: [slorber]
+date: 09-27-2022
+---
+
+みなさん、こんにちは！
+
+今週は、Reactに関する興味深い批判記事がいくつかあります。
+
+また、Next.js、React-Router、Expoなど、ルーティング関連の興味深いニュースもあります。
+
+ニュースレターが**ついに通常の週刊ペースに戻りました**！私は休暇から戻ったばかりで、この機会にメールプロバイダーを変更しました。現在は[ConvertKit](https://thisweekinreact.com/ck)を使用しています。これにより、メールのレンダリングに柔軟性が増し、後でいくつかの新機能を導入できるようになります ;)
+
+<!-- truncate -->
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Storyblok](/emails/issues/116/storyblok.png)](https://www.storyblok.com/?utm_source=thisweekinreact\&utm_medium=display\&utm_campaign=AWA_SPON_TWIREACT_TRA\&utm_content=thisweekinreact_en)
+
+[Storyblok](https://www.storyblok.com/?utm_source=thisweekinreact\&utm_medium=display\&utm_campaign=AWA_SPON_TWIREACT_TRA\&utm_content=thisweekinreact_en)を試したことはありますか？これは、開発者とマーケターの両方のために設計されたビジュアルエディタを備えたヘッドレスCMSです！
+
+Storyblok React SDKを使用して、再利用可能なコンポーネントを迅速に構築し、React、Next.js、Remix、さらにはReact-Nativeのアプリケーション、ウェブサイト、またはeコマースを作成するためのコンテンツを取得します。
+
+[Technology Hub](https://www.storyblok.com/technologies?utm_source=thisweekinreact\&utm_medium=display\&utm_campaign=AWA_SPON_TWIREACT_TRA\&utm_content=thisweekinreact_en)をチェックして、自分で確かめてください！
+
+***
+
+## ⚛️ React {#react}
+
+**[React I Love You, But You're Bringing Me Down](https://marmelab.com/blog/2022/09/20/react-i-love-you.html)**
+
+React-Adminの作者が、Reactについて多くの側面（フォーム、useContextSelector、refs、deps配列など）で公平な批判をしています。[Dan Abramovの返答](https://twitter.com/dan_abramov/status/1572590212647391235)も見逃さないでください。
+
+**[Next.js Layouts RFC in 5 minutes](https://vercel.com/blog/next-js-layouts-rfc-in-5-minutes)**
+
+Next.jsのファイルシステムベースのルーターは、次のメジャーリリースで大幅にアップグレードされます。これには、Remixのようなネストされたレイアウトのサポートが含まれます。これにより、ブラウジング中にレイアウトが不必要にアンマウント/リマウントされるのを防ぐだけでなく、データの読み込みとエラーの管理も可能になります。この記事では、その概要を簡単に説明しています。[Delbaのスレッド](https://twitter.com/delba_oliveira/status/1568291558776274945)も参照してください。
+
+**[React Router 6.4](https://remix.run/blog/react-router-v6.4)**
+
+大きなアップデート：予想通り、多くのRemix API（データ読み込み、ミューテーションなど）がついにReact-Routerに移行されました。[2分の動画](https://www.youtube.com/watch?v=aX74DbFT5nI)をご覧ください。
+
+**[What’s New In Gatsby 2022?](https://www.smashingmagazine.com/2022/09/new-gatsby-2022/)**
+
+Paulは自分のブログを最新のGatsby v4にアップグレードし、最新機能の使用方法を共有しています。Deferred Static Generationを使用すると、ビルド時間を大幅に短縮できます。[Gatsby 5 Umbrella Discussion](https://github.com/gatsbyjs/gatsby/discussions/36609)と動画[Gatsby v5 Alpha Showcase](https://www.youtube.com/watch?v=C-WrnfUm33k)も参照してください：部分的なハイドレーションがやってきます！
+
+**その他**:
+
+* 🧑‍🎓Beta docs: [useCallback](https://twitter.com/dan_abramov/status/1570021510659579904) + [useMemo](https://twitter.com/dan_abramov/status/1568602727147520000)
+* 💬 [useEvent update](https://github.com/reactjs/rfcs/pull/220#issuecomment-1259938816): the `useEvent` prototype is implemented and available via `@experimental`. Some concerns will lead to the opening of a new RFC. If I understand correctly it is possible that this hook will never be released but another solution will be adopted.
+* 💬 [Dan Abramov - "in what ways is react 18 faster than react 17?"](https://www.reddit.com/r/reactjs/comments/xmr9tg/comment/ippsuin/)
+* 📜 [The new wave of Javascript web frameworks](https://frontendmastery.com/posts/the-new-wave-of-javascript-web-frameworks/): a good overview of the frontend ecosystem of Flash until today. Focus on React and its various challengers: Vue, Svelte, Solid, Qwik, Astro, Fresh...
+* 📜 [Get in Zoomer, We're Saving React](https://acko.net/blog/get-in-zoomer-we-re-saving-react/): article with interesting ideas. I didn't quite understand what the conclusion is except that React can do better and its challengers don't really improve things 😅
+* 📜 [useState with URLs: How to persist state with useSearchParams](https://blog.logrocket.com/use-state-url-persist-state-usesearchparams/): explains how and why to persist React state in querystring
+* 📜 [An apparent React bug](https://phelipetls.github.io/posts/surprising-react-bug/): related to behavior of the `<details>` element
+* 📜 [When to use “useImperativeHandle” and “forwardRefs” in React 18](https://betterprogramming.pub/when-to-use-useimperativehandle-and-forwardrefs-in-react-18-89cce42b3309)
+* 📜 [I18n with Storybook](https://storybook.js.org/blog/internationalize-components-with-storybook/): shows how to bring full i18n support in Storybook: locale dropdown switch, RTL support...
+* 📜 [Storybook community showcase #3](https://storybook.js.org/blog/community-showcase-3/)
+* 📜 [The Basics of Remix](https://css-tricks.com/the-basics-of-remix/)
+* 📜 [React and Observables from RxDB](https://www.sabre.com/locations/poland/react-and-observables-from-rxdb/)
+* 📜 [Automated Rule Docs With Docusaurus and Remark](https://typescript-eslint.io/blog/automated-rule-docs-with-docusaurus-and-remark/)
+* 📜 [Me & React: 5 Years in 15 Minutes](https://valeriavg.dev/me-and-react-5-years-in-15-minutes)
+* 🐦 [Mitosis - Write components with Sveltejs syntax, compile to other frameworks d](https://twitter.com/Steve8708/status/1573444026006585345)
+* 🎥 React Finland [day 1](https://www.youtube.com/watch?v=zE8PDM_7xoQ) + [day 2](https://www.youtube.com/watch?v=rHjwZu0EmlQ)
+* 🎥 [5 Pro-Level React Do's & Don'ts](https://www.youtube.com/watch?v=4FhJkX18fS8)
+* 🎥 [freeCodeCamp - Code a Minecraft Clone with JavaScript, React, Three.js](https://www.youtube.com/watch?v=qpOZup_3P_A)
+* 🐦 [React is focused on the problems that matter more](https://twitter.com/heyImMapleLeaf/status/1567960223759093760): interesting conversations. See also [Evan You](https://twitter.com/youyuxi/status/1569485243077529602) comment.
+* 🐦 [React form without useState](https://twitter.com/DavidKPiano/status/1569361453928300545)
+* 🚧 [MUI Base: the headless alternative to Material UI](https://twitter.com/MUI_hq/status/1570695041034731520)
+* 🎙️ [JS Party #244 - The spicy React debate show 🌶️](https://changelog.com/jsparty/244)
+* 📦 [Its fine](https://github.com/pmndrs/its-fine): a collection of advanced escape hatches for React. Useful for [bridging React context between renderers in the React-Three-Fiber ecosystem](https://twitter.com/0xca0a/status/1573064826339094528)
+* 📦 [Theatre.js v0.5](https://www.theatrejs.com/blog/theatre-05-is-out): new 3D editor, useful for React-Three-Fiber
+* 📦 [TinyBase 2.0](https://twitter.com/tinybasejs/status/1570864399728136193): reactive datastore with React bindings
+* 📦 [React-Tether 3.0](https://github.com/danreeves/react-tether/releases/tag/v3.0.0): one of the very first positioning libs for React seems to be back in business
+* 📦 [TanStack Query 4.4](https://github.com/TanStack/query/releases/tag/v4.4.0): decoupled from React, brings the support of another framework: SolidJS.
+* 🥳️ [Next.js merged 10000 pull-requests](https://twitter.com/github/status/1574750716966498304)
+
+<SubscribeFormEmbed />
+
+***
+
+## 📱 React-Native {#react-native}
+
+**[RFC: ExpoとReact Native向けファイルシステムベースのネイティブルーティング](https://blog.expo.dev/rfc-file-system-based-routing-in-react-native-7a35474722a)**
+
+Evan Baconが、Next.jsやRemixと同様のファイルシステム規約に基づく新しいExpoルーターを開発中です。この待望の機能は、Webの開発者体験（DX）をモバイルに持ち込み、アプリのボイラープレートを大幅に削減するだけでなく、ディスカバラビリティ、ディープリンク、インデックス作成、データ読み込み、エラーハンドリングなどを改善します。詳細はこちらの[スレッド](https://twitter.com/Baconbrix/status/1574837248029331495)や[ポッドキャスト](https://podrocket.logrocket.com/expo-router)もご覧ください。
+
+* 📦 [Ignite 8.0 "Maverick"の発表](https://shift.infinite.red/announcing-ignite-8-0-maverick-fbbdafbb738e)。人気のReact-Nativeボイラープレートが大幅にアップデート。Expo/Vanilla RNの統合、リデザイン、i18nなど多くの改善が施されています。
+* 📦 [FlashList 1.3 - MasonryFlashList](https://twitter.com/naqvitalha/status/1574416547426496513): Masonry/Pinterest風のグリッドレイアウトをReact-Nativeで再現。
+* 🥳️ [v0.71でTypeScriptの型定義が内部化されました](https://twitter.com/thymikee/status/1572132314280300546)。`@types/react-native`が不要に。
+* 🥳️ [React-Nativeが週間100万ダウンロードを突破](https://twitter.com/thymikee/status/1574441040626552832)
+* 🐦 [0.70: スタックトレースの大幅な改善](https://twitter.com/thymikee/status/1568257655323475972)
+* 🎨 [Amazon Interactive Video Serviceデモ](https://twitter.com/nightstomp/status/1572576326934208513): React-NativeがTikTokよりも高性能？
+* 🎨 [Software Mansion - Shared Element Transition + Reanimatedのスニークピークデモ](https://twitter.com/swmansion/status/1572246971829608449)
+* 📜 [React Native Testing Libraryを使ったReact Native WebViewのテスト](https://coolsoftware.dev/testing-react-native-webview-with-react-native-testing-library/)
+* 🎙 [The React Native Show #16 - MicrosoftにおけるReact Native](https://www.callstack.com/podcasts/react-native-at-microsoft-ep-16)
+* 🎙 [React-Native-Radio #247 - React Nativeに関する5年後の一般的な不満を再検討](https://reactnativeradio.com/episodes/rnr-247-revisiting-common-complaints-about-react-native-5-years-later-interview-with-hodeem)
+* 🔗️ [There's a Snack for That](https://www.snackforthat.com/): Expo Snacksのコレクション
+
+***
+
+## 🧑‍💻 Jobs {#jobs}
+
+🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\&t=ArRLC77BpRwXXCdx8fnUqw)
+
+React Nativeに特化した開発者向けの複数のポジションを募集しています！報酬は約160kドル＋10%のボーナス。RNの実務経験があり、米国在住である必要があります。詳細は[@gabe\_g2i](https://twitter.com/gabe_g2i)までDMでお問い合わせください。This Week in Reactからの紹介であることをお忘れなく。
+
+💡 [求人を掲載する方法は？](https://thisweekinreact.com/sponsor)
+
+***
+
+## 🔀 Other {#other}
+
+* [QwikとQwik Cityがベータ版に到達！](https://www.builder.io/blog/qwik-and-qwik-city-have-reached-beta): ハイドレーションではなく再開可能性に基づく最先端フレームワーク、Reactの挑戦者
+* [TypeScript 4.9ベータ](https://devblogs.microsoft.com/typescript/announcing-typescript-4-9-beta/): 待望の新機能`satisfies`を導入！
+* [Token CSS](https://twitter.com/tokencss/status/1571823928187633664): Tailwindの代替となる可能性は？
+* [第92回TC39会議からの更新](https://dev.to/hemanth/updates-from-the-92nd-tc39-meeting-5fi6): 小規模な更新
+* [Cloudflare - workerd: Workersランタイムのオープンソース化](https://blog.cloudflare.com/workerd-open-source-workers-runtime/)
+* [Meta - MemLab: JavaScriptメモリリーク検出のためのオープンソースフレームワーク](https://engineering.fb.com/2022/09/12/open-source/memlab/)
+* [Type-Level TypeScript](https://type-level-typescript.com/)
+* TotalTypeScript [Tips](https://www.totaltypescript.com/tips) + [Zodチュートリアル](https://www.totaltypescript.com/tutorials/zod)
+* [Ezno、JavaScript向けの新しい型チェックコンパイラ](https://twitter.com/robpalmer2/status/1573244310644199425)
+* [Turborepo 1.5](https://twitter.com/turborepo/status/1573017581459488769)
+* [tRPC 10ベータ](https://twitter.com/alexdotjs/status/1571807618254905344)
+* [2022 Web Almanac](https://almanac.httparchive.org/en/2022/)
+* [Chrome Developers - コンテナクエリが安定版ブラウザに実装開始](https://developer.chrome.com/blog/cq-polyfill/)
+* [Safari 16.0のWebKit機能](https://webkit.org/blog/13152/webkit-features-in-safari-16-0/)
+* [モダンなnpmパッケージ作成のベストプラクティス](https://snyk.io/blog/best-practices-create-modern-npm-package/)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![Next.jsのルーティングが示す、非常に複雑なファイルシステムベースのルーティングツリー](/emails/issues/117/meme.png)](https://twitter.com/thekitze/status/1568300470107783168)

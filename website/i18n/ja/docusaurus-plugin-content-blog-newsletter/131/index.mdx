@@ -1,0 +1,200 @@
+---
+slug: /131
+title: "This Week In React #131: useReducer, Controlled Inputs, Async React, DevTools, React-Query, Storybook, Remix, React-Native, Expo..."
+authors: [slorber]
+date: 01-17-2023
+---
+
+みなさん、こんにちは！
+
+ホリデーシーズンが徐々に終わりつつあります。ブログ記事はたくさんありますが、React-Native 0.71以外に大きな発表はありません。
+
+スキー休暇から戻り、週刊ニュースレターのスケジュールに復帰しました。すべてを追いかけていたわけではありませんが、今週のTwitterドラマはTailwindについてだったでしょうか？😅
+
+[State of React-Native調査](https://survey.stateofreactnative.com/)に参加できるのはあと2日です🙏
+
+React-Three-Fiberに興味のあるクリエイティブなWeb開発者の方は、[Web Game Dev](https://www.webgamedev.com/newsletter)ニュースレターを購読してください：ここよりも多くの情報を得られます。
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![React BricksはReactコンポーネントベースのビジュアル編集可能なCMSです](/emails/issues/128/reactbricks.png)](https://reactbricks.com/?utm_source=this_week_in_react)
+
+**[React BricksはReactコンポーネントベースのビジュアル編集可能なCMSです](https://reactbricks.com/?utm_source=this_week_in_react)**
+
+**開発者にとって柔軟**: Reactコンポーネントを使用して独自のデザインシステムを作成し、JSXにビジュアル編集を追加し、背景色などのプロパティを編集するためのサイドバーコントロールを追加できます。Next.js、Gatsby、Remix、およびお好きなCSSフレームワークを選択できます！
+
+**コンテンツ編集者にとって簡単**: デザインシステムを壊すことなく、直接ビジュアルで編集できます。ヘッドレスCMSのように抽象的なエンティティを灰色のフィールドで編集するよりもはるかに簡単です。**そして時間を節約できます**、コンテンツ編集者が自律的になるからです！
+
+**エンタープライズ対応**: コラボレーション、タイムマシン、シングルサインオン、GDPR準拠のデータセンター、最適化された画像のためのグローバルCDN、Eコマース統合、スケジュールされた公開などが利用可能です。
+
+ここから始めましょう: [ReactBricks.com](https://reactbricks.com/?utm_source=this_week_in_react)
+
+***
+
+## ⚛️ React {#react}
+
+[![useReducer](/emails/issues/131/useReducer.jpg)](https://www.builder.io/blog/use-reducer)
+
+**[useState地獄の治療法](https://www.builder.io/blog/use-reducer)**
+
+複数の`useState`を単一のアクションを持つ`useReducer`に置き換えることを提案しています。状態が一貫していることを確認できる利点や、後で複数のアクションを持つリデューサーに移行できる利点を説明しています。知っておくと便利なパターンです。私の意見：単一のオブジェクトとカスタムフックを使用した単一の`useState`でも同様の利点を得ることが可能です。`useState`か`useReducer`かは実装の詳細であるべきです。
+
+***
+
+[![useReducer](/emails/issues/131/react-query-ts.jpg)](https://tkdodo.eu/blog/type-safe-react-query)
+
+**[タイプセーフなReact Query](https://tkdodo.eu/blog/type-safe-react-query)**
+
+TypeScriptでは、自分自身を騙したくないものです。バックエンドが正しいペイロードを返すと信じられるでしょうか。DominikはReact-QueryとZodを組み合わせることを提案しています。推論を使用すると、`as`やジェネリクスで型を強制する必要がなくなります。バックエンドとフロントエンドが同じモノレポにあるフルスタック環境では、tRPCやZodiosを使用できます。
+
+***
+
+* 📜 [Reactでのデータバインディング](https://www.joshwcomeau.com/react/data-binding/): Josh Comeauによる新しいインタラクティブ記事。Reactの制御された入力について、各入力タイプの微妙な違いやアクセシビリティのためのIDの使用などを解説。
+* 📜 [NextJS 13での非同期React](https://swizec.com/blog/async-react-with-nextjs-13/): Next.js 13アプリでの非同期サーバーコンポーネントの使用。エラーバウンダリ、Next.jsで拡張されたfetch、Reactキャッシュなど興味深い詳細をカバー。
+* 📜 [Reactでデバウンスとスロットルを実装する方法（頭を悩ませずに）](https://www.developerway.com/posts/debouncing-in-react): Reactでデバウンスを実装するのがそれほど単純でないことを強調。不安定なデバウンス関数、メモ化、ステイルクロージャなどの問題点。
+* 📜 [Reactフレームワークを使うべき理由](https://leerob.substack.com/p/react-frameworks): Lee Robinsonがフレームワークを使用するさまざまな理由を提示。製品開発に専念する時間を増やすため。Reactは進化し、単なるライブラリではなく、アーキテクチャ、コミュニティ、エコシステムとなった。
+* 📜 [2023年のStorybookの未来](https://storybook.js.org/blog/future-of-storybook-in-2023/): 2022年の振り返りと2023年の展望。Storybook 7.0、パフォーマンス、Turbopackサポート、埋め込み、テスト、React-Nativeサポートの改善など。
+* 📜 [Storybook Ecosystem CI](https://storybook.js.org/blog/storybook-ecosystem-ci/): 推移的依存関係のマイナーアップグレードに伴うリグレッションを事前に検出できる新しいシステム。
+* 📜 [Replay RoutinesでReact DevToolsを再構築した方法](https://blog.replay.io/how-we-rebuilt-react-devtools-with-replay-routines): Mark EriksonがReact DevToolsの仕組みと、Replayタイムトラベルデバッガーとの新しい統合について詳細に解説。
+* 📜 [refやmemoを使わずにReactのパフォーマンスを最適化する](https://alexsidorenko.com/blog/react-optimize-rerenders-without-refs-memo/): コードを小さなコンポーネントに分離することでReactの再レンダリングを最適化する方法を提案。
+* 📜 [Vercel OGが素晴らしい理由とその使い方](https://www.flavienbonvin.com/why-vercel-og-is-amazing-and-how-to-use-it/): メタ画像はマーケティングに重要。Vercel OGはJSXとTailwindを使用した革新的なソリューションで、VercelにデプロイされたNext.jsプロジェクトに簡単に統合可能。
+* 📜 [Excalidraw - コンポーネントAPIの再考](https://blog.excalidraw.com/redesigning-editor-api/): ExcalidrawエディターのReact設計決定について説明。render propsの使用を廃止し、非推奨のAPIであるReact.Childrenに置き換えた経緯。
+* 📜 [Next.jsで高速なアニメーション画像ギャラリーを構築](https://vercel.com/blog/building-a-fast-animated-image-gallery-with-next-js)
+* 📜 [React、Vite、TypeScript: 2分以内で始める](https://blog.nrwl.io/react-vite-and-typescript-get-started-in-under-2-minutes-3bd5cd836175)
+* 📜 [React 18でのストリーミングSSRガイド](https://blog.logrocket.com/streaming-ssr-with-react-18/)
+* 📜 [小さなReactの話: Reactアプリケーションは関数である](https://www.zekehernandez.com/posts/react-applications-are-functions)
+* 🧑‍🎓 [新しい公式Relayチュートリアル](https://twitter.com/RelayFramework/status/1611424289068314625)
+* 👀 [Remix + Vanilla Extract PR - マージ済み](https://github.com/remix-run/remix/pull/5040)
+* 🐦 [React内でのSolid](https://twitter.com/RyanCarniato/status/1611448920521179136): Ryan CarniatoによるSolidJSコンポーネントをReactアプリに統合するPOC
+* 📦 [Remix 1.10](https://github.com/remix-run/remix/releases/tag/remix%401.10.0): "React-Routering Remix"プロジェクトの正式終了と多くの新しい便利なフック。
+* 📦 [create-react-signals](https://github.com/dai-shi/create-react-signals): Daishi KatoがPreact signalsに触発され、Zustand、Valtio、Jotaiのための新しいリアクティブバインディングを作成。
+* 📦 [Mutative](https://github.com/unadlib/mutative) + [Structura.js](https://giusepperaso.github.io/structura.js): 不変更新のためのImmerに代わる2つの新しい高速な代替手段？
+* 📦 [Redux Toolkit 2.0 alpha](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.0.0-alpha.0): 今後のv2の破壊的変更の概要を提供
+* 📦 [Create-Universal-App](https://github.com/chen-rn/CUA): ユニバーサルフルスタックアプリ（Web + モバイル）を作成するスターター: Next.js、Expo、Tamagui、tRPC...
+* 📦 [Chakra UI FigPilot](https://twitter.com/chakra_ui/status/1613267652717191191): FigmaデザインをChakra UIに変換
+* 📦 [Inertia 1.0](https://twitter.com/inertiajs/status/1614295060610437123): Tailwind共同作成者によるPHPフレームワークで、サーバーサイドルーティングとReact統合を使用。
+* 📦 [Precedent](https://twitter.com/steventey/status/1613928948915920896): "Next.jsのためのビルディングブロック"
+* 📦 [VSCode用MDX拡張 1.1](https://twitter.com/remcohaszing/status/1613910319805382657): 実験的なインテリセンスサポート
+* 📦 [Next.js 13.1.2](https://twitter.com/nextjs/status/1613910922128416768)
+* 📦 [Radixリリース - 1月17日](https://www.radix-ui.com/docs/primitives/overview/releases#january-17-2023)
+* 📦 [Visx 3.0](https://github.com/airbnb/visx/releases/tag/v3.0.0)
+* 🎥 [NextJS 13は状態管理を破壊したのか？](https://www.youtube.com/watch?v=OpMAH2hzKi8)
+* 🎥 [高速化のヒント: React & TypeScript](https://www.youtube.com/watch?v=37PafxU_uzQ)
+* 🎥 [Reactを学ぶには遅すぎるのか？](https://www.youtube.com/watch?v=WByOlXWrGaY)
+
+<SubscribeFormEmbed />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Developer Nation Survey - 開発者エコシステムに影響を与えたいですか？](/emails/issues/128/dn-survey.png)](https://developereconomics.net/?member_id=thisweekinreact)
+
+**[開発者エコシステムに影響を与えたいですか？](https://developereconomics.net/?member_id=thisweekinreact)**
+
+最新の「State of the Developer Nation」レポートによると、Reactはクライアントサイドライブラリの中で圧倒的に人気があり、クライアントサイドWebフレームワークを使用するWeb開発者の58%に利用されています。あなたの意見は？
+
+Developer Nationがこれまでに作成した最も包括的な[調査](https://developereconomics.net/?member_id=thisweekinreact)に参加し、2023年の開発者間の主要トレンドを形作り、素晴らしい賞品を獲得しましょう！🎁
+
+完了すると、無料でVirtual Goody Bagにアクセスできます。週ごとの抽選に参加するためにサインアップすることをお忘れなく。250の賞品の中には、ThinkPad L15 Gen 3、Intel NUC 10 Performance Mini PC、IoTキット、iPad Air、ギフトカード、Udemyコース、テックアクセサリーなどが含まれています。
+
+[こちらから開始](https://developereconomics.net/?member_id=thisweekinreact)！
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![useReducer](/emails/issues/131/rn-android-bt.jpg)](https://reactnative.dev/blog/2023/01/12/version-071)
+
+**[React Native 0.71: デフォルトでTypeScript、Flexbox Gap、その他...](https://reactnative.dev/blog/2023/01/12/version-071)**
+
+大きなリリースで、以下のような特徴があります：
+
+* デフォルトでTypeScript
+* Flex gapのピクセル単位サポート（パーセンテージサポートは後日）
+* クロスプラットフォーム開発を簡素化する新しいWeb風のプロップス（アクセシビリティ、スタイル、イベント）
+* 開発者体験の向上：クリックで検査可能なDevTools、新しいHermesバージョン、新しいアーキテクチャ...
+* [Maven CentralでのAndroid Prebuilts](https://github.com/reactwg/react-native-new-architecture/discussions/105): Androidビルド時間が94%削減され、その他の影響も。注: [iOSビルド時間も大幅に改善可能](https://twitter.com/Baconbrix/status/1611527618444120065)かもしれません。
+
+***
+
+[![expo-m1](/emails/issues/131/expo-m1.jpg)](https://blog.expo.dev/m1-workers-on-eas-build-dcaa2c1333ad)
+
+**Expoブログの新しい記事**:
+
+* 👀 SDK 48は2月末にリリース予定。
+* 📜 [EAS BuildでのM1ワーカーの一般提供開始](https://blog.expo.dev/m1-workers-on-eas-build-dcaa2c1333ad): M1ワーカーによりEASでのiOSビルド時間が40%短縮され、まもなくデフォルトのワーカーになります。
+* 📜 [Android通知のためのExpo Push Notification Serviceの実装変更](https://blog.expo.dev/an-implementation-change-to-expo-push-notification-service-for-android-notifications-ede056189e33): Expo APIはもはやプッシュがAPNSまたはFCMによって受信されたかどうかを通知しません。
+* 📜 [ナイトリービルドからのReact Nativeのテスト](https://blog.expo.dev/testing-react-native-from-the-nightly-builds-ee54ad0c9830): React-Nativeの現在の開発バージョンを使用して、できるだけ早く問題を検出します。
+* 📜 [Classic Buildサービスのサポート終了](https://blog.expo.dev/classic-build-service-no-longer-supported-73c82b500f56): EASに切り替えるか、`turtle-cli`で自分でビルドする必要があります。
+
+***
+
+* 📊 [State of React-Native](https://survey.stateofreactnative.com/): 調査は金曜日で締め切られます。締切前にぜひ回答してください！
+* 📖 [Callstack - React Native最適化の究極ガイド](https://www.callstack.com/campaigns/download-the-ultimate-guide-to-react-native-optimization)
+* 🐦 [「Metro v74では、React Nativeのバンドリングが約10%高速化されました」](https://twitter.com/Baconbrix/status/1613899384504127488)
+* 🎨 [複数iOSウィンドウのデモ](https://twitter.com/jpdriver/status/1612265133497282561)
+* 📦 [React-Native-OpenAI-JSX](https://github.com/cawfree/react-native-openai-jsx)
+* 🎥 [Skiaシェーダーと線のSDF](https://www.youtube.com/watch?v=KgJUNYS7ZnA)
+* 🧑‍🎓 [React Native 10倍高速化](https://react-native-10x-faster.com/)
+
+***
+
+## 🧑‍💻 Jobs {#jobs}
+
+🧑‍💼 [**TLDR - シニアソフトウェアエンジニア（リモート、\$120k-200k）**](https://tldr.tech/jobs/senior-software-engineer/23?utm_source=thisweekinreact)
+
+TLDRニュースレターは、採用プラットフォームやその他の内部プロジェクトを構築するための最初のエンジニアを募集しています。Next.jsとPostgres/Supabaseの経験があり、サイドプロジェクトや小規模チームでの開発経験がある方を求めています。
+
+🧑‍💼 [**Causalのプロダクトエンジニア、リモート/ロンドン/NY、\$150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied\&lever-source%5B%5D=thisweekinreact.com)
+
+Causalは、数値データの処理と可視化のためのオールインワンツールを構築しているシリーズAスタートアップ（Coatue/Accelが支援）です。難しいUX/パフォーマンス課題を解決できるReactエンジニアを募集しています。
+
+🧑‍💼 [**Callstack - シニアReact Native開発者 - 完全リモート、月額PLN 21-32k net（B2B）**](https://www.callstack.com/senior-react-native-developer)
+
+世界で最も使われているアプリで働きたいですか？React Native技術の共創に参加したいですか？React & React NativeのリーダーであるCallstackチームに加わりましょう。詳細はウェブサイトをご覧ください。あなたの応募をお待ちしています！
+
+🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\&t=ArRLC77BpRwXXCdx8fnUqw)
+
+React Nativeに特化した開発者向けの複数のポジションがあります！報酬は約160kドル＋10%のボーナスです。RNの実務経験があり、米国在住である必要があります。詳細は[@gabe\_g2i](https://twitter.com/gabe_g2i)にDMでお問い合わせください。This Week in Reactからの紹介であることをお忘れなく。
+
+💡 [求人を掲載するには？](https://thisweekinreact.com/sponsor)
+
+***
+
+## 🔀 Other {#other}
+
+* [State of JS 2022 結果](https://2022.stateofjs.com/)
+* [2022 JavaScript Rising Stars](https://risingstars.js.org/)
+* [Turborepo 1.7](https://turbo.build/blog/turbo-1-7-0)
+* [tRPC - v10リファクタリングにおけるTypeScriptパフォーマンスの教訓](https://trpc.io/blog/typescript-performance-lessons)
+* [Microfrontend.dev](https://microfrontend.dev/)
+* [JavaScriptエコシステムの高速化 - モジュール解決](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-2/)
+* [本番Node.jsアプリでのメモリリーク修正](https://kentcdodds.com/blog/fixing-a-memory-leak-in-a-production-node-js-app)
+* [Chrome 109の新機能](https://developer.chrome.com/blog/new-in-chrome-109/) + [Chrome 110 Beta](https://developer.chrome.com/blog/chrome-110-beta/)
+* [2023年におけるCore Web Vitalsのトップ推奨事項](https://web.dev/top-cwv-2023/)
+* [TypeScriptエラーの構造](https://www.totaltypescript.com/structure-of-a-typescript-error)
+* [TypeScriptジェネリクスのメンタルモデル](https://www.totaltypescript.com/mental-model-for-typescript-generics)
+* [未処理のPromise拒否の落とし穴](https://jakearchibald.com/2023/unhandled-rejections/)
+* [RubyからNodeへ: Shopify CLIの刷新による開発者体験の向上](https://shopify.engineering/overhauling-shopify-cli-for-a-better-developer-experience)
+* [条件付きCSS](https://ishadeed.com/article/conditional-css/)
+* [NPM Kiosk - NPMパッケージ販売の新しい方法](https://npm-kiosk.remotion.dev/)
+* [Lightning CSS visitor API](https://twitter.com/devongovett/status/1610683620255043591)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/131/meme.jpg)](https://twitter.com/t3dotgg/status/1614125827054260224)

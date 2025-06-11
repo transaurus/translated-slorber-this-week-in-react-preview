@@ -1,0 +1,532 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/176/index.mdx",
+  "source_file_content_hash": "48ab3e8b7ead9a6213eb381154f78ed0b2a61bd62fd3fb26e971113fc593eaca",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /176\ntitle: \"This Week In React #176: useActionState, React Compiler, Million Lint, TanStack, Generative UI, Vinxi, Remix i18n, Next.js security, Typesafe Router, Shopify RN perf, RCTRootViewFactory, iOS Live Activities, Uni Stack, TypeScript, Parcel...\"\nauthors: [slorber, bndkt]\ndate: 03-06-2024\n---",
+      "source_content_hash": "3574c9af09c99c0b3f65d43daa7da2d981515a59317d0be2793d00783e9e7c49",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week is difficult to sum up, there's a lot of interesting news and I don't know which to highlight.",
+      "source_content_hash": "7ad1f2eb4496ad35a82dd83d9e330f35e24d435ed094fada4809f3bc8cbc7cf8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週はまとめるのが難しいほど、興味深いニュースがたくさんあり、どれを強調すべきか迷っています。"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "We notably have a sneak peek of a new React core hook replacing the confusing `useFormState`, that even React Native devs will now be able to use now!",
+      "source_content_hash": "ace5da70fc9030b5c2420e136d49828898e0e4154866cf659be893a79d78d4cc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "特に、混乱を招いていた`useFormState`を置き換える新しいReactコアフックの先行プレビューがあり、React Native開発者もこれを使用できるようになります！"
+      }
+    },
+    {
+      "segment_id": "e883b2cc",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_e883b2cc"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**"
+      }
+    },
+    {
+      "segment_id": "7f7f1cb2",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "92f4ea84",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_92f4ea84"
+      }
+    },
+    {
+      "segment_id": "5dfba1c3",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_5dfba1c3"
+      }
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "[![Axiom - the best logging platform for Vercel apps](/emails/issues/171/axiom.jpg)](https://axiom.co/vercel)",
+      "source_content_hash": "bac47bf2e40e870003563c67f07f33df27dbc73e054ed4af6db7888edae3f200",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Axiom - Vercelアプリ向けの最高のログプラットフォーム](/emails/issues/171/axiom.jpg)](https://axiom.co/vercel)"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "**[Axiom - the best logging platform for Vercel apps](https://axiom.co/vercel)**",
+      "source_content_hash": "dd1f9a84aec499deb0e0f9f31e25c7f8d666b99a5cb11fdcd52808da4d1235c7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Axiom - Vercelアプリ向けの最高のログプラットフォーム](https://axiom.co/vercel)**"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "😴 Sleep peacefully knowing that Axiom’s zero-config observability for Vercel projects has you covered.",
+      "source_content_hash": "da026b168222f85171155aa2531a5b45ae8c74ff0eafb69e4e55e794d5453121",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "😴 AxiomのVercelプロジェクト向けゼロコンフィグオブザーバビリティがあれば、安心して眠れます。"
+      }
+    },
+    {
+      "segment_id": "f2c8a42b",
+      "source_content": "* Use Axiom's pre-built dashboard for an overview across all your Vercel logs and vitals, drill down to specific projects and deployments, and get insight on how functions are performing with a single click.\n* [next-axiom](https://github.com/axiomhq/next-axiom) allows you to send logs and events from any part of your Next.js projects - client, edge, or server-side - without any special configuration.\n* Easily send structured logs directly from your code and analyze them together with Vercel logs.",
+      "source_content_hash": "0eed16777a59637168bbe5c2e48700e15f5d777de00cfb9125769fa5c32103f9",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* Axiomの事前構築済みダッシュボードを使用して、すべてのVercelログとバイタルを一覧表示し、特定のプロジェクトやデプロイメントをドリルダウンし、ワンクリックで関数のパフォーマンスを把握できます。\n* [next-axiom](https://github.com/axiomhq/next-axiom)を使用すると、Next.jsプロジェクトのクライアント、エッジ、またはサーバーサイドから特別な設定なしでログやイベントを送信できます。\n* コードから構造化ログを簡単に送信し、Vercelログと一緒に分析できます。"
+      }
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "Axiom efficiently captures 100% of your event data so you’ll never have to worry about sampling or retention, and you’ll never have to guess what your users are experiencing.",
+      "source_content_hash": "e64270db91d2834b7497fa425a479d4f710144626a21d7a9a87ab147fe226691",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Axiomはイベントデータの100%を効率的にキャプチャするため、サンプリングや保持について心配する必要はなく、ユーザーが何を体験しているかを推測する必要もありません。"
+      }
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "**PS**: [I use it myself to monitor the newsletter signups](https://twitter.com/sebastienlorber/status/1528666563452317696) 😉",
+      "source_content_hash": "ec258cd50d3447251f6f42e1167cc5f2303fd568f613ef93c2508084e5a75e4f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**PS**: [私はニュースレターのサインアップを監視するためにこれを使用しています](https://twitter.com/sebastienlorber/status/1528666563452317696) 😉"
+      }
+    },
+    {
+      "segment_id": "602e59c7",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "54268405",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "[![React Core PR - New useActionState hook](/emails/issues/176/useActionState.jpg)](https://github.com/facebook/react/pull/28491)",
+      "source_content_hash": "b0fe980e730654e367652cb0807b82ab44adc7d274fec61f4e5b8628f14a69d8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![React Core PR - 新しいuseActionStateフック](/emails/issues/176/useActionState.jpg)](https://github.com/facebook/react/pull/28491)"
+      }
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "**[React Core PR - New useActionState hook](https://github.com/facebook/react/pull/28491)**",
+      "source_content_hash": "1f99595229959861ab95dd53e4eb9780b14f10f5cb72b039d7f24b033f677bb7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[React Core PR - 新しいuseActionStateフック](https://github.com/facebook/react/pull/28491)**"
+      }
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "It turns out the useFormState hook was confusing, and not even meant to be solely used in forms. The React team is addressing this by introducing a new React core hook to replace it:",
+      "source_content_hash": "d4b97d8d4b4c9d07442415a12166fef44d273379eb21f379204e6569bb877c30",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "useFormStateフックは混乱を招いており、フォーム専用としても意図されていませんでした。Reactチームはこれを解決するために、新しいReactコアフックを導入しています："
+      }
+    },
+    {
+      "segment_id": "b4ef1e56",
+      "source_content": "* Renames `useFormState` to `useActionState`\n* Adds a pending state to the returned tuple\n* Moves the hook to the `react` package",
+      "source_content_hash": "ca3d463d92b4da65f92d450e008a9c6767bcb5fc8d6206fc5c356da1a2494f84",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* `useFormState`を`useActionState`に改名\n* 返されるタプルにpending状態を追加\n* フックを`react`パッケージに移動"
+      }
+    },
+    {
+      "segment_id": "b9aaa519",
+      "source_content": "Moving it from `react-dom` to `react` also means that now, other renderers such as React Native can use it too. There are other benefits to look at, such as a “partial progressive enhancement” feature, but also new caveats documented in the PR.",
+      "source_content_hash": "96cffe219364cd7e9b08a5d00d9dff8f1f1015cc79161309c051e13314f978ea",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`react-dom`から`react`に移動することで、React Nativeなどの他のレンダラーもこれを使用できるようになります。PRには、「部分的なプログレッシブエンハンスメント」機能などの利点や、新しい注意点も記載されています。"
+      }
+    },
+    {
+      "segment_id": "e2fed468",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "a0e887c2",
+      "source_content": "* 💸 [Secure your documents with PDF Redaction. Discover how to protect sensitive information in PDFs using React. Visit our blog to learn more.](https://apryse.com/blog/pdf-redaction-using-react?utm_source=this%20week%20in%20react\\&utm_medium=newsletter3)\n* 🐦 [React 19 != React Compiler](https://twitter.com/sebastienlorber/status/1764950877620654474): The React Labs post is a bit ambiguous and misled many of us, so let’s clarify. The compiler will likely come after the React 19.0 release as a separate project, and there’s a good chance it will initially be released as a Babel/TypeScript plugin. The internals are decoupled through, so it shouldn’t take long to adapt it it to Rust.\n* 🐦 [TanStack Start preview](https://twitter.com/tannerlinsley/status/1765120904370307438): Tanner works on a TanStack Start full-stack framework based on Vinxi and TanStack Router. This preview shows he’s migrating his own TanStack site to it.\n* 📜 [Vercel - Introducing AI SDK 3.0 with Generative UI support](https://vercel.com/blog/ai-sdk-3-generative-ui): With the AI SDK 3.0 and thanks to React Server Components, you can now stream UI components directly from LLMs. Super impressive demos!\n* 📜 [Secure statically rendered paid content in Next.js (with the App Router)](https://www.ericburel.tech/blog/static-paid-content-app-router): Shows that using Next.js layouts for authentication is not super secure, and the protected content can still leak through the RSC endpoint. Suggests using a middleware instead.\n* 📜 [Internationalization with Remix](https://remix.run/blog/remix-i18n): Goes back to i18n fundamentals, and then detail various i18n solutions you can set up within Remix. Optional route segments can help you use localized sub-directories.\n* 📜 [Did you know you can write your own typesafe React router in 500 lines?](https://sinja.io/blog/build-typesafe-react-router-from-scratch): A great comprehensive article that might give you a better understanding of how existing routers work. Also great to learn about advanced TypeScript type-level programming techniques.\n* 📜 [Streaming HTML out of order without JavaScript](https://lamplightdev.com/blog/2024/01/10/streaming-html-out-of-order-without-javascript/): This super interesting demo shows we don’t need JavaScript to stream out-of-order HTML chunks, and yet render them in the correct order. All you need is Declarative Shadow DOM and slots. It will be interesting to see if RSC streaming + Suspense could leverage that technique in the future instead of inlining JavaScript.\n* 📜 [Simple RSC With Vinxi](https://www.brenelz.com/posts/simple-rsc-with-vinxi/): The Vinxi SDK helps you create your own full-stack framework, and it even has a plugin for React Server Components support!\n* 📜 [Million.js - Blocks with noSlot Mode](https://million.dev/blog/block-noSlot): the Million compiler might wrap your components with `<slot>` elements, which might cause issues (styling). This introduces a new experimental `noSlot` mode..\n* 📜 [How to add Monaco to a Next.js app to enable custom user workflows](https://deno.com/blog/monaco-nextjs): Interesting tutorial that also shows how to deploy untrusted user code to Deno.\n* 📜 [Conceptual Model of React and RSC](https://ondrejvelisek.github.io/conceptual-model-of-react-and-rsc/): Reflects around the UI=f(state) formula in interesting ways, and concludes RSC kind of breaks the original model.\n* 📜 [Why React Server Components Are Breaking Builds to Win Tomorrow](https://www.builder.io/blog/why-react-server-components)\n* 📜 [The End Of My Gatsby Journey](https://www.smashingmagazine.com/2024/03/end-of-gatsby-journey/)\n* 📜 [React Admin March 2024 Update](https://marmelab.com/blog/2024/03/05/react-admin-march-2024-update.html)\n* 📦 [Million Lint - public beta](https://million.dev/blog/lint): A VSCode extension that helps you keep your React code fast thanks to dynamic analysis. Much simpler to use than React Devtools flame graphs. There will be an additional AI-based Lint++ paid service built on top to suggest you possible performance improvements.\n* 📦 [react-unforget - A compiler for automatic optimization of React apps](https://github.com/mohebifar/react-unforget): After Forgetti, this is another new alternative React compiler coming from the community. See also 🐦 [Joe Savona’s feedback](https://twitter.com/en_JS/status/1763593971224494106).\n* 📦 [Remix 2.8 - Pass resolved viteConfig to buildEnd hook](https://remix.run/docs/en/main/start/changelog#v280)\n* 📦 [React Query 5.25 - skipToken, typesafe query disabling](https://github.com/TanStack/query/releases/tag/v5.25.0)\n* 📦 [TanStack Router 1.18 - route groups](https://github.com/TanStack/router/releases/tag/v1.18.0)\n* 📦 [Starlight 0.21 - New UI components: Steps, FileTree](https://starlight.astro.build/guides/components/)\n* 📦 [Storybook 8.0 RC - v8 is officially stable enough to be used in production](https://github.com/storybookjs/storybook/releases/tag/v8.0.0-rc.0)\n* 📦 [Onborda - Onboarding wizard flow for Next.js powered by Framer Motion](https://github.com/uixmat/onborda)\n* 📦 [Input-OTP - One-time password input component for React](https://input-otp.rodz.dev/)\n* 📦 [Panda 0.33](https://github.com/chakra-ui/panda/discussions/2274)\n* 📦 [UVCanvas - React component library for beautifully shaded canvas](https://uvcanvas.com)\n* 🎥 [Jack Herrington - Is Tanstack Router Better Than React-Router?](https://www.youtube.com/watch?v=qOwnQJOClrw)\n* 🎥 [Theo - How Shadcn/ui Actually Works](https://www.youtube.com/watch?v=AqmMx_JidGo)",
+      "source_content_hash": "35513a5af62ec3907f97be259d7472116bc1cb1e439152376edb70355b2a0851",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Reactを使用してPDFの機密情報を保護する方法について、PDF編集（レダクション）のブログ記事をご覧ください。](https://apryse.com/blog/pdf-redaction-using-react?utm_source=this%20week%20in%20react\\&utm_medium=newsletter3)\n* 🐦 [React 19 ≠ Reactコンパイラ](https://twitter.com/sebastienlorber/status/1764950877620654474): React Labsの投稿は少し曖昧で、多くの人を誤解させました。コンパイラはReact 19.0リリース後、別プロジェクトとして提供される予定で、最初はBabel/TypeScriptプラグインとしてリリースされる可能性が高いです。内部は分離されているため、Rustへの適応もすぐに行えるでしょう。\n* 🐦 [TanStack Startプレビュー](https://twitter.com/tannerlinsley/status/1765120904370307438): TannerがVinxiとTanStack Routerを基盤としたTanStack Startフルスタックフレームワークを開発中です。このプレビューでは、自身のTanStackサイトを移行している様子が見られます。\n* 📜 [Vercel - AI SDK 3.0とGenerative UIサポートの紹介](https://vercel.com/blog/ai-sdk-3-generative-ui): AI SDK 3.0とReact Server Componentsにより、LLMから直接UIコンポーネントをストリーミングできるようになりました。非常に印象的なデモです！\n* 📜 [Next.js（App Router）で静的にレンダリングされた有料コンテンツを保護する方法](https://www.ericburel.tech/blog/static-paid-content-app-router): Next.jsのレイアウトを認証に使用するのは完全に安全ではなく、保護されたコンテンツがRSCエンドポイントから漏れる可能性があることを示しています。代わりにミドルウェアの使用を提案しています。\n* 📜 [Remixでの国際化（i18n）](https://remix.run/blog/remix-i18n): i18nの基本に立ち返り、Remix内で設定できるさまざまなi18nソリューションを詳しく説明しています。オプションのルートセグメントを使用して、ローカライズされたサブディレクトリを利用できます。\n* 📜 [たった500行で型安全なReactルーターを自作できることを知っていましたか？](https://sinja.io/blog/build-typesafe-react-router-from-scratch): 既存のルーターの動作をより深く理解するのに役立つ包括的な記事です。高度なTypeScriptの型レベルプログラミング技術を学ぶのにも最適です。\n* 📜 [JavaScriptなしでHTMLを順不同でストリーミングする方法](https://lamplightdev.com/blog/2024/01/10/streaming-html-out-of-order-without-javascript/): この非常に興味深いデモは、JavaScriptなしでHTMLチャンクを順不同でストリーミングし、正しい順序でレンダリングできることを示しています。必要なのはDeclarative Shadow DOMとスロットだけです。将来的にRSCストリーミングとSuspenseがこの技術を活用する可能性があります。\n* 📜 [Vinxiを使ったシンプルなRSC](https://www.brenelz.com/posts/simple-rsc-with-vinxi/): Vinxi SDKは独自のフルスタックフレームワークを作成するのに役立ち、React Server Componentsのサポートを提供するプラグインも備えています！\n* 📜 [Million.js - noSlotモードのBlocks](https://million.dev/blog/block-noSlot): Millionコンパイラはコンポーネントを`<slot>`要素でラップする可能性があり、スタイリングに問題を引き起こすことがあります。新しい実験的な`noSlot`モードが導入されました。\n* 📜 [Next.jsアプリにMonacoを追加してカスタムユーザーワークフローを有効にする方法](https://deno.com/blog/monaco-nextjs): 信頼できないユーザーコードをDenoにデプロイする方法も示す興味深いチュートリアルです。\n* 📜 [ReactとRSCの概念モデル](https://ondrejvelisek.github.io/conceptual-model-of-react-and-rsc/): UI=f(state)の公式について興味深い考察を行い、RSCが元のモデルをある程度破っていると結論付けています。\n* 📜 [なぜReact Server Componentsは明日を勝ち取るためにビルドを壊しているのか](https://www.builder.io/blog/why-react-server-components)\n* 📜 [私のGatsby旅の終わり](https://www.smashingmagazine.com/2024/03/end-of-gatsby-journey/)\n* 📜 [React Admin 2024年3月アップデート](https://marmelab.com/blog/2024/03/05/react-admin-march-2024-update.html)\n* 📦 [Million Lint - パブリックベータ](https://million.dev/blog/lint): Reactコードを高速に保つのに役立つVSCode拡張機能です。React Devtoolsのフレームグラフよりも簡単に使用できます。さらに、AIベースの有料サービスLint++も提供され、パフォーマンス改善の提案を行います。\n* 📦 [react-unforget - Reactアプリを自動最適化するコンパイラ](https://github.com/mohebifar/react-unforget): Forgettiに続き、コミュニティからもう1つの新しいReactコンパイラが登場しました。🐦 [Joe Savonaのフィードバック](https://twitter.com/en_JS/status/1763593971224494106)も参照してください。\n* 📦 [Remix 2.8 - buildEndフックに解決済みのviteConfigを渡す](https://remix.run/docs/en/main/start/changelog#v280)\n* 📦 [React Query 5.25 - skipToken、型安全なクエリ無効化](https://github.com/TanStack/query/releases/tag/v5.25.0)\n* 📦 [TanStack Router 1.18 - ルートグループ](https://github.com/TanStack/router/releases/tag/v1.18.0)\n* 📦 [Starlight 0.21 - 新しいUIコンポーネント: Steps、FileTree](https://starlight.astro.build/guides/components/)\n* 📦 [Storybook 8.0 RC - v8は正式に安定版となり、プロダクションで使用可能](https://github.com/storybookjs/storybook/releases/tag/v8.0.0-rc.0)\n* 📦 [Onborda - Framer Motionを搭載したNext.js用オンボーディングウィザード](https://github.com/uixmat/onborda)\n* 📦 [Input-OTP - React用ワンタイムパスワード入力コンポーネント](https://input-otp.rodz.dev/)\n* 📦 [Panda 0.33](https://github.com/chakra-ui/panda/discussions/2274)\n* 📦 [UVCanvas - 美しくシェーディングされたキャンバスのためのReactコンポーネントライブラリ](https://uvcanvas.com)\n* 🎥 [Jack Herrington - Tanstack RouterはReact-Routerよりも優れているのか？](https://www.youtube.com/watch?v=qOwnQJOClrw)\n* 🎥 [Theo - Shadcn/uiが実際にどのように動作するか](https://www.youtube.com/watch?v=AqmMx_JidGo)"
+      }
+    },
+    {
+      "segment_id": "897e0025",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_897e0025"
+      }
+    },
+    {
+      "segment_id": "c9716ede",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "39db08de",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "785750ac",
+      "source_content": "[![Need more than just a sign-in box?](/emails/issues/176/clerk.jpg)](https://clerk.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=middleware\\&utm_content=03-06-24)",
+      "source_content_hash": "d85f983813c6703f18af8465832a34a58c8baf1718c1ae7f73bd2d14e2abe1e0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![サインインボックス以上の機能が必要ですか？](/emails/issues/176/clerk.jpg)](https://clerk.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=middleware\\&utm_content=03-06-24)"
+      }
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "**[Need more than just a sign-in box?](https://clerk.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=middleware\\&utm_content=03-06-24)**",
+      "source_content_hash": "9d1dca738080571e000a8315d6fda958e9fd37ea0199cdec5e5d85de973f2bb6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[サインインボックス以上の機能が必要ですか？](https://clerk.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=middleware\\&utm_content=03-06-24)**"
+      }
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "Clerk streamlines React app authentication and user management, ensuring a quick setup for the modern web.",
+      "source_content_hash": "467d54e64cbfb20aa14aa7545cb1525abe931918fe596a77b8b75071bdfa6b2b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ClerkはReactアプリの認証とユーザー管理を効率化し、モダンなWeb向けに迅速なセットアップを実現します。"
+      }
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "Experience the benefits of Clerk:",
+      "source_content_hash": "dcf49d2847b97c510de0b52d9ec196ec5016a73ef98b73f5b64c97e52a2cb5be",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Clerkの利点を体験してください："
+      }
+    },
+    {
+      "segment_id": "584b7213",
+      "source_content": "* 💅 Pre-built UI components for sign-in, sign-up, user profiles, and organizations. Customize with any CSS library and deploy on your domain\n* 📦 SDKs for React, React Native, Next.js, Redwood, Remix, and other frameworks\n* ⚡ Integrations with Firebase, Supabase, Convex, and other BaaS providers\n* 🎁 User management, social login, magic links, MFA, and more out of the box",
+      "source_content_hash": "4804d755370ac498b6eaef887744230222ece0671db9d16e7b49d8f809babe16",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💅 サインイン、サインアップ、ユーザープロフィール、組織向けのプリビルドUIコンポーネント。任意のCSSライブラリでカスタマイズ可能で、独自ドメインにデプロイ可能\n* 📦 React、React Native、Next.js、Redwood、Remixなどのフレームワーク向けSDK\n* ⚡ Firebase、Supabase、ConvexなどのBaaSプロバイダーとの統合\n* 🎁 ユーザー管理、ソーシャルログイン、マジックリンク、多要素認証などがすぐに利用可能"
+      }
+    },
+    {
+      "segment_id": "f0984c2a",
+      "source_content": "Dive into Clerk's [quickstarts and tutorials](https://clerk.com/docs/quickstarts/overview?utm_source=sponsorship\\&utm_medium=newsletter\\&utm_campaign=thisweekinreact\\&utm_term=02-28-24) to kickstart your project🚀",
+      "source_content_hash": "774f2d57034b6ba672c47b55b308ef6ca9c65c353682b37e4e71575d0b6f7cad",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "プロジェクトをすぐに始めるには、Clerkの[クイックスタートとチュートリアル](https://clerk.com/docs/quickstarts/overview?utm_source=sponsorship\\&utm_medium=newsletter\\&utm_campaign=thisweekinreact\\&utm_term=02-28-24)をご覧ください🚀"
+      }
+    },
+    {
+      "segment_id": "bc8bc928",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "722e4930",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "3c19e221",
+      "source_content": "This section is now co-authored with [Benedikt](https://twitter.com/bndkt). Feel free to send us your comments by email or on [Twitter](https://twitter.com/bndkt)!",
+      "source_content_hash": "03c93ddbf8c7962f08a28785d1027e43728cac6191b8183c1e16ffcc9503435b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このセクションは現在[Benedikt](https://twitter.com/bndkt)と共同執筆しています。メールまたは[Twitter](https://twitter.com/bndkt)でコメントをお寄せください！"
+      }
+    },
+    {
+      "segment_id": "d21af28f",
+      "source_content": "[![Improving Shopify App’s Performance](/emails/issues/176/shopify.jpg)](https://shopify.engineering/improving-shopify-app-s-performance)",
+      "source_content_hash": "0d4b71993e02cb863d4c6287b59becf09ae195d57151235c50abb422587bb6f4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Shopifyアプリのパフォーマンス改善](/emails/issues/176/shopify.jpg)](https://shopify.engineering/improving-shopify-app-s-performance)"
+      }
+    },
+    {
+      "segment_id": "44aaa880",
+      "source_content": "**[Improving Shopify App’s Performance](https://shopify.engineering/improving-shopify-app-s-performance)**",
+      "source_content_hash": "e0e1e59aebbbd3a62b11a76b3ee0ec2948910e6549ba87adb60a89f689db794a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Shopifyアプリのパフォーマンス改善](https://shopify.engineering/improving-shopify-app-s-performance)**"
+      }
+    },
+    {
+      "segment_id": "396efb28",
+      "source_content": "Shopify has been a proponent of React Native for a long time. But they did notice their app performance go down since they migrated to React Native. Instead of blaming the tech stack, they got to work and started optimizing for performance. The results speak for themselves: App launch is 44 % faster and screen load times were reduced by 59 %. Here’s a quick summary of some of the measures they took (hint: FlashList plays a big role in some of these). For details, read their great summary post:",
+      "source_content_hash": "656944cb0e9e48dc0d8bb654910dde53b928d02d5307c2f97ca18fbd9e18fcc7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Shopifyは長年React Nativeを支持してきました。しかし、React Nativeに移行してからアプリのパフォーマンスが低下したことに気づきました。技術スタックを責める代わりに、彼らはパフォーマンス最適化に取り組みました。その結果は明白です：アプリ起動が44％高速化し、画面読み込み時間が59％短縮されました。以下に、彼らが実施した対策の概要を紹介します（ヒント：FlashListが重要な役割を果たしています）。詳細は、彼らの素晴らしいまとめ記事をご覧ください："
+      }
+    },
+    {
+      "segment_id": "10e4f9ca",
+      "source_content": "* Initially, only render what’s visible on the screen (especially true for the home screen)\n* Build all screens as lists (based on FlashList)\n* Use inlineRequires\n* Batch state changes\n* Optimize caching",
+      "source_content_hash": "584786ee99f2d0c003b72b4f86d2b0980e56f5e879528a5c23fc7e7bfd50e51b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 最初に画面に表示される部分のみをレンダリング（特にホーム画面）\n* すべての画面をリストとして構築（FlashListベース）\n* inlineRequiresの使用\n* 状態変更のバッチ処理\n* キャッシュの最適化"
+      }
+    },
+    {
+      "segment_id": "6fc234cf",
+      "source_content": "Very interesting insights and impressive results. I hope the Shopify team keeps sharing these details and maybe we’ll even see some of the things they mentioned they built during this process ending up as Open Source?",
+      "source_content_hash": "12cce35a5c9b8022890c020fabd1c0a93a6cb03510cdd23d390a8d177044c77c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "非常に興味深い洞察と印象的な結果です。Shopifyチームがこれらの詳細を共有し続け、この過程で構築したものがオープンソースとして公開されることを期待しています。"
+      }
+    },
+    {
+      "segment_id": "714b728f",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "cd2fd2f2",
+      "source_content": "* 💸 [React Universe Conf combines the best of React Native EU with a new enhanced program. Get your ticket at the lowest price before March 7](https://www.reactuniverseconf.com/?utm_campaign=React_Universe_Conf\\&utm_source=email\\&utm_content=This_Week_in_React)\n* 👀 [PR - RCTRootViewFactory](https://github.com/facebook/react-native/pull/42263): Simplifies brownfield integrations on iOS and spares you from worrying about Old Arch/New Arch/Bridge/Bridgeless combinations.\n* 🐦 [Drag and drop files from other apps in your RN app](https://x.com/alihdjr/status/1764393524940673529)\n* 📖 [visionOS docs - Integrating in existing projects](https://callstack.github.io/react-native-visionos-docs/docs/guides/integrate-into-existing-projects/)\n* 📜 [Expo - Orchestrate advanced workflows with custom builds](https://expo.dev/blog/orchestrate-advanced-workflows-with-custom-builds): Custom builds allow you to run scripts (bash or JS) before or after Expo builds, for example to run E2E tests, send notifications to your team, …\n* 📜 [iOS Live Activities and React Native - leveraging the latest iOS features to display your app's most current data without needing to open it](https://www.reactnative.university/blog/live-activities-unleashed): Way more apps should have Live Activities! There is a hurdle for RN devs though, because they need to be written in Swift. This 3-part series walks through all the steps required to add a Live Activity.\n* 📜 [React Native Error Boundaries - Feature, Partial, and Server](https://www.reactnative.university/blog/react-native-error-boundaries): Error boundaries remain an underutilized feature, and every React Native app should have at least one (but ideally more). This post explains why and how.\n* 📜 [Increase Speed and Security With Native Crypto Libraries](https://www.callstack.com/blog/increase-speed-and-security-with-native-crypto-libraries)\n* 📜 [Morrow's Summary of the State of React Native 2023 Report](https://www.themorrow.digital/blog/our-summary-of-the-state-of-react-native-2023-report)\n* 📦 [Intercom-react-native 6.5 - Now with Expo config plugin](https://github.com/intercom/intercom-react-native/releases/tag/6.5.0)\n* 📦 [Uni Stack - React Native starter w/ Expo, Prisma, tRPC](https://www.uni-stack.dev/)\n* 📦 [Expo-foreground-actions - Start actions that continue to run in the grace period after the user switches apps](https://github.com/Acetyld/expo-foreground-actions)\n* 📦 [React Native 0.74.0 RC 2](https://github.com/facebook/react-native/releases/tag/v0.74.0-rc.2)\n* 🎙️ [RNR 290 - The State of React Native survey with Bartłomiej Bukowski](https://reactnativeradio.com/episodes/the-state-of-react-native-survey-with-bartomiej-bukowski)\n* 🎙️ [Rocket Ship 32 - From broke Teacher to Software Engineer with Zach Taylor](https://podcast.galaxies.dev/episodes/032-from-broke-teacher-to-software-engineer-with-zach-taylor)\n* 🎥 [Simon Grimm - uild a Kids Drawing App with React Native](https://www.youtube.com/watch?v=G5TjXRHoEno)\n* 🎥 [notJust Dev - Build Your Own Blog with React Native (for Web & Mobile)](https://www.youtube.com/watch?v=ewW6_baBXko)\n* 📅 [Chain React Call for Speakers now open until May 3, 2024](https://sessionize.com/chain-react-2024/)\n* 📅 [React Universe Conf 2024 - Early bird ends today](https://ti.to/RUC/react-universe-conf-2024)",
+      "source_content_hash": "dafd5353a9a0d88afa977e857691a7e35f2b36fe508c2456732704d509965470",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [React Universe Confは、React Native EUのベストと新たに強化されたプログラムを組み合わせたイベントです。3月7日までに最安値でチケットを入手しましょう](https://www.reactuniverseconf.com/?utm_campaign=React_Universe_Conf\\&utm_source=email\\&utm_content=This_Week_in_React)\n* 👀 [PR - RCTRootViewFactory](https://github.com/facebook/react-native/pull/42263): iOSでのブラウンフィールド統合を簡素化し、Old Arch/New Arch/Bridge/Bridgelessの組み合わせについて心配する必要がなくなります。\n* 🐦 [他のアプリからファイルをドラッグ＆ドロップしてRNアプリで利用する](https://x.com/alihdjr/status/1764393524940673529)\n* 📖 [visionOSドキュメント - 既存プロジェクトへの統合](https://callstack.github.io/react-native-visionos-docs/docs/guides/integrate-into-existing-projects/)\n* 📜 [Expo - カスタムビルドで高度なワークフローを構築](https://expo.dev/blog/orchestrate-advanced-workflows-with-custom-builds): カスタムビルドを使用すると、Expoビルドの前後にスクリプト（bashまたはJS）を実行できます。例えば、E2Eテストの実行、チームへの通知送信などが可能です。\n* 📜 [iOS Live ActivitiesとReact Native - アプリを開かずに最新データを表示する最新iOS機能の活用](https://www.reactnative.university/blog/live-activities-unleashed): もっと多くのアプリがLive Activitiesを採用すべきです！ただし、RN開発者にはSwiftで記述する必要があるというハードルがあります。この3部作では、Live Activityを追加するための全手順を解説しています。\n* 📜 [React Nativeエラーバウンダリー - 機能、部分的な対応、サーバー](https://www.reactnative.university/blog/react-native-error-boundaries): エラーバウンダリーはまだ十分に活用されていない機能であり、すべてのReact Nativeアプリには少なくとも1つ（理想的には複数）必要です。この記事ではその理由と方法を説明します。\n* 📜 [ネイティブ暗号ライブラリで速度とセキュリティを向上](https://www.callstack.com/blog/increase-speed-and-security-with-native-crypto-libraries)\n* 📜 [MorrowによるState of React Native 2023レポートのまとめ](https://www.themorrow.digital/blog/our-summary-of-the-state-of-react-native-2023-report)\n* 📦 [Intercom-react-native 6.5 - Expo設定プラグイン対応](https://github.com/intercom/intercom-react-native/releases/tag/6.5.0)\n* 📦 [Uni Stack - Expo、Prisma、tRPCを搭載したReact Nativeスターター](https://www.uni-stack.dev/)\n* 📦 [Expo-foreground-actions - ユーザーがアプリを切り替えた後の猶予期間中も動作を継続するアクションを開始](https://github.com/Acetyld/expo-foreground-actions)\n* 📦 [React Native 0.74.0 RC 2](https://github.com/facebook/react-native/releases/tag/v0.74.0-rc.2)\n* 🎙️ [RNR 290 - Bartłomiej BukowskiとのState of React Native調査](https://reactnativeradio.com/episodes/the-state-of-react-native-survey-with-bartomiej-bukowski)\n* 🎙️ [Rocket Ship 32 - 無一文の教師からソフトウェアエンジニアへ - Zach Taylorのストーリー](https://podcast.galaxies.dev/episodes/032-from-broke-teacher-to-software-engineer-with-zach-taylor)\n* 🎥 [Simon Grimm - React Nativeで子供向けお絵描きアプリを構築](https://www.youtube.com/watch?v=G5TjXRHoEno)\n* 🎥 [notJust Dev - React Nativeでブログを構築（Web＆モバイル対応）](https://www.youtube.com/watch?v=ewW6_baBXko)\n* 📅 [Chain React 2024 スピーカー募集 - 2024年5月3日まで](https://sessionize.com/chain-react-2024/)\n* 📅 [React Universe Conf 2024 - 早期割引は本日まで](https://ti.to/RUC/react-universe-conf-2024)"
+      }
+    },
+    {
+      "segment_id": "74a488b8",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "b77e7669",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "415dc9ef",
+      "source_content": "* 💬 [TypeScript 5.5 Iteration Plan - new Set methods, config extension merging](https://github.com/microsoft/TypeScript/issues/57475)\n* 📜 [Effective TypeScript - The Hidden Side of Type Predicates](https://effectivetypescript.com/2024/02/27/type-guards/)\n* 📜 [Deno - Introducing JSR - the JavaScript Registry](https://deno.com/blog/jsr_open_beta)\n* 📜 [OpenJS Launches New Collaboration to Improve Interoperability of JavaScript Package Metadata](https://socket.dev/blog/openjs-improve-interoperability-of-javascript-package-metadata)\n* 📜 [Open Web Advocacy - Apple backs off killing web apps, but the fight continues](https://open-web-advocacy.org/blog/apple-backs-off-killing-web-apps/)\n* 📜 [Top 8 Recent V8 in Node Updates](https://blog.appsignal.com/2024/02/28/top-8-recent-v8-in-node-updates.html)\n* 📦 [WebKit Features in Safari 17.44 - CSS @scope, align-content](https://webkit.org/blog/15063/webkit-features-in-safari-17-4/)\n* 📦 [Shiki-magic-move - Smoothly animated code blocks](https://github.com/shikijs/shiki-magic-move)\n* 📦 [Parcel 2.12 - Macros defined with import attributes running at build times](https://parceljs.org/blog/v2-12-0/)\n* 📦 [Playwright 1.42 - test tagging, skipped tests annotations](https://github.com/microsoft/playwright/releases/tag/v1.42.0)",
+      "source_content_hash": "f0ec720186bd67a6d86f8b0c5957e79e5e2e6fde981d3c26a08d21ae39a2bb64",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💬 [TypeScript 5.5 イテレーションプラン - 新しいSetメソッド、設定拡張のマージ](https://github.com/microsoft/TypeScript/issues/57475)\n* 📜 [Effective TypeScript - 型ガードの隠れた側面](https://effectivetypescript.com/2024/02/27/type-guards/)\n* 📜 [Deno - JSR（JavaScriptレジストリ）の紹介](https://deno.com/blog/jsr_open_beta)\n* 📜 [OpenJS、JavaScriptパッケージメタデータの相互運用性向上に向けた新たな協業を開始](https://socket.dev/blog/openjs-improve-interoperability-of-javascript-package-metadata)\n* 📜 [Open Web Advocacy - AppleがWebアプリ廃止を撤回、ただし戦いは続く](https://open-web-advocacy.org/blog/apple-backs-off-killing-web-apps/)\n* 📜 [Node.jsにおけるV8の最新アップデートトップ8](https://blog.appsignal.com/2024/02/28/top-8-recent-v8-in-node-updates.html)\n* 📦 [Safari 17.4のWebKit新機能 - CSS @scope、align-content](https://webkit.org/blog/15063/webkit-features-in-safari-17-4/)\n* 📦 [Shiki-magic-move - スムーズなアニメーション付きコードブロック](https://github.com/shikijs/shiki-magic-move)\n* 📦 [Parcel 2.12 - ビルド時に実行されるimport属性で定義されたマクロ](https://parceljs.org/blog/v2-12-0/)\n* 📦 [Playwright 1.42 - テストタグ付け、スキップテストの注釈](https://github.com/microsoft/playwright/releases/tag/v1.42.0)"
+      }
+    },
+    {
+      "segment_id": "c81952ce",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "657bde08",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "827eb9a3",
+      "source_content": "[![alt](/emails/issues/176/meme.jpg)](https://twitter.com/sebastienlorber/status/1765373471645737153)",
+      "source_content_hash": "f24a8f11f8741196009b0da8fe3d6e950830d723e51fb95bf8b559ee65165a9e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/176/meme.jpg)](https://twitter.com/sebastienlorber/status/1765373471645737153)"
+      }
+    },
+    {
+      "segment_id": "62d066b0",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "それでは！👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/176/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:42.199654+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "48ab3e8b7ead9a6213eb381154f78ed0b2a61bd62fd3fb26e971113fc593eaca"
+  }
+}

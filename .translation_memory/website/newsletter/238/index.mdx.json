@@ -1,0 +1,382 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/238/index.mdx",
+  "source_file_content_hash": "e20b12ac15c435fed9d1aa312828f1b86777bd58fd75e87b4c45c94ac4b921d1",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /238\ntitle: \"This Week In React #238: ...\"\nauthors: [slorber]\ndate: 06-11-2025\nunlisted: true\n---",
+      "source_content_hash": "c52cbe30a40e728724ec0319f233a6e8b321910bb3976eb34dcf40480dd39304",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "88aa2da8",
+      "source_content": "<Todo />",
+      "source_content_hash": "ddb4b839fde5a63b0a4a1b6bf8e332af58f3dbc86e8c52caa3a3063553b36503",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_88aa2da8"
+      }
+    },
+    {
+      "segment_id": "3e6699f4",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_3e6699f4"
+      }
+    },
+    {
+      "segment_id": "7631d086",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_7631d086"
+      }
+    },
+    {
+      "segment_id": "514644bf",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_514644bf"
+      }
+    },
+    {
+      "segment_id": "ade2cf6a",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "418617bd",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "2fdadb08",
+      "source_content": "[![What engineers get wrong about communication](/emails/issues/238/getwrong.jpg)](https://go.posthog.com/twir-jun11)",
+      "source_content_hash": "f94cba413ec6d1914c74eef157ded291805100d1fed7f3fab9a89244f6273895",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![エンジニアがコミュニケーションで犯しがちな間違い](/emails/issues/238/getwrong.jpg)](https://go.posthog.com/twir-jun11)"
+      }
+    },
+    {
+      "segment_id": "f2c2bdd0",
+      "source_content": "**[What engineers get wrong about communication](https://go.posthog.com/twir-jun11)**",
+      "source_content_hash": "a481516389de6defe28d382d9c18d3de82cbdefaf2845465d3158e30f6ae4ddd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[エンジニアがコミュニケーションで犯しがちな間違い](https://go.posthog.com/twir-jun11)**"
+      }
+    },
+    {
+      "segment_id": "a76548f8",
+      "source_content": "Engineers spend most of their time doing two things: coding and communicating. The first has endless amounts written about it; the second much less so.",
+      "source_content_hash": "00522e1cd8aed7c86af062ecd9d57ca6a1cac83b5ab6f8216ee477d729dae97f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "エンジニアは時間の大半を「コーディング」と「コミュニケーション」に費やします。前者については無数の情報がありますが、後者についてはほとんど語られていません。"
+      }
+    },
+    {
+      "segment_id": "4b1d2d7d",
+      "source_content": "To address this injustice, [PostHog](https://go.posthog.com/twir-jun11-ph) shares the biggest mistakes they see engineers make when communicating and what they do as a remote, async, engineering-led company to eliminate them.",
+      "source_content_hash": "3d8cc2854c877938f351bee86676906bc198b4bb0ee3f148dce64e1844d27a55",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "この不均衡を解消するため、[PostHog](https://go.posthog.com/twir-jun11-ph)はリモート・非同期・エンジニア主導の企業として、エンジニアがコミュニケーションで犯しがちな重大なミスと、それらを解消するための対策を共有しています。"
+      }
+    },
+    {
+      "segment_id": "dfe931a2",
+      "source_content": "[Read it here](https://go.posthog.com/twir-jun11).",
+      "source_content_hash": "4e01360853d02ead1d60ed5cc4d9be554a4e107979c8287eea695b525b52fc76",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[こちらでご覧ください](https://go.posthog.com/twir-jun11)。"
+      }
+    },
+    {
+      "segment_id": "d5420c8e",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "f422383e",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "7b66d6d6",
+      "source_content": "<Todo />",
+      "source_content_hash": "ddb4b839fde5a63b0a4a1b6bf8e332af58f3dbc86e8c52caa3a3063553b36503",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_7b66d6d6"
+      }
+    },
+    {
+      "segment_id": "33808f76",
+      "source_content": "* 💸 [Build professional design system in less than a day, using Hope AI, new model by Bit.Cloud.](https://bit.cloud/solutions/design-systems?utm_source=ThisWeekInReact\\&campaign=DesignSystem)\n* 💸 [Build a working reward flow in minutes — with Dynamo](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email\\&utm_medium=newsletter\\&utm_campaign=react)",
+      "source_content_hash": "76408a80355a23ae585411be41fba2dd0ec06f3103448d3ddef762249a3479dc",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Hope AI（Bit.Cloudの新モデル）を使用して、1日未満でプロフェッショナルなデザインシステムを構築](https://bit.cloud/solutions/design-systems?utm_source=ThisWeekInReact\\&campaign=DesignSystem)\n* 💸 [Dynamoで数分で動作するリワードフローを構築](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email\\&utm_medium=newsletter\\&utm_campaign=react)"
+      }
+    },
+    {
+      "segment_id": "ff6ab177",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_ff6ab177"
+      }
+    },
+    {
+      "segment_id": "d4e0d4e1",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "8bddee80",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "[![Guide: How to build secure B2B applications](/emails/issues/238/LinkedInReddit.jpg)](https://go.clerk.com/vKxY0Sv)",
+      "source_content_hash": "186be8ac700782c99ffc07ca27e944710e2b2fca291a25d1d9d88afaaf86568a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![ガイド：安全なB2Bアプリケーションの構築方法](/emails/issues/238/LinkedInReddit.jpg)](https://go.clerk.com/vKxY0Sv)"
+      }
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "**[Guide: How to build secure B2B applications](https://go.clerk.com/vKxY0Sv)**",
+      "source_content_hash": "27df28d262efc369c21dafa034ab5bab7bbc8866874666498e047824e7fb5dc0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[ガイド：安全なB2Bアプリケーションの構築方法](https://go.clerk.com/vKxY0Sv)**"
+      }
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "Learn how to architect a scalable, multi-tenant B2B SaaS app using Clerk and Supabase. This technical guide covers:",
+      "source_content_hash": "ab8cf3f4342beed4ae52b697261ed64276e517aba59a0e3b791f412996963269",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ClerkとSupabaseを使用したスケーラブルなマルチテナントB2B SaaSアプリの設計方法を学びましょう。この技術ガイドでは以下をカバーします："
+      }
+    },
+    {
+      "segment_id": "157c9741",
+      "source_content": "* 🔐 Organization-level authentication\n\n* 👥 Scoping Supabase data by tenant\n\n* 🧩 Mapping users to organizations securely\n\n* 🧑‍💻 Structuring your React app for clean multi-tenancy",
+      "source_content_hash": "4306ad8be7ca553b702a361bc318d5b1a6e6bd59aed9c1036df4839191d89d6c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 🔐 組織レベルの認証\n\n* 👥 テナントごとのSupabaseデータスコーピング\n\n* 🧩 ユーザーと組織の安全なマッピング\n\n* 🧑‍💻 クリーンなマルチテナンシーのためのReactアプリ構造"
+      }
+    },
+    {
+      "segment_id": "6ea4c715",
+      "source_content": "🚀 Apply these patterns to solve real-world auth and data isolation challenges in modern SaaS development. [Read our step-by-step guide](https://go.clerk.com/vKxY0Sv).",
+      "source_content_hash": "4941e770e3d56871e5d11e67e7bbf576b2ba3076e61fffb1e92630a4ff3e02a3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🚀 現代のSaaS開発における認証とデータ分離の課題を解決するために、これらのパターンを適用しましょう。[ステップバイステップガイドを読む](https://go.clerk.com/vKxY0Sv)。"
+      }
+    },
+    {
+      "segment_id": "bcda0ab1",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "8c6d7ee7",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "c537a3d3",
+      "source_content": "<Todo />",
+      "source_content_hash": "ddb4b839fde5a63b0a4a1b6bf8e332af58f3dbc86e8c52caa3a3063553b36503",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_c537a3d3"
+      }
+    },
+    {
+      "segment_id": "af7d8a35",
+      "source_content": "* 💸 [Radon IDE –  Debug Redux and React Query seamlessly inside your editor.](https://ide.swmansion.com/?utm_source=thisweekinreact.com)",
+      "source_content_hash": "4cc600d1d5fe75d407a4cac56e7310ed1541ff2776ff5a52afa1a9bc35b98e68",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Radon IDE - エディタ内でReduxとReact Queryをシームレスにデバッグ](https://ide.swmansion.com/?utm_source=thisweekinreact.com)"
+      }
+    },
+    {
+      "segment_id": "456190ad",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "daed5acb",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "091b48eb",
+      "source_content": "<Todo />",
+      "source_content_hash": "ddb4b839fde5a63b0a4a1b6bf8e332af58f3dbc86e8c52caa3a3063553b36503",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_091b48eb"
+      }
+    },
+    {
+      "segment_id": "254ea949",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "2fd0be2a",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "41b1e179",
+      "source_content": "<Todo />",
+      "source_content_hash": "ddb4b839fde5a63b0a4a1b6bf8e332af58f3dbc86e8c52caa3a3063553b36503",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_41b1e179"
+      }
+    },
+    {
+      "segment_id": "a1fa5396",
+      "source_content": "[![alt](/emails/issues/215/meme.jpg)](https://twitter.com/TODOTODOTODOTODOTODOTODOTODOTODOTODOTODO)",
+      "source_content_hash": "469b0bc4726003a066a2d573b363ac06121b01a0394501729f597df589a215d3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/215/meme.jpg)](https://twitter.com/TODOTODOTODOTODOTODOTODOTODOTODOTODOTODO)"
+      }
+    },
+    {
+      "segment_id": "ec619944",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "それではまた！👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/238/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:41.190680+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "e20b12ac15c435fed9d1aa312828f1b86777bd58fd75e87b4c45c94ac4b921d1"
+  }
+}

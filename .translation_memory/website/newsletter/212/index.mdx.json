@@ -1,0 +1,450 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/212/index.mdx",
+  "source_file_content_hash": "1a857566693b878d826966ec68914f3968b034b42dae0f3d5b9db0739309c90b",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /212\ntitle: \"This Week In React #212: Astro, Next.js, Storybook, INP, Virtualization, WebXR, LiveView, Radon, Yoga, Unistyles, gluestack, Expo-Video, Node, Playwright, Prisma, Undici...\"\nauthors: [slorber]\ndate: 12-04-2024\n---",
+      "source_content_hash": "282284769b5ce5a459465a168028a835d5fef3ae91f4392d3dd0f0601b0e15d5",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week React developers have either been super grateful or busy spending money on useless things. Luckily, Astro is here to make the headline. We also have 2 great React perf articles.",
+      "source_content_hash": "abef41581d07c77065133f4615d11786ff1874ac5cfa891581eccfdf6140b42a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週、React開発者たちは非常に感謝しているか、あるいは無駄なものにお金を使うのに忙しかったようです。幸いなことに、Astroが注目を集めています。また、Reactのパフォーマンスに関する素晴らしい記事が2つあります。"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "The React Native ecosystem has been more active, with the official launch of Radon IDE, and many interesting releases.",
+      "source_content_hash": "a5051a205ee62581f452114a5b7b2de321f95e8aba69cefd59f8970bbb890849",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React Nativeエコシステムはさらに活発で、Radon IDEの正式リリースや多くの興味深いリリースがありました。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Node 22.12 is here, with `require(esm)` enabled by default in LTS! There's also a TC39 meeting in progress with ES proposals progressing, but that's for next week!",
+      "source_content_hash": "4e1bfaafb7eb5bcb82999551aa30489820aee95e058383195c93155e6badf02f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Node 22.12がリリースされ、LTSで`require(esm)`がデフォルトで有効になりました！また、TC39会議が進行中でES提案が進んでいますが、それは来週の話題です！"
+      }
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6429a3aa"
+      }
+    },
+    {
+      "segment_id": "6c991806",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6c991806"
+      }
+    },
+    {
+      "segment_id": "8f488ab5",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_8f488ab5"
+      }
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "[![daily.dev:  Your personal dev news feed](/emails/issues/212/daily.jpg)](https://daily.dev/w/this-week-in-react)",
+      "source_content_hash": "70c0596107a1924f66e46971bcd9561e3fe2b2f8f2648abf34b136fa214c325c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![daily.dev: あなた専用の開発ニュースフィード](/emails/issues/212/daily.jpg)](https://daily.dev/w/this-week-in-react)"
+      }
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "**[daily.dev: Your personal dev news feed](https://daily.dev/w/this-week-in-react)**",
+      "source_content_hash": "0986ce88966e167c0396b86e96779cabd5264f309e8ef13e689061efe08a5901",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[daily.dev: あなた専用の開発ニュースフィード](https://daily.dev/w/this-week-in-react)**"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "daily.dev brings over 1,000,000 developers a personal news feed with every update, framework and meme they need to know about. It’s totally free and you can opt out of listicles.",
+      "source_content_hash": "2682724c4ae0088f74a3626339aae49342310bfb1977534ebcd9531f2279c22a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "daily.devは100万人以上の開発者に、知っておくべき最新のアップデート、フレームワーク、ミームを提供するパーソナルニュースフィードを届けます。完全無料で、リスト記事をオプトアウトすることも可能です。"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "Suffer and learn with like minded developers.",
+      "source_content_hash": "05cd261061f048728ded059fafb04ba234feaa6be7f84b75fa29e2b42a1a10da",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "志を同じくする開発者と共に苦しみ、学びましょう。"
+      }
+    },
+    {
+      "segment_id": "f2c8a42b",
+      "source_content": "* Stay up to date effortlessly.\n* Discover new frameworks and devtools as they come out.\n* Be the smartest dev in the room.",
+      "source_content_hash": "04cf86fd92d59b0ad6c807ba7080c6ac923b1f20494fd50cc409745dbe46d364",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 努力せずに最新情報をキャッチアップ。\n* 新しいフレームワークや開発ツールをリリース時に発見。\n* 部屋で一番賢い開発者になる。"
+      }
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "**It’s totally free. For the best experience,** [**download the extension**](https://chromewebstore.google.com/detail/dailydev-the-homepage-dev/jlmpjdjjbgclbocgajdjefcidcncaied?hl=en)**.**",
+      "source_content_hash": "63c27ae0d954d1fbbb865dfe3ab5854519f61bb82de5d2430a4940033a3c4c74",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**完全無料です。最高の体験のために、**[**拡張機能をダウンロード**](https://chromewebstore.google.com/detail/dailydev-the-homepage-dev/jlmpjdjjbgclbocgajdjefcidcncaied?hl=en)**してください。**"
+      }
+    },
+    {
+      "segment_id": "5ef5fda3",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "8d04259b",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "[![Astro 5.0](/emails/issues/212/astro.jpg)](https://astro.build/blog/astro-5/)",
+      "source_content_hash": "63e0d92e9749da3cc77f80be474c2e66c42addfa49a24949d71abe91db2947a2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Astro 5.0](/emails/issues/212/astro.jpg)](https://astro.build/blog/astro-5/)"
+      }
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "**[Astro 5.0](https://astro.build/blog/astro-5/)**",
+      "source_content_hash": "27a03c072456650a346ef22d174b60468042133ee58f2e90a490cc7079f33139",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Astro 5.0](https://astro.build/blog/astro-5/)**"
+      }
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "A new major version of Astro just dropped. While technically not a pure React framework, it’s still widely used in the React community, can easily integrate interactive React components, and relies on MDX. The headlines are:",
+      "source_content_hash": "41f541d064ca840b947355e0b47efa314ec396e33e07013546e8ee65d5bb7c0b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Astroの新しいメジャーバージョンがリリースされました。技術的には純粋なReactフレームワークではありませんが、Reactコミュニティで広く利用されており、インタラクティブなReactコンポーネントを簡単に統合でき、MDXに依存しています。主な特徴は以下の通りです："
+      }
+    },
+    {
+      "segment_id": "40251870",
+      "source_content": "* Content Layer to bring all of your content into one friendly, type-safe data store. Including from CMS, APIs, and other sources.\n* Server Islands for serving an initial page response as fast as possible, while keeping the ability to interleave dynamic content into a mostly static layout. A quite interesting and simpler alternative to React Server Components and Next.js Partial Pre-Rendering.\n* Simplified prerendering, removing the “hybrid” option\n* Type-safe environment variables\n* Vite 6 with the new Environment API\n* Experimental features: image cropping, responsive image layouts, SVG components",
+      "source_content_hash": "bfd064de49c1c7d572e58769a6bef3b489d109f71987641edcc4c4b47455dd40",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* すべてのコンテンツを1つの使いやすい型安全なデータストアに統合するContent Layer。CMS、API、その他のソースからのコンテンツを含みます。\n* 初期ページ応答を可能な限り高速に提供しつつ、大部分が静的なレイアウトに動的コンテンツを織り交ぜる能力を維持するServer Islands。React Server ComponentsやNext.jsのPartial Pre-Renderingに対するよりシンプルで興味深い代替手段です。\n* プリレンダリングの簡素化、「ハイブリッド」オプションの削除\n* 型安全な環境変数\n* 新しいEnvironment APIを備えたVite 6\n* 実験的機能：画像のクロッピング、レスポンシブ画像レイアウト、SVGコンポーネント"
+      }
+    },
+    {
+      "segment_id": "6e9a41d8",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "30193704",
+      "source_content": "* 💸 [Omlet – Scan your repo and measure how and where React components are used](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-nov-2024)\n* 👀 [Next.js PR - Undeprecate revalidate APIs and rename expire APIs](https://github.com/vercel/next.js/pull/73193): I mentioned new expire APIs to replace the revalidate APIs, but it was a bit too early apparently. The new expire APIs are now marked as unstable and will be iterated on.\n* 👀 [Next.js Canary - `authInterrupts` APIs](https://nextjs.org/docs/canary/app/api-reference/config/next-config-js/authInterrupts): New forbidden/unauthorized functions and file conventions to return 401/403 status codes.\n* 👀 [Next.js Canary - New config option to disable CSS chunking](https://nextjs.org/docs/canary/app/api-reference/config/next-config-js/cssChunking)\n* 📜 [How To Improve INP: React](https://kurtextrem.de/posts/improve-inp-react): Interaction-to-Next-Paint is now part of Core Web Vitals, and many React sites do not have a great INP score according to the httparchive data. This article greatly explains how to optimize your app’s INP score by sharing many pragmatic tips learned from experience. Covering scheduling, concurrent features, hydration, transitions, state updates, uncontrolled inputs, effects, portals…\n* 📜 [Better Code Rendering Through Virtualization](https://sentry.engineering/blog/better-code-rendering-through-virtualization): CodeCov engineer explains the process of troubleshooting a performance problem while rendering a 52k line file from the TypeScript codebase. They successfully adopted the TanStack virtualization library and documented challenges encountered (native search and scrolling).\n* 📜 [Storybook Component Testing for RSCs](https://storybook.js.org/blog/component-testing-rscs/): Testing RSCs usually requires E2E tests, and Storybook proposes an alternative strategy (experimental) that runs faster, directly in the browser, after mocking server IOs.\n* 📜 [Thoughts on Tailwind 4](https://nmn.sh/blog/2024-11-30-thoughts-on-tailwind-4): It’s more about CSS than React, but the creator of the Meta StyleX CSS-in-JS library expressed concerns. The introduction of descendant variants breaks the atomic CSS guarantees.\n* 📜 [Introducing Efficient Valkey-Based Caching for Next.js](https://blog.platformatic.dev/introducing-efficient-valkey-based-caching-for-nextjs): Platformatic explains how they provide a scalable shared cache to their hosting platform thanks to the Next.js pluggable cache handler system.\n* 📜 [React Data Fetching Patterns](https://www.robinwieruch.de/react-data-fetching-patterns/)\n* 📜 [Getting more out of i18next in React](https://lingual.dev/blog/getting-more-out-of-i18next-in-react/)\n* 📜 [Run your Next.js SSR app on Deno Deploy](https://deno.com/blog/nextjs-on-deno-deploy)\n* 📜 [EdgePipes - The Alternative to SSR and RSCs](https://runspired.com/2024/12/01/edge-pipes.html)\n* 📜 [If Not React, Then What?](https://infrequently.org/2024/11/if-not-react-then-what/): I don’t know if you want me to include React criticisms like this in the newsletter. Reading it doesn’t spark me joy 😅. Please reply and tell me!\n* 📦 [Phoenix LiveView 1.0](https://phoenixframework.org/blog/phoenix-liveview-1.0-released): It’s an Elixir release, but I believe it’s still super relevant for React developers since LiveView and RSCs are kind-of similar in their way of making the network disappear.\n* 📦 [WebXR First Steps - Your first steps into immersive web development](https://github.com/meta-quest/webxr-first-steps-react): A 2-hour tutorial to build an immersive VR FPS mini-game using React-Three-XR.\n* 🎥 [Lee Robinson - MDX with Next.js App Router](https://www.youtube.com/watch?v=34bRv6cQezo)\n* 🎥 [Theo - Vite 6 is important, here's why](https://www.youtube.com/watch?v=yT4DWBWm6DM)\n* 🎥 [Ankita - An Honest Review of TanStack Start vs Next.js](https://www.youtube.com/watch?v=D27AfH0pSp8)\n* 🎥 [Fireship - Is Next.js 15 any good? \"use cache\" API first look](https://www.youtube.com/watch?v=xWkozeculPo)\n* 🎙️ [This Month in React - React 19 is unblocked, Next 15 is 'stable', Expo launch week](https://creators.spotify.com/pod/show/reactiflux/episodes/TMiR-2024-11-React-19-is-unblocked--Next-15-is-stable--Expo-launch-week--The-cool-kids-are-on-BlueSky-e2rn2pu)\n* 🎙️ [Syntax - Animating the Web With Matt Perry: Exploring Motion](https://syntax.fm/show/854/animating-the-web-with-matt-perry-exploring-motion)",
+      "source_content_hash": "6d00e2355eb355b5b4255a4659c04e0a1679f5157c4a5694377114509174865e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Omlet – リポジトリをスキャンしてReactコンポーネントの使用状況を計測](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-nov-2024)\n* 👀 [Next.js PR - revalidate APIの非推奨解除とexpire APIの名称変更](https://github.com/vercel/next.js/pull/73193): 以前revalidate APIを置き換える新しいexpire APIについて言及しましたが、時期尚早だったようです。新しいexpire APIは現在不安定としてマークされ、今後改善が進められます。\n* 👀 [Next.js Canary - `authInterrupts` API](https://nextjs.org/docs/canary/app/api-reference/config/next-config-js/authInterrupts): 401/403ステータスコードを返すための新しいforbidden/unauthorized関数とファイル規約。\n* 👀 [Next.js Canary - CSSチャンキングを無効化する新しい設定オプション](https://nextjs.org/docs/canary/app/api-reference/config/next-config-js/cssChunking)\n* 📜 [ReactでINPを改善する方法](https://kurtextrem.de/posts/improve-inp-react): Interaction-to-Next-Paint（INP）がCore Web Vitalsの一部となりましたが、httparchiveのデータによると多くのReactサイトはINPスコアが低いです。この記事では、スケジューリング、並行機能、ハイドレーション、トランジション、状態更新、非制御入力、エフェクト、ポータルなど、実践的な最適化手法を詳しく解説しています。\n* 📜 [仮想化によるコードレンダリングの改善](https://sentry.engineering/blog/better-code-rendering-through-virtualization): CodeCovのエンジニアがTypeScriptコードベースの52k行のファイルをレンダリングする際のパフォーマンス問題の解決過程を説明。TanStackの仮想化ライブラリを採用し、ネイティブ検索やスクロール時の課題を克服しました。\n* 📜 [RSC向けStorybookコンポーネントテスト](https://storybook.js.org/blog/component-testing-rscs/): RSCのテストには通常E2Eテストが必要ですが、StorybookはサーバーIOをモックした上でブラウザ内で直接実行する実験的な代替手法を提案しています。\n* 📜 [Tailwind 4に関する考察](https://nmn.sh/blog/2024-11-30-thoughts-on-tailwind-4): ReactよりもCSSに焦点を当てていますが、MetaのStyleX CSS-in-JSライブラリの作成者が懸念を表明。子孫バリアントの導入がアトミックCSSの保証を破壊すると指摘。\n* 📜 [Next.js向け効率的なValkeyベースのキャッシュの紹介](https://blog.platformatic.dev/introducing-efficient-valkey-based-caching-for-nextjs): PlatformaticがNext.jsのプラガブルキャッシュハンドラーシステムを活用したスケーラブルな共有キャッシュを提供する方法を説明。\n* 📜 [Reactデータフェッチングパターン](https://www.robinwieruch.de/react-data-fetching-patterns/)\n* 📜 [Reactでi18nextをさらに活用する方法](https://lingual.dev/blog/getting-more-out-of-i18next-in-react/)\n* 📜 [Deno DeployでNext.js SSRアプリを実行](https://deno.com/blog/nextjs-on-deno-deploy)\n* 📜 [EdgePipes - SSRとRSCの代替手段](https://runspired.com/2024/12/01/edge-pipes.html)\n* 📜 [Reactでないなら何か？](https://infrequently.org/2024/11/if-not-react-then-what/): このようなReact批判をニュースレターに含めるべきか悩みます。読んでいて楽しい気分にはなりませんでした😅。ご意見をお聞かせください！\n* 📦 [Phoenix LiveView 1.0リリース](https://phoenixframework.org/blog/phoenix-liveview-1.0-released): Elixirのリリースですが、LiveViewとRSCはネットワークを意識させない点で類似しており、React開発者にも関連が深いと考えています。\n* 📦 [WebXR入門 - 没入型ウェブ開発の第一歩](https://github.com/meta-quest/webxr-first-steps-react): React-Three-XRを使用した没入型VR FPSミニゲーム構築の2時間チュートリアル。\n* 🎥 [Lee Robinson - Next.js App RouterでのMDX使用](https://www.youtube.com/watch?v=34bRv6cQezo)\n* 🎥 [Theo - Vite 6が重要な理由](https://www.youtube.com/watch?v=yT4DWBWm6DM)\n* 🎥 [Ankita - TanStack Start vs Next.jsの正直なレビュー](https://www.youtube.com/watch?v=D27AfH0pSp8)\n* 🎥 [Fireship - Next.js 15はどうか？「use cache」API初見](https://www.youtube.com/watch?v=xWkozeculPo)\n* 🎙️ [今月のReact - React 19のブロック解除、Next 15の「安定版」、Expoランチウィーク](https://creators.spotify.com/pod/show/reactiflux/episodes/TMiR-2024-11-React-19-is-unblocked--Next-15-is-stable--Expo-launch-week--The-cool-kids-are-on-BlueSky-e2rn2pu)\n* 🎙️ [Syntax - Matt Perryと考えるウェブアニメーション: モーションの探求](https://syntax.fm/show/854/animating-the-web-with-matt-perry-exploring-motion)"
+      }
+    },
+    {
+      "segment_id": "41b1e179",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_41b1e179"
+      }
+    },
+    {
+      "segment_id": "08832b14",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "1c598ecd",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "2547a6bb",
+      "source_content": "[![Introducing Waitlist mode from Clerk](/emails/issues/212/clerk.jpg)](https://go.clerk.com/tWHD2yj)",
+      "source_content_hash": "de30bef0efc56d31f2c479e26218b78bbbbcc3d8e34e71074c38630a7e00eec7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![ClerkからのWaitlistモードの紹介](/emails/issues/212/clerk.jpg)](https://go.clerk.com/tWHD2yj)"
+      }
+    },
+    {
+      "segment_id": "0750bfa1",
+      "source_content": "**[Introducing Waitlist mode from Clerk](https://go.clerk.com/tWHD2yj)**",
+      "source_content_hash": "6ff16df3dc2f1a6c4d8aa693b9c5e744f86f728e94d7672d35815a43e8651968",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[ClerkからのWaitlistモードの紹介](https://go.clerk.com/tWHD2yj)**"
+      }
+    },
+    {
+      "segment_id": "86348f98",
+      "source_content": "`<Waitlist />` is a new sign-up mode and component that lets users register interest and join a waitlist for early access to your product. Manage user access and onboarding all within your Clerk Dashboard. Read our changelog announcement for more details.",
+      "source_content_hash": "ca92003ace11318c56864f211f7df81544de7907c851c0c28253971bbcbed672",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`<Waitlist />`は新しいサインアップモードおよびコンポーネントで、ユーザーが早期アクセスのウェイトリストに登録できるようにします。Clerkダッシュボード内でユーザーアクセスとオンボーディングをすべて管理可能です。詳細は変更ログの発表をご覧ください。"
+      }
+    },
+    {
+      "segment_id": "cb0bf89b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "5baf88e2",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "eb51d107",
+      "source_content": "[![Radon IDE 1.0](/emails/issues/212/radon.jpg)](https://ide.swmansion.com/)",
+      "source_content_hash": "54b1952e3855841426e60a4577602b992866dd095007087d1661846937d874c1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Radon IDE 1.0](/emails/issues/212/radon.jpg)](https://ide.swmansion.com/)"
+      }
+    },
+    {
+      "segment_id": "1862c5fe",
+      "source_content": "**[Radon IDE 1.0](https://ide.swmansion.com/)**",
+      "source_content_hash": "b34d1790dbc2c24680a2a4d650ea046b22993fe2d32c2f8145816db8d82e5200",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Radon IDE 1.0](https://ide.swmansion.com/)**"
+      }
+    },
+    {
+      "segment_id": "6ca4479f",
+      "source_content": "Software Mansion created a VSCode extension (also supporting Cursor) that turns your editor into a fully fledged IDE for React Native and Expo. It’s now officially launched as a stable version. It’s a paid product, but considering the low price and the DX improvement, it’s a no-brainer that also supports the company's great open source efforts. Take a look at the [Radon IDE launch video](https://www.youtube.com/watch?v=07Un9EfE8D4) to have a quick overview of the features: simulators panel and settings, debugging, click-to-inspect, URL-driven navigation, storybook integration, and more.",
+      "source_content_hash": "1a1042903efd38e71a4f6b2f88ed299059d0595abfbd4c8014b1e533dd95e1cc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Software Mansionは、VSCode拡張機能（Cursorもサポート）を作成し、エディターをReact NativeとExpoの本格的なIDEに変えました。現在は安定版として正式リリースされています。有料製品ですが、低価格と開発者体験（DX）の向上を考慮すると、同社の素晴らしいオープンソース活動もサポートするため、導入は必須と言えます。[Radon IDEローンチ動画](https://www.youtube.com/watch?v=07Un9EfE8D4)で機能の概要を確認できます：シミュレーターパネルと設定、デバッグ、クリックで検査、URL駆動ナビゲーション、Storybook統合など。"
+      }
+    },
+    {
+      "segment_id": "dd8754e7",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "cd1d0fe2",
+      "source_content": "* 💸 [React Native Mastery - Now open for enrollment!](https://notjust.dev/react-native-mastery?utm_source=twir\\&utm_medium=email)\n* 👀 [React Native RFC - Lean Core, extract JSC (JavaScriptCore) from React Native core](https://github.com/react-native-community/discussions-and-proposals/pull/836): Since Hermes is now the default runtime, it is inefficient to include unused JSC in core.\n* 📜 [Expo-video: a simple, powerful way to play videos in apps](https://expo.dev/blog/expo-video-a-simple-powerful-way-to-play-videos-in-apps)\n* 📜 [Why Brownfield Development With React Native Is Worth Your Attention](https://www.callstack.com/blog/brownfield-development-with-react-native)\n* 📜 [Lazy load view managers in Android](https://yogeshpaliyal.com/quick-tips/rn-tip-lazy-viewmanagers-in-android/)\n* 🗓️ [React Universe Conf](https://www.reactuniverseconf.com/?utm_campaign=RUC2025\\&utm_source=TWIRpartnership\\&utm_content=savethedate) - 🇵🇱 Wrocław - September 2-4, 2025 - A limited batch of Blind Bird tickets is available (until sold out)\n* 📦 [React Native 0.77.0-rc.1 - fix punycode Node22 warning 😄](https://github.com/facebook/react-native/releases/tag/v0.77.0-rc.1)\n* 📦 [gluestack-ui 2.0 - Support for NativeWind v4.1 and RSC, remove unnecessary complexity, reduce CSS size](https://gluestack.io/blogs/gluestack-ui-v2-stable-release-with-nativewind-v4-1-support)\n* 📦 [Unistyles 3.0 beta - No re-renders, StyleSheet parity, Shadow Tree updates, powered by Nitro](https://www.reactnativecrossroads.com/posts/unistyles-3-preview): This upcoming version looks like a great drop-in replacement for the default StyleSheet API. I'm not quite sure how it works yet, but it sounds very interesting.\n* 📦 [Yoga 3.2- Support for CSS `box-sizing` and `display: contents`](https://www.yogalayout.dev/blog/announcing-yoga-3.2)\n* 📦 [React Navigation 7.3 - Support for regexp and alias in linking config](https://reactnavigation.org/docs/configuring-links/#matching-regular-expressions)\n* 📦 [Skia 1.6 - Opaque Android canvas to improve performance](https://github.com/Shopify/react-native-skia/releases/tag/v1.6.0)\n* 📦 [Nitro 0.18 - Support for macOS and tvOS](https://github.com/mrousavy/nitro/releases/tag/v0.18.0)\n* 📦 [Expo-Share-Extension 2.0 - Support for SDK 52](https://github.com/MaxAst/expo-share-extension)\n* 🎙️ [React Universe On Air - Radon IDE: Better Developer Experience for React Native Teams](https://www.youtube.com/watch?v=-GT6DPk2K_s)\n* 🎙️ [Rocket Ship 55 - Why Companies use React Native, Job Interviews & Open Source Trends with Jamon Holmgren](https://share.transistor.fm/s/654cb5cf)\n* 🎥 [Simon Grimm - React Native Debugging: From JS to Native](https://www.youtube.com/watch?v=FXn1vUGCci8)\n* 🎥 [Beto - How to implement a Rich Text Editor using DOM Components](https://www.youtube.com/watch?v=CxORa1tXMjw)",
+      "source_content_hash": "63c6df7ebbaf2cb9a9ab3bb0b535a5d7d58e8a820c5733b02e626b70c7d83c8b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [React Native Mastery - 現在募集中！](https://notjust.dev/react-native-mastery?utm_source=twir\\&utm_medium=email)\n* 👀 [React Native RFC - Lean Core、React NativeコアからJSC（JavaScriptCore）を分離](https://github.com/react-native-community/discussions-and-proposals/pull/836): Hermesがデフォルトランタイムとなったため、未使用のJSCをコアに含めるのは非効率的です。\n* 📜 [Expo-video: アプリ内で動画を再生するシンプルで強力な方法](https://expo.dev/blog/expo-video-a-simple-powerful-way-to-play-videos-in-apps)\n* 📜 [React Nativeでのブラウンフィールド開発が注目される理由](https://www.callstack.com/blog/brownfield-development-with-react-native)\n* 📜 [Androidでビューマネージャーを遅延ロード](https://yogeshpaliyal.com/quick-tips/rn-tip-lazy-viewmanagers-in-android/)\n* 🗓️ [React Universe Conf](https://www.reactuniverseconf.com/?utm_campaign=RUC2025\\&utm_source=TWIRpartnership\\&utm_content=savethedate) - 🇵🇱 ヴロツワフ - 2025年9月2-4日 - 限定数のBlind Birdチケット販売中（売り切れ次第終了）\n* 📦 [React Native 0.77.0-rc.1 - Node22のpunycode警告を修正 😄](https://github.com/facebook/react-native/releases/tag/v0.77.0-rc.1)\n* 📦 [gluestack-ui 2.0 - NativeWind v4.1とRSCをサポート、不要な複雑さを削減、CSSサイズを縮小](https://gluestack.io/blogs/gluestack-ui-v2-stable-release-with-nativewind-v4-1-support)\n* 📦 [Unistyles 3.0 beta - 再レンダリングなし、StyleSheet互換、Shadow Tree更新、Nitro搭載](https://www.reactnativecrossroads.com/posts/unistyles-3-preview): この次期バージョンは、デフォルトのStyleSheet APIの優れた代替として期待されます。まだ仕組みは完全には理解できていませんが、非常に興味深い内容です。\n* 📦 [Yoga 3.2 - CSSの`box-sizing`と`display: contents`をサポート](https://www.yogalayout.dev/blog/announcing-yoga-3.2)\n* 📦 [React Navigation 7.3 - リンク設定で正規表現とエイリアスをサポート](https://reactnavigation.org/docs/configuring-links/#matching-regular-expressions)\n* 📦 [Skia 1.6 - Androidキャンバスの不透明化でパフォーマンス向上](https://github.com/Shopify/react-native-skia/releases/tag/v1.6.0)\n* 📦 [Nitro 0.18 - macOSとtvOSをサポート](https://github.com/mrousavy/nitro/releases/tag/v0.18.0)\n* 📦 [Expo-Share-Extension 2.0 - SDK 52をサポート](https://github.com/MaxAst/expo-share-extension)\n* 🎙️ [React Universe On Air - Radon IDE: React Nativeチームのための優れた開発者体験](https://www.youtube.com/watch?v=-GT6DPk2K_s)\n* 🎙️ [Rocket Ship 55 - 企業がReact Nativeを採用する理由、求人面接、オープンソースのトレンド（Jamon Holmgren氏）](https://share.transistor.fm/s/654cb5cf)\n* 🎥 [Simon Grimm - React Nativeデバッグ: JSからネイティブまで](https://www.youtube.com/watch?v=FXn1vUGCci8)\n* 🎥 [Beto - DOMコンポーネントを使用したリッチテキストエディタの実装方法](https://www.youtube.com/watch?v=CxORa1tXMjw)"
+      }
+    },
+    {
+      "segment_id": "43fd0c1b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "23b96cc0",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "4b530389",
+      "source_content": "* 🎄 [Advent of TypeScript - 25 type challenges](https://www.adventofts.com/)\n* 📜 [Next-level frosted glass with backdrop-filter](https://www.joshwcomeau.com/css/backdrop-filter/)\n* 📜 [Writing Modern JavaScript without a Bundler](https://playfulprogramming.com/posts/modern-js-bundleless)\n* 📜 [Washing your code: don’t make me think](https://sapegin.me/blog/dont-make-me-think/)\n* 📜 [Try...Catch As Little As Possible](https://www.joshuakgoldberg.com/blog/try-catch-as-little-as-possible/)\n* 📦 [Node v22.12 - require(esm) is now enabled by default](https://nodejs.org/en/blog/release/v22.12.0)\n* 📦 [Playwright 1.48 - Aria snapshots, test runner improvements](https://github.com/microsoft/playwright/releases/tag/v1.49.0)\n* 📦 [Undici 7 - Scheduled for Node.js 24, stricter fetch() spec compliance](https://blog.platformatic.dev/undici-v7-is-here)\n* 📦 [Prisma 6 - Better Performance, More Flexibility & Type-Safe SQL](https://www.prisma.io/blog/prisma-6-better-performance-more-flexibility-and-type-safe-sql)",
+      "source_content_hash": "3786946f116403359d22c860d3fa6652c932ff762d299506fb5afcb4eaae4341",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {}
+    },
+    {
+      "segment_id": "8bafd2d7",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {}
+    },
+    {
+      "segment_id": "fff17ff8",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {}
+    },
+    {
+      "segment_id": "8664ed0b",
+      "source_content": "[![alt](/emails/issues/212/meme.jpg)](https://bsky.app/profile/astro.build/post/3lcf2lt6xik2p)",
+      "source_content_hash": "1e66c6adc8cdb6ef0d62fc235b9d8591bc6247ddef2294bed95dd3becfeb63c7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {}
+    },
+    {
+      "segment_id": "9e90a9b3",
+      "source_content": "[![alt](/emails/issues/212/meme3.jpg)](https://x.com/MicrosoftEdge/status/1862149469610914126)",
+      "source_content_hash": "8131f108b1458e8b8da5d7f15cc16fb5836c24c4e55b876e3b340b9b5d643d87",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {}
+    },
+    {
+      "segment_id": "681ef526",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/212/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:40.910126+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "1a857566693b878d826966ec68914f3968b034b42dae0f3d5b9db0739309c90b"
+  }
+}

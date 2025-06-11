@@ -1,0 +1,502 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/237/index.mdx",
+  "source_file_content_hash": "073bf5f51da6e5d0a5dcc34038fda41edbafebb9b56824ce6df051b05ef6e40d",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /237\ntitle: \"This Week In React #237: RSC, TanStack, Storybook, Lingo Compiler, LiveStore, Base UI | Legacy Arch, Hermes N-API, 120fps, ReactRaptor, DevTools | TC39, Import Maps, Vite, Vitest, Babel, PHP\"\nauthors: [slorber]\ndate: 06-04-2025\n---",
+      "source_content_hash": "a31f88540a778eb41e7c09ba971a8265c0ffa11e7829ace2aa344935c2fe74c3",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "I thought I was on schedule for today's issue, until I realized that Dan Abramov wrote 4 RSC blog posts this week 😂. We also get great releases, including Storybook, LiveStore, Base UI, and the Lingo Compiler is a quite exciting innovation. The community is still processing last week's [Remix awakening](https://remix.run/blog/wake-up-remix) with many videos and podcasts commenting on the news.",
+      "source_content_hash": "636bfb31079e691f0f829fec621d48663df7373b1d6cbcb3cdf5032ae668096e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今日のニュースレターを時間通りに準備できたと思っていたら、Dan Abramovが今週4つのRSCに関するブログ記事を公開していたことに気づき、慌てて対応しました😂。また、Storybook、LiveStore、Base UIといった素晴らしいリリースがあり、Lingo Compilerは特にエキサイティングなイノベーションです。コミュニティでは先週の[Remixの覚醒](https://remix.run/blog/wake-up-remix)について多くの動画やポッドキャストで議論が続いています。"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "React Native devs were at App.js last week, where the React Native team unveiled their plan to freeze the Legacy Architecture.",
+      "source_content_hash": "2d52c8616b10ac1805610e4e3638d68c51e18bf4bb7a7a01f58a988b2c9e26c7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "先週はApp.jsでReact Native開発者が集まり、React NativeチームがLegacy Architectureの凍結計画を発表しました。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "The last TC39 meeting was also quite productive, with 3 proposals progressing to stage 4 among other things. We also got various interesting announcements from the Vite ecosystem.",
+      "source_content_hash": "46bd1a961f09b6d095519e3c775a94950193dabffb32a4b6a27ca74dea645cde",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "また、先週のTC39会議も非常に生産的で、3つの提案がステージ4に進むなど多くの成果がありました。Viteエコシステムからもさまざまな興味深い発表がありました。"
+      }
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6429a3aa"
+      }
+    },
+    {
+      "segment_id": "6c991806",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6c991806"
+      }
+    },
+    {
+      "segment_id": "8f488ab5",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_8f488ab5"
+      }
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "[![Free AI Code Reviews in IDE - VSCode, Cursor, Windsurf](/emails/issues/237/coderabbit.jpg)](https://coderabbit.link/LszC1pB)",
+      "source_content_hash": "096435fc029891a86adeeedc90635bc4b82332d925eff4fe81e62df56f97926c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![IDEで無料のAIコードレビュー - VSCode、Cursor、Windsurf](/emails/issues/237/coderabbit.jpg)](https://coderabbit.link/LszC1pB)"
+      }
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "**[Free AI Code Reviews in IDE - VSCode, Cursor, Windsurf](https://coderabbit.link/LszC1pB)**",
+      "source_content_hash": "119a7a18153db20dee3a0d96e3aed2832996712254b1ffa11e7b99c943296264",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[IDEで無料のAIコードレビュー - VSCode、Cursor、Windsurf](https://coderabbit.link/LszC1pB)**"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "[CodeRabbit](https://coderabbit.link/6ZXULSK) is the AI code review platform purpose built to speed up code reviews and improve code quality. Integrating seamlessly into git workflows and existing toolchains, it delivers codebase-aware reviews and supports all programming languages.",
+      "source_content_hash": "b24b89e404fe676181eb7bf52fd9f6f9c4c50db24003412ec40dd5da2fa33528",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[CodeRabbit](https://coderabbit.link/6ZXULSK)は、コードレビューを高速化しコード品質を向上させるために設計されたAIコードレビュープラットフォームです。Gitワークフローや既存のツールチェーンにシームレスに統合され、コードベースを理解したレビューを提供し、すべてのプログラミング言語をサポートします。"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "Now they are excited to deliver AI code reviews directly in VS Code, Cursor, and Windsurf–letting you and your team (vibe) code with confidence and review while keeping in flow.",
+      "source_content_hash": "ca5d7c39fd4be950e5c5724ae0e4631e553513b01254291ae9348610ed8e3a85",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "現在、VS Code、Cursor、Windsurfで直接AIコードレビューを提供できるようになりました。これにより、チームはフローを保ちながら自信を持ってコーディングし、その場でレビューを行うことができます。"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "Even better: code reviews in the IDE are free! That’s right: line-by-line reviews and one-click fixes, all in your IDE at no cost to you.",
+      "source_content_hash": "3d58f489b3b8c97fb58dbe57b064ea8ef0565effa013a7f5eb5d9a1de3e75315",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "さらに良いことに、IDE内でのコードレビューは無料です！そうです、行単位のレビューとワンクリックでの修正がすべてIDE内で無料で利用できます。"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "[Install the extension](https://coderabbit.link/LszC1pB) and start vibe checking your code today!",
+      "source_content_hash": "5a53b44e2e1ba5b878463e086552dc6b67e4df35af1874f48674d53d77dd901b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[拡張機能をインストール](https://coderabbit.link/LszC1pB)して、今日からコードの「バイブチェック」を始めましょう！"
+      }
+    },
+    {
+      "segment_id": "91afe33f",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "782c902a",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "[![Storybook 9](/emails/issues/237/storybook.jpg)](https://storybook.js.org/blog/storybook-9/)",
+      "source_content_hash": "f6a56b669a6e466c37657d9bd6fe50cb483c9f5707824c0a0888165ba4038d85",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Storybook 9](/emails/issues/237/storybook.jpg)](https://storybook.js.org/blog/storybook-9/)"
+      }
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "**[Storybook 9](https://storybook.js.org/blog/storybook-9/)**",
+      "source_content_hash": "d402d2aa785f0cf40d7a38ba01086568a3e2888a74254e010a686aaddff4945b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Storybook 9](https://storybook.js.org/blog/storybook-9/)**"
+      }
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "Storybook looks set to become the ultimate component testing tool, integrating with Vitest and Playwright, covering:",
+      "source_content_hash": "5ba8b8346bde194f683e29eafdef17eef055e75c7c92ec0dc81c05a30886fbbe",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Storybookは、VitestやPlaywrightとの統合により、究極のコンポーネントテストツールとなるべく進化しています。以下の機能をカバーします："
+      }
+    },
+    {
+      "segment_id": "cef3cb03",
+      "source_content": "* Interaction tests: Verify functionality by simulating user behavior\n* Accessibility tests: Detect, diagnose, and fix WCAG violations\n* Visual tests: Check for appearance bugs down to the pixel\n* Coverage reports: Understand which code is tested at a glance\n* Test widget: Click to run a comprehensive test suite",
+      "source_content_hash": "8ebc1c143e8e60d94fe7be90c8d8e95db981858f3221c60474ad3220714fc7d5",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* インタラクションテスト：ユーザーの動作をシミュレートして機能を検証\n* アクセシビリティテスト：WCAG違反を検出、診断、修正\n* ビジュアルテスト：ピクセル単位での見た目のバグをチェック\n* カバレッジレポート：テスト済みコードを一目で把握\n* テストウィジェット：クリックで包括的なテストスイートを実行"
+      }
+    },
+    {
+      "segment_id": "b36c6338",
+      "source_content": "This release also includes:",
+      "source_content_hash": "a50c35b1799b47c8660e496c7d4cd714d981ec9eeb2903c15d75a896cb5a4191",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このリリースには以下の機能も含まれます："
+      }
+    },
+    {
+      "segment_id": "9b797309",
+      "source_content": "* 48% Leaner: Smaller install with optional docs and test packages\n* Story generation: Tools to write stories automatically\n* Tag-based organization: Filter and group stories by tag\n* Story globals: Set context (theme, viewport, locale) at the story level\n* Frameworks: Major updates for Svelte, Next.js, React Native, and more!",
+      "source_content_hash": "b665be24f67f798b7fb99f9b3e85b4c7de6b9a6c24cf76813b8867a382571fd4",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 48%軽量化：ドキュメントとテストパッケージをオプション化してインストールサイズを削減\n* ストーリー生成：ストーリーを自動的に作成するツール\n* タグベースの整理：タグでストーリーをフィルタリングおよびグループ化\n* ストーリーグローバル：ストーリーレベルでコンテキスト（テーマ、ビューポート、ロケール）を設定\n* フレームワーク：Svelte、Next.js、React Nativeなどのメジャーアップデート！"
+      }
+    },
+    {
+      "segment_id": "818747ba",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "158e1f5d",
+      "source_content": "* 💸 [Product for Engineers - What nobody tells developers about documentation](https://go.posthog.com/twir-jun4)\n* 📖 [TanStack docs - Migrate from Next.js](https://tanstack.com/start/latest/docs/framework/react/migrate-from-next-js)\n* 🔐 [Next.js CVE-2025-48068 - Low-severity vulnerability in the dev server, fixed in v15.2.2](https://vercel.com/changelog/cve-2025-48068)\n* 🗓️ [React Advanced London](https://reactadvanced.com/?utm_source=Newsletter\\&utm_medium=ThisWeekinReact) -  🇬🇧 London - 28 Nov & 1 Dec. \"It's one of my absolute favourite conferences here.\" *— Lenz Weber-Tronic, Apollo GraphQL*. 10% off with code \"TWIR\".\n* 📜 [Progressive JSON](https://overreacted.io/progressive-json/): Dan uses various analogies to illustrate the difference between different data streaming strategies. The depth-first strategy - used by JPEG, JSON and HTML - streams the data in order and either delay the parsing or creates an arbitrary cutoff point. The breadth-first strategy streams data out-of-order, replacing nested data with placeholders that can be filled later. React Server Components use the breadth-first strategy. Suspense allows to intentionally reveal the UI, decoupled from data reception. A quite interesting post that also exists in [video format](https://www.youtube.com/watch?v=MaMQLNBZz64).\n* 📜 [One Roundtrip Per Navigation](https://overreacted.io/one-roundtrip-per-navigation/): Dan gives a comprehensive overview of the tradeoffs of the main React data fetching patterns. Using Server Components is quite similar to composing many Server Loaders into a single one, giving you the performance and co-location benefits of Relay while using vanilla JS code.\n* 📜 [RSC for LISP Developers](https://overreacted.io/rsc-for-lisp-developers/): The `’use client’` directive is similar to LISP quoting, marking a piece of code as data to be evaluated later.\n* 📜 [Why Does RSC Integrate with a Bundler?](https://overreacted.io/why-does-rsc-integrate-with-a-bundler/): Server Components need a way to serialize component modules from the server to the client. It’s technically possible to do so without a bundler, but it’s inefficient.\n* 📜 [Search Params Are State](https://tanstack.com/blog/search-params-are-state): Tanner gives good reason for TanStack Router to associate a search params schema with route definitions. This helps improve type-safety, optimizes re-renders, and prevents schema fragmentation.\n* 📜 [The Power in Pragmatism](https://tanstack.com/blog/power-in-pragmatism): Libraries from the TanStack ecosystem aren’t tied to any rendering framework, but focus on the core ideas.TanStack Start is a flexible framework that adapts to your needs instead of anticipating them.\n* 📜 [useSyncExternalStore: Demystified for Practical React Development](https://www.epicreact.dev/use-sync-external-store-demystified-for-practical-react-development-w5ac0): A good overview of one of my favorite hooks, including common mistakes.\n* 📜 [Directive prologues and JavaScript dark matter](https://macwright.com/2025/04/29/directive-prologues-and-javascript-dark-matter): Gives interesting context on various ways to control how JS is interpreted: JSX pragmas, directives, and magic comments.\n* 💸 [Join 1,000+ Developers – Learn full-stack web development in The Road to Next, the course for React devs ready to level up.](https://www.road-to-next.com/?utm_source=newsletter\\&utm_medium=email\\&utm_campaign=this_week_in_react_2)\n* 📦 [Lingo Compiler](https://lingo.dev/en/compiler): A free open-source compiler to automatically translate any React app at build time without touching the source code. It processes the React code AST and translates it automatically with LLMs, and even supports hot module replacement. A great innovation with first-class integrations for Next.js, React Router, Remix, and Vite apps. The [demo on X](https://x.com/MaxPrilutskiy/status/1929946504216932746) is impressive.\n* 📦 [LiveStore Beta](https://livestore.dev/): The creator of Prisma introduced a new client-centric state management solution with first-class support for React and Expo. Based on SQLite, event sourcing, and reactivity, it can also sync clients through various providers. The landing page is quite cool to check and explains how it all works.\n* 📦 [Base UI 1.0 Beta](https://github.com/mui/base-ui/releases/tag/v1.0.0-beta.0): The upcoming Radix UI contender is now in beta. This release includes new Menubar, NavigationMenu, and ContextMenu components.\n* 📦 [Ink 6.0 - React renderer for CLIs - React 19 support](https://github.com/vadimdemedes/ink/releases/tag/v6.0.0)\n* 📦 [TanStack Query 4.39 - Backport some v5 APIs to v4](https://github.com/TanStack/query/releases/tag/v4.39.0)\n* 📦 [Lexical 0.32 - Extensible text editor framework](https://github.com/facebook/lexical/releases/tag/v0.32.0)\n* 🎥 [Theo - Remix is ditching React (and I think that's a good thing)](https://www.youtube.com/watch?v=y_64170hz0o)\n* 🎥 [Alem Tuzlak - Remix.run woke up, did it sleep well?](https://www.youtube.com/watch?v=Y5t0ILcuxVc)\n* 🎥 [Ryan Carniato - The 3 Ways JavaScript Frameworks Render the DOM](https://www.youtube.com/watch?v=0C-y59betmY)\n* 🎥 [React Miami 2025 Platlist](https://www.youtube.com/playlist?list=PL4mWVugy3a2il28mbeNmyjJDoHOvw4JTK)\n* 🎙️ [This Month in React - Dan explains RSC. Remix v3? React core team WIP?](https://creators.spotify.com/pod/profile/reactiflux/episodes/TMiR-2025-05-Dan-explains-RSC--Remix-v3--React-core-team-WIP-e33nc5a)",
+      "source_content_hash": "7165668fb5f4c7297cddb8f71bd0fe9e323ae9c4d5c91be82c533f7a305b2ec7",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [エンジニア向けプロダクト - 誰も教えてくれないドキュメンテーションの真実](https://go.posthog.com/twir-jun4)\n* 📖 [TanStackドキュメント - Next.jsからの移行](https://tanstack.com/start/latest/docs/framework/react/migrate-from-next-js)\n* 🔐 [Next.js CVE-2025-48068 - 開発サーバーの低深刻度脆弱性、v15.2.2で修正](https://vercel.com/changelog/cve-2025-48068)\n* 🗓️ [React Advanced London](https://reactadvanced.com/?utm_source=Newsletter\\&utm_medium=ThisWeekinReact) -  🇬🇧 ロンドン - 11月28日 & 12月1日。「ここは私が最も好きなカンファレンスの一つです」 *— Lenz Weber-Tronic, Apollo GraphQL*。コード「TWIR」で10%オフ。\n* 📜 [プログレッシブJSON](https://overreacted.io/progressive-json/): Danはさまざまな比喩を使って、異なるデータストリーミング戦略の違いを説明しています。深さ優先戦略 - JPEG、JSON、HTMLで使用 - はデータを順番にストリーミングし、解析を遅らせるか任意の切り捨てポイントを作成します。幅優先戦略はデータを順不同でストリーミングし、ネストされたデータを後で埋められるプレースホルダーに置き換えます。React Server Componentsは幅優先戦略を使用しています。SuspenseはUIの意図的な表示をデータ受信から切り離すことを可能にします。この興味深い記事は[動画形式](https://www.youtube.com/watch?v=MaMQLNBZz64)でも存在します。\n* 📜 [ナビゲーションごとに1往復](https://overreacted.io/one-roundtrip-per-navigation/): Danは主要なReactデータ取得パターンのトレードオフを包括的に概説しています。Server Componentsを使用することは、多くのServer Loaderを単一のLoaderにまとめるのと非常に似ており、Relayのパフォーマンスと配置の利点をバニラJSコードで得ることができます。\n* 📜 [LISP開発者向けRSC](https://overreacted.io/rsc-for-lisp-developers/): `’use client’`ディレクティブはLISPのクォートに似ており、コードの一部を後で評価されるデータとしてマークします。\n* 📜 [なぜRSCはバンドラーと統合するのか？](https://overreacted.io/why-does-rsc-integrate-with-a-bundler/): Server Componentsはサーバーからクライアントへコンポーネントモジュールをシリアライズする方法が必要です。技術的にはバンドラーなしでも可能ですが、非効率的です。\n* 📜 [検索パラメータは状態である](https://tanstack.com/blog/search-params-are-state): TannerはTanStack Routerがルート定義に検索パラメータスキーマを関連付ける良い理由を説明しています。これは型安全性の向上、再レンダーの最適化、スキーマの断片化を防ぎます。\n* 📜 [実用主義の力](https://tanstack.com/blog/power-in-pragmatism): TanStackエコシステムのライブラリはレンダリングフレームワークに縛られず、コアアイデアに焦点を当てています。TanStack Startはニーズを予測するのではなく、ニーズに適応する柔軟なフレームワークです。\n* 📜 [useSyncExternalStore: 実践的なReact開発のための解説](https://www.epicreact.dev/use-sync-external-store-demystified-for-practical-react-development-w5ac0): 私のお気に入りのフックの一つについて、よくある間違いを含む良い概要です。\n* 📜 [ディレクティブプロローグとJavaScriptのダークマター](https://macwright.com/2025/04/29/directive-prologues-and-javascript-dark-matter): JSの解釈方法を制御するさまざまな方法（JSXプラグマ、ディレクティブ、マジックコメント）について興味深い背景を提供します。\n* 💸 [1,000人以上の開発者に参加 - The Road to NextでフルスタックWeb開発を学び、レベルアップする準備ができたReact開発者向けのコースです。](https://www.road-to-next.com/?utm_source=newsletter\\&utm_medium=email\\&utm_campaign=this_week_in_react_2)\n* 📦 [Lingo Compiler](https://lingo.dev/en/compiler): ソースコードに触れることなくビルド時に任意のReactアプリを自動翻訳する無料のオープンソースコンパイラ。ReactコードのASTを処理し、LLMで自動翻訳し、ホットモジュールリプレースメントもサポートします。Next.js、React Router、Remix、Viteアプリ向けのファーストクラス統合を備えた素晴らしい革新です。[Xでのデモ](https://x.com/MaxPrilutskiy/status/1929946504216932746)は印象的です。\n* 📦 [LiveStore Beta](https://livestore.dev/): Prismaの作成者が、ReactとExpoのファーストクラスサポートを備えた新しいクライアント中心の状態管理ソリューションを紹介しました。SQLite、イベントソーシング、リアクティビティに基づいており、さまざまなプロバイダーを通じてクライアントを同期することもできます。ランディングページはチェックする価値があり、その仕組みを説明しています。\n* 📦 [Base UI 1.0 Beta](https://github.com/mui/base-ui/releases/tag/v1.0.0-beta.0): 今後のRadix UIの競合がベータ版になりました。このリリースには新しいMenubar、NavigationMenu、ContextMenuコンポーネントが含まれています。\n* 📦 [Ink 6.0 - CLI向けReactレンダラー - React 19サポート](https://github.com/vadimdemedes/ink/releases/tag/v6.0.0)\n* 📦 [TanStack Query 4.39 - v5のAPIの一部をv4にバックポート](https://github.com/TanStack/query/releases/tag/v4.39.0)\n* 📦 [Lexical 0.32 - 拡張可能なテキストエディタフレームワーク](https://github.com/facebook/lexical/releases/tag/v0.32.0)\n* 🎥 [Theo - RemixはReactを捨てる（そしてそれは良いことだと思う）](https://www.youtube.com/watch?v=y_64170hz0o)\n* 🎥 [Alem Tuzlak - Remix.runは目覚めた、よく眠れたか？](https://www.youtube.com/watch?v=Y5t0ILcuxVc)\n* 🎥 [Ryan Carniato - JavaScriptフレームワークがDOMをレンダリングする3つの方法](https://www.youtube.com/watch?v=0C-y59betmY)\n* 🎥 [React Miami 2025 プレイリスト](https://www.youtube.com/playlist?list=PL4mWVugy3a2il28mbeNmyjJDoHOvw4JTK)\n* 🎙️ [This Month in React - DanがRSCを説明。Remix v3？ReactコアチームのWIP？](https://creators.spotify.com/pod/profile/reactiflux/episodes/TMiR-2025-05-Dan-explains-RSC--Remix-v3--React-core-team-WIP-e33nc5a)"
+      }
+    },
+    {
+      "segment_id": "897e0025",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_897e0025"
+      }
+    },
+    {
+      "segment_id": "c9716ede",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "39db08de",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "785750ac",
+      "source_content": "[![Build a working reward flow in minutes — with Dynamo](/emails/issues/237/dynamo.png)](hhttps://whitelabel-loyalty.com/products/dynamo/?utm_source=email\\&utm_medium=newsletter\\&utm_campaign=react)",
+      "source_content_hash": "18caa8b5432733a2f67829228ea8554f766379185262580e5450932f023dc0cb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![数分で動作する報酬フローを構築 — Dynamoで](/emails/issues/237/dynamo.png)](hhttps://whitelabel-loyalty.com/products/dynamo/?utm_source=email\\&utm_medium=newsletter\\&utm_campaign=react)"
+      }
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "**[Build a working reward flow in minutes — with Dynamo](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email\\&utm_medium=newsletter\\&utm_campaign=react)**",
+      "source_content_hash": "881eedd926b592304c847015216c30017892163fc3293763939cc40950b48857",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[数分で動作する報酬フローを構築 — Dynamoで](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email\\&utm_medium=newsletter\\&utm_campaign=react)**"
+      }
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "Building loyalty logic from scratch is a pain — infra setup, reward tracking, event triggers, tier rules… it all adds up.",
+      "source_content_hash": "dd7bbce12aaf036e4aa778f331fcd7957aa1c149ac49bfc5812b385cbdedfff1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ロイヤルティロジックをゼロから構築するのは大変です — インフラ設定、報酬トラッキング、イベントトリガー、ティアルール…すべてが積み重なります。"
+      }
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "**Dynamo** is the loyalty engine built for developers: one API, full control, zero gatekeeping. Get hands-on with real SDKs (React + React Native), clear docs, and a live sandbox to test your own reward flows in minutes — no calls, no credit cards, just code.",
+      "source_content_hash": "026d1b5fd279d48df15f1187341a38563b215b1996b92d45110d74f8b15d7bcb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**Dynamo**は開発者向けに構築されたロイヤルティエンジンです：1つのAPI、完全な制御、一切の制約なし。ReactとReact Native向けの実用的なSDK、明確なドキュメント、そして実際の報酬フローを数分でテストできるライブサンドボックスを提供 — 電話もクレジットカードも不要、コードだけで始められます。"
+      }
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "→ [Get sandbox access now.](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email\\&utm_medium=newsletter\\&utm_campaign=react)",
+      "source_content_hash": "7b95cd9b69535bb4aa99d9369294979deae24d2b117a9ee8ec5622f47ecd60b9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "→ [今すぐサンドボックスにアクセス](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email\\&utm_medium=newsletter\\&utm_campaign=react)"
+      }
+    },
+    {
+      "segment_id": "e9ae42a9",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "42a5832e",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "0e80209e",
+      "source_content": "[![Freezing the Legacy Architecture](/emails/issues/237/rn-frozen.jpg)](https://github.com/reactwg/react-native-new-architecture/discussions/290)",
+      "source_content_hash": "0ade12e5c9a9585596081163989fb9eba3f41887a16c7f7fefa8dba5f7f9184d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![レガシーアーキテクチャの凍結](/emails/issues/237/rn-frozen.jpg)](https://github.com/reactwg/react-native-new-architecture/discussions/290)"
+      }
+    },
+    {
+      "segment_id": "7bc8bb24",
+      "source_content": "**[Freezing the Legacy Architecture](https://github.com/reactwg/react-native-new-architecture/discussions/290)**",
+      "source_content_hash": "79196f5ce6501578f066bb1b95c528c7590af6d0e2119e2f9e58fec54793792e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[レガシーアーキテクチャの凍結](https://github.com/reactwg/react-native-new-architecture/discussions/290)**"
+      }
+    },
+    {
+      "segment_id": "6693c38c",
+      "source_content": "The React Native team officially announced their plan to freeze the ~~Old Arch~~ Legacy Arch, so that they can focus all their efforts on the New Architecture. They’ll keep the Legacy Arch usable through security and critical bug fixes, but don't plan to merge new features. They'll eventually remove it an indefinite future, because keeping it around has a maintenance cost.",
+      "source_content_hash": "881144afdab26302c30771028dfea99f3fbb0eb99a0008b2cf59e9008cc6f487",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React Nativeチームは、レガシーアーキテクチャを凍結する計画を正式に発表しました。これにより、すべてのリソースを新しいアーキテクチャに集中させることができます。レガシーアーキテクチャはセキュリティ修正や重大なバグ修正を通じて引き続き使用可能ですが、新機能のマージは予定していません。将来的には未定の時期に削除される予定で、維持コストがかかるためです。"
+      }
+    },
+    {
+      "segment_id": "e55f4c1f",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "2890f5b2",
+      "source_content": "* 💸 [Join React Universe Meetup, New York for Brownfield tricks w/ RNEF, OpenTelemetry for RN and more. Tue, June 24 | 6–9PM EDT (hybrid).](https://www.callstack.com/events/react-universe-meetup-new-york-june-2025?utm_campaign=Brownfield\\&utm_source=TWIR\\&utm_medium=mail\\&utm_content=react_universe_mmetup_new_york)\n* 👀 [Hermes PR - Add Node-API to Hermes](https://github.com/facebook/hermes/pull/1377): Recent conversations show the Hermes team excited to accept this Microsoft PR, and plans to leverage the integration for standard library APIs such as `Intl`, `Temporal`.\n* 👀 [React Native PR - support 120fps for Animated on iOS](https://github.com/facebook/react-native/pull/51775)\n* 📜 [ReactRaptor: Find out which Android apps are built with Expo](https://expo.dev/blog/which-android-apps-are-built-with-expo): This cool app scans your phone and shows you a list of RN/Expo apps. I just tried and discovered many apps I didn’t suspect were using RN, including local French ones. This might be super helpful to find a new RN job or freelancing customer.\n* 💸 [Expo AI Chatbot - Fastest way to create React Native AI Chatbot apps. Complete codebase with streaming, voice agent, image generation and more](https://www.expoaichatbot.com?atp=twir)\n* 📦 [Reanimated 3.18 - Support RN 0.80](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.18.0)\n* 📦 [React Native Better DevTools - macOS app for debugging React Query, MMKV, AsyncStorage, Secure Storage, env variables across all platforms](https://github.com/LovesWorking/rn-better-dev-tools)\n* 📦 [zustand-expo-devtools](https://github.com/csark0812/zustand-expo-devtools)\n* 🎥 [App.js Conf 2025 – Live stream from day 1 and day 2](https://www.youtube.com/watch?v=K2JTTKpptGs\\&list=PLSk21zn8fFZBD3Kxg8Rw_n4LPIuA6TGHd)\n* 🎥 [React Universe Meetup, April 2025](https://www.youtube.com/watch?v=FqSLVdOrclI\\&list=PLZ3MwD-soTTHQjW7z1BEUmHC7aKdUnA7J)\n* 🎥 [Simon Grimm - React Native Tabs Navigation with Expo Router](https://www.youtube.com/watch?v=CN4x8srCMl0)\n* 🎙️ [Rocket Ship 71 - Reanimated 4 Beta, LiveStore, DevTools & Expo Router Course](https://share.transistor.fm/s/512c4c06)",
+      "source_content_hash": "0103599a9b59cba972f39c120d0111ce16ff17bdd958e828e8e96b0fc448bc77",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [React Universe Meetup、ニューヨークでBrownfieldのテクニック（RNEF）、React Native向けOpenTelemetryなどを学ぶ。6月24日（火）18:00-21:00 EDT（ハイブリッド開催）](https://www.callstack.com/events/react-universe-meetup-new-york-june-2025?utm_campaign=Brownfield\\&utm_source=TWIR\\&utm_medium=mail\\&utm_content=react_universe_mmetup_new_york)\n* 👀 [Hermes PR - HermesにNode-APIを追加](https://github.com/facebook/hermes/pull/1377): 最近の議論では、HermesチームがこのMicrosoftのPRを受け入れることに前向きで、`Intl`や`Temporal`などの標準ライブラリAPIの統合に活用する計画があるようです。\n* 👀 [React Native PR - iOSでAnimatedが120fpsをサポート](https://github.com/facebook/react-native/pull/51775)\n* 📜 [ReactRaptor: Expoで構築されたAndroidアプリを発見](https://expo.dev/blog/which-android-apps-are-built-with-expo): このアプリはスマートフォンをスキャンし、RN/Expoで構築されたアプリのリストを表示します。試してみたところ、ローカルのフランス製アプリを含め、RNを使用しているとは思わなかった多くのアプリが見つかりました。新しいRNの仕事やフリーランスのクライアントを見つけるのに非常に役立つかもしれません。\n* 💸 [Expo AI Chatbot - React Native製AIチャットボットアプリを最速で作成。ストリーミング、音声エージェント、画像生成などを含む完全なコードベース](https://www.expoaichatbot.com?atp=twir)\n* 📦 [Reanimated 3.18 - RN 0.80をサポート](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.18.0)\n* 📦 [React Native Better DevTools - React Query、MMKV、AsyncStorage、Secure Storage、環境変数などをすべてのプラットフォームでデバッグするmacOSアプリ](https://github.com/LovesWorking/rn-better-dev-tools)\n* 📦 [zustand-expo-devtools](https://github.com/csark0812/zustand-expo-devtools)\n* 🎥 [App.js Conf 2025 – 1日目と2日目のライブストリーム](https://www.youtube.com/watch?v=K2JTTKpptGs\\&list=PLSk21zn8fFZBD3Kxg8Rw_n4LPIuA6TGHd)\n* 🎥 [React Universe Meetup、2025年4月](https://www.youtube.com/watch?v=FqSLVdOrclI\\&list=PLZ3MwD-soTTHQjW7z1BEUmHC7aKdUnA7J)\n* 🎥 [Simon Grimm - Expo Routerを使ったReact Nativeタブナビゲーション](https://www.youtube.com/watch?v=CN4x8srCMl0)\n* 🎙️ [Rocket Ship 71 - Reanimated 4 Beta、LiveStore、DevTools & Expo Routerコース](https://share.transistor.fm/s/512c4c06)"
+      }
+    },
+    {
+      "segment_id": "714b728f",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "47cd8dd6",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "d30a9380",
+      "source_content": "* 📣 [TC39 Advances 9 proposals including `Array.fromAsync`, `Error.isError`, and Explicit Resource Management to Stage 4](https://socket.dev/blog/tc39-advances-9-proposals): Great to see the `using` keyword landing in the spec, and already leveraged by Vitest, and the new [Random namespace and functions](https://github.com/tc39/proposal-random-functions) is also quite exciting!\n* 📜 [Resilient Import Maps](https://shopify.engineering/resilient-import-maps): Shopify made a significant contribution to the HTML spec so that browsers can declare multiple import maps. I believe it’s not a coincidence and Remix v3 is likely to leverage that.\n* 📜 [Seamlessly Blend PHP with Node.js](https://blog.platformatic.dev/seamlessly-blend-php-with-nodejs)\n* 📦 [Rolldown-Vite](https://voidzero.dev/posts/announcing-rolldown-vite): The Rolldown-powered version of Vite just reached feature parity with its parent project. Now available in technical preview, it can be used as a drop-in replacement. Early adopters reported up to 16x faster builds.\n* 📦 [Vitest 3.2 - Annotations API, Custom Browser Locators, `using`, Test Signal, better Coverage Result](https://vitest.dev/blog/vitest-3-2.html)\n* 📦 [Vite 7.0 Beta - Drops Node 18, ESM-only, browser targets `baseline-widely-available`](https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md#700-beta0-2025-06-02)\n* 📦 [Babel 8 Beta - Drops Node 18, ESM-only, cleanup technical dept](https://babeljs.io/blog/2025/05/30/babel-8-beta)",
+      "source_content_hash": "7afc87c2ffb8726bf96281905262fb4260aad6eeb94cb22f00fdd29133130754",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📣 [TC39が`Array.fromAsync`、`Error.isError`、明示的リソース管理など9つの提案をStage 4に進めました](https://socket.dev/blog/tc39-advances-9-proposals)：`using`キーワードが仕様に採用され、すでにVitestで活用されているのは素晴らしいです。また、新しい[Random名前空間と関数](https://github.com/tc39/proposal-random-functions)も非常に興味深いです！\n* 📜 [Resilient Import Maps](https://shopify.engineering/resilient-import-maps)：ShopifyはHTML仕様に大きな貢献をし、ブラウザが複数のインポートマップを宣言できるようにしました。これは偶然ではなく、Remix v3でも活用される可能性が高いでしょう。\n* 📜 [PHPとNode.jsをシームレスに統合](https://blog.platformatic.dev/seamlessly-blend-php-with-nodejs)\n* 📦 [Rolldown-Vite](https://voidzero.dev/posts/announcing-rolldown-vite)：Rolldownを基盤としたViteのバージョンが親プロジェクトと機能パリティに達しました。現在テクニカルプレビューとして利用可能で、ドロップイン代替として使用できます。早期導入者からは最大16倍のビルド速度向上が報告されています。\n* 📦 [Vitest 3.2 - アノテーションAPI、カスタムブラウザロケーター、`using`、Test Signal、改善されたカバレッジ結果](https://vitest.dev/blog/vitest-3-2.html)\n* 📦 [Vite 7.0 Beta - Node 18のサポート終了、ESMのみ、ブラウザターゲットを`baseline-widely-available`に](https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md#700-beta0-2025-06-02)\n* 📦 [Babel 8 Beta - Node 18のサポート終了、ESMのみ、技術的負債の整理](https://babeljs.io/blog/2025/05/30/babel-8-beta)"
+      }
+    },
+    {
+      "segment_id": "8144f6e8",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "0d5321b7",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "cfeb9eb1",
+      "source_content": "[![alt](/emails/issues/237/meme.jpg)](https://x.com/AlemTuzlak/status/1927806693007597883)",
+      "source_content_hash": "753c990c962336fdca18b463b9a78d9a33c877afc9a19d398c23885609f9ba6b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/237/meme.jpg)](https://x.com/AlemTuzlak/status/1927806693007597883)"
+      }
+    },
+    {
+      "segment_id": "f7e6e884",
+      "source_content": "[![alt](/emails/issues/237/meme2.jpg)](https://x.com/sebastienlorber/status/1929880640670814510)",
+      "source_content_hash": "49aaf09ab90b33e84a971411ce5ee48b265de494f82b477f655e2ddc16d1df69",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/237/meme2.jpg)](https://x.com/sebastienlorber/status/1929880640670814510)"
+      }
+    },
+    {
+      "segment_id": "17b50e81",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "またね！ 👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/237/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:41.520508+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "073bf5f51da6e5d0a5dcc34038fda41edbafebb9b56824ce6df051b05ef6e40d"
+  }
+}

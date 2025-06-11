@@ -1,0 +1,129 @@
+---
+slug: /157
+title: "This Week In React #157: Concurrent Mode, RSC DevTools Extension, Gatsby, Radix asChild, Suspense, hydration, useMemo, React-Redux, Fresh, TinyBase, Worklets, TFLite, local_modules, Bootsplash..."
+authors: [slorber]
+date: 08-22-2023
+---
+
+みなさん、こんにちは！
+
+今週のReact関連の動きは比較的静かでしたが、それでもいくつか興味深い記事があります。
+
+React Native側では、Marc Rousavyが精力的に活動しており、VisionCamera v3のリリースが間近に迫っていることを感じさせる多数のパッケージを公開しています。
+
+近日中にいくつか注目すべきリリースが予定されています。[🐦 Bun 1.0](https://twitter.com/jarredsumner/status/1693657906917585359)、[🐦 Astro 3.0](https://twitter.com/astrodotbuild/status/1693655809711108456)、そして[🐦 TanStack Router](https://twitter.com/tannerlinsley/status/1691936709498552654)などです。
+
+来週は少し休暇を取るので、9月6日にまたお会いしましょう 👋
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Frontendmasters](/emails/issues/151/frontendmasters.png)](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email\&utm_medium=thisweekinreact\&utm_content=uidev)
+
+**[Enterprise UI Development (With React): Testing & Code Quality](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email\&utm_medium=thisweekinreact\&utm_content=uidev)**
+
+大規模なアプリやコードベースの管理や移行を行っていますか？このビデオコースでは、効率的にスケールしながらコード品質を維持するために必要な知識をカバーしています。単体テスト、CIパイプライン、モック、コードカバレッジなどについて解説しています。
+
+***
+
+## ⚛️ React {#react}
+
+[![Reactのコンカレントモードの基礎メカニズム](/emails/issues/157/concurrentmode.jpg)](https://andreigatej.dev/blog/the-underlying-mechanisms-of-reacts-concurrent-mode/)
+
+[**Reactのコンカレントモードの基礎メカニズム**](https://andreigatej.dev/blog/the-underlying-mechanisms-of-reacts-concurrent-mode/)
+
+技術的ではありますが、非常に教育的な記事で、Reactのコードベースを詳しく調査しています。`startTransition`の動作方法や、同期レンダリングモードとの違いについてよく説明されています。Reactが`MessageChannel` APIを再帰的に使用して、定期的にメインスレッドに制御を戻す方法について学びました。
+
+***
+
+* 💸 [Zero To Shipped - 高速フルスタック開発をマスターし、**ついに**プロダクトをリリースする](https://www.zerotoshipped.com/)
+* 🐦 [Gatsbyは死んだのか？](https://twitter.com/sebastienlorber/status/1694392101281190224): 公式にはそうではないが、将来性はあまり期待できそうにない。
+* 🎮 [React Jam - Summer 2023 優勝者発表](https://reactjam.com/summer-2023-winners): 私が審査員を務めたReactベースのビデオゲーム制作コンテストの優勝者が発表されました。
+* 📜 [RadixのasChildパターンをReactで実装する](https://www.jacobparis.com/content/react-as-child): Radixで人気の`asChild`パターンが、基盤となるコンポーネントをカスタマイズするための`as`プロップスの代替としてどのように機能するかを説明。
+* 📜 [A11y駆動開発](https://www.simplethread.com/a11y-driven-development/): アクセシビリティロールに基づいてReactコンポーネントを分割・命名する興味深い提案。
+* 📜 [3つの異なるアーキテクチャにおけるReact Suspense](https://elanmed.dev/blog/suspense-in-different-architectures): 3つの異なるアーキテクチャ（CSR、SSR、RSC）に対する4つの異なる`<Suspense>`の使用例を紹介。
+* 📜 [Next.jsでハイドレーションエラーを解決する方法](https://chirag-gupta.hashnode.dev/how-to-solve-hydration-error-in-nextjs): `localStorage`のようなブラウザAPIを使用して状態を初期化したり、無効なHTMLマークアップを使用したりするなど、ハイドレーション問題を引き起こす一般的な問題を指摘。
+* 📜 [Next.js App RouterとVercelでPostHogを使用する](https://vercel.com/guides/posthog-nextjs-vercel-feature-flags-analytics)
+* 📜 [useMemoの過剰使用](https://edvins.io/usememo-overdose)
+* 📦 [RSC Devtools - Chrome拡張機能](https://chrome.google.com/webstore/detail/rsc-devtools/jcejahepddjnppkhomnidalpnnnemomn): 非公式の拡張機能がChromeストアで利用可能に。RSCペイロードのタイムラインをナビゲート・分析可能。詳細は記事[Devtools for React Server Components](https://www.alvar.dev/blog/creating-devtools-for-react-server-components)を参照。
+* 📦 [Fresh 1.4 – 更に高速なページ読み込み、レイアウトなど](https://deno.com/blog/fresh-1.4)
+* 📦 [TinyBase 4.1 - 新ui-react-domモジュール](https://tinybase.org/guides/releases/)
+* 📦 [NextUI 2.1 - Select、Listbox、ScrollShadow](https://nextui.org/blog/v2.1.0)
+* 📦 [React-Redux 9.0 alpha](https://github.com/reduxjs/react-redux/releases/tag/v9.0.0-alpha.0)
+* 🎥 [tRPC + NextJS App Router = シンプルなタイプセーフAPI](https://www.youtube.com/watch?v=qCLV0Iaq9zU)
+* 🎥 [Remotion Lambda - チュートリアルプレイリスト](https://www.youtube.com/playlist?list=PLRHdymbhXiIRgAeAUpMxe7l7BNliHfWUq)
+* 🎥 [React Queryは実は素晴らしい状態管理ツール](https://www.youtube.com/watch?v=0X3TlVklT-A)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Porkbun.com - The Best Domain Name Registrar](/emails/issues/150/porkbun.png)](https://porkbun.com/?coupon=TWIREACT\&utm_source=TWIREACT\&utm_medium=Newsletter\&utm_campaign=twirjune2023)
+
+**[Porkbun.com - The Best Domain Name Registrar](https://porkbun.com/?coupon=TWIREACT\&utm_source=TWIREACT\&utm_medium=Newsletter\&utm_campaign=twirjune2023)**
+
+Porkbun offers hundreds of domain extensions for React and React-Native developers from .dev and .app to .cloud, .xyz, and .ai — all at the **lowest prices around!** Every domain name at Porkbun comes with **tons of free features** like:
+
+* SSL証明書
+* WHOISプライバシー
+* DNS
+* URL転送
+* Webおよびメールホスティングの無料トライアル
+
+**AI生成検索ツール**もチェックしてください。これはドメイン名検索の方法を変える革新的なツールです。これらすべてが、**年間365日素晴らしいサポート**とTrustpilotの数千の本物の5つ星レビューによって支えられています。
+
+リンクをクリックして、Porkbun.comで[次のドメイン登録を1ドル割引](https://porkbun.com/?coupon=TWIREACT\&utm_source=TWIREACT\&utm_medium=Newsletter\&utm_campaign=twirjune2023)で入手しましょう！
+
+***
+
+## 📱 React-Native {#react-native}
+
+* 💬 [React-Native RFC - ローカルモジュールの自動リンク](https://github.com/react-native-community/discussions-and-proposals/pull/702): `create-react-native-library` CLIを使用して、`local_modules`フォルダ内でローカルネイティブモジュールを作成することを容易にする提案。
+* 💬 [React-Native-Testing-Library RFC - Jest Nativeマッチャーの移行](https://github.com/callstack/react-native-testing-library/issues/1468)
+* 🐦 [Apple App Storeのトップ100スポーツアプリ - React-Native 33/100](https://twitter.com/Baconbrix/status/1692215896029212847)
+* 👀 [Expoプレビュー - Expo Routerを使った静的フォント最適化](https://twitter.com/Baconbrix/status/1692990529800167441)
+* 📜 [React Native HostでiOSブラウンフィールド統合を簡素化](https://www.callstack.com/blog/simplify-your-ios-brownfield-integration-with-react-native-host)
+* 📦 [react-native-worklets-core](https://github.com/margelo/react-native-worklets-core): Reanimated 2+にインスパイアされたスタンドアロンのワークレットランナーで、VisionCamera、WishList、Skiaなどの様々なライブラリで使用されるように設計されています。
+* 📦 [react-native-fast-tflite - GPUアクセラレーションを備えた高性能TensorFlow Lite](https://github.com/mrousavy/react-native-fast-tflite)
+* 📦 [Realm JavaScript v12: 驚きのない完全な書き直し](https://medium.com/realm/realm-javascript-v12-complete-rewrite-without-surprises-62eea2a2e8ae)
+* 📦 [react-native-bootsplash 5.0.0 - ダークモード、ブランド画像、Webサポート...](https://github.com/zoontek/react-native-bootsplash/releases/tag/5.0.0)
+* 📦 [clean-rn - React Nativeのすべてのキャッシュをクリーン](https://github.com/mrousavy/clean-rn)
+* 🎥 [Instagramステッカー - 「React Nativeでできるか？」](https://www.youtube.com/watch?v=5yM4NPcTwY4)
+* 🎥 [Flutter vs React Native and Reanimated with @Reactiive](https://www.youtube.com/watch?v=A19-UEUrg6A)
+* 🎙️ [React Native Radio 273 - Sanket SahuとのGluestack](https://react-native-radio.simplecast.com/episodes/rnr-273-gluestack-with-sanket-sahu)
+* 👥 [React Native EU 2023](https://www.react-native.eu/) (2023年9月7–8日、ヴロツワフ)では、コード「thisweekinreact15」を使用して[カンファレンスチケットを15%割引](https://ti.to/react-native-eu/2023/discount/thisweekinreact15)で提供しています。
+
+***
+
+## 🔀 Other {#other}
+
+* 👀 [Node 20.6 リリース予定 - 組み込みの.envファイルサポート](https://github.com/nodejs/node/pull/49185)
+* 🐦 [requestIdleCallbackがSafariに実装され、すべてのブラウザで利用可能に？](https://twitter.com/sebastienlorber/status/1694260312986227187)
+* 📜 [`Array<T>` vs `T[]`: どちらが優れているか？](https://www.totaltypescript.com/array-types-in-typescript)
+* 📜 [Shadow DOM: デフォルトでは非推奨](https://begin.com/blog/posts/2023-08-18-shadow-dom-not-by-default)
+* 📜 [Dropbox - JavaScriptバンドルサイズを33%削減した方法](https://dropbox.tech/frontend/how-we-reduced-the-size-of-our-javascript-bundles-by-33-percent)
+* 📜 [スムーズなエントリー/エグジットアニメーションのための4つの新しいCSS機能](https://developer.chrome.com/blog/entry-exit-animations/)
+* 📜 [理想のビューポートは存在しない](https://viewports.fyi/)
+* 📜 [TypeScriptはコンパイラ開発に意外と適している](https://matklad.github.io/2023/08/17/typescript-is-surprisingly-ok-for-compilers.html)
+* 📦 [Chrome 117 Beta](https://developer.chrome.com/blog/chrome-117-beta/)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/157/meme.jpg)](https://twitter.com/BHolmesDev/status/1693624114097909851)
+
+それでは！👋

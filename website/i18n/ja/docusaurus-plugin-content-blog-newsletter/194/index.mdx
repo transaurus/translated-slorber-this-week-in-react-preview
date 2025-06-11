@@ -1,0 +1,150 @@
+---
+slug: /194
+title: "This Week In React #194: React Conf, Rsnext, TypeScript, Next.js, PPR, Owner components, Preloading, Zustand, Flutter, Preact, Fumadocs, New Arch Survey, Expo CNG, Flutter, VisionOS, Node.js..."
+authors: [slorber, bndkt]
+date: 07-31-2024
+---
+
+みなさん、こんにちは！
+
+皆さんはどうか分かりませんが、こちらは暑いです！🌞\
+気温の話だけで（°C/°F）、今週のニュースはかなり冷え込んでいました。🥶\
+素晴らしい記事はたくさんありましたが、大きなReactのリリースや発表はありませんでした。
+
+TypeScriptが今週を救ってくれました。v5.6の最初のベータ版がリリースされ、Node.jsでのファーストクラスサポートがやってきます！
+
+パートナーカンファレンス[React Africa](https://react-africa.com/?utm_source=thisweekinreact.com)（🇲🇦 カサブランカ - 11月29日）をチェックしてください。\
+コード「TWIR」で10%オフの割引が適用されます。\
+アフリカ初の国際的なReactカンファレンスです！すでに素晴らしいスピーカーが発表されています。
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアル形式 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![AIチャット用Reactコンポーネント](/emails/issues/194/nlux.jpg)](https://docs.nlkit.com/nlux?utm_source=twir-jl24)
+
+**[AIチャット用Reactコンポーネント](https://docs.nlkit.com/nlux?utm_source=twir-jl24)**
+
+[NLUX](https://docs.nlkit.com/nlux?utm_source=twir-jl24)は、**Webアプリに会話型AI機能を簡単に追加**できる強力なオープンソースReactライブラリです。わずか数行のコードで高品質なチャットUIを作成できます。
+
+プロジェクトの[GitHubリポジトリ](https://github.com/nlkitai/nlux)をチェックして始めたり、[ドキュメントサイト](https://docs.nlkit.com/nlux?utm_source=twir-jl24)でチュートリアル、例、APIリファレンスを参照してください。
+
+***
+
+## ⚛️ React {#react}
+
+[![React Conf 2024 Talks](/emails/issues/194/reactconf.jpg)](https://conf.react.dev/talks)
+
+🎥 **[React Conf 2024 Talks](https://conf.react.dev/talks)**
+
+React Conf 2024の講演がついに公開されました。[写真](https://conf.react.dev/photos)や[ハイライト動画](https://www.youtube.com/watch?v=p6auCiVoa3c)もチェックできます。
+
+今週は大きなReactの発表がなかったので、[Lydia Hallieの講演からの素晴らしいベントスライド](https://www.youtube.com/watch?v=AJOGzVygGcY)で、今後のReact 19の新機能を振り返るのも良いでしょう。[React 19はリリース候補版](https://react.dev/blog/2024/04/25/react-19)で、間もなくリリースされる予定です。
+
+***
+
+* 💸 [Reactile – ReactベースのWebアプリの新しいアプローチ。独自のビューを作成し、単一のブラウザタブでウィンドウやウィジェットを管理](https://www.reactile.net/?utm_source=reactnewsletter)
+* 👀 [Rsnext](https://github.com/ScriptedAlchemy/rsnext/commits/rspack): RspackチームはNext.jsをRustバンドラーで動作させる取り組みを進めており、大きな進展を共有しています。最初のアルファ版が公開され、[「next」を「rsnext」にエイリアスすることで試用可能](https://github.com/substancelabs/rsnext/blob/main/package.json#L11)。また、[Rspack 1.0 beta 1が「layers」機能を搭載してリリース](https://x.com/rspack_dev/status/1818490358319530221)。この機能はアプリを複数のバリアントでバンドルし、React Server Componentsをサポートするのに有用です。本番環境対応が整い次第、さらに詳しく紹介する予定です。
+* 👀 [Flutter WebプロジェクトにおけるNext.js統合によるSEO強化](https://gist.github.com/lcw99/ac1738cb6d5bb032085077605f56665e): Googleが[HTMLレンダラーの廃止と削除を表明](https://github.com/flutter/flutter/issues/145954)した後、FlutterユーザーはWeb SEO問題の解決に躍起になっています。このやや不自然な回避策はNext.jsを基にしています。
+* 🐦 [Million Lint - ホバー時に親/子要素を取得、レンダートリガーの特定](https://x.com/aidenybai/status/1816136004388176010)
+* 📊 [Stack Overflow開発者調査 - 2024年結果](https://survey.stackoverflow.co/2024/): React、Node.js、JavaScriptが依然として最も人気の技術です。
+* 🗓️ [React Rally](https://reactrally.com/?utm_source=thisweekinreact) - 🇺🇸 ユタ州 - 8月12-13日 - 最終呼びかけ！まだチケットを入手するチャンスがあり、コード「TWIR」で[10%割引](https://ti.to/react-rally/react-rally-2024/discount/TWIR)もお忘れなく。
+* 🗓️ [Squiggle Conf](https://2024.squiggleconf.com/?utm_source=thisweekinreact) - 🇺🇸 ボストン - 10月3-4日 - コード「TWIR」で10%割引。1日はカンファレンス、1日はワークショップで、ボストンの歴史的地区中心部で開催されるWeb開発ツーリングイベント！
+* 📜 [React Owner Components](https://reacttraining.com/blog/react-owner-components): OwnerとParentコンポーネントの違いを非常に分かりやすく説明。OwnerはJSXを作成し、それにpropsを渡します。Client ComponentsはServer Componentsを所有できません。
+* 📜 [Partial Pre Renderingの解剖](https://www.nikhilsnayak.dev/blogs/dissecting-partial-pre-rendering): Next.jsの実験的PPR機能が他のレンダリング戦略の長所をどのように取り入れているかを具体的な例（動的レビュー付き静的コースページ）で解説。
+* 📜 [Vercel - Next.jsにおけるFlags as Code](https://vercel.com/blog/flags-as-code-in-next-js): 新しいパッケージ`@vercel/flags/next`がNext.jsでフィーチャーフラグを統合するベストプラクティスをどのようにエンコードするかを説明。基盤となるフラグプロバイダーソースからコードを分離します。フラグは常にサーバー側で評価されるため、レイアウトシフト、スピナー、クライアントへの機密情報開示を防止。静的ページやPPRでも動作する点が非常に優れており、フラグの組み合わせ分だけ静的バリアントを事前計算可能！
+* 📜 [Netlify - GatsbyのLive Previewが新しいDev Serverで復活（そして進化）](https://www.netlify.com/blog/gatsby-live-preview-with-new-dev-server/): NetlifyはフレームワークのDev Serverをクラウドで起動する新しい汎用プラットフォームプリミティブを提供。互換性のあるコンテンツ（CMS）ソースプラグインを使用する際のGatsbyライブプレビューに有用。
+* 📜 [大規模SPAにおける柔軟なネットワークデータプリローディング](https://mmazzarolo.com/blog/2024-07-29-data-preloading-script/): フレームワークを使用しない場合、HTMLにデータプリローディングロジックをインライン化することで、データ/バンドルフェッチの並列化によりアプリ起動時間を短縮可能。
+* 📜 [独自ストアの作成](https://www.smallrecipesfordisaster.com/posts/local-store): `useSyncExternalStore`でReactに接続する独自ストアを作成するために必要な要素を示す。
+* 📜 [Zustandを使ったuseState風APIの探求：楽しい実験](https://www.smallrecipesfordisaster.com/posts/dispatch-zustand): Zustandの上に構築してセレクターが`[state, setState]`タプルを返す方法を示す。
+* 📜 [Reactの10年後、フロントエンドはポストReactの世界になったのか？](https://thenewstack.io/after-a-decade-of-react-is-frontend-a-post-react-world-now/): 優れた代替手段は存在するが、Reactは依然として成長を続けており、その成長は加速していると信じている（🐦 [ツイート](https://x.com/sebastienlorber/status/1818233736091271285)）。
+* 📜 [非同期処理の戦い](https://www.brenelz.com/posts/battle-of-the-asyncs/): Reactの`use`フックとSolidの`createAsync`を比較し、Reactのソリューションがやや不便に見えることを指摘（RSCを使用しても）。
+* 📜 [なぜZustandはコミュニティのお気に入りなのか？](https://www.frontendundefined.com/posts/monthly/zustand-review/): セレクターサポートを備えた、設計の優れた軽量ステートマネージャーZustandへの肯定的な評価。
+* 📜 [パフォーマンス向上：FaireのNextJS移行](https://craft.faire.com/boosting-performance-faires-transition-to-nextjs-3967f092caaf): Kotlin + React SPAからNext.jsスタックへの段階的移行。
+* 📜 [Reactにおける状態管理の完全ガイド](https://www.propelauth.com/post/state-management-in-react): localStorageやクエリパラメータもカバーする包括的なガイド。
+* 📦 [Preact 10.23 - refクリーンアップ関数のサポート](https://github.com/preactjs/preact/releases/tag/10.23.0)
+* 📦 [Fumadocs 13.0 - 改良されたコードブロック、コールアウト](https://fumadocs.vercel.app/blog/v13)
+* 📦 [Bun 1.1.21 - RemixのRequest/Responseオーバーライド問題を修正](https://bun.sh/blog/bun-v1.1.21)
+* 📦 [Novel 0.5 - Notion風AI搭載WYSIWYGエディター](https://github.com/steven-tey/novel)
+* 🎥 [Jack Herrington - Vinxiで修正されたViteの致命的な欠陥](https://www.youtube.com/watch?v=C54k7nP4OjI)
+* 🎥 [Theo - ニューヨーク・タイムズがReact...18？に切り替えて30%のパフォーマンス向上](https://www.youtube.com/watch?v=_6kDnkeReKo)
+* 🎥 [Web Dev Simplified - 6分で学ぶReactジェネリックコンポーネント](https://www.youtube.com/watch?v=5s6dIkrv6Y4)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Next.jsでチームベースのタスクマネージャーを構築](/emails/issues/194/clerk.jpg)](https://go.clerk.com/dAmxGNo)
+
+**[Next.jsでチームベースのタスクマネージャーを構築](https://go.clerk.com/dAmxGNo)**
+
+チーム分離、ユーザーロール管理、認証の課題を解決するマルチテナント型タスクマネージャーの構築方法を学びましょう。
+
+***
+
+## 📱 React-Native {#react-native}
+
+このセクションは[Benedikt](https://twitter.com/bndkt)が執筆しています。
+
+[![New Architecture Survey](/emails/issues/194/rn.jpg)](https://docs.google.com/forms/d/e/1FAIpQLSdrwmX0MvyjEuu6Kx9fH6FufcfftFgf_rqrGASf3hEGD7mupg/viewform)
+
+📊 **[New Architecture Survey](https://docs.google.com/forms/d/e/1FAIpQLSdrwmX0MvyjEuu6Kx9fH6FufcfftFgf_rqrGASf3hEGD7mupg/viewform)**
+
+ここ数ヶ月、New Architectureに関する多くのニュースがあり、今年新たにデフォルトとなったこともその一つです。現在、React NativeとExpoのチームは、皆さんの採用状況（または採用を妨げている要因）について学ぶための調査を開始しました。17の質問があり、数分しかかからないので、MetaとExpoの友人たちを助け、New Archの経験を共有することをお勧めします。きっと彼らはこのフィードバックをさらなる改善に活用してくれるでしょう！
+
+***
+
+* 💸 [React Nativeでクロスプラットフォームアプリを構築。ネイティブのパフォーマンスとJavaScriptの手軽さを組み合わせたApryse SDKを使ったPDFビューア作成を学ぶ](https://apryse.com/blog/mobile/react-and-react-native-pdf-viewers?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=jul3124)
+* 👀 [React Native PR - React Native 0.75でSwift Package Managerサポートが追加予定](https://github.com/facebook/react-native/pull/44627): 現在RC 6に含まれています
+* 👀 [Expo PR - react-native-macos向けconfig pluginsサポート](https://github.com/expo/expo/pull/30660)
+* 🐦 [Expo SDK 52ではJSIを使用したネイティブfetchストリーミングが可能に](https://x.com/Baconbrix/status/1816145261170692397)
+* 🐦 [UploadThingがExpo経由でのモバイル向けファイルアップロードをサポート](https://x.com/t3dotgg/status/1818330724451098676)
+* 🐦 [React NativeからのGPUアクセス - React NativeでのWebGPU技術プレビュー初公開](https://x.com/wcandillon/status/1816758789766336624)
+* 🐦 [Expo Router FAQ - indexファイルは必須ですか？](https://x.com/kadikraman/status/1816583383423881650)
+* 📜 [Continuous Native Generation（CNG）とは何か、なぜ重要なのか？](https://expo.dev/blog/what-is-continuous-native-generation) CNGはオンデマンドでネイティブプロジェクト（Android/iOSプロジェクトファイル）を生成するプロセスです。この記事ではこのアプローチの利点と仕組みを解説しています。
+* 📜 [既存のFlutterアプリにReact Nativeを追加する方法](https://www.callstack.com/blog/adding-react-native-to-an-existing-flutter-app): RNがネイティブアプリへのブラウンフィールドアプローチでうまく機能することは周知ですが、この記事ではFlutterアプリでもRNが機能する方法を探っています。
+* 📦 [RN 0.74.4リリース](https://github.com/facebook/react-native/releases/tag/v0.74.4)
+* 📦 [RN 0.75.0 RC 6リリース](https://github.com/facebook/react-native/releases/tag/v0.75.0-rc.6)
+* 📦 [React-Native-VisionOS 0.75.0-rc.1リリース](https://github.com/callstack/react-native-visionos/releases/tag/v0.75.0-rc.1-visionos)
+* 📦 [カスタムExpo Routerレイアウトのリポジトリがv3.5+対応に更新](https://github.com/EvanBacon/expo-router-layouts-example/tree/main)
+* 📦 [expo-drag-drop-content-view 0.8.1 - New Archサポートと全ファイルタイプ対応](https://github.com/AlirezaHadjar/expo-drag-drop-content-view/releases/tag/v0.8.1)
+* 🎥 [Reactiive - チェックボックスインタラクション - Layout Transitionsの美しさ（React Native Reanimated）](https://www.youtube.com/watch?v=NPq_MFLnQrQ)
+* 🎥 [notJust.dev - React Nativeで作るAI駆動のGoogle翻訳クローン](https://www.youtube.com/live/wIS27dSWpfo)
+* 🎙️ [Rocket Ship 46 - Giovanni Laquidara氏と語るReact Native TVアプリ開発](https://share.transistor.fm/s/5a9d6e44)
+
+***
+
+## 🔀 Other {#other}
+
+* 👀 [Node.js - 実験的なTypeScriptサポートのロードマップ](https://github.com/nodejs/loaders/issues/217): 大きな進展です。Node.jsはこの計画の[最初のPRをマージ](https://github.com/nodejs/node/pull/53725)し、TypeScriptをNode.js上でネイティブに実行できる新しい`--experimental-strip-types`オプションを追加しました。
+* 👀 [Ecma TC39第103回会議のアジェンダ](https://github.com/tc39/agendas/blob/main/2024/07.md): 現在進行中です！`RegExp.escape`など素晴らしい提案が進展しています。
+* 📜 [モダンなVanilla JavaScriptを使ったメモリ効率の良いDOM操作パターン](https://frontendmasters.com/blog/patterns-for-memory-efficient-dom-manipulation/)
+* 📜 [ガベージコレクションとクロージャ](https://jakearchibald.com/2024/garbage-collection-and-closures/)
+* 📜 [バレルファイルの使用をやめてください](https://tkdodo.eu/blog/please-stop-using-barrel-files)
+* 📜 [@propertyを使ったCSSの型定義提供](https://moderncss.dev/providing-type-definitions-for-css-with-at-property/)
+* 📜 [Deno - HTTPインポートについて間違っていたこと](https://deno.com/blog/http-imports)
+* 📦 [TypeScript 5.6 Beta - 疑わしいTruthish/Nullishチェックの検出、イテレータメソッドなど...](https://devblogs.microsoft.com/typescript/announcing-typescript-5-6-beta/)
+* 📦 [Node 20.16 - process.getBuiltinModule(id)の追加](https://nodejs.org/en/blog/release/v20.16.0)
+* 📦 [Babel 7.25 - Safariのバグ修正と重複した名前付きキャプチャグループ](https://babeljs.io/blog/2024/07/26/7.25.0)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/194/meme.jpg)](https://x.com/ken_wheeler/status/1817981694320029979)
+
+[![alt](/emails/issues/194/meme2.jpg)](https://x.com/sebastienlorber/status/1817951368939749528)
+
+それでは！👋

@@ -1,0 +1,184 @@
+---
+slug: /184
+title: "This Week In React #184: Patching, Expo, React Aria, Headless UI, Strict Mode, DevTools, Next.js, Mitosis, Twofold, Terminosaurus, Docusaurus, MST, Remix-SaaS, VisionCamera, Reanimated, VisionOS, Apollo, Vite, Node, Hono ..."
+authors: [slorber, bndkt]
+date: 05-08-2024
+---
+
+みなさん、こんにちは！
+
+短い休憩を挟んで戻ってきました。今回は2週間分のニュースをお届けします！
+
+React 19ベータリリースの興奮からうまく回復されたでしょうか 😄 しかし終わりではありません。React Conf、Vercel Ship、App.jsなど多くのカンファレンスが目前に迫っており、これからが本当にエキサイティングな時期です。
+
+今週、Reactがグローバル変数をパッチする話題がエコシステムで注目されました。また、2つの主要なヘッドレスライブラリを含む興味深いReact関連リリースがありました。
+
+予想通りExpo SDK 51がリリースされ、New Architectureを試す良いタイミングのようです。
+
+素晴らしいReact夏カンファレンスをお探しですか？[React Rally](https://reactrally.com/?utm_source=thisweekinreact)のチケットが販売中です（8月12-13日、🇺🇸ユタ州）。読者の皆様はコード「TWIR」で[10%割引](https://ti.to/react-rally/react-rally-2024/discount/TWIR)が適用されます。
+
+割引と言えば、Josh Comeauも彼のフラッグシップコース[The Joy of React](https://www.joyofreact.com/)で割引を提供しています。既に素晴らしい割引に加え、読者の皆様はコード「TWIR」で[さらに10%オフ](https://courses.joshwcomeau.com/checkout/joy-of-react/ultimate?couponCode=TWIR)になります！
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Helping engineers flex their product muscle](/emails/issues/183/posthog.jpg)](https://newsletter.posthog.com/?utm_source=twir\&utm_campaign=twir)
+
+**[エンジニアがプロダクトスキルを鍛えるのを支援](https://newsletter.posthog.com/?utm_source=twir\&utm_campaign=twir)**
+
+[**Product for Engineers**](https://newsletter.posthog.com/?utm_source=twir\&utm_campaign=twir)は、エンジニアがプロダクトスキルを向上させることに特化したPostHogのニュースレターです。ユーザーに尋ねるべき質問、ユーザーが愛する新機能の構築方法、プロダクトマーケットフィットへの道を学べます。
+
+[**無料購読**](https://newsletter.posthog.com/?utm_source=twir\&utm_campaign=twir)して、素晴らしいプロダクトを構築するための厳選されたアドバイス、PostHog構築からの教訓（と失敗）、トップスタートアップの戦略に関する深堀りを受け取れます。
+
+***
+
+## ⚛️ React {#react}
+
+[![React Aria release, May 1](/emails/issues/184/reactaria.jpg)](https://react-spectrum.adobe.com/releases/2024-05-01.html)
+
+[**React Ariaリリース、5月1日**](https://react-spectrum.adobe.com/releases/2024-05-01.html)
+
+Adobeのエンジニアが最近、彼らのスタイルなしでアクセシブルなReactコンポーネントライブラリに多くの改善をリリースしました。主なハイライトは：
+
+* サブメニュー、[専用ブログ記事](https://react-spectrum.adobe.com/blog/creating-a-pointer-friendly-submenu-experience.html)を参照
+* 7つの新しいカラーピッカーコンポーネント
+* TreeViewアルファ版
+* DropZone + FileTrigger
+* 型付きクライアントサイドルーター統合
+* onAction/isDisabledアイテムAPI
+* より良いツリーシェイキング（約4倍小型化）
+
+***
+
+[![Headless UI v2.0 for React](/emails/issues/184/headlessui.jpg)](https://tailwindcss.com/blog/headless-ui-v2)
+
+[**Headless UI v2.0 for React**](https://tailwindcss.com/blog/headless-ui-v2)
+
+Tailwindチームは、スタイルなしでアクセシブルなReactコンポーネントライブラリのメジャーアップデートをリリースしました。主なハイライトは以下の通りです：
+
+* Floating UIを使用した組み込みのアンカー配置機能
+* 新しいフォーム要素コンポーネント：Checkbox、Input、Label、Field
+* TanStack Virtualを使用したComboboxリストの仮想化
+* React Ariaを使用したホバー/フォーカス/アクティブデータ属性
+* 新しいドキュメントウェブサイト
+
+***
+
+* 💸 [React Universe Conf - 旧称React Native EU。ReactとReact Nativeの専門家が一堂に会するイベント！コードRUCxTWIRで10%割引。](https://www.reactuniverseconf.com/tickets-2024?utm_campaign=React_Universe_Conf\&utm_source=email\&utm_content=This_Week_in_React)
+* 💬 [Next.jsがLayoutsでrequestとresponseオブジェクトを公開しない理由](https://github.com/vercel/next.js/issues/43704#issuecomment-2090798307): Delbaは、より多くのAPIを公開すると将来のコード最適化（特にPartial Prerendering）が妨げられるためと説明し、代替案を提示しています。この[回避策](https://www.propelauth.com/post/getting-url-in-next-server-components)は微笑ましいです：リクエストデータをミドルウェアを通じてヘッダーに配置し、アクセス可能にする方法です。
+* 💬 [Vite RFC - Environment API](https://github.com/vitejs/vite/discussions/16358): この今後のVite 6機能は、ViteでReact Server Componentsをサポートするのに役立つはずです。これにより、ViteがReact Nativeの実行可能な選択肢になる可能性もあります。React Nativeはネイティブプラットフォームごとにモジュールグラフを処理する必要があります。
+* 👀 [React DevTools 5.2 PR](https://github.com/facebook/react/pull/29022): React Compilerによって最適化されたコンポーネントには「✨ Memo」バッジが表示されます（プロファイラー内も含む）。useFormStatusのデバッグ/検査が可能になりました。「Fusebox」というReact Native DevToolsの新コードネームに関する作業も進行中です。
+* 👀 [Next.js PR - AppとPagesルーターでReact 19をサポート](https://github.com/vercel/next.js/pull/65058)
+* 👀 [React Core PR - 段階的に強化されたフォームでuseFormStatusをサポート](https://github.com/facebook/react/pull/29019)
+* 🐦 [Reactがhydrationの不一致を避けるためにDate APIにパッチを当てる可能性](https://x.com/acdlite/status/1785691330988986587)
+* 🐦 [React 19はStrictMode下でrefを2回「発火」させる](https://twitter.com/sebastienlorber/status/1787814604170485770)
+* 🐦 [React 19ベータ - Rick HanlonのAMA（質問受け付け）](https://twitter.com/rickhanlonii/status/1783906285957587194)
+* 🔗 [Next.js開発者向けRemixガイド](https://remixfornextdevs.com): 並列コードスニペット付きの便利なリソース。
+* 🗓 [React Summit](https://reactsummit.com/?utm_source=thisweekinreact) - 🇳🇱 アムステルダム - 6月14-18日 - コード「TWIR」で10%割引。
+* 🗓 [dotJS](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 パリ - 6月27日 - カンファレンスまで2ヶ月を切り、スピーカーラインナップが発表されました！コード「TWIR」で10%割引。
+* 📜 [グローバル変数のパッチ適用が有害な理由](https://kettanaito.com/blog/why-patching-globals-is-harmful): React、Next.js、Bunを例に、グローバル変数のパッチ適用が悪い習慣であることについての興味深い記事。明示的にインポートされたAPIの方が良いという点には同意しますが、これではReactがサードパーティのnpm SDKからのRSCフェッチリクエストを重複排除できなくなります。
+* 📜 [モダンなReactテスト - Playwright](https://sapegin.me/blog/react-testing-5-playwright/): Playwright、Mock Service Worker、React Testing Libraryを使用してReactアプリでE2Eテストを実装するための素晴らしいリソース。
+* 📜 [React Strict Modeと競合状態](https://www.nico.fyi/blog/react-strict-mode-and-race-condition): AbortControllerでuseEffect内のリクエストをキャンセルする場合に遭遇する可能性のある微妙な動作を強調しています。
+* 📜 [Mitosis入門 - クロスフレームワークデザインシステムの作成](https://www.builder.io/blog/mitosis-get-started): Mitosisを使用すると、JSXコンポーネントをReact/RN/Angular/Vue/Svelteにコンパイルできます。また、新しいウェブサイトも公開されました。
+* 📜 [Reactコンポーネントにおける振る舞いの局所性](https://alexkondov.com/locality-of-behavior-react/): Reactコンポーネント内でコードを抽象化するかインライン化するかについての考察。一緒に変更されるものは一緒に存在すべきです。
+* 📜 [エッジレンダリングを高速化する方法](https://developers.netlify.com/guides/how-to-make-edge-rendering-fast/): NetlifyのCEOがエッジレンダリングされたRemixアプリを取り上げ、追加のサーバーレス関数とCDNキャッシュを導入することでアプリを高速化する方法を説明しています。
+* 📜 [Pixi-ReactとHTMLをTunnelsで組み合わせる](https://jallen.dev/blog/pixi-react-tunnels): 複数のReactレンダラーを使用する場合、tunnelライブラリを使用することで関心ごとにグループ化を維持できます。
+* 📜 [Reactで予定されているカスタム要素のサポート](https://piccalil.li/blog/upcoming-custom-element-support-in-react/): React 19ベータはCustom Elements Everywhereベンチマークの100%を通過しました。Reactとカスタム要素を組み合わせることは将来の興味深い選択肢のように見えます。
+* 📜 [HTMLエントリーポイントをReactに置き換える](https://danielnagy.me/posts/Post_2mewtbsl6g4c): Viteでドキュメント全体をレンダリングするためにReactを使用します。単純ではありませんが、これはSSRストリーミングサポートに役立ちます。
+* 📜 [Next.js 15がリリースする可能性のある10の機能](https://notebook.lachlanjc.com/2024-04-17_10_features_nextjs_15_could_launch): Vercel Shipカンファレンスでの発表を予測。
+* 📜 [Next.jsにおけるServer Actionsのニュアンス](https://tigerabrodi.blog/nuances-of-server-actions-in-nextjs)
+* 📦 [React Router 6.23 - Data Strategy API（不安定版）](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v6230): Remix 2.9のSingle Fetch機能を有効にし、ローダーごとに1つのリクエストを発行する代わりに、すべてのローダーに対して1つのリクエストを発行します。
+* 📦 [Terminosaurus - ターミナル向けグラフィカルUIライブラリ、Reactレンダラー統合を含む](https://mael.dev/terminosaurus/)
+* 📦 [Twofold - React Server Componentsを使用してデモを構築するためのフレームワーク](https://twofoldframework.com/)
+* 📦 [Mobx-State-Tree 6.0 - hasEnv、TypeScript、パフォーマンス改善](https://github.com/mobxjs/mobx-state-tree/discussions/2180)
+* 📦 [Zustand-Valtio - Zustand + Immerの興味深い代替手段](https://github.com/zustandjs/zustand-valtio)
+* 📦 [Hono 4.3 - Hono JSXがReactとの互換性を向上、Radix UIプリミティブをレンダリング可能](https://github.com/honojs/hono/releases/tag/v4.3.0)
+* 📦 [Docusaurus 3.3 - React 18.3の警告を処理、createSitemapItems、pagesプラグインの改善](https://docusaurus.io/blog/releases/3.3)
+* 📦 [Apollo Client 3.10 - スキーマベースのテストユーティリティ、client.watchFragment、安定版createQueryPreloader](https://www.apollographql.com/blog/whats-new-in-apollo-client-3-10)
+* 📦 [use-context-selector 2.0 - React 18未満のサポートを廃止](https://github.com/dai-shi/use-context-selector)
+* 📦 [Remix-SaaS - 次のSaaSアプリ向けの無料で軽量、本番環境対応のRemixスタック](https://github.com/dev-xo/remix-saas)
+* 🎥 [Theo - Reactの新しい論争の的となるオーバーライド](https://www.youtube.com/watch?v=PAf6NjyCnrI)
+* 🎙️ [This Month in React - React 19ベータ、Node 22、Expo 51、RN 0.74、Next.js 14.2…](https://podcasters.spotify.com/pod/show/reactiflux/episodes/TMiR-2024-05-So-many-new-releases--React-19-featureset-e2jbc64)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Omlet — React向けの新しいコンポーネント分析ツール](/emails/issues/180/omletad.jpg)](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-second-sponsor-may-2024)
+
+**[Omlet — React向けの新しいコンポーネント分析ツール 🔎](https://omlet.dev/?utm_campaign=partner_this-week-in-react_second-sponsor-may-2024)**
+
+カスタムコンポーネントや古いコンポーネントが多すぎて再利用が難しい？Omletがあれば問題ありません。Omletはコードベースをスキャンし、以下の事前構築済みおよびカスタムチャートを即座に提供します：
+
+* 未使用および非推奨のコンポーネント（削除対象）
+* 類似または冗長なコンポーネント（統合対象）
+* 最近作成されたコンポーネント（新たなパターンの兆候）
+* コンポーネントの依存関係（コード更新の影響を予測・可視化）
+
+このデータを活用すれば、どのコンポーネントを保持・削除・改善すべきか推測する必要がなくなります。より健全なコードベースと簡素化されたライブラリを維持できます。[30日間無料でOmletをお試しください](https://omlet.dev/?utm_campaign=partner_this-week-in-react_second-sponsor-may-2024)。
+
+***
+
+## 📱 React-Native {#react-native}
+
+このセクションは[Benedikt](https://twitter.com/bndkt)が執筆しています。
+
+[![Expo SDK 51](/emails/issues/184/expo51.jpg)](https://expo.dev/changelog/2024/05-07-sdk-51)
+
+[**Expo SDK 51**](https://expo.dev/changelog/2024/05-07-sdk-51)
+
+React Native 0.74に続き、Expo SDK 51がリリースされました。このリリースでは主に内部アーキテクチャの改善と、これまで実験的だったパッケージの新デフォルト化が行われています。ニュースレターで既に取り上げたトピック（ほとんどのExpoモジュールのNew Architectureサポート（[既知の問題](https://docs.expo.dev/guides/new-architecture/#known-issues-in-expo-sdk-libraries)あり）、Bridgelessサポート、Appleのプライバシーマニフェスト対応、カメラとSQLiteパッケージの「next」バージョンが新デフォルトに、Fingerprintが実験段階終了）は割愛します。新機能としては、AppleのSF Symbolsライブラリに対応したexpo-symbolsパッケージ（iOS専用）、新しいexpo-videoライブラリ、URLの#セグメントに対応したExpo Router 3.5、EAS Updateの改善（例：更新を段階的に公開するWeb UI）などがあります。今後のReact ConfではExpo Router（RSC 👀）に関する大きな発表があると予想されるので、要チェックです！もう1つの重要な変更点は、Expo Goがバージョン51以降、単一のExpo SDKバージョンのみをサポートするようになったことです。この決定は、Expo Goアプリのメンテナンスを大幅に容易にするため理にかなっており、ほとんどのユースケースではExpo Dev Clientを使用すべきでしょう。
+
+***
+
+* 💸 [PowerSync – 既存のアーキテクチャに非侵入的なシンプルな状態管理とリアルタイム反応性を備えたローカルファーストアプリを構築](https://www.powersync.com/?utm_source=newsletter\&utm_medium=sponsorship\&utm_campaign=this-week-in-react)
+* 🐦 [Expo SDK 51で書き直されたMetroリゾルバーは最大6倍高速化](https://x.com/Baconbrix/status/1785364741751214529)
+* 🐦 [Expo 51ベータでネイティブiOSアプリをオーバー・ザ・エアでビルド！](https://x.com/Baconbrix/status/1783621369743245363)
+* 👀 [EAS Build - 価格更新](https://expo.dev/changelog/2024/05-02-fast-failed-builds-exclusion): 最初の3分以内に失敗したビルドは無料に。これは非常にありがたい！
+* 🗓 [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 クラクフ - 5月22-24日。コード「TWIR」で[10%割引](https://ti.to/appjs/2024/discount/TWIR)。
+* 📜 [React Nativeローカルデータベースオプション: 包括的なまとめ](https://www.powersync.com/blog/react-native-local-database-options): ローカルファーストは非常にパフォーマンスの高いアプリを可能にし、これを実現する新しいソリューションが次々と登場しています。各種データベースオプションの概要です。
+* 📜 [React Native Vision Camera x Skia: v4の新機能](https://www.premieroctet.com/blog/en/react-native-vision-camera-v4-skia): RN Vision CameraとSkiaフレームプロセッサを使った革新的なインタラクティブ体験が登場する予感！
+* 📜 [React Native 0.74でのiPadホバー効果](https://www.oskarkwasniewski.dev/blog/react-native-ipad-hover-effects): iPadOSでは入力デバイス（例: Apple Pencil）がUI要素上をホバーする際のハイライト表示に特有の方法があります。RNでの実装方法です。
+* 📜 [React NativeでのRustモジュール](https://ospfranco.com/post/2024/05/08/react-native-rust-module-guide/)
+* 📦 [Reanimated 3.9 - スクリーン遷移、useScrollViewOffsetがWebで動作、React Native 0.74とBridgeless Modeサポート、Shared Element Transitionsの安定性向上](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.9.0)
+* 📦 [React Native 0.74.1 - プライバシーマニフェスト集約](https://github.com/facebook/react-native/releases/tag/v0.74.1)
+* 📦 [React Native 0.73.8 テンプレートにプライバシーマニフェスト追加](https://github.com/facebook/react-native/releases/tag/v0.73.8)
+* 📦 [React Native VisionOS 0.74](https://github.com/callstack/react-native-visionos/releases/tag/v0.74.0-visionos)
+* 📦 [NativeWindUI - 無料と有料コンポーネントを備えた新しいコンポーネントライブラリ](https://nativewindui.com/)
+* 🎥 [Simon Grimm - React Native IDEベータ](https://www.youtube.com/watch?v=eOWxKkHakyY)
+* 🎥 [Szymon Rybczak - Riveでアニメーションを強化](https://youtube.com/watch?v=2Mn1a_iAj6g)
+* 🎙️ [RNR 296 - NASAがIgniteを使用！？！](https://reactnativeradio.com/episodes/rnr-296-nasa-uses-ignite)
+* 🎙️ [Rocket Ship 40 - Next.jsからReact Nativeへ with Kitze](https://share.transistor.fm/s/47610b15)
+
+***
+
+## 🔀 Other {#other}
+
+* 👀 [4月のWebプラットフォーム新機能 - Popover、Intl.Segmenter、align-content、parseHTMLUnsafeなど](https://web.dev/blog/web-platform-04-2024)
+* 📜 [フロントエンド開発者/エンジニア向けハンドブック2024](https://frontendmasters.com/blog/front-end-developer-handbook-2024/)
+* 📜 [TypeScriptのBranded Types](https://prosopo.io/articles/typescript-branding/)
+* 📦 [Node 22.1 - 新しいオンディスクコードキャッシュオプション](https://nodejs.org/en/blog/release/v22.1.0?utm_content=291781984\&utm_medium=social\&utm_source=twitter\&hss_channel=tw-91985735)
+* 📦 [Node 20.3 - ウォッチモードが安定版に](https://nodejs.org/en/blog/release/v20.13.0)
+* 📦 [Vitest 1.6 - パフォーマンス向上、–standaloneフラグ、Benchmark –compareフラグ](https://github.com/vitest-dev/vitest/releases/tag/v1.6.0)
+* 📦 [Module Federation 2.0 - Webpackから分離、Rspackサポート、型安全性](https://module-federation.io/blog/announcement.html)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/184/meme.jpg)](https://twitter.com/sebastienlorber/status/1786399152550597114)
+
+それでは！ 👋

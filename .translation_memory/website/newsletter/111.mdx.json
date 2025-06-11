@@ -1,0 +1,572 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/111.mdx",
+  "source_file_content_hash": "3c0ef68969200f661b35ab39e43eeb5e625a169d18c019c222c9cc798400d618",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /111\ntitle: \"This Week In React #111: Reassure, Multiplayer Cursors, Next.js, Meteor, Storybook, TanStack, FlashList, Bun...\"\nauthors: [slorber]\ndate: 07-06-2022\n---",
+      "source_content_hash": "c2803b18d6cfd29982977ff26f8371f99444d138e198e957b2d2e2a143753477",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "This Week In React #111: Reassure, Multiplayer Cursors, Next.js, Meteor, Storybook, TanStack, FlashList, Bun...",
+      "source_content_hash": "03c83a7ff16ad2e18e9007f4abd6b4ccccd3b8d8c3e2eaa8af4bc0ffb9b4a682",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "This Week In React #111: Reassure、マルチプレイヤーカーソル、Next.js、Meteor、Storybook、TanStack、FlashList、Bun..."
+      }
+    },
+    {
+      "segment_id": "fc91ee08",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_fc91ee08"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Hello everyone!",
+      "source_content_hash": "2151adce5b055402b1d03a650e5993e3d4c4b99287a27d008a0343af9dd5a691",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Another week with a lot of cool releases, like Reassure, FlashList or Bun 🤯",
+      "source_content_hash": "b951b25eefdc18c9fc313ead8f9417e7f7a7c270ff9b38c1d26e0c02a7ff13e1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週もReassure、FlashList、Bunなど素晴らしいリリースが目白押しでした🤯"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Also 2 interactive articles👌",
+      "source_content_hash": "32475f0916b3bba5597ad7157416226c2df1c0293e1b77583711c128fde79f15",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "さらにインタラクティブな記事も2本👌"
+      }
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "Towards the end of July, I'll switch to a bi-monthly rhythm. That's going to allow me to evolve the format of this newsletter a bit.",
+      "source_content_hash": "4155d5a6a68d1b099ba18372c63b76a46fc48126b77e7132d8a475a00b61ab29",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "7月下旬からは隔週発行に切り替える予定です。これによりニュースレターの形式を少し進化させられるでしょう。"
+      }
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "I often forget to mention it here, but I keep an [Indie Hacker](https://www.indiehackers.com/product/french-react-newsletter?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter) page up to date: I report monthly on this newsletter with all my numbers: growth, sponsorship etc...",
+      "source_content_hash": "b0167ff0567ed25fca664c84892f12c00cfff17b51d59f7ff0df38d6bf106a36",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ここで言及するのを忘れがちですが、[Indie Hacker](https://www.indiehackers.com/product/french-react-newsletter?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)ページを定期的に更新しています：成長率、スポンサーシップなど、このニュースレターに関するすべての数値を月次で報告しています。"
+      }
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "🙏 **Support the newsletter:**",
+      "source_content_hash": "4fc3b759dd0a0c9b9dcd437d20e58b46953b21abb566437fe5d1da169a9a3705",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🙏 **ニュースレターをサポートする方法:**"
+      }
+    },
+    {
+      "segment_id": "8cf6d045",
+      "source_content": "* 😘 **Recommend it to your friends**: it really helps!\n* 💸 [**Sponsor This Week In React**](https://gist.github.com/slorber/cb732fb5d0a002c4d73236a9baeba7bb?utm_campaign=thisweekinreact\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 😍 [**Write testimonials on Twitter**](https://twitter.com/sebastienlorber/timelines/1448942785814466561?utm_campaign=thisweekinreact\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 🧵 [**Retweet the latest Twitter thread**](https://slo.im/thread?utm_campaign=thisweekinreact\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 📨 Reply to this [**email**](mailto\\:lorber.sebastien@gmail.com?utm_campaign=thisweekinreact\\&utm_medium=email\\&utm_source=Revue%20newsletter): feedback is welcome\n* 👥 Follow on [**LinkedIn**](https://www.linkedin.com/company/this-week-in-react/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)",
+      "source_content_hash": "007af3a313fe0ccd8699ba0f744d7927807f0937df7b7e77c9ddc30241f5bb48",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 😘 **友人に薦める**: 本当に助かります！\n* 💸 [**This Week In Reactをスポンサーする**](https://gist.github.com/slorber/cb732fb5d0a002c4d73236a9baeba7bb?utm_campaign=thisweekinreact\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 😍 [**Twitterで推薦文を書く**](https://twitter.com/sebastienlorber/timelines/1448942785814466561?utm_campaign=thisweekinreact\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 🧵 [**最新のTwitterスレッドをリツイート**](https://slo.im/thread?utm_campaign=thisweekinreact\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 📨 この[**メール**](mailto\\:lorber.sebastien@gmail.com?utm_campaign=thisweekinreact\\&utm_medium=email\\&utm_source=Revue%20newsletter)に返信: フィードバック歓迎\n* 👥 [**LinkedIn**](https://www.linkedin.com/company/this-week-in-react/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)でフォロー"
+      }
+    },
+    {
+      "segment_id": "5b5d0360",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "0037ff70",
+      "source_content": "## React",
+      "source_content_hash": "edb6a832c9103dac6b2ec4cdc016c6223a9b51b066bd79fca21501a9b9fc5c2c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## React"
+      }
+    },
+    {
+      "segment_id": "bdc231b1",
+      "source_content": "[**Reassure**](https://github.com/callstack/reassure?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)",
+      "source_content_hash": "ea78441d3549d8ea14ff0d425c82a2a5545ea3da96dfc36105dbbcc04e0f95e4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**Reassure**](https://github.com/callstack/reassure?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)"
+      }
+    },
+    {
+      "segment_id": "97ae4a01",
+      "source_content": "Reassure is a new React performance test library. Already presented previously, it has now been open-sourced by Callstack. It allows to post a report in a pull-request when perf regressions are detected. Example: a component that re-renders more slowly, or more often than before. For the moment only React-Native is supported, but web support will come very soon.",
+      "source_content_hash": "1cbc9a44febf4db89aef867414eda636951b4278159a784e12029afc54148d16",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Reassureは新しいReactパフォーマンステストライブラリです。以前紹介されましたが、Callstackによってオープンソース化されました。パフォーマンスの退行が検出された場合、プルリクエストにレポートを投稿できます。例：以前より再レンダリングが遅い、または頻繁なコンポーネント。現時点ではReact-Nativeのみサポートされていますが、Webサポートも間もなく追加予定です。"
+      }
+    },
+    {
+      "segment_id": "c3a738de",
+      "source_content": "[**How to animate multiplayer cursors**](https://liveblocks.io/blog/how-to-animate-multiplayer-cursors?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)",
+      "source_content_hash": "b45bcf7f232cfea043c168267ba0467038cf93c4a47c09b69406f83b7b8fe329",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**マルチプレイヤーカーソルのアニメーション方法**](https://liveblocks.io/blog/how-to-animate-multiplayer-cursors?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)"
+      }
+    },
+    {
+      "segment_id": "3cfe6286",
+      "source_content": "A great interactive article that proposes to animate the mouse cursor on several browsers in real time. This is a more complicated problem than it seems. Each approach is illustrated with a React implementation and presents different tradeoffs: CSS transitions, spring, splines...",
+      "source_content_hash": "5f82b4cc41fbd9a70032e10b8bd69b1f77b5a8d3df0f4501f7a31f92b2c32642",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "複数のブラウザでマウスカーソルをリアルタイムにアニメーションさせるインタラクティブな記事です。見た目以上に複雑な問題です。各アプローチはReact実装で説明され、CSSトランジション、スプリング、スプラインなど異なるトレードオフを示しています。"
+      }
+    },
+    {
+      "segment_id": "1042b50d",
+      "source_content": "[**How to Use Next.js Middleware**](https://www.ctnicholas.dev/articles/how-to-use-nextjs-middleware?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)",
+      "source_content_hash": "85dc3986395b0084261ca47550bb171449f91c92622692dfdf845e49d44dbf4c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**Next.jsミドルウェアの使い方**](https://www.ctnicholas.dev/articles/how-to-use-nextjs-middleware?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)"
+      }
+    },
+    {
+      "segment_id": "aa1e7006",
+      "source_content": "Interactive article from the same author, presenting many middleware use cases. Already published here, it has just been updated following the official release of Next.js 12.2 which includes some breaking changes.",
+      "source_content_hash": "84b67b1eefa41e6781532f6b6fc51ece1abdbdda0ccc0d5eb01d73a30813ba81",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "同じ著者によるミドルウェアのユースケースを紹介するインタラクティブ記事です。以前ここで紹介されましたが、Next.js 12.2の正式リリースに伴う破壊的変更を反映して更新されました。"
+      }
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "[**10 Years Of Meteor**](https://meteor10.sachagreif.com/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)",
+      "source_content_hash": "ebe8f4ac6fde0e256b77abc16223f36ee4d7ce39feb3a13d3d5f1e257ed0276d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**10 Years Of Meteor**](https://meteor10.sachagreif.com/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)"
+      }
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "Sacha Grief (co-author of Discover Meteor, and also of the State of JS, CSS surveys...) takes a look back at 10 years of his personal history with the framework. Meteor has lost popularity, but remains used and has greatly influenced our frontend ecosystem.",
+      "source_content_hash": "5178489b81e8ada694e02fc4916d7cf0999909d80d0af6217e26581ad73b71fa",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Sacha Grief（『Discover Meteor』の共著者であり、State of JSやCSSの調査でも知られる）が、自身とMeteorフレームワークとの10年にわたる関わりを振り返ります。Meteorの人気は下降しましたが、今も利用されており、フロントエンドエコシステムに大きな影響を与えました。"
+      }
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "[**The mystery of React Element, children, parents and re-renders**](https://www.developerway.com/posts/react-elements-children-parents?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)",
+      "source_content_hash": "92dc7cafde3cba8cb71b4fcc8729beefadc3905b16d197fda537201c997d3d09",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**The mystery of React Element, children, parents and re-renders**](https://www.developerway.com/posts/react-elements-children-parents?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)"
+      }
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "Nadia highlights some React behaviors that can be surprising or even counter-intuitive, and explains in which case a parent's re-render will trigger a child's re-render on various edge-cases.",
+      "source_content_hash": "d5f24c931eb328bec04ff654930daa6ed52478b912f2b851f836903df1fda363",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Nadiaが、Reactの驚くべき、あるいは直感に反するような挙動を指摘し、さまざまなエッジケースにおいて、親コンポーネントの再レンダリングが子コンポーネントの再レンダリングを引き起こす条件について解説します。"
+      }
+    },
+    {
+      "segment_id": "d3649a1e",
+      "source_content": "[**Storybook Community Showcase #2**](https://storybook.js.org/blog/community-showcase-2/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)",
+      "source_content_hash": "14fc57ee5eae6796fa81b16ffeded1b0a0f93d00fbf220742266a965e5b709aa",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**Storybook Community Showcase #2**](https://storybook.js.org/blog/community-showcase-2/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)"
+      }
+    },
+    {
+      "segment_id": "4d52a261",
+      "source_content": "Summary of the latest news from the Storybook community: Component Encyclopedia, Figma plugin, Story Explorer, and various addons: Variants, CSS variables, Recoil...",
+      "source_content_hash": "03e0df0be6e37e9bee9afa5d2b20152e254161fa7c8ecb5fac5ac152f1ed56bb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Storybookコミュニティの最新ニュースのまとめ：Component Encyclopedia、Figmaプラグイン、Story Explorer、そして各種アドオン（Variants、CSS variables、Recoilなど）が紹介されています。"
+      }
+    },
+    {
+      "segment_id": "23dfb152",
+      "source_content": "[**The new wave of React state management**](https://frontendmastery.com/posts/the-new-wave-of-react-state-management/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)",
+      "source_content_hash": "cfbf9f80235309970eadfbc682373513c94401f27b4710d5bdd6ee656ba4b244",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**The new wave of React state management**](https://frontendmastery.com/posts/the-new-wave-of-react-state-management/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)"
+      }
+    },
+    {
+      "segment_id": "1131ef75",
+      "source_content": "Presents the different problems that state management libs have to solve, and compares some of them. Pre/post Redux retrospective. Complete article but quite long: not easy to read.",
+      "source_content_hash": "f904f542102a57b041008701ce8fed45c3db5e6203316bf896ce0dd209e01bfb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "状態管理ライブラリが解決すべきさまざまな問題を提示し、いくつかのライブラリを比較します。Redux以前と以後の回顧も含まれています。内容は充実していますが、かなり長く、読みやすいとは言えません。"
+      }
+    },
+    {
+      "segment_id": "8b2a52b1",
+      "source_content": "**Extras:**",
+      "source_content_hash": "bb404c372116a106603db9e68d4654a92b41346dea83ace9cb66f1837f27e81a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**その他:**"
+      }
+    },
+    {
+      "segment_id": "35f6931b",
+      "source_content": "* 📜 [Deploy Next.js 12.2 on Netlify today](https://www.netlify.com/blog/deploy-nextjs-12-2/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter): Next.js latest edge features can run on Netlify too\n* 📜 [Use Next.js 12.2 On-Demand ISR to automatically refresh stale data](https://jonmeyers.io/blog/use-next-js-12-2-on-demand-isr-and-supabase-function-hooks-to-automatically-refresh-stale-data?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 📖 [Thinking in Efffects](https://twitter.com/dan_abramov/status/1544090471655415810?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter): new doc page, work-in-progress\n* 🐦 [Remix + Svelte](https://twitter.com/crim_codes/status/1542684471195045889?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 🐦 [Astro Preact compat option](https://twitter.com/astrodotbuild/status/1542511038230237185?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 🎥 [A Fresh new web framework is out](https://www.youtube.com/watch?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter\\&v=4boXExbbGCk)\n* 📦 [FramerMotion 6.4](https://twitter.com/mattgperry/status/1544323698211045376?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter): new hook useInView()\n* 📦 [TanStack Table v8](https://twitter.com/tannerlinsley/status/1542925072502968320?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter): new React-Table version is now framework-agnostic and also supports Svelte, Solid, Vue\n* 📦 [storybook-addon-docusaurus](https://storybook.js.org/addons/storybook-addon-docusaurus?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)",
+      "source_content_hash": "6334304f923c55b254b0fa13e71bc6cc0278f361056083adeebd1a794fe43bf3",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📜 [Next.js 12.2をNetlifyにデプロイする](https://www.netlify.com/blog/deploy-nextjs-12-2/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter): Next.jsの最新エッジ機能もNetlifyで実行可能\n* 📜 [Next.js 12.2のOn-Demand ISRを使用して古いデータを自動更新](https://jonmeyers.io/blog/use-next-js-12-2-on-demand-isr-and-supabase-function-hooks-to-automatically-refresh-stale-data?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 📖 [Thinking in Effects](https://twitter.com/dan_abramov/status/1544090471655415810?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter): 新規ドキュメントページ（作業中）\n* 🐦 [Remix + Svelte](https://twitter.com/crim_codes/status/1542684471195045889?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 🐦 [AstroのPreact互換オプション](https://twitter.com/astrodotbuild/status/1542511038230237185?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 🎥 [新たなWebフレームワーク「Fresh」が登場](https://www.youtube.com/watch?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter\\&v=4boXExbbGCk)\n* 📦 [FramerMotion 6.4](https://twitter.com/mattgperry/status/1544323698211045376?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter): 新フックuseInView()を追加\n* 📦 [TanStack Table v8](https://twitter.com/tannerlinsley/status/1542925072502968320?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter): React-Tableの新バージョンはフレームワーク非依存でSvelte、Solid、Vueもサポート\n* 📦 [storybook-addon-docusaurus](https://storybook.js.org/addons/storybook-addon-docusaurus?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)"
+      }
+    },
+    {
+      "segment_id": "01868def",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "93028a4e",
+      "source_content": "## 💸 Sponsors",
+      "source_content_hash": "6e72131adb635749060ed7f009446c2112893d8b08ec39d1d1df26606f31495d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 スポンサー"
+      }
+    },
+    {
+      "segment_id": "e8e162a9",
+      "source_content": "💡 [How to sponsor this newsletter](https://gist.github.com/slorber/cb732fb5d0a002c4d73236a9baeba7bb?utm_campaign=thisweekinreact\\&utm_medium=email\\&utm_source=Revue%20newsletter)",
+      "source_content_hash": "abcef362f2b30271f756d0a600b5aee6799e6d5ecb4018e46706f94e03796e2c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "💡 [このニュースレターのスポンサーになる方法](https://gist.github.com/slorber/cb732fb5d0a002c4d73236a9baeba7bb?utm_campaign=thisweekinreact\\&utm_medium=email\\&utm_source=Revue%20newsletter)"
+      }
+    },
+    {
+      "segment_id": "463ed165",
+      "source_content": "[**TechTree - Introducing This Week in React Bounty Board**](https://techtree.dev/t/sHBrozirH3xSY8jP3M7gGv?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)",
+      "source_content_hash": "e7bdf309f458f5813f09e5faa1ea0872d7383e74a655c9d7d6f41fcaa3a99f58",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**TechTree - 「This Week in React」バウンティボードのご紹介**](https://techtree.dev/t/sHBrozirH3xSY8jP3M7gGv?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)"
+      }
+    },
+    {
+      "segment_id": "a5c5772a",
+      "source_content": "TechTree is building the first **social-economic platform for developers** - a place to help you unlock the real value of your knowledge and network!",
+      "source_content_hash": "9548c3fbc493da8b5176c54dd56c3ede0c3812d583c0ed6a1a8da7075ab80033",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "TechTreeは、開発者向けの初の**ソーシャル・エコノミック・プラットフォーム**を構築中です。あなたの知識とネットワークの真の価値を引き出す場所です！"
+      }
+    },
+    {
+      "segment_id": "fbc2db85",
+      "source_content": "The first major feature on TechTree is Bounties, a tool to help you **earn money by referring your friends** to open roles at top VC backed tech startups or find a job that might be right for you!",
+      "source_content_hash": "a2678810e301dcc1e962acbadecc9aecd91a57d3c928d6fae4c111bcb20ff640",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "TechTreeの最初の主要機能は「バウンティ」です。これは、トップVC支援のテックスタートアップの求人に友人を紹介して**収入を得る**か、自分に合った仕事を見つけるのを助けるツールです！"
+      }
+    },
+    {
+      "segment_id": "8126f763",
+      "source_content": "To help show you around, I have gone ahead and created my very own Bounty board - **a selection of remote, React related roles for you to apply to or refer your network to**. There has been over \\$300k worth of Bounties claimed on TechTree so far!",
+      "source_content_hash": "9945fe0a4c1160ca628f38c6714a9100c76e21c4d81d40a0727269c267830f73",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ご案内のため、私は独自の**バウンティボード**を作成しました。これは、リモートのReact関連職を応募または紹介するための選択肢です。TechTreeではこれまでに30万ドル以上のバウンティが獲得されています！"
+      }
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "Looking to hire React developers? You can post Bounties of your own to be featured on my Bounty board! Read more and get started [here](https://www.notion.so/techtreedev/Share-your-jobs-on-my-Bounty-board-c51d2d97d9f3421bab103c42097907ae?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter).",
+      "source_content_hash": "ac6227dd496132c51cd2256228ee6fd293147d0e95efa797c5f70e813743a64d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React開発者を採用したいですか？自分のバウンティを投稿して、私のバウンティボードに掲載することができます！詳細は[こちら](https://www.notion.so/techtreedev/Share-your-jobs-on-my-Bounty-board-c51d2d97d9f3421bab103c42097907ae?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)からご覧ください。"
+      }
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "[Storetasker: Freelance Shopify Devs network](https://www.storetasker.com/become-an-expert?utm_campaign=thisweekinreact\\&utm_medium=thisweekinreact\\&utm_source=thisweekinreact)",
+      "source_content_hash": "37b231275f11ae27aba84a6194cd205bef52d521a9a8e8266d7f4407c6c42698",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[Storetasker: フリーランスShopify開発者ネットワーク](https://www.storetasker.com/become-an-expert?utm_campaign=thisweekinreact\\&utm_medium=thisweekinreact\\&utm_source=thisweekinreact)"
+      }
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "Hey! This is Tim from Storetasker. We run the best Shopify dev freelance network. I would love for you to apply if you enjoy building Shopify sites or are excited about leveraging Shopify's **cutting-edge React framework** for building custom storefronts: [**Hydrogen**](https://hydrogen.shopify.dev/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter).",
+      "source_content_hash": "aafea23e28d64e06c8cc364551c0b6e50127110f2f9e883f93e29c192696186b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "こんにちは！StoretaskerのTimです。私たちは最高のShopify開発者フリーランスネットワークを運営しています。Shopifyサイトの構築が好きな方や、カスタムストアフロント構築のためのShopifyの**最先端Reactフレームワーク**[**Hydrogen**](https://hydrogen.shopify.dev/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)を活用することに興味がある方は、ぜひ応募してください。"
+      }
+    },
+    {
+      "segment_id": "785750ac",
+      "source_content": "Accepted devs on the network work on a freelance basis, and we present them with great opportunities to work on some of the best Shopify brands (Alo Yoga, Chubbies, JUDY & many many more).",
+      "source_content_hash": "033f90e3349a9e9e72f6023d52771c97844533cb75772acff05ba0a5be9c6702",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ネットワークに採用された開発者はフリーランスとして働き、Alo Yoga、Chubbies、JUDYなど、最高のShopifyブランドとの仕事の機会を得られます。"
+      }
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "The great thing about Storetasker is that devs aren't in competition with each other - they just pick up the jobs that match their interests. Beyond that - it's a very tight-knit community.",
+      "source_content_hash": "ca65c6a22cc916cf1a290a57efcea196300fdf6c56a8f8ee7cee3d306ce101fc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Storetaskerの素晴らしい点は、開発者同士が競争するのではなく、自分の興味に合った仕事を選べることです。それ以上に、非常に緊密なコミュニティです。"
+      }
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "Feel free to apply directly via this [link](https://www.storetasker.com/become-an-expert?utm_campaign=thisweekinreact\\&utm_medium=thisweekinreact\\&utm_source=thisweekinreact) to join.",
+      "source_content_hash": "b4ffdef2d090e7bb8c3f4885cbc760d49a4e02c4144c46fe15cb2cf5e5e67064",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "こちらの[リンク](https://www.storetasker.com/become-an-expert?utm_campaign=thisweekinreact\\&utm_medium=thisweekinreact\\&utm_source=thisweekinreact)から直接応募してください。"
+      }
+    },
+    {
+      "segment_id": "fc25fa9c",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "94145a94",
+      "source_content": "## React-Native",
+      "source_content_hash": "b4a23b1428a9f635063a161c4fcc664e936d747b5144ab4031d9d9d270785072",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## React-Native"
+      }
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "[**FlashList - Fast & Performant React Native List**](https://shopify.github.io/flash-list/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)",
+      "source_content_hash": "33c7dc44dee7090ea9009f65f83f2b48c9aaf4f6be1f1d41f607cd6cd34d4140",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**FlashList - 高速で高性能なReact Nativeリスト**](https://shopify.github.io/flash-list/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)"
+      }
+    },
+    {
+      "segment_id": "4be28ed1",
+      "source_content": "Shopify has just released FlashList, its alternative to FlatList to solve performance issues when scrolling and avoid showing empty cells. The goal is to keep 60fps even on low-end Android devices, without complicating the implementation. The library reuses already rendered cells: you'll have to adapt your use of React `key` to let it take over.",
+      "source_content_hash": "db31dd4b218dbf0344b69a3d42b4da74f33ddea8dc857d3cbfa986a5750170fd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Shopifyは、スクロール時のパフォーマンス問題を解決し、空のセルを表示しないようにするためのFlatListの代替としてFlashListをリリースしました。目標は、低スペックのAndroidデバイスでも60fpsを維持しつつ、実装を複雑にしないことです。このライブラリは既にレンダリングされたセルを再利用します。Reactの`key`の使い方を調整する必要があります。"
+      }
+    },
+    {
+      "segment_id": "0e80209e",
+      "source_content": "[**React-Native-Compat-Table**](https://retyui.github.io/react-native-compat-table/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)",
+      "source_content_hash": "f693708e700c86f031f7504f05974d59b69e8eba30169b964c8e4380c271aa7f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**React-Native-Compat-Table**](https://retyui.github.io/react-native-compat-table/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)"
+      }
+    },
+    {
+      "segment_id": "7bc8bb24",
+      "source_content": "Lists the API support of each React-Native runtime (JSC, V8, Android...) in a comprehensive way. The author also explains [why React Native recommends TS config lib: \"es2017\"](https://dev.to/retyui/why-react-native-typescript-config-recommends-to-use-a-five-years-old-standard-lib-es2017-3bjk?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)",
+      "source_content_hash": "4fef7209d3732a047b3d0ddbbe1b82528e283abc4a3d2bcbfcd7abe4382d739d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "各React-Nativeランタイム（JSC、V8、Androidなど）のAPIサポートを包括的にリストアップしています。著者はまた、[なぜReact NativeがTS設定lib: \"es2017\"を推奨するのか](https://dev.to/retyui/why-react-native-typescript-config-recommends-to-use-a-five-years-old-standard-lib-es2017-3bjk?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)について説明しています。"
+      }
+    },
+    {
+      "segment_id": "6693c38c",
+      "source_content": "**Extras:**",
+      "source_content_hash": "bb404c372116a106603db9e68d4654a92b41346dea83ace9cb66f1837f27e81a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**その他:**"
+      }
+    },
+    {
+      "segment_id": "0422e2e2",
+      "source_content": "* 📜 [What's New in React Native 0.69 --- How to Upgrade and Why it Matters](https://blog.devgenius.io/whats-new-in-react-native-0-69-how-to-upgrade-and-why-it-matters-59f0841c08fc?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 🧵 [Expo 46 + web](https://twitter.com/Baconbrix/status/1542431795903451136?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter): Evan Bacon gives details about changes in web support and also confirms the ambition to replace Webpack by Metro.\n* 🧵 [React-Native vs mobile native trends](https://twitter.com/GergelyOrosz/status/1542020036587667457?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter): the development of native apps seems to decrease.\n* 🐦 [FlatList vs FlashList perf comparison](https://twitter.com/almouro/status/1542848782693449728?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 🐦 [React-Native vs Flutter diagram](https://twitter.com/t3dotgg/status/1544168855412428801?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 🐦 [Webpack Module Federation + React Native](https://twitter.com/ScriptedAlchemy/status/1542311673964273664?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 🎙️ [RNR 241 - Redux Toolkit vs MobX-State-Tree Showdown](https://reactnativeradio.com/episodes/rnr-241-redux-toolkit-vs-mobx-state-tree-showdown?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 🎥 [The React Native Avengers: GestureHandler, Reanimated, and Skia](https://www.youtube.com/watch?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter\\&v=yBuhnVDXekQ)",
+      "source_content_hash": "05b39ac938b7a69fef869e95abde0910111e35002bcd16e3a28ee17b1acca08f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📜 [React Native 0.69の新機能 - アップグレード方法とその重要性](https://blog.devgenius.io/whats-new-in-react-native-0-69-how-to-upgrade-and-why-it-matters-59f0841c08fc?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 🧵 [Expo 46 + web](https://twitter.com/Baconbrix/status/1542431795903451136?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter): Evan Baconがwebサポートの変更について詳細を説明し、WebpackをMetroで置き換える意図を確認。\n* 🧵 [React-Native vs モバイルネイティブのトレンド](https://twitter.com/GergelyOrosz/status/1542020036587667457?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter): ネイティブアプリの開発は減少傾向にあるようです。\n* 🐦 [FlatList vs FlashListのパフォーマンス比較](https://twitter.com/almouro/status/1542848782693449728?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 🐦 [React-Native vs Flutterの図解](https://twitter.com/t3dotgg/status/1544168855412428801?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 🐦 [Webpack Module Federation + React Native](https://twitter.com/ScriptedAlchemy/status/1542311673964273664?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 🎙️ [RNR 241 - Redux Toolkit vs MobX-State-Tree 対決](https://reactnativeradio.com/episodes/rnr-241-redux-toolkit-vs-mobx-state-tree-showdown?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* 🎥 [The React Native Avengers: GestureHandler, Reanimated, and Skia](https://www.youtube.com/watch?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter\\&v=yBuhnVDXekQ)"
+      }
+    },
+    {
+      "segment_id": "cf53fc07",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "47516512",
+      "source_content": "## Other",
+      "source_content_hash": "eab2781685ddc89805cb158dfec33ea8cff4e064715bdc57e3659647bfcae967",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## その他"
+      }
+    },
+    {
+      "segment_id": "6fc234cf",
+      "source_content": "[**Bun - an incredibly fast all-in-one JavaScript runtime.**](https://bun.sh/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)",
+      "source_content_hash": "fa2ff41675229aa3d203bd7eaf8c07e1afe42cea6ade0df490619f79b5fff95b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**Bun - 超高速なオールインワンJavaScriptランタイム**](https://bun.sh/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)"
+      }
+    },
+    {
+      "segment_id": "c364340c",
+      "source_content": "A new JavaScript runtime that competes directly with Node.js and Deno on performance, based on JSC (not v8) and written in Zig. A complete toolchain with a bundler, transpiler, package manager and even test runner. We already talked about the Bun bundler last year but the scope has expanded to something larger, and v0.1 has just been released.",
+      "source_content_hash": "e1f1e3f484f222503090d608a5138d18ad563cd1dc21f0fdd0046548ff432c0d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Node.jsやDenoと直接競合する新しいJavaScriptランタイムで、JSC（v8ではない）をベースにZigで書かれています。バンドラー、トランスパイラー、パッケージマネージャー、テストランナーまで含む完全なツールチェーンです。Bunバンドラーについては昨年も話題になりましたが、現在はより広範なスコープに拡大し、v0.1がリリースされました。"
+      }
+    },
+    {
+      "segment_id": "f45239ba",
+      "source_content": "**Extras:**",
+      "source_content_hash": "bb404c372116a106603db9e68d4654a92b41346dea83ace9cb66f1837f27e81a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**その他:**"
+      }
+    },
+    {
+      "segment_id": "d30a9380",
+      "source_content": "* [Safari Technology Preview 148](https://webkit.org/blog/12992/release-notes-for-safari-technology-preview-148/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter): :has(), Container Queries, inert...\n* [New to the web platform in June](https://web.dev/web-platform-06-2022/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* [Color.js: A library that takes color seriously](https://lea.verou.me/2022/06/releasing-colorjs/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* [Faster page loads using server think-time with Early Hints](https://developer.chrome.com/blog/early-hints/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* [The end of Internet Explorer](https://web.dev/the-end-of-ie/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* [TransformStream is now supported cross-browser](https://web.dev/transformstream/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* [wasmbuild - Using Rust in Deno and Web Apps](https://deno.com/blog/wasmbuild?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* [CSS Cascade Layers -- There's a Polyfill for That!](https://www.oddbird.net/2022/06/21/cascade-layers-polyfill/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* [CSS - Breaking Out of a Central Wrapper](https://css-irl.info/breaking-out-of-a-central-wrapper/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* [Vue 2.7 \"Naruto\"](https://blog.vuejs.org/posts/vue-2-7-naruto.html?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)",
+      "source_content_hash": "c21c55849d282ebb4824a88f51a0064d4f9d943ff528545f6baf04eaf9133428",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* [Safari Technology Preview 148](https://webkit.org/blog/12992/release-notes-for-safari-technology-preview-148/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter): :has()、コンテナクエリ、inert属性など...\n* [6月のWebプラットフォーム新機能](https://web.dev/web-platform-06-2022/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* [Color.js: 色を真剣に扱うライブラリ](https://lea.verou.me/2022/06/releasing-colorjs/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* [Early Hintsを使ったサーバー思考時間を活用したページ読み込みの高速化](https://developer.chrome.com/blog/early-hints/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* [Internet Explorerの終焉](https://web.dev/the-end-of-ie/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* [TransformStreamがクロスブラウザでサポート](https://web.dev/transformstream/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* [wasmbuild - DenoとWebアプリでRustを使用](https://deno.com/blog/wasmbuild?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* [CSSカスケードレイヤー - ポリフィル登場！](https://www.oddbird.net/2022/06/21/cascade-layers-polyfill/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* [CSS - 中央ラッパーからの脱出](https://css-irl.info/breaking-out-of-a-central-wrapper/?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)\n* [Vue 2.7「Naruto」リリース](https://blog.vuejs.org/posts/vue-2-7-naruto.html?utm_campaign=This%20Week%20In%20React\\&utm_medium=email\\&utm_source=Revue%20newsletter)"
+      }
+    },
+    {
+      "segment_id": "9e90a9b3",
+      "source_content": "![](https://user-images.githubusercontent.com/749374/177528236-692a4831-67d0-48d7-926c-f7e2d57a836e.png)",
+      "source_content_hash": "46495eda556e4e625d9ae9b6d1eb21ee379e675ad758abed3d25fb32a36ed5b5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "![](https://user-images.githubusercontent.com/749374/177528236-692a4831-67d0-48d7-926c-f7e2d57a836e.png)"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/111.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:36.715042+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "3c0ef68969200f661b35ab39e43eeb5e625a169d18c019c222c9cc798400d618"
+  }
+}

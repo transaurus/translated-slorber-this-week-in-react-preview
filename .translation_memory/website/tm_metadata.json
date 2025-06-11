@@ -1,0 +1,73 @@
+{
+  "locales": [
+    "ja"
+  ],
+  "folder_patterns": [
+    {
+      "source_dir_relative_to_docusaurus_root": "articles",
+      "target_i18n_subpath": "docusaurus-plugin-content-blog-articles",
+      "original_agent_pattern": {
+        "source_pattern": "articles/**/*",
+        "translation_pattern": "i18n/%locale%/docusaurus-plugin-content-blog-articles/**/%original_file_name%",
+        "type": "blog-articles",
+        "description": "Articles blog posts - custom blog instance with id 'articles'"
+      },
+      "type": "blog-articles",
+      "description": "Articles blog posts - custom blog instance with id 'articles'",
+      "ignore_patterns": null
+    },
+    {
+      "source_dir_relative_to_docusaurus_root": "newsletter",
+      "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter",
+      "original_agent_pattern": {
+        "source_pattern": "newsletter/**/*",
+        "translation_pattern": "i18n/%locale%/docusaurus-plugin-content-blog-newsletter/**/%original_file_name%",
+        "type": "blog-newsletter",
+        "description": "Newsletter blog posts - custom blog instance with id 'newsletter'"
+      },
+      "type": "blog-newsletter",
+      "description": "Newsletter blog posts - custom blog instance with id 'newsletter'",
+      "ignore_patterns": null
+    },
+    {
+      "source_dir_relative_to_docusaurus_root": "src/pages",
+      "target_i18n_subpath": "docusaurus-plugin-content-pages",
+      "original_agent_pattern": {
+        "source_pattern": "src/pages/**/*.{md,mdx}",
+        "translation_pattern": "i18n/%locale%/docusaurus-plugin-content-pages/**/%original_file_name%",
+        "type": "pages",
+        "description": "Static pages written in Markdown/MDX",
+        "ignore_patterns": [
+          "**/*.js",
+          "**/*.jsx",
+          "**/*.ts",
+          "**/*.tsx"
+        ]
+      },
+      "type": "pages",
+      "description": "Static pages written in Markdown/MDX",
+      "ignore_patterns": [
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.ts",
+        "**/*.tsx"
+      ]
+    },
+    {
+      "source_dir_relative_to_docusaurus_root": "i18n/en",
+      "target_i18n_subpath": "",
+      "original_agent_pattern": {
+        "source_pattern": "i18n/en/**/*.json",
+        "translation_pattern": "i18n/%locale%/**/%original_file_name%",
+        "type": "json_translations",
+        "description": "JSON translation files for React components, theme labels, and UI text"
+      },
+      "type": "json_translations",
+      "description": "JSON translation files for React components, theme labels, and UI text",
+      "ignore_patterns": null
+    }
+  ],
+  "docusaurus_root_dir_relative_to_repo": "website",
+  "docusaurus_config_filepath_relative_to_repo": "website/docusaurus.config.ts",
+  "source_language": "en"
+}

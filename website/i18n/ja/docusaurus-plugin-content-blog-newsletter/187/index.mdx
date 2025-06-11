@@ -1,0 +1,166 @@
+---
+slug: /187
+title: "This Week In React #187: Next.js, Expo, Popover, rethrow, SWR, React-Query, Astro, PPR, tRPC, zsa, Memory leaks, INP, RN IDE, Skia, WebGPU, RNSC, Atlas, Re.Pack, Prisma, SwiftUI, Flutter, Angular..."
+authors: [slorber, bndkt]
+date: 05-29-2024
+---
+
+みなさん、こんにちは！
+
+先週はVercel ShipとApp.jsカンファレンスから素晴らしい発表がありました。
+
+今週もコミュニティのブログ記事が非常に興味深かったです！ここには読む価値のある良いコンテンツがたくさんあります。メモリリークに関する記事はなかなか衝撃的でした😅。
+
+最近気になっているのですが、[Twitterスレッド](https://slo.im/thread)を書くことはまだ有用なのでしょうか？[Twitterで質問してみました](https://x.com/sebastienlorber/status/1795377678918554072)が、ほとんど誰も読んでいないように感じます。やめようかと考えています。どう思いますか？🤔
+
+<!-- truncate -->
+
+**💡 [Twitterでこのニュースレターをチェック](https://slo.im/thread) - ビジュアル形式 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![React-admin: B2Bアプリ向けオープンソースフレームワーク](/emails/issues/187/reactadmin.jpg)](https://marmelab.com/react-admin/)
+
+**[React-admin: B2Bアプリ向けオープンソースフレームワーク](https://marmelab.com/react-admin/)**
+
+👩🏻‍💻 **開発者による、開発者のための**: React-adminは無料のローコードライブラリで、内部ツールや管理画面、B2Bアプリの開発を加速します。ノーコードツールとは異なり、コードを使用するため、フレームワークの制限に縛られることはありません。
+
+🔌 **柔軟な統合**: React-adminはあらゆるAPI形式（RESTやGraphQL）と、Auth0、Cognito、Google Auth、Active Directory、Keycloakなどの認証バックエンドをサポートします。サーバーを制御できるため、シングルサインオン（SSO）機能に追加コストはかかりません。完全にテーマ可能で、会社のカラーに合わせてカスタマイズできます。
+
+🚀 **実績のある成功**: 25,000社以上の企業がReact-adminでシングルページアプリケーションを構築しています。次のプロジェクトでは、React-adminを使用して数週間の開発時間を節約しましょう。[今すぐReact-adminを試す](https://marmelab.com/react-admin/)。
+
+***
+
+## ⚛️ React {#react}
+
+[![Next.js 15 RC](/emails/issues/187/nextjs.jpg)](https://nextjs.org/blog/next-15-rc)
+
+**[Next.js 15 RC](https://nextjs.org/blog/next-15-rc)**
+
+先週のVercel ShipでNext.jsの新しいメジャーバージョンがRCとしてリリースされました。このバージョンのハイライトは以下の通りです：
+
+* React 19 RCのサポート
+* React Compilerのサポート（実験的）Babelプラグイン経由（ビルド時間が増加する可能性あり）
+* ハイドレーションエラーの改善、差分の不一致を表示
+* キャッシュの積極性を抑え、オプトインに：`fetch`とRoute Handlersはデフォルトでキャッシュされなくなりました
+* 新しい`experimental_ppr`ルート設定オプションでPartial Prerenderingを段階的に採用可能
+* 新しい`create-next-app`デザイン、開発時にTurboの使用を促し、プロジェクト作成が可能に
+* next/after（実験的）、分析タスクを遅延させてレスポンスを高速化する新しいAPI
+* 外部パッケージのバンドル最適化（`serverExternalPackages`）が安定版に
+
+Vercel Shipでは他にも興味深い発表がありました。追加で見るべきリソース：
+
+* 📜 [Vercel Ship 2024 レキャップ](https://vercel.com/blog/vercel-ship-2024)
+* 📜 [Vercelでの機能フラグのより深い統合の紹介](https://vercel.com/blog/feature-flags)
+* 📜 [Vercel Web Application Firewallの紹介](https://vercel.com/blog/introducing-the-vercel-waf)
+* 🎥 [Jack Herrington - NextJS 15: React 19、キャッシュ削減、Turbopack、より良いハイドレーションエラーなどVercel Shipからの最新情報！](https://www.youtube.com/watch?v=N2LzvfM2R5M)
+
+***
+
+* 💸 [ReactとJavaScriptでAIアプリを構築 — あらゆるLLMのためのフロントエンドとUI](https://docs.nlkit.com/nlux/?utm_source=twir-my24-3)
+* 👀 [React Core PR - ReactとReact DOMのバージョンが一致しない場合にエラーをスロー](https://github.com/facebook/react/pull/29236): React 19ではより厳格になり、レンダラー（DOMまたはRN）がReactコアパッケージと完全に同じバージョンを使用する必要があります。
+* 👀 [React DOM PR - Popover APIのサポートを追加](https://github.com/facebook/react/pull/27981): この新しいAPIは現在すべての主要ブラウザで利用可能であり、Reactはそのサポートをマージしました。
+* 👀 [Next.js PR - `unstable_rethrow`](https://github.com/vercel/next.js/pull/65831): 今後追加予定のNext.js APIで、Next.jsがスローする内部エラー（リダイレクト/notFoundエラーなど）をキャッチしないようにします。
+* 🐦 [最新のSWRベータ版では、データフェッチをクライアントサイドとサーバーサイド間でシームレスに移動可能](https://x.com/shuding_/status/1794461568505352693)。また、[React-Query](https://x.com/TkDodo/status/1794801851671695533)と[Apollo Client](https://x.com/phry/status/1795777518944784450)も同様の機能を実装しました。
+* 🗓 [React Rally](https://reactrally.com/?utm_source=thisweekinreact) - 🇺🇸 ユタ州 - 8月12-13日 - コード「TWIR」で10%割引。Cory Houseによる高度なReact[ワークショップ](https://reactrally.com/workshop)も開催。
+* 📜 [Reactの巧妙なメモリリーク: useCallbackとクロージャが引き起こす問題](https://schiener.io/2024-03-03/react-closures): 実際のプロダクションアプリのメモリリークを簡略化して解説した素晴らしい記事。このようなReactコードがメモリリークを引き起こすとは驚きで、自分のアプリにも同様のリークがある可能性が高い😅。ただし、React Compilerを使用すればリークは発生しません。
+* 📜 [ミューテーション後の自動クエリ無効化](https://tkdodo.eu/blog/automatic-query-invalidation-after-mutations): React Queryはキャッシュリソースの無効化方法について意見を持たず、代わりに柔軟なプリミティブ上にカスタム戦略を実装できます。例えば、タグによるクエリ無効化が可能です。
+* 📜 [RadixからReact Ariaへの移行: アクセシビリティとUXの向上](https://argos-ci.com/blog/react-aria-migration): ReakitやRadixなどの代替手段を使用した後、GregはReact Ariaを採用する良い理由を述べています。移行のフィードバックは肯定的ですが、いくつかの課題もありました。React Ariaはコンポーネントのアクセシビリティを保つために非常に「厳格」です。
+* 📜 [Laravel、フルスタックJavaScript、そして生産的なフレームワークについて](https://www.jplhomer.org/posts/on-laravel-full-stack-javascript-and-productive-frameworks/): Joshは2つのReactメタフレームワーク（Shopify Hydrogenを含む）を作成し、Laravelも広く使用しています。LaravelとReactエコシステムの長所/短所について興味深い視点を共有しています。
+* 📜 [200行のJavaScriptで作る仮想DOM](https://lazamar.github.io/virtual-dom/): Reactのような仮想DOMの内部動作を、TodoMVCアプリを実行できる小さなライブラリを作成することで非常にわかりやすく説明しています。
+* 📜 [デザインシステムの振り返り](https://kyleshevlin.com/design-system-retrospective/): Chakraのようなデザインシステム（プロップとしてのトークン）の成功に関する興味深い視点。平均的な開発者はプリミティブの組み合わせ方を理解するのに苦労しました。Tailwindの方が適しているかもしれません。
+* 📜 [React Server Componentsとreact-queryを組み合わせた簡単なデータ管理](https://frontendmasters.com/blog/combining-react-server-components-with-react-query-for-easy-data-management/): RSCの制限を説明する良い記事。Server Actionsは直列に実行され、適切なキャッシュがないとRSCの再レンダリングを待つ必要があり遅くなる可能性があります。React-Queryとプリフェッチを使用するとバンドルサイズがわずかに増え、ラウンドトリップが増える可能性がありますが、全体的により高速なUXを提供できます。
+* 📜 [tRPCでのServer Actionsの使用](https://trpc.io/blog/trpc-actions): Server ActionsはtRPCと似ていますが、基本的な機能のみを提供します。tRPCのメンテナーは、tRPCが提供する追加機能（認証、入力検証、監視、レート制限、その他のミドルウェア）について説明しています。next-server-actionやzsaなどの代替手段も考慮する必要があります。
+* 📜 [ReactアプリのINP最適化とパフォーマンスの学び](https://www.iamtk.co/optimizing-inp-for-a-react-app-and-performance-learnings): React 18プロダクションアプリの応答性を最適化するための長いフィードバック。作業と分析の遅延、無駄な再レンダリングに注意するなどのさまざまな教訓が含まれています。
+* 📜 [フレームワークなしでの部分プリレンダリング](https://developers.netlify.com/guides/partial-prerendering-without-a-framework/): Netlify CEOによるデモで、Next.js（実験的機能としてこれを提供）なしで「バニラPPR」を実装する方法を示しています。
+* 📜 [「as」プロップの背後: うまく実装された多態性](https://www.kripod.dev/blog/behind-the-as-prop-polymorphism-done-well/): また、適切に型付けする方法も説明しています。
+* 📜 [Redwood - ミドルウェアの使用: RSSとサイトマップ](https://redwoodjs.com/blog/using-middleware-rss-and-sitemap)
+* 📜 [Next.jsの構造化ログ - Pinoロギングライブラリの使用](https://blog.arcjet.com/structured-logging-in-json-for-next-js/)
+* 📜 [FacebookがWebコンポーネントとの関係を更新](https://www.mux.com/blog/facebook-just-updated-it-s-relationship-status-with-web-components)
+* 📜 [Next.jsでのWorkOSを使用した認証: 包括的なガイド](https://www.nirtamir.com/articles/authentication-with-workos-in-next-js-a-comprehensive-guide)
+* 📜 [Next.jsの\<Image>コンポーネント](https://www.premieroctet.com/blog/en/next-image-component)
+* 📜 [ReactアプリをDocker化する方法](https://scientyficworld.org/how-to-dockerize-a-react-app/)
+* 📦 [Astro 4.9 - Astro ActionsのReact 19サポート](https://astro.build/blog/astro-490/): AstroとReact 19のuseActionStateを統合する新しいwithState/getActionState APIを追加し、プログレッシブエンハンスメントを実現。
+* 📦 [Storybook 8.1 - 型安全なモッキング、React Server Componentsのユニットテスト](https://storybook.js.org/blog/storybook-8-1/)
+* 📦 [NextUI 2.4](https://nextui.org/blog/v2.4.0)
+* 📦 [Ark UI 3.0](https://ark-ui.com/react/docs/overview/changelog#300---2024-05-24)
+* 📦 [React-Query 5.39 - React 19をサポート](https://github.com/TanStack/query/releases/tag/v5.39.0)
+* 📦 [Redwood 7.6 - React Compilerの実験的フラグ](https://github.com/redwoodjs/redwood/releases/tag/v7.6.0)
+* 📦 [zsa 0.1 - Next.jsのための型安全なServer Actions](http://next.js)
+* 📦 [React-Executor - Reactのための非同期タスク実行と状態管理](https://github.com/smikhalevski/react-executor)
+* 🎥 [UIエンジニアリング - ポータルはウィンドウ間で状態を共有可能](https://www.youtube.com/watch?v=jZx33FPMXzc): Reactポータルを使用してウィンドウ間でシームレスに統合するというかなりクールなアイデアで、今後のブラウザのPicture-in-Picture APIにも役立つかもしれません。
+* 🎥 [Theo - React Routerについて間違っていた。](https://www.youtube.com/watch?v=m86HssTKExU)
+* 🎥 [James Quick - AstroがNext.jsと同様のActionsをリリース](https://www.youtube.com/watch?v=8mIUIhp2YGQ)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Next.js auth tutorial with RSCs and Server Actions](/emails/issues/186/AuthKitNextjs.jpg)](https://www.youtube.com/watch?v=aoRG1q_kVo8)
+
+**[Next.js 認証チュートリアル with RSCs & Server Actions](https://www.youtube.com/watch?v=aoRG1q_kVo8)**
+
+WorkOSとSam Selikoffによる最新チュートリアルでは、AuthKitのホステッドログインボックスをNext.jsアプリに簡単に追加する方法を紹介しています：
+
+📚 Get started using the Authkit \<> Next.js [integration library](https://github.com/workos/authkit-nextjs)\
+🤖 Set up environment variables, configure the callback route and middleware, and implement signIn and signOut functionalities\
+⚙️ Protect routes in the Next.js app from unauthenticated users with the getUser function
+
+AuthKitはWorkOSユーザー管理と連携可能で、MFA、ID連携、メール検証、ユーザー偽装などに対応しています。
+
+何より、**月間100万MAUまで無料 🚀**
+
+***
+
+## 📱 React-Native {#react-native}
+
+このセクションは[Benedikt](https://twitter.com/bndkt)が執筆しています。
+
+![App.jsスライド4枚のスクリーンショット](/emails/issues/187/rn.jpg)
+
+カンファレンスに向けて皆がアナウンスを控えていた乾季が終わり、先週のApp.js Confで素晴らしいコンテンツと興奮する発表が再び降り注ぎました！Expoは「Atlas」と名付けられたツールを発表し、バンドラーの荒野を探索する地図として機能します。アプリにコードがどう入り出ていくのか理解したい方には最適なツールで、バンドルサイズ削減だけでなく、アプリの動作理解にも役立ちます。ORM分野では、DrizzleがStudioをExpo開発ツールプラグインとしてリリースし、PrismaはReact Nativeサポート追加を発表しました。React Native IDEはオープンベータ版となり、VS Code拡張マーケットプレースでダウンロード可能に。最後に、William CandillonはRN Skiaでの動画サポートとReact NativeでのWebGPU実装を発表！もちろん、先週ご紹介したUniversal React Server Componentsにも引き続き興奮しています。[App.js Confライブストリーム](http://app.js)でキャッチアップしてください。
+
+***
+
+* 💸 [WithFrame - プリビルドされたReact Nativeコンポーネント](https://withfra.me/components?utm_source=thisweekinreact\&utm_medium=email\&utm_campaign=quick-link--1)
+* 🐦 [Re.Pack V5はWebpackではなくRspackをベースに](https://x.com/_jbroma/status/1793286546008981933): これにより大幅なパフォーマンス改善が実現（コールドスタート15秒→2.5秒、ビルド10秒→2秒、HMR450ms→100ms）。
+* 🗓 [Chain React Conf](https://chainreactconf.com/?utm_source=thisweekinreact) - 🇺🇸 ポートランド、オレゴン州 - 7月17-19日。アメリカのReact Nativeカンファレンスが帰ってきました！講演とハンズオンワークショップが満載です。"TWIR"コードでチケット15%オフ
+* 📜 [Expo Atlasの紹介](https://expo.dev/blog/introducing-expo-atlas): Expoチームはこれを内部で使用し、より高速なMetroリゾルバーの開発、Babel設定の改善、RSCの作業を行いました。今ではアプリの理解と最適化にも活用できます！
+* 📜 [RNW 0.74リリース：ギャラリーの刷新とFabric基盤！React Native](https://devblogs.microsoft.com/react-native/2024-05-24-improved-gallery-fabric-0-74/): この発表で新たに知ったのはReact Native Galleryアプリで、Windows向けRNのデモアプリ集のようなものです。
+* 📜 [Prisma ORMをReact NativeとExpoに導入](https://www.prisma.io/blog/bringing-prisma-orm-to-react-native-and-expo): リアクティブクエリを含むPrismaがRNで利用可能に（ベータ版）。ローカルファースト同期ソリューションも開発中のようです。
+* 📜 [React-AdminをReact Nativeで使用する](https://marmelab.com/blog/2024/05/22/using-react-admin-with-react-native.html): React-AdminはCRUDアプリを迅速に構築するフレームワークです。この記事ではそのヘッドレスアーキテクチャをRNで活用する方法を紹介しています。
+* 📜 [空に舞うFlutter](https://www.celest.dev/blog/fluttering-in-the-sky): React Nativeではありませんが、Flutter向けのReact Native Server Components相当の技術に取り組んでいる企業がいることは注目に値します。
+* 📦 [React Native IDEがオープンベータに](https://ide.swmansion.com/): VS Codeマーケットプレイスから拡張機能として簡単にダウンロード可能。
+* 📦 [SwiftUI-React-Native 6.0](https://github.com/andrew-levy/swiftui-react-native): React Nativeから直接SwiftUI機能を使用。
+* 📦 [React Native Skia 1.3.0](https://github.com/Shopify/react-native-skia/releases/tag/v1.3.0): Skiaで動画レンダリングが可能に。
+* 📦 [Drizzle StudioがExpo SQLite向けに開発ツールプラグインとして利用可能に](https://github.com/drizzle-team/drizzle-studio-expo/tree/main): 非常に便利！Macでシミュレータのファイルシステムフォルダを探してsqliteファイルを別GUIで開く必要がなくなります。
+* 🎥 [Simon Grimm - App.jsカンファレンスから学んだReact Native開発者向け10のポイント](https://www.youtube.com/watch?v=mhos9givltA)
+
+***
+
+## 🔀 Other {#other}
+
+* 📜 [初回HTML状態調査から学んだこと](https://frontendmasters.com/blog/state-of-html-2023-results-2/)
+* 📜 [「Webコンポーネント」は有害と考えられる](https://www.mayank.co/blog/web-components-considered-harmful/)
+* 📦 [Angular 18.0 - Zoneless、Material 3、遅延可能ビュー...](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe)
+* 📦 [TypeScript-ESLint v8ベータ - ESLint 9サポート](https://typescript-eslint.io/blog/announcing-typescript-eslint-v8-beta/)
+* 📦 [fnm 1.36 - 高速なNode.jsバージョンマネージャー](https://github.com/Schniz/fnm/releases/tag/v1.36.0)
+* 📦 [rsbuild 0.7](https://rsbuild.dev/community/releases/v0-7)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/187/meme.jpg)](https://x.com/jamonholmgren/status/1791255201774719178)
+
+またね！👋

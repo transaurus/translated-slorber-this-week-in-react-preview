@@ -1,0 +1,146 @@
+---
+slug: /156
+title: "This Week In React #156: Server Actions, Stale Closures, React Falls Behind, Expo Builds, Suspense Throttling, React-Aria, Natuerlich, Obsidiosaurus, Expo-SQLite, Expo DevTools..."
+authors: [slorber]
+date: 08-15-2023
+---
+
+みなさん、こんにちは！
+
+今週は、ReactとReact-Nativeコミュニティからの多くの記事と、最新のExpo Launch Partyの発表があります。いくつかの記事は非常に長く、すべてを読む時間がありませんでした。
+
+📷 ニュースレターの[**Instagramアカウント**](https://www.instagram.com/thisweekinreact/)を作成するのに忙しかったです！ここでは紹介できなかった最高のミームを含め、ビジュアルなReactニュースやヒントを投稿する予定です🤭。
+
+🧑 また、Jobsセクションを削除しました。あまり価値がなかったので、後でどのように再統合するか検討します。
+
+👥 React-Native開発者の方へ: [React Native EU](https://www.react-native.eu/)（ポーランド・ヴロツワフ、9月7-8日）が[-15%の入場料割引](https://ti.to/react-native-eu/2023/discount/thisweekinreact15)を提供しています。
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアル形式 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![エンタープライズグレードのAPI for Feeds, Chat, & Video!](/emails/issues/153/stream.jpg)](https://getstream.io/video/voice-calling/?utm_source=thisweekinreact\&utm_medium=sponsorship\&utm_content=\&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+[**エンタープライズグレードのAPI for Feeds, Chat, & Video!**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact\&utm_medium=sponsorship\&utm_content=\&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+Streamは、エンタープライズグレードの**API**と**SDK**を提供し、製品とエンジニアリングチームがスケール時に直面する2つの一般的な問題（アプリ内チャットとソーシャルアクティビティフィード）を解決するのに役立ちます。
+
+Streamを使用すると、開発者はこれらの機能をゼロから構築する時間のごく一部で、あらゆるタイプのメッセージングやフィード体験をアプリに統合できます。Stream Chatは、開発者がリッチでリアルタイムなメッセージングをアプリケーションに簡単に統合できるようにします。
+
+Streamは、[**React**](https://getstream.io/chat/sdk/react/?utm_source=thisweekinreact\&utm_medium=sponsorship\&utm_content=\&utm_campaign=thisweekinreact_July2023_video_klmh22)、[**React-Native**](https://getstream.io/chat/sdk/react-native/?utm_source=thisweekinreact\&utm_medium=sponsorship\&utm_content=\&utm_campaign=thisweekinreact_July2023_video_klmh22)、Expo、Flutter、Android、Angular、Compose、Unreal、iOSなどの人気フレームワーク向けの堅牢なクライアントサイドSDKを提供しています。
+スタートアップやサイドプロジェクト向けに、メーカーアカウントでエンタープライズグレードの機能、関数、UIコンポーネントを完全に無料で利用できます。
+
+[**新しいReact Videoチュートリアルを試してみよう！**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact\&utm_medium=sponsorship\&utm_content=\&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+***
+
+## ⚛️ React {#react}
+
+[![React Server Actionsはついにフォームを修正できるのか？](/emails/issues/156/serveractions.jpg)](https://www.mux.com/blog/what-are-react-server-actions)
+
+[**React Server Actionsはついにフォームを修正できるのか？**](https://www.mux.com/blog/what-are-react-server-actions)
+
+Next.js 13.4（実験的機能）にすでに統合されているReactの新機能「Server Actions」についての優れた入門記事です。タイトル付きの動画アップロードの短いチュートリアルも含まれています。Server Actionsはユーザーへのフィードバックとしてレスポンスを返すことができますが、現時点では理想的な開発者体験（DX）とは言えないことが明らかです。
+
+私の意見では、Server Actionsはプログレッシブエンハンスメントを完全にサポートすることを目指すべきです。おそらく、クライアントサイドのJavaScriptを一切使わずにフィードバックを管理するための「flash」APIの導入が必要でしょう。これは多くのバックエンドフレームワークに存在し、Remixも（[`session.flash()`](https://remix.run/docs/en/main/utils/sessions#sessionflashkey-value)）APIを提供しています。興味深い関連情報として、[`action.$$FORM_ACTION`](https://twitter.com/sebastienlorber/status/1689921046856474625)を使うとReactのプログレッシブエンハンスメントの挙動を拡張できます。
+
+***
+
+* 💸 [Zero To Shipped - 高速フルスタック開発をマスターし、**ついに**プロダクトをリリース](https://www.zerotoshipped.com/)
+* 🧑‍🎓 [React.dev - TypeScriptの使用](https://react.dev/learn/typescript): 新しい公式ドキュメントページ
+* 💬 [Next.js RFC - next/third-partiesでのGoogle Tag Managerとgtag統合](https://github.com/vercel/next.js/discussions/53868): コンポーネントではなくフックを使用してGoogle Analyticsを統合する提案（Web Workerサポートの可能性あり）
+* 🐦 [Million.js自動モード - ビデオトレーラー](https://twitter.com/aidenybai/status/1689773623827943424)
+* 📜 [Reactのために忘れられた（あるいは知らなかった）こと](https://joshcollinsworth.com/blog/antiquated-react): Reactを時代遅れのフレームワークとみなす長文の批判記事。著者の見解には[反対](https://github.com/josh-collinsworth/joco-sveltekit/issues/35#issuecomment-1680817566)だが、興味深い読物
+* 📜 [Reactにおける素晴らしいクロージャとその発見方法](https://www.developerway.com/posts/fantastic-closures): Reactのステイルクロージャを解説し、この問題を引き起こす様々なケースを提示した後、`useRef()`に基づく解決策を提案
+* 📜 [Next.jsのServer Actionsを理解する最も簡単な例](https://scastiel.dev/simplest-example-server-actions-nextjs): 非常にシンプルで理解しやすいServer Actionsの例。APIへのRPC呼び出しを実用的に行う方法を提供
+* 📜 [React Suspenseのスロットリングについて](https://andreigatej.dev/blog/on-react-suspense-throttling/): `<Suspense>`をネストした際のReactの意外な挙動を指摘
+* 📜 [YAP（Yet-Another-Prop）をやめよう](https://kyleshevlin.com/quit-your-yapping): 「Yet-Another-Prop」症候群を捨て、コンポジションを使用するよう促す
+* 📜 [Node.jsの設定地獄問題](https://deno.com/blog/node-config-hell): Next.jsのようなプロジェクトが数十の設定ファイルを持つことに対するDenoからの批判
+* 📜 [Supabase - Vercel統合とNext.js App Routerサポート](https://supabase.com/blog/using-supabase-with-vercel): 研究価値のある統合。`createClientComponentClient`など興味深い名前のAPIを含む😅
+* 📜 [Astroで離陸](https://remotesynthesis.com/blog/lifting-off-with-astro/)
+* 📜 [React Hook Formを使ったフォームバリデーション](https://claritydev.net/blog/form-validation-react-hook-form)
+* 📜 [React Testing Library向け新しいlintルールの紹介](https://blog.testdouble.com/posts/2023-07-31-a-new-rtl-lint-rule/)
+* 📜 [JotaiとuseTransitionをミューテーションに使用する方法](https://blog.axlight.com/posts/how-to-use-jotai-and-use-transition-for-mutation/)
+* 📜 [星をコーディング - Three.jsとReact Three Fiberを使ったインタラクティブな星座](https://supabase.com/blog/interactive-constellation-threejs-react-three-fiber)
+* 📦 [React Aria - 8月9日リリース - HTMLフォーム送信/リセット、DropZone、FileTrigger...](https://react-spectrum.adobe.com/releases/2023-08-09.html)
+* 📦 [Natuerlich - WebXR体験のためのコンポーザブルなインタラクション - React-Three-Fiberサポート付き](https://github.com/coconut-xr/natuerlich)
+* 📦 [Reakit - 2023年8月アップデート](https://newsletter.ariakit.org/p/all-things)
+* 📦 [Obsidiosaurus - ObsidianからDocusaurusへのコンバーター](https://github.com/CIMSTA/obsidiosaurus)
+* 📦 [tw2panda - TailwindからPanda CSSへのコード移行を簡単に](https://github.com/astahmer/tw2panda)
+* 🎥 [なぜNext.jsを使うのをやめてAstroを選んだのか](https://www.youtube.com/watch?v=BoeZqPaYw9s)
+* 🎥 [Tailwind CSSを使ったレスポンシブなFramer Motion](https://www.youtube.com/watch?v=xSuxsfn13xg)
+* 🎥 [Dominik Dorfmeister: App Routerを使ったReact Query](https://www.youtube.com/watch?v=R4NHXrvwZWA)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![CoderPad: 一緒に働く前に、一緒にコードを書こう](/emails/issues/154/coderpad.png)](https://coderpad.io/?utm_medium=3pmedia\&utm_source=ThisWeekInReact\&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)
+
+[**CoderPad: 一緒に働く前に、一緒にコードを書こう**](https://coderpad.io/?utm_medium=3pmedia\&utm_source=ThisWeekInReact\&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)
+
+フロントエンド開発者の採用は難しいです。😩 しかし、Netflix、Spotify、LinkedInを含む4,000以上のエンジニアリングチームが、より良い方法を見つけました！🤠 アルゴリズム面接をスキップし、**完全にカスタマイズ可能でコラボレーティブなIDEでフロントエンド面接を実施**できます。ここでは次のことが可能です:
+
+* React（およびAngularやVue）のリポジトリをドラッグ＆ドロップ
+* npm installでパッケージを追加
+* 面接中に候補者がChatGPTをライブで使用
+* 面接後にコードの再生を視聴・共有
+
+CoderPadを使用して、迅速で公平かつ現実的なコーディング面接を実施し、候補者と面接官の信頼を得ましょう。[今すぐ無料で登録して、自信を持って採用しましょう](https://coderpad.io/?utm_medium=3pmedia\&utm_source=ThisWeekInReact\&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)。
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![Expoプレビュー - EAS Buildで完全にカスタマイズ可能なビルド](/emails/issues/156/easbuild.jpg)](https://expo.dev/changelog/2023/08-10-custom-builds)
+
+[**Expoプレビュー - EAS Buildで完全にカスタマイズ可能なビルド**](https://expo.dev/changelog/2023/08-10-custom-builds)。
+
+Expoは、EAS Build用の新しいシステムを考案しました。Yamlファイルを使用してフローをカスタマイズできるため、選択したモノレポツール（Nx、Turbo、Rushなど）を使用したり、独自のCIステップを追加したりするのに多くの柔軟性が得られます。GitHub Actionsとかなり似ています。TIL: EASはiOSビルドでFastlaneを使用しているようです。
+
+***
+
+* 👀 [Expo プロトタイプ - expo-sqliteとCR-SQLiteの統合](https://expo.dev/changelog/2023/08-10-cr-sqlite): ローカルファーストなモバイルアプリ開発を容易にするSQLiteとCRDTの統合。
+* 👀 [Expo プロトタイプ - Expo CLI Dev Tools プラグイン](https://expo.dev/changelog/2023/08-10-dev-tools-plugins): ExpoがDevTools作成のためのプラグインシステムを提供予定で、Apollo DevToolsのデモを公開。将来的にFlipperプラグインを置き換える可能性あり。
+* 🐦 [react-native-windowsでのReanimatedデモ](https://twitter.com/piaskowyk/status/1689982162886430721)
+* 🐦 [Async Components + use() フックのデモ](https://twitter.com/SzymonRybczak/status/1691037156712599552)
+* 🐦 [iOSスポーツアプリトップ20の半数がReact Nativeで構築](https://twitter.com/Baconbrix/status/1690805340290301954)
+* 📜 [大規模React Nativeアプリの起動パフォーマンス改善記](https://medium.com/engineering-udaan/reacting-to-change-tale-of-a-web-developer-improving-startup-performance-for-a-large-react-native-854f8a4850fd)
+* 📜 [複雑なアプリへのReact-Native導入 - 4部構成シリーズ](https://www.nearform.com/blog/adding-react-native-to-a-complex-app-part-1-planning/)
+* 📜 [React Native Storybook入門](https://dev.to/dannyhw/getting-started-with-react-native-storybook-96c)
+* 📜 [React Native新アーキテクチャ探求](https://blog.devvivek.tech/exploring-react-natives-new-architecture-a-peek-into-the-new-architecture)
+* 🎙️ [React Native Show Podcast #25 - モバイルアプリ向けデータベース React Native & Realm](https://www.callstack.com/podcasts/databases-for-mobile-apps-react-native-realm)
+* 👥 [React Native EU 2023](https://www.react-native.eu/) (2023年9月7-8日、ヴロツワフ) で「thisweekinreact15」コード入力により[-15%のチケット割引](https://ti.to/react-native-eu/2023/discount/thisweekinreact15)を提供中。
+
+***
+
+## 🔀 Other {#other}
+
+* 📣 [Gecko (Firefox) - :hasセレクターのプロトタイプ計画](https://twitter.com/intenttoship/status/1690045325539520523)
+* 📜 [Webブラウザのベースラインとは何か](https://thenewstack.io/what-does-it-mean-for-web-browsers-to-have-a-baseline/)
+* 📜 [unloadイベントの廃止予定](https://developer.chrome.com/blog/deprecating-unload/)
+* 📜 [全HTML要素を使ったブログ記事](https://www.patrickweaver.net/blog/a-blog-post-with-every-html-element/)
+* 📜 [レイアウト位置がWebパフォーマンスに与える3つの大きな影響](https://performance.shopify.com/blogs/blog/how-layout-position-impacts-three-big-web-performance-levers)
+* 📦 [TypeScript 5.2 RC発表](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2-rc/)
+* 📦 [Zod 3.22 - readonly()機能追加](https://twitter.com/colinhacks/status/1691172205516984322)
+* 👥 [ViteConf 2023 - 10月5日開催](https://viteconf.org/23/)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/156/meme.jpg)](https://twitter.com/DanStepanov/status/1689511613026775040)
+
+それでは！👋

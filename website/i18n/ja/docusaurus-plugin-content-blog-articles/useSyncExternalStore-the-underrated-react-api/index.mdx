@@ -1,0 +1,234 @@
+---
+slug: useSyncExternalStore-the-underrated-react-api
+title: useSyncExternalStore - The underrated React API
+authors: [slorber]
+date: 2022-09-06
+twitterThreadUrl: "https://slo.im/t/articles/useSyncExternalStore"
+image: ./social-card.png
+---
+
+# useSyncExternalStore - 過小評価されているReact API
+
+[`useSyncExternalStore()`](https://reactjs.org/docs/hooks-reference.html#usesyncexternalstore)というReact 18の新フックをご存知かもしれません。これは**外部データソースへの購読**に使用され、[Redux](https://github.com/reduxjs/react-redux/pull/1808)のような状態管理ライブラリ内部で**セレクターシステム**を実装するためによく使われます。
+
+しかし、独自のアプリケーションコードで`useSyncExternalStore()`を使うのはどうでしょうか？
+
+このインタラクティブ記事では、**無駄な再レンダリングを引き起こす過剰な返り値を持つReactフック**という問題を提示します。`useSyncExternalStore()`がどのように良い解決策となるかを見ていきましょう。
+
+![social card](./social-card.png)
+
+<!-- truncate -->
+
+<SubscribeFormEmbed />
+
+import {
+  App,
+  AppFixed,
+  ScrollApp,
+} from "@site/articles/useSyncExternalStore-the-underrated-react-api/demos";
+
+## 過剰な返り値を持つフック
+
+React-Routerの[`useLocation()`](https://reactrouter.com/en/main/hooks/use-location)を使って問題を説明しましょう。
+
+このフックは多くの属性（`pathname`、`hash`、`search`など）を持つオブジェクトを返しますが、すべてを使用するわけではありません。単にフックを呼び出すだけで、これらの属性のいずれかが更新されると再レンダリングが発生します。
+
+次のアプリを考えてみましょう：
+
+```tsx
+function CurrentPathname() {
+  const { pathname } = useLocation();
+  return <div>{pathname}</div>;
+}
+
+function CurrentHash() {
+  const { hash } = useLocation();
+  return <div>{hash}</div>;
+}
+
+function Links() {
+  return (
+    <div>
+      <Link to="#link1">#link1</Link>
+      <Link to="#link2">#link2</Link>
+      <Link to="#link3">#link3</Link>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <CurrentPathname />
+      <CurrentHash />
+      <Links />
+    </div>
+  );
+}
+```
+
+<App />
+
+ハッシュリンクをクリックするたびに、`CurrentPathname`コンポーネントは`hash`属性を使用していないにもかかわらず再レンダリングされます😅。
+
+:::tip
+フックが表示しないデータを返す場合、Reactの再レンダリングについて考えてください。注意を払わないと、Reactツリーの上部に追加された小さな`useLocation()`呼び出しがアプリのパフォーマンスを損なう可能性があります。
+:::
+
+:::info
+目標はReact-Routerを批判することではなく、問題を説明することです。`useLocation()`はこのインタラクティブ記事を作成するための現実的な例に過ぎません。独自のReactフックや他のサードパーティライブラリも過剰な返り値を返す可能性があります。
+:::
+
+## `useSyncExternalStore`で解決？
+
+[公式ドキュメント](https://reactjs.org/docs/hooks-reference.html#usesyncexternalstore)には次のように書かれています：
+
+> useSyncExternalStoreは、選択的なハイドレーションやタイムスライスなどのコンカレントレンダリング機能と互換性のある方法で、外部データソースからの読み取りと購読に推奨されるフックです。
+> このメソッドはストアの値を返し、3つの引数を受け取ります：
+>
+> * `subscribe`: ストアが変更されるたびに呼び出されるコールバックを登録する関数
+> * `getSnapshot`: ストアの現在の値を返す関数
+> * `getServerSnapshot`: サーバーレンダリング中に使用されるスナップショットを返す関数
+
+```tsx
+function useSyncExternalStore<Snapshot>(
+  subscribe: (onStoreChange: () => void) => () => void,
+  getSnapshot: () => Snapshot,
+  getServerSnapshot?: () => Snapshot,
+): Snapshot;
+```
+
+これは少し抽象的です。この[ベータ版ドキュメントページ](https://beta.reactjs.org/learn/you-might-not-need-an-effect#subscribing-to-an-external-store)には良い例があります：
+
+```tsx
+function subscribe(callback) {
+  window.addEventListener("online", callback);
+  window.addEventListener("offline", callback);
+  return () => {
+    window.removeEventListener("online", callback);
+    window.removeEventListener("offline", callback);
+  };
+}
+
+function useOnlineStatus() {
+  return useSyncExternalStore(
+    subscribe,
+    () => navigator.onLine,
+    () => true,
+  );
+}
+
+function ChatIndicator() {
+  const isOnline = useOnlineStatus();
+  // ...
+}
+```
+
+ブラウザの履歴も外部データソースと見なせることがわかります。React-Routerで`useSyncExternalStore`を使う方法を見てみましょう！
+
+## `useHistorySelector()`の実装
+
+React-Routerは`useSyncExternalStore`を接続するために必要なすべてを公開しています：
+
+* [`useHistory()`](https://v5.reactrouter.com/web/api/Hooks/usehistory)でブラウザ履歴にアクセス
+* [`history.listen(callback)`](https://github.com/remix-run/history/blob/main/docs/api-reference.md#history.listen)で履歴更新を購読
+* [`history.location`](https://github.com/remix-run/history/blob/main/docs/api-reference.md#historylocation)で現在のロケーションのスナップショットにアクセス
+
+:::caution
+このウェブサイトはReact-Router v5を使用しています: React-Router v6では解決策が異なります（[参照](https://twitter.com/Zh0uzi/status/1567523679604539405)）。
+:::
+
+`useHistorySelector()`の実装は比較的シンプルです:
+
+```tsx
+function useHistorySelector(selector) {
+  const history = useHistory();
+  return useSyncExternalStore(history.listen, () =>
+    selector(history),
+  );
+}
+```
+
+これをアプリで使用してみましょう:
+
+```tsx
+function CurrentPathname() {
+  const pathname = useHistorySelector(
+    (history) => history.location.pathname,
+  );
+  return <div>{pathname}</div>;
+}
+
+function CurrentHash() {
+  const hash = useHistorySelector(
+    (history) => history.location.hash,
+  );
+  return <div>{hash}</div>;
+}
+```
+
+<AppFixed />
+
+これで、上記のハッシュリンクをクリックしても、`CurrentPathname`コンポーネントは**再レンダリングされなくなりました**！
+
+## 別の例: `scrollY`
+
+購読可能な外部データソースは数多くあり、独自のセレクターシステムを実装することでReactの再レンダリングを最適化できる可能性があります。
+
+例えば、ページの`scrollY`位置を使用したい場合を考えてみましょう。以下のようなカスタムReactフックを実装できます:
+
+```tsx
+// A memoized constant fn prevents unsubscribe/resubscribe
+// In practice it is not a big deal
+function subscribe(onStoreChange) {
+  global.window?.addEventListener("scroll", onStoreChange);
+  return () =>
+    global.window?.removeEventListener(
+      "scroll",
+      onStoreChange,
+    );
+}
+
+function useScrollY(selector = (id) => id) {
+  return useSyncExternalStore(
+    subscribe,
+    () => selector(global.window?.scrollY),
+    () => undefined,
+  );
+}
+```
+
+このフックをオプションのセレクターと共に使用できます:
+
+```tsx
+function ScrollY() {
+  const scrollY = useScrollY();
+  return <div>{scrollY}</div>;
+}
+
+function ScrollYFloored() {
+  const to = 100;
+  const scrollYFloored = useScrollY((y) =>
+    y ? Math.floor(y / to) * to : undefined,
+  );
+  return <div>{scrollYFloored}</div>;
+}
+```
+
+<ScrollApp />
+
+ページをスクロールして、上記のコンポーネントがどのように再レンダリングされるか確認しましたか？一方が他方よりも再レンダリング回数が少ないです！
+
+:::info
+`scrollY`の1ピクセルレベルの精度が必要ない場合、`scrollY`のような広範囲の値を返すことも過剰な返却と見なせます。より狭い値を返すことを検討してください。
+
+例えば: `small`、`medium`、`large`といった限られた値セットのみを返す`useResponsiveBreakpoint()`フックは、`useViewportWidth()`フックよりも最適化されます。
+
+Reactコンポーネントが`large`スクリーンのみを特別に扱う場合、さらに限定された`useIsLargeScreen()`フックをbooleanで返すことも可能です。
+:::
+
+## 結論
+
+この記事が、`useSyncExternalStore()`をもう一度見直すきっかけになれば幸いです。このフックは現在Reactエコシステムで十分に活用されておらず、もう少し注目される価値があると感じています。購読可能な外部データソースは数多く存在します。
+
+まだReact 18にアップグレードしていない場合、npmの[use-sync-external-store](https://www.npmjs.com/package/use-sync-external-store)シャムを古いバージョンですでに使用できます。また、メモ化された非プリミティブ値を返す必要がある場合は`use-sync-external-store/with-selector`エクスポートも利用可能です。

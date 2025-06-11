@@ -1,0 +1,572 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/213/index.mdx",
+  "source_file_content_hash": "3fc02eadd5c2423b510f8c9e3619e833a6d3c953d61eb858d5d6c7bfc3124d73",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /213\ntitle: \"This Week In React #213: React 19, Next.js, React Compiler, React Router, Restyle, Lingui, State of RN, Uniffi, Shared Objects, Fast IO, Sheet Transitions, Radon, TC39, OpenAuth, TypeScript, Dioxus...\"\nauthors: [matthieugicquel, cyrilbo]\ndate: 12-11-2024\n---",
+      "source_content_hash": "10b74abfaaf04881650a23fcac94d00e4ccb08d1fab186a755d9f22fed31450a",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Cyril and Matthieu from Theodo Apps (formerly BAM) here 👋, standing in for Seb to bring you the latest news from React and React Native!",
+      "source_content_hash": "901ef01f4febad144d110c81fde2dd4f9fb92ec46128d978cbf84e6e873d80ab",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Theodo Apps（旧BAM）のCyrilとMatthieuです 👋。Sebに代わって、ReactとReact Nativeの最新ニュースをお届けします！"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "React 19 is officially stable. The number of articles and releases we mention below that are linked to its new features show how big a release this is 🙂",
+      "source_content_hash": "b33c2cefd91284c82b60ca1c9c375bbd4cb4d2acf82c184899e6dfb8a721ffe3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React 19が正式に安定版となりました。以下で紹介する記事やリリースの多くがその新機能に関連していることからも、このリリースの重要性がわかります 🙂"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "The State of React Native 2024 survey is live. Don’t miss your chance to shape the future of React Native!",
+      "source_content_hash": "40bc439446742eb06854a53de76df6987f46468a95b5b4a4bdf97aec9568eef5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "「State of React Native 2024」調査が開始されました。React Nativeの未来を形作るチャンスをお見逃しなく！"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "There’s also exciting progress in using Rust for frontend apps with tools like Uniffi for React Native and Dioxus, paving the way for more powerful, cross-platform experiences.",
+      "source_content_hash": "957fac0aa5691f85ac93c4095cf482ef03bac8c1ce322b5eeef21c1a82e43697",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "また、React Native向けのUniffiやDioxusなどのツールを使用してRustをフロントエンドアプリに活用する動きも進んでおり、より強力なクロスプラットフォーム体験への道が開かれています。"
+      }
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "Let’s dive in! 🚀",
+      "source_content_hash": "1fbeba4e5289d643c36ba9cbf89b2aebfd3ab89dc424e24f4961d2c6b9b21807",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "さあ、始めましょう！ 🚀"
+      }
+    },
+    {
+      "segment_id": "c6da205d",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_c6da205d"
+      }
+    },
+    {
+      "segment_id": "fcd52337",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_fcd52337"
+      }
+    },
+    {
+      "segment_id": "42e34e45",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_42e34e45"
+      }
+    },
+    {
+      "segment_id": "caf67047",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "[![WorkOS: Modern Identity Platform for B2B SaaS](/emails/issues/195/workOS.jpg)](https://workos.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=q32024)",
+      "source_content_hash": "bff4163f3ab98c9a2e86aa1537a0c74048600b65b23c01f9a61da437f41d8c1a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![WorkOS: B2B SaaS向けモダンなアイデンティティプラットフォーム](/emails/issues/195/workOS.jpg)](https://workos.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=q32024)"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "**[WorkOS: Modern Identity Platform for B2B SaaS](https://workos.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=q32024)**",
+      "source_content_hash": "ed755dcf658799a144d322b4fbd33d33ed75647f16a99d25f19817557c8775cc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[WorkOS: B2B SaaS向けモダンなアイデンティティプラットフォーム](https://workos.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=q32024)**"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "With WorkOS you can start selling to enterprises with just a few lines of code.",
+      "source_content_hash": "b304c6229bc7a16552aa18a5b6e5130f61eb1fe96748924778ed6da206a57780",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "WorkOSを使えば、わずか数行のコードで企業向けの販売を開始できます。"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "🔐 WorkOS AuthKit supports a complete user management solution along with **SSO, SCIM, RBAC, & FGA**.",
+      "source_content_hash": "2379622040661909f895a88f29073acbb94f62dcbbad8ffd9521371bf30cbc99",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🔐 WorkOS AuthKitは、**SSO、SCIM、RBAC、FGA**を含む完全なユーザー管理ソリューションをサポートします。"
+      }
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "🏗️ The APIs are **flexible, easy-to-use, and modular**. Pick and choose what you need and integrate in minutes.",
+      "source_content_hash": "40cbba585ed73eb8b160406f2c3c40e74d45e7c861b8fe1a05b5a6778845df26",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🏗️ APIは**柔軟で使いやすく、モジュール式**です。必要な機能を選び、数分で統合できます。"
+      }
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "🎨 Design and user experience are everything. From the quality of our documentation to how your users onboard, we **remove all the unnecessary complexity for developers**.",
+      "source_content_hash": "432e79b81813c3834300519fb5d4ec352a5ed97c6c8ad169b94d11678ed3bb6f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🎨 デザインとユーザー体験がすべてです。ドキュメントの品質からユーザーのオンボーディングまで、開発者にとって**不要な複雑さをすべて排除**します。"
+      }
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "✨ AuthKit is **free up to 1 million MAUs** and includes bot protection, MFA, RBAC, & more.",
+      "source_content_hash": "ba974887969955cc73a166e08b43b2300570d3b71181a7e52e6749f6e26e8e9b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "✨ AuthKitは**100万MAUまで無料**で、ボット保護、MFA、RBACなどが含まれます。"
+      }
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "🤝 WorkOS is trusted by hundreds of leading startups like **Perplexity**, **Vercel**, & **Webflow**.",
+      "source_content_hash": "43e2ceada1d518743097693e7bee36fd8f5f6a9f9a03dd28878d31ae3a97fba6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🤝 WorkOSは、**Perplexity**、**Vercel**、**Webflow**など、数百の主要スタートアップに信頼されています。"
+      }
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "[Get started with WorkOS](https://workos.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=q32024) 🚀",
+      "source_content_hash": "ad7edf5bc896f242a790e4dad73a84b9632c06467f19de57aa6e2417b15fb8c5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[WorkOSを始める](https://workos.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=q32024) 🚀"
+      }
+    },
+    {
+      "segment_id": "406f2538",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "6d28a77c",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "[![React 19](/emails/issues/213/react.jpg)](https://react.dev/blog/2024/12/05/react-19)",
+      "source_content_hash": "d49cf83a81b2eb8f9e82d0c360ddd81345ac7ef57a23fe9da286bc886c3ae18b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![React 19](/emails/issues/213/react.jpg)](https://react.dev/blog/2024/12/05/react-19)"
+      }
+    },
+    {
+      "segment_id": "b36c6338",
+      "source_content": "**[React 19](https://react.dev/blog/2024/12/05/react-19)**",
+      "source_content_hash": "2838d4adf5e4c3eb235a231186a32cf6e8ce2f1f8038fd02d0e17343924b8db7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[React 19](https://react.dev/blog/2024/12/05/react-19)**"
+      }
+    },
+    {
+      "segment_id": "b9aaa519",
+      "source_content": "React 19 RCs' has been one of the main characters of this newsletter for the past year, so there’s not much more to say apart that it's officially stable, apart 2 new features: the pre-warming feature that delayed the release, and new React-DOM static APIs. Here's a good reminder of other features we already covered;",
+      "source_content_hash": "f15c8123714444a42f36b2694ce12eb4a311bd189b89b91dc1975c0531cf49e9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React 19 RCはこのニュースレターで過去1年間にわたって主要なトピックの1つでしたので、正式に安定版となったこと以外に特筆すべきは、リリースを遅らせたpre-warming機能と新しいReact-DOMの静的APIの2点です。以下は既にカバーした他の機能の良い復習です："
+      }
+    },
+    {
+      "segment_id": "e3321a43",
+      "source_content": "* Actions / Server Actions / `useActionState()`\n* `<form>` + progressive enhancement compatible hooks\n* `<Context>` instead of `<Context.Provider>`\n* The `use()` hook\n* Custom Elements\n* Ref as standard props and ref callbacks cleanup functions\n* Meta tags handling\n* Resource preloading\n* Better errors and hydration diff reporting",
+      "source_content_hash": "c13746e752dd04c66ce388cf78af187da8b1a0976534af76b975a0eb123ab7bb",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* アクション / サーバーアクション / `useActionState()`\n* `<form>` + プログレッシブエンハンスメント互換のフック\n* `<Context.Provider>`の代わりに`<Context>`\n* `use()`フック\n* カスタム要素\n* 標準プロップとしてのrefとrefコールバックのクリーンアップ関数\n* メタタグの処理\n* リソースのプリロード\n* エラーの改善とハイドレーション差分の報告"
+      }
+    },
+    {
+      "segment_id": "06e24cc0",
+      "source_content": "Related videos covering the release:",
+      "source_content_hash": "ddc69c694f8674982050a8612ad2e0aecd3d3f9d1aa676b0e8194744aba412eb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "リリースをカバーした関連動画："
+      }
+    },
+    {
+      "segment_id": "af7d8a35",
+      "source_content": "* 🎥 [Theo - React 19 is finally out!](https://www.youtube.com/watch?v=6aQgiJHReCI)\n* 🎥 [Ankita - Master React 19 Changes in 5 Minutes!](https://www.youtube.com/watch?v=ZcuOV60_z6s)\n* 🎥 [Brandon Roberts - React 19: What every Angular Developer Needs to Know!](https://www.youtube.com/watch?v=0aHHGdxAmF4)",
+      "source_content_hash": "a761d189c65d86f6ceea98e9be58f961bf38a3c6dc1359bcef80d9c65ba910c1",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 🎥 [Theo - React 19がついにリリース！](https://www.youtube.com/watch?v=6aQgiJHReCI)\n* 🎥 [Ankita - 5分で学ぶReact 19の変更点！](https://www.youtube.com/watch?v=ZcuOV60_z6s)\n* 🎥 [Brandon Roberts - React 19: Angular開発者が知るべきこと！](https://www.youtube.com/watch?v=0aHHGdxAmF4)"
+      }
+    },
+    {
+      "segment_id": "7afb38f4",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "4fe53981",
+      "source_content": "* 💸 [React Bricks – the Visual CMS for React got more accessible with lower entry price and flexible pay-as-you-go options. Start for free!](https://www.reactbricks.com/?utm_source=twir\\&utm_campaign=ql24)\n* 📖 [A new React Router tutorial](https://reactrouter.com/tutorials/address-book): It goes over most of the features you’ll need in \\~30 minutes\n* 📜 [How React Compiler Performs on Real Code](https://www.developerway.com/posts/how-react-compiler-performs-on-real-code): Enabling the compiler on a real app led to same performance on initial load, and improved performance on interactions. But the compiler is not always able to fully optimize your existing code.\n* 📜 [Ref Callbacks, React 19 and the Compiler](https://tkdodo.eu/blog/ref-callbacks-react-19-and-the-compiler): TkDodo looks into ref callbacks, which now have cleanup functions. When should they replace `useEffect` ?\n* 📜 [Building Scalable Micro-Frontends with Next.js Multi Zones](https://techhub.iodigital.com/articles/building-scalable-micro-frontends-with-next-js-multi-zones): Being able to deploy independently is a major advantage for big teams, and it turns out it’s not that complicated with Next.js\n* 📜 [Root Element API in waku](https://waku.gg/blog/root-element-api): Customize `<html>`, `<body>` and `<head>` in a `\\_root.tsx` file\n* 📜 [Multi-framework docs with Astro Starlight](https://blog.arcjet.com/multi-framework-docs-with-astro-starlight/)\n* 📜 [SSR is not expensive](https://t3.gg/blog/post/ssr-is-not-expensive)\n* 📜 [Reflections on managing state](https://www.frontendundefined.com/posts/monthly/react-state-management-reflections/)\n* 📦 [Next.js 15.1](https://nextjs.org/blog/next-15-1): React 19 stable, improved error debugging, `after` (to run code after the response is sent, eg for analytics) is stable, and new experimental `forbidden` and `unauthorized` APIs that work like `notFound`\n* 📦 [Restyle 3.0](https://www.restyle.dev/): A very lightweight CSS-in-JS lib for React which uses the new React 19 metadata APIs\n* 📦 [Lingui 5.0](https://lingui.dev/blog/2024/11/28/announcing-lingui-5.0): Support for RSC and a new `useLingui` macro among other improvements.\n* 📦 [react-render-stream-testing-library 2.0](https://github.com/testing-library/react-render-stream-testing-library/releases/tag/v2.0.0): No major new features, some breaking changes were necessary to be compatible with React 19",
+      "source_content_hash": "914cd32be1763a5b3900c2f155c73d23dfcfeeb044867a8764c39e3a514ff549",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [React Bricks – React向けビジュアルCMSがよりアクセスしやすくなり、低価格のエントリープランと柔軟な従量課金オプションを提供。無料で始められます！](https://www.reactbricks.com/?utm_source=twir\\&utm_campaign=ql24)\n* 📖 [新しいReact Routerチュートリアル](https://reactrouter.com/tutorials/address-book): 約30分で必要な機能のほとんどをカバー\n* 📜 [React Compilerが実際のコードでどのように動作するか](https://www.developerway.com/posts/how-react-compiler-performs-on-real-code): 実際のアプリでコンパイラを有効にすると、初期ロード時のパフォーマンスは変わらず、インタラクション時のパフォーマンスが向上。ただし、既存コードを完全に最適化できない場合も。\n* 📜 [Refコールバック、React 19とコンパイラ](https://tkdodo.eu/blog/ref-callbacks-react-19-and-the-compiler): TkDodoがクリーンアップ関数を備えたrefコールバックについて考察。いつ`useEffect`を置き換えるべきか？\n* 📜 [Next.jsマルチゾーンでスケーラブルなマイクロフロントエンドを構築](https://techhub.iodigital.com/articles/building-scalable-micro-frontends-with-next-js-multi-zones): 独立したデプロイが可能なことは大規模チームにとって大きな利点であり、Next.jsではそれほど複雑ではないことが判明\n* 📜 [wakuのRoot Element API](https://waku.gg/blog/root-element-api): `\\_root.tsx`ファイルで`<html>`、`<body>`、`<head>`をカスタマイズ\n* 📜 [Astro Starlightを使ったマルチフレームワークドキュメント](https://blog.arcjet.com/multi-framework-docs-with-astro-starlight/)\n* 📜 [SSRは高コストではない](https://t3.gg/blog/post/ssr-is-not-expensive)\n* 📜 [状態管理に関する考察](https://www.frontendundefined.com/posts/monthly/react-state-management-reflections/)\n* 📦 [Next.js 15.1](https://nextjs.org/blog/next-15-1): React 19安定版、エラーデバッグの改善、レスポンス送信後のコード実行（例：分析）用の`after`が安定版に、新たな実験的API`forbidden`と`unauthorized`が`notFound`と同様に動作\n* 📦 [Restyle 3.0](https://www.restyle.dev/): React 19の新しいメタデータAPIを使用する非常に軽量なCSS-in-JSライブラリ\n* 📦 [Lingui 5.0](https://lingui.dev/blog/2024/11/28/announcing-lingui-5.0): RSCのサポートと新しい`useLingui`マクロなど、さまざまな改善\n* 📦 [react-render-stream-testing-library 2.0](https://github.com/testing-library/react-render-stream-testing-library/releases/tag/v2.0.0): 大きな新機能はなし、React 19との互換性のために必要な破壊的変更がいくつか"
+      }
+    },
+    {
+      "segment_id": "c625a102",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_c625a102"
+      }
+    },
+    {
+      "segment_id": "9006437d",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "f6b04a59",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "a311e967",
+      "source_content": "[![From solo to collaborative: React + Stream Video!](/emails/issues/213/stream.jpg)](https://getstream.io/video/sdk/react/tutorial/video-calling/?utm_source=newsletter\\&utm_medium=referral\\&utm_content=\\&utm_campaign=thisweekinreact)",
+      "source_content_hash": "8ccdb65c7ed941f2f010296bcf672290bae595c4721740d0dd265fe157710222",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![ソロからコラボレーションへ: React + Stream Video！](/emails/issues/213/stream.jpg)](https://getstream.io/video/sdk/react/tutorial/video-calling/?utm_source=newsletter\\&utm_medium=referral\\&utm_content=\\&utm_campaign=thisweekinreact)"
+      }
+    },
+    {
+      "segment_id": "eb51d107",
+      "source_content": "**[From solo to collaborative: React + Stream Video!](https://getstream.io/video/sdk/react/tutorial/video-calling/?utm_source=newsletter\\&utm_medium=referral\\&utm_content=\\&utm_campaign=thisweekinreact)**",
+      "source_content_hash": "1567f84dd448591f701ac5d537328f52e86c02562e87c8e936725c4755581e71",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[ソロからコラボレーションへ: React + Stream Video！](https://getstream.io/video/sdk/react/tutorial/video-calling/?utm_source=newsletter\\&utm_medium=referral\\&utm_content=\\&utm_campaign=thisweekinreact)**"
+      }
+    },
+    {
+      "segment_id": "1862c5fe",
+      "source_content": "Stream's Video React SDK empowers developers to integrate video calls, conferencing, and livestreaming with ease.",
+      "source_content_hash": "2b2eb42e38e38cc5f46bfb49c78f7709dc60f568ed5d4cc059c592ce4bb47f27",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "StreamのVideo React SDKは、開発者がビデオ通話、会議、ライブストリーミングを簡単に統合できるようにします。"
+      }
+    },
+    {
+      "segment_id": "6ca4479f",
+      "source_content": "✔️ **By Developers for Developers:** Fully customizable UI components and hooks, comprehensive documentation, and quickstart templates.",
+      "source_content_hash": "38b48481e9abf38182050d93767a941f8dcc0abe4fc1aafa32e0d97d5474d8cb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "✔️ **開発者による開発者のための:** 完全にカスタマイズ可能なUIコンポーネントとフック、包括的なドキュメント、クイックスタートテンプレート。"
+      }
+    },
+    {
+      "segment_id": "a2c0166e",
+      "source_content": "✔️ **Blazing-Fast Performance:** Sub-200ms latency and WebRTC-powered scalability.",
+      "source_content_hash": "0a050b871279e027cebdf122a632c06c94b9771bdae6477866b7909e0daaad5a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "✔️ **超高速パフォーマンス:** 200ms未満のレイテンシとWebRTCによるスケーラビリティ。"
+      }
+    },
+    {
+      "segment_id": "c1eaf30b",
+      "source_content": "✔️ **Out-of-the-Box Features:** Group calls, screen sharing, and adaptive bitrate, codecs, etc.",
+      "source_content_hash": "90e30a30c436d900e50dd19159bcf94a8ffe8e51e65cd25e0025f024661c47ee",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "✔️ **すぐに使える機能:** グループ通話、画面共有、適応型ビットレート、コーデックなど。"
+      }
+    },
+    {
+      "segment_id": "f0984c2a",
+      "source_content": "Build Fast. Scale Effortlessly. [Get Started With Stream](https://getstream.io/try-for-free/?utm_source=newsletter\\&utm_medium=referral\\&utm_content=\\&utm_campaign=thisweekinreact).",
+      "source_content_hash": "003f231cfc898d59002951fc41da049fb43b99afffbced90d07c4b220917464d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "迅速に構築。簡単にスケール。[Streamを今すぐ始める](https://getstream.io/try-for-free/?utm_source=newsletter\\&utm_medium=referral\\&utm_content=\\&utm_campaign=thisweekinreact)。"
+      }
+    },
+    {
+      "segment_id": "bc8bc928",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "722e4930",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "3c19e221",
+      "source_content": "[![State of React Native 2024](/emails/issues/213/state_of_rn.jpg)](https://stateofreactnative.com/)",
+      "source_content_hash": "c5617dd564cd36d78a65d55697f54848d68ae5f867a9d712f98b3896ebf692a3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![State of React Native 2024](/emails/issues/213/state_of_rn.jpg)](https://stateofreactnative.com/)"
+      }
+    },
+    {
+      "segment_id": "d21af28f",
+      "source_content": "**[State of React Native 2024](https://stateofreactnative.com/)**",
+      "source_content_hash": "0cca293623300cf56a870b51a3e0e596ffa26021dba78dc0c2e75c32e7a06930",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[State of React Native 2024](https://stateofreactnative.com/)**"
+      }
+    },
+    {
+      "segment_id": "44aaa880",
+      "source_content": "The State of React Native 2024 survey is live! 📊 This is your chance to influence the future of React Native by sharing insights on trends, tools, and challenges. Your feedback helps guide the Expo and Meta teams in shaping improvements each year, benefiting the entire community.",
+      "source_content_hash": "3ef36caf49be175cc53d5d43bbcf9c3f44d0f42415c4251e892e0db96c054944",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "State of React Native 2024調査が開始されました！📊 これは、React Nativeの未来に影響を与えるチャンスです。トレンド、ツール、課題に関する洞察を共有することで、ExpoとMetaチームが毎年改善を進めるための指針となります。あなたのフィードバックがコミュニティ全体に利益をもたらします。"
+      }
+    },
+    {
+      "segment_id": "513f3dff",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "10e4f9ca",
+      "source_content": "* 💸 [React Native Mastery - Now open for enrollment!](https://notjust.dev/react-native-mastery?utm_source=twir\\&utm_medium=email)\n* 🐦 [RN Unistyles v3 supports scoped theme](https://x.com/jpudysz/status/1865460854717632737): A missing feature since the removal of `UnistylesTheme` in v2.\n* 📜 [The real-world impact of Shared Objects in Expo Modules](https://expo.dev/blog/the-real-world-impact-of-shared-objects): Shared Objects in Expo Modules enable seamless integration between native and JavaScript, improving API design and cross-package compatibility.\n* 📜 [Introducing Uniffi for React Native: Rust-Powered Turbo Modules](https://hacks.mozilla.org/2024/12/introducing-uniffi-for-react-native-rust-powered-turbo-modules/): Uniffi for React Native integrates Rust with Turbo Modules, unlocking the entire Rust crates ecosystem for React Native apps.\n* 📜 [Automated EAS Updates in a bare React Native app with Multiple Flavors & Schemes](https://shift.infinite.red/automated-eas-updates-in-a-bare-react-native-app-with-multiple-flavors-schemes-dcdf17963079): An article perfectly timed for projects that don’t use Expo or EAS but rely on CodePush, and are in need of an OTA update solution before CodePush is officially sunset.\n* 📜 [Developing a React Native TV App](https://www.callstack.com/blog/developing-a-react-native-tv-app)\n* 📦 [React Native Sheet Transitions - Beautiful universal sheet transitions](https://github.com/saulamsal/react-native-sheet-transitions): Looks impressive, but still in active development.\n* 📦 [@lingui/metro-transformer](https://lingui.dev/blog/2024/11/20/metro-transformer): Eliminates the need to precompile `.po` translation files by handling compilation during Metro bundling.\n* 📦 [React Native Fast IO pre-release](https://github.com/callstackincubator/react-native-fast-io): High-performance I/O solution for React Native, implementing standard W3C APIs like WebSocket, Fetch, FileSystem, Blob, and Streams, powered by Nitro.\n* 📦 [React Native Bottom Tabs v0.7.2 - macOS support, support for sidebars](https://github.com/okwasniewski/react-native-bottom-tabs/releases/tag/react-native-bottom-tabs%400.7.2)\n* 📦 [React Native Video Player v0.15](https://github.com/TheWidlarzGroup/react-native-video-player/releases/tag/v0.15.0)\n* 🎥 [A live demo of Radon IDE: the VS Code extension for streamlining development](https://www.youtube.com/watch?v=UeYmRKWhwFI)\n* 🎙️ [RNR 316 - Debugging the Debugger with Cedric van Putten and Alex Hunt](https://reactnativeradio.com/episodes/rnr-316-debugging-the-debugger-with-cedric-van-putten-and-alex-hunt)",
+      "source_content_hash": "964198d1a458c8392a7b1882bfd8f092a32976ded8394b78a1da09eee79093aa",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [React Native Mastery - 現在募集中！](https://notjust.dev/react-native-mastery?utm_source=twir\\&utm_medium=email)\n* 🐦 [RN Unistyles v3がスコープ付きテーマをサポート](https://x.com/jpudysz/status/1865460854717632737): v2で`UnistylesTheme`が削除されて以来の欠けていた機能。\n* 📜 [Expo ModulesにおけるShared Objectsの実世界での影響](https://expo.dev/blog/the-real-world-impact-of-shared-objects): Expo ModulesのShared Objectsは、ネイティブとJavaScript間のシームレスな統合を可能にし、API設計とクロスパッケージ互換性を向上させます。\n* 📜 [React Native向けUniffiの紹介: RustパワーのTurbo Modules](https://hacks.mozilla.org/2024/12/introducing-uniffi-for-react-native-rust-powered-turbo-modules/): React Native向けUniffiは、RustとTurbo Modulesを統合し、React Nativeアプリ向けにRust cratesエコシステム全体を開放します。\n* 📜 [複数のFlavorとSchemeを持つベアReact Nativeアプリでの自動化されたEAS Updates](https://shift.infinite.red/automated-eas-updates-in-a-bare-react-native-app-with-multiple-flavors-schemes-dcdf17963079): ExpoやEASを使用せず、CodePushに依存しているプロジェクト向けの記事。CodePushが正式にサンセットされる前にOTA更新ソリューションが必要な場合に最適です。\n* 📜 [React Native TVアプリの開発](https://www.callstack.com/blog/developing-a-react-native-tv-app)\n* 📦 [React Native Sheet Transitions - 美しいユニバーサルシートトランジション](https://github.com/saulamsal/react-native-sheet-transitions): 印象的ですが、まだ開発中です。\n* 📦 [@lingui/metro-transformer](https://lingui.dev/blog/2024/11/20/metro-transformer): `.po`翻訳ファイルのプリコンパイルが不要になり、Metroバンドリング時にコンパイルを処理します。\n* 📦 [React Native Fast IOプレリリース](https://github.com/callstackincubator/react-native-fast-io): React Native向けの高性能I/Oソリューション。WebSocket、Fetch、FileSystem、Blob、Streamsなどの標準W3C APIを実装し、Nitroによって駆動されます。\n* 📦 [React Native Bottom Tabs v0.7.2 - macOSサポート、サイドバーサポート](https://github.com/okwasniewski/react-native-bottom-tabs/releases/tag/react-native-bottom-tabs%400.7.2)\n* 📦 [React Native Video Player v0.15](https://github.com/TheWidlarzGroup/react-native-video-player/releases/tag/v0.15.0)\n* 🎥 [Radon IDEのライブデモ: 開発を効率化するVS Code拡張機能](https://www.youtube.com/watch?v=UeYmRKWhwFI)\n* 🎙️ [RNR 316 - Cedric van PuttenとAlex Huntによるデバッガーのデバッグ](https://reactnativeradio.com/episodes/rnr-316-debugging-the-debugger-with-cedric-van-putten-and-alex-hunt)"
+      }
+    },
+    {
+      "segment_id": "f1a2be1a",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "13292277",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "292df6cb",
+      "source_content": "* 📜 [TC39 105th meeting](https://dev.to/hemanth/updates-from-the-105th-tc39-meeting-3gkh): several ES proposals progressed this week including Intl.DurationFormat, Immutable ArrayBuffer, Import Sync and more.\n* 📜 [Airtable - Scaling TypeScript to thousands of projects](https://medium.com/airtable-eng/a-leap-in-the-evolution-of-airtables-codebase-scaling-typescript-to-thousands-of-projects-734326c3a553)\n* 📜 [Node.js Delivers First LTS with require(esm) Enabled, Enhances Security and Release Automation](https://socket.dev/blog/node-js-delivers-first-lts-with-require-esm-enabled)\n* 📜 [Solving N² Complexity with JavaScript Maps](https://davidbonan.io/blog/solving-n2-complexity-with-javascript-maps)\n* 📜 [CSS Wrapped 2024](https://chrome.dev/css-wrapped-2024/)\n* 📜 [How to improve your page load time with browser caching | DebugBear](https://www.debugbear.com/blog/browser-caching)\n* 📜 [Exploring Node.js Readable Streams](https://pavel-romanov.com/exploring-the-core-concepts-of-nodejs-readable-streams)\n* 📦 [OpenAuth - Universal, standards-based auth provider](https://openauth.js.org/)\n* 📦 [Dioxus 0.6 - Rust fullstack cross-platform app framework](https://dioxuslabs.com/blog/release-060): Looks like it's taking a lot of inspiration from React, and this large release adds many things such as Server Functions, SSG/ISG, Streaming HTML and much more.",
+      "source_content_hash": "0bd01cd35c74b4d43283618d529bd91dbc9f1421c6a9cd609901e1ebda671d0b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📜 [TC39 第105回会議](https://dev.to/hemanth/updates-from-the-105th-tc39-meeting-3gkh): Intl.DurationFormat、Immutable ArrayBuffer、Import Syncなど、いくつかのES提案が進展しました。\n* 📜 [Airtable - TypeScriptを数千プロジェクトにスケーリング](https://medium.com/airtable-eng/a-leap-in-the-evolution-of-airtables-codebase-scaling-typescript-to-thousands-of-projects-734326c3a553)\n* 📜 [Node.js、require(esm)を有効にした初のLTSをリリース、セキュリティとリリース自動化を強化](https://socket.dev/blog/node-js-delivers-first-lts-with-require-esm-enabled)\n* 📜 [JavaScriptのMapでN²の複雑さを解決](https://davidbonan.io/blog/solving-n2-complexity-with-javascript-maps)\n* 📜 [CSS Wrapped 2024](https://chrome.dev/css-wrapped-2024/)\n* 📜 [ブラウザキャッシュでページ読み込み時間を改善する方法 | DebugBear](https://www.debugbear.com/blog/browser-caching)\n* 📜 [Node.jsのReadable Streamsを探る](https://pavel-romanov.com/exploring-the-core-concepts-of-nodejs-readable-streams)\n* 📦 [OpenAuth - ユニバーサルで標準ベースの認証プロバイダ](https://openauth.js.org/)\n* 📦 [Dioxus 0.6 - Rust製フルスタッククロスプラットフォームアプリフレームワーク](https://dioxuslabs.com/blog/release-060): Reactから多くのインスピレーションを得ており、この大規模リリースではServer Functions、SSG/ISG、Streaming HTMLなど多くの機能が追加されました。"
+      }
+    },
+    {
+      "segment_id": "0bed0da6",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "6ab1b234",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "42d9ca67",
+      "source_content": "[![React 19 PeerDependencies](/emails/issues/213/react_19_meme.jpg)](https://bsky.app/profile/did\\:plc\\:hxmev3uady7j4litwnr5fzbg/post/3laz2eyx77k2l)",
+      "source_content_hash": "dfb64716e66aeb59aa228fb4d52af1eef240d804edbda83accb806c9f85e0346",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![React 19 PeerDependencies](/emails/issues/213/react_19_meme.jpg)](https://bsky.app/profile/did\\:plc\\:hxmev3uady7j4litwnr5fzbg/post/3laz2eyx77k2l)"
+      }
+    },
+    {
+      "segment_id": "619c3209",
+      "source_content": "[![JavaScript Math.sin](/emails/issues/213/math_sin.jpg)](https://x.com/davesnx/status/1863991593432391711)",
+      "source_content_hash": "0875c3383ba34faec2fb3734fb1e4c53292563e6cee2bf4865613bd3d8c30989",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![JavaScript Math.sin](/emails/issues/213/math_sin.jpg)](https://x.com/davesnx/status/1863991593432391711)"
+      }
+    },
+    {
+      "segment_id": "44285072",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "それではまた！👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/213/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:41.108729+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "3fc02eadd5c2423b510f8c9e3619e833a6d3c953d61eb858d5d6c7bfc3124d73"
+  }
+}

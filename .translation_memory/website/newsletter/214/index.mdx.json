@@ -1,0 +1,512 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/214/index.mdx",
+  "source_file_content_hash": "5fa3dd1aa0a7ddf9b1649ef31f702f368c5c86e375429ffb27bb6b68723057a3",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /214\ntitle: \"This Week In React #214: Base UI, Custom Elements, Next.js, React Router, TanStack, i18n, OG, Apollo, Android XR, iOS targets, Nitro, RNTL, Volume Manager, Drag Select, brownfield, Zod, Node, SourceMaps, Bun, State Of JS...\"\nauthors: [slorber]\ndate: 12-18-2024\n---",
+      "source_content_hash": "ecb1a755b62e8d716ab5eb5996e03d719e80789c389e14d77c6115585020e72c",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week I'm excited about a promising new headless component library, and I've found various interesting articles about Web Components relevant to React developers.",
+      "source_content_hash": "9572e8c657193fd8bc37fb2bca05e9b34bcb991b129dd74a370336881c1b98d9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週は、有望な新しいヘッドレスコンポーネントライブラリに興奮しています。また、React開発者に関連するWeb Componentsについての興味深い記事をいくつか見つけました。"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "On the mobile side, Google introduced Android XR and React Native support is already coming!",
+      "source_content_hash": "42fa8ff851a662eba03f197896b7ccd118702e21ee4988da90b34ce34b9991d7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "モバイル分野では、GoogleがAndroid XRを発表し、React Nativeのサポートもすでに進行中です！"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "🎄 We are taking a Christmas break, this is the last newsletter until 8th January.\\\n🧑‍🎄 You've already given me a great gift, we are now 4th most popular JS newsletter according to the recently published [State of JS 2024 survey result](https://2024.stateofjs.com/en-US/resources/).",
+      "source_content_hash": "78a714e28e9d3ffe710fa57d3a6643b25b7832f0afc245d18ae3e2b901ab85fe",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🎄 クリスマス休暇を取ります。次回のニュースレターは1月8日までお休みです。\\\n🧑‍🎄 皆さんから素晴らしい贈り物をいただきました。[State of JS 2024調査結果](https://2024.stateofjs.com/en-US/resources/)によると、私たちは現在4番目に人気のあるJSニュースレターになりました。"
+      }
+    },
+    {
+      "segment_id": "cc2c29e1",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_cc2c29e1"
+      }
+    },
+    {
+      "segment_id": "2790c0f8",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_2790c0f8"
+      }
+    },
+    {
+      "segment_id": "1485a88b",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_1485a88b"
+      }
+    },
+    {
+      "segment_id": "18e2d98b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "ed7dde9c",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "a76548f8",
+      "source_content": "[![Become a better engineer one newsletter at a time.](/emails/issues/183/posthog.jpg)](https://dub.link/twir-dec18)",
+      "source_content_hash": "8f7959b385b501683cd2748c2b5e76b971c187adccd4b6c94333218bb6cd9387",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Become a better engineer one newsletter at a time.](/emails/issues/183/posthog.jpg)](https://dub.link/twir-dec18)"
+      }
+    },
+    {
+      "segment_id": "4b1d2d7d",
+      "source_content": "**[Become a better engineer one newsletter at a time.](https://dub.link/twir-dec18)**",
+      "source_content_hash": "f95a156f0a25568b14dd31edafc4ab2ac75f670387fe5b14d449939aff2eae87",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[ニュースレターで少しずつ優れたエンジニアになりましょう。](https://dub.link/twir-dec18)**"
+      }
+    },
+    {
+      "segment_id": "dfe931a2",
+      "source_content": "[Product for Engineers](https://dub.link/twir-dec18) is PostHog’s newsletter dedicated to helping engineers improve their product skills.",
+      "source_content_hash": "c45ed005c2ca09efebe89ac7220481985e7dbfe6412f41cad81366f799d1b9a3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[Product for Engineers](https://dub.link/twir-dec18)は、エンジニアが製品スキルを向上させるのに役立つPostHogのニュースレターです。"
+      }
+    },
+    {
+      "segment_id": "4daf5cdd",
+      "source_content": "With over 30k subscribers, it is a trusted source that bridges the gap between product and engineering, helping you ship products users love.",
+      "source_content_hash": "16339ef9f0e3621e3ee0e1eb7c5eb89451745a4011662ec43924a9d1efed4c4c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "3万人以上の購読者を抱えるこのニュースレターは、製品とエンジニアリングのギャップを埋め、ユーザーが愛する製品をリリースする手助けをします。"
+      }
+    },
+    {
+      "segment_id": "bdc231b1",
+      "source_content": "It covers topics like how to choose the right technologies, non-obvious behaviors that will kill your startup, and A/B testing mistakes they learned the hard way. It’s totally free and always will be.",
+      "source_content_hash": "8ea4cfb5af5324dfa4760d37d240ae5a8b878422fc3c56e2065f6aaf64d02522",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "適切な技術の選び方、スタートアップを失敗させる非自明な行動、そして彼らが苦労して学んだA/Bテストの失敗などについて取り上げています。完全無料で、今後も無料のままです。"
+      }
+    },
+    {
+      "segment_id": "97ae4a01",
+      "source_content": "[**Subscribe for free.**](https://dub.link/twir-dec18)",
+      "source_content_hash": "4c9c13e40c2031b996a5287e6625926df0d884495571527fbc27b6350070df58",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**無料で購読する。**](https://dub.link/twir-dec18)"
+      }
+    },
+    {
+      "segment_id": "9438ce36",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "9f9e64f5",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "1042b50d",
+      "source_content": "[![Base UI 1.0 alpha](/emails/issues/214/base-ui.jpg)](https://base-ui.com/)",
+      "source_content_hash": "719df9f52d16b1059ec6bb976089715a21440191c4c6c8cbb3252ff06b04f2ca",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Base UI 1.0 alpha](/emails/issues/214/base-ui.jpg)](https://base-ui.com/)"
+      }
+    },
+    {
+      "segment_id": "aa1e7006",
+      "source_content": "[**Base UI 1.0 alpha**](https://base-ui.com/)",
+      "source_content_hash": "ae6869c171a8b2691716f952ba79c715d20ec2dec5a34ff90f0bc2e6ca95334c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**Base UI 1.0 alpha**](https://base-ui.com/)"
+      }
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "I’m usually not into UI libs. But when Radix, MUI and Floating UI creators gather to create a new set of 25 unstyled, accessible, composable primitive components with great care to details, I think it’s worth paying attention! Radix is super popular these days (notably thanks to shadcn/ui), but has been [less actively maintained](https://github.com/radix-ui/primitives/graphs/contributors) recently, and a new headless lib challenger is always welcome!",
+      "source_content_hash": "ffe543e3e3a680c3d2747064fb2ca3ee59730feab5061522481ad1a6bf986b40",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "私は通常UIライブラリには興味がありません。しかし、Radix、MUI、Floating UIの開発者たちが集まって、25のスタイルなしでアクセシブルで構成可能なプリミティブコンポーネントを作成し、細部までこだわっているのを見ると、注目する価値があると思います！Radixは現在非常に人気があります（特にshadcn/uiのおかげで）が、最近は[メンテナンスがやや減少](https://github.com/radix-ui/primitives/graphs/contributors)しており、新しいヘッドレスライブラリの登場は常に歓迎です！"
+      }
+    },
+    {
+      "segment_id": "67c8996f",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "**React 19 and Custom Elements**",
+      "source_content_hash": "38fff2dae77e627a62c29861c5648d7ccd92baf3c0212d76f727e38f2367eb80",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**React 19とカスタム要素**"
+      }
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "Various related articles I found interesting:",
+      "source_content_hash": "c1f083a0efc045ad681ce291a31b05b297f6fde254d6bdb820f6ea324d0fe20a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "興味深い関連記事をいくつか見つけました："
+      }
+    },
+    {
+      "segment_id": "c94a9c0e",
+      "source_content": "* 📜 [React 19 and Web Component Examples](https://frontendmasters.com/blog/react-19-and-web-component-examples/): Chris Coyier testing React 19 custom elements support by creating a Lit element and rendering it though JSX. You can seamlessly pass an object as props, but for event handlers you may need to dispatch a custom event.\n* 📜 [React 19 introduces full support for custom elements](https://aleks-elkin.github.io/posts/2024-12-06-react-19/): Comparing support improvement between React 18 and React 19.\n* 📜 [Sweet Suspense](https://plainvanillaweb.com/blog/articles/2024-09-09-sweet-suspense/): Fun experiment recreating React lazy/Suspense/ErrorBoundary with custom elements.\n* 📜 [Isomorphic Web Components](https://jakelazaroff.com/words/isomorphic-web-components/): Not using React, but a useful overview of server-side rendering support for Web components.",
+      "source_content_hash": "fb2975faabb19b7c1948084f6869bd6aa9a1cb621847d0147d3b7c7b5ff3f0da",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📜 [React 19とWeb Componentの例](https://frontendmasters.com/blog/react-19-and-web-component-examples/): Chris CoyierがReact 19のカスタム要素サポートをテストし、Lit要素を作成してJSX経由でレンダリングしています。オブジェクトをプロパティとしてシームレスに渡せますが、イベントハンドラにはカスタムイベントのディスパッチが必要な場合があります。\n* 📜 [React 19がカスタム要素の完全サポートを導入](https://aleks-elkin.github.io/posts/2024-12-06-react-19/): React 18とReact 19のサポート改善を比較しています。\n* 📜 [Sweet Suspense](https://plainvanillaweb.com/blog/articles/2024-09-09-sweet-suspense/): Reactのlazy/Suspense/ErrorBoundaryをカスタム要素で再現する楽しい実験です。\n* 📜 [Isomorphic Web Components](https://jakelazaroff.com/words/isomorphic-web-components/): Reactは使用していませんが、Web Componentsのサーバーサイドレンダリングサポートについての有用な概要です。"
+      }
+    },
+    {
+      "segment_id": "b760ab3f",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "24c174ca",
+      "source_content": "* 💸 [React Bricks – the Visual CMS for React got more accessible with lower entry price and flexible pay-as-you-go options. Start for free!](https://www.reactbricks.com/?utm_source=twir\\&utm_campaign=ql24)\n* 🐦 [Lee Robinson explains why transitioning between pages when running Next.js locally take time](https://x.com/leeerob/status/1869095675201192335)\n* 👀 [Next.js PR - `unstable_rootParams()`](https://github.com/vercel/next.js/pull/72837): A new convenient experimental API to return path params from all path segments up to the root layout. Looks particularly useful for accessing a i18n `[locale]` param.\n* 👀 [Next.js PR - `experimental.newDevOverlay`](https://github.com/vercel/next.js/pull/73977): A new dev overlay is coming and the feature flag already exists.\n* 👀 [Rsbuild PR - plugin-react-router](https://github.com/web-infra-dev/rsbuild/pull/4186): React Router framework features (Remix) are now implemented as a Vite plugin, but it seems other bundlers could also turn React Router into a framework 😲\n* 🎄 [GitHub Unwrapped 2024](https://githubunwrapped.com/): The Remotion-based project has just been update for 2024.\n* 📜 [How to validate your React i18next application](https://lingual.dev/blog/how-to-validate-your-react-i18next-application/): Present a workflow based on react-i18next to prevent missing, unused, and invalid translation keys. There’s another post for react-intl users.\n* 📜 [Rails + Stimulus + React - The definitive way to integrate](https://blog.codeminer42.com/rails-stimulus-react/): Using Stimulus data attributes to mount a React autocomplete component on a Rails page.\n* 📜 [Build-time Open Graph Images in Remix](https://kettanaito.com/blog/build-time-og-images-in-remix): Explains limits of Satori, and introduces a new remix-og-image Vite plugin that spawns a Chromium instance.\n* 📜 [5 tips to effectively optimize INP in React](https://calendar.perfplanet.com/2024/5-tips-to-effectively-optimize-inp-in-react/): Reduce DOM size, split components, use Suspense, avoid hydration errors, pay attention to useEffect that can be synchronous.\n* 📜 [You might not need a React Form Library](https://www.robinwieruch.de/react-form-validation/): Shows how to validate forms server-side and client-side without a library.\n* 📜 [Introducing TanStack Start](https://frontendmasters.com/blog/introducing-tanstack-start/)\n* 📜 [React Tech Stack for 2025](https://www.robinwieruch.de/react-tech-stack/)\n* 📜 [Sharing Types and Code Between the Server and Client](https://echobind.com/post/sharing-types-and-code-between-the-server-and-client)\n* 📜 [Storybook tags - Organize your components and stories to match the way you work](https://storybook.js.org/blog/storybook-tags/)\n* 📜 [The Mental Model of Server Components](https://saewitz.com/the-mental-model-of-server-components)\n* 📜 [How to Dockerize a React App](https://www.docker.com/blog/how-to-dockerize-react-app/)\n* 📦 [Inertia 2.0 - Redefining Frontend Development for Laravel](https://blog.laravel.com/announcing-inertia-20-redefining-frontend-development-for-laravel): New major version of this tool that seamlessly integrates React into PHP backends. New features: async requests, deferred props, prefetching, polling.\n* 📦 [Apollo Client 3.12 - GraphQL fragment data masking](https://www.apollographql.com/blog/more-resilient-code-with-data-masking-in-apollo-client-3-12): Similar to Relay, Apollo Client improves in colocation, encapsulation, and performance. A component will only receive the fields it needs, and nothing more.\n* 📦 [Virtua 0.39 - Zero-config, fast and small virtual list - React 19 support](https://github.com/inokawa/virtua)\n* 📦 [Material UI EoY update - MUI v5/6 are compatible with React 19](https://mui.com/blog/material-ui-2024-updates/)\n* 📦 [Roadmap UI - Composable components for building interactive roadmaps - Gantt, Kanban, Calendar, List, Table](https://www.roadmap-ui.com/)\n* 🎥 [Justin Poli - What happens when you break the rules of React?](https://www.youtube.com/watch?v=NsFD-1HkJNU): Mobx-State-Tree maintainer explains plan to make the reactive library compatible with the React Compiler.\n* 🎥 [Wawa Sensei - My Journey Coding a VR/AR Rhythm Game with Three.js & React Three Fiber](https://www.youtube.com/watch?v=jBh4ftHqC5U)\n* 🎥 [Theo - Astro stole my favorite parts of Next (and I'm hyped)](https://www.youtube.com/watch?v=3xqa0SsRbdM)\n* 🎥 [Shruti Kapoor - React 19: The Features You Actually Want](https://www.youtube.com/watch?v=Hek-Ux9jha8)",
+      "source_content_hash": "1857d22313ba4be4753eacfafdf26d146ba0415c356c2230a1b8c5e5751099e4",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [React Bricks – React向けビジュアルCMSがよりアクセスしやすくなり、低価格のエントリープランと柔軟な従量課金オプションを提供。無料でスタート！](https://www.reactbricks.com/?utm_source=twir\\&utm_campaign=ql24)\n* 🐦 [Lee Robinsonが、Next.jsをローカルで実行時のページ遷移に時間がかかる理由を説明](https://x.com/leeerob/status/1869095675201192335)\n* 👀 [Next.js PR - `unstable_rootParams()`](https://github.com/vercel/next.js/pull/72837): ルートレイアウトまでのすべてのパスセグメントからパラメータを返す便利な新しい実験的API。i18nの`[locale]`パラメータへのアクセスに特に有用。\n* 👀 [Next.js PR - `experimental.newDevOverlay`](https://github.com/vercel/next.js/pull/73977): 新しい開発オーバーレイが導入され、機能フラグが既に存在。\n* 👀 [Rsbuild PR - plugin-react-router](https://github.com/web-infra-dev/rsbuild/pull/4186): React Routerのフレームワーク機能（Remix）がViteプラグインとして実装され、他のバンドラーもReact Routerをフレームワーク化できる可能性。\n* 🎄 [GitHub Unwrapped 2024](https://githubunwrapped.com/): Remotionベースのプロジェクトが2024年版に更新。\n* 📜 [React i18nextアプリケーションの検証方法](https://lingual.dev/blog/how-to-validate-your-react-i18next-application/): 欠落、未使用、無効な翻訳キーを防ぐreact-i18nextベースのワークフローを紹介。react-intlユーザー向けの別記事もあり。\n* 📜 [Rails + Stimulus + React - 統合の決定版](https://blog.codeminer42.com/rails-stimulus-react/): Stimulusのデータ属性を使用してRailsページにReactのオートコンプリートコンポーネントをマウント。\n* 📜 [Remixでのビルド時Open Graph画像生成](https://kettanaito.com/blog/build-time-og-images-in-remix): Satoriの制限を説明し、Chromiumインスタンスを生成する新しいremix-og-image Viteプラグインを紹介。\n* 📜 [ReactでINPを効果的に最適化する5つのヒント](https://calendar.perfplanet.com/2024/5-tips-to-effectively-optimize-inp-in-react/): DOMサイズの削減、コンポーネント分割、Suspenseの使用、ハイドレーションエラーの回避、同期可能なuseEffectへの注意。\n* 📜 [Reactフォームライブラリが不要な場合](https://www.robinwieruch.de/react-form-validation/): ライブラリなしでサーバーサイドとクライアントサイドのフォーム検証を実装する方法を紹介。\n* 📜 [TanStack Startの紹介](https://frontendmasters.com/blog/introducing-tanstack-start/)\n* 📜 [2025年のReactテックスタック](https://www.robinwieruch.de/react-tech-stack/)\n* 📜 [サーバーとクライアント間での型とコードの共有](https://echobind.com/post/sharing-types-and-code-between-the-server-and-client)\n* 📜 [Storybookタグ - 作業スタイルに合わせてコンポーネントとストーリーを整理](https://storybook.js.org/blog/storybook-tags/)\n* 📜 [サーバーコンポーネントのメンタルモデル](https://saewitz.com/the-mental-model-of-server-components)\n* 📜 [ReactアプリのDocker化方法](https://www.docker.com/blog/how-to-dockerize-react-app/)\n* 📦 [Inertia 2.0 - Laravel向けフロントエンド開発の再定義](https://blog.laravel.com/announcing-inertia-20-redefining-frontend-development-for-laravel): ReactをPHPバックエンドにシームレスに統合するツールの新メジャーバージョン。新機能: 非同期リクエスト、遅延プロップ、プリフェッチ、ポーリング。\n* 📦 [Apollo Client 3.12 - GraphQLフラグメントデータマスキング](https://www.apollographql.com/blog/more-resilient-code-with-data-masking-in-apollo-client-3-12): Relayと同様に、Apollo Clientがコロケーション、カプセル化、パフォーマンスを改善。コンポーネントは必要なフィールドのみを受け取り、余分なデータは含まれない。\n* 📦 [Virtua 0.39 - ゼロ設定、高速で軽量な仮想リスト - React 19サポート](https://github.com/inokawa/virtua)\n* 📦 [Material UI年末アップデート - MUI v5/6がReact 19と互換性](https://mui.com/blog/material-ui-2024-updates/)\n* 📦 [Roadmap UI - インタラクティブなロードマップ構築のためのコンポーザブルコンポーネント - ガント、かんばん、カレンダー、リスト、テーブル](https://www.roadmap-ui.com/)\n* 🎥 [Justin Poli - Reactのルールを破るとどうなるか？](https://www.youtube.com/watch?v=NsFD-1HkJNU): Mobx-State-Treeメンテナーが、React Compilerとの互換性を持たせるための計画を説明。\n* 🎥 [Wawa Sensei - Three.js & React Three FiberでVR/ARリズムゲームをコーディングした道のり](https://www.youtube.com/watch?v=jBh4ftHqC5U)\n* 🎥 [Theo - AstroがNextのお気に入り機能を奪った（そして興奮している）](https://www.youtube.com/watch?v=3xqa0SsRbdM)\n* 🎥 [Shruti Kapoor - React 19: 本当に欲しい機能](https://www.youtube.com/watch?v=Hek-Ux9jha8)"
+      }
+    },
+    {
+      "segment_id": "897e0025",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_897e0025"
+      }
+    },
+    {
+      "segment_id": "c9716ede",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "39db08de",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "785750ac",
+      "source_content": "[![Interactive Chat Made Easy with Stream’s React SDK.](/emails/issues/214/stream.jpg)](https://getstream.io/chat/react-chat/tutorial/?utm_source=newsletter\\&utm_medium=referral\\&utm_content=\\&utm_campaign=thisweekinreact)",
+      "source_content_hash": "1889e5bee8d6f7700e16c1c5084313f8745b420af753c943ce61d762903f74df",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![StreamのReact SDKで簡単にインタラクティブチャットを実装。](/emails/issues/214/stream.jpg)](https://getstream.io/chat/react-chat/tutorial/?utm_source=newsletter\\&utm_medium=referral\\&utm_content=\\&utm_campaign=thisweekinreact)"
+      }
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "**[Interactive Chat Made Easy with Stream’s React SDK.](https://getstream.io/chat/react-chat/tutorial/?utm_source=newsletter\\&utm_medium=referral\\&utm_content=\\&utm_campaign=thisweekinreact)**",
+      "source_content_hash": "dd1d3dba00e3eea8e61c7580079c2915daf3e7bb4370c23e2c5b65e0b40472bf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[StreamのReact SDKで簡単にインタラクティブチャットを実装。](https://getstream.io/chat/react-chat/tutorial/?utm_source=newsletter\\&utm_medium=referral\\&utm_content=\\&utm_campaign=thisweekinreact)**"
+      }
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "**🔧 By Developers, for Developers:**",
+      "source_content_hash": "8bb93d8b248170e2737cd3a0a2f5cd5c94c9845e3bcd18db7783e91244566075",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**🔧 開発者による、開発者のためのツール:**"
+      }
+    },
+    {
+      "segment_id": "9f974d3d",
+      "source_content": "* Fully customizable UI components and hooks.\n* Comprehensive documentation and quickstart templates for rapid integration.",
+      "source_content_hash": "548a753dfc2f2cc254d4e3fa50e4498c057e37a3d6e633cbbb3e53d1fd2a0dee",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 完全にカスタマイズ可能なUIコンポーネントとフック。\n* 迅速な統合のための包括的なドキュメントとクイックスタートテンプレート。"
+      }
+    },
+    {
+      "segment_id": "a2c0166e",
+      "source_content": "**⚡ Blazing-Fast Performance:**",
+      "source_content_hash": "dfde55cf54872991caa9b5913ec35205789ffac79f6dcde861d613d40e992097",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**⚡ 超高速パフォーマンス:**"
+      }
+    },
+    {
+      "segment_id": "cd1d0fe2",
+      "source_content": "* Sub-50ms message delivery.\n* Scalable for millions of users with a reliable infrastructure.",
+      "source_content_hash": "640fa71cf5f4ce7c9c6cc82a3648f41bf0cad16109d43cb5b485e111245d3eaa",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 50ms未満のメッセージ配信。\n* 信頼性の高いインフラで数百万ユーザーまでスケーラブル。"
+      }
+    },
+    {
+      "segment_id": "0e80209e",
+      "source_content": "**✨ Out-of-the-Box Features:**",
+      "source_content_hash": "0c69b70f95f2bdd5a3e6849e5ac8e21d89252af4c5e74032a35039f3991f2af4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**✨ すぐに使える機能:**"
+      }
+    },
+    {
+      "segment_id": "38417f80",
+      "source_content": "* Typing indicators, reactions, and threads.\n* Rich media support, including file and image sharing.",
+      "source_content_hash": "b804024d2268e35bc19e969817c2f2f5d26c25550fa6fd50eb67a838d81cc344",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* タイピングインジケーター、リアクション、スレッド。\n* ファイルや画像共有を含むリッチメディアサポート。"
+      }
+    },
+    {
+      "segment_id": "3c19e221",
+      "source_content": "🚀 Build Fast. Scale Effortlessly. [Get Started With Stream](https://getstream.io/try-for-free/?utm_source=newsletter\\&utm_medium=referral\\&utm_content=\\&utm_campaign=thisweekinreact).",
+      "source_content_hash": "b54681b6e593b2ee15b4a1cca9b6894ff78a83fa782df460ace9fc9661103f96",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🚀 高速開発。 effortlessなスケーリング。 [Streamで始める](https://getstream.io/try-for-free/?utm_source=newsletter\\&utm_medium=referral\\&utm_content=\\&utm_campaign=thisweekinreact)。"
+      }
+    },
+    {
+      "segment_id": "55c9cb00",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "f8614e13",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "2a1e835c",
+      "source_content": "* 💸 [Demos - 90+ React Native animations crafted with Reanimated, Gesture Handler, and Skia, by Reactiive](https://reactiive.io/demos?utm_source=thisweekinreact)\n* 📊 [State of React Native 2024 - Survey open, answer it!](https://survey.stateofreactnative.com/)\n* 🐦 [Evan Bacon’s `npx create-target demo`](https://x.com/Baconbrix/status/1868672438898455023): New CLI to create iOS targets (widgets, share extensions) that live alongside your Expo app and can communicate with it through shared storage.\n* 🧵 [Infinite Red - Top 2024 React Native posts](https://x.com/infinite_red/status/1869104889777020951)\n* 📣 [Android XR SDK Developer Preview](https://developers.googleblog.com/en/introducing-android-xr-sdk-developer-preview/): Google announced a new Android platform for extended reality headsets. As you can expect from Oskar, React Native support is coming ([demo](https://x.com/o_kwasniewski/status/1868645896239690009))\n* 📣 [Expo - Upcoming Apple push notification service certificate change](https://expo.dev/blog/upcoming-apple-push-notification-service-certificate-change): Expo Push Service users do not have to do anything.\n* 📜 [Add React Native to the Signal open source app](https://blog.swmansion.com/add-react-native-to-the-signal-open-source-app-part-2-android-803c1b726582): 2-part series (iOS + Android) shows how to integrate brownfield RN into an existing app.\n* 📜 [How to Upgrade React Native in a Brownfield Application](https://www.callstack.com/blog/how-to-upgrade-react-native-in-a-brownfield-application)\n* 📜 [How we promote social sharing on Marathon with Expo](https://expo.dev/blog/how-we-promote-social-sharing-on-marathon-with-expo)\n* 📜 [Building Seamless Navigation in Expo Router: Tabs, Modals, and Stacks](https://medium.com/@coby09/building-seamless-navigation-in-expo-router-tabs-modals-and-stacks-2df1a5522321)\n* 📦 [React Native Image Playground](https://github.com/Ucekay/react-native-image-playground): To integrate the brand new iOS 18.2+ Apple Intelligence Image Playground into your app, and generate AI images.\n* 📦 [Nitro 0.19 - Swift errors, bi-directional Promises, type-erasure](https://github.com/mrousavy/nitro/releases/tag/v0.19.0)\n* 📦 [Nitro Palette 1.0 - Fast color palette extraction from images](https://github.com/Ucekay/nitro-palette/releases/tag/v1.0.0)\n* 📦 [React Native Volume Manager 2.0 - New Architecture, 0.76+, iOS 15+, Expo 52+](https://github.com/hirbod/react-native-volume-manager/releases/tag/v2.0.1)\n* 📦 [Drag Select 0.1 - Utility for creating a pan gesture that auto-selects items in a list](https://github.com/osamaqarem/drag-select)\n* 📦 [React Native Testing Library 13.0 RC - Enables concurrent rendering by default, automatically extends Jest matchers](https://github.com/callstack/react-native-testing-library/releases/tag/v13.0.0-rc.0)\n* 🎥 [Dan’s Lab - Basic 3D Graphics with Linear Algebra and React-Native Skia](https://www.youtube.com/watch?v=uZBGcbKFhXE)\n* 🎥 [Expo - Universal Full-Stack Expo Stripe Payment Integration](https://www.youtube.com/watch?v=J0tyxUV_omY)\n* 🎙️ [Rocket Ship 56 - Bluesky's React Native App & AT Protocol with Samuel Newman](https://share.transistor.fm/s/2134db4c)\n* 🎙️ [React Universe On Air - React Native FastIO: Nitro-Powered Performance Boost](https://www.youtube.com/watch?v=u4PBBLujv7I)",
+      "source_content_hash": "bda1c7d0b061aafcd278b90ed2c0b6e25d915474bbb3951b85cccea82921b06e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [デモ - Reanimated、Gesture Handler、Skiaを使用して作成された90以上のReact Nativeアニメーション by Reactiive](https://reactiive.io/demos?utm_source=thisweekinreact)\n* 📊 [State of React Native 2024 - 調査開始、回答してください！](https://survey.stateofreactnative.com/)\n* 🐦 [Evan Baconの`npx create-target demo`](https://x.com/Baconbrix/status/1868672438898455023): Expoアプリと共存し、共有ストレージを通じて通信可能なiOSターゲット（ウィジェット、共有拡張機能）を作成する新しいCLI。\n* 🧵 [Infinite Red - 2024年トップReact Native記事](https://x.com/infinite_red/status/1869104889777020951)\n* 📣 [Android XR SDK Developer Preview](https://developers.googleblog.com/en/introducing-android-xr-sdk-developer-preview/): Googleが拡張現実ヘッドセット向けの新しいAndroidプラットフォームを発表。Oskar氏によると、React Nativeサポートも予定されています（[デモ](https://x.com/o_kwasniewski/status/1868645896239690009)）\n* 📣 [Expo - 今後のAppleプッシュ通知サービス証明書変更について](https://expo.dev/blog/upcoming-apple-push-notification-service-certificate-change): Expo Push Serviceユーザーは何もする必要はありません。\n* 📜 [SignalオープンソースアプリにReact Nativeを追加](https://blog.swmansion.com/add-react-native-to-the-signal-open-source-app-part-2-android-803c1b726582): 既存アプリへのReact Native統合作業をiOSとAndroidの2部構成で解説。\n* 📜 [ブラウンフィールドアプリケーションでReact Nativeをアップグレードする方法](https://www.callstack.com/blog/how-to-upgrade-react-native-in-a-brownfield-application)\n* 📜 [Expoを使用してMarathonでソーシャルシェアリングを促進する方法](https://expo.dev/blog/how-we-promote-social-sharing-on-marathon-with-expo)\n* 📜 [Expo Routerでのシームレスなナビゲーション構築: タブ、モーダル、スタック](https://medium.com/@coby09/building-seamless-navigation-in-expo-router-tabs-modals-and-stacks-2df1a5522321)\n* 📦 [React Native Image Playground](https://github.com/Ucekay/react-native-image-playground): iOS 18.2+のApple Intelligence Image Playgroundをアプリに統合し、AI画像を生成するツール。\n* 📦 [Nitro 0.19 - Swiftエラー、双方向Promise、型消去](https://github.com/mrousavy/nitro/releases/tag/v0.19.0)\n* 📦 [Nitro Palette 1.0 - 画像からの高速カラーパレット抽出](https://github.com/Ucekay/nitro-palette/releases/tag/v1.0.0)\n* 📦 [React Native Volume Manager 2.0 - 新アーキテクチャ、0.76+、iOS 15+、Expo 52+対応](https://github.com/hirbod/react-native-volume-manager/releases/tag/v2.0.1)\n* 📦 [Drag Select 0.1 - リスト内のアイテムを自動選択するパンジェスチャー作成ユーティリティ](https://github.com/osamaqarem/drag-select)\n* 📦 [React Native Testing Library 13.0 RC - デフォルトで並列レンダリングを有効化、Jestマッチャーを自動拡張](https://github.com/callstack/react-native-testing-library/releases/tag/v13.0.0-rc.0)\n* 🎥 [Dan's Lab - React-Native Skiaを使った線形代数と基本的な3Dグラフィックス](https://www.youtube.com/watch?v=uZBGcbKFhXE)\n* 🎥 [Expo - ユニバーサルフルスタックExpo Stripe支払い統合](https://www.youtube.com/watch?v=J0tyxUV_omY)\n* 🎙️ [Rocket Ship 56 - BlueskyのReact Nativeアプリ＆AT Protocol with Samuel Newman](https://share.transistor.fm/s/2134db4c)\n* 🎙️ [React Universe On Air - Nitro搭載のReact Native FastIO: パフォーマンスブースト](https://www.youtube.com/watch?v=u4PBBLujv7I)"
+      }
+    },
+    {
+      "segment_id": "51e8baf4",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "734d40d8",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "6892c8d2",
+      "source_content": "* 📣 [Ecma 426 - Source map format specification](https://ecma-international.org/publications-and-standards/standards/ecma-426/): Believe it or not, it was not standardized yet.\n* 📊 [State of JavaScript 2024](https://2024.stateofjs.com/en-US)\n* 📊 [State of Node.js Performance 2024](https://nodesource.com/blog/State-of-Nodejs-Performance-2024)\n* 📦 [Zod 3.24 - First version to implement the standard-schema specification](https://github.com/colinhacks/zod/releases/tag/v3.24.0)\n* 📦 [Node 23.4 - unflag `node:sqlite` module,`--trace-env`, `assert.partialDeepStrictEqual`](https://nodejs.org/en/blog/release/v23.4.0)\n* 📜 [Bun's new text-based lockfile](https://bun.sh/blog/bun-lock-text-lockfile)",
+      "source_content_hash": "1382cb40e19202f13d4a723726240a18132d8619a4ee03af47ddf535d0decc0b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📣 [Ecma 426 - ソースマップフォーマット仕様](https://ecma-international.org/publications-and-standards/standards/ecma-426/): 信じられないかもしれませんが、これまで標準化されていませんでした。\n* 📊 [State of JavaScript 2024](https://2024.stateofjs.com/en-US)\n* 📊 [State of Node.js Performance 2024](https://nodesource.com/blog/State-of-Nodejs-Performance-2024)\n* 📦 [Zod 3.24 - 標準スキーマ仕様を実装した最初のバージョン](https://github.com/colinhacks/zod/releases/tag/v3.24.0)\n* 📦 [Node 23.4 - `node:sqlite`モジュールのフラグ解除、`--trace-env`、`assert.partialDeepStrictEqual`](https://nodejs.org/en/blog/release/v23.4.0)\n* 📜 [Bunの新しいテキストベースのロックファイル](https://bun.sh/blog/bun-lock-text-lockfile)"
+      }
+    },
+    {
+      "segment_id": "74a488b8",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "b77e7669",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "619c3209",
+      "source_content": "[![alt](/emails/issues/214/meme.jpg)](https://x.com/jordwalke/status/1868092255879540957)",
+      "source_content_hash": "b917be801b38b7623ff93aa59a52382456433ee2a420c4d73fae29c6e709dcc5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/214/meme.jpg)](https://x.com/jordwalke/status/1868092255879540957)"
+      }
+    },
+    {
+      "segment_id": "44285072",
+      "source_content": "[![alt](/emails/issues/214/meme2.jpg)](https://x.com/wesbos/status/1869032343526322378)",
+      "source_content_hash": "e0ebd6ccad5f005a20a2efcf90954f662346db5e5b4241736bc1e6f7298fb80f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/214/meme2.jpg)](https://x.com/wesbos/status/1869032343526322378)"
+      }
+    },
+    {
+      "segment_id": "a8f09c71",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "それでは！ 👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/214/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:41.205140+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "5fa3dd1aa0a7ddf9b1649ef31f702f368c5c86e375429ffb27bb6b68723057a3"
+  }
+}

@@ -1,0 +1,602 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/120/index.mdx",
+  "source_file_content_hash": "96593d37f99aeade8f076bf2a00be3e3404c694d49f471391730bd325d67d07a",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /120\ntitle: \"This Week In React #120: use RFC, Sandpack, Progressive enhancement, Streaming, Storybook, React-Native, Codeflow, Fontaine, Unplugin, Node.js 19, TypeRunner...\"\nauthors: [slorber]\ndate: 10-18-2022\n---",
+      "source_content_hash": "962ca045433a6a180bca2df1ce1b334c895d63b0c2199ac43af32c6a049ddba6",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "The newsletter is late: a new React RFC gave me a lot of reading 😄 The article by Kent C. Dodds is quite long as well but worth it. We've got 2 articles highlighting Sandpack in 2 weeks, it's probably worth looking into!",
+      "source_content_hash": "ba96279375b90c49b0fff6996f1b141adb1bc139489de871756e8feea56ace41",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ニュースレターが遅れています：新しいReact RFCを読むのに時間がかかりました😄 Kent C. Doddsの記事も長いですが、読む価値があります。Sandpackを紹介する記事が2週連続で2つもあり、これはチェックする価値があるでしょう！"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "It's moving well on the React-Native core side too, with new open discussions. We could even think that after the migration to the new architecture and the stabilization of public APIs, there could be a 1.0 release? It doesn't matter much in practice, but some apparently care deeply about having a major version.",
+      "source_content_hash": "1bc5c60dfe106d8a1845840cec6e697b839ea0ebd75f136833538f0164b06339",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React-Nativeコアの側でも動きがあり、新しいオープンな議論が行われています。新しいアーキテクチャへの移行と公開APIの安定化が進めば、1.0リリースも考えられるかもしれません？ 実際にはあまり重要ではありませんが、メジャーバージョンを気にする人もいるようです。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "There are also quite a few interesting new things in the frontend ecosystem. I'm particularly interested in Codeflow, Fontaine and Unplugin which may be of direct interest to Docusaurus.",
+      "source_content_hash": "16c5c2189cec88d4fe32e1bfb33d5a8cdd2cec080d72841fa5834333862270fa",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "フロントエンドエコシステムにも興味深い新機能がいくつかあります。特にCodeflow、Fontaine、UnpluginはDocusaurusに直接関係するかもしれません。"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Speaking of Docusaurus, I was invited to talk about it in the [Changelog JS Party podcast](https://changelog.com/jsparty/247).",
+      "source_content_hash": "db5e8c7e41c4356a8cb01e1d333e3c88c4ef0d223ef4c11dca6054075c6749e2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Docusaurusと言えば、[Changelog JS Partyポッドキャスト](https://changelog.com/jsparty/247)で話す機会をいただきました。"
+      }
+    },
+    {
+      "segment_id": "45c63027",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_45c63027"
+      }
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアル形式 🎨**"
+      }
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "0adfe0aa",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_0adfe0aa"
+      }
+    },
+    {
+      "segment_id": "1941846d",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_1941846d"
+      }
+    },
+    {
+      "segment_id": "a5403c6e",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "d06306f7",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "[![Sizzy - the browser for developers](/emails/issues/120/sizzy.jpg)](https://sizzy.co/?utm_campaign=newsletter\\&utm_source=thisweekinreact)",
+      "source_content_hash": "b0da39aad842afc5156c95a95ed28a0939048a5a357632d1d28c42de85b34db8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Sizzy - 開発者向けブラウザ](/emails/issues/120/sizzy.jpg)](https://sizzy.co/?utm_campaign=newsletter\\&utm_source=thisweekinreact)"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "How come professionals in every other industry have specialized tools, but web developers are still stuck using the browser that their grandma is using for shopping on Amazon?",
+      "source_content_hash": "26b8c6ec51f87cca81919a96482819c351d8cadb122e36ca601443672fe673a0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "他の業界のプロフェッショナルは専用ツールを使っているのに、なぜウェブ開発者はまだ祖母がAmazonで買い物するのに使っているようなブラウザを使い続けているのでしょうか？"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "If you're opening localhost:3000 in any other browser except Sizzy, you're wasting hours of your precious time.",
+      "source_content_hash": "1b45af3f5b07953c2e5907c2b0a4151a488680b945bad33afbf745a22f4e7cf2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Sizzy以外のブラウザでlocalhost:3000を開いているなら、貴重な時間を無駄にしています。"
+      }
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "**Before Sizzy:** web development is stressing you out, responsive design is hard, you have an overwhelming amount of opened tabs and apps.",
+      "source_content_hash": "fcf8907035860275f1fa71ad34104e0c7aceb1b05211a2ed0a03d724f29be681",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**Sizzy以前：** ウェブ開発はストレスが多く、レスポンシブデザインは難しく、開いているタブやアプリが多すぎて圧倒されます。"
+      }
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "**After Sizzy:** all the tools you need are in one place, responsive design is a breeze, no more context switching.",
+      "source_content_hash": "cb26d31538dd4060eca29703b8308c3b081c54b9a43a71b8eb1982efb37a2090",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**Sizzy以後：** 必要なツールがすべて一箇所に集まり、レスポンシブデザインは簡単に、コンテキストスイッチングもなくなります。"
+      }
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "You can [download it here](https://sizzy.co/?utm_campaign=newsletter\\&utm_source=thisweekinreact) and try it for free for 14 days!",
+      "source_content_hash": "4d6f8f30b744c47bffd897a9a5bd8161e9393b31fcc9b15096b1da838b7685ca",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[ここからダウンロード](https://sizzy.co/?utm_campaign=newsletter\\&utm_source=thisweekinreact)して14日間無料で試せます！"
+      }
+    },
+    {
+      "segment_id": "d4e0d4e1",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "8bddee80",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "**[React RFC: First class support for promises and async/await](https://github.com/reactjs/rfcs/pull/229)**",
+      "source_content_hash": "02f5d25801bc515c57ff9e18df62c1a1fd6ac6613242bc8cf17fead1ceb26b95",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[React RFC: Promiseとasync/awaitのファーストクラスサポート](https://github.com/reactjs/rfcs/pull/229)**"
+      }
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "The React team decided to go back to an `async/await` model to simplify the use of Server Components. Problem: it is difficult to support `async/await` on Client Components. So they propose to introduce a `use(promise)` API on the client side. Unlike other hooks, `use` can be called conditionally. Later it could be used with other \"usables\" like the React context (in reality, you can already [use `useContext` conditionally!](https://twitter.com/acdlite/status/1581401077915975680)). Using different APIs can also be seen as a feature: it allows to distinguish Server Components from Client Components.",
+      "source_content_hash": "5e9e08e328d183562ceed31b37332351509ba3de1b6ab6c540f2fb06967b7993",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ReactチームはServer Componentsの使用を簡素化するために`async/await`モデルに戻ることを決めました。問題：Client Componentsで`async/await`をサポートするのは難しい。そこでクライアント側で`use(promise)` APIを導入する提案がされています。他のフックとは異なり、`use`は条件付きで呼び出せます。将来的にはReactコンテキストのような他の「usable」でも使えるようになるかもしれません（実際、すでに[`useContext`を条件付きで使えます！](https://twitter.com/acdlite/status/1581401077915975680)）。異なるAPIを使うことは機能としても見なせます：Server ComponentsとClient Componentsを区別できるからです。"
+      }
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "This RFC gives rise to interesting debates. We wonder what the integration with data-fetching libraries will look like. The use of generators seems to be suitable for this case, but they are difficult to use in practice. We are waiting for a new RFC that will introduce a cache API.",
+      "source_content_hash": "bb950ca3ad20eb5c7240d20e493bec97c51f471e92b901fccc946cd66dc5d0fc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このRFCは興味深い議論を呼んでいます。データフェッチングライブラリとの統合がどうなるかが懸念されています。ジェネレーターの使用はこのケースに適しているようですが、実際には使いにくいです。キャッシュAPIを導入する新しいRFCを待っているところです。"
+      }
+    },
+    {
+      "segment_id": "b36c6338",
+      "source_content": "**[The Web’s Next Transition](https://www.epicweb.dev/the-webs-next-transition)**",
+      "source_content_hash": "c224c68e898e8c7f0c12e7614bd3ff07194e539cf6ab2d9624d11f6d352669fd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[ウェブの次の移行](https://www.epicweb.dev/the-webs-next-transition)**"
+      }
+    },
+    {
+      "segment_id": "b9aaa519",
+      "source_content": "Kent C. Dodds offers a nice retrospective of the 3 main web architectures, very well illustrated and documented. He highlights the latest architecture, the trend of the moment: Progressively Enhanced Single-Page-Application. Remix is an implementation of this, with well thought abstractions that encourage to emulate the native behavior of the browser. I don't really agree that a server is absolutely necessary. [Docusaurus](https://github.com/facebook/docusaurus) is also a PESPA implementation that works well without JavaScript.",
+      "source_content_hash": "14f82dd5abeccd32c9e9baa1db522994f90ce550835678ee035ded8a554f46d1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Kent C. Doddsは、3つの主要なWebアーキテクチャに関する素晴らしい回顧録を提供しています。非常に分かりやすく図解され、ドキュメント化されています。彼は最新のアーキテクチャ、現在のトレンドである「Progressively Enhanced Single-Page-Application（段階的に強化されたシングルページアプリケーション）」を強調しています。Remixはこの実装の一つで、ブラウザのネイティブな動作を模倣することを促す、よく考えられた抽象化を備えています。サーバーが絶対に必要という点にはあまり同意できません。[Docusaurus](https://github.com/facebook/docusaurus)もまた、JavaScriptなしでうまく機能するPESPAの実装です。"
+      }
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "**[A World-Class Code Playground with Sandpack](https://www.joshwcomeau.com/react/next-level-playground/)**",
+      "source_content_hash": "c88fc4bcd2c04b492c77cc63958934979cf2acc13238cde761c3314c1ccdc017",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[A World-Class Code Playground with Sandpack](https://www.joshwcomeau.com/react/next-level-playground/)**"
+      }
+    },
+    {
+      "segment_id": "40158b4b",
+      "source_content": "Josh Comeau praises [Sandpack](https://github.com/codesandbox/sandpack), the CodeSandbox toolkit he uses to create interactive code playgrounds. It looks easy to use and very flexible!",
+      "source_content_hash": "c8b3d9e439cad756f63d75386ceec84c4626c4dbc662c82c66fe234eefa50098",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Josh Comeauは、インタラクティブなコードプレイグラウンドを作成するために使用している[Sandpack](https://github.com/codesandbox/sandpack)（CodeSandboxのツールキット）を称賛しています。使いやすく、非常に柔軟なツールのようです！"
+      }
+    },
+    {
+      "segment_id": "24c174ca",
+      "source_content": "* 📜 [Streaming: is it worth it?](https://www.builder.io/blog/streaming-is-it-worth-it): the authors of Qwik, Solid and Marko explain the advantages of streaming, and why it is difficult to adopt this technique. In a React context, the libraries used (Helmet, CSS-in-JS, Redux...) must be compatible for streaming to be effective.\n* 📜 [Storybook - First-class Vite support](https://storybook.js.org/blog/first-class-vite-support-in-storybook/): 7.0 will soon be in beta: support for Vite without config, pre-bundling, no more need for Webpack, support for new ones like Vue 2, Lit and Svelte...\n* 📜 [Moving From React to htmx](https://htmx.org/essays/a-real-world-react-to-htmx-port/): feedback (article + video) on a successful migration from React to [htmx](https://htmx.org/). We are in a Python backend context, their conclusions would probably be different in a JavaScript context where all devs are full-stack. The JS dev did the POC and lost his job afterwards 😅.\n* 📜 [Prioritise content over components](https://www.simeongriggs.dev/components-considered-harmful-for-content): interesting ideas on React components design from different perspectives: designer, developer and content author (CMS)\n* 📜 [A little semantic HTML trick for React components](https://queen.raae.codes/emails/2022-10-10-semantic-react/): explains how to respect the semantics of HTML by passing the DOM element to be created in props.\n* 📜 [Using Web Components With Next (or Any SSR Framework)](https://css-tricks.com/using-web-components-with-next-or-any-ssr-framework/)\n* 📜 [Exploring how virtual DOM is implemented in React](https://indepth.dev/posts/1501/exploring-how-virtual-dom-is-implemented-in-react)\n* 📜 [Lazy-load React components in Remix](https://sergiodxa.com/articles/lazy-load-react-components-in-remix)\n* 🐦 [React tip: isFocused should almost never be a prop](https://twitter.com/DavidKPiano/status/1580179833052876800)\n* 🚧 [Streaming SSR in Preact prototype](https://twitter.com/marvinhagemeist/status/1581762567328104448)\n* 🧑‍🎓 [Create a 3D site with Game Controls in Spline and React](https://designcode.io/spline2) ([video](https://www.youtube.com/watch?v=uYp_ipIasYE))\n* 🎨 [Satori + React-Three-Fiber demo](https://twitter.com/0xca0a/status/1581751380339232768)\n* 🎨 [Satori + SVG code syntax highlighting demo](https://twitter.com/shuding_/status/1581358324569645056)\n* 🎙️ [Docusaurus 2 is a pretty big deal](https://changelog.com/jsparty/247)\n* 🎥 [In Defense of useEffect](https://www.youtube.com/watch?v=Zw4lJqBphvA)\n* 🎥 [Making React Context Fast!](https://www.youtube.com/watch?v=ZKlXqrcBx88)\n* 📦 [Planby - React.js based component for schedules and timelines](https://planby.netlify.app/)\n* 📦 [Gatsby v5 beta](https://twitter.com/GatsbyJS/status/1580288285229735936)\n* 📦 [Astro 1.5](https://twitter.com/astrodotbuild/status/1580611193429168129)\n* 📦 [SWR 2.0 RC](https://github.com/vercel/swr/releases/tag/2.0.0-rc.0)",
+      "source_content_hash": "dfdb152078b592264bca46bee5b39ae4cd7636f4dd2db621964021e30e5a5298",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📜 [ストリーミング：その価値はあるのか？](https://www.builder.io/blog/streaming-is-it-worth-it): Qwik、Solid、Markoの作者たちがストリーミングの利点と、この技術を採用する難しさについて解説。Reactの文脈では、使用するライブラリ（Helmet、CSS-in-JS、Reduxなど）がストリーミングと互換性を持つ必要がある。\n* 📜 [Storybook - Viteのファーストクラスサポート](https://storybook.js.org/blog/first-class-vite-support-in-storybook/): 7.0が間もなくベータ版に：設定不要のViteサポート、プリバンドリング、Webpack不要、Vue 2、Lit、Svelteなどの新機能サポート...\n* 📜 [Reactからhtmxへの移行](https://htmx.org/essays/a-real-world-react-to-htmx-port/): Reactから[htmx](https://htmx.org/)への成功した移行のフィードバック（記事＋動画）。Pythonバックエンドの文脈であり、JavaScript環境（全員がフルスタック開発者）では結論が異なる可能性。JS開発者がPOCを行い、その後職を失った😅。\n* 📜 [コンポーネントよりコンテンツを優先する](https://www.simeongriggs.dev/components-considered-harmful-for-content): デザイナー、開発者、コンテンツ作成者（CMS）の異なる視点から見たReactコンポーネント設計に関する興味深い考察。\n* 📜 [Reactコンポーネントのための小さなセマンティックHTMLトリック](https://queen.raae.codes/emails/2022-10-10-semantic-react/): 作成するDOM要素をpropsで渡すことでHTMLのセマンティクスを尊重する方法を解説。\n* 📜 [Next（または任意のSSRフレームワーク）でWeb Componentsを使用する](https://css-tricks.com/using-web-components-with-next-or-any-ssr-framework/)\n* 📜 [Reactにおける仮想DOMの実装を探る](https://indepth.dev/posts/1501/exploring-how-virtual-dom-is-implemented-in-react)\n* 📜 [RemixでReactコンポーネントを遅延ロードする](https://sergiodxa.com/articles/lazy-load-react-components-in-remix)\n* 🐦 [Reactのヒント：isFocusedはほぼプロップとして使うべきではない](https://twitter.com/DavidKPiano/status/1580179833052876800)\n* 🚧 [PreactプロトタイプでのストリーミングSSR](https://twitter.com/marvinhagemeist/status/1581762567328104448)\n* 🧑‍🎓 [SplineとReactで3Dサイトをゲームコントロール付きで作成](https://designcode.io/spline2) ([動画](https://www.youtube.com/watch?v=uYp_ipIasYE))\n* 🎨 [Satori + React-Three-Fiberデモ](https://twitter.com/0xca0a/status/1581751380339232768)\n* 🎨 [Satori + SVGコードシンタックスハイライトデモ](https://twitter.com/shuding_/status/1581358324569645056)\n* 🎙️ [Docusaurus 2はかなり大きな話題](https://changelog.com/jsparty/247)\n* 🎥 [useEffectの擁護](https://www.youtube.com/watch?v=Zw4lJqBphvA)\n* 🎥 [React Contextを高速化！](https://www.youtube.com/watch?v=ZKlXqrcBx88)\n* 📦 [Planby - スケジュールとタイムライン用のReact.jsベースコンポーネント](https://planby.netlify.app/)\n* 📦 [Gatsby v5ベータ](https://twitter.com/GatsbyJS/status/1580288285229735936)\n* 📦 [Astro 1.5](https://twitter.com/astrodotbuild/status/1580611193429168129)\n* 📦 [SWR 2.0 RC](https://github.com/vercel/swr/releases/tag/2.0.0-rc.0)"
+      }
+    },
+    {
+      "segment_id": "688f86d6",
+      "source_content": "<SubscribeFormEmbed />",
+      "source_content_hash": "2b5c5e42f4352c90b9647a9da7a0fb7ece8b8dc27440e42cdf85cbb6e1901b85",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_688f86d6"
+      }
+    },
+    {
+      "segment_id": "4e1804a3",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "759d12dd",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "[![Chain React - The US React Native Conference - May 17-19 2023 Portland Oregon](/emails/issues/120/chainreact.jpg)](https://cr.infinite.red/?utm_source=react_hebdo)",
+      "source_content_hash": "0190051ab7317c4afbe2663509f9ff766e34284c2c155e324b95bd4bfd3186f6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Chain React - 米国React Nativeカンファレンス - 2023年5月17-19日 オレゴン州ポートランド](/emails/issues/120/chainreact.jpg)](https://cr.infinite.red/?utm_source=react_hebdo)"
+      }
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "**[Chain React - The US React Native Conference - May 17-19 2023 Portland Oregon](https://cr.infinite.red/?utm_source=react_hebdo)**",
+      "source_content_hash": "df9bd5997e659aef7a82474b26407d97d33d552559164967a8d9a61e2d95fbdd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Chain React - 米国React Nativeカンファレンス - 2023年5月17-19日 オレゴン州ポートランド](https://cr.infinite.red/?utm_source=react_hebdo)**"
+      }
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "Chain React returning for the 4th annual premiere React Native conference in May of 2023. The best minds, companies, and partners you won't want to miss.",
+      "source_content_hash": "d7ec612877754c27cc653dcc7de90eb196dc495ec9f850d5428cab7f7dca92d8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Chain Reactが2023年5月に第4回プレミアReact Nativeカンファレンスとして開催されます。最高の頭脳、企業、パートナーが集結する見逃せないイベントです。"
+      }
+    },
+    {
+      "segment_id": "b0dbe2f3",
+      "source_content": "* **Workshops | May 17, 2023** - We have three exciting workshops for all different skill levels! These exclusive workshops happen on May 17th at the official Speaker's hotel. There, you'll learn, mingle, and get direct access to experts.\n\n* **Conference | May 18-19, 2023** - Our main event! This is where companies announce big news, developers share secrets, and lifelong friendships are made. The main conference is never live-streamed.",
+      "source_content_hash": "7339168ea09ea271f650ec2b35280971813d7f86dea1bc6194d23dcc400d1793",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* **ワークショップ | 2023年5月17日** - さまざまなスキルレベル向けの3つのエキサイティングなワークショップを用意しています！これらの限定ワークショップは5月17日に公式スピーカーホテルで開催されます。専門家から直接学び、交流する機会です。\n\n* **カンファレンス | 2023年5月18-19日** - メインイベント！企業が大きなニュースを発表し、開発者が秘密を共有し、生涯の友情が生まれる場所です。メインカンファレンスはライブストリームされません。"
+      }
+    },
+    {
+      "segment_id": "1742e28b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "99d0dd9b",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "**[2022: How can we improve React Native?](https://github.com/react-native-community/discussions-and-proposals/discussions/528)**",
+      "source_content_hash": "2aaac76d1387a2648090eea0d783140641ca880b45f2d9ec583d6666f7486d12",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[2022年: React Nativeをどう改善できるか？](https://github.com/react-native-community/discussions-and-proposals/discussions/528)**"
+      }
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "The React-Native team would like to have feedback on what needs to be improved in React-Native. Some points mentioned: CSS support (Yoga, gap, grid, shadows...), cross-platform support, version upgrades, debugging, keyboard, Metro symlinks...",
+      "source_content_hash": "d31ce36bd5f4da7cf6f940fa1d4a0aea5d23293f94d28bb9e9ee8cc0eb38d287",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React-Nativeチームは、React-Nativeで改善が必要な点についてフィードバックを求めています。言及されているポイントには、CSSサポート（Yoga、gap、grid、shadows...）、クロスプラットフォームサポート、バージョンアップグレード、デバッグ、キーボード、Metroのシンボリックリンクなどがあります。"
+      }
+    },
+    {
+      "segment_id": "f6db2c30",
+      "source_content": "* 💬 [Restructuring React Native's Public API](https://github.com/react-native-community/discussions-and-proposals/discussions/523)\n* 📜 [Setting up React Native Monorepo with Yarn Workspaces](https://www.callstack.com/blog/setting-up-react-native-monorepo-with-yarn-workspaces)\n* 📜 [How to Use Module Federation with Re.Pack 3](https://www.callstack.com/blog/module-federation-with-re-pack-3)\n* 🚧 [Expo Router 0.0.27](https://twitter.com/Baconbrix/status/1579912795323215872) + [Layout API change RFC](https://twitter.com/Baconbrix/status/1582057133939384321)\n* 🚧 [React-Native Bottom Sheet v5 will have web support](https://twitter.com/gorhom/status/1581334529121218561)\n* 🚧 [React-Native Flex gap support coming?](https://twitter.com/Baconbrix/status/1580587087174062080)\n* 📖 [Expo docs improvements](https://twitter.com/amanhimself/status/1580615698321399811): \"Running E2E tests on EAS Build now works on Android\"\n* 📦 [Metro 0.73.0](https://github.com/facebook/metro/releases/tag/v0.73.0)\n* 📦 [React-Native 0.70.3](https://twitter.com/Kelset/status/1580210635266084864)\n* 🎥 [Flip card Animation in React-Native Re-Animated 2](https://www.youtube.com/watch?v=nVsvcu93488)\n* 🎙️ [React-Native-Radio 248 - Introducing Ignite v8: Maverick!](https://reactnativeradio.com/episodes/rnr-248-introducing-ignite-v8-maverick)",
+      "source_content_hash": "8ab440f07443612f4326f6be0a7802b1f5c4d0633a328119a6d4bf63d9da8917",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💬 [React NativeのパブリックAPIの再構築](https://github.com/react-native-community/discussions-and-proposals/discussions/523)\n* 📜 [Yarn Workspacesを使ったReact Nativeモノレポの設定](https://www.callstack.com/blog/setting-up-react-native-monorepo-with-yarn-workspaces)\n* 📜 [Re.Pack 3でModule Federationを使う方法](https://www.callstack.com/blog/module-federation-with-re-pack-3)\n* 🚧 [Expo Router 0.0.27](https://twitter.com/Baconbrix/status/1579912795323215872) + [Layout API変更RFC](https://twitter.com/Baconbrix/status/1582057133939384321)\n* 🚧 [React-Native Bottom Sheet v5はWebサポートを予定](https://twitter.com/gorhom/status/1581334529121218561)\n* 🚧 [React-Native Flex gapサポートが来る？](https://twitter.com/Baconbrix/status/1580587087174062080)\n* 📖 [Expoドキュメントの改善](https://twitter.com/amanhimself/status/1580615698321399811): 「EAS BuildでのE2EテストがAndroidで動作するようになりました」\n* 📦 [Metro 0.73.0](https://github.com/facebook/metro/releases/tag/v0.73.0)\n* 📦 [React-Native 0.70.3](https://twitter.com/Kelset/status/1580210635266084864)\n* 🎥 [React-Native Re-Animated 2でのフリップカードアニメーション](https://www.youtube.com/watch?v=nVsvcu93488)\n* 🎙️ [React-Native-Radio 248 - Ignite v8: Maverickの紹介！](https://reactnativeradio.com/episodes/rnr-248-introducing-ignite-v8-maverick)"
+      }
+    },
+    {
+      "segment_id": "6ad15270",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c7fa1e8d",
+      "source_content": "## 🧑‍💻 Jobs {#jobs}",
+      "source_content_hash": "64cde6166f05bd39337c21ca10f52b6613641f23e0c97e204de33d6857fa16ed",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🧑‍💻 Jobs {#jobs}"
+      }
+    },
+    {
+      "segment_id": "a6c928a1",
+      "source_content": "🧑‍💼 [**Product Engineer at Causal, Remote/London/NY, \\$150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied\\&lever-source%5B%5D=thisweekinreact.com)",
+      "source_content_hash": "619d259d5aa4a364626fc41610dcf9f3ae0955a2e964969486ddfee2f179dbdb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🧑‍💼 [**Causalのプロダクトエンジニア、リモート/ロンドン/NY、\\$150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied\\&lever-source%5B%5D=thisweekinreact.com)"
+      }
+    },
+    {
+      "segment_id": "b6152880",
+      "source_content": "Causal is a Series A Startup (backed by Coatue/Accel) building an all-in-one tool for working with numbers and visualizing data. We're looking for strong React engineers who can solve difficult UX/performance challenges.",
+      "source_content_hash": "20bfaa3d377f2ddf3a9abbf4f1ce455c376710731cb5f7e58785d6741fc6377f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Causalは、数字を扱いデータを可視化するためのオールインワンツールを構築しているSeries Aスタートアップ（Coatue/Accelが支援）です。難しいUX/パフォーマンス課題を解決できる強力なReactエンジニアを探しています。"
+      }
+    },
+    {
+      "segment_id": "b9331170",
+      "source_content": "🧑‍💼 [**G2i - 100% Remote React Native Jobs**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\\&t=ArRLC77BpRwXXCdx8fnUqw)",
+      "source_content_hash": "5d3c54581f6c180e021405df5da2dff285c443814d1d5e6c5c09516b6002a38b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_gi/status/1563204813881425926?s=20\\&t=ArRLC77BpRwXXCdx8fnUqw)"
+      }
+    },
+    {
+      "segment_id": "8fcdd6d4",
+      "source_content": "We have several roles open for developers focused on React Native! Pay is \\~160k plus 10% bonus. You must have production experience with RN and be based in the US. DM [@gabe\\_g2i](https://twitter.com/gabe_g2i) to learn more and don't forget to mention This Week in React.",
+      "source_content_hash": "03109db05ba0c8c528483a4218dc3b2b0314cf5c6032f5eb3c7be604094658fd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React Nativeに特化した開発者向けの複数のポジションを募集しています！報酬は約160,000ドルに加えて10％のボーナスです。React Nativeの実務経験があり、アメリカ在住であることが必須条件です。詳細は[@gabe_g2i](https://twitter.com/gabe_g2i)までDMでお問い合わせください。その際、「This Week in React」を見たとお伝えください。"
+      }
+    },
+    {
+      "segment_id": "53aa2b95",
+      "source_content": "💡 [How to publish an offer?](https://thisweekinreact.com/sponsor)",
+      "source_content_hash": "d58176524c2d7675bf008e7b635d056628a0d092fb0152d6bbdfb97f4239d273",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "💡 [求人を掲載する方法は？](https://thisweekinreact.com/sponsor)"
+      }
+    },
+    {
+      "segment_id": "cf542fb4",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "d53c8ed4",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "1ecf0882",
+      "source_content": "**[StackBlitz Codeflow](https://stackblitz.com/codeflow)**",
+      "source_content_hash": "a3a7bbd6ad24a1aac0fa61c92cd79144ba9ad9e562ded758bd4cca1bcde8c51b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[StackBlitz Codeflow](https://stackblitz.com/codeflow)**"
+      }
+    },
+    {
+      "segment_id": "e77cf7c6",
+      "source_content": "The StackBlitz [WebContainers](https://blog.stackblitz.com/posts/introducing-webcontainers/) technology allows to run Node.js in the browser via WebAssembly. You can run VS Code, Next.js or Docusaurus directly in your browser, and not via a remote Docker container. Codeflow adds the whole layer of integration with GitHub that makes it easy to open, review or edit a pull-request by running it locally in a secure way: extremely useful for open-source projects.",
+      "source_content_hash": "4f0fc183e13ea95126b2d99e0588a0397a56a7b7e8843e56fd5fb6a99b8e440c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "StackBlitzの[WebContainers](https://blog.stackblitz.com/posts/introducing-webcontainers/)技術により、WebAssemblyを介してブラウザ上でNode.jsを実行できます。VS Code、Next.js、Docusaurusなどを直接ブラウザ上で実行可能で、リモートのDockerコンテナを介する必要はありません。CodeflowはGitHubとの統合レイヤーを追加し、プルリクエストを安全にローカルで開いたり、レビューしたり、編集したりすることを容易にします。オープンソースプロジェクトにとって非常に便利です。"
+      }
+    },
+    {
+      "segment_id": "bb1346b6",
+      "source_content": "They also launched Web Publisher, a simplified editing view for Markdown files (editor, preview, save button). Very handy for contributing to documentation on Git, even for less technical users. There is a real preview of the content, and not the degraded experience of the GitHub Markdown preview. This is an [important need for Docusaurus users](https://twitter.com/ericsimons40/status/1580371754974781440).",
+      "source_content_hash": "7bbda487f09e305902e279f18a0d0f98e36a5e8955cd7b0c2538be600b186b85",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "また、Markdownファイル向けの簡易編集ビュー「Web Publisher」もリリースされました（エディタ、プレビュー、保存ボタン）。技術に詳しくないユーザーでもGit上のドキュメントに貢献しやすくなっています。GitHubのMarkdownプレビューとは異なり、実際のコンテンツプレビューが可能です。これは[Docusaurusユーザーにとって重要なニーズ](https://twitter.com/ericsimons40/status/1580371754974781440)です。"
+      }
+    },
+    {
+      "segment_id": "8664ed0b",
+      "source_content": "**[Fontaine - Automatic font fallback based on font metrics](https://github.com/unjs/fontaine)**",
+      "source_content_hash": "b47aabc127101e372eff506ecdb19913ee00f721fb003eb97182334b9091f502",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Fontaine - フォントメトリクスに基づく自動フォントフォールバック](https://github.com/unjs/fontaine)**"
+      }
+    },
+    {
+      "segment_id": "9e90a9b3",
+      "source_content": "Permits to avoid layout shifts when loading a custom font. Makes the fallback font the same size as the final font, so that the transition is smooth and does not impact the size of the text containers. Great idea!",
+      "source_content_hash": "72536857e193e70e25b494e47853989b3e19829fad440a27426aac4940d9a39f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "カスタムフォントの読み込み時にレイアウトシフトを防ぎます。フォールバックフォントを最終的なフォントと同じサイズに調整することで、テキストコンテナのサイズに影響を与えず、スムーズな遷移を実現します。素晴らしいアイデアです！"
+      }
+    },
+    {
+      "segment_id": "d3939446",
+      "source_content": "* [Node.js 19](https://twitter.com/nodejs/status/1582401871179747329)\n* [Node 18.11](https://nodejs.org/en/blog/release/v18.11.0/): adds a new `--watch` mode and a [few other cool things](https://twitter.com/matteocollina/status/1580911016506163202)\n* [Unplugin - Unified plugin system for Vite, Rollup, Webpack, and more](https://github.com/unjs/unplugin): to create agnostic plugins that work on all bundlers!\n* [CSS - Help pick a syntax for nesting - Survey results](https://developer.chrome.com/blog/help-css-nesting-results/)\n* [Status update of my tsc port](https://kdy1.dev/posts/2022/10/tsc-port-status) + [Speedy TypeScript type checker public repo](https://twitter.com/kdy1dev/status/1582174891230760960)\n* [TypeRunner - High-performance TypeScript compiler](https://github.com/marcj/TypeRunner)\n* [Lerna reborn — What’s new in v6?](https://blog.nrwl.io/lerna-reborn-whats-new-in-v6-10aec6e9091c)\n* [What’s new in Nx 15?](https://blog.nrwl.io/whats-new-in-nx-15-7e14e1ff282d)\n* [JetBrains Fleet - Public Preview](https://blog.jetbrains.com/fleet/2022/10/introducing-the-fleet-public-preview/)\n* [Import maps soon available in all browsers](https://twitter.com/sebastienlorber/status/1582024272788480000)\n* [Bun's, ViteConf talk](https://twitter.com/jarredsumner/status/1581427214691708929)\n* [rRPC-chrome - tRPC adapter for Web Extensions](https://github.com/jlalmes/trpc-chrome)\n* [What is pnpm? Is it really so fast and space-efficient?](https://dev.to/stackblitz/what-is-pnpm-and-is-it-really-so-fast-and-space-efficient-29la)\n* [Intl Explorer - A tool for experimenting and trying out the ECMAScript Internationalization API](https://www.intl-explorer.com/)\n* [Why We Use Babylon.js Instead Of Three.js in 2022](https://www.spotvirtual.com/blog/why-we-use-babylonjs-instead-of-threejs-in-2022)\n* [How Vite Came to Be - ViteConf 2022 slides](https://docs.google.com/presentation/d/1O09rAOu_wRLHVjukVbBeSlRkLeX-dcYZfsdjPiU4kGQ/edit#slide=id.p)\n* [Rollup v3](https://github.com/rollup/rollup/releases/tag/v3.0.0)\n* [Jest 29.2](https://github.com/facebook/jest/releases/tag/v29.2.0)\n* [Obsidian 1.0](https://obsidian.md/1.0)",
+      "source_content_hash": "2bc4f963630a720287c4c693c3472b5e9d5fdc15e16f8de83b7057dcdd6aec72",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* [Node.js 19](https://twitter.com/nodejs/status/1582401871179747329)\n* [Node 18.11](https://nodejs.org/en/blog/release/v18.11.0/): 新しい `--watch` モードと[その他の便利な機能](https://twitter.com/matteocollina/status/1580911016506163202)を追加\n* [Unplugin - Vite、Rollup、Webpackなどの統合プラグインシステム](https://github.com/unjs/unplugin): すべてのバンドラーで動作するプラグインを作成可能！\n* [CSS - ネスト構文の選択を手伝って - 調査結果](https://developer.chrome.com/blog/help-css-nesting-results/)\n* [tscポートの進捗状況](https://kdy1.dev/posts/2022/10/tsc-port-status) + [高速なTypeScript型チェッカーの公開リポジトリ](https://twitter.com/kdy1dev/status/1582174891230760960)\n* [TypeRunner - 高性能TypeScriptコンパイラ](https://github.com/marcj/TypeRunner)\n* [Lerna復活 — v6の新機能は？](https://blog.nrwl.io/lerna-reborn-whats-new-in-v6-10aec6e9091c)\n* [Nx 15の新機能](https://blog.nrwl.io/whats-new-in-nx-15-7e14e1ff282d)\n* [JetBrains Fleet - パブリックプレビュー開始](https://blog.jetbrains.com/fleet/2022/10/introducing-the-fleet-public-preview/)\n* [Import mapsがすべてのブラウザで利用可能に](https://twitter.com/sebastienlorber/status/1582024272788480000)\n* [BunのViteConf講演](https://twitter.com/jarredsumner/status/1581427214691708929)\n* [rRPC-chrome - Web Extensions向けtRPCアダプター](https://github.com/jlalmes/trpc-chrome)\n* [pnpmとは？本当に高速でスペース効率が良いのか？](https://dev.to/stackblitz/what-is-pnpm-and-is-it-really-so-fast-and-space-efficient-29la)\n* [Intl Explorer - ECMAScript国際化APIの実験と試行のためのツール](https://www.intl-explorer.com/)\n* [2022年にThree.jsではなくBabylon.jsを選ぶ理由](https://www.spotvirtual.com/blog/why-we-use-babylonjs-instead-of-threejs-in-2022)\n* [Viteが生まれた経緯 - ViteConf 2022スライド](https://docs.google.com/presentation/d/1O09rAOu_wRLHVjukVbBeSlRkLeX-dcYZfsdjPiU4kGQ/edit#slide=id.p)\n* [Rollup v3](https://github.com/rollup/rollup/releases/tag/v3.0.0)\n* [Jest 29.2](https://github.com/facebook/jest/releases/tag/v29.2.0)\n* [Obsidian 1.0](https://obsidian.md/1.0)"
+      }
+    },
+    {
+      "segment_id": "c81952ce",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "657bde08",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "827eb9a3",
+      "source_content": "[![Meme - When an ESLint rule is a warning instead of an error. - oh no - anyway (nobody cares)](/emails/issues/120/meme.png)](https://twitter.com/markdalgleish/status/1580827326799310848)",
+      "source_content_hash": "9eb4e67643b0e0f45048008fcfe9ce47e2843e3e19d3a8452e724055e4702c99",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![ミーム - ESLintルールがエラーではなく警告だった時。- あらまあ - まあいいか（誰も気にしない）](/emails/issues/120/meme.png)](https://twitter.com/markdalgleish/status/1580827326799310848)"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/120/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:39.510110+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "96593d37f99aeade8f076bf2a00be3e3404c694d49f471391730bd325d67d07a"
+  }
+}

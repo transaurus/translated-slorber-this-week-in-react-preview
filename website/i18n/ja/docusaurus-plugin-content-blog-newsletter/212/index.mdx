@@ -1,0 +1,147 @@
+---
+slug: /212
+title: "This Week In React #212: Astro, Next.js, Storybook, INP, Virtualization, WebXR, LiveView, Radon, Yoga, Unistyles, gluestack, Expo-Video, Node, Playwright, Prisma, Undici..."
+authors: [slorber]
+date: 12-04-2024
+---
+
+みなさん、こんにちは！
+
+今週、React開発者たちは非常に感謝しているか、あるいは無駄なものにお金を使うのに忙しかったようです。幸いなことに、Astroが注目を集めています。また、Reactのパフォーマンスに関する素晴らしい記事が2つあります。
+
+React Nativeエコシステムはさらに活発で、Radon IDEの正式リリースや多くの興味深いリリースがありました。
+
+Node 22.12がリリースされ、LTSで`require(esm)`がデフォルトで有効になりました！また、TC39会議が進行中でES提案が進んでいますが、それは来週の話題です！
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![daily.dev: あなた専用の開発ニュースフィード](/emails/issues/212/daily.jpg)](https://daily.dev/w/this-week-in-react)
+
+**[daily.dev: あなた専用の開発ニュースフィード](https://daily.dev/w/this-week-in-react)**
+
+daily.devは100万人以上の開発者に、知っておくべき最新のアップデート、フレームワーク、ミームを提供するパーソナルニュースフィードを届けます。完全無料で、リスト記事をオプトアウトすることも可能です。
+
+志を同じくする開発者と共に苦しみ、学びましょう。
+
+* 努力せずに最新情報をキャッチアップ。
+* 新しいフレームワークや開発ツールをリリース時に発見。
+* 部屋で一番賢い開発者になる。
+
+**完全無料です。最高の体験のために、**[**拡張機能をダウンロード**](https://chromewebstore.google.com/detail/dailydev-the-homepage-dev/jlmpjdjjbgclbocgajdjefcidcncaied?hl=en)**してください。**
+
+***
+
+## ⚛️ React {#react}
+
+[![Astro 5.0](/emails/issues/212/astro.jpg)](https://astro.build/blog/astro-5/)
+
+**[Astro 5.0](https://astro.build/blog/astro-5/)**
+
+Astroの新しいメジャーバージョンがリリースされました。技術的には純粋なReactフレームワークではありませんが、Reactコミュニティで広く利用されており、インタラクティブなReactコンポーネントを簡単に統合でき、MDXに依存しています。主な特徴は以下の通りです：
+
+* すべてのコンテンツを1つの使いやすい型安全なデータストアに統合するContent Layer。CMS、API、その他のソースからのコンテンツを含みます。
+* 初期ページ応答を可能な限り高速に提供しつつ、大部分が静的なレイアウトに動的コンテンツを織り交ぜる能力を維持するServer Islands。React Server ComponentsやNext.jsのPartial Pre-Renderingに対するよりシンプルで興味深い代替手段です。
+* プリレンダリングの簡素化、「ハイブリッド」オプションの削除
+* 型安全な環境変数
+* 新しいEnvironment APIを備えたVite 6
+* 実験的機能：画像のクロッピング、レスポンシブ画像レイアウト、SVGコンポーネント
+
+***
+
+* 💸 [Omlet – リポジトリをスキャンしてReactコンポーネントの使用状況を計測](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-nov-2024)
+* 👀 [Next.js PR - revalidate APIの非推奨解除とexpire APIの名称変更](https://github.com/vercel/next.js/pull/73193): 以前revalidate APIを置き換える新しいexpire APIについて言及しましたが、時期尚早だったようです。新しいexpire APIは現在不安定としてマークされ、今後改善が進められます。
+* 👀 [Next.js Canary - `authInterrupts` API](https://nextjs.org/docs/canary/app/api-reference/config/next-config-js/authInterrupts): 401/403ステータスコードを返すための新しいforbidden/unauthorized関数とファイル規約。
+* 👀 [Next.js Canary - CSSチャンキングを無効化する新しい設定オプション](https://nextjs.org/docs/canary/app/api-reference/config/next-config-js/cssChunking)
+* 📜 [ReactでINPを改善する方法](https://kurtextrem.de/posts/improve-inp-react): Interaction-to-Next-Paint（INP）がCore Web Vitalsの一部となりましたが、httparchiveのデータによると多くのReactサイトはINPスコアが低いです。この記事では、スケジューリング、並行機能、ハイドレーション、トランジション、状態更新、非制御入力、エフェクト、ポータルなど、実践的な最適化手法を詳しく解説しています。
+* 📜 [仮想化によるコードレンダリングの改善](https://sentry.engineering/blog/better-code-rendering-through-virtualization): CodeCovのエンジニアがTypeScriptコードベースの52k行のファイルをレンダリングする際のパフォーマンス問題の解決過程を説明。TanStackの仮想化ライブラリを採用し、ネイティブ検索やスクロール時の課題を克服しました。
+* 📜 [RSC向けStorybookコンポーネントテスト](https://storybook.js.org/blog/component-testing-rscs/): RSCのテストには通常E2Eテストが必要ですが、StorybookはサーバーIOをモックした上でブラウザ内で直接実行する実験的な代替手法を提案しています。
+* 📜 [Tailwind 4に関する考察](https://nmn.sh/blog/2024-11-30-thoughts-on-tailwind-4): ReactよりもCSSに焦点を当てていますが、MetaのStyleX CSS-in-JSライブラリの作成者が懸念を表明。子孫バリアントの導入がアトミックCSSの保証を破壊すると指摘。
+* 📜 [Next.js向け効率的なValkeyベースのキャッシュの紹介](https://blog.platformatic.dev/introducing-efficient-valkey-based-caching-for-nextjs): PlatformaticがNext.jsのプラガブルキャッシュハンドラーシステムを活用したスケーラブルな共有キャッシュを提供する方法を説明。
+* 📜 [Reactデータフェッチングパターン](https://www.robinwieruch.de/react-data-fetching-patterns/)
+* 📜 [Reactでi18nextをさらに活用する方法](https://lingual.dev/blog/getting-more-out-of-i18next-in-react/)
+* 📜 [Deno DeployでNext.js SSRアプリを実行](https://deno.com/blog/nextjs-on-deno-deploy)
+* 📜 [EdgePipes - SSRとRSCの代替手段](https://runspired.com/2024/12/01/edge-pipes.html)
+* 📜 [Reactでないなら何か？](https://infrequently.org/2024/11/if-not-react-then-what/): このようなReact批判をニュースレターに含めるべきか悩みます。読んでいて楽しい気分にはなりませんでした😅。ご意見をお聞かせください！
+* 📦 [Phoenix LiveView 1.0リリース](https://phoenixframework.org/blog/phoenix-liveview-1.0-released): Elixirのリリースですが、LiveViewとRSCはネットワークを意識させない点で類似しており、React開発者にも関連が深いと考えています。
+* 📦 [WebXR入門 - 没入型ウェブ開発の第一歩](https://github.com/meta-quest/webxr-first-steps-react): React-Three-XRを使用した没入型VR FPSミニゲーム構築の2時間チュートリアル。
+* 🎥 [Lee Robinson - Next.js App RouterでのMDX使用](https://www.youtube.com/watch?v=34bRv6cQezo)
+* 🎥 [Theo - Vite 6が重要な理由](https://www.youtube.com/watch?v=yT4DWBWm6DM)
+* 🎥 [Ankita - TanStack Start vs Next.jsの正直なレビュー](https://www.youtube.com/watch?v=D27AfH0pSp8)
+* 🎥 [Fireship - Next.js 15はどうか？「use cache」API初見](https://www.youtube.com/watch?v=xWkozeculPo)
+* 🎙️ [今月のReact - React 19のブロック解除、Next 15の「安定版」、Expoランチウィーク](https://creators.spotify.com/pod/show/reactiflux/episodes/TMiR-2024-11-React-19-is-unblocked--Next-15-is-stable--Expo-launch-week--The-cool-kids-are-on-BlueSky-e2rn2pu)
+* 🎙️ [Syntax - Matt Perryと考えるウェブアニメーション: モーションの探求](https://syntax.fm/show/854/animating-the-web-with-matt-perry-exploring-motion)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![ClerkからのWaitlistモードの紹介](/emails/issues/212/clerk.jpg)](https://go.clerk.com/tWHD2yj)
+
+**[ClerkからのWaitlistモードの紹介](https://go.clerk.com/tWHD2yj)**
+
+`<Waitlist />`は新しいサインアップモードおよびコンポーネントで、ユーザーが早期アクセスのウェイトリストに登録できるようにします。Clerkダッシュボード内でユーザーアクセスとオンボーディングをすべて管理可能です。詳細は変更ログの発表をご覧ください。
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![Radon IDE 1.0](/emails/issues/212/radon.jpg)](https://ide.swmansion.com/)
+
+**[Radon IDE 1.0](https://ide.swmansion.com/)**
+
+Software Mansionは、VSCode拡張機能（Cursorもサポート）を作成し、エディターをReact NativeとExpoの本格的なIDEに変えました。現在は安定版として正式リリースされています。有料製品ですが、低価格と開発者体験（DX）の向上を考慮すると、同社の素晴らしいオープンソース活動もサポートするため、導入は必須と言えます。[Radon IDEローンチ動画](https://www.youtube.com/watch?v=07Un9EfE8D4)で機能の概要を確認できます：シミュレーターパネルと設定、デバッグ、クリックで検査、URL駆動ナビゲーション、Storybook統合など。
+
+***
+
+* 💸 [React Native Mastery - 現在募集中！](https://notjust.dev/react-native-mastery?utm_source=twir\&utm_medium=email)
+* 👀 [React Native RFC - Lean Core、React NativeコアからJSC（JavaScriptCore）を分離](https://github.com/react-native-community/discussions-and-proposals/pull/836): Hermesがデフォルトランタイムとなったため、未使用のJSCをコアに含めるのは非効率的です。
+* 📜 [Expo-video: アプリ内で動画を再生するシンプルで強力な方法](https://expo.dev/blog/expo-video-a-simple-powerful-way-to-play-videos-in-apps)
+* 📜 [React Nativeでのブラウンフィールド開発が注目される理由](https://www.callstack.com/blog/brownfield-development-with-react-native)
+* 📜 [Androidでビューマネージャーを遅延ロード](https://yogeshpaliyal.com/quick-tips/rn-tip-lazy-viewmanagers-in-android/)
+* 🗓️ [React Universe Conf](https://www.reactuniverseconf.com/?utm_campaign=RUC2025\&utm_source=TWIRpartnership\&utm_content=savethedate) - 🇵🇱 ヴロツワフ - 2025年9月2-4日 - 限定数のBlind Birdチケット販売中（売り切れ次第終了）
+* 📦 [React Native 0.77.0-rc.1 - Node22のpunycode警告を修正 😄](https://github.com/facebook/react-native/releases/tag/v0.77.0-rc.1)
+* 📦 [gluestack-ui 2.0 - NativeWind v4.1とRSCをサポート、不要な複雑さを削減、CSSサイズを縮小](https://gluestack.io/blogs/gluestack-ui-v2-stable-release-with-nativewind-v4-1-support)
+* 📦 [Unistyles 3.0 beta - 再レンダリングなし、StyleSheet互換、Shadow Tree更新、Nitro搭載](https://www.reactnativecrossroads.com/posts/unistyles-3-preview): この次期バージョンは、デフォルトのStyleSheet APIの優れた代替として期待されます。まだ仕組みは完全には理解できていませんが、非常に興味深い内容です。
+* 📦 [Yoga 3.2 - CSSの`box-sizing`と`display: contents`をサポート](https://www.yogalayout.dev/blog/announcing-yoga-3.2)
+* 📦 [React Navigation 7.3 - リンク設定で正規表現とエイリアスをサポート](https://reactnavigation.org/docs/configuring-links/#matching-regular-expressions)
+* 📦 [Skia 1.6 - Androidキャンバスの不透明化でパフォーマンス向上](https://github.com/Shopify/react-native-skia/releases/tag/v1.6.0)
+* 📦 [Nitro 0.18 - macOSとtvOSをサポート](https://github.com/mrousavy/nitro/releases/tag/v0.18.0)
+* 📦 [Expo-Share-Extension 2.0 - SDK 52をサポート](https://github.com/MaxAst/expo-share-extension)
+* 🎙️ [React Universe On Air - Radon IDE: React Nativeチームのための優れた開発者体験](https://www.youtube.com/watch?v=-GT6DPk2K_s)
+* 🎙️ [Rocket Ship 55 - 企業がReact Nativeを採用する理由、求人面接、オープンソースのトレンド（Jamon Holmgren氏）](https://share.transistor.fm/s/654cb5cf)
+* 🎥 [Simon Grimm - React Nativeデバッグ: JSからネイティブまで](https://www.youtube.com/watch?v=FXn1vUGCci8)
+* 🎥 [Beto - DOMコンポーネントを使用したリッチテキストエディタの実装方法](https://www.youtube.com/watch?v=CxORa1tXMjw)
+
+***
+
+## 🔀 Other {#other}
+
+* 🎄 [Advent of TypeScript - 25 type challenges](https://www.adventofts.com/)
+* 📜 [Next-level frosted glass with backdrop-filter](https://www.joshwcomeau.com/css/backdrop-filter/)
+* 📜 [Writing Modern JavaScript without a Bundler](https://playfulprogramming.com/posts/modern-js-bundleless)
+* 📜 [Washing your code: don’t make me think](https://sapegin.me/blog/dont-make-me-think/)
+* 📜 [Try...Catch As Little As Possible](https://www.joshuakgoldberg.com/blog/try-catch-as-little-as-possible/)
+* 📦 [Node v22.12 - require(esm) is now enabled by default](https://nodejs.org/en/blog/release/v22.12.0)
+* 📦 [Playwright 1.48 - Aria snapshots, test runner improvements](https://github.com/microsoft/playwright/releases/tag/v1.49.0)
+* 📦 [Undici 7 - Scheduled for Node.js 24, stricter fetch() spec compliance](https://blog.platformatic.dev/undici-v7-is-here)
+* 📦 [Prisma 6 - Better Performance, More Flexibility & Type-Safe SQL](https://www.prisma.io/blog/prisma-6-better-performance-more-flexibility-and-type-safe-sql)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/212/meme.jpg)](https://bsky.app/profile/astro.build/post/3lcf2lt6xik2p)
+
+[![alt](/emails/issues/212/meme3.jpg)](https://x.com/MicrosoftEdge/status/1862149469610914126)
+
+See ya! 👋

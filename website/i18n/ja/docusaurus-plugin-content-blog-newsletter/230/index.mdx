@@ -1,0 +1,140 @@
+---
+slug: /230
+title: "This Week In React #230: Next.js, Turbopack, Rspack, Activity, RSC, oRPC, tweakcn | Expo, Fantom, FlashList, SVG, Tracy, New Arch, Radon | TC39, Temporal, Zod, Bare, Rolldown, CSS Functions"
+authors: [slorber]
+date: 04-16-2025
+---
+
+みなさん、こんにちは！
+
+今週は、ビルド速度が大幅に改善された素晴らしいNext.jsのリリースがあります。また、今後のReactの`<Activity>`コンポーネントに関する動きも非常に興味深いです。コミュニティのブログ記事もたくさん読む価値があります！
+
+React Nativeも、新しいExpo SDKのベータ版や、次のバージョンのFlashListのアルファ版など、素晴らしいリリースがあります。
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![プロダクトマネジメントは壊れている。エンジニアがそれを修正できる](/emails/issues/230/posthog.jpg)](https://go.posthog.com/twir-apr16)
+
+**[プロダクトマネジメントは壊れている。エンジニアがそれを修正できる](https://go.posthog.com/twir-apr16)**
+
+[PostHog](https://go.posthog.com/twir-apr16-ph)が始まった当初、彼らは**決してプロダクトマネージャーを雇わない**と断言していました。エンジニアが難しいプロダクトの問題に取り組むべきであり、プロダクトマネージャーは邪魔になるだけだと考えていたのです。
+
+彼らは（部分的に）間違っていました。プロダクトマネージャーが必要であり、8つ以上のプロダクトをリリースしたり、収益目標を達成したりするには彼らなしでは不可能でした。
+
+必要なのは、**スピードと自律性を最適化したPMとエンジニアの協働方法の再定義**でした。[この記事では彼らの具体的なプレイブックを共有しています](https://go.posthog.com/twir-apr16)。
+
+***
+
+## ⚛️ React {#react}
+
+[![Next.js 15.3](/emails/issues/230/nextjs.jpg)](https://nextjs.org/blog/next-15-3)
+
+**[Next.js 15.3](https://nextjs.org/blog/next-15-3)**
+
+Next.jsの新しいマイナーバージョンがリリースされ、主な特徴は以下の通りです：
+
+* Turbopack for builds（アルファ版）：8000以上のテストをパスした高速なプロダクションビルド（99%）
+* Rspackのコミュニティサポート（実験的）：Webpack互換の代替バンドラー
+* Client Instrumentationフック：早期のモニタリングと分析設定
+* ナビゲーションフック：`onNavigate`と`useLinkStatus`でルーティングを制御
+* TypeScriptプラグインの改善：大規模コードベースのサポート向上
+
+Next.jsがTurbopackによるビルドの高速化や、Webpackの代替としてRspackを受け入れることで進化しているのは素晴らしいことです。両者には異なるトレードオフとユースケースがあります。
+
+関連リソースもご覧ください：
+
+* 📦 [Rspack 1.3.5 - RspackがNext.jsエコシステムに参加](https://rspack.dev/blog/rspack-next-partner)
+* 🎥 [Theo - Next.js 15.3: Vercelにとっての大きな変化](https://www.youtube.com/watch?v=jN0kB85rxGg)
+
+***
+
+* 💸 [Bit - A build system framework for development of composable software. Support NodeJS, React apps (with Vite), NextJS, and modern stack.](https://bit.dev/?utm_source=ThisWeekInReact\&utm_id=8\&utm_medium=newsletter)
+* 👀 [React Types PR - `unstable_Activity`](https://github.com/DefinitelyTyped/DefinitelyTyped/pull/72454): There’s a lot of `<Activity>` activity lately, including TypeScript typedefs added. This upcoming component, previously named `<Offscreen>`, has been [mentioned in React Labs updates since 2022](https://react.dev/blog/2022/06/15/react-labs-what-we-have-been-working-on-june-2022#offscreen), and may soon be ready for prime time? This low-level primitive is particularly exciting for frameworks to fully leverage Concurrent React.
+* 👀 [Next.js PR - Experimental bfcache - Restore state with `<Activity>`](https://github.com/vercel/next.js/pull/77992): Unsurprisingly, Next.js starts experimenting with the `<Activity>` component above, by implementing a back/forward cache feature that allows pressing the browser back button to instantly transition to the previous page while restoring its former React state. In the future, Next.js (and other React/RN frameworks too) will likely implement speculative pre-rendering: React could start rendering a target page as soon as you hover a link, even before you click it.
+* 👀 [React Core PR - Add Suspensey Images behind a flag](https://github.com/facebook/react/pull/32819): An upcoming React feature could help ensure all images have loaded before transitioning to a new page. The rollout plan is still unclear: it might come in a minor or major.
+* 📜 [JSX Over The Wire](https://overreacted.io/jsx-over-the-wire/): Dan Abramov explains why you might want your API to send JSX back across the wire, through 3 different stories. The alternative could be to maintain parallel Component and ViewModel trees in both your client app and REST API. He also shares the some historical bits and technologies that led to the creation of the Server Components.
+* 📜 [Toast messages in React Server Components](https://buildui.com/posts/toast-messages-in-react-server-components): Shows how to trigger the display of toast messages from Next.js Server Actions using server cookies. This technique can be used for other kinds of flash messages.
+* 📜 [Memoizing components in React: a case for useMemo](https://gabrielpichot.fr/blog/memoizing-components-in-react-a-case-for-usememo/): This interactive article argues most `React.memo` can be replaced by `useMemo`, and it’s closer to what the React Compiler is doing.
+* 📜 [Avoid the State Synchronization Trap](https://ondrejvelisek.github.io/avoid-state-synchronization-trap/): This interactive article highlights 4 different ways to synchronize distinct React states and their tradeoffs so that what gets rendered is consistent.
+* 📜 [The new Cookie Store API](https://fotis.xyz/posts/the-new-cookie-store-api/): And how you could integrate this not-widely-supported API in React apps as a progressive enhancement.
+* 📜 [Building Reusable Components with React 19 Actions](https://aurorascharff.no/posts/building-reusable-components-with-react19-actions/)
+* 📜 [Scale Your Project with Layered React Structure](https://playfulprogramming.com/posts/layered-react-structure)
+* 📜 [View Transition API and its Integration in NextJS](https://www.premieroctet.com/blog/en/view-transition-api-in-next-js-and-react)
+* 📜 [Lazy load SVG icons with \<use/> in React.js](https://www.jeantinland.com/blog/lazy-load-svg-icons-with-use-react-js/)
+* 💸 [Guide: Integrate Clerk with your Lovable application. Bonus feature add-ons for B2B, Waitlist, custom domain and more](https://go.clerk.com/EbcUjrv)
+* 📦 [oRPC 1.0 - Typesafe APIs Made Simple](https://orpc.unnoq.com/blog/v1-announcement): An interesting alternative to tRPC, ts-rest & next-safe-action that comes with React bindings, framework integrations and Server Actions support.
+* 📦 [tweakcn - A visual no-code editor for shadcn/ui components](https://github.com/jnsahaj/tweakcn): A convenient tool to create a custom shadcn/ui theme, or use a pre-built one.
+* 📦 [Astro 5.7 - SVG Components, Sessions API, Config imports, experimental Fonts API](https://astro.build/blog/astro-570/)
+* 📦 [React Aria release - Custom calendars, collections improvements, smaller bundle size](https://react-spectrum.adobe.com/releases/2025-04-11.html)
+* 🎥 [Jack Herrington - tRPC v11 with TanStack Query on TanStack Start!](https://www.youtube.com/watch?v=dLUyPLbvdY0)
+* 🎥 [Theo – Why is Next.js so slow?](https://www.youtube.com/watch?v=mMQCLQTky34)
+* 🎥 [Web Dev Simplified - How I Recreated TanStack Router From Scratch](https://www.youtube.com/watch?v=b7uUWoS1Zro)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![App.js Confに参加してReact Nativeの開発者たちと出会おう！](/emails/issues/230/appjs.jpg)](https://appjs.co)
+
+**[App.js Confに参加してReact Nativeの開発者たちと出会おう！](https://appjs.co)**
+
+App.js Confは、あなたのお気に入りのライブラリやフレームワークを開発しているチームと出会い、クロスプラットフォーム開発の未来について意見を交わし、500人以上の志を共にする開発者たちとつながり、そして単純に楽しむための**最高の場所**です！
+
+* Expo、Meta、Software Mansion、NFL、Amazonなどからの[登壇者が確定](https://appjs.co/#speakers)
+* 8つの実践的なワークショップから選択可能
+* 知識、カンファレンストーク、ネットワーキングが詰まった3日間
+
+今年最大のReact Native & Expoイベントに参加しましょう！🚀
+
+***
+
+## 📱 React-Native {#react-native}
+
+* 💸 [WithFrame - プリビルドされたReact Nativeテンプレート](https://withfra.me)
+* 👀 [React Native Fantom](https://github.com/facebook/react-native/blob/main/packages/react-native-fantom/__docs__/README.md): 新しい実験的な統合テストおよびベンチマークツールが現在積極的に開発中です。これはC++部分のRNを実行するJestテストランナーで、シャドウノード、レイアウト、イベント、スケジューリング、C++状態更新などのテストが可能です。このツールは主にReact Nativeの内部テストに有用ですが、将来的にはライブラリ/製品コードのテストにも拡張される可能性があります。
+* 📖 [ネイティブモジュール開発の高度なトピック](https://reactnative.dev/docs/the-new-architecture/advanced-topics-modules) および [ネイティブコンポーネント開発の高度なトピック](https://reactnative.dev/docs/the-new-architecture/advanced-topics-components): Swiftの使用やネイティブコマンドの呼び出しなど、新しいアーキテクチャに関するさまざまな高度なドキュメントが最近公開されました。
+* 📜 [Tracyを使用したReact Native内部のプロファイリングでピークパフォーマンスを実現](https://www.callstack.com/blog/profiling-react-native-internals-with-tracy-for-peak-performance): パフォーマンスのボトルネックがアプリではなくRN自体から来ることがあります。この統一されたプロファイリングソリューションはすべてのプラットフォームで動作します。
+* 📜 [AndroidでReact Native Coreの機能フラグを設定する方法](https://andrei-calazans.com/posts/react-native-android-feature-flags/): Androidで`enableFabricLogs`を有効にする方法を説明するクイックチップ。
+* 📜 [react-native-svgが必要ないかもしれない](https://blog.swmansion.com/you-might-not-need-react-native-svg-b5c65646d01f): このライブラリは非常に柔軟ですが、SVGによっては非常に大きなReactコンポーネントツリーを作成する可能性があります。さまざまなトレードオフを持つ多くの代替手段が存在します。
+* 📜 [Skiaを使用したReact Nativeでの見事なグラデーションの作成](https://www.fabrizioduroni.it/blog/post/2025/04/02/react-native-skia-text-gradient)
+* 📦 [Expo SDK 53ベータ](https://expo.dev/changelog/sdk-53-beta): 新しいSDKはReact Native 0.79、React 19にアップグレードし、新しいアーキテクチャをデフォルトで有効にし、多くの新機能を含みます。約2週間後に安定版がリリースされたら詳しく取り上げます！
+* 📦 [FlashList 2.0アルファ](https://github.com/Shopify/flash-list/tree/new-rlv-prototype): この最適化されたリストコンポーネントの新しいバージョンがアルファ版になり、Shopifyはコミュニティに試すよう奨励しています。ゼロから再構築され、より高速で、新しいアーキテクチャを活用し、サイズ推定が不要になりました。
+* 📦 [Radon IDE 1.5 - Radon AI Chat、改善されたEASワークフロー、RN 0.79](https://github.com/software-mansion/radon-ide/releases/tag/v1.5.0)
+* 📦 [Bottom Sheet Stepper - ボトムシートで美しいマルチステップフローを管理](https://github.com/mahdidavoodi7/bottom-sheet-stepper)
+* 🎥 [Expo - Expo Routerレイアウトファイルの紹介](https://www.youtube.com/watch?v=Yh6Qlg2CYwQ): Expoの新しいExpo Router基礎チュートリアルシリーズの最初の動画。
+* 🎥 [Callstack - React Nativeエンタープライズフレームワークが必要な理由](https://www.youtube.com/watch?v=yf-UZJ84-Gk)
+* 🎥 [Beto - Expo SDK 53の新機能: React 19、Expo UI、EASキャッシュ、マップ、Web上のSQLite](https://www.youtube.com/watch?v=uXi503z8p-g)
+
+***
+
+## 🔀 Other {#other}
+
+* 👀 [TC39第107回会議開催中](https://github.com/tc39/agendas/blob/main/2025/04.md): 現在進行中。既に進展した注目のJS提案: Composites（ステージ1、Records & Tuplesの後継）、Enums（ステージ1、型ストリッピング互換）、Upsert（ステージ2.7、Mapの更新または挿入操作）。
+* 👀 [SpiderMonkey - Temporalのリリース](https://spidermonkey.dev/blog/2025/04/11/shipping-temporal.html): Firefox 139がTemporal機能を初めて有効化する最初のブラウザになります。
+* 📜 [ブラウザでのカスタムCSS関数](https://www.oddbird.net/2025/04/11/custom-functions/): 注目のCSS機能で、Chromium canary 136+でプロトタイプが利用可能に。
+* 📜 [Rolldownの仕組み: モジュールローディング、依存グラフ、最適化の解説](https://www.atriiy.dev/blog/rolldown-module-loader-and-dependency-graph)
+* 📦 [Zod 4.0ベータ - より高速、軽量、tsc効率化、長年要望されていた機能を実装](https://v4.zod.dev/v4)
+* 📦 [Bare - どこでも実際に動作する最小限のJSランタイム](https://pears.com/news/introducing-bare-actually-run-javascript-everywhere/)
+* 📦 [Anime.js 4.0](https://animejs.com/): アニメーションライブラリの完全な書き直し版が、印象的なランディングページと共にリリース。
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/230/meme.jpg)](https://x.com/sebastienlorber/status/1911715079919132842)
+
+[![alt](/emails/issues/230/meme2.jpg)](https://x.com/sebastienlorber/status/1910290087163670959)
+
+[![alt](/emails/issues/230/meme3.jpg)](https://x.com/PR0GRAMMERHUM0R/status/1910694354907263383)
+
+それでは！👋

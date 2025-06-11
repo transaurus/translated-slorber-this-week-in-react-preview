@@ -1,0 +1,354 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "src/pages/conferences.mdx",
+  "source_file_content_hash": "13012a910ed293f9486106f0251656f822931195281f222fa57eddf984cc36b0",
+  "segments": [
+    {
+      "segment_id": "a9b642df",
+      "source_content": "import { newsletterStats } from \"@site/src/newsletter\";",
+      "source_content_hash": "8d45102da10a991ca9ba6f7bbcada92f1291fbbd6240ff3630be71677cd66913",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_a9b642df"
+      }
+    },
+    {
+      "segment_id": "adbc947a",
+      "source_content": "# For conference organizers",
+      "source_content_hash": "22caa9580a6a43478fe206502563666258c54aab71b69584774eff8b1c189b81",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# カンファレンス主催者向け"
+      }
+    },
+    {
+      "segment_id": "e7ec8f99",
+      "source_content": "Do you want to **promote your event** and **sell extra tickets**?",
+      "source_content_hash": "32d25c45b056d93673f82a0fa0ad8b8881ca5241c61eaf19465b0c2230e589bc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**イベントを宣伝**して**チケット販売を促進**したいですか？"
+      }
+    },
+    {
+      "segment_id": "6ef78e84",
+      "source_content": "Our newsletter can be your **media partner** and help you achieve your goals, promoting your event for free to **{newsletterStats.all.subscribersCount} subscribers**",
+      "source_content_hash": "094da69c8b263bebe08346e3988c3d1d6ebd43e55efe7c74a2a3bff5100c92b0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "私たちのニュースレターは**メディアパートナー**として、**{newsletterStats.all.subscribersCount}人の購読者**に向けて無料でイベントを宣伝し、目標達成をお手伝いします。"
+      }
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "In practice, this means that we **exchange visibility** with our respective audiences as part of a **cross-promotional operation**.",
+      "source_content_hash": "58e9c75cc195ffb7189cda555c9a47570f0a7bc9b1cfb8b7f9f7b3877ee7a191",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "具体的には、**相互のオーディエンスに向けたクロスプロモーション**として**認知度を交換**します。"
+      }
+    },
+    {
+      "segment_id": "bb849aa9",
+      "source_content": ":::tip[is this a good fit?]\n[**This Week In React**](/) is a large newsletter for **mid/senior React and React Native developers** looking to stay up-to-date.\n\nThis audience is made up of **passionate and experienced developers**. We believe this partnership is a good fit for both sides:\n\n* Our audience is **likely to buy conference tickets and workshops**\n* Your audience is likely to sign up to our newsletter and keep reading it over time\n:::",
+      "source_content_hash": "cd4ca6ec8eb480fcee4e0a21bc23adaf1706396c0ddcd4285b0532413377d94b",
+      "node_type": "containerDirective",
+      "translatable": true,
+      "translations": {
+        "ja": ":::tip[適性について]\n[**This Week In React**](/)は、**中級/上級のReactおよびReact Native開発者**向けの大規模なニュースレターです。\n\nこのオーディエンスは**情熱的で経験豊富な開発者**で構成されています。このパートナーシップは双方にとって有益です：\n\n* 私たちのオーディエンスは**カンファレンスチケットやワークショップを購入する可能性が高い**\n* あなたのオーディエンスは私たちのニュースレターに登録し、継続的に読む可能性が高い\n:::"
+      }
+    },
+    {
+      "segment_id": "bc633244",
+      "source_content": "## Conferences we partner with",
+      "source_content_hash": "e5dca4c6a279ff9e05d1ec12ddf562f43a3dc284e7519abc93fc945c565f8b08",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## パートナーシップ対象のカンファレンス"
+      }
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "We prefer to partner with conferences that meet the following criteria:",
+      "source_content_hash": "a7ab80646a76fa22d28a430e7152c0d9f115a1dff16c2b451fa0f71149735355",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "以下の基準を満たすカンファレンスとのパートナーシップを優先します："
+      }
+    },
+    {
+      "segment_id": "8cf6d045",
+      "source_content": "* The conference is essentially about React and/or React Native\n* The conference takes place on site, with over 300 participants\n* The conference is taking place in Europe or the United States",
+      "source_content_hash": "ce15eb9a603b4d646705df9ed53169a15209accde6550cc0105eb5376d9442f5",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* カンファレンスの主要テーマがReactおよび/またはReact Nativeであること\n* 300人以上の参加者を集める現地開催のイベントであること\n* ヨーロッパまたはアメリカで開催されること"
+      }
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "If you don't meet all the criteria, don't worry, you can always get in touch with us, and we'll figure this out.",
+      "source_content_hash": "727d63ccb27ce0553ead94d49d9147a8a13cd5cc7be633ae90e9e8b2114908e0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "すべての基準を満たさない場合でも、お気軽にご連絡ください。柔軟に対応します。"
+      }
+    },
+    {
+      "segment_id": "f79f5ed0",
+      "source_content": ":::info[Our previous partners]\nWe already partnered with those conferences:\n\n* [React Summit - Amsterdam](https://reactsummit.com/)\n* [React Advanced - London](https://reactadvanced.com/)\n* [App.js - Kraków](https://appjs.co/)\n* [React Native EU - Wrocław](https://www.react-native.eu/)\n* [Chain React - Portland](https://chainreactconf.com/)\n* [React.js Day - Verona](https://2023.reactjsday.it/)\n* [React Connection - Paris](https://reactconnection.io/)\n* [React Native Connection - Paris](https://reactnativeconnection.io/)\n* [React Paris](https://react.paris/)\n\nThese conferences usually report some **extra ticket sales** attributed to our promo code, and consider this partnership to be worthwhile.\n:::",
+      "source_content_hash": "2bdb1409c557a1bfb796b107cd8668d0c56b8c1aeb810dd4c66eb79840f71fc7",
+      "node_type": "containerDirective",
+      "translatable": true,
+      "translations": {
+        "ja": ":::info[過去のパートナー]\nこれまでに以下のカンファレンスとパートナーシップを結びました：\n\n* [React Summit - アムステルダム](https://reactsummit.com/)\n* [React Advanced - ロンドン](https://reactadvanced.com/)\n* [App.js - クラクフ](https://appjs.co/)\n* [React Native EU - ヴロツワフ](https://www.react-native.eu/)\n* [Chain React - ポートランド](https://chainreactconf.com/)\n* [React.js Day - ヴェローナ](https://2023.reactjsday.it/)\n* [React Connection - パリ](https://reactconnection.io/)\n* [React Native Connection - パリ](https://reactnativeconnection.io/)\n* [React Paris](https://react.paris/)\n\nこれらのカンファレンスからは、プロモーションコードによる**追加チケット販売**の報告があり、パートナーシップの価値を認めていただいています。\n:::"
+      }
+    },
+    {
+      "segment_id": "06784e79",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c674e260",
+      "source_content": "## Partnership execution",
+      "source_content_hash": "417eb535249e7afafbc4e665752b85b95134eab179418799191c118bc52e8173",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## パートナーシップの実施方法"
+      }
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "Here's how we generally execute this kind of media partnership.",
+      "source_content_hash": "c721f070b6c40c96eec1537014276eae2c3d7ac4756bcab0cf437a96386ab5d7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "メディアパートナーシップの一般的な実施方法をご説明します。"
+      }
+    },
+    {
+      "segment_id": "cb5b269c",
+      "source_content": "### What we do",
+      "source_content_hash": "4b1ed88141e9ed322d7e36854266c031b9db18fe10c4dfa6b4e0fcd1c13777db",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 私たちが行うこと"
+      }
+    },
+    {
+      "segment_id": "157c9741",
+      "source_content": "* We mention once the conference in the newsletter intro ([example](/newsletter/159))\n* We mention it 3 times ([example](/newsletter/159#react)) at key events (early birds, CFP, speakers announcement...)",
+      "source_content_hash": "4bcf9708dfd9b5fcdec6f6a1523bec79e1ebbd88313ef01330913a88c7b2698c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* ニュースレターのイントロで1回カンファレンスを紹介（[例](/newsletter/159)）\n* キーイベント（早期割引、CFP、スピーカー発表など）で3回紹介（[例](/newsletter/159#react)）"
+      }
+    },
+    {
+      "segment_id": "e50bebbf",
+      "source_content": "### What you do",
+      "source_content_hash": "eb3dec81cf89d9c72a9fa8740391a35f12cbb9ab686d762bc33be158de5aeab8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### あなたが行うこと"
+      }
+    },
+    {
+      "segment_id": "30193704",
+      "source_content": "* You print and distribute our [Flyer (A5 leaflet format)](https://drive.google.com/drive/folders/1tVoR3u5qERjt9hwyNQQMJzax3iYEKcsL) in the conference bag\n* You put our [logo](https://drive.google.com/drive/folders/1029GIVDLUizLhhz0xNAdDlMnPhsQ3_f7) on your homepage with a do-follow backlink (with `?utm_source=<YOUR_CONF_NAME>`)\n* You mention us once in your conference newsletter (with `?utm_source=<YOUR_CONF_NAME>`)\n* You offer discount of at least 10% on tickets with promo code `TWIR`, also useful for tracking",
+      "source_content_hash": "9c2858095fd99156776643e2da58c2a5032ccd27f45d284db86360f2f6cb2385",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* カンファレンスバッグに[フライヤー（A5リーフレット形式）](https://drive.google.com/drive/folders/1tVoR3u5qERjt9hwyNQQMJzax3iYEKcsL)を同封\n* ホームページに[ロゴ](https://drive.google.com/drive/folders/1029GIVDLUizLhhz0xNAdDlMnPhsQ3_f7)を掲載（`?utm_source=<YOUR_CONF_NAME>`付きのdo-followバックリンク）\n* カンファレンスニュースレターで1回言及（`?utm_source=<YOUR_CONF_NAME>`付き）\n* チケットに10%以上の割引を提供（トラッキング用にプロモーションコード`TWIR`を使用）"
+      }
+    },
+    {
+      "segment_id": "c315c636",
+      "source_content": "### Other options",
+      "source_content_hash": "f50fee3c9ff5e4137ea705b26b4adb998f8b7841f542c3ff71991767309dc83a",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### その他のオプション"
+      }
+    },
+    {
+      "segment_id": "531437ca",
+      "source_content": "We are open to negotiating other practices to give you the visibility we both need, such as:",
+      "source_content_hash": "5a220c2caad250b6a09b63c3cf0be7f37a1e868deced61f338f2a4a0caf34ef7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "以下のような他の方法も検討可能です："
+      }
+    },
+    {
+      "segment_id": "645e08e3",
+      "source_content": "* Social media mentions\n* Additional newsletter inclusions\n* Creation of a conf summary blog post, that we both distribute\n* Anything else that benefit both of us",
+      "source_content_hash": "d48f14fbced4730941331138e9c222ed8304dd140dbe014a227772a8ca0abf2b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* SNSでの言及\n* 追加のニュースレター掲載\n* カンファレンスまとめブログ記事の共同作成・配布\n* 双方に利益をもたらすその他の方法"
+      }
+    },
+    {
+      "segment_id": "d422fb13",
+      "source_content": "### Ready to execute?",
+      "source_content_hash": "5cdeaddbbfff3772e4fc9281d5eae65d458493e0e1eedf0ec0bfff9eac0c6aa6",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 実施準備はできていますか？"
+      }
+    },
+    {
+      "segment_id": "f01228d3",
+      "source_content": "If this media partnership interests you, please reach out to [sebastien@thisweekinreact.com](mailto\\:sebastien@thisweekinreact.com?subject=%3CCONF_NAME%3E%20x%20This%20Week%20In%20React%20-%20Media%20Partnership).",
+      "source_content_hash": "87a899456d03b2457f30c9a5fcc260ddcdfe7377e1c7fdb742bff28c673b97df",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このメディアパートナーシップに興味があれば、[sebastien@thisweekinreact.com](mailto\\:sebastien@thisweekinreact.com?subject=%3CCONF_NAME%3E%20x%20This%20Week%20In%20React%20-%20Media%20Partnership)までご連絡ください。"
+      }
+    },
+    {
+      "segment_id": "afa378f7",
+      "source_content": "To facilitate the execution of this partnership, it is preferable to provide us with all the relevant information about your conf upfront. In particular, knowing the key events of the conference you want us to promote ahead of time, and their respective dates, will help us better orchestrate things.",
+      "source_content_hash": "1bdb0f792a3aaabe7e5498d1634f9b0ce65de764d801519059cf73064239c607",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このパートナーシップを円滑に進めるためには、事前に関連情報をすべて提供していただくことが望ましいです。特に、プロモーションしたいカンファレンスの主要イベントとその日程を事前に共有いただけると、より効果的な連携が可能になります。"
+      }
+    },
+    {
+      "segment_id": "e8e162a9",
+      "source_content": "Here's a useful email template you can use.",
+      "source_content_hash": "cc81e7d8affdf52459c8ef21482344b570f21276c5e7ab91e74d6a2b6a84f955",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "以下は利用可能なメールテンプレートです。"
+      }
+    },
+    {
+      "segment_id": "9f4336b3",
+      "source_content": "```bash title=\"Subject: <CONF_NAME> x This Week In React - Media Partnership\"\nHi,\n\nWe would like to establish a conference media with your newsletter.\n\nHere are the details of our conference:\n- Name:\n- Date:\n- Location:\n- Number of participants:\n- Topics:\n\nWe would like to promote our conference at those key events:\n- newsletter intro mention - dd/MM/yyyy - Conf scheduled, early birds\n- newsletter mention 1 - dd/MM/yyyy - CFP is opening / closing soon\n- newsletter mention 2 - dd/MM/yyyy - Speakers announcement + 3 representative headliners\n- newsletter mention 3 - dd/MM/yyyy - Last call, late birds\n\n(these key events are examples, and not strict requirements: feel free to suggest whatever helps you get conversions)\n\nWe agree to:\n- print and distribute your flyer in our swag bag\n- put your logo on our homepage with a do-follow backlink\n- mention our newsletter in your newsletter\n- offer a discount 10%+ with promo code TWIR\n\n... Other details you would like to discuss ...\n```",
+      "source_content_hash": "e6457164beebce1158dba29bdfc895ae6c195afa02653f9f3a31d9cf312a3eaa",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {}
+    },
+    {
+      "segment_id": "3faebbae",
+      "source_content": ":::tip[About newsletter mentions]\nUse our [public calendar](https://thisweekinreact.com/calendar) to know when we plan to send out an issue on which we can mention your conf.\n\nWe usually **normalize** conf mentions and **write the text ourselves**, taking into consideration what you want to highlight. If you want to provide a text, keep it super short, within these 2 sizes:\n\n* 🗓 [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 Kraków - 22-24 May. Get a [10% discount](https://ti.to/appjs/2024/discount/TWIR) with code \"TWIR\".\n* 🗓 [React Summit](https://reactsummit.com/?utm_source=thisweekinreact) - 🇳🇱 Amsterdam - 14-18 June - Get a 10% discount with code \"TWIR\". Awesome lineup including Evan Bacon, Kent C. Dodds, Theo, Tim Neutkens, Mark Erikson, Fred Schott and so many others!\n:::",
+      "source_content_hash": "e3615bf73f2ed7e2da6b75b7ba9784c186e6c752e6fcb44d45aa201d12a29601",
+      "node_type": "containerDirective",
+      "translatable": true,
+      "translations": {
+        "ja": ":::tip[ニュースレター掲載について]\nカンファレンス掲載予定の号を確認するには、[公開カレンダー](https://thisweekinreact.com/calendar)をご利用ください。\n\n通常、掲載内容は**標準化**しており、**こちらでテキストを作成**しますが、強調したいポイントがあればご連絡ください。テキストを提供される場合は、以下の2つのサイズに収めてください：\n\n* 🗓 [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 クラクフ - 5月22-24日。コード「TWIR」で[10%割引](https://ti.to/appjs/2024/discount/TWIR)。\n* 🗓 [React Summit](https://reactsummit.com/?utm_source=thisweekinreact) - 🇳🇱 アムステルダム - 6月14-18日 - コード「TWIR」で10%割引。Evan Bacon、Kent C. Dodds、Theo、Tim Neutkens、Mark Erikson、Fred Schottなど豪華なスピーカー陣！\n:::"
+      }
+    },
+    {
+      "segment_id": "6ad15270",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c7fa1e8d",
+      "source_content": "## About the newsletter",
+      "source_content_hash": "7c5ea9a043092b13a32e8578101e0c5f2a5dffd568cde7e7ee92f5baf1e216bb",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ニュースレターについて"
+      }
+    },
+    {
+      "segment_id": "a6c928a1",
+      "source_content": "Here are a few statistics and testimonials to help you better understand the newsletter audience.",
+      "source_content_hash": "5ce230b255ac59896d3e8d2091a9afd899aef79fa697f4820127e87ce875cea0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ニュースレターの読者層を理解していただくため、統計データと推薦文を紹介します。"
+      }
+    },
+    {
+      "segment_id": "ed644f52",
+      "source_content": "### 📈 Stats",
+      "source_content_hash": "5023f8b4ba4a9658102cff2394c38503148fcc4470fd5bd5d33019fbe08cf299",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 📈 統計データ"
+      }
+    },
+    {
+      "segment_id": "a80fd598",
+      "source_content": "<SponsoringTabsStats />",
+      "source_content_hash": "2038db1f9bd507a92b9f5d7e53a9b4bf21c5729f0e2f7ed66e049f57e1b50201",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {}
+    },
+    {
+      "segment_id": "6e56e8cf",
+      "source_content": "<br />",
+      "source_content_hash": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {}
+    },
+    {
+      "segment_id": "c35e5786",
+      "source_content": "### 🗣 Testimonials",
+      "source_content_hash": "467ef21c4377d09e1eb90db8d0552cc3d035d7b98579f42fb4173b6afb5096a4",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 🗣 推薦文"
+      }
+    },
+    {
+      "segment_id": "cf6a5faa",
+      "source_content": "<SponsoringTabsTestimonials />",
+      "source_content_hash": "f96d0fdb6409ec3e671fd371e27a84a0d9b8178d2951f5eab327ef84afef3c40",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-pages/conferences.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:36.749667+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "13012a910ed293f9486106f0251656f822931195281f222fa57eddf984cc36b0"
+  }
+}

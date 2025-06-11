@@ -1,0 +1,682 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/127/index.mdx",
+  "source_file_content_hash": "e791657dce9e56d0696684ca3e7ded1cbb3a5e20aa0fa575f6446eea911feddb",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /127\ntitle: \"This Week In React #127: Nextra, React-Query, React Documentary, Storybook, Remix, Tamagui, Solito, TC39, Rome...\"\nauthors: [slorber]\ndate: 12-06-2022\n---",
+      "source_content_hash": "876a02193979bd8e4090ffcb593e402df8c9b9b92b7c2769207f7b71cf98bd61",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "皆さん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "We have some nice articles this week. I liked to discover how React-Query is implemented, or the latest Storybook news.",
+      "source_content_hash": "cb838c28cc0ff2969b89e76b006f153c36d262f3db2d7244edfb11d1aa774657",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週は素晴らしい記事がいくつかあります。React-Queryの実装方法や、Storybookの最新ニュースを発見できて良かったです。"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Nextra v2 is a serious challenger for Docusaurus!",
+      "source_content_hash": "9ce4fc3387f653c8cd3b56e1dc824d01768a5875fb279247d7fed3aad0f9e96a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Nextra v2はDocusaurusにとって真剣な競合相手です！"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "A nice React documentary is being created, and the trailer is available 🙌",
+      "source_content_hash": "b3199eb07b78198290264c4f672cf77d40c2d51f4b37c8376d0c49d26048bcfe",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "素晴らしいReactドキュメンタリーが制作中で、トレーラーが公開されています 🙌"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "It's also quite active on React-Native side! There are some great releases, a State of React-Native survey in the works.",
+      "source_content_hash": "47e46aae36a58b0ca1ddc964b818ca1b1164c1a2a71babf6ae4e753d8225cedc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React-Native側もかなり活発です！素晴らしいリリースがあり、State of React-Nativeの調査も進行中です。"
+      }
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "For this edition, I put the images below the title/text, don't hesitate to tell me if it's better like that or if you prefer above?",
+      "source_content_hash": "4ee5290947205fb0ec11b3a382294256f13c3c3d4181ca508598561754fa9cd4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今回の号では、画像をタイトル/テキストの下に配置しました。この方が良いか、それとも上に配置する方が良いか、ぜひ教えてください。"
+      }
+    },
+    {
+      "segment_id": "c6da205d",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_c6da205d"
+      }
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアル形式 🎨**"
+      }
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "cf4363fc",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_cf4363fc"
+      }
+    },
+    {
+      "segment_id": "2a3434e4",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_2a3434e4"
+      }
+    },
+    {
+      "segment_id": "2b28cb1b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "b25f21be",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "[![FlyCode Makes React Apps Editable without coding, Git based](/emails/issues/124/flycode.jpg)](https://bit.ly/3UPwAoJ)",
+      "source_content_hash": "b1c253f9a00e87fb27290d2b708379ae2c003b9fb3c37dbf215926813efd1bc8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![FlyCode Makes React Apps Editable without coding, Git based](/emails/issues/124/flycode.jpg)](https://bit.ly/3UPwAoJ)"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "**[FlyCode Makes React Apps Editable without coding, Git based](https://bit.ly/3UPwAoJ)**",
+      "source_content_hash": "be0008c644c3577cba86de728a53d8c02539af2b4374d8c985b4b4d7109cc468",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[FlyCodeはコーディングなしでReactアプリを編集可能に、Gitベース](https://bit.ly/3UPwAoJ)**"
+      }
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "[FlyCode](https://bit.ly/3wWSi00) (YC S22) makes React web apps editable in minutes so Product and UX teams can iterate and release products faster, so they don't have to wait on (or consume) developer time.",
+      "source_content_hash": "bbc101671f92785b8d72decafab66d491ddfe3120e508b897b8aef31b9c6c08a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[FlyCode](https://bit.ly/3wWSi00) (YC S22) は、Reactウェブアプリを数分で編集可能にし、プロダクトチームとUXチームが迅速に反復して製品をリリースできるようにします。これにより、開発者の時間を待つ（または消費する）必要がなくなります。"
+      }
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "FlyCode reads your regular React code and finds Texts, Images, Design tokens and Analytics event, then it let's non-coders collaborate and edit them and send back a pull request (they don't need access to GitHub!)",
+      "source_content_hash": "b0ca824c79705290430c561efbfcf98429b8f4bc63a90163188455e0ba905119",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "FlyCodeは通常のReactコードを読み取り、テキスト、画像、デザイントークン、アナリティクスイベントを見つけます。その後、非コーダーが協力して編集し、プルリクエストを送信できるようにします（GitHubへのアクセスは不要です！）。"
+      }
+    },
+    {
+      "segment_id": "8612da05",
+      "source_content": "* Saves development time\n* No code integration, it just reads your code!\n* GitHub based, a bot is scanning the code and creates pull requests\n* Use your own stack and components\n* Retain codebase ownership",
+      "source_content_hash": "89eeeec285221e82fbb0cbcc28ac9fbc90be22ecaf0c14208cc29eb955fa4b2d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 開発時間を節約\n* コード統合不要、コードを読み取るだけ！\n* GitHubベース、ボットがコードをスキャンしてプルリクエストを作成\n* 独自のスタックとコンポーネントを使用\n* コードベースの所有権を保持"
+      }
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "You can get started here: [flycode.com/developers](https://www.flycode.com/developers)",
+      "source_content_hash": "170cfd801b0555f2b7855462fb99c62035d2b35b7721da4451de25d7460726a7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "こちらから始められます: [flycode.com/developers](https://www.flycode.com/developers)"
+      }
+    },
+    {
+      "segment_id": "816a06a6",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "cb5b269c",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "b36c6338",
+      "source_content": "**[Nextra 2.0](https://nextra.site/)**",
+      "source_content_hash": "7869317c46b2d96c94b60b4fc698ee07228ed27ea3ee22c6767c8d5ebcd83fec",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Nextra 2.0](https://nextra.site/)**"
+      }
+    },
+    {
+      "segment_id": "b9aaa519",
+      "source_content": "Nextra is a tool to facilitate the creation of documentation sites, based on Next.js, and created by a Vercel engineer. v2 has just been released with a great redesign and a nice list of features (MDX 2, Tailwind, search, i18n, a11y, code highlighting...). Relying on Next.js allows to benefit from a modern infrastructure and the latest Next.js innovations, but also to create more dynamic pages (SSR, ISR) associated to static documentation pages. It is a very serious competitor to [Docusaurus](https://docusaurus.io/), the tool I am working on.",
+      "source_content_hash": "deba2b2986b755e27d1a9c89b4610db83f6e3344e46232b4b9d6e6dbc039cf60",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Nextraは、Next.jsを基盤としたドキュメントサイト作成を容易にするツールで、Vercelのエンジニアによって作成されました。v2は、素晴らしいリデザインと機能リスト（MDX 2、Tailwind、検索、i18n、a11y、コードハイライトなど）でリリースされました。Next.jsを利用することで、最新のインフラストラクチャとNext.jsの最新機能を活用できるだけでなく、静的ドキュメントページに関連するより動的なページ（SSR、ISR）を作成できます。これは、私が取り組んでいる[Docusaurus](https://docusaurus.io/)にとって非常に真剣な競合相手です。"
+      }
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "[![Nextra 2.0](/emails/issues/127/nextra.jpg)](https://nextra.site/)",
+      "source_content_hash": "ac2c0b0d3caf8e0c7f2db4085d9b56d1985e158f630fdf27200e34a2cf643596",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Nextra 2.0](/emails/issues/127/nextra.jpg)](https://nextra.site/)"
+      }
+    },
+    {
+      "segment_id": "b760ab3f",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "6ea4c715",
+      "source_content": "**[Inside React Query](https://tkdodo.eu/blog/inside-react-query)**",
+      "source_content_hash": "9ace980c97373cbc3cfeca3219fbd0fd805badea6942ce2b0435311d4edd8e0b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Inside React Query](https://tkdodo.eu/blog/inside-react-query)**"
+      }
+    },
+    {
+      "segment_id": "79ad944d",
+      "source_content": "Dominik explains how React-Query works, and details the relationships between its different elements: QueryClient, QueryCache, Query, Persister, QueryObserver... Many of these elements do not depend on React, and this is what allows TanStack Query to easily support other frameworks like SolidJS thanks to adapters.",
+      "source_content_hash": "b069ea04bb71fbdc1266a9989fd1cc8d0ab8feca4d92a492876cf94faa792111",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Dominikは、React-Queryの動作方法と、そのさまざまな要素（QueryClient、QueryCache、Query、Persister、QueryObserverなど）間の関係を説明しています。これらの要素の多くはReactに依存しておらず、これがTanStack QueryがSolidJSなどの他のフレームワークをアダプターを介して簡単にサポートできる理由です。"
+      }
+    },
+    {
+      "segment_id": "531437ca",
+      "source_content": "[![Inside React Query](/emails/issues/127/react-query.png)](https://tkdodo.eu/blog/inside-react-query)",
+      "source_content_hash": "096b1afa5d43a91ebba187b9c268beb1c212c079558cb88d043e8bfbedc25047",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Inside React Query](/emails/issues/127/react-query.png)](https://tkdodo.eu/blog/inside-react-query)"
+      }
+    },
+    {
+      "segment_id": "ba96ee98",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "7f71ff2a",
+      "source_content": "**[NextJS, SvelteKit, Remix and the future of Storybook](https://storybook.js.org/blog/framework-api/)**",
+      "source_content_hash": "8552dd29534dcd4a6dab68d66e835905a2cdccceae65323c1a94d6bcdc69885e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[NextJS、SvelteKit、RemixとStorybookの未来](https://storybook.js.org/blog/framework-api/)**"
+      }
+    },
+    {
+      "segment_id": "147e8550",
+      "source_content": "Storybook 7.0 will have a new Framework API. It will allow the creation of \"Framework packages\" (example: `@storybook/nextjs`) that pre-configure your Storybook for a given stack (builder, renderer, app settings), and that you can extend. The support of several frameworks based on Vite is ready. Next.js and SvelteKit frameworks are coming soon, and a Remix support is considered.",
+      "source_content_hash": "25c175051e254254d054cfa4c5be34fae8a5ce70ebc6011b20c33fd6ae2725d0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Storybook 7.0では新しいFramework APIが導入されます。これにより、特定のスタック（ビルダー、レンダラー、アプリ設定）向けにStorybookを事前設定し、拡張可能な「Frameworkパッケージ」（例: `@storybook/nextjs`）の作成が可能になります。Viteベースの複数フレームワークのサポートは既に準備が整っており、Next.jsとSvelteKitのフレームワークサポートも間もなくリリースされます。Remixのサポートも検討中です。"
+      }
+    },
+    {
+      "segment_id": "883231d4",
+      "source_content": "[![NextJS, SvelteKit, Remix and the future of Storybook](/emails/issues/127/storybook-frameworks.png)](https://storybook.js.org/blog/framework-api/)",
+      "source_content_hash": "61faaa16c0bece57f3ebe65752552b483897992ca65d1ed9031e2cbddafcce0d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![NextJS, SvelteKit, Remix and the future of Storybook](/emails/issues/127/storybook-frameworks.png)](https://storybook.js.org/blog/framework-api/)"
+      }
+    },
+    {
+      "segment_id": "fe5fa73a",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "6384b3d4",
+      "source_content": "* 🍿 [React.js - The Documentary - Trailer](https://www.youtube.com/watch?v=gmp0istg5xo): a documentary about React should be released in February. In the meantime you can check this 2min trailer. A nice list of guests have participated. I'm really looking forward to seeing this, and remembering the early years of React. This [parody](https://www.youtube.com/watch?v=Ov0alO_k_1k) also made me laugh ;)\n* 📖 Beta docs: [useTransition](https://twitter.com/dan_abramov/status/1598468389340585984) + [Suspense](https://twitter.com/dan_abramov/status/1598412132827435008) + [useDeferredValue](https://twitter.com/dan_abramov/status/1598414645244534784). We can sympathize with Dan Abramov who [dreams of documentation at night](https://twitter.com/dan_abramov/status/1598149838017003520) 😅 Glad this long effort is coming to an end.\n* 📜 [Lessons learned: how I’d rebuild a social web app like Twitter today](https://paularmstrong.dev/blog/2022/11/28/lessons-learned-how-i-would-rebuild-twitter-today/): Paul worked on the Twitter web app. He wonders what choices he would make for it today. He would use Tailwind instead of React-Native-Web, which presents some pragmatic difficulties, and Twitter doesn't use React-Native so the cross-platform benefits are limited. He would also use a more reactive framework like SolidJS or Preact + Signals. Many other interesting points: Vite, Module Federation, Client Hints, Deno...\n* 📜 [React vs React Native: How Different Are They, Really?](https://echobind.com/post/react-vs-react-native-how-different-are-they): details the many similarities and differences between React (DOM) and React-Native. A good resource for web developers who might be tempted to learn React-Native and want to know how much knowledge they will be able to reuse, but also for managers looking to understand what it takes to adopt React-Native.\n* 📜 [Different Dimensions of Remix Deploy Targets](https://andre-landgraf.dev/blog/2022-12-03_different-dimensions-of-remix-deploy-targets): Remix can be deployed on different platforms, thanks to its adapters. This article analyzes each target platform along several dimensions and helps us to make an informed choice.\n* 📜 [Component Testing in Storybook](https://bradfrost.com/blog/link/component-testing-in-storybook/): Brad Frost gives his positive opinion on the latest Storybook testing features presented in [this video](https://www.youtube.com/watch?v=wEa6W8uUGSA). I also agree that Jest alone is not a suitable tool for visual rendering.\n* 📜 [React Conditional Rendering With Type Safety and Exhaustive Checking](https://www.lloydatkinson.net/posts/2022/react-conditional-rendering-with-type-safety-and-exhaustive-checking/): React + TypeScript tip useful to know to make sure not to forget any case of an union-type (waiting for a real pattern matching support).\n* 📜 [How we migrated from Redux to TanStack Query and Redux Toolkit](https://tech.storyly.io/how-we-migrated-from-redux-to-tanstack-query-and-redux-toolkit-ac9be2f445be): the story of 2 quite different projects based on Redux, and migrated incrementally to distinct solutions: RTK and React-Query.\n* 📜 [Why you should reconsider prefetching in Remix](https://www.themosaad.com/blog/reconsider-prefetching-in-remix): an interesting reflection on the impact of a very fast but inconsistent navigation (ie sometimes slower without prefetching). I have a mixed opinion on the conclusion: we should be able to keep prefetching and make the UX consistent.\n* 📜 [Add rolling sessions to Remix](https://sergiodxa.com/articles/add-rolling-sessions-to-remix)\n* 📜 [The Children Prop Pattern in React](https://www.craftvalue.io/blog/react-children-prop-pattern)\n* 🎥 [TanStack Router: Type safe routing and URL state management for your applications](https://www.youtube.com/watch?v=qUZm3gbMOeo): Tanner presents his new 100% typesafe and agnostic router. I make the [same observation as him](https://twitter.com/sebastienlorber/status/1555493419128168449): the existing APIs (Next.js, React-Router) do not facilitate the creation of apps that use query-strings a lot, and a new typesafe solution is welcome.\n* 🎥 [React Streaming In Depth! NextJS! Remix! DIY!](https://www.youtube.com/watch?v=o3JWb04DRIs): long video that details how streaming works with React, via the Next.js and Remix frameworks. Also offers a home-made implementation (not for production).\n* 🎥 [Remix - Roadmap Planning #1](https://www.youtube.com/watch?v=YSo0vKqAWtk): first public roadmapping session for the framework, as announced in [Open Development for Remix](https://remix.run/blog/open-development).\n* 🎥 [ChatGPT refactoring php + jquery to Next.js](https://twitter.com/thekitze/status/1598414259137880066): this new AI is impressive and has devs talking a lot this week on Twitter!\n* 🎨 [HTML + React-Three-Fiber demo](https://twitter.com/0xca0a/status/1599367266448994304): cela semble de plus en plus facile, et performant, d'intégrer du HTML dans une scene 3D avec React-Three-Fiber.\n* 🐦 [Nodejs.dev adopting Next.js?](https://twitter.com/ovflowd/status/1599417661242232832): the Node.js doc could migrate from Gatsby to Next.js\n* 🐦 [React Server Components + MDX](https://twitter.com/sebastienlorber/status/1598615824927002624): the impact of RSC is potentially important for content sites using MDX, like Docusaurus or Nextra ;)\n* 📨 [React.holiday](https://react.holiday/): ephemeral avent newsletter of 25 short emails about new features of Next.js 13\n* 📦 [Papanasi 1.0](https://twitter.com/CKGrafico/status/1597585206034169857): v1 release of this innovative UI components library. It is based on [Mitosis](https://github.com/builderio/mitosis), which allows to compile code to all frameworks at once: React, Vue, Svelte, Solid...\n* 📦 [Jotai 1.11](https://twitter.com/jotaijs/status/1598366077527810048)\n* 📦 [Gatsby 5.2](https://www.gatsbyjs.com/docs/reference/release-notes/v5.2/)\n* 📦 [Redwood 3.5](https://github.com/redwoodjs/redwood/releases/tag/v3.5.0)",
+      "source_content_hash": "1d1407127124f9a3d18948f0752caebbd39a8438af1bccb99179b052f26b2108",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 🍿 [React.js - The Documentary - トレーラー](https://www.youtube.com/watch?v=gmp0istg5xo): Reactに関するドキュメンタリーが2月に公開予定です。それまでにこの2分間のトレーラーをチェックできます。多くの著名なゲストが参加しています。初期のReactを思い出せるこの作品をとても楽しみにしています。この[パロディ](https://www.youtube.com/watch?v=Ov0alO_k_1k)も笑えました ;)\n* 📖 ベータ版ドキュメント: [useTransition](https://twitter.com/dan_abramov/status/1598468389340585984) + [Suspense](https://twitter.com/dan_abramov/status/1598412132827435008) + [useDeferredValue](https://twitter.com/dan_abramov/status/1598414645244534784)。Dan Abramovが[夜にドキュメンテーションの夢を見る](https://twitter.com/dan_abramov/status/1598149838017003520)というツイートには共感できます😅 この長い努力が終わりに近づいているのは嬉しいです。\n* 📜 [学んだ教訓: 今日TwitterのようなソーシャルWebアプリを再構築する方法](https://paularmstrong.dev/blog/2022/11/28/lessons-learned-how-i-would-rebuild-twitter-today/): PaulはTwitterのWebアプリに携わりました。今日ならどのような選択をするか考察しています。React-Native-Webの代わりにTailwindを使うでしょう。React-Nativeを使っていないTwitterではクロスプラットフォームの利点が限られるためです。SolidJSやPreact + Signalsのようなよりリアクティブなフレームワークも検討するでしょう。Vite、Module Federation、Client Hints、Denoなど興味深い点が多くあります...\n* 📜 [React vs React Native: 実際どれくらい違うのか？](https://echobind.com/post/react-vs-react-native-how-different-are-they): React（DOM）とReact-Nativeの多くの類似点と相違点を詳述しています。React-Nativeを学びたいWeb開発者や、React-Nativeを採用するために必要なことを理解したいマネージャーにとって良いリソースです。\n* 📜 [Remixデプロイターゲットの異なる次元](https://andre-landgraf.dev/blog/2022-12-03_different-dimensions-of-remix-deploy-targets): Remixはアダプターにより様々なプラットフォームにデプロイ可能です。この記事は各ターゲットプラットフォームを複数の次元で分析し、適切な選択を支援します。\n* 📜 [Storybookでのコンポーネントテスト](https://bradfrost.com/blog/link/component-testing-in-storybook/): Brad Frostが[この動画](https://www.youtube.com/watch?v=wEa6W8uUGSA)で紹介された最新のStorybookテスト機能について好意的な意見を述べています。Jestだけではビジュアルレンダリングに適したツールではないという点にも同意します。\n* 📜 [型安全と網羅的チェックを備えたReactの条件付きレンダリング](https://www.lloydatkinson.net/posts/2022/react-conditional-rendering-with-type-safety-and-exhaustive-checking/): ユニオン型のケースを漏れなく処理するためのReact + TypeScriptのヒントです（本物のパターンマッチングサポートを待ちつつ）。\n* 📜 [ReduxからTanStack QueryとRedux Toolkitへの移行方法](https://tech.storyly.io/how-we-migrated-from-redux-to-tanstack-query-and-redux-toolkit-ac9be2f445be): Reduxベースの2つの異なるプロジェクトを段階的にRTKとReact-Queryに移行したストーリー。\n* 📜 [Remixでのプリフェッチを再考すべき理由](https://www.themosaad.com/blog/reconsider-prefetching-in-remix): 非常に速いが一貫性のないナビゲーション（プリフェッチなしでは時々遅くなる）の影響についての興味深い考察。プリフェッチを維持しつつUXを一貫させるべきという結論には複雑な意見があります。\n* 📜 [Remixにローリングセッションを追加](https://sergiodxa.com/articles/add-rolling-sessions-to-remix)\n* 📜 [ReactのChildren Propパターン](https://www.craftvalue.io/blog/react-children-prop-pattern)\n* 🎥 [TanStack Router: アプリケーションのための型安全なルーティングとURL状態管理](https://www.youtube.com/watch?v=qUZm3gbMOeo): Tannerが新しい100%型安全でフレームワークに依存しないルーターを紹介。既存のAPI（Next.js、React-Router）ではクエリ文字列を多用するアプリの作成が容易でないため、新しい型安全ソリューションが歓迎されます。\n* 🎥 [Reactストリーミングの詳細！NextJS！Remix！DIY！](https://www.youtube.com/watch?v=o3JWb04DRIs): Next.jsとRemixフレームワークを介したReactのストリーミング動作を詳細に解説する長編動画。プロダクション向けではない自作実装も紹介。\n* 🎥 [Remix - ロードマップ計画 #1](https://www.youtube.com/watch?v=YSo0vKqAWtk): [Remixのオープン開発](https://remix.run/blog/open-development)で発表された初の公開ロードマッピングセッション。\n* 🎥 [ChatGPTがphp + jqueryをNext.jsにリファクタリング](https://twitter.com/thekitze/status/1598414259137880066): この新しいAIは印象的で、今週Twitterで開発者の間で話題になりました！\n* 🎨 [HTML + React-Three-Fiberデモ](https://twitter.com/0xca0a/status/1599367266448994304): React-Three-FiberでHTMLを3Dシーンに統合することがますます簡単に、そして高性能になっているようです。\n* 🐦 [Nodejs.devがNext.jsを採用？](https://twitter.com/ovflowd/status/1599417661242232832): Node.jsのドキュメントがGatsbyからNext.jsに移行する可能性\n* 🐦 [React Server Components + MDX](https://twitter.com/sebastienlorber/status/1598615824927002624): RSCの影響は、DocusaurusやNextraのようなMDXを使用するコンテンツサイトにとって重要になる可能性があります ;)\n* 📨 [React.holiday](https://react.holiday/): Next.js 13の新機能について25通の短いメールを送るアドベントニュースレター\n* 📦 [Papanasi 1.0](https://twitter.com/CKGrafico/status/1597585206034169857): 革新的なUIコンポーネントライブラリのv1リリース。[Mitosis](https://github.com/builderio/mitosis)ベースで、React、Vue、Svelte、Solidなど全てのフレームワークにコードをコンパイル可能。\n* 📦 [Jotai 1.11](https://twitter.com/jotaijs/status/1598366077527810048)\n* 📦 [Gatsby 5.2](https://www.gatsbyjs.com/docs/reference/release-notes/v5.2/)\n* 📦 [Redwood 3.5](https://github.com/redwoodjs/redwood/releases/tag/v3.5.0)"
+      }
+    },
+    {
+      "segment_id": "c6060e09",
+      "source_content": "<SubscribeFormEmbed />",
+      "source_content_hash": "2b5c5e42f4352c90b9647a9da7a0fb7ece8b8dc27440e42cdf85cbb6e1901b85",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_c6060e09"
+      }
+    },
+    {
+      "segment_id": "dd8754e7",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c7c92a79",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "a6f06194",
+      "source_content": "<div style={{maxWidth: 300}}>\n  [![JavaScriptBoard.com - Let the job find you](/emails/issues/127/javascriptboard.jpg)](https://cutt.ly/C1VnflC)\n</div>",
+      "source_content_hash": "d274cd539fd1376fa20a0d3c9a1c782a41750b12886da864580775f2fd9cd8af",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_a6f06194"
+      }
+    },
+    {
+      "segment_id": "0801d969",
+      "source_content": "**[JavaScriptBoard.com - Let the job find you](https://cutt.ly/C1VnflC)**",
+      "source_content_hash": "1404c953466ff0fd7b4913731284e090c784ff76ecdccbfd74246651e5734c7e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[JavaScriptBoard.com - 仕事を探すのではなく、仕事に見つけてもらいましょう](https://cutt.ly/C1VnflC)**"
+      }
+    },
+    {
+      "segment_id": "3c19e221",
+      "source_content": "JavaScriptBoard.com **reverses the hiring system** and focuses on developers looking for **long-term work relationships.**",
+      "source_content_hash": "5dbbec3198689a9562b8b9f53cbc26ee596bb4231cc46b6f31ad1db073c7d002",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "JavaScriptBoard.comは**採用システムを逆転**させ、**長期的な仕事関係**を求める開発者に焦点を当てています。"
+      }
+    },
+    {
+      "segment_id": "d21af28f",
+      "source_content": "No more browsing through LinkedIn recruiter messages and uninteresting job offers!",
+      "source_content_hash": "3e261cbf60d84780d4f4c5176ae9a22f73f250a373a0a7dc10b0ec092e8b2cf6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "LinkedInのリクルーターからのメッセージや興味のない求人を閲覧する必要はもうありません！"
+      }
+    },
+    {
+      "segment_id": "44aaa880",
+      "source_content": "At JavaScriptBoard.com you sign up and only receive job offers that match YOUR requirements.",
+      "source_content_hash": "c75a55faeb6b7db00c398559adb39a7cd750957414ce5ad72c1b65c71903f240",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "JavaScriptBoard.comでは登録すると、**あなたの条件に合った求人**のみを受け取ることができます。"
+      }
+    },
+    {
+      "segment_id": "2a1e835c",
+      "source_content": "* 100% of the jobs have the **salary range included**.\n* 100% **anonymity for developers** by default.\n* **CV is not needed**. Completely optional.\n* Earn \\*\\*\\$500 if you are hired \\*\\*through JavaScriptBoard.com!",
+      "source_content_hash": "a97b12835464480147b788d351afadd1659c66e2cc6f94ecf9047b9599f6a4e2",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 100%の求人に**給与範囲が記載**されています。\n* デフォルトで開発者の**匿名性が100%保証**されます。\n* **履歴書は不要**。完全に任意です。\n* JavaScriptBoard.comを通じて採用された場合、**\\$500を獲得**できます！"
+      }
+    },
+    {
+      "segment_id": "b6152880",
+      "source_content": "**Join for free at [JavaScriptBoard.com](https://cutt.ly/C1VnflC)**",
+      "source_content_hash": "37bea7ae98ff44233216d32c70e30ff31b8957a6e31a8b5fffcba98da68d7459",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**無料で登録するには [JavaScriptBoard.com](https://cutt.ly/C1VnflC) へ**"
+      }
+    },
+    {
+      "segment_id": "18fa676c",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "2bb63d77",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "a8198b43",
+      "source_content": "* 📊 [State of React Native](https://stateofreactnative.com/): Software Mansion is preparing a survey around React-Native and invites us to contribute to the questions asked: [2022 Call for Questions](https://github.com/software-mansion/state-of-react-native/discussions/1).\n* 📦 [Tamagui v1 Release Candidate](https://tamagui.dev/blog/version-one-release-candidate): Tamagui is a promising solution based on a compiler to style its React components in a universal way (mobile and web). The move to RC marks the stabilization of the APIs.\n* 📦 [Solito v2](https://solito.dev/v2): cross-platform navigation solution. Next.js 13 support + SolitoImage component.\n* 📦 [Reanimated 3.0-rc.8](https://twitter.com/kzzzf/status/1598394289570156544): new and much more efficient implementation of Shared Values\n* 📦 [Preact-Native](https://github.com/barelyhuman/preact-native): a dev wants to run Preact with React-Native. This seems complex, and put on [stand-by](https://reaper.is/writing/20221204-decisions-and-updates-november-2022).\n* 📦 [create-react-native-library 0.27.2](https://twitter.com/satya164/status/1598774126805766144): supports RN 0.71, Fabric template...\n* 📦 [React-Native 0.71.0-RC.3](https://twitter.com/Kelset/status/1598018432229777408): 0.71 should come soon!\n* 📦 [Airbnb - Announcing Lottie 4.0 for iOS](https://medium.com/airbnb-engineering/announcing-lottie-4-0-for-ios-d4d226862a54)\n* 📦 [Maestro](https://github.com/mobile-dev-inc/maestro): end-2-end blackbox testing tool that is gaining popularity (comparable to Appium)\n* 💬 [Expo Router RFC - Shared Routes](https://twitter.com/Baconbrix/status/1598074538298048512)\n* 💬 [VisionCamera 3.0 discussion](https://github.com/mrousavy/react-native-vision-camera/issues/1376)\n* 🐦 [Krzysztof Magiera - \"Next version of reanimated will finally have proper stack trace support.\"](https://twitter.com/kzzzf/status/1598828117509910528)\n* 🎥 [Confetti Animation with React-Native Skia](https://www.youtube.com/watch?v=qOhYFDOEOmo)",
+      "source_content_hash": "32cd1bcbe7cd05085b171c1f8e050dea0d9743025fddda7b3f4899ccce1bd642",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📊 [React Nativeの現状](https://stateofreactnative.com/): Software MansionがReact-Nativeに関する調査を準備中で、質問内容への貢献を呼びかけています: [2022年 質問募集](https://github.com/software-mansion/state-of-react-native/discussions/1)。\n* 📦 [Tamagui v1 リリース候補](https://tamagui.dev/blog/version-one-release-candidate): Tamaguiは、コンパイラベースの有望なソリューションで、Reactコンポーネントをユニバーサルに（モバイルとWebで）スタイリングします。RCへの移行はAPIの安定化を意味します。\n* 📦 [Solito v2](https://solito.dev/v2): クロスプラットフォームナビゲーションソリューション。Next.js 13サポート + SolitoImageコンポーネント。\n* 📦 [Reanimated 3.0-rc.8](https://twitter.com/kzzzf/status/1598394289570156544): 新しい、はるかに効率的なShared Valuesの実装\n* 📦 [Preact-Native](https://github.com/barelyhuman/preact-native): 開発者がPreactをReact-Nativeで実行したいと考えています。これは複雑で、[保留中](https://reaper.is/writing/20221204-decisions-and-updates-november-2022)です。\n* 📦 [create-react-native-library 0.27.2](https://twitter.com/satya164/status/1598774126805766144): RN 0.71、Fabricテンプレートをサポート...\n* 📦 [React-Native 0.71.0-RC.3](https://twitter.com/Kelset/status/1598018432229777408): 0.71が間もなくリリースされる予定です！\n* 📦 [Airbnb - Lottie 4.0 for iOSの発表](https://medium.com/airbnb-engineering/announcing-lottie-4-0-for-ios-d4d226862a54)\n* 📦 [Maestro](https://github.com/mobile-dev-inc/maestro): 人気を集めているエンドツーエンドのブラックボックステストツール（Appiumに相当）\n* 💬 [Expo Router RFC - 共有ルート](https://twitter.com/Baconbrix/status/1598074538298048512)\n* 💬 [VisionCamera 3.0 ディスカッション](https://github.com/mrousavy/react-native-vision-camera/issues/1376)\n* 🐦 [Krzysztof Magiera - 「Reanimatedの次のバージョンでは、適切なスタックトレースサポートがついに実装されます。」](https://twitter.com/kzzzf/status/1598828117509910528)\n* 🎥 [React-Native Skiaでの紙吹雪アニメーション](https://www.youtube.com/watch?v=qOhYFDOEOmo)"
+      }
+    },
+    {
+      "segment_id": "ce87f480",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "a0d0e29e",
+      "source_content": "## 🧑‍💻 Jobs {#jobs}",
+      "source_content_hash": "64cde6166f05bd39337c21ca10f52b6613641f23e0c97e204de33d6857fa16ed",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🧑‍💻 Jobs {#jobs}"
+      }
+    },
+    {
+      "segment_id": "be17ccc3",
+      "source_content": "🧑‍💼 [**Product Engineer at Causal, Remote/London/NY, \\$150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied\\&lever-source%5B%5D=thisweekinreact.com)",
+      "source_content_hash": "619d259d5aa4a364626fc41610dcf9f3ae0955a2e964969486ddfee2f179dbdb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🧑‍💼 [**Causalのプロダクトエンジニア、リモート/ロンドン/NY、\\$150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied\\&lever-source%5B%5D=thisweekinreact.com)"
+      }
+    },
+    {
+      "segment_id": "ad3e22c6",
+      "source_content": "Causal is a Series A Startup (backed by Coatue/Accel) building an all-in-one tool for working with numbers and visualizing data. We're looking for strong React engineers who can solve difficult UX/performance challenges.",
+      "source_content_hash": "20bfaa3d377f2ddf3a9abbf4f1ce455c376710731cb5f7e58785d6741fc6377f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Causalは、Coatue/Accelが支援するシリーズAスタートアップで、数値データの処理と可視化のためのオールインワンツールを開発しています。困難なUX/パフォーマンス課題を解決できるReactエンジニアを募集しています。"
+      }
+    },
+    {
+      "segment_id": "3e8f45da",
+      "source_content": "🧑‍💼 [**Callstack - Senior React Native Developer - Fully Remote, PLN 21-32k net on B2B, monthly**](https://www.callstack.com/senior-react-native-developer)",
+      "source_content_hash": "6a76e4cede7e5d7fef90376d244177e3a889ea3b88ed1a9d60d116bb33a52f5b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🧑‍💼 [**Callstack - シニアReact Native開発者 - 完全リモート、月額PLN 21-32k net（B2B契約）**](https://www.callstack.com/senior-react-native-developer)"
+      }
+    },
+    {
+      "segment_id": "4c787c52",
+      "source_content": "Do you want to work on the world's most used apps? Would you like to co-create the React Native technology? Join the Callstack team of React & React Native leaders. Check our website for more details. We are looking forward to seeing your application - show us what you've got!",
+      "source_content_hash": "d26d300a25c86c54931180669d1a8cce73f71a546a8457896fc0c835fb78d2d0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "世界で最も利用されているアプリの開発に携わりたいですか？React Native技術の共創に興味はありませんか？React & React Nativeのリーダー集団であるCallstackチームに参加してください。詳細は当社ウェブサイトをご覧ください。あなたの応募をお待ちしています - あなたの実力をぜひ見せてください！"
+      }
+    },
+    {
+      "segment_id": "63565425",
+      "source_content": "🧑‍💼 [**G2i - 100% Remote React Native Jobs**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\\&t=ArRLC77BpRwXXCdx8fnUqw)",
+      "source_content_hash": "5d3c54581f6c180e021405df5da2dff285c443814d1d5e6c5c09516b6002a38b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\\&t=ArRLC77BpRwXXCdx8fnUqw)"
+      }
+    },
+    {
+      "segment_id": "1496ef51",
+      "source_content": "We have several roles open for developers focused on React Native! Pay is \\~160k plus 10% bonus. You must have production experience with RN and be based in the US. DM [@gabe\\_g2i](https://twitter.com/gabe_g2i) to learn more and don't forget to mention This Week in React.",
+      "source_content_hash": "03109db05ba0c8c528483a4218dc3b2b0314cf5c6032f5eb3c7be604094658fd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React Nativeに特化した開発者向けに複数のポジションを開設中です！報酬は約160kドル＋10％のボーナスです。RNの実務経験があり、米国在住であることが条件です。詳細は[@gabe\\_g2i](https://twitter.com/gabe_g2i)までDMでお問い合わせください。This Week in Reactからの紹介を忘れずに！"
+      }
+    },
+    {
+      "segment_id": "dce16ab4",
+      "source_content": "💡 [How to publish an offer?](https://thisweekinreact.com/sponsor)",
+      "source_content_hash": "d58176524c2d7675bf008e7b635d056628a0d092fb0152d6bbdfb97f4239d273",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "💡 [求人を掲載する方法](https://thisweekinreact.com/sponsor)"
+      }
+    },
+    {
+      "segment_id": "57180eb4",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "f6a06609",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "6b40e7a2",
+      "source_content": "**[Updates from the 93rd TC39 meeting](https://dev.to/hemanth/updates-from-the-93rd-tc39-meeting-2n8f)**",
+      "source_content_hash": "54995c59f48f6f97e5638b8a8ede0c7cbf3f333a3a57440d86d60eb751d6326e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[第93回TC39会議のアップデート](https://dev.to/hemanth/updates-from-the-93rd-tc39-meeting-2n8f)**"
+      }
+    },
+    {
+      "segment_id": "39f476dc",
+      "source_content": "Some very nice proposals for JavaScript have progressed last week, in particular:",
+      "source_content_hash": "e7cb51953857aa607fd11e7bc1cf4f4c4d54651968822c90bd2d56d15d971a69",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "先週、JavaScript向けの素晴らしい提案が進展しました。特に注目すべきは："
+      }
+    },
+    {
+      "segment_id": "093c95e5",
+      "source_content": "* [Set Methods](https://twitter.com/robpalmer2/status/1597947853598785537) in stage 3: union, intersection, difference... 🙌\n* [Iterator Helpers](https://github.com/tc39/proposal-iterator-helpers) in stage 3: map, flatMap, filter, reduce...\n* Intl APIs that continue to complement each other.",
+      "source_content_hash": "6790e0a3ca17c76bb3cfdd82670b361ae319a0b43e59bbe852ee25afa6346cc3",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* [Setメソッド](https://twitter.com/robpalmer2/status/1597947853598785537)がステージ3に：和集合、積集合、差集合など... 🙌\n* [Iteratorヘルパー](https://github.com/tc39/proposal-iterator-helpers)がステージ3に：map、flatMap、filter、reduce...\n* Intl APIがさらに充実。"
+      }
+    },
+    {
+      "segment_id": "f28724b0",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "ebb827a7",
+      "source_content": "* [Container Queries in Firefox 109](https://twitter.com/jensimmons/status/1598798281513000960): finally in all major browsers 🙌\n* [Announcing Rome v11](https://rome.tools/blog/2022/12/06/rome11/): supports TS 4.9 satisfies\n* [2022 - State of CSS - Survey results](https://2022.stateofcss.com/en-US/)\n* [2022 - State of Rust - Survey open](https://twitter.com/rustlang/status/1600078615143911425)\n* [ESLint RFC - Language Plugins](https://github.com/eslint/rfcs/pull/99)\n* [Tailwind is a Leaky Abstraction](https://jakelazaroff.com/words/tailwind-is-a-leaky-abstraction/)\n* [What working with Tailwind CSS every day for 2 years looks like](https://www.themosaad.com/blog/two-years-of-tailwind-css)\n* [How TypeScript 4.9 `satisfies` Your Prisma Workflows](https://www.prisma.io/blog/satisfies-operator-ur8ys8ccq7zb)\n* [Prerender pages in Chrome for instant page navigations](https://developer.chrome.com/blog/prerender-pages/)\n* [Fast is good, instant is better!](https://calendar.perfplanet.com/2022/fast-is-good-instant-is-better/)\n* [Speeding up the JavaScript ecosystem - one library at a time](https://marvinh.dev/blog/speeding-up-javascript-ecosystem/)\n* [Electron 22.0](https://www.electronjs.org/blog/electron-22-0)\n* [Cypress 12](https://www.cypress.io/blog/2022/12/06/announcing-cypress-12/)\n* [Nx 15.3 — Standalone Projects, Vite, Task Graph and more!](https://blog.nrwl.io/nx-15-3-standalone-projects-vite-task-graph-and-more-3ed23f7827ed)\n* [Lightning CSS 1.17](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.17.0)\n* [New to the web platform in November](https://web.dev/web-platform-11-2022/)\n* [Getting the most from GitHub Copilot](https://shift.infinite.red/getting-the-most-from-github-copilot-8f7b32014748)\n* [Top Announcements of AWS re:Invent 2022](https://aws.amazon.com/fr/blogs/aws/top-announcements-of-aws-reinvent-2022/)\n* [ChatGPT helped me design a brand new programming language](https://judehunter.dev/blog/chatgpt-helped-me-design-a-brand-new-programming-language)\n* [Frontend Engineer Archetypes](https://cpojer.net/posts/frontend-engineering-archetypes)\n* [Bahuu - state machine-based UI framework](https://github.com/tjkandala/baahu)",
+      "source_content_hash": "9ec64fc075d8adc2b40bf007ff503b5649b6333c74801acaa14768bd74f8abf2",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* [Firefox 109でContainer Queriesが利用可能に](https://twitter.com/jensimmons/status/1598798281513000960): ついに主要ブラウザ全てでサポート 🙌\n* [Rome v11リリース](https://rome.tools/blog/2022/12/06/rome11/): TypeScript 4.9のsatisfies演算子をサポート\n* [2022年 CSSの現状 - 調査結果](https://2022.stateofcss.com/en-US/)\n* [2022年 Rustの現状 - 調査実施中](https://twitter.com/rustlang/status/1600078615143911425)\n* [ESLint RFC - 言語プラグイン](https://github.com/eslint/rfcs/pull/99)\n* [Tailwindはリーキーな抽象化](https://jakelazaroff.com/words/tailwind-is-a-leaky-abstraction/)\n* [Tailwind CSSを2年間毎日使ってわかったこと](https://www.themosaad.com/blog/two-years-of-tailwind-css)\n* [TypeScript 4.9の`satisfies`演算子でPrismaワークフローを改善](https://www.prisma.io/blog/satisfies-operator-ur8ys8ccq7zb)\n* [Chromeでページを事前レンダリングして即時ナビゲーションを実現](https://developer.chrome.com/blog/prerender-pages/)\n* [高速は良いが、瞬時はもっと良い！](https://calendar.perfplanet.com/2022/fast-is-good-instant-is-better/)\n* [JavaScriptエコシステムの高速化 - ライブラリごとに](https://marvinh.dev/blog/speeding-up-javascript-ecosystem/)\n* [Electron 22.0リリース](https://www.electronjs.org/blog/electron-22-0)\n* [Cypress 12リリース](https://www.cypress.io/blog/2022/12/06/announcing-cypress-12/)\n* [Nx 15.3 — スタンドアロンプロジェクト、Vite、タスクグラフなど](https://blog.nrwl.io/nx-15-3-standalone-projects-vite-task-graph-and-more-3ed23f7827ed)\n* [Lightning CSS 1.17リリース](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.17.0)\n* [11月のWebプラットフォーム新機能](https://web.dev/web-platform-11-2022/)\n* [GitHub Copilotを最大限活用する方法](https://shift.infinite.red/getting-the-most-from-github-copilot-8f7b32014748)\n* [AWS re:Invent 2022の主要発表](https://aws.amazon.com/fr/blogs/aws/top-announcements-of-aws-reinvent-2022/)\n* [ChatGPTが新しいプログラミング言語の設計を支援](https://judehunter.dev/blog/chatgpt-helped-me-design-a-brand-new-programming-language)\n* [フロントエンドエンジニアのアーキタイプ](https://cpojer.net/posts/frontend-engineering-archetypes)\n* [Bahuu - ステートマシンベースのUIフレームワーク](https://github.com/tjkandala/baahu)"
+      }
+    },
+    {
+      "segment_id": "7a9140d4",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "4d7a4554",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "38f964f1",
+      "source_content": "[![alt](/emails/issues/127/meme.png)](https://twitter.com/jaredpalmer/status/1599765374265749504)",
+      "source_content_hash": "5bcb919b9d228f362d7274364a9d937e813275048715ae4e70a2195babe27cc8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/127/meme.png)](https://twitter.com/jaredpalmer/status/1599765374265749504)"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/127/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:39.620359+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "e791657dce9e56d0696684ca3e7ded1cbb3a5e20aa0fa575f6446eea911feddb"
+  }
+}

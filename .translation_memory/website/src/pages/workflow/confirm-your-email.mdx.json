@@ -1,0 +1,52 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "src/pages/workflow/confirm-your-email.mdx",
+  "source_file_content_hash": "2d71cb51043cc018e745739605e6f800753a96a150aebabd327124a5902cc336",
+  "segments": [
+    {
+      "segment_id": "76e4a56a",
+      "source_content": "# Thanks for subscribing!",
+      "source_content_hash": "bd150b872d5e78f207c4dbb4ed89337ae03973af85e288d719c1c45559d70948",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# ご登録ありがとうございます！"
+      }
+    },
+    {
+      "segment_id": "faebdc62",
+      "source_content": "In a few seconds, you will **receive an email** from me asking you to confirm your newsletter subscription.",
+      "source_content_hash": "bc087a2102a97467d6f087d67025834c8fcd6f40ee95d211ce76207c5acd89e6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "数秒以内に、ニュースレター登録を確認するためのメールが届きます。"
+      }
+    },
+    {
+      "segment_id": "e7ec8f99",
+      "source_content": "Please open your inbox and **confirm your email address** to finalize your subscription.",
+      "source_content_hash": "35dd301bc87868ab298e8cda66f91682eea57eeac86eccf4950aa26dafb9407b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "メールボックスを開いて、**メールアドレスを確認**し、登録を完了してください。"
+      }
+    },
+    {
+      "segment_id": "8c98994c",
+      "source_content": ":::tip[Check your spam folder]\nIf you don't receive any confirmation email, check your spam folder 😅\n\nThe email will come from `sebastien@thisweekinreact.com`\n:::",
+      "source_content_hash": "e8bf046289fe9110aff681a36e7e3c292adc6606183f06d029e4a8a0ef5d2806",
+      "node_type": "containerDirective",
+      "translatable": true,
+      "translations": {
+        "ja": ":::tip[迷惑メールフォルダを確認]\n確認メールが届かない場合は、迷惑メールフォルダを確認してください 😅\n\nメールは `sebastien@thisweekinreact.com` から送信されます\n:::"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-pages/workflow/confirm-your-email.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:36.750414+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "2d71cb51043cc018e745739605e6f800753a96a150aebabd327124a5902cc336"
+  }
+}

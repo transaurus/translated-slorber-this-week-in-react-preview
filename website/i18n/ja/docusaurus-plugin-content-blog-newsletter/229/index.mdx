@@ -1,0 +1,155 @@
+---
+slug: /229
+title: "This Week In React #229: React Conf, React Router, Next.js Adapters, Redwood, Apollo, Fastify, Vite, Waku | RN v0.79, Deep Imports, Builder Bob, Fingerprinting | TC39, Tailwind, Rspack, Rstest, Turborepo, Bun"
+authors: [kacperkapusciak, tomekzaw]
+date: 04-09-2025
+---
+
+みなさん、こんにちは！
+
+今週は、ニュースレターの執筆を手伝ってくれる2名の新しい協力者を紹介できることを嬉しく思います！
+
+**[Software Mansion](https://swmansion.com/?utm_source=thisweekinreact)のTomaszとKacper**です。ReanimatedやGesture Handlerなどのライブラリで私たちをご存知の方もいるかもしれません。This Week in Reactニュースレターの著者の一人として参加できることを嬉しく思います！
+
+かなり落ち着いた週になるかと思っていましたが、React Conf 2025が正式に発表され、React Native 0.79がリリースされました。iOS向けのSwift互換ネイティブモジュール、Androidでのアプリ起動の高速化など、多くの新機能が追加されています。さっそく見ていきましょう！
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![React-admin: 自分で作れるけど…なぜわざわざ？](/emails/issues/229/marmelab.jpg)](https://marmelab.com/react-admin/)
+
+**[React-admin: 自分で作れるけど…なぜわざわざ？](https://marmelab.com/react-admin/)**
+
+長年Reactをマスターしてきたのに、CRUDアプリを繰り返し作るために時間を費やしたくはないでしょう。それなのに、また管理パネルの依頼に直面し、自分の人生の選択を疑っているかもしれません。
+
+私たちも同じ経験をしました。だからこそ、[**react-admin**](https://marmelab.com/react-admin/)を作りました。このオープンソースフレームワークは、データ取得、フォーム、認証、権限管理などの退屈な部分を処理し、本当に重要な開発作業に集中できるようにします。
+
+**Material UI、react-hook-form、react-router、react-query、TypeScript**を基盤としており、任意のREST/GraphQL API上に高速に管理画面を構築できます。
+
+次にPMから新しいダッシュボードの依頼が来たら、存在意義を問う代わりに、[react-adminを使いましょう。](https://github.com/marmelab/react-admin)
+
+***
+
+## ⚛️ React {#react}
+
+[![React Conf 2025](/emails/issues/229/react-conf-2025.png)](https://conf.react.dev/)
+
+**[React Conf 2025が開催決定](https://conf.react.dev/)**
+
+Reactカンファレンスは2025年10月7日～8日、アメリカ🇺🇸ネバダ州ヘンダーソンで開催されます。React & React Nativeチームが公式発表を行う場です。
+
+会場での参加はチケット抽選に当選した方のみ可能で、最大2枚まで購入できます。幸い、抽選に外れた方でも無料のライブストリームで視聴できます。
+
+***
+
+* 💸 [Product for Engineers - 優れた製品を作るためのデザイン原則: エンジニアが知っておくべきシンプルなデザイン原則](https://go.posthog.com/twir-apr9)
+* 📣 [Redwoodの未来が今日始動](https://community.redwoodjs.com/t/the-future-of-redwood-launches-today/7938): 従来のプロジェクトはRedwood GraphQLに改名されメンテナンスモードへ移行。[RedwoodSDK](https://redwoodjs.com/)が新たなリーダーシップの下でフレームワークの新たな道筋となります。
+* 💬 [Next.js RFC – デプロイメントアダプターAPI](https://github.com/vercel/next.js/discussions/77740): VercelはNext.jsを任意のホスティングプロバイダーにデプロイするためのアダプターサポートを計画中。
+* 🐦 [Tanner Linsley – TanStack Routerの`intent`プリローディングがユーザーのカーソル移動を予測](https://x.com/tannerlinsley/status/1908723776650355111)
+* 🔐 [React RouterとRemixの脆弱性](https://zhero-web-sec.github.io/research-and-things/react-router-and-the-remixed-path): React RouterとRemixの両方に影響する脆弱性が発見され、キャッシュポイズニングを通じたDoS攻撃の可能性が指摘されています。
+* 📜 [2台のコンピュータのためのReact](https://overreacted.io/react-for-two-computers/): Dan AbramovがReact Confでの講演をさらに掘り下げ、React Server Componentsとその起源についての確固たるメンタルモデル構築を支援します。
+* 📜 [実戦での高度なReact活用](https://largeapps.dev/case-studies/advanced/): React & Next.jsサイトのパフォーマンス指標を大幅に改善した5社のケーススタディとその手法を解説。
+* 📜 [Reactとライブストリーミング: アプリにビデオミキシングを組み込む方法](https://blog.swmansion.com/react-live-streaming-how-to-include-video-mixing-in-your-app-c460e09da7a8)。React構文を使用してライブビデオをミックスし、ブラウザから直接出力をストリーミングする方法を解説する短いチュートリアル。
+* 📜 [Next.jsからの移行理由](https://documenso.com/blog/why-we-moved-off-next-js): DocumensoプロジェクトがNext.js App RouterからViteとReact Routerへ移行した背景を簡潔に説明。
+* 📜 [React.memoの真実: 効果的な場面と逆効果な場面](https://cekrem.github.io/posts/react-memo-when-it-helps-when-it-hurts): メモ化に関する一般的な誤解と隠れた落とし穴を簡潔に解説。
+* 📜 [React Reconciliation: コンポーネント背後で働くエンジン](https://cekrem.github.io/posts/react-reconciliation-deep-dive/): Reactレコンサイラーを用いた最高のパフォーマンスを確保するための実践的ガイドラインとクリーンアーキテクチャのヒント
+* 📜 [カスタムコンテキストプロバイダーが必要な理由](https://gabrielpichot.fr/blog/why-you-need-a-custom-context-provider/): 不必要な再レンダリングを減らすカスタムContext Providerラッパーコンポーネント作成の利点をインタラクティブに示す記事。
+* 💸 [Supabaseが従来のソフトウェアアーキテクチャの常識を破る方法](https://go.clerk.com/pkKoKSg)
+* 📦 [React Router 7.5 – 新`route.lazy` API](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v750): より細かい粒度での遅延読み込みを可能に。
+* 📦 [Cloudflare Vite Plugin 1.0](https://blog.cloudflare.com/introducing-the-cloudflare-vite-plugin/): React Router v7の公式サポートを追加。ローカル開発サーバーが本番環境のCloudflare Workersランタイムと一致するようVite v6環境APIを活用。
+* 📦 [Fastify React 1.0](https://github.com/fastify/fastify-vite/releases/tag/react-v1.0.0): FastifyウェブサーバーとViteを基盤としたカスタムReactメタフレームワーク構築を支援する新パッケージ（独自の「Mini Next.js」作成）。React 19をサポートし、RSCサポートは後日追加予定。関連記事「[React Serverの混乱](https://hire.jonasgalvez.com.br/2025/apr/8/react-server-confusion/)」ではWebpack外でのRSCサポート状況も概説。
+* 📦 [Apollo Client Next.js統合](https://www.apollographql.com/blog/apollo-client-integration-nextjs-officially-released): 実験的だったGraphQLクライアント統合パッケージが正式リリース。リクエストウォーターフォール回避のための新`PreloadQuery`実装を含む。Apollo Client v4は現在アルファ版で、React Router/TanStack向け統合パッケージも開発中。
+* 📦 [Waku 0.22 – APIルートの発表](https://waku.gg/blog/api-routes)
+* 📦 [Astro 5.6 – グローバル`astro:env`とCloudflare上での実験的セッション、クッキーレスセッションの実験的サポート](https://astro.build/blog/astro-560/)
+* 📦 [Hydrogen – 2025年3月リリース – Vite 6サポート、Remix `v3_routeConfig`フラグ6の有効化](https://hydrogen.shopify.dev/update/march-2025)
+* 🎥 [Theo – 2025年のスタイルソリューション徹底解説](https://www.youtube.com/watch?v=lIUp8bdKiq4)
+* 🎥 [Youssef Benlemlih – Reactにおけるコンパウンドコンポーネントの魔法](https://www.youtube.com/watch?v=WSM2MpJIwFg)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![AppZung: エンタープライズ向けCodePush代替ソリューション](/emails/issues/229/AppZ.jpg)](https://appzung.com/?utm_source=newsletter\&utm_medium=email\&utm_campaign=this_week_in_react_250409)
+
+**[AppZung: エンタープライズ向けCodePush代替ソリューション](https://appzung.com/?utm_source=newsletter\&utm_medium=email\&utm_campaign=this_week_in_react_250409)**
+
+Microsoft AppCenterの終了に伴い、セキュリティ、プライバシー、パフォーマンスを妥協しない信頼性の高い代替ソリューションをお選びください。
+
+AppZung CodePushが提供するもの:
+
+* ✅ シームレスな移行: AppCenterからのワンコマンド移行
+* ✅ エンタープライズ級セキュリティ: コード署名、SAML SSO、IP許可リストなど
+* ✅ スケーラブルなパフォーマンス: 高速グローバルCDNを備えた高可用性アーキテクチャ
+* ✅ プライバシー重視: GDPR準拠機能を備えたEUベースのインフラ
+* ✅ 専用サポート: 優先対応と顧客満足度の高さ
+
+当プラットフォームは、大規模トラフィックアプリケーションを管理する開発者によって構築されており、重要な更新をプッシュする際のリスクを理解しています。
+
+今すぐ[AppZungでデプロイを開始](https://appzung.com/?utm_source=newsletter\&utm_medium=email\&utm_campaign=this_week_in_react_250409)しましょう！
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![React Native 0.79](/emails/issues/229/react-native-0.79.png)](https://reactnative.dev/blog/2025/04/08/react-native-0.79)
+
+**[React Native 0.79 - 高速化されたツーリングとその他多数の改善](https://reactnative.dev/blog/2025/04/08/react-native-0.79)**
+
+最近、React Nativeコアチームはより頻繁なリリースサイクルに移行しました。今回のリリースは小規模ですが、パフォーマンス改善の点で非常に興味深い内容となっています。主なハイライトは以下の通りです:
+
+* Metro: 3倍高速なコールドスタートアップとパッケージエクスポートのサポート
+* JavaScriptCore (JSC) がコミュニティパッケージに移行
+* iOS: Swift互換ネイティブモジュール登録
+* Android: JSバンドルの圧縮スキップによるアプリ起動の高速化
+* リモートJSデバッグの削除
+
+***
+
+* 💸 [Radon IDE – 20,000人以上のエンジニアが選んだ、よりスムーズなオールインワン開発体験。次はあなたの番です。](https://ide.swmansion.com/?utm_source=thisweekinreact.com)
+* 👀 [Expo – React 19.1の`captureOwnerStack`によりエラーメッセージが改善されます](https://github.com/expo/expo/pull/35866#issuecomment-2789891297)
+* 💬 [React Native RFC – react-nativeからのディープインポートを削除](https://github.com/huntie/react-native-discussions-and-proposals/blob/proposal-deprecate-subpath-imports/proposals/0894-deprecate-subpath-imports.md): この変更により、パッケージからエクスポートされる関数を定義できるようになり、APIサーフェスエリアが縮小されます。エコシステム全体でより安定したAPIを提供することが目的です。
+* 🐦 [Ben Awad – AndroidでのApplication Not Responding (ANR)エラーを減らすための取り組みについて語る](https://x.com/benawad/status/1908860185113665889)
+* ☂️ [React NativeコアチームのKotlin化テストを手伝いましょう](https://github.com/facebook/react-native/issues/50513): オープンソースプロジェクトに貢献する絶好の機会です。
+* 📅 [React Native London Meetup – 2025年4月17日](https://guild.host/events/react-native-london-e0q1f1)
+* 📜 [Expoアプリにおけるフィンガープリントの理解と比較](https://expo.dev/blog/understanding-and-comparing-fingerprints-in-expo-apps): React Native & Expoアプリのネイティブビルドに変更があったかどうかをハッシュを使って比較する方法。
+* 📜 [EAS WorkflowsとEAS UpdatesでCIを20分から6分に短縮](https://shift.infinite.red/cut-ci-from-20-minutes-to-6-with-eas-workflows-and-eas-updates-8d928fe5dcfc): Infinite Redがネイティブビルドのフィンガープリンティングを使ってCI時間を改善した方法。
+* 📜 [react-native-track-playerでReact Nativeで音声を再生する](https://addjam.com/blog/2025-04-04/playing-audio-in-react-native/)
+* 📜 [Vercel & React Native – モバイル開発の新時代？](https://www.thisdot.co/blog/vercel-and-react-native-a-new-era-of-mobile-development): VercelがReact Native分野で取る可能性のあるステップについての考察。
+* 📜 [React Nativeでのロギングガイド](https://blog.sentry.io/a-guide-to-logging-in-react-native/): コンソール、ネイティブ、システムログを含む。
+* 📦 [Builder Bob 0.40](https://github.com/callstack/react-native-builder-bob/releases/tag/react-native-builder-bob%400.40.0)
+* 🎥 [Simon Grimm – 2025年のアプリ構築の究極の方法](https://www.youtube.com/watch?v=acj7-3-EQWM)
+* 🎥 [Catalin Miron – Expo Router: タブ、スタック、ディープリンクの修正](https://www.youtube.com/watch?v=HmbBzw0rF6w)
+* 🎙️ [React Native Radio 327 – Pratul Kaliaと自動化されたアプリリリース](https://infinite.red/react-native-radio/rnr-327-automating-app-releases-with-pratul-kalia)
+
+***
+
+## 🔀 Other {#other}
+
+* 👀 [Ecma TC39第107回会議の議題](https://github.com/tc39/agendas/blob/main/2025/04.md): 来週、TC39委員会が再び開催され、Enums、Composites、`export defer`など、多くの新たな提案が議論されます。
+* 📜 [JavaScriptのメモリリークをデバッグする](https://bun.sh/blog/debugging-memory-leaks)
+* 📜 [モダンなCSSの`attr()`を初めて見る](https://ishadeed.com/article/modern-attr/)
+* 📜 [OSI、TCP/UDP、HTTPなどの深堀り](https://www.deepintodev.com/blog/how-data-travels-the-world-to-reach-your-screen)
+* 📦 [Tailwind CSS 4.1 – テキストシャドウ、マスク、その他多数](https://tailwindcss.com/blog/tailwindcss-v4-1)
+* 📦 [Rspack 1.3.1 – JSローダーを並列実行](https://x.com/rspack_dev/status/1907336863096123484)
+* 📦 [Turborepo 2.5](https://turbo.build/blog/turbo-2-5)
+* 📦 [Rstest – Rspackを利用したテストフレームワーク（開発中）](https://github.com/web-infra-dev/rstest)
+* 📦 [Bun 1.2.9 – Redisクライアント、Node.js互換性、`require`の改善](https://bun.sh/blog/bun-v1.2.9)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/229/meme1.jpg)](https://x.com/thekitze/status/1907508349442339078)
+
+[![alt](/emails/issues/229/meme2.jpg)](https://x.com/sebastienlorber/status/1909916465190383982)
+
+またね！ 👋

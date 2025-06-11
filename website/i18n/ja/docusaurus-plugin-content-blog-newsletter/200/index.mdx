@@ -1,0 +1,182 @@
+---
+slug: /200
+title: "This Week In React #200: Remix, React Universe, Next.js dynamicIO, :has, Redwood, MDX, Atomic-CRM, NewArch, Fusebox, Hermes, Gesture Handler, TypedGPU, Firebase, Vite, Express, TypeScript, Rsbuild..."
+authors: [matthieugicquel, cyrilbo]
+date: 09-11-2024
+---
+
+みなさん、こんにちは！
+
+[Theodo Apps（旧BAM）](https://apps.theodo.com/en?utm_source=thisweekinreact)の**CyrilとMatthieu**です👋。Sebに代わって、ReactとReact Nativeの最新ニュースをお届けします。
+
+今週はServer Componentsが話題で、ViteとNext.jsに関連する新機能がリリースされました。また、このトピックに関する記事もいくつかあり、ぜひ読んでみてください。Remix関連のコンテンツやChatGPTの採用に関する議論も盛り上がっています。
+
+React Nativeでは、予定通りReact Universeで大きな発表があり、React Native 0.76が数週間以内にリリースされます！
+
+React Nativeの盛り上がりはまだ続きます。パートナーカンファレンス[**React Native 🇬🇧 London**](https://www.reactnativelondon.co.uk/?utm_source=thisweekinreact)（11月14日＆15日）をチェックし、コード「TWIR」で10％オフをゲットしましょう。初開催ながら、Charlie Cheever、Alex Hunt、Charlotte Isambert、Cedric Van Puttenなど豪華なラインナップが揃っています。
+
+**Seb**: このニュースレターの200回目を祝いにちょっと登場します🎉。長年にわたり熱心に読んでいただきありがとうございます。43,000人の購読者を抱え、持続可能なメディアとして開発者向けの真のメディアになりつつあります。
+
+<!-- truncate -->
+
+**💡 [Twitterでこのニュースレターをチェック](https://slo.im/thread) - ビジュアルフォーマット🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Handsontable: Reactアプリ向けの高度なデータグリッド](/emails/issues/200/handsontable.jpg)](https://handsontable.com/docs/react-data-grid/?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=twirsep11)
+
+**[Handsontable: Reactアプリ向けの高度なデータグリッド](https://handsontable.com/docs/react-data-grid/?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=twirsep11)**
+
+Handsontableは、複雑なデータを管理するための強力でカスタマイズ可能、かつアクセシブルなソリューションを必要とするReact開発者向けに設計された[機能豊富なデータグリッド](https://handsontable.com/demo?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=twirsep11)です。
+
+* ソート、フィルタリング、CRUD操作を備えた**スプレッドシートのようなインターフェース**
+* 条件付き書式や**400以上の組み込み数式**など、Excelのような高度な操作
+* ドロップダウン、メニュー、またはグリッドセル内のカスタムコンポーネントに対応した**カスタマイズ可能なエディタとレンダラ**
+* スムーズでレスポンシブな操作のための**最適化されたパフォーマンス**
+* 障害を持つユーザーをよりサポートするための**WCAG 2.1準拠のアクセシビリティ**
+
+Handsontableは、エンタープライズアプリケーションからシンプルなウェブサイトまで、さまざまなユースケースに対応し、世界中の企業から信頼されるパフォーマンスと柔軟性を提供します。
+
+[今日から始めましょう！](https://handsontable.com/docs/react-data-grid/?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=twirsep11)
+
+***
+
+## ⚛️ React {#react}
+
+[![Josh Comeau - CSS \:hasの否定できない有用性](/emails/issues/200/css-has.jpg)](https://www.joshwcomeau.com/css/has/)
+
+**React開発者向けのCSS `:has`**
+
+今週は、新しいCSS `:has`セレクターに関する2つの素晴らしい記事と、React開発者がそれを活用してJSコードを簡素化/削除しながらパフォーマンスを向上させる方法について取り上げます。この新しいCSS機能はかなり良いサポート（92%）を得ていますが、ポリフィルができないため、現時点では控えめな用途やプログレッシブエンハンスメントに使用するのが良いでしょう。
+
+以下の順番でお読みください：
+
+* 📜 [Josh Comeau - CSS `:has`の否定できない有用性](https://www.joshwcomeau.com/css/has/)：インタラクティブな導入記事で、React開発者に関連するコメントや例も含まれています。例えば、`useEffect`の代わりにデータ属性を使用してモーダル開封時にグローバルページスクロールをブロックする方法などです。
+* 📜 [Nadia Makarevich - CSS `:has`セレクターでReactコードを置き換える](https://www.developerway.com/posts/replacing-react-with-css)：フォーカスの処理、テーブル行のハイライト、入力状態に応じたフォームフィールドセットの処理など、Reactベースの興味深い例をさらに提供しています。
+
+大きな力には大きな責任が伴います。Reactコンポーネントをカプセル化し、可能な限りコンポーネント境界外にスタイルが漏れないようにすることを忘れないでください。
+
+***
+
+* 💸 [React Component Analytics — Omletがコードベースをスキャンし、コンポーネント使用状況を計測してコード品質とデザインシステムの採用を促進](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-aug-2024)
+* 🐦 [Next.js - 新しい `experimental.dynamicIO` フラグでキャッシュの頭痛の種を解消](https://x.com/feedthejim/status/1831224197827166613): このフラグにより、フェッチやDBクエリなどの非同期IOを行うコンポーネントはデフォルトでダイナミックレンダリングを使用するようになります。
+* 🐦 [ChatGPTがNext.jsからRemixに移行](https://x.com/ryanflorence/status/1831379475654947233)
+* 👀 [Vite 6 PR マージ - Environment API](https://github.com/vitejs/vite/pull/16471): これはReactにとって特に有用で、ブラウザ、SSR、RSCといったReactアプリが動作する異なる「環境」を適切にモデル化し、個別のモジュールグラフを提供します。
+* 👀 [Next.js PR - 部分フォールバック事前レンダリング](https://github.com/vercel/next.js/pull/68958)
+* 📖 [TanStack Router - 仮想ファイルルート:](https://tanstack.com/router/v1/docs/framework/react/guide/virtual-file-routes) Tanstack StartにはRemixの`routes.ts`に相当する機能があります。
+* 📖 [Next.js 新ドキュメント - プログレッシブウェブアプリケーション (PWA)](https://nextjs.org/docs/app/building-your-application/configuring/progressive-web-apps)
+* 🗓️ [React-Brussels](https://www.react.brussels/?utm_source=thisweekinreact) - 🇧🇪 ブリュッセル - 10月18日 - 「TWIR」コードで10%割引。Nicolas DubienとCharlotte Isambertから学びましょう！
+* 🗓️ [reactjsday](https://2024.reactjsday.it/?utm_source=thisweekinreact) - 🇮🇹 ヴェローナ - 10月25日 - 「TWIR」コードで10%割引。Matheus Albuquerque、Aurora Scharff、Dani Collなど豪華なラインナップが発表されています！
+* 🗓️ [Squiggle Conf](https://2024.squiggleconf.com/?utm_source=thisweekinreact) - 🇺🇸 ボストン - 10月3日 & 4日 - チケット最終募集！「TWIR」コードで10%割引。このイベントをお見逃しなく！
+* 📜 [ReactとFormData](https://reacttraining.com/blog/react-and-form-data): FormDataの使用を推奨し、Zodを介した実用的なソリューションとTypeScript互換性を提供します。
+* 📜 [Reactにおけるモダンなデータフェッチング](https://reacttraining.com/blog/modern-data-fetching-in-react): この記事では、`useEffect`、`useQuery`、React Routerローダー、Next.jsの`getServerSideProps`、Remixローダー、React Serverコンポーネントなどのデータフェッチング方法を比較し、クライアントサイドとサーバーサイドアプローチのトレードオフを強調しています。
+* 📜 [おっと、Remixに切り替えたらウェブサイトが速くなってしまった](https://echobind.com/post/oops-i-accidentally-made-our-website-faster-by-switching-to-remix): EchobindがNext.js/VercelからRemix/Railwayへの移行ストーリーを詳述。コスト削減を目指していただけで、パフォーマンス（Lighthouseスコア）とSEOの改善に驚きました。
+* 📜 [Next.jsアプリを任意のサーバーに本番環境でデプロイする方法](https://www.saybackend.com/blog/04-deploy-nextjs-to-production-without-vercel): Vercelが提供するすべての最適化は得られませんが、DockerとNext.jsの`standalone`出力モードを使用してNext.jsアプリをデプロイすることは可能です。
+* 📜 [React SuspenseとRSCを使用してNext.jsでタスクシーケンスの進捗を表示する方法](https://www.nico.fyi/blog/next-js-sequential-tasks-progress-stepper-with-rsc-and-suspense): `use`フックを使用。
+* 📜 [バニラReactでの表現力豊かなコンポーネント、パート1: TypeStates](https://massimilianomirra.com/notes/expressive-components-in-vanilla-react-part-1-type-states): 「選択肢は本当はステートマシンを構築するかどうかではなく、暗黙的または明示的に構築するかどうかです」。
+* 📜 [PreactかSvelteか？ 埋め込みウィジェットのユースケース](https://sentry.engineering/blog/preact-or-svelte-an-embedded-widget-use-case): SentryはユーザーフィードバックウィジェットにSvelteではなくPreactを選択しました。
+* 📜 [Vercel - React 19の新機能](https://vercel.com/blog/whats-new-in-react-19)
+* 📜 [React Compilerの使用方法](https://www.freecodecamp.org/news/react-compiler-complete-guide-react-19/?utm_source=newsletter.reactdigest.net\&utm_medium=newsletter\&utm_campaign=how-to-use-react-compiler)
+* 📜 [Next.jsでのMDX](https://spacejelly.dev/posts/mdx-in-nextjs)
+* 📜 [AstroとMDXでのコンポーネント自動インポート](https://lirantal.com/blog/component-auto-import-in-astro-framework/)
+* 📜 [Remixでのファイルアップロード](https://programmingarehard.com/2024/09/06/remix-file-uploads-updated.html/)
+* 📦 [Redwood v8.0](https://redwoodjs.com/upgrade/v8): バックグラウンドジョブ、SSR/RSC設定の簡素化、StorybookのVite対応、Dockerサポート、主要パッケージの更新を提供し、Webpackを非推奨に
+* 📦 [Remix 2.12 - Single Fetchの改善 + `future.unstable_optimizeDeps`](https://remix.run/docs/en/main/start/changelog#v2120)
+* 📦 [React Router 6.26.2 - `unstable_dataStrategy` APIの更新](https://reactrouter.com/en/main/start/changelog#v6262)
+* 📦 [Remix-the-web - Remixまたは任意のウェブフレームワークで使用するためのパッケージコレクション](https://github.com/mjackson/remix-the-web)
+* 📦 [Atomic-CRM - React、react-admin、Supabaseで構築されたフル機能の無料CRM](https://marmelab.com/atomic-crm/)
+* 🎥 [Wes Bos - OpenAIがNext.jsからRemixに移行した理由](https://www.youtube.com/watch?v=hHWgGfZpk00)
+* 🎥 [Fireship - フロントエンドウェブ開発が急速に変化中（shadcn/ui、V0）](https://www.youtube.com/watch?v=TBIjgBVFjVI)
+* 🎥 [Theo - Reactの最も危険な機能（“use server”）](https://www.youtube.com/watch?v=yUm-ET8w_28\&t=1068s)
+* 🎥 [Jack Herrington - ShadCNの革新的な新CLI](https://www.youtube.com/watch?v=LEFRcCf4ehc)
+* 🎙️ [今月のReact 2024年8月 - Matt Pocockがモジュール作成を教えてくれました、RNが高速化、イテレーターヘルパーがクール、JSR/Denoが苦戦中](https://podcasters.spotify.com/pod/show/reactiflux/episodes/TMiR-2024-08-Matt-Pocock-taught-us-to-make-modules--RN-is-faster--iterator-helpers-are-cool--JSRDeno-going-sour-e2o0cor)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Reactアプリでドキュメントの超能力を解き放とう！](/emails/issues/200/pspdfkit.jpg)](https://pspdfkit.com/pdf-sdk/web)
+
+**[Reactアプリでドキュメントの超能力を解き放とう！](https://pspdfkit.com/pdf-sdk/web)**
+
+React愛好者の皆さんへ！ 👋 PSPDFKit React SDKでドキュメント処理を次のレベルへ：
+
+* 🏎️ 無料トライアルと充実したドキュメントで迅速にスタート
+* ⏱️ 洗練された組み込みUIと新デザインシステム**Baseline-UI**で開発時間を節約
+* 🛠️ 処理とカスタマイズのための豊富なAPIを活用
+* 🆘 ドメインエキスパートからのサポートとソリューションエンジニアリングチームを利用
+
+モバイルからバックエンドまで、**すべてのプラットフォーム**をカバーしています。
+
+挑戦的な問題に取り組み、**数百のアプリケーションに影響を与える**仕事に興味はありませんか？ [シニアフロントエンドエンジニア](https://pspdfkit.bamboohr.com/careers/163)などの求人をチェックしてください。
+
+***
+
+## 📱 React-Native {#react-native}
+
+先週、Wrocławで開催されたReact Universeでは、React Nativeコミュニティを沸かせる大きな発表がありました。特に注目を集めたのは、10月末にリリース予定のReact Native 0.76の発表です。このリリースでは、デフォルトで有効化されるNew Architectureと、完全に刷新されたReact Native DevToolsの導入など、重要な進化がもたらされます。すでに[0.76リリース候補版](https://github.com/facebook/react-native/releases/tag/v0.76.0-rc.0)が利用可能です！
+
+[![React Native DevTools](/emails/issues/200/react-native-devtools.jpg)](https://www.youtube.com/watch?v=b48Lax2-jOQ\&t=4350s)
+
+* 🎥 [Alex Hunt - 新しいReact Nativeデバッガー - コードネーム「Fusebox」](https://www.youtube.com/watch?v=b48Lax2-jOQ\&t=4350s)
+  React Nativeのデバッグツールは長らく分散していましたが、新しい「React Native DevTools」はChrome DevTools Protocol（CDP）をバックエンドに採用した統一された体験を提供します。このアーキテクチャはIDEやChrome DevToolsでサポートされ、より信頼性の高いブレークポイントと安定したリロードを約束します。新旧両方のアーキテクチャをサポートし、React Nativeアプリの主要なデバッグソリューションとして位置付けられます。Chrome経由の直接的なHermesデバッグは段階的に廃止されますが、パフォーマンスやネットワークインスペクション機能はまだ開発中です。
+
+[![Hermesパフォーマンスチャート](/emails/issues/200/hermes-perf.jpg)](https://www.youtube.com/watch?v=pfeTPSai6vc\&t=8702s)
+
+* 🎥 [Tzvetan Mikov - Hermes：ランタイムバイトコード変換によるパフォーマンス向上](https://www.youtube.com/watch?v=pfeTPSai6vc\&t=8702s)\
+  昨年のReact Native Europeで発表されたStatic Hermesは、既存のJavaScriptエンジンの常識に挑戦し大きな関心を集めました。まだ開発段階ですが、Static Hermesは型注釈解析を通じてJavaScriptをネイティブマシンコードまたは型付きバイトコードにコンパイルする新しいアプローチを提供し、C++レベルのパフォーマンスの可能性を秘めています。ただし、このワークフローには制限もあります：OTA（Over-The-Air）更新は機能しなくなり、現在のBabelなどのJavaScriptビルドツールは型注釈を保持せず、未だに多くの型なしコードが使用されています。これらの課題に対処するため、Hermesチームはランタイムバイトコード変換を導入し、ネイティブコンパイルで最大12倍のパフォーマンス向上を約束します。これらの革新は、Meta社内での広範なテストを経て、Hermes v2で利用可能になる予定です。
+
+***
+
+* 💸 [React Native Mastery - React Native & Expoをマスターする唯一のコース](https://notjust.dev/react-native-mastery?utm_source=twir\&utm_medium=email)
+* 🐦 [React Native Firebaseが新アーキテクチャをサポート](https://x.com/notbrent/status/1832108444578672709): 多くのプロジェクトで使用されているため、これは朗報です。新アーキテクチャを有効にするために欠けていた要素の一つでした。
+* 🐦 [React Native IDEが新しいReactデバッガー（Fusebox）をサポート予定](https://x.com/kzzzf/status/1832017321235190117)
+* 📖 [Expoドキュメントの最新アップデート](https://x.com/amanhimself/status/1833466032209727662): expo-routerでの非ルートファイル、SDK 51向けアップグレードヘルパーの更新、プッシュ通知ガイド、Maestroを使ったE2Eテストなど。
+* 📜 [美しいアニメーションを作る数学の魅力](https://expo.dev/blog/the-beauty-of-mathematics-in-crafting-stunning-animations)
+* 📜 [ユニバーサルReact Native - プラットフォームを超えた運用効率](https://raf.dev/blog/universal-react-native/)
+* 📜 [アイデアからGoogle Play Storeまで100日で実現](https://expo.dev/blog/from-idea-to-google-play-store-in-100-days)
+* 📦 [Metro v0.80.11 - ビルド速度が最大15倍高速化](https://x.com/MetroBundler/status/1831709057670861260)
+* 📦 [React Native Gesture Handler 2.19 - macOSの完全サポート、Webでのキーボードアクセシビリティ、LongPressでの複数ポインタサポート](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.19.0)
+* 📦 [TypeGPU - WebGPU APIを強化するTypeScriptライブラリ。型安全で宣言的な方法でリソース管理を可能に](https://docs.swmansion.com/TypeGPU/)
+* 📦 [expo-reaction-menu](https://github.com/arunabhverma/expo-reaction-menu): ExpoとReanimatedを使用した、メッセージングアプリで使えるスムーズなリアクションメニューの実装例。
+* 📦 [InAppModule - 外部ライブラリではなく、アプリ内にTurbo Native Moduleを追加する例](https://github.com/cipolleschi/inappmodule)
+* 🎥 [Reactiive - React Native（Reanimated）でページャードットアニメーションを作成](https://www.youtube.com/watch?v=04K3wPK2yC8)
+* 🎥 [Expo - ExpoモジュールAPIでネイティブモジュールを作成する方法](https://youtu.be/CdaQSlyGik8?si=aH_DWm6nr5BM3hYL)
+* 🎙️ [React Universe On Air 42 - ReactとReact Nativeエコシステムの交差点](https://www.callstack.com/podcasts/crossing-paths-of-react-and-react-native-ecosystems)
+* 🎙️ [React-Native-Radio 306 - React Native + Sentry: 天の配](https://reactnativeradio.com/episodes/306-react-native-sentry-a-match-made-in-heaven-with-krystof-woldrich)
+* 🎙️ [Rocket Ship 49 - RNC CLIからExpoへの移行 & テストライブラリ with Steve Galili](https://share.transistor.fm/s/e96a142b)
+
+***
+
+## 🔀 Other {#other}
+
+* 🐦 [Tailwind v4 alpha デモ](https://x.com/adamwathan/status/1830715726195306731)
+* 📖 [Vitest チートシート](https://github.com/sapegin/vitest-cheat-sheet)
+* 📜 [ESLint v8.x サポート終了とバージョンサポートポリシー](https://eslint.org/blog/2024/09/eslint-v8-eol-version-support/): 10月にサポート終了、ESLint v9とflat configへの移行時期です
+* 📜 [CSS display contents](https://ishadeed.com/article/display-contents/)
+* 📜 [WebにおけるES5の現状](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)
+* 📜 [CSS @propertyと新しいスタイル](https://ryanmulligan.dev/blog/css-property-new-style/)
+* 📦 [TypeScript v5.6 - NullishとTruthyチェックの禁止、Iteratorヘルパーメソッド、`--noUncheckedSideEffectImports`、`--noCheck`、自動インポートの除外パターンなど](https://devblogs.microsoft.com/typescript/announcing-typescript-5-6/)
+* 📦 [Rsbuild 1.0 - Rspackベースのビルドツール](https://rsbuild.dev/community/releases/v1-0)
+* 📦 [Express 5.0](https://github.com/expressjs/express/releases/tag/v5.0.0): ただし、[型が更新され移行ドキュメントが作成されるまで](https://github.com/expressjs/express/issues/5944#issuecomment-2341980442) `next` npm distタグがまだ使用されています。
+* 🎥 [Matt Pocock - TypeScriptに決して追加されない5つの機能](https://www.youtube.com/watch?v=Zsj1UlCsuio): 厳密なOmit、否定型、名義型/ブランド型、Throws、正確な型。
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/200/meme.jpg)](https://x.com/JLarky/status/1831873626985144708)
+
+[![alt](/emails/issues/200/meme2.jpg)](https://x.com/bionanek/status/1831649116415299837)
+
+それではまた！👋

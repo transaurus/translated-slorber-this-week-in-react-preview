@@ -1,0 +1,42 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/_support.mdx",
+  "source_file_content_hash": "2a6a4fbb26c087003d42d024cec323d86648d1df0cf740513aeeadbe103c1bb3",
+  "segments": [
+    {
+      "segment_id": "68c6737b",
+      "source_content": "As always, thanks for supporting us on your favorite platform:",
+      "source_content_hash": "93d36bde6c5468013375aae9deac75af410bff6644285884d347231c84581e94",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "いつも通り、お気に入りのプラットフォームでサポートいただきありがとうございます:"
+      }
+    },
+    {
+      "segment_id": "145a76cc",
+      "source_content": "* 🦋 [Bluesky](https://slo.im/last/b)\n* ✖️ [X / Twitter](https://slo.im/last/x)\n* 👔 [LinkedIn](https://slo.im/last/l)\n* 👽 [Reddit](https://slo.im/last/r)",
+      "source_content_hash": "85bd71650f3b9d3dd097b7695cf13a7ff6cff3698a9c61cd5957b809a7053f2f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 🦋 [Bluesky](https://slo.im/last/b)\n* ✖️ [X / Twitter](https://slo.im/last/x)\n* 👔 [LinkedIn](https://slo.im/last/l)\n* 👽 [Reddit](https://slo.im/last/r)"
+      }
+    },
+    {
+      "segment_id": "37387e33",
+      "source_content": "<SubscribeFormEmbed placement=\"top\" />",
+      "source_content_hash": "eb1e2ddbeac66fed0876a1a16efc3ad2e17b7a410347b6f4636146c1c69c6b1e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_37387e33"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/_support.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:36.740795+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "2a6a4fbb26c087003d42d024cec323d86648d1df0cf740513aeeadbe103c1bb3"
+  }
+}

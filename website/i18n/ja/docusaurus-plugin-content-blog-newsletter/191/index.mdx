@@ -1,0 +1,157 @@
+---
+slug: /191
+title: "This Week In React #191: React-Router, Remix, React Query, Suspense, Compiler, Remotion, CodeHike, next-safe-action, Framer-Motion, React-Admin, StyleX, Mobx, FlashList, RN native bridging, Expo, TypeScript, State of JS, Node ..."
+authors: [slorber]
+date: 06-26-2024
+---
+
+みなさん、こんにちは！
+
+今週はついに夏休みシーズンに突入し、大きなReact関連の発表も落ち着いてきました。私たちも短い夏休みを挟み、2回分のニュースレターをスキップして7月17日に再開します。
+
+React関連では、先週のSuspense論争に関連する興味深いコンテンツが続いています。新しいReact Routerの機能では、ルートツリーのコード分割が可能になりました。
+
+React Native側では、チームがv0.75をRCとしてリリースしようとしていますが、いくつかの障害に直面しているようです。とはいえ、近いうちにリリースされるでしょう。
+
+個人的に最も興奮したニュースはTypeScript 5.5の安定版リリースです。特に述語型推論が素晴らしい改善です。また、JSのトレンドを知りたい方にはState of JS調査の結果も公開されています。
+
+<!-- truncate -->
+
+**💡 [Twitterでこのニュースレターをチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![エンタープライズ向けカテゴリ定義Reactグリッド](/emails/issues/190/advertfinal.jpg)](https://1771technologies.com/graphitegrid)
+
+**[エンタープライズ向けカテゴリ定義Reactグリッド](https://1771technologies.com/graphitegrid)**
+
+データグリッドはWebアプリケーションの複雑なコンポーネントですが、現在のソリューションは非効率的で、多くのメンテナンスを必要とし、パフォーマンスも低いです。[Graphite Grid](https://1771technologies.com/graphitegrid)は、再ターゲティング可能なレンダリングとリアクティブシグナル状態という2つの主要機能でこの状況を変えます。
+
+**Graphite Grid**はグリッドの状態とビューロジックを分離し、単一の統一された状態モデルで様々なレンダーターゲットを宣言的または命令的にサポートします。**DOMとCanvas**レンダラーを含んでおり、開発者に柔軟で高性能な選択肢を提供します🚀。
+
+Graphite Gridは宣言的で一貫性があり、状態シグナルを活用してアプリケーションとのシームレスな統合を保証します。**Reactを念頭に設計**されており、Reactの状態管理プリミティブで構築された唯一のJavaScriptデータグリッドです。[今すぐ試してみてください！](https://1771technologies.com/graphitegrid/demo)
+
+***
+
+## ⚛️ React {#react}
+
+[![React-Router 6.24 - 遅延ルートディスカバリー](/emails/issues/191/rr.jpg)](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v6240)
+
+**📦 [React-Router 6.24 - 遅延ルートディスカバリー](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v6240)**
+
+このReact Routerのリリースには、React Routerが既存のルートと一致できない場合に呼び出される新しい`unstable_patchRoutesOnMiss`フックが含まれています。これにより、追加のルートをロードし、単一のモノリシックなモジュールにすべてを保持する代わりにルートのコード分割を実装できます。数千のルートを持つ大規模なアプリケーションにとっては歓迎すべき機能で、これによりすべてのルートを事前にロードする必要がなくなり、ハイドレーションの遅延を防げます。
+
+Remixは休憩するはずでしたが、まだ休んでいません！📦 [Remix 2.10](https://remix.run/docs/en/main/start/changelog#v2100)がリリースされ、この新しいReact Router機能を便利な["Fog of War"](https://remix.run/docs/en/main/guides/fog-of-war)機能として公開しています。これは単純な`future.unstable_fogOfWar`フラグで有効にできます。また、ウォーターフォールを避けるための早期ディスカバリー最適化も実装されています。
+
+***
+
+* 💸 [Meilisearch — Build fast, typo-tolerant search with React](https://dub.sh/ueC2f57)
+* 👀 [React.dev PR - Add branding context menu](https://github.com/reactjs/react.dev/pull/6986): Right-click the website navbar logo to access the official svgs and brand colors of React.
+* 👀 [Next.js PR draft - `nextConfig.requiredEnv`](https://github.com/vercel/next.js/pull/67187)
+* 👀 [Next.js PR draft - type check for `env`](https://github.com/vercel/next.js/pull/67157s)
+* 🐦 [Joe Savona - "Some thoughts on the suspense changes from 19 RC"](https://x.com/en_JS/status/1803480672327311425): To avoid situations such as past week’s Suspense drama, the React team is working on changes to get feedback earlier (working groups, RFC, canary…).
+* 🐦 [Lee Robinsin - "Here's where we're headed with caching in Next.js"](https://x.com/leeerob/status/1803824227704877236): “Our goal is to make all async operations (like doing a `fetch`) opt into dynamic rendering”, “We believe Partial Prerendering will become the default”.
+* 🗓️ [React Rally](https://reactrally.com/?utm_source=thisweekinreact) - 🇺🇸Utah - 12-13, August - Get a 10% discount with code "TWIR". There’s a React Server Components [workshop](https://reactrally.com/workshop) with Kent C. Dodds
+* 📨 [ECMAScript News - Discover our partners' newsletter to keep up to date with ES, TC39, JS tooling, and runtimes](https://ecmascript.news/?utm_source=thisweekinreact)
+* 📜 [Component, colocation, composition: A note on the state of React](https://bobaekang.com/blog/component-colocation-composition/): The recent Suspense drama highlights the gap between React’s component-oriented vision and its current limitations.
+* 📜 [From markdown to video - Animated code walkthroughs with Code Hike and Remotion](https://v1.codehike.org/blog/remotion): If you have seen recent code animation videos of Matt Pocock or Delba, here’s a great article and demos to understand how it works.
+* 📜 [Understanding React Compiler](https://tonyalicea.dev/blog/understanding-react-compiler/): Explains how the React compiler work, starting from the basics (transpiler, AST, memoization), then analyzing the compiler output of a concrete example.
+* 📜 [Wait for pending: A (not great) alternative Suspense algorithm](https://dev.to/alexandereardon/wait-for-pending-a-not-great-alternative-suspense-algorithm-1gdl): Explores the possibility of a different algorithm for Suspense, with different tradeoffs.
+* 📜 [How to make draggable Framer Motion elements snap to breakpoints](https://sinja.io/blog/framer-motion-drag-snap-points): Interactive article implementation snap points on top of Framer Motion, including inertia/velocity support.
+* 📜 [Mobx Memoizes Components (You don't need React Compiler)](https://www.mikejohnson.dev/posts/2024/06/mobx-react-compiler): Takes an existing demo using the React compiler and turns it into an optimized Mobx app with minimal changes. MobX prevents re-renders by auto-tracking dependencies. Note this [Mobx issue](https://github.com/mobxjs/mobx/issues/3874) explains why Mobx (based on proxies) is not compatible with the compiler, and lib creator also confirms it’s already optimized.
+* 📜 [Web Workers, Comlink, Vite and TanStack Query](https://johnnyreilly.com/web-workers-comlink-vite-tanstack-query): React Query being an “async state manager”, it also works well to offload expensive work from the main thread.
+* 📜 [Storybook - Visual testing: The greatest trick in UI development](https://storybook.js.org/blog/visual-testing-is-the-greatest-trick-in-ui-development/): I agree that too many devs miss out on visual regression testing. It has a really great ROI, considering how easy it is to add to an existing Storybook. As this article shows, covering the same component with React Testing Library requires more work.
+* 📜 [Communication Between Client Components in Next.js](https://www.thisdot.co/blog/communication-between-client-components-in-next-js): With RSCs, new challenges emerged to make 2 client components communicate, and you might not be able to lift the state up unless the parent is also a client component. This article proposes 3 solutions: using a Provider, search params, and server state.
+* 📜 [How to Validate Form in Remix with clientAction](https://sergiodxa.com/tutorials/validate-form-in-remix-with-clientaction): Using the new Remix `clientAction` export can nicely complete the server `action` validation and progressively enhance your form with local errors.
+* 📜 [Type-safe TanStack Query with OpenAPI](https://ruanmartinelli.com/blog/tanstack-query-openapi): Shows how to create generic React Query hooks (`useGetQuery`, `usePostMutation`...) that are fully typed according to an OpenAPI specification.
+* 📜 [How To Use Google Sheets as a Database With React via Next.js](https://thenewstack.io/how-to-use-google-sheets-as-a-database-with-react-and-ssr/)
+* 📜 [Is it ok to pass setState as a prop in React?](https://tigerabrodi.blog/is-it-ok-to-pass-setstate-as-a-prop-in-react)
+* 📦 [StyleX 0.7 - CLI (experimental), Literal names for CSS variables](https://stylexjs.com/blog/v0.7.0): New CLI transforms an entire folder and can be an alternative to the bundler integration.
+* 📦 [Next-Safe-Action 7.0 - Type safe and validated Server Actions](https://github.com/TheEdoRan/next-safe-action/releases/tag/v7.0.0): See also the [v6 to v7 migration guide](https://next-safe-action.dev/docs/migrations/v6-to-v7).
+* 📦 [Astro 4.11 - 500 page improvements, `<Code>` component Shiki transformer](https://astro.build/blog/astro-4110/)
+* 📦 [React-Admin 5.0 - Improves on UI, DX, app init, Data Providers, forms…](https://marmelab.com/blog/2024/06/20/react-admin-v5.html)
+* 📦 [Shopify Hydrogen Update - Visual Editor, Optimistic Cart, Vite stable, RichText component, SEO meta export…](https://hydrogen.shopify.dev/update/summer-editions-24-announcing-the-hydrogen-visual-editor-and-a-ton-of-dx-improvements)
+* 📦 [stan-js - Minimalistic state management library](https://codemask-labs.github.io/stan-js/)
+* 🎥 [Jack Herrington - React 19's useOptimistic: everything you need to know](https://www.youtube.com/watch?v=QWVr7uDyBXE)
+* 🎥 [Theo - I Used To Hate Next.js…](https://www.youtube.com/watch?v=6q1eL7IcKzw)
+* 🎥 [Dave Gray - Nextjs Server Actions Just Got Better (using next-safe-action)](https://www.youtube.com/watch?v=ahB3DgUMs1A)
+* 🎥 [Ryan Carniato - Facing Frontend's Existential Crisis, React Summit 2024](https://www.youtube.com/watch?v=nzbV0YgSBuo)
+* 🎙️ [Syntax - What’s Next for NextJS with Tim Neutkens](https://www.youtube.com/watch?v=fXugpgknScY)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![WorkOS: B2B SaaS向けモダンアイデンティティプラットフォーム](/emails/issues/189/WorkOS.jpg)](https://workos.com/?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=q22024)
+
+**[WorkOS: B2B SaaS向けモダンアイデンティティプラットフォーム](https://workos.com/?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=q22024)**
+
+WorkOSを使えば、数行のコードで企業向け販売を開始できます。
+
+🔐 WorkOSは完全なユーザー管理ソリューションに加えて、**SSO、SCIM、RBAC、FGA**をサポートしています。
+
+🏗️ APIは**柔軟で使いやすく、モジュール式**です。必要な機能を選んで数分で統合できます。
+
+🎨 デザインとユーザー体験がすべてです。ドキュメントの品質からユーザーのオンボーディングまで、**開発者にとって不要な複雑さを排除**しています。
+
+✨ ユーザー管理は**100万MAUまで無料**で、ボット対策、なりすまし防止、MFAなどが含まれます。
+
+🤝 WorkOSは**Perplexity**、**Vercel**、**Webflow**など数百の主要スタートアップに信頼されています。
+
+[WorkOS](https://workos.com/?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=q22024)で認証スタックを未来に備えましょう 🚀
+
+***
+
+## 📱 React-Native {#react-native}
+
+このセクションは[Benedikt](https://twitter.com/bndkt)によって執筆されています。
+
+* 💸 [WithFrame - すぐに使えるReact Nativeコンポーネント](https://withfra.me/?utm_source=thisweekinreact\&utm_medium=email\&utm_campaign=quick-link--4)
+* 🐦 [Marc Rousavyがオープンソースライブラリで問題を作成する際に関連するログやクラッシュ情報を取得する方法について](https://x.com/mrousavy/status/1805637303726973437)
+* 🗓️ [The Geek Conf](https://www.thegeekconf.com/?utm_source=thisweekinreact) - 🇩🇪 ベルリン - 7月18日 & 25日 - コード「TWIR」で10%割引。Theodo UKのモバイル責任者Mo Khazali、Platformatic.devのCTO Matteo Collina、GitHubのスタッフソフトウェアエンジニアSiddharth Kshetrapalが登壇！
+* 🗓 [Chain React Conf](https://chainreactconf.com/?utm_source=thisweekinreact) - 🇺🇸 ポートランド、OR - 7月17-19日。米国のReact Nativeカンファレンスが帰ってきました！コード「TWIR」でチケット15%オフ
+* 👀 [Revert "Make the New Architecture the default"](https://github.com/facebook/react-native/commit/37e8fa113ef6a8be7cd057b2bf6ffaa4ae6439d9): 新アーキテクチャのデフォルト化は延期され、v0.75には含まれない可能性があります
+* 👀 [Shopify FlashList PR - 新アーキテクチャサポートがマージ（未リリース）](https://github.com/Shopify/flash-list/pull/550)
+* 👀 [Fishjam Cloud - Software MansionによるReact Native向けビデオストリーミング新プロジェクト](https://cloud.fishjam.stream/)
+* 👀 [expo-router-native-intent-demo - iOSで「アプリにコピー」機能をサポートするExpo Routerの+native-intent API使用例](https://github.com/EvanBacon/expo-router-native-intent-demo)
+* 📜 [React Nativeモジュールのクライアントガイド](https://ospfranco.com/client-guide-to-react-native-modules/): OscarがネイティブモジュールをReact Nativeに公開する様々な方法の違い、長所、短所を詳しく説明し、状況に応じた最適なソリューションを選択する手助けをします。
+* 📜 [JSIを介したReact NativeとRustのブリッジング](https://ditto.live/blog/bridging-react-native-and-rust-via-jsi): Rustで書かれたデータ同期エンジンDittoが、コアロジック（Rust）をJSI経由でRNにブリッジした方法についての記事。
+* 📜 [React NativeでのオンデバイスAI/ML](https://blog.swmansion.com/on-device-ai-ml-in-react-native-137918d0331b): つい最近まで考えられなかったような驚くべき内容。RNでオンデバイスAIを使ったリアルタイムカメラフィルターを構築。
+* 📜 [Webからネイティブへ - React NativeとExpoで](https://expo.dev/blog/from-web-to-native-with-react-native-and-expo): RN/Expoを使って初めてのモバイルアプリを構築したWeb開発者の旅を描く。
+* 📜 [Google同様、BAMもKotlin Multiplatformを信じている](https://www.bam.tech/article/just-as-google-bam-believes-in-kotlin-multiplatform): 主にRNに焦点を当てた企業BAMが、利用可能なクロスプラットフォームソリューションの中でCMP/KMPが魅力的な選択肢であるとし、その利点と制限を説明。
+* 📜 [Expo - FCM v1移行期限が7月20日に変更](https://expo.dev/blog/fcm-v1-migration-deadline-changed-to-july-20th)
+* 🎥 [Simon Grimm - React NativeでのTVアプリ開発](https://www.youtube.com/watch?v=4S7Ftg58Yeg)
+* 🎥 [JavaScript Mastery - 2024年初心者向け無料4.5時間React Nativeコース](https://www.youtube.com/watch?v=ZBCUegTZF7M)
+
+***
+
+## 🔀 Other {#other}
+
+* 📊 [State of JavaScript 2023 - 調査結果](https://2023.stateofjs.com/en-US)
+* 📜 [JavaScriptがついにモジュール体験を改善する方法](https://thenewstack.io/how-javascript-is-finally-improving-the-module-experience/)
+* 📜 [CSSでのインライン条件分岐、今すぐ？](https://lea.verou.me/blog/2024/css-conditionals-now/)
+* 📜 [GitHub Copilot Extensionsはあなたが必要とするすべて](https://code.visualstudio.com/blogs/2024/06/24/extensions-are-all-you-need)
+* 📜 [MDN - 新しいJavaScript Setメソッド](https://developer.mozilla.org/en-US/blog/javascript-set-methods/)
+* 📦 [TypeScript 5.5 - 推論された型述語、インデックスアクセスの絞り込み、JSDoc @import](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/)
+* 📦 [farm - Rustで書かれた超高速Vite互換のWebビルドツール](https://github.com/farm-fe/farm)
+* 📦 [Node 20.15 - テストプラン、–inspect-await](https://nodejs.org/en/blog/release/v20.15.0)
+* 📦 [node-swift - SwiftでNodeモジュールを作成](https://github.com/kabiroberai/node-swift)
+* 🎥 [Matt Pocock TypeScript 5.5は最高](https://www.youtube.com/watch?v=sciBO_IaxTw)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/191/meme.jpg)](https://x.com/ccccjjjjeeee/status/1804814043359621254)
+
+またね！ 👋

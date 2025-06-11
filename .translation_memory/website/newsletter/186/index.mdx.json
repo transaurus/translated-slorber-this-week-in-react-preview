@@ -1,0 +1,672 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/186/index.mdx",
+  "source_file_content_hash": "838ea136f4360b668f5bfd60e66c9364e513fc717010ec035ab150b09a8dc7df",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /186\ntitle: \"This Week In React #186: React Conf, Compiler, Universal RSC, React-Router, Google Maps, Million Lint, Pigment, Restyle, Storybook, SSRF, Inline Styles, New Arch, Expo, Bootsplash, Skia, RN-Video...\"\nauthors: [slorber, bndkt]\ndate: 05-22-2024\n---",
+      "source_content_hash": "c8286651636cf18a34e2fb95e45c0b1cbc26e34fd2017a5bcb1607a84323e86e",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "皆さん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This has been a busy week for us 😄. That React conf didn't disappoint! We weren't there, but [our flyer was](https://x.com/sebastienlorber/status/1790771155734839313) 😇. We not only had great conf announcements (notably the compiler!), but we had great community articles that I had to postpone a few of them to next week.",
+      "source_content_hash": "81c12a22c2e82b77b9404d438a9bcf0cfb30ac0469322a6c69fe368dde86e7ed",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週は忙しい週でした 😄。React Confは期待を裏切りませんでした！私たちは現地にはいませんでしたが、[私たちのフライヤーは参加していました](https://x.com/sebastienlorber/status/1790771155734839313) 😇。Confでの大きな発表（特にコンパイラ！）だけでなく、来週に延期しなければならなかった素晴らしいコミュニティ記事もありました。"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Although it's unlikely to calm down because 2 major confs start tomorrow:",
+      "source_content_hash": "bac5247cbe3a726ef2450f25d65bac8e0a69186e0e9d72be0fc178a4a842fdf8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ただし、明日から2つの主要なConfが始まるため、落ち着くことはなさそうです："
+      }
+    },
+    {
+      "segment_id": "9e760345",
+      "source_content": "* Vercel Ship, during which [Next.js 15 should be announced](https://x.com/feedthejim/status/1792969159321723244) with a less aggressive caching strategy, Turborepo in dev, Compiler support and more.\n* App.js Conf, also with great React Native announcements expected.",
+      "source_content_hash": "704738bfd12bfb77b7261b4919bdfa38a1fcfce54801c6591c2acf3adb2c1fb7",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* Vercel Shipでは、[Next.js 15が発表される予定](https://x.com/feedthejim/status/1792969159321723244)で、キャッシュ戦略の緩和、開発環境でのTurborepo、コンパイラサポートなどが含まれます。\n* App.js Confでも、React Nativeに関する大きな発表が期待されています。"
+      }
+    },
+    {
+      "segment_id": "42ad8e83",
+      "source_content": "Have a good read and see you next week!",
+      "source_content_hash": "8cac5f87a044a567ba343bff691308aa8256be32e869d3f53a427d4dc1285423",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "良い記事を楽しんで、また来週お会いしましょう！"
+      }
+    },
+    {
+      "segment_id": "29ee8c7a",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_29ee8c7a"
+      }
+    },
+    {
+      "segment_id": "f5f6d2ce",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**"
+      }
+    },
+    {
+      "segment_id": "18e2d98b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "11262b0b",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_11262b0b"
+      }
+    },
+    {
+      "segment_id": "358a309f",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_358a309f"
+      }
+    },
+    {
+      "segment_id": "8b52fbba",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "48847fd4",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "4daf5cdd",
+      "source_content": "[![React-admin: The Open-Source Framework for B2B apps](/emails/issues/182/marmelab.jpg)](https://marmelab.com/react-admin/)",
+      "source_content_hash": "d16193353a1a998994c20483fe9c9b09560873df2a7ad109b54876e11ef26387",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![React-admin: B2Bアプリのためのオープンソースフレームワーク](/emails/issues/182/marmelab.jpg)](https://marmelab.com/react-admin/)"
+      }
+    },
+    {
+      "segment_id": "bdc231b1",
+      "source_content": "**[React-admin: The Open-Source Framework for B2B apps](https://marmelab.com/react-admin/)**",
+      "source_content_hash": "134eba9a0d54cccd0c26001e8ef40db0ca57b4aed3b5964db5fa48be482c2b51",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[React-admin: B2Bアプリのためのオープンソースフレームワーク](https://marmelab.com/react-admin/)**"
+      }
+    },
+    {
+      "segment_id": "97ae4a01",
+      "source_content": "Speed up the development of your single-page applications with the acclaimed frontend framework🚀. Built with TanStack Query, react-hook-form, react-router & material UI, React-admin lets you create rich user experiences on top of REST or GraphQL APIs.",
+      "source_content_hash": "0fad1b7f882f2fb2d238e29fc04b2081c5dc295523a699eb8b4e867a3baabaf0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "高評価のフロントエンドフレームワーク🚀を使用して、シングルページアプリケーションの開発を加速しましょう。TanStack Query、react-hook-form、react-router、Material UIで構築されたReact-adminは、RESTまたはGraphQL API上でリッチなユーザーエクスペリエンスを作成できます。"
+      }
+    },
+    {
+      "segment_id": "c3a738de",
+      "source_content": "Beyond CRUD pages, React-admin has many advanced functionalities to meet your needs. Its complete toolkit offers a calendar **📅**, customizable Kanban board, content versioning **🔄**, nested forms & more. Add real-time updates 🎥, tree **🌲** structures and detailed audit logs via headless hooks and themeable components.",
+      "source_content_hash": "4f33975f66ca3fbe3a3eab73b6a504aae62b2d3fc7b91be1db0d4f2c010ca050",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "CRUDページを超えて、React-adminには多くの高度な機能があります。完全なツールキットには、カレンダー **📅**、カスタマイズ可能なKanbanボード、コンテンツのバージョン管理 **🔄**、ネストされたフォームなどが含まれます。リアルタイム更新 🎥、ツリー構造 **🌲**、詳細な監査ログをヘッドレスフックとテーマ可能なコンポーネントで追加できます。"
+      }
+    },
+    {
+      "segment_id": "3cfe6286",
+      "source_content": "Ready to take your development to the next level? Make React-admin your go-to framework & join over half a million daily users. [Try it now](https://marmelab.com/react-admin/)!",
+      "source_content_hash": "40a58ffeb74a4ad60114c2511f1acc23ba3b9252f7ab966c11a57063636172a6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "開発を次のレベルに引き上げる準備はできていますか？React-adminをあなたの主要フレームワークにして、50万人以上の日々のユーザーに加わりましょう。[今すぐ試す](https://marmelab.com/react-admin/)！"
+      }
+    },
+    {
+      "segment_id": "76a8033c",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "35a77014",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "[![React Conf 2024 Recap](/emails/issues/186/recap.jpg)](https://react.dev/blog/2024/05/22/react-conf-2024-recap)",
+      "source_content_hash": "2352526d102e41050747f47770ed9851c8111f1486050c979314111cfa335e59",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![React Conf 2024 レポート](/emails/issues/186/recap.jpg)](https://react.dev/blog/2024/05/22/react-conf-2024-recap)"
+      }
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "**[React Conf 2024 Recap](https://react.dev/blog/2024/05/22/react-conf-2024-recap)**",
+      "source_content_hash": "bd95dc6da9d7b3da245aad7a4d16d99b788d929a7785628b2eb8b7e80058a7e9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[React Conf 2024 レポート](https://react.dev/blog/2024/05/22/react-conf-2024-recap)**"
+      }
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "The React team published a recap blog post of React Conf, just in time for today’s newsletter 🤗. It presents all the talks and the main announcements. I haven't seen all of them yet, but my highlights so far are:",
+      "source_content_hash": "b1ead997bd5f58138d4b50dcc8a3a655ea8204c3901a0c700c8ac4476b1fadac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Reactチームは、React Confのレポートブログ記事を公開しました。ちょうど今日のニュースレターに間に合いました 🤗。すべての講演と主な発表が紹介されています。私はまだすべてを見ていませんが、今のところのハイライトは："
+      }
+    },
+    {
+      "segment_id": "310e47b7",
+      "source_content": "* React 19 is in RC, and a stable release is expected in the next few weeks\n* The React Compiler is out and looks really powerful\n* Universal React Server Components are coming to Expo and the demo is really impressive\n* Remix and React Router are merging. Remix v3 will finally be React Router v7.\n* The Real-time React Server Components demo makes RSCs stateful and opens new possibilities that remind me of Phoenix LiveView\n* React now coordinates HTML tags, which is hugely underrated",
+      "source_content_hash": "b529e34add2fd98ca258be47974b02c46e95630e000b9d66d158085dff537309",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* React 19はRC版で、安定版は数週間以内にリリースされる予定\n* Reactコンパイラが公開され、非常に強力に見える\n* Universal React Server ComponentsがExpoに導入され、デモは非常に印象的\n* RemixとReact Routerが統合されます。Remix v3は最終的にReact Router v7になります。\n* リアルタイムReact Server ComponentsのデモはRSCをステートフルにし、Phoenix LiveViewを思い起こさせる新しい可能性を開く\n* ReactがHTMLタグを調整するようになり、これは大きく過小評価されている"
+      }
+    },
+    {
+      "segment_id": "40158b4b",
+      "source_content": "Again these are just my personal favorites. We already covered most React 19 features in the newsletter, and the [React 19 beta blog post](https://react.dev/blog/2024/04/25/react-19) remains the reference for discovering all the new features coming in the next major version.",
+      "source_content_hash": "5aba5d83a29f6d9f55814e442f38201edb5207256dfa4bff6f48816493de909b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "これらはあくまで私の個人的なお気に入りです。ニュースレターではすでにReact 19の機能のほとんどをカバーしており、[React 19ベータ版のブログ記事](https://react.dev/blog/2024/04/25/react-19)が次のメジャーバージョンで導入されるすべての新機能を発見するための参考資料です。"
+      }
+    },
+    {
+      "segment_id": "818747ba",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "79ad944d",
+      "source_content": "[![React Compiler](/emails/issues/186/compiler.jpg)](https://react.dev/learn/react-compiler)",
+      "source_content_hash": "0f49eb37dd0baf28cf8bc487ee71382a08a25255377e3689507f1302269038b2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![React Compiler](/emails/issues/186/compiler.jpg)](https://react.dev/learn/react-compiler)"
+      }
+    },
+    {
+      "segment_id": "531437ca",
+      "source_content": "**[The React Compiler is out](https://react.dev/learn/react-compiler)**",
+      "source_content_hash": "75f9f4243aaef6531624f107a7abff00c5ba6babbb19a445710f8a007cbeb95d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[React Compilerがリリースされました](https://react.dev/learn/react-compiler)**"
+      }
+    },
+    {
+      "segment_id": "06e24cc0",
+      "source_content": "The compiler probably deserves its own section right. TLDR: the compiler optimizes your existing code automatically and gives you fine-grained reactivity using regular JS values. Try the [React Compiler Playground](https://playground.react.dev/#N4Igzg9grgTgxgUxALhAgHgBwjALgAgBMEAzAQygBsCSoA7OXASwjvwFkBPAQU0wAoAlPmAAdNvhgJcsNgB5CTAG4A+ABIJKlCPgDqOSoTkB6RaoDc4gL7iQVoA) to see how it works, and understand how it optimizes your code.",
+      "source_content_hash": "1665bf6e7b77bd79b7735eb9ed7f142466150f0d59916137e4e2de5c16de0f39",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "コンパイラーには独立したセクションが必要でしょう。要点をまとめると、このコンパイラーは既存のコードを自動的に最適化し、通常のJS値を使用してきめ細かいリアクティビティを提供します。[React Compiler Playground](https://playground.react.dev/#N4Igzg9grgTgxgUxALhAgHgBwjALgAgBMEAzAQygBsCSoA7OXASwjvwFkBPAQU0wAoAlPmAAdNvhgJcsNgB5CTAG4A+ABIJKlCPgDqOSoTkB6RaoDc4gL7iQVoA)で動作を試し、コードがどのように最適化されるかを確認できます。"
+      }
+    },
+    {
+      "segment_id": "7f71ff2a",
+      "source_content": "It has been successfully rolled out on Instagram web with great results (2.5x faster interactions). It statically analyses your code, one file at a time, and memoizes what can safely be optimized, with even greater granularity than you could do by hand. If you follow the Rules of React, you shouldn’t need to rewrite any code. The ESLint plugin tells you about problematic code that the compiler detects. It does not play well with proxy-based solutions like MobX. Configuration options and opt-in/out directives enable you to try the compiler gradually on your codebase.",
+      "source_content_hash": "c23f23ec22ada6cd52ae5623b1f57a19d73801159919fbb3fd76e40b0d60a099",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "InstagramのWeb版で既に成功裏に展開されており、大きな成果（インタラクションが2.5倍高速化）を上げています。このコンパイラーはコードを静的に解析し、ファイルごとに安全に最適化できる部分をメモ化します。これは手作業で行うよりもさらに細かい粒度での最適化が可能です。Reactのルールに従っていれば、コードを書き直す必要はありません。ESLintプラグインは、コンパイラーが検出した問題のあるコードについて警告します。ただし、MobXのようなプロキシベースのソリューションとは相性が良くありません。設定オプションやオプトイン/アウトのディレクティブを使用することで、コードベースで段階的にコンパイラーを試すことができます。"
+      }
+    },
+    {
+      "segment_id": "147e8550",
+      "source_content": "The compiler is initially written in TypeScript and ships with Babel bindings, but don’t be disappointed because its logic is decoupled. Support for SWC should come next, and we’ll probably have a port in Rust a bit later (they already made a POC for that to ensure it’s feasible).",
+      "source_content_hash": "8d9abe18026b06b36f2bef1a345ce659739fe507d1ee6a87f52e243794e44726",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "コンパイラーは最初TypeScriptで書かれており、Babelバインディングと共に提供されますが、そのロジックは分離されているため心配無用です。SWCのサポートは次に来る予定で、Rustへの移植も少し後になるでしょう（実現可能性を確認するためのPOCは既に作成されています）。"
+      }
+    },
+    {
+      "segment_id": "883231d4",
+      "source_content": "It is worth mentioning that the React team always had in mind to have a compiler for React (see [Andrew Clark’s thread](https://x.com/acdlite/status/1792710362745405911)). And this is only the beginning, they now have the infrastructure to build even more powerful things. I’m pretty sure sooner or later we won’t need anymore a dependency array, and that the compiler will be able to optimize fine-grained context consumption ([relevant tweet](https://x.com/TkDodo/status/1741193371283026422)).",
+      "source_content_hash": "c9b7d58e9f70c5f8db7bcb281d69e385c83540a494d15beae8369670a43d4cc5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Reactチームは常にReact用のコンパイラーを構想していたことを付け加えておきます（[Andrew Clarkのスレッド](https://x.com/acdlite/status/1792710362745405911)参照）。これは始まりに過ぎず、今後さらに強力なものを構築するための基盤が整いました。近い将来、依存配列が必要なくなり、コンパイラーがきめ細かいコンテキスト消費を最適化できるようになると確信しています（[関連ツイート](https://x.com/TkDodo/status/1741193371283026422)）。"
+      }
+    },
+    {
+      "segment_id": "6cc549f2",
+      "source_content": "🔗 **Related resources worth checking:**",
+      "source_content_hash": "1890a3b93653fe2ecb480838c3807b2ac180e2bbf6b217cd6983dce34a3bd933",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🔗 **関連リソース（要チェック）:**"
+      }
+    },
+    {
+      "segment_id": "6384b3d4",
+      "source_content": "* 📜 [React Compiler With React 18](https://jherr2020.medium.com/react-compiler-with-react-18-1e39f60ae71a): The compiler is not a React 19 feature. Jack shows a POC of using it under React 18 by providing a very simple compiler runtime hook. Lauren from the React Compiler team just confirmed it’s ok to do so and provided an [official polyfill](https://github.com/reactwg/react-compiler/discussions/6) that you can use temporarily, although it’s recommended to upgrade to React 19.\n* 🎥 [Jack Herrington - React Compiler: In-Depth Beyond React Conf 2024](https://www.youtube.com/watch?v=PYHBHK37xlE)\n* 🎥 [Theo - React Just Changed Forever](https://www.youtube.com/watch?v=DhfeXfF_W4w)\n* 🧵 [Theo - Clearing up some React Compiler misunderstandings](https://x.com/t3dotgg/status/1791177359896555600)",
+      "source_content_hash": "18bf1dab6d241aa52a55ec4b5bfd629dd0ec40ca8b50cdb0a0e4a8b68ddfcf29",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📜 [React 18でのReact Compiler](https://jherr2020.medium.com/react-compiler-with-react-18-1e39f60ae71a): コンパイラーはReact 19の機能ではありません。Jackは、非常にシンプルなコンパイラーのランタイムフックを提供することで、React 18下で使用するPOCを示しています。React CompilerチームのLaurenは、一時的に使用する公式の[polyfill](https://github.com/reactwg/react-compiler/discussions/6)を提供し、React 19へのアップグレードを推奨しています。\n* 🎥 [Jack Herrington - React Compiler: React Conf 2024の詳細を超えて](https://www.youtube.com/watch?v=PYHBHK37xlE)\n* 🎥 [Theo - Reactは永遠に変わった](https://www.youtube.com/watch?v=DhfeXfF_W4w)\n* 🧵 [Theo - React Compilerに関する誤解を解消](https://x.com/t3dotgg/status/1791177359896555600)"
+      }
+    },
+    {
+      "segment_id": "2ff0f46f",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "fbc2db85",
+      "source_content": "[![Merging Remix and React Router](/emails/issues/186/remix.jpg)](https://remix.run/blog/merging-remix-and-react-router)",
+      "source_content_hash": "fe9e5f4a06c1e0f87948d7206f77d04891b5a6ec562c94ef9c7e78890b50c443",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![RemixとReact Routerの統合](/emails/issues/186/remix.jpg)](https://remix.run/blog/merging-remix-and-react-router)"
+      }
+    },
+    {
+      "segment_id": "8126f763",
+      "source_content": "**[Merging Remix and React Router](https://remix.run/blog/merging-remix-and-react-router)**",
+      "source_content_hash": "2158f9884840c46a030df1421eea9bf311624e491417bd2de6c9c1c605bbe363",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[RemixとReact Routerの統合](https://remix.run/blog/merging-remix-and-react-router)**"
+      }
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "This is another big announcement from React Conf. Remix and React Router have converged so much (thanks to the Vite plugin and SPA mode) that it doesn’t really make sense anymore to keep both. Technically, instead of shipping Remix v3, they plan to add an optional Vite plugin to React Router v7, which will remain retro-compatible, and also bring new features (RSC, server-actions, static pre-rendering…). See also the follow-up post [Incremental Path to React 19: React Conf Follow-Up](https://remix.run/blog/incremental-path-to-react-19).",
+      "source_content_hash": "2319bd7355568f5e528d93a15be314235e8bf6b66acef1d50ef96384a3433372",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "これはReact Confからのもう一つの大きな発表です。RemixとReact Routerは（ViteプラグインとSPAモードのおかげで）非常に近づいたため、両方を維持する意味がほとんどなくなりました。技術的には、Remix v3をリリースする代わりに、React Router v7にオプションのViteプラグインを追加する計画です。これにより後方互換性を保ちつつ、新しい機能（RSC、サーバーアクション、静的プリレンダリングなど）ももたらされます。フォローアップ記事[Incremental Path to React 19: React Conf Follow-Up](https://remix.run/blog/incremental-path-to-react-19)も参照してください。"
+      }
+    },
+    {
+      "segment_id": "c9716ede",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "d0b8a6db",
+      "source_content": "* 💸 [Conversational AI and context-aware LLM chat with React](https://nlux.dev/?utm_source=twir-m24-2)\n* 📜 [React 19 lets you write impossible components](https://www.mux.com/blog/react-19-server-components-and-actions): A great article from Mux that adopted RSCs early, explaining that we only scratched the surface of the new patterns RSCs enable. The changelog pagination example is cool and shows that even libraries like React Query might become less useful.\n* 📜 [Introducing Pigment CSS: the next generation of CSS-in-JS](https://mui.com/blog/introducing-pigment-css/): the MUI team explains the motivations to create their own in-house CSS-in-JS solution, built on top of the WyW-in-JS toolkit, that should power MUI v6 later this year. It is compatible with RSCs. The adoption for MUI/Emotion/StyledComponent users should be easy.\n* 📜 [Digging for SSRF in NextJS apps](https://www.assetnote.io/resources/research/digging-for-ssrf-in-nextjs-apps): Security researchers explain blind Server Side Request Forgery vulnerabilities they found in Next.js related to the Image component and Server Actions implementations. Those vulnerabilities have been patched since Next.js 14.1.1 already (January 2024).\n* 📜 [Prefer Multiple Compositions](https://kyleshevlin.com/prefer-multiple-compositions/): If your component has a finite set of cases to handle, it will be more maintainable to have clear separate if/else branches for each cases rather than spreading conditionals everywhere in JSX.\n* 📜 [Prefer Noun-Adjective Naming](https://kyleshevlin.com/prefer-noun-adjective-naming/): I also prefer to name a component “ButtonPrimary” instead of “PrimaryButton”. Related things remain grouped alphabetically, and are easier to lookup in the IDE.\n* 📜 [Inline Styles on Steroids](https://weser.io/blog/inline-styles-on-steroids): With projects such as CSS Hooks, and the web platform planning to add support for inline style nesting, it’s only a matter of time until inline styles make a huge comeback. The author of Fela recreates the DX of a good CSS-in-JS library on top of CSS Hooks thanks to 2 new projects he’s working on.\n* 📜 [Quantifying the Impact of Styled Components on Server Response Times](https://blog.levineandrew.com/quantifying-the-impact-of-styled-components-on-server-response-times): Uses SpeedScope (more powerful than Chrome DevTools) to analyze a CPU trace and concludes that style injection takes 47% of SSR time.\n* 📜 [Storybook - Portable stories for Playwright Component Tests](https://storybook.js.org/blog/portable-stories-for-playwright-ct/): Although Storybook provides a play() function using a Playwright test runner, you might still want to use Playwright Component testing directly, and reuse your existing stories there.\n* 📜 [Deploying Remix to Cloudflare with SST](https://ruanmartinelli.com/blog/remix-sst-cloudflare): Using SST to deploy your app to a major cloud can be a nice alternative to DX platforms like Vercel/Netlify. TIL that it’s so simple to use, and it also supports deploying to Cloudflare.\n* 📦 [Restyle](https://reactstyle.vercel.app/): New CSS-in-JS library compatible with RSC that’s leveraging the brand-new style hoisting and deduplication feature of React 19. Those new React primitives were also designed with CSS-in-JS libs in mind, and it’s great to see the community already leveraging them. It’s also interesting for distributing CSS as part of a React library npm package.\n* 📦 [React Google Maps 1.0](https://mapsplatform.google.com/resources/blog/google-maps-platform-graduates-react-integration-library-to-1-0/): The official Google Maps library for React is now stable, maintained by the OpenJS Foundation.\n* 📦 [Million Lint 1.0-rc](https://million.dev/blog/lint-rc): IDE extension that automatically finds and fixes performance issues for you. Unlike the React compiler, it is based on runtime analysis and can detect additional performance problems that the compiler can’t. Both can be used in tandem.\n* 📦 [Zustand 5.0-beta - Upgrade guide available - drop deprecated features, upgrades React/TS](https://github.com/pmndrs/zustand/blob/v5/docs/guides/migrating-to-v5.mdx)\n* 📦 [Storybook 8.1 - tag filtering, typesafe mocking, beforeEach, portable stories API](https://github.com/storybookjs/storybook/releases/tag/v8.1.0)\n* 📦 [Storybook-Rsbuild - Storybook builder powered by Rsbuild](https://github.com/rspack-contrib/storybook-rsbuild)",
+      "source_content_hash": "5755bf01eb8a96b22125314f6d2a058731406d37c634b3bb4e790e8a95466c89",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Reactを使った会話型AIとコンテキスト対応LLMチャット](https://nlux.dev/?utm_source=twir-m24-2)\n* 📜 [React 19で不可能だったコンポーネントが書けるように](https://www.mux.com/blog/react-19-server-components-and-actions): RSCを早期に採用したMuxの素晴らしい記事で、RSCが可能にする新しいパターンの表面をなぞっただけだと説明しています。チェンジログのページネーション例はクールで、React Queryのようなライブラリさえも不要になる可能性を示しています。\n* 📜 [Pigment CSSの紹介: 次世代CSS-in-JS](https://mui.com/blog/introducing-pigment-css/): MUIチームが、WyW-in-JSツールキット上に構築された自社製CSS-in-JSソリューションを作成する動機を説明。今年後半にMUI v6を支える予定で、RSCと互換性があります。MUI/Emotion/StyledComponentユーザーにとって移行は容易でしょう。\n* 📜 [NextJSアプリでのSSRF調査](https://www.assetnote.io/resources/research/digging-for-ssrf-in-nextjs-apps): セキュリティ研究者が、ImageコンポーネントとServer Actions実装に関連してNext.jsで発見したブラインドServer Side Request Forgery脆弱性について説明。これらの脆弱性はNext.js 14.1.1（2024年1月）ですでに修正済みです。\n* 📜 [複数のコンポジションを推奨](https://kyleshevlin.com/prefer-multiple-compositions/): コンポーネントが処理するケースが有限集合の場合、JSX全体に条件分岐を散りばめるよりも、各ケースごとに明確なif/else分岐を持たせる方が保守性が高まります。\n* 📜 [名詞-形容詞命名を推奨](https://kyleshevlin.com/prefer-noun-adjective-naming/): 「PrimaryButton」ではなく「ButtonPrimary」とコンポーネント名を付けることを私も好みます。関連するものがアルファベット順にグループ化され、IDEで検索しやすくなります。\n* 📜 [強化されたインラインスタイル](https://weser.io/blog/inline-styles-on-steroids): CSS Hooksのようなプロジェクトや、ウェブプラットフォームがインラインスタイルのネストをサポートする計画があるため、インラインスタイルが大きく復活するのは時間の問題です。Felaの作者が、自身が取り組んでいる2つの新プロジェクトにより、優れたCSS-in-JSライブラリのDXをCSS Hooks上で再現しています。\n* 📜 [Styled Componentsがサーバー応答時間に与える影響の定量化](https://blog.levineandrew.com/quantifying-the-impact-of-styled-components-on-server-response-times): SpeedScope（Chrome DevToolsより強力）を使用してCPUトレースを分析し、スタイル注入がSSR時間の47%を占めると結論付けています。\n* 📜 [Storybook - Playwrightコンポーネントテストのためのポータブルストーリー](https://storybook.js.org/blog/portable-stories-for-playwright-ct/): StorybookはPlaywrightテストランナーを使用するplay()関数を提供していますが、Playwrightコンポーネントテストを直接使用し、既存のストーリーを再利用したい場合もあるでしょう。\n* 📜 [SSTを使用してRemixをCloudflareにデプロイ](https://ruanmartinelli.com/blog/remix-sst-cloudflare): SSTを使用してアプリを主要クラウドにデプロイすることは、Vercel/NetlifyのようなDXプラットフォームの代替として適しています。Cloudflareへのデプロイもサポートされており、使用が非常に簡単であることを知りました。\n* 📦 [Restyle](https://reactstyle.vercel.app/): RSCと互換性のある新しいCSS-in-JSライブラリで、React 19の新機能であるスタイルのホイスティングと重複排除を活用しています。これらの新しいReactプリミティブはCSS-in-JSライブラリも考慮して設計されており、コミュニティが既に活用しているのは素晴らしいことです。Reactライブラリのnpmパッケージの一部としてCSSを配布するのにも興味深いです。\n* 📦 [React Google Maps 1.0](https://mapsplatform.google.com/resources/blog/google-maps-platform-graduates-react-integration-library-to-1-0/): Google Mapsの公式Reactライブラリが安定版になり、OpenJS Foundationによってメンテナンスされています。\n* 📦 [Million Lint 1.0-rc](https://million.dev/blog/lint-rc): パフォーマンス問題を自動的に検出して修正するIDE拡張。Reactコンパイラとは異なり、ランタイム分析に基づいており、コンパイラが検出できない追加のパフォーマンス問題を検出できます。両方を併用可能です。\n* 📦 [Zustand 5.0-beta - アップグレードガイド利用可能 - 非推奨機能の削除、React/TSのアップグレード](https://github.com/pmndrs/zustand/blob/v5/docs/guides/migrating-to-v5.mdx)\n* 📦 [Storybook 8.1 - タグフィルタリング、型安全なモック、beforeEach、ポータブルストーリーAPI](https://github.com/storybookjs/storybook/releases/tag/v8.1.0)\n* 📦 [Storybook-Rsbuild - Rsbuildを搭載したStorybookビルダー](https://github.com/rspack-contrib/storybook-rsbuild)"
+      }
+    },
+    {
+      "segment_id": "32dbde37",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_32dbde37"
+      }
+    },
+    {
+      "segment_id": "0c6c4220",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "ab39e8a7",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "d21af28f",
+      "source_content": "[![Next.js auth tutorial with RSCs and Server Actions](/emails/issues/186/AuthKitNextjs.jpg)](https://www.youtube.com/watch?v=aoRG1q_kVo8)",
+      "source_content_hash": "b9a1f8c4dfc955504c7ed99ca88f7c639f76ed9f8904ff3f92bffef69194197a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Next.js auth tutorial with RSCs and Server Actions](/emails/issues/186/AuthKitNextjs.jpg)](https://www.youtube.com/watch?v=aoRG1q_kVo8)"
+      }
+    },
+    {
+      "segment_id": "44aaa880",
+      "source_content": "**[Next.js auth tutorial with RSCs and Server Actions](https://www.youtube.com/watch?v=aoRG1q_kVo8)**",
+      "source_content_hash": "8516cfb9e4239ea47ad4a8cfd74efe8c3803e2c5d60a34f27b2165a3efe63c74",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Next.js 認証チュートリアル（RSCとServer Actions対応）](https://www.youtube.com/watch?v=aoRG1q_kVo8)**"
+      }
+    },
+    {
+      "segment_id": "396efb28",
+      "source_content": "The latest tutorial with WorkOS and Sam Selikoff shows how you can easily add AuthKit's hosted login box to a Next.js app:",
+      "source_content_hash": "19515a91b38ffb6e00d075291b03db7e9bd8c665e03aab2171ef25b829f43cb2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "WorkOSとSam Selikoffによる最新チュートリアルでは、Next.jsアプリにAuthKitのホステッドログインボックスを簡単に追加する方法を紹介しています："
+      }
+    },
+    {
+      "segment_id": "558df877",
+      "source_content": "📚 Get started using the Authkit \\<> Next.js [integration library](https://github.com/workos/authkit-nextjs)\\\n🤖 Set up environment variables, configure the callback route and middleware, and implement signIn and signOut functionalities\\\n⚙️ Protect routes in the Next.js app from unauthenticated users with the getUser function",
+      "source_content_hash": "e6d7c6cbdfc49007ca1cd1280fe43d05c446c322777f47ac84c9afdd8e48994c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "📚 AuthKitとNext.jsの[統合ライブラリ](https://github.com/workos/authkit-nextjs)を使って始めよう\\\n🤖 環境変数の設定、コールバックルートとミドルウェアの構成、signInとsignOut機能の実装\\\n⚙️ getUser関数でNext.jsアプリのルートを未認証ユーザーから保護"
+      }
+    },
+    {
+      "segment_id": "5f82a1e9",
+      "source_content": "AuthKit can be used with WorkOS User Management, which supports MFA, identity linking, email verification, user impersonation, and more.",
+      "source_content_hash": "0adfa6ff75ed44a0b04ee10f909a70d2e97a0fe9a0ab9cb1a29a8db4277f2e58",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "AuthKitはWorkOSのユーザー管理と連携可能で、MFA、ID連携、メール検証、ユーザー偽装などに対応しています。"
+      }
+    },
+    {
+      "segment_id": "6fc234cf",
+      "source_content": "Best of all, it's **free up to 1,000,000 MAUs 🚀**",
+      "source_content_hash": "f9dfa9abad3d07a70293d049c6a21e6658744e0b86e49b56486b9566e398bc22",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "何より、**月間100万MAUまで無料 🚀**"
+      }
+    },
+    {
+      "segment_id": "714b728f",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "47cd8dd6",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "692c6053",
+      "source_content": "This section is authored by [Benedikt](https://twitter.com/bndkt).",
+      "source_content_hash": "0aff28d995823a706b5e2556e3ef90d67c8595d7a00290f1a597b94b15e10b1f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このセクションは[Benedikt](https://twitter.com/bndkt)が執筆しています。"
+      }
+    },
+    {
+      "segment_id": "383fbdd2",
+      "source_content": "![](/emails/issues/186/ursc.jpg)",
+      "source_content_hash": "9d4239272bd3ecc66c00227599c9a60c03202c48c251fdb820a997d28242afe2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "![](/emails/issues/186/ursc.jpg)"
+      }
+    },
+    {
+      "segment_id": "14bc6b75",
+      "source_content": "React Conf is officially behind us, and I hope you had a chance to look at the recordings of the awesome presentations on YouTube. My biggest meta-takeaway was just how much RN content there was in the conference! As RN is very much developed out in the open and in collaboration with the whole community, there were no surprising “big announcements,” but it was a very good summary of the current state of RN and an outlook on the road ahead. The most impressive and inspiring part for me was Evan Bacon’s vision for Universal React Server Components, which he presented using an absolute killer demo that I’m urging you to [watch for yourself](https://www.youtube.com/watch?v=T8TZQ6k4SLE\\&t=20765s). I’ve put my main takeaways into some bullet points for you:",
+      "source_content_hash": "2f74756cf002a5c6cc90ef8532d5ce2fe1c32a03ebb1a4ebacc65a8039551cb9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React Confが正式に終了し、YouTubeで素晴らしいプレゼンテーションの録画を見る機会があったことを願っています。私の最大のメタ気づきは、カンファレンスにどれだけ多くのRNコンテンツがあったかです！RNは非常にオープンに開発され、コミュニティ全体と協力して進められているため、「大きな発表」のような驚きはありませんでしたが、RNの現状と今後の展望をまとめた非常に良い内容でした。最も印象的でインスピレーションを受けたのは、Evan Baconが示したUniversal React Server Componentsのビジョンで、絶対に見るべきキラーデモを使って発表しました。ぜひ[自分で見て](https://www.youtube.com/watch?v=T8TZQ6k4SLE\\&t=20765s)ください。主なポイントを以下にまとめました："
+      }
+    },
+    {
+      "segment_id": "292df6cb",
+      "source_content": "* RN is thriving: Over 2M weekly downloads of RN now, 30 shipped versions of RN in 2024 so far\n* The new Architecture is now in Beta\n* Expo is now officially recommended for all new apps\n* New reactnative.dev landing page launched\n* React Conf app is open source\n* Expo’s vision for Universal RSC",
+      "source_content_hash": "a508311588bc1bcb6d199d5a994ff7af1e3b55ffb02330d110410795607a9e4d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* RNは成長中：週間200万ダウンロードを突破、2024年だけで30バージョンがリリース\n* 新しいアーキテクチャがベータ版に\n* Expoがすべての新しいアプリで正式に推奨されるように\n* 新しいreactnative.devランディングページが公開\n* React Confアプリがオープンソース化\n* ExpoのUniversal RSCへのビジョン"
+      }
+    },
+    {
+      "segment_id": "294e85af",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "739843fe",
+      "source_content": "* 💸 [PowerSync - Supabase \\<> SQLite sync layer: follow our step-by-step video integration guide.](https://docs.powersync.com/integration-guides/supabase-+-powersync?utm_source=newsletter\\&utm_medium=sponsorship\\&utm_campaign=this-week-in-react)\n* 👀 [New React Native landing page](https://reactnative.dev/)\n* 🐦 [New resources to get started with React Native and Expo](https://x.com/jonsamp/status/1791164393893609705): New landing page, new \"Getting Started\" docs, new Expo dev environment setup docs\n* 🐦 [Interesting discussion on Apple's stance on server-driven UI in iOS apps](https://x.com/sregg/status/1791784335999160783): Will Universal RSC be a challenge in Apple’s App Store approval process?\n* 🐦 [Potential ways to decrease Android bundle size](https://x.com/mironcatalin/status/1792485000559935571): Two settings can significantly decrease bundle size, but - as always - this comes with trade-offs.\n* 🗓 [Chain React Conf](https://chainreactconf.com/?utm_source=thisweekinreact) - Portland, OR - July 17-19. The U.S. React Native Conference is back with engaging talks and hands-on workshops! Get 15% off your ticket with code “TWIR”\n* 📜 [Debunk ideas on cross-platform framework](https://www.bam.tech/article/debunk-ideas-on-cross-platform-framework): Performance, Security, Accessibility, Stability, App Store acceptance, Native Features - all of these are sometimes mistakenly doubted when it comes to cross-platform apps.\n* 📜 [Breaking down react-native-video 6.0.0 stable release - enhancements and comparisons](https://www.thewidlarzgroup.com/blog/breaking-down-react-native-video-6-0-0-stable-release-enhancements-and-comparisons)\n* 📜 [Creating Custom Fonts with React-Native-Skia](https://gitstashapply.medium.com/creating-custom-fonts-with-react-native-skia-4851d8b14ddd)\n* 📦 [Bootsplash v6 beta - Expo plugin, simpler setup](https://github.com/zoontek/react-native-bootsplash/pull/578): The React Conf app used it for splash screen!\n* 📦 [React Conf app open-sourced](https://github.com/expo/react-conf-app): Already uses React Compiler ([Tweet](https://x.com/kadikraman/status/1791155001882275989))\n* 🎙️ [RNR 297 - Jumping over the React Native v0.74 Bridge](https://reactnativeradio.com/episodes/rnr-297-jumping-over-the-react-native-v074-bridge)\n* 🎥 [Supercharging your React Native app for Windows](https://www.youtube.com/watch?v=4sbAvwukSWM): React Native session at MS Build 2024",
+      "source_content_hash": "ecf2eb7e4da2bf4e031f88394a1e9c3fa33b7d9fc7dd0fcbb83ab2fa7383b95e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [PowerSync - SupabaseとSQLiteの同期レイヤー: ステップバイステップの動画統合ガイドに従ってください。](https://docs.powersync.com/integration-guides/supabase-+-powersync?utm_source=newsletter\\&utm_medium=sponsorship\\&utm_campaign=this-week-in-react)\n* 👀 [新しいReact Nativeランディングページ](https://reactnative.dev/)\n* 🐦 [React NativeとExpoを始めるための新しいリソース](https://x.com/jonsamp/status/1791164393893609705): 新しいランディングページ、新しい「はじめに」ドキュメント、新しいExpo開発環境セットアップドキュメント\n* 🐦 [iOSアプリにおけるサーバードリブンUIに関するAppleのスタンスについての興味深い議論](https://x.com/sregg/status/1791784335999160783): Universal RSCはAppleのApp Store審査プロセスで課題となるか？\n* 🐦 [Androidバンドルサイズを削減する可能性のある方法](https://x.com/mironcatalin/status/1792485000559935571): 2つの設定でバンドルサイズを大幅に削減可能ですが、いつものようにトレードオフがあります。\n* 🗓 [Chain React Conf](https://chainreactconf.com/?utm_source=thisweekinreact) - ポートランド、オレゴン州 - 7月17-19日。米国のReact Nativeカンファレンスが帰ってきました！講演とハンズオンワークショップが満載です。「TWIR」コードでチケット15%オフ\n* 📜 [クロスプラットフォームフレームワークに関する誤解を解く](https://www.bam.tech/article/debunk-ideas-on-cross-platform-framework): パフォーマンス、セキュリティ、アクセシビリティ、安定性、App Storeの承認、ネイティブ機能 - これらはクロスプラットフォームアプリに関して時々誤解されがちです。\n* 📜 [react-native-video 6.0.0安定版リリースの詳細 - 機能強化と比較](https://www.thewidlarzgroup.com/blog/breaking-down-react-native-video-6-0-0-stable-release-enhancements-and-comparisons)\n* 📜 [React-Native-Skiaでカスタムフォントを作成する](https://gitstashapply.medium.com/creating-custom-fonts-with-react-native-skia-4851d8b14ddd)\n* 📦 [Bootsplash v6ベータ - Expoプラグイン、よりシンプルなセットアップ](https://github.com/zoontek/react-native-bootsplash/pull/578): React Confアプリでスプラッシュスクリーンに使用されました！\n* 📦 [React Confアプリがオープンソース化](https://github.com/expo/react-conf-app): すでにReact Compilerを使用しています（[ツイート](https://x.com/kadikraman/status/1791155001882275989)）\n* 🎙️ [RNR 297 - React Native v0.74ブリッジを飛び越える](https://reactnativeradio.com/episodes/rnr-297-jumping-over-the-react-native-v074-bridge)\n* 🎥 [Windows向けReact Nativeアプリのスーパーチャージング](https://www.youtube.com/watch?v=4sbAvwukSWM): MS Build 2024でのReact Nativeセッション"
+      }
+    },
+    {
+      "segment_id": "57180eb4",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "f6a06609",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "5df815de",
+      "source_content": "* 📜 [What's new in the web - 12 newly available Baseline features](https://web.dev/blog/new-in-the-web-io2024)\n* 📜 [What's new in JavaScript Frameworks (May 2024)](https://developer.chrome.com/blog/frameworks-may-2024)\n* 📜 [Portable Server Rendered Web Components with Enhance SSR](https://begin.com/blog/posts/2024-05-03-portable-ssr-components)\n* 📜 [ECMAScript 2023 feature: Symbols as WeakMap keys](https://2ality.com/2024/05/proposal-symbols-as-weakmap-keys.html)\n* 📦 [SolidStart 1.0 - The Shape of Frameworks to Come](https://www.solidjs.com/blog/solid-start-the-shape-frameworks-to-come)\n* 📦 [Graphql-query - 8.7x faster GraphQL query parser written in Rust](https://stellate.co/blog/graphql-query-parsing-8x-faster-with-rust)\n* 📦 [Node 22.2](https://nodejs.org/en/blog/release/v22.2.0)",
+      "source_content_hash": "a8cddb7c0fe3f371ebe661df22f28586fb78944e227492976262ef6841dcccdd",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📜 [Webの新機能 - 12の新たに利用可能なBaseline機能](https://web.dev/blog/new-in-the-web-io2024)\n* 📜 [JavaScriptフレームワークの新機能（2024年5月）](https://developer.chrome.com/blog/frameworks-may-2024)\n* 📜 [Enhance SSRによるポータブルなサーバーサイドレンダリングWebコンポーネント](https://begin.com/blog/posts/2024-05-03-portable-ssr-components)\n* 📜 [ECMAScript 2023機能: WeakMapキーとしてのSymbols](https://2ality.com/2024/05/proposal-symbols-as-weakmap-keys.html)\n* 📦 [SolidStart 1.0 - これからのフレームワークの形](https://www.solidjs.com/blog/solid-start-the-shape-frameworks-to-come)\n* 📦 [Graphql-query - Rustで書かれた8.7倍高速なGraphQLクエリパーサー](https://stellate.co/blog/graphql-query-parsing-8x-faster-with-rust)\n* 📦 [Node 22.2](https://nodejs.org/en/blog/release/v22.2.0)"
+      }
+    },
+    {
+      "segment_id": "f28724b0",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "67edbbc4",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "61a78cbe",
+      "source_content": "[![alt](/emails/issues/186/meme.jpg)](https://x.com/rauchg/status/1791163745307328650)",
+      "source_content_hash": "492baec24ebb86d9f12c6ecd37b441e18606f320d697b264dd4efc25c2c928f6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/186/meme.jpg)](https://x.com/rauchg/status/1791163745307328650)"
+      }
+    },
+    {
+      "segment_id": "39c48ff7",
+      "source_content": "[![alt](/emails/issues/186/meme2.jpg)](https://x.com/sebastienlorber/status/1790796662153117863)",
+      "source_content_hash": "c1fe5074de58b6a8fef342cad1dadc1732744b593627d0a0d62c567381bcc945",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/186/meme2.jpg)](https://x.com/sebastienlorber/status/1790796662153117863)"
+      }
+    },
+    {
+      "segment_id": "e29bd639",
+      "source_content": "(Ok that React Compiler one is not technically accurate, but still fun 😇 sorry Compiler team)",
+      "source_content_hash": "9afdf71bbc2640c28da5b9ddb6a85e8bc7bae085c9d3578ea1e3e9af3ce412cb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "（正確にはReact Compilerの仕組みとは違いますが、面白いので許してくださいね 😇 コンパイラチームの皆さんごめんなさい）"
+      }
+    },
+    {
+      "segment_id": "e5821418",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "それではまた！👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/186/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:39.840497+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "838ea136f4360b668f5bfd60e66c9364e513fc717010ec035ab150b09a8dc7df"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "src/pages/job.mdx",
+  "source_file_content_hash": "1aa14b0335b623be5c95d48f3f5647c0b550c102ab1f806fe5ec66a90bb43774",
+  "segments": [
+    {
+      "segment_id": "76e4a56a",
+      "source_content": "# This Week In React - Job offer",
+      "source_content_hash": "8e7e35875ce450b2ecc77511d5200fd0747055cc9cda532ca708179c71d4246f",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# This Week In React - 求人情報"
+      }
+    },
+    {
+      "segment_id": "faebdc62",
+      "source_content": "Hey, Sebastien from [This Week In React](http://thisweekinreact.com/) here 👋",
+      "source_content_hash": "9336966a0d783776b665897ed4516640db75ed3b3b5f07c0782fe031f7611e94",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "こんにちは、[This Week In React](http://thisweekinreact.com/)のSebastienです 👋"
+      }
+    },
+    {
+      "segment_id": "e7ec8f99",
+      "source_content": "I'm looking for a clone of myself to help me create the content of this newsletter 😄",
+      "source_content_hash": "de77bf80c23ff19c9c79a8f9e08aba45c978057e06589a062e32b26e1af1fc94",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このニュースレターのコンテンツ作成を手伝ってくれる「私のクローン」を探しています 😄"
+      }
+    },
+    {
+      "segment_id": "6ef78e84",
+      "source_content": "Why would you want to help me?",
+      "source_content_hash": "1a329cd8de06fdcfc767e639310974964b3f82818660833cad42e3145d3bbc14",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "なぜ手伝いたいと思うでしょうか？"
+      }
+    },
+    {
+      "segment_id": "abcf54e3",
+      "source_content": "* It is paid correctly\n* It can help develop your personal brand\n* You get paid to stay up-to-date and become more knowledgeable\n* You might want to reach my audience for promoting your own things\n* We might have other aligned interests",
+      "source_content_hash": "ec19471d019d5f4870b98364e7e7df6f9796cac2c1bd68ae80af74b7d337c35c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 適正な報酬が支払われます\n* 個人ブランドの構築に役立ちます\n* 最新情報を追いながら知識を深め、その対価を得られます\n* あなた自身のプロモーションのために私のオーディエンスにアクセスできます\n* 他にも共通の興味があるかもしれません"
+      }
+    },
+    {
+      "segment_id": "cf898102",
+      "source_content": "The ideal candidate:",
+      "source_content_hash": "f60669cf3bcb98a727dfa5e78ede6afb953cf79e7596b395a6942b61cc05fc9f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "理想的な候補者:"
+      }
+    },
+    {
+      "segment_id": "84758135",
+      "source_content": "* is knowledgeable on both React and React-Native\n* is able to curate and comment a full issue on their own when I'm not available\n* is willing to commit 10-16h of work per issue\n* is willing to do this on a long term basis\n* is able to communicate clearly and use a simple, concise language\n* has a good radar for interesting weak signals, and a good bullshit content detector\n* understand the codes of social networks (Twitter, LinkedIn, Instagram...) or willing to learn",
+      "source_content_hash": "4ae9e1cee347927e78e6caa07a30ea73124e9df239c2535d452cdf8c6a724973",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* ReactとReact-Nativeの両方に精通している\n* 私が不在時に単独でニュースレターの号をキュレーション・コメントできる\n* 1号あたり10-16時間の作業にコミットできる\n* 長期的に継続する意思がある\n* 明確にコミュニケーションを取れ、簡潔で分かりやすい言語を使える\n* 興味深い弱いシグナルを察知する感度と、質の低いコンテンツを見抜く能力がある\n* SNS（Twitter、LinkedIn、Instagramなど）の作法を理解している、または学ぶ意思がある"
+      }
+    },
+    {
+      "segment_id": "f2c2bdd0",
+      "source_content": "If you can do 80% of what I do, that's ok probably for me, I know I won't find an exact clone of myself 😅",
+      "source_content_hash": "7283623ae2899cac3747909087fe535227f9cfab2b41f3084e794ca72d1d979b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "私の80%くらいのことができればおそらく大丈夫です。完全なクローンは見つからないでしょうから 😅"
+      }
+    },
+    {
+      "segment_id": "a76548f8",
+      "source_content": "We can start small with single week test, then replace me when I'm on off, and then scale and let you write half of the issues if things go well.",
+      "source_content_hash": "48fab444654428de9322785f77d277386bdeb8fa4c65099ee28513ba57fbadbc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "最初は1週間のテストから小さく始め、私が休みの時に代わりを務めてもらい、うまくいけば規模を拡大して号の半分を執筆してもらうことも可能です。"
+      }
+    },
+    {
+      "segment_id": "4b1d2d7d",
+      "source_content": "Interested? Email me at [sebastien+twir-job@thisweekinreact.com](mailto\\:sebastien+twir-job@thisweekinreact.com) to discuss details.",
+      "source_content_hash": "264b712d7defe634d7861eafe4124f34a6d07b450a0a2b10ebf678d4fe4d9239",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "興味があれば、詳細について[sebastien+twir-job@thisweekinreact.com](mailto\\:sebastien+twir-job@thisweekinreact.com)までメールでご連絡ください。"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-pages/job.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:36.751617+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "1aa14b0335b623be5c95d48f3f5647c0b550c102ab1f806fe5ec66a90bb43774"
+  }
+}

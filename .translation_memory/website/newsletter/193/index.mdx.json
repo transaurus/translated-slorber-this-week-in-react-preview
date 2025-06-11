@@ -1,0 +1,522 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/193/index.mdx",
+  "source_file_content_hash": "5709bd6483e3dfa3573066814bdf67afcaf4d42ecb37227d16bda8359782e0a7",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /193\ntitle: \"This Week In React #193: State of React, Server Functions, next/form, useId, Astro, Meteor, Gluestack, React-Aria, Turbopack, Airbnb, Apollo, DRY, IDX, Bootsplash, Flash Calendar, CSS, ES, Poku...\"\nauthors: [slorber, bndkt]\ndate: 07-24-2024\n---",
+      "source_content_hash": "fe26e76c41d8274447a44a46d6ec7826b7a6c5ce00fce1b11f91bcd59642e88b",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week the State of React survey results are finally out, and they are full of interesting insights.",
+      "source_content_hash": "a6dfaafd09323898bcb46b9cd2fae633f9a7aa6876ab13580d6cbe60fa34385e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週、State of React調査の結果がついに公開され、興味深い洞察が満載です。"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "I found some great articles on abstractions in React, as well as feedback and case studies from various React and React Native companies.",
+      "source_content_hash": "8c037f2237e5dd9bd965bd40855b14e6aa77f49532d0410bbbf5977d8ee3b608",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Reactにおける抽象化に関する素晴らしい記事や、さまざまなReactおよびReact Native企業からのフィードバックやケーススタディを見つけました。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Astro has released Server Islands, and it looks like a pretty simple but compelling solution to rival with Next.js Partial Prerendering, on which Vercel also published a great article. There's also the Renaissance of Meteor to look forward to, React Aria releases, and a v2 of Gluestack-UI for Universal React Native devs.",
+      "source_content_hash": "32ac2341bae36846478968dddaa9ff942af8f21a218e3f248ca5cc8a6082afed",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "AstroがServer Islandsをリリースし、Next.jsのPartial Prerenderingと競合するシンプルながら説得力のあるソリューションのように見えます。Vercelもこれに関する素晴らしい記事を公開しています。また、Meteorの復活が期待され、React Ariaのリリースや、Universal React Native開発者向けのGluestack-UI v2も注目です。"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Do you like TypeScript and web dev tooling in general? Check out [Squiggle Conf](https://2024.squiggleconf.com/?utm_source=thisweekinreact) (🇺🇸 Boston - 03 & 04 October), offering us a 10% discount with code “TWIR”. Great speakers have already been announced!",
+      "source_content_hash": "3c1ee51378f6223077f33a71180c7337162575e358e09c397aebbebed5c2cdf0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "TypeScriptやWeb開発ツールがお好きですか？[Squiggle Conf](https://2024.squiggleconf.com/?utm_source=thisweekinreact)（🇺🇸 ボストン - 10月3日＆4日）をチェックしてください。コード「TWIR」で10%オフです。すでに素晴らしいスピーカーが発表されています！"
+      }
+    },
+    {
+      "segment_id": "45c63027",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_45c63027"
+      }
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアル形式 🎨**"
+      }
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "0adfe0aa",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_0adfe0aa"
+      }
+    },
+    {
+      "segment_id": "1941846d",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_1941846d"
+      }
+    },
+    {
+      "segment_id": "a5403c6e",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "d06306f7",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "[![The Category-Defining React Grid for Your Enterprise](/emails/issues/190/advertfinal.jpg)](https://1771technologies.com/graphitegrid)",
+      "source_content_hash": "098c88b4b0bf26279f19081d966227da11af0012ee2d0c2c4bb5ea9801866523",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![エンタープライズ向けカテゴリ定義Reactグリッド](/emails/issues/190/advertfinal.jpg)](https://1771technologies.com/graphitegrid)"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "**[The Category-Defining React Grid for Your Enterprise](https://1771technologies.com/graphitegrid)**",
+      "source_content_hash": "f5e74c9afda4042a8771b3fea179b92169534dce151c247f4984b7b315b953f8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[エンタープライズ向けカテゴリ定義Reactグリッド](https://1771technologies.com/graphitegrid)**"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "Data grids are complex components of web applications, but current solutions are inefficient, require a lot of maintenance, and perform poorly. [Graphite Grid](https://1771technologies.com/graphitegrid) transforms the landscape with two key features: retargetable rendering and reactive signal state.",
+      "source_content_hash": "ae1e23fc37d4e4f8ad9d2cc6915852b0f589bbc72583758436b6abddb5174fbd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "データグリッドはWebアプリケーションの複雑なコンポーネントですが、現在のソリューションは非効率的で、多くのメンテナンスを必要とし、パフォーマンスも低いです。[Graphite Grid](https://1771technologies.com/graphitegrid)は、リターゲティング可能なレンダリングとリアクティブシグナル状態という2つの主要機能でこの状況を変えます。"
+      }
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "**Graphite Grid** separates grid state from view logic, allowing a single unified state model to support a variety of render targets, declaratively or imperatively. It includes a **DOM and Canvas** renderer, giving developers flexible, high-performance options 🚀.",
+      "source_content_hash": "9a4f40bb7338262be96c8b6fd51aafd981a3a6d1b896c82640ca22d1f43c88e6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**Graphite Grid**はグリッドの状態とビューロジックを分離し、単一の統一された状態モデルがさまざまなレンダーターゲットを宣言的または命令的にサポートします。**DOMとCanvas**レンダラーを含み、開発者に柔軟で高性能なオプションを提供します🚀。"
+      }
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "Graphite Grid is declarative and consistent, leveraging state signals to ensure seamless integration with your application. Designed with **React in mind**, it is the only JavaScript data grid built with React's state management primitives. [Try it now!](https://1771technologies.com/graphitegrid/demo)",
+      "source_content_hash": "cc96df044764791cb8f694826df305674de9dccc3ed870d1de5622f0ff40ae26",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Graphite Gridは宣言的で一貫性があり、状態シグナルを活用してアプリケーションとのシームレスな統合を保証します。**Reactを念頭に設計**されており、Reactの状態管理プリミティブで構築された唯一のJavaScriptデータグリッドです。[今すぐ試してみてください！](https://1771technologies.com/graphitegrid/demo)"
+      }
+    },
+    {
+      "segment_id": "602e59c7",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "54268405",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "[![State of React 2023 - Survey Results](/emails/issues/193/stateofreact.jpg)](https://2023.stateofreact.com/en-US)",
+      "source_content_hash": "d9a8836b9864a34dd449da30848c76f3819d3109f50c865707269f3184c86893",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![State of React 2023 - 調査結果](/emails/issues/193/stateofreact.jpg)](https://2023.stateofreact.com/en-US)"
+      }
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "**[State of React 2023 - Survey Results](https://2023.stateofreact.com/)**",
+      "source_content_hash": "ca2ae03180145d310a17529a93341c2f6eb59c42a0d20b2353128afcc25a8d4b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[State of React 2023 - 調査結果](https://2023.stateofreact.com/)**"
+      }
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "The very first State of React survey results are finally online. The data was collected in November 2023, and it took a while for the results to be published. It's a great tool for analyzing the trends in our beloved framework ecosystem. And it will become even better next year to see how those trends evolve. Without further ado, here are my picks:",
+      "source_content_hash": "41af6e25c9c06cd82b559e94db38de3306b6efc3f06d1b6035907d37529c2675",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "初めてのState of React調査結果がついに公開されました。データは2023年11月に収集され、結果が公開されるまでに時間がかかりました。私たちが愛するフレームワークエコシステムのトレンドを分析するための素晴らしいツールです。そして、これらのトレンドがどのように進化するかを確認するために、来年はさらに良くなるでしょう。さっそく、私のお気に入りを紹介します："
+      }
+    },
+    {
+      "segment_id": "b4ef1e56",
+      "source_content": "* [The adoption of hooks has been largely successful](https://x.com/JoshWComeau/status/1814292932461306239)\n* Very positive signals for React Query, Zustand, Radix UI, React Aria, shadcn/ui, tRPC, Zod\n* No clear React framework winner. Next.js is the most popular but has slightly lower retention than Astro and Remix\n* React renderer usage shows that React is not only React-DOM. More than 30% use React Native, and 9% use React-Three-Fiber.\n* Only 7% have ever used [my favorite underrated hook useSyncExternalStore](https://thisweekinreact.com/articles/useSyncExternalStore-the-underrated-react-api)\n* This Week In React is the 5th most popular resource in the \"Blogs & Magazines\" category (❤️️ thanks!)",
+      "source_content_hash": "7c7b713d90d7fa910d653332acc0e57870271059bf0a5ff1f8e5b1bbb1b45ebc",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* [フックの採用は大きく成功している](https://x.com/JoshWComeau/status/1814292932461306239)\n* React Query、Zustand、Radix UI、React Aria、shadcn/ui、tRPC、Zodに対して非常にポジティブなシグナル\n* Reactフレームワークの明確な勝者なし。Next.jsが最も人気があるが、AstroやRemixよりも保持率がわずかに低い\n* Reactレンダラーの使用状況は、ReactがReact-DOMだけではないことを示している。30%以上がReact Nativeを使用し、9%がReact-Three-Fiberを使用している\n* [私のお気に入りの過小評価されているフックuseSyncExternalStore](https://thisweekinreact.com/articles/useSyncExternalStore-the-underrated-react-api)を使用したことがあるのはわずか7%\n* This Week In Reactは「ブログ＆マガジン」カテゴリで5番目に人気のあるリソースです（❤️️ ありがとう！）"
+      }
+    },
+    {
+      "segment_id": "23dfb152",
+      "source_content": "The next State of React 2024 survey is [planned for September 2024](https://dev.to/sachagreif/planning-out-the-2024-state-of-surveys-4lb9) and now is the time to get involved in the survey design.",
+      "source_content_hash": "fd006d9d6703be39c1a23a8ba47c2bee475c4420cca6627852706a406cbbea2f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "次回のState of React 2024調査は[2024年9月に実施予定](https://dev.to/sachagreif/planning-out-the-2024-state-of-surveys-4lb9)であり、今が調査設計に参加する絶好の機会です。"
+      }
+    },
+    {
+      "segment_id": "aa7d3f2b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "ea0c7bae",
+      "source_content": "* 💸 [Reactile – a new approach to React-based web apps. Create your own views. Let it handle your windows and widgets in a single browser tab](https://www.reactile.net/?utm_source=reactnewsletter)\n* 👀 [Next.js PR - next/form](https://github.com/vercel/next.js/pull/68102)\n* 🗓️ [React-Brussels](https://www.react.brussels/?utm_source=thisweekinreact) - 🇧🇪 Brussels - 18 October - Some speakers have already been revealed ! Check out now, and apply 10% discount with code “TWIR”.\n* 📜 [Data Fetching with Server Actions in Next.js](https://www.robinwieruch.de/next-server-actions-fetch-data/): You can use Server Actions to fetch client data using React-Query. There are limitations to consider though: they use POST requests and run sequentially. FYI a \"use server\" function called outside a transition is not a Server Action, but a [Server Function](https://x.com/sebastienlorber/status/1816096442492051672).\n* 📜 [Use useId() Instead Of Hand-Making IDs](https://reacttraining.com/blog/use-useid-instead-of-hand-making-ids): IDs are useful for accessibility, but you’d rather avoid creating them manually if you want to mount a component twice, or have good support for React hydration. To access DOM elements, `useRef` is enough.\n* 📜 [Do not pass DTOs to UI components](https://darios.blog/posts/do-not-pass-dtos-to-ui-components): Explain why you’d rather design component props shapes independently, instead of blindly using your backend payloads as props.\n* 📜 [DRY – the common source of bad abstractions](https://swizec.com/blog/dry-the-common-source-of-bad-abstractions/): Greatly illustrates how React devs could end up creating the wrong abstractions. React UI libraries learned over the years to not over-abstract and give you great flexibility through composition.\n* 📜 [Turbopack updates: Moving homes](https://vercel.com/blog/turbopack-moving-homes): The Turbopack bundler is moving to the Next.js repository. Co-location will help the team iterate faster on production builds (currently 92%-ready!). Turbopack will remain a framework-agnostic standalone bundler: once ready, it will be moved back to a separate repository.\n* 📜 [Vercel - How to choose the best rendering strategy for your app](https://vercel.com/blog/how-to-choose-the-best-rendering-strategy-for-your-app): Great overview of all the rendering strategies (SSG, SSR, ISR, CSR), their tradeoffs, and best practices. Using Partial Pre-Rendering builds on top of the strategies above. Using Next.js with Server Components and Suspense boundaries makes your app future-proof for selecting the best rendering strategy for each component.\n* 📜 [How Airbnb Smoothly Upgrades React](https://medium.com/airbnb-engineering/how-airbnb-smoothly-upgrades-react-b1d772a565fd): Airbnb recently upgraded their frontends from React 16 to React 18. Using a “React Upgrade System”, relying on shared infrastructure code and an incremental migration and rollout strategy.\n* 📜 [Fine-grained Markdown](https://v1.codehike.org/blog/fine-grained-markdown): Interactive article from the creator of Code Hike (based on MDX) showing how we can decorate Markdown and extend it in a typesafe way to make it a richer medium.\n* 📜 [Data fetching in useEffect vs Remix loader](https://www.jacobparis.com/content/use-effect-fetching)\n* 📜 [Integrating Next.js with New Relic](https://www.thisdot.co/blog/integrating-next-js-with-new-relic)\n* 📜 [Clean(er) React Architecture (Part 8) - How Does React-Query Fit Into The Picture?](https://profy.dev/article/react-architecture-tanstack-query)\n* 📜 [Zoom - Why we chose T3 stack to build our reference apps on Web](https://developers.zoom.us/blog/why-we-chose-to-build-with-the-t3-stack/)\n* 📦 [Astro 4.12 - Server Islands](https://astro.build/blog/astro-4120/): Astro released a great new Server Islands feature that renders a placeholder on the server, and replaces it independently with dynamic content afterward, enabling you to render the rest of your site statically. This is an alternative approach to the Next.js model, planning to solve this with React Server Components + Suspense + Partial Pre-Rendering. Their demo is a rebranded fork of the Next.js PPR one and outperforms it!\n* 📦 [Meteor.js 3.0](https://forums.meteor.com/t/its-official-meteor-3-0-official-release-is-out/61860): Meteor just released a new major version that drops the legacy Fibers coroutines in favor of async/await, upgrade to Node 20 and integrates Express. This new version claims to be [Renaissance of Meteor.js](http://meteor.js), with launch events starting on July 29th. I’ve never used Meteor, and curious to know what place it will take alongside the modern React frameworks we have today.\n* 📦 [React Aria July 22 release - React 19 ready, virtualization improvements, toast focus management improvements, Color Picker RC](https://react-spectrum.adobe.com/releases/2024-07-22.html)\n* 📦 [Apollo Client 3.11 - Subscription improvements, React 19 + compiler support, new testing library, new Devtools options](https://www.apollographql.com/blog/whats-new-in-apollo-client-3-11)\n* 📦 [eslint-plugin-use-server - Disallows top level \"use server\"](https://github.com/c-ehrlich/eslint-plugin-use-server)\n* 🧩️ [Design GUI - Browser Extension for managing colors in CSS Variables - Support for shadcn/ui](https://www.designgui.io/)\n* 🎥 [React Summit 2024 - All the talks are online](https://portal.gitnation.org/events/react-summit-2024)\n* 🎥 [dotJS 2024 - YouTube playlist with talks from Malte Ubl, Mark Dalgleish and more](https://www.youtube.com/watch?v=9tx-dE8oBTY\\&list=PLMW8Xq7bXrG7fOUOLJQw9I7ygJCbue9zO)\n* 🎥 [Sam Selikoff - How to build a Recursive React Component](https://www.youtube.com/watch?v=6UU2Ey4KZr8)\n* 🎥 [Web Dev Simplified - How To Debug React Apps Like A Senior Developer](https://www.youtube.com/watch?v=l8knG0BPr-o)\n* 🎙️ [Why you should use Redux in 2024 with Mark Erikson](https://podrocket.logrocket.com/redux-2024-mark-erikson)",
+      "source_content_hash": "637d1d0b27a137e63ebc3fc07cc5884904261d97df018b4fc118b55a6d686dcb",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Reactile – ReactベースのWebアプリ向けの新しいアプローチ。独自のビューを作成し、単一のブラウザタブでウィンドウやウィジェットを管理](https://www.reactile.net/?utm_source=reactnewsletter)\n* 👀 [Next.js PR - next/form](https://github.com/vercel/next.js/pull/68102)\n* 🗓️ [React-Brussels](https://www.react.brussels/?utm_source=thisweekinreact) - 🇧🇪 ブリュッセル - 10月18日 - 一部のスピーカーが公開されました！今すぐチェックし、「TWIR」コードで10%割引を適用。\n* 📜 [Next.jsでのServer Actionsを使ったデータ取得](https://www.robinwieruch.de/next-server-actions-fetch-data/): React-Queryを使用してクライアントデータを取得するためにServer Actionsを利用できます。ただし、POSTリクエストを使用し、順次実行されるという制限があります。参考までに、トランジション外で呼び出される「use server」関数はServer Actionではなく、[Server Function](https://x.com/sebastienlorber/status/1816096442492051672)です。\n* 📜 [手動でIDを作成する代わりにuseId()を使用する](https://reacttraining.com/blog/use-useid-instead-of-hand-making-ids): IDはアクセシビリティに有用ですが、コンポーネントを2回マウントしたい場合やReactのハイドレーションを適切にサポートしたい場合は、手動で作成するのを避けるべきです。DOM要素にアクセスするには、`useRef`で十分です。\n* 📜 [UIコンポーネントにDTOを渡さない](https://darios.blog/posts/do-not-pass-dtos-to-ui-components): バックエンドのペイロードをそのままpropsとして使用するのではなく、コンポーネントのpropsの形状を独立して設計する理由を説明しています。\n* 📜 [DRY – 悪い抽象化の一般的な原因](https://swizec.com/blog/dry-the-common-source-of-bad-abstractions/): React開発者が誤った抽象化を作成してしまう可能性を非常にうまく説明しています。React UIライブラリは、過度な抽象化を避け、コンポジションを通じて優れた柔軟性を提供することを学んできました。\n* 📜 [Turbopackアップデート: 移転](https://vercel.com/blog/turbopack-moving-homes): TurbopackバンドラーはNext.jsリポジトリに移行します。同じ場所に配置されることで、チームがプロダクションビルド（現在92%準備完了！）の反復を迅速化できます。Turbopackはフレームワークに依存しないスタンドアロンバンドラーのままです：準備が整ったら、別のリポジトリに戻されます。\n* 📜 [Vercel - アプリに最適なレンダリング戦略の選び方](https://vercel.com/blog/how-to-choose-the-best-rendering-strategy-for-your-app): SSG、SSR、ISR、CSRといったすべてのレンダリング戦略、そのトレードオフ、ベストプラクティスの概要です。Partial Pre-Renderingはこれらの戦略の上に構築されます。Next.jsでServer ComponentsとSuspense境界を使用すると、各コンポーネントに最適なレンダリング戦略を選択できる将来性のあるアプリになります。\n* 📜 [AirbnbがReactをスムーズにアップグレードする方法](https://medium.com/airbnb-engineering/how-airbnb-smoothly-upgrades-react-b1d772a565fd): Airbnbは最近、フロントエンドをReact 16からReact 18にアップグレードしました。「React Upgrade System」を使用し、共有インフラストラクチャコードと段階的な移行およびロールアウト戦略に依存しています。\n* 📜 [細かい粒度のMarkdown](https://v1.codehike.org/blog/fine-grained-markdown): Code Hike（MDXベース）の作成者によるインタラクティブな記事で、Markdownを装飾し、タイプセーフな方法で拡張してよりリッチなメディアにする方法を示しています。\n* 📜 [useEffectでのデータ取得 vs Remix loader](https://www.jacobparis.com/content/use-effect-fetching)\n* 📜 [Next.jsとNew Relicの統合](https://www.thisdot.co/blog/integrating-next-js-with-new-relic)\n* 📜 [クリーン（な）Reactアーキテクチャ（パート8） - React-Queryはどのようにフィットするか？](https://profy.dev/article/react-architecture-tanstack-query)\n* 📜 [Zoom - Web上のリファレンスアプリ構築にT3スタックを選んだ理由](https://developers.zoom.us/blog/why-we-chose-to-build-with-the-t3-stack/)\n* 📦 [Astro 4.12 - Server Islands](https://astro.build/blog/astro-4120/): Astroは、サーバー上にプレースホルダーをレンダリングし、その後動的コンテンツと独立して置き換える新しいServer Islands機能をリリースしました。これにより、サイトの残りの部分を静的にレンダリングできます。これは、React Server Components + Suspense + Partial Pre-Renderingで解決を計画しているNext.jsモデルとは異なるアプローチです。彼らのデモはNext.js PPRのフォークで、それを上回るパフォーマンスです！\n* 📦 [Meteor.js 3.0](https://forums.meteor.com/t/its-official-meteor-3-0-official-release-is-out/61860): Meteorは、レガシーなFibersコルーチンを廃止し、async/awaitを採用、Node 20にアップグレードし、Expressを統合した新しいメジャーバージョンをリリースしました。この新バージョンは[Meteor.jsのルネサンス](http://meteor.js)と称され、7月29日からローンチイベントが開始されます。私はMeteorを使ったことがありませんが、現代のReactフレームワークと並んでどのような位置を占めるのか興味深いです。\n* 📦 [React Aria 7月22日リリース - React 19対応、仮想化の改善、トーストのフォーカス管理改善、Color Picker RC](https://react-spectrum.adobe.com/releases/2024-07-22.html)\n* 📦 [Apollo Client 3.11 - サブスクリプションの改善、React 19 + コンパイラサポート、新しいテストライブラリ、新しいDevtoolsオプション](https://www.apollographql.com/blog/whats-new-in-apollo-client-3-11)\n* 📦 [eslint-plugin-use-server - トップレベルの「use server」を禁止](https://github.com/c-ehrlich/eslint-plugin-use-server)\n* 🧩️ [Design GUI - CSS変数の色を管理するブラウザ拡張 - shadcn/uiサポート](https://www.designgui.io/)\n* 🎥 [React Summit 2024 - すべての講演が公開中](https://portal.gitnation.org/events/react-summit-2024)\n* 🎥 [dotJS 2024 - Malte Ubl、Mark Dalgleishらの講演を含むYouTubeプレイリスト](https://www.youtube.com/watch?v=9tx-dE8oBTY\\&list=PLMW8Xq7bXrG7fOUOLJQw9I7ygJCbue9zO)\n* 🎥 [Sam Selikoff - 再帰的Reactコンポーネントの構築方法](https://www.youtube.com/watch?v=6UU2Ey4KZr8)\n* 🎥 [Web Dev Simplified - シニア開発者のようにReactアプリをデバッグする方法](https://www.youtube.com/watch?v=l8knG0BPr-o)\n* 🎙️ [Mark Eriksonと2024年にReduxを使うべき理由](https://podrocket.logrocket.com/redux-2024-mark-erikson)"
+      }
+    },
+    {
+      "segment_id": "c625a102",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_c625a102"
+      }
+    },
+    {
+      "segment_id": "9006437d",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "f6b04a59",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "a311e967",
+      "source_content": "[![Use AuthKit with any framework, not just Next.js](/emails/issues/193/authkit.jpg)](https://www.youtube.com/watch?v=237vaK_nYRg)",
+      "source_content_hash": "6ac5d54b4c25cb30809c61043ff5da727180e2f7e61021a36bca1c48e881f11f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![AuthKitをどのフレームワークでも利用可能](/emails/issues/193/authkit.jpg)](https://www.youtube.com/watch?v=237vaK_nYRg)"
+      }
+    },
+    {
+      "segment_id": "eb51d107",
+      "source_content": "**[Use AuthKit with any framework, not just Next.js](https://www.youtube.com/watch?v=237vaK_nYRg)**",
+      "source_content_hash": "3e1135defdfd95429134063ada4c079584dadea126bf3d480b10add90c2b0236",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[AuthKitをどのフレームワークでも利用可能](https://www.youtube.com/watch?v=237vaK_nYRg)**"
+      }
+    },
+    {
+      "segment_id": "1862c5fe",
+      "source_content": "Not everyone uses Next.js — but it sure feels like it’s the only JavaScript framework that gets first-class integrations. AuthKit, powered by WorkOS, is an open source authentication UI built with Radix components.",
+      "source_content_hash": "77d9789b7a8b191c9ca91b9a2a09d5e3639c3c953835c392cdf183f87b47d820",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Next.jsだけが第一級の統合を享受しているように感じられるかもしれませんが、AuthKit（WorkOS提供）はRadixコンポーネントで構築されたオープンソースの認証UIです。"
+      }
+    },
+    {
+      "segment_id": "6ca4479f",
+      "source_content": "Here's a [tutorial that shows you how to set up **AuthKit with any JS framework**](https://www.youtube.com/watch?v=237vaK_nYRg) in 30 minutes.",
+      "source_content_hash": "e5073fb886e06e6065f51b9c84aaf28eeae229194707db90ae6b394d5b19ec2e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "こちらの[チュートリアル](https://www.youtube.com/watch?v=237vaK_nYRg)では、**任意のJSフレームワークでAuthKitをセットアップ**する方法を30分で解説しています。"
+      }
+    },
+    {
+      "segment_id": "936011bd",
+      "source_content": "* 🏗️ AuthKit is flexible — offering both high-level integrations and low-level SDKs.\n* 🔐 It can be used with WorkOS User Management, which is **free up to 1 million MAUs**.\n* ✨ Your users, your data. The only requirement for a valid user object is an email address.\n* ☄️ Features like roles and permissions, MFA, user impersonation, and bot protection come standard. Don't pay a cent until you hit 1 million MAUs.",
+      "source_content_hash": "b95d7565e30d3ae206894e5d040a2288bd5406e787b327b7723479986a22ccc4",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 🏗️ AuthKitは柔軟性が高く、高レベル統合と低レベルSDKの両方を提供\n* 🔐 WorkOSユーザー管理と連携可能（**100万MAUまで無料**）\n* ✨ ユーザーデータは完全に管理可能（有効なユーザーオブジェクトにはメールアドレスのみ必要）\n* ☄️ ロール/権限、MFA、ユーザー偽装防止、ボット対策など標準装備（100万MAU到達まで無料）"
+      }
+    },
+    {
+      "segment_id": "04837130",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "d1f76d04",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "6693c38c",
+      "source_content": "This section is authored by [Benedikt](https://twitter.com/bndkt).",
+      "source_content_hash": "0aff28d995823a706b5e2556e3ef90d67c8595d7a00290f1a597b94b15e10b1f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このセクションは[Benedikt](https://twitter.com/bndkt)が執筆しています。"
+      }
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "[![Gluestack-UI v2](/emails/issues/193/gluestack.jpg)](https://gluestack.io/)",
+      "source_content_hash": "8c1794855b0cc8a5aa2440d55688c9ea0b8c2599d8d6f7926be0a0227fc2b9cc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Gluestack-UI v2](/emails/issues/193/gluestack.jpg)](https://gluestack.io/)"
+      }
+    },
+    {
+      "segment_id": "1b4de6df",
+      "source_content": "**[Gluestack-UI v2 - Universal copy/paste components for Expo/Next](https://gluestack.io/)**",
+      "source_content_hash": "6666debf358bd08e98e8d4b29499ade497ad7fd1d74bbfd502a9b7d250f885be",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Gluestack-UI v2 - Expo/Next向けユニバーサルコピー＆ペーストコンポーネント](https://gluestack.io/)**"
+      }
+    },
+    {
+      "segment_id": "1958bc43",
+      "source_content": "Gluestack-UI offers universal components and patterns for React, Next.js & React Native to copy & paste. The recently released v2 is a major update that focuses on performance optimization, reduced dependencies, and RSC compatibility. It’s based on Tailwind CSS (for web) and NativeWind (for native). Due to its copy & paste approach, upgrading is not as easy as bumping a dependency, but they have a straightforward tutorial and a code mod to help with the upgrade. To give you a glimpse of v2, they even released a little 🐦 [trailer on X](https://x.com/gluestack/status/1813895494005112859).",
+      "source_content_hash": "0a645a088a3c71a7381327570217b374c3764047d9558867b6527398639ae441",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Gluestack-UIはReact/Next.js/React Native向けのユニバーサルコンポーネント＆パターンを提供します。最近リリースされたv2は、パフォーマンス最適化、依存関係削減、RSC互換性に焦点を当てたメジャーアップデートです。Tailwind CSS（Web用）とNativeWind（ネイティブ用）を基盤としており、コンポーネントをコピー＆ペーストで利用可能です。アップグレードには依存関係の更新以上の作業が必要ですが、チュートリアルとコード修正ツールが用意されています。v2の雰囲気を感じるために、🐦 [Xでトレーラー](https://x.com/gluestack/status/1813895494005112859)も公開されています。"
+      }
+    },
+    {
+      "segment_id": "0bee36ce",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "9673e622",
+      "source_content": "* 💸 [Sentry - Application monitoring tools with support for React Native, Expo, Hermes and every other technology (except some of them). Considered \"not bad\" by 4 million developers. Get Sentry Free](https://sentry.io/welcome/?utm_medium=email\\&utm_source=THIS_WEEK_IN_REACT\\&utm_campaign=TWIR_july_2024\\&utm_content=rn-quick-link)\n* 🐦 [New experimental expo-doctor feature validates project dependencies against reactnative.directory metadata](https://x.com/notbrent/status/1814016564452315374): Lets you know when you’re using libraries that are not maintained any longer or don’t support the New Arch.\n* 🐦 [New updates from Expo documentation](https://x.com/amanhimself/status/1815460518515118266): SSO, Metro bundler aliases, and expo-drizzle-studio-plugin\n* 🐦 [Google IDX (web-based IDE) now supports React Native / Expo](https://x.com/kirupa/status/1813690012720120225)\n* 🐦 [Learn how to perform link redirection & utilization with 3rd party deep-links with +native-intent](https://x.com/expo/status/1814274913030520874)\n* 📜 [Build fast, flexible calendars with Flash Calendar](https://expo.dev/blog/build-fast-flexible-calendars-in-react-native-with-flash-calendar): Building date pickers is hard, making them performant is even harder - Flash Calendar solves this and is quite customizable.\n* 📜 [Building a multi-platform on-call mobile app](https://incident.io/hubs/building-on-call/building-a-multi-platform-on-call-mobile-app): Case study from incident.io\n* 📜 [Driving Innovation: MyWheels' Journey from RNC CLI to Expo](https://expo.dev/blog/from-rnc-cli-to-expo)\n* 📦 [Bootsplash 6.0 - Now with Expo Config Plugin](https://github.com/zoontek/react-native-bootsplash/releases/tag/6.0.0)\n* 📦 [React Native 0.75 rc.6](https://github.com/facebook/react-native/releases/tag/v0.75.0-rc.6)\n* 📦 [TinyBase Example for React Native](https://github.com/expo/examples/tree/master/with-tinybase): Great starter for building local-first apps.\n* 🎥 [Harry Tormey - Migrating Coinbase's 56 Million Users to React Native: Key Lessons and Takeaways](https://stepchange.work/blog/migrating-coinbases-56-million-users-to-react-native-key-lessons-and-takeaways)\n* 🎥 [Simon Grimm - 10 Expo Router Tips You Need to Know](https://www.youtube.com/watch?v=1hD1ZClxpfc)\n* 🎥 [Daniel Friyia - Introduction to Game Development with Expo, Skia and Reanimated](https://www.youtube.com/watch?v=Af2-OT9mE14)\n* 🎥 [Reactiive - Animated Stacked Cards - Exploring the interpolate function](https://www.youtube.com/watch?v=8_hvNoZJsc8)",
+      "source_content_hash": "6e4e18760401dcf13fd3cd6a97f083f74fd87f0a15344569d85c46db93e742e8",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Sentry - React Native、Expo、Hermesなどあらゆる技術をサポートするアプリケーションモニタリングツール（一部を除く）。400万人の開発者から「悪くない」と評価されています。Sentryを無料で試す](https://sentry.io/welcome/?utm_medium=email\\&utm_source=THIS_WEEK_IN_REACT\\&utm_campaign=TWIR_july_2024\\&utm_content=rn-quick-link)\n* 🐦 [新しい実験的なexpo-doctor機能が、reactnative.directoryのメタデータに対してプロジェクトの依存関係を検証](https://x.com/notbrent/status/1814016564452315374): メンテナンスが停止されているライブラリやNew Archをサポートしていないライブラリを使用している場合に通知します。\n* 🐦 [Expoドキュメントの新着更新](https://x.com/amanhimself/status/1815460518515118266): SSO、Metroバンドラーのエイリアス、expo-drizzle-studio-plugin\n* 🐦 [Google IDX（ウェブベースのIDE）がReact Native / Expoをサポート](https://x.com/kirupa/status/1813690012720120225)\n* 🐦 [+native-intentを使用したサードパーティのディープリンクとのリンクリダイレクトと活用方法を学ぶ](https://x.com/expo/status/1814274913030520874)\n* 📜 [Flash Calendarで高速かつ柔軟なカレンダーを構築](https://expo.dev/blog/build-fast-flexible-calendars-in-react-native-with-flash-calendar): 日付ピッカーの構築は難しく、パフォーマンスを向上させるのはさらに困難です - Flash Calendarはこれを解決し、非常にカスタマイズ可能です。\n* 📜 [マルチプラットフォームのオンコールモバイルアプリの構築](https://incident.io/hubs/building-on-call/building-a-multi-platform-on-call-mobile-app): incident.ioからのケーススタディ\n* 📜 [イノベーションを推進: MyWheelsのRNC CLIからExpoへの移行の旅](https://expo.dev/blog/from-rnc-cli-to-expo)\n* 📦 [Bootsplash 6.0 - Expo Config Pluginをサポート](https://github.com/zoontek/react-native-bootsplash/releases/tag/6.0.0)\n* 📦 [React Native 0.75 rc.6](https://github.com/facebook/react-native/releases/tag/v0.75.0-rc.6)\n* 📦 [React Native向けTinyBaseの例](https://github.com/expo/examples/tree/master/with-tinybase): ローカルファーストアプリ構築の優れたスターター\n* 🎥 [Harry Tormey - Coinbaseの5600万ユーザーをReact Nativeに移行: 主要な教訓と要点](https://stepchange.work/blog/migrating-coinbases-56-million-users-to-react-native-key-lessons-and-takeaways)\n* 🎥 [Simon Grimm - 知っておくべき10のExpo Routerのヒント](https://www.youtube.com/watch?v=1hD1ZClxpfc)\n* 🎥 [Daniel Friyia - Expo、Skia、Reanimatedを使ったゲーム開発入門](https://www.youtube.com/watch?v=Af2-OT9mE14)\n* 🎥 [Reactiive - アニメーションスタックカード - interpolate関数の探求](https://www.youtube.com/watch?v=8_hvNoZJsc8)"
+      }
+    },
+    {
+      "segment_id": "8bafd2d7",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "fff17ff8",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "b459cfc1",
+      "source_content": "* 👀 [New CSS Editor's Draft - Functions and Mixins Module](https://drafts.csswg.org/css-mixins/)\n* 📣 [CSS font-size-adjust is now in Baseline](https://web.dev/blog/font-size-adjust)\n* 📜 [What’s New for JavaScript Developers in ECMAScript 2024](https://thenewstack.io/whats-new-for-javascript-developers-in-ecmascript-2024/)\n* 📜 [TypeScripter's Take on Zig](https://effectivetypescript.com/2024/07/17/advent2023-zig/)\n* 📜 [Typed CSS variables using @property](https://css-tip.com/typed-variables/)\n* 📜 [An update on invokers: Invoker commands in HTML](https://utilitybend.com/blog/an-update-on-invokers-invoker-commands-in-html)\n* 📜 [New in CSS: relative colors](https://www.stefanjudis.com/notes/new-in-css-relative-colors/)\n* 📜 [Why is spawning a new process in Node so slow?](https://blog.val.town/blog/node-spawn-performance/)\n* 📦 [Poku - cross-platform test runner for Node.js, Bun, Deno](https://github.com/wellwelwel/poku)",
+      "source_content_hash": "6d7d1be0a27c0f8a79484f9c7be3e0a3440412743812e6e100145d409886a30e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 👀 [新しいCSS Editor's Draft - Functions and Mixins Module](https://drafts.csswg.org/css-mixins/)\n* 📣 [CSS font-size-adjustがBaselineに追加](https://web.dev/blog/font-size-adjust)\n* 📜 [ECMAScript 2024におけるJavaScript開発者向けの新機能](https://thenewstack.io/whats-new-for-javascript-developers-in-ecmascript-2024/)\n* 📜 [TypeScript開発者から見たZig](https://effectivetypescript.com/2024/07/17/advent2023-zig/)\n* 📜 [@propertyを使用した型付きCSS変数](https://css-tip.com/typed-variables/)\n* 📜 [invokersの更新: HTMLにおけるInvokerコマンド](https://utilitybend.com/blog/an-update-on-invokers-invoker-commands-in-html)\n* 📜 [CSSの新機能: 相対色](https://www.stefanjudis.com/notes/new-in-css-relative-colors/)\n* 📜 [Nodeで新しいプロセスを生成するのがなぜこんなに遅いのか？](https://blog.val.town/blog/node-spawn-performance/)\n* 📦 [Poku - Node.js、Bun、Deno向けのクロスプラットフォームテストランナー](https://github.com/wellwelwel/poku)"
+      }
+    },
+    {
+      "segment_id": "d4b679d6",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "55dc794c",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "63565425",
+      "source_content": "[![alt](/emails/issues/193/meme.jpg)](https://x.com/vinceflibustier/status/1814233715641389456)",
+      "source_content_hash": "b7cd5a4309b1dc9db849b708ff22b36199517c7b091a2e51e6f2ec96ead20e89",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/193/meme.jpg)](https://x.com/vinceflibustier/status/1814233715641389456)"
+      }
+    },
+    {
+      "segment_id": "1496ef51",
+      "source_content": "[![alt](/emails/issues/193/meme2.jpg)](https://x.com/birch_js/status/1815299684728201400)",
+      "source_content_hash": "40c19e2af226407b8fb164355ce6aa12d7e14f560788148c9bdbf20e9c81a144",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/193/meme2.jpg)](https://x.com/birch_js/status/1815299684728201400)"
+      }
+    },
+    {
+      "segment_id": "dce16ab4",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "それでは！👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/193/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:38.304918+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "5709bd6483e3dfa3573066814bdf67afcaf4d42ecb37227d16bda8359782e0a7"
+  }
+}

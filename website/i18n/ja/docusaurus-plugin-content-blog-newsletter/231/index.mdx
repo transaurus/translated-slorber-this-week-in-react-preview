@@ -1,0 +1,164 @@
+---
+slug: /231
+title: "This Week In React #231: React Labs, Compiler, React Router, Next.js, TanStack Query, c15t, RTK, Base UI | Legend List, FlashList, Versioning, Metro, ExecuTorch, Brownfield, Expo Router | TC39, Surveys, Rspack, tsdown"
+authors: [matthieugicquel, cyrilbo]
+date: 04-23-2025
+---
+
+みなさん、こんにちは！
+
+[Theodo Apps](https://apps.theodo.com/en?utm_source=thisweekinreact)のCyrilとMatthieuです 👋。Sebに代わって、ReactとReact Nativeの最新ニュースをお届けします。
+
+今週は、Reactチームからの2つのエキサイティングなブログ記事と、Reactコアチームの特別ゲストからのメッセージがあります！
+
+また、「公式」ブログやコミュニティから興味深い記事をいくつか読みました。
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Convex: AIコーディング向けに設計されたデータベース](/emails/issues/227/convex.jpg)](https://convex.link/thisweekai)
+
+**[Convex: AIコーディング向けに設計されたデータベース](https://convex.link/thisweekai)**
+
+コード生成の時代において、AIプラットフォームで自信を持って生成できるバックエンドが必要です。Convexは[この点で群を抜いて優れています](https://stack.convex.dev/introducing-fullstack-bench)。
+
+Convexは単なるTypeScriptであり、[クエリをコードとして記述](https://docs.convex.dev/functions/query-functions/)でき、自動的にトランザクショナルでキャッシュされ、リアルタイムで動作します。
+
+そして、これだけではありません。Convexでは次のことが可能です：
+
+* 簡単に関数をスケジュールし、cronジョブを記述
+* ファイルストレージを設定
+* 効率的なサーバー関数を記述
+* その他多くの機能…
+
+[今日すぐにクイックスタートを試す](https://docs.convex.dev/quickstarts)
+
+***
+
+## 📣 From the React team {#react-core-team}
+
+[![React Labs: ビュートランジション、アクティビティなど](/emails/issues/231/labs.jpg)](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more)
+
+**[React Labs: ビュートランジション、アクティビティなど](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more)**
+
+Reactチームがサーバーしか気にしていないという噂は大げさです。
+
+今日の[React Labsの記事](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more)では、[ビュートランジション](https://react.dev/reference/react/ViewTransition)と[アクティビティ](https://react.dev/reference/react/Activity)が実験的なチャンネルで試せるようになったこと、およびそれぞれのドキュメントを公開したことを共有しました。これらの新機能は、クライアントで実行されるReactがUIトランジションをアニメーション化し、ユーザーがクライアント側でナビゲートする際にUIの一部を非表示または表示することを可能にします。これらはサーバー機能と連携しますが、クライアント側の問題を解決することを目的としています。
+
+また、[開発中の機能](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more#features-in-development)についても更新を共有しました。これには、より優れたプロファイリングツール、エフェクトの依存関係の自動コンパイル、潜在的なIDE拡張、フラグメントref、そして並行ストアも含まれます。これらは長い間解決したいと考えていた問題領域であり、React Compilerや`use` APIなどの最近の機能によってようやく取り組むことが可能になりました。
+
+これらの機能はまだ初期段階であり、試せるようになる前に大幅に変更される可能性があります。私たちがこれらの機能を構築する過程をフォローでき、このニュースレターは最新情報を入手するのに最適な方法です。ただし、すべてを学ぶ必要はありません。まずは私たちに任せてください。
+
+機能のリリースが確実になったら、ブログで発表し、ドキュメントを公開します。今日のビュートランジションとアクティビティのように。
+
+新しい実験的な機能を試して、[ブログ記事](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more)で私たちが取り組んでいる領域をチェックしてください。
+
+-[Ricky Hanlon](https://bsky.app/profile/ricky.fm)
+
+***
+
+## ⚛️ React {#react}
+
+[![React Compiler RC](/emails/issues/231/compiler.jpg)](https://react.dev/blog/2025/04/21/react-compiler-rc)
+
+**[React Compiler RC](https://react.dev/blog/2025/04/21/react-compiler-rc)**
+
+今週のエキサイティングなアップデートはReact Labsの投稿だけではありません！React Compilerもリリース候補版となり、コンパイラの安定版リリースに向けて準備が進んでいます。
+
+Babel不要のビルドは、モダンなRustツールチェーンと共にコンパイラを使い続けるための歓迎すべき改善です！
+
+***
+
+* 💸 [Clerk + Supabaseを使ったマルチテナントアプリの構築方法](https://go.clerk.com/j5M7vZt)
+* 🗓 [Future Frontend](https://futurefrontend.com/?utm_source=thisweekinreact) - 🇫🇮 エスポー - 5月26-28日。Aurora Scharff、Rachel Naborsらと共にフロントエンド開発の未来に飛び込もう！「TWIR」コードで10%割引。
+* 📜 [不可能なコンポーネント](https://overreacted.io/impossible-components/): Dan AbramovがRSCに関するブログシリーズを続け、今回はReactのトップダウンなデータフローとどう整合するかなどを詳説。
+* 📜 [React Router v7.5+でのより高速な遅延読み込み](https://remix.run/blog/faster-lazy-loading): 数週間前にリリース。Mark Dalgleishが、特にミドルウェア使用時に、ルート全体ではなくルートプロパティによる遅延読み込みという新しいアプローチが必要だった理由を説明。
+* 📜 [Next.jsでのパフォーマンス向上のヒント](https://vercel.com/blog/guide-to-fast-websites-with-next-js-tips-for-maximizing-server-speeds#how-to-speed-up-the-page-render-minimize-client-burden): 利用可能な最適化の総まとめ - プリレンダリング、キャッシュ活用、バンドルサイズ監視、遅延読み込み、フォントと画像の最適化、仮想化の使用など。
+* 📜 [パターンマッチングでTanStack React Queryの状態管理を簡素化](https://gabrielpichot.fr/blog/simplify-tanstack-react-query-state-handling-with-pattern-matching/)
+* 📜 [ローダーでのクライアントキャッシュの活用](https://www.brenelz.com/posts/using-client-caches-in-loaders/)
+* 📜 [リクエストのライフサイクル: アプリケーション認識型ルーティング - Vercel](https://vercel.com/blog/life-of-a-request-application-aware-routing)
+* 📜 [Tailwind vs Linaria: パフォーマンス調査](https://www.developerway.com/posts/tailwind-vs-linaria-performance)
+* 📦 [c15t](https://github.com/c15t/c15t): ドロップインReactコンポーネントを備えた新しい同意管理フレームワーク。
+* 📦 [Redux Toolkit 2.7](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.7.0): RTKクエリの標準スキーマ、無限クエリの改善。
+* 📦 [Headless Tree 1.0](https://headless-tree.lukasbach.com/): React Complex Treeの後継。[変更についてのブログ記事](https://medium.com/@lukasbach/headless-tree-and-the-future-of-react-complex-tree-fc920700e82a)も公開。
+* 📦 [Module Federation Core 0.13](https://github.com/module-federation/core/releases/tag/v0.13.0): React 19のサポート強化とバグ修正。
+* 📦 [Base UI 1.0 alpha-8](https://github.com/mui/base-ui/releases/tag/v1.0.0-alpha.8): 新しいRadix UIの代替として、ToastやMeterコンポーネントなど多くの新機能が追加され進化中。
+* 🎙️ [Syntax.fm - React Server Components: 現状はどうなっている？](https://syntax.fm/show/895/react-server-components-where-are-we-at)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Self-service analytics and dashboards in your product](/emails/issues/231/semaphor.jpg)](https://semaphor.cloud)
+
+**[プロダクト内セルフサービス型分析とダッシュボード](https://semaphor.cloud)**
+
+**エンジニアはダッシュボード構築のためにコードを書いたわけではありません。**
+機能開発に集中させましょう。
+
+Semaphorを使えば、データチームが独立してインサイトを提供可能。コード変更やフロントエンドの再デプロイ不要。分析機能をプロダクトコードから分離し、迅速に移動できます。
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![Legend List 1.0](/emails/issues/231/legend-list.png)](https://bsky.app/profile/jayz.us/post/3lni5ofbuvs2s)
+
+**[Legend List 1.0](https://bsky.app/profile/jayz.us/post/3lni5ofbuvs2s)**
+
+長いリストのパフォーマンス最適化は難題であり、React Nativeの旧アーキテクチャは非同期レイアウト計算によってさらに困難を招いていました。Margeloが`WishList`プロジェクトを放棄したことを覚えている方もいるでしょう。
+Legend Listはバージョン1.0となり、`FlashList`よりも高速であることを約束すると同時に、双方向無限リストや可変アイテムサイズといった「難しいケース」も処理可能です。旧アーキテクチャとも互換性があります（ただしパフォーマンスは低く、不具合が発生する可能性あり）。
+
+先週Sebが言及したように、[`FlashList`のv2](https://github.com/Shopify/flash-list/tree/new-rlv-prototype)も開発中で、estimatedItemSizeの指定が不要になるなど、より使いやすくなる予定です。
+
+幸いなことに、これらはすべて`FlatList`のAPIを踏襲しているため、簡単に切り替え可能です🙂。
+
+***
+
+* 💸 [PostHog - React Nativeセッションリプレイの設定方法](https://go.posthog.com/twir-apr23)
+* 🐦 [Metro Bundlerで動作するModule Federationのプロトタイプ](https://x.com/_jbroma/status/1912903068464594993)
+* 🐦 [React NativeでのCSSサポート実験（グリッドレイアウト含む）](https://x.com/mani3xis/status/1912947427864441144)
+* 📖 [React Nativeのバージョニングポリシー](https://reactnative.dev/contributing/versioning-policy): この新しいページでは、`0.x.y`パターンに基づくバージョニングスキームが詳しく説明されています。さらに重要なのは、リリースプロセスと破壊的変更と見なされる内容についても解説されている点です。これは、公開APIサーフェスの明確化（さらには縮小）を目的とした継続的な取り組みの一環です（[深いインポートの削除RFC](https://github.com/react-native-community/discussions-and-proposals/pull/894)参照）。React Nativeはより安定しつつあり、いつの日かv1.0がリリースされるかもしれません。
+* 📜 [Expoアプリのラグを減らすベストプラクティス](https://expo.dev/blog/best-practices-for-reducing-lag-in-expo-apps): デベロッパーツールからの直接レンダリング、React Compiler、React 19、マルチスレッドについて解説。
+* 📜 [モバイルでのオフラインテキスト認識: EasyOCRをReact Native ExecuTorchに導入した方法](https://blog.swmansion.com/bringing-easyocr-to-react-native-executorch-2401c09c2d0c)
+* 📜 [ExpoとElevenLabsでユニバーサルアプリ音声エージェントを構築する方法](https://expo.dev/blog/how-to-build-universal-app-voice-agents-with-expo-and-elevenlabs)
+* 📜 [旧アーキテクチャから新アーキテクチャへ（デフォルトで）](https://expo.dev/blog/out-with-the-old-in-with-the-new-architecture)
+* 📦 [React Native Brownfield 1.0](https://github.com/callstack/react-native-brownfield/releases/tag/v1.0.0): SwiftUI、Jetpack Composeのサポート追加、フレームワークとしてのパッケージングに対応。
+* 📦 [typegpu-confetti](https://github.com/software-mansion-labs/typegpu-confetti): `react-native-webgpu`とTypeGPUを使用してGPU上で排他的に計算・レンダリングされるReact Native用の紙吹雪アニメーション。
+* 🎥 [Expo Routerチュートリアル](https://www.youtube.com/playlist?list=PLsXDmrmFV_AT17JDf-otXSNE_eH7s0uDD): 最初の5本の動画が公開中。レイアウトファイル、Stack & Tabナビゲーター、モーダル、Auth Flowをカバー。
+* 🎙️ [RNR 328 - Alexandre Moureaux氏によるFlashlight](https://infinite.red/react-native-radio/rnr-328-flashlight-with-alexandre-moureaux)
+* 🎙️ [Rocket Ship 65 - Expo SDK 53プレビュー、RevenueCat Paywalls、AI画像 & Gemini](https://www.youtube.com/watch?v=evGUO_CN1Fc)
+
+***
+
+## 🔀 Other {#other}
+
+* 📣 [TC39会議第107回 - ECMA提案更新](https://ecmascript-daily.github.io/ecmascript/2025/04/19/ecmascript-proposal-update): 先週進展した提案をまとめています。Records & Tuplesの撤回は残念ですが、EnumsやCompositesなど注目すべき新提案もあります。
+* 📊 [AIの現状2025 - 調査結果](https://2025.stateofai.dev)
+* 📜 [Node.jsパフォーマンス最適化: V8メモリ管理とGCチューニング](https://blog.platformatic.dev/optimizing-nodejs-performance-v8-memory-management-and-gc-tuning)
+* 📜 [初めての「開発者の現状」調査を開始](https://dev.to/sachagreif/launching-the-first-ever-state-of-devs-survey-23il)
+* 📜 [GitHub Actionsのセキュリティ対策](https://blog.rafaelgss.dev/securing-github-actions)
+* 📜 [JavaScriptバンドラーRspack入門](https://blog.appsignal.com/2025/04/16/an-introduction-to-javascript-bundler-rspack.html)
+* 📦 [tsdown - エレガントなライブラリバンドラー - Rolldown搭載](https://tsdown.dev/)
+* 📦 [Node 22.15リリース](https://nodejs.org/en/blog/release/v22.15.0)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![React Compiler RCのミーム - React Compilerのローラーコースターに乗る猫](/emails/issues/231/meme0.jpg)](https://x.com/potetotes/status/1914855126348480850)
+
+[![Evan Bacon - Android Studioで1時間過ごした後Expoに戻ってくる - 宇宙飛行から帰還後地面にキスするKaty Perryの写真](/emails/issues/231/meme1.jpg)](https://x.com/Baconbrix/status/1913353166483058931)
+
+[![巨大な縦画面に「package.json」の依存関係、巨大な横画面に「tailwindのクラス名」](/emails/issues/231/meme2.jpg)](https://x.com/trashh_dev/status/1893339204710539265)
+
+またね！👋

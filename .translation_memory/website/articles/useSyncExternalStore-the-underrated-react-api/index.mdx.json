@@ -1,0 +1,482 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "articles/useSyncExternalStore-the-underrated-react-api/index.mdx",
+  "source_file_content_hash": "d837303b04cde37a19a845d82af4186f11a8e3903e147c38fe77df1f4309161d",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: useSyncExternalStore-the-underrated-react-api\ntitle: useSyncExternalStore - The underrated React API\nauthors: [slorber]\ndate: 2022-09-06\ntwitterThreadUrl: \"https://slo.im/t/articles/useSyncExternalStore\"\nimage: ./social-card.png\n---",
+      "source_content_hash": "463e0b51872f1a5e3cc3474aefb0ec95b0298e06b01ad8226158676e1111d236",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "1cc03ec8",
+      "source_content": "# useSyncExternalStore - The underrated React API",
+      "source_content_hash": "a5dce1687748f70717491a0c8546283cfaf4e1eef3ad7bd5c0a650be567db168",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# useSyncExternalStore - 過小評価されているReact API"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "You might have heard of [`useSyncExternalStore()`](https://reactjs.org/docs/hooks-reference.html#usesyncexternalstore), a new React 18 hook to **subscribe to external data sources**. It is often used internally by state management libraries - like [Redux](https://github.com/reduxjs/react-redux/pull/1808) - to implement a **selector system**.",
+      "source_content_hash": "6dfb16c5d4df1e98625b528be600fd0ddea64f218dd284018831ea052ec868f4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[`useSyncExternalStore()`](https://reactjs.org/docs/hooks-reference.html#usesyncexternalstore)というReact 18の新フックをご存知かもしれません。これは**外部データソースへの購読**に使用され、[Redux](https://github.com/reduxjs/react-redux/pull/1808)のような状態管理ライブラリ内部で**セレクターシステム**を実装するためによく使われます。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "But what about using `useSyncExternalStore()` in your own application code?",
+      "source_content_hash": "c9027d984edb43182ebed38711b5707efe426f4ebcffc1cc3b5baacd8b777e47",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "しかし、独自のアプリケーションコードで`useSyncExternalStore()`を使うのはどうでしょうか？"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "In this interactive article, I want to present you a problem: **over-returning React hooks triggering useless re-renders**. We will see how `useSyncExternalStore()` can be a good fix.",
+      "source_content_hash": "0ecd869284da3cedc52e650276d0dbdf3809ccc73c7e99fc1388aa7252263aef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このインタラクティブ記事では、**無駄な再レンダリングを引き起こす過剰な返り値を持つReactフック**という問題を提示します。`useSyncExternalStore()`がどのように良い解決策となるかを見ていきましょう。"
+      }
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "![social card](./social-card.png)",
+      "source_content_hash": "ecaa1722784290579cd46f92c22c424f707d55b6dacecdbd0c594d8ca5d374b4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "![social card](./social-card.png)"
+      }
+    },
+    {
+      "segment_id": "c6da205d",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_c6da205d"
+      }
+    },
+    {
+      "segment_id": "5dfba1c3",
+      "source_content": "<SubscribeFormEmbed />",
+      "source_content_hash": "2b5c5e42f4352c90b9647a9da7a0fb7ece8b8dc27440e42cdf85cbb6e1901b85",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_5dfba1c3"
+      }
+    },
+    {
+      "segment_id": "0adfe0aa",
+      "source_content": "import {\n  App,\n  AppFixed,\n  ScrollApp,\n} from \"@site/articles/useSyncExternalStore-the-underrated-react-api/demos\";",
+      "source_content_hash": "3c91cedb564c8960af28b0ddbdcdc983c8fd75bfeb3d8c3d93827f54b99c82f1",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_0adfe0aa"
+      }
+    },
+    {
+      "segment_id": "d06306f7",
+      "source_content": "## Over-returning hooks",
+      "source_content_hash": "ff7e4baf3d89595f00f50d75a8de1f3c357caecf5dca92ad12e68f16e92d287f",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 過剰な返り値を持つフック"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "Let's illustrate the problem with [`useLocation()`](https://reactrouter.com/en/main/hooks/use-location) from React-Router.",
+      "source_content_hash": "081f55901fe067af42824bc0d621da75bf7c93e50a0ff311b16a38afc2d61441",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React-Routerの[`useLocation()`](https://reactrouter.com/en/main/hooks/use-location)を使って問題を説明しましょう。"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "This hook returns an object with many attributes (`pathname`, `hash`, `search`...), but you might not read all of them. Just calling the hook will trigger re-renders when any of these attributes is updated.",
+      "source_content_hash": "98982ce1cf35f5fdd27a8076041d32c80cc73aee2181f01bf4199da3a95b0798",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このフックは多くの属性（`pathname`、`hash`、`search`など）を持つオブジェクトを返しますが、すべてを使用するわけではありません。単にフックを呼び出すだけで、これらの属性のいずれかが更新されると再レンダリングが発生します。"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "Let's consider this app:",
+      "source_content_hash": "03e7684b96fcdc3a5be6239120a717998a33a0fa9aef1e2dbac14b5510178f74",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "次のアプリを考えてみましょう："
+      }
+    },
+    {
+      "segment_id": "4dd51304",
+      "source_content": "```tsx\nfunction CurrentPathname() {\n  const { pathname } = useLocation();\n  return <div>{pathname}</div>;\n}\n\nfunction CurrentHash() {\n  const { hash } = useLocation();\n  return <div>{hash}</div>;\n}\n\nfunction Links() {\n  return (\n    <div>\n      <Link to=\"#link1\">#link1</Link>\n      <Link to=\"#link2\">#link2</Link>\n      <Link to=\"#link3\">#link3</Link>\n    </div>\n  );\n}\n\nfunction App() {\n  return (\n    <div>\n      <CurrentPathname />\n      <CurrentHash />\n      <Links />\n    </div>\n  );\n}\n```",
+      "source_content_hash": "68154e04385021e320c4366a29b2a63fe3fdfca2c8d2869ff9aa3e50fc837d5b",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_4dd51304"
+      }
+    },
+    {
+      "segment_id": "61a24b68",
+      "source_content": "<App />",
+      "source_content_hash": "020525fda7385f0f59c01976613d6828f508370400f3d4eb58b2aa56b1cf4fd0",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_61a24b68"
+      }
+    },
+    {
+      "segment_id": "147e8550",
+      "source_content": "On any hash link click, the `CurrentPathname` component will re-render, even if it's not even using the `hash` attribute 😅.",
+      "source_content_hash": "7619fee1f11b97c47972777ab65a4a716a1a837a03f3eef068629e2c3141b43f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ハッシュリンクをクリックするたびに、`CurrentPathname`コンポーネントは`hash`属性を使用していないにもかかわらず再レンダリングされます😅。"
+      }
+    },
+    {
+      "segment_id": "07837485",
+      "source_content": ":::tip\nWhenever a hook returns data that you don't display, think about React re-renders. If you don't pay attention, a tiny `useLocation()` call added at the top of a React tree could harm your app's performance.\n:::",
+      "source_content_hash": "17957b5dab10b87533922ca14d2b9a99b200be24646ca8c82ae182d1c0373096",
+      "node_type": "containerDirective",
+      "translatable": true,
+      "translations": {
+        "ja": ":::tip\nフックが表示しないデータを返す場合、Reactの再レンダリングについて考えてください。注意を払わないと、Reactツリーの上部に追加された小さな`useLocation()`呼び出しがアプリのパフォーマンスを損なう可能性があります。\n:::"
+      }
+    },
+    {
+      "segment_id": "0286b5a7",
+      "source_content": ":::info\nThe goal is not to criticize React-Router, but rather to illustrate the problem. `useLocation()` is just a good pragmatic candidate to create this interactive article. Your own React hooks and other third-party libraries might also over-return.\n:::",
+      "source_content_hash": "fe5b946392c7edf2cd3736363e8ae40cab03fd861a063a08bcedcdc9e86a8d95",
+      "node_type": "containerDirective",
+      "translatable": true,
+      "translations": {
+        "ja": ":::info\n目標はReact-Routerを批判することではなく、問題を説明することです。`useLocation()`はこのインタラクティブ記事を作成するための現実的な例に過ぎません。独自のReactフックや他のサードパーティライブラリも過剰な返り値を返す可能性があります。\n:::"
+      }
+    },
+    {
+      "segment_id": "8a9b6c26",
+      "source_content": "## `useSyncExternalStore` to the rescue?",
+      "source_content_hash": "400cf51319f48185cb1654c635f0786bb996bfbd4da99014c4dcfab57672e69b",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## `useSyncExternalStore`で解決？"
+      }
+    },
+    {
+      "segment_id": "a1fa5396",
+      "source_content": "The [official documentation](https://reactjs.org/docs/hooks-reference.html#usesyncexternalstore) says:",
+      "source_content_hash": "ffe360c34f7eaf872a0882b603075229fb5eb7525f52020e2ad92a93c8a08dae",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[公式ドキュメント](https://reactjs.org/docs/hooks-reference.html#usesyncexternalstore)には次のように書かれています："
+      }
+    },
+    {
+      "segment_id": "fe7364bf",
+      "source_content": "> useSyncExternalStore is a hook recommended for reading and subscribing from external data sources in a way that’s compatible with concurrent rendering features like selective hydration and time slicing.\n> This method returns the value of the store and accepts three arguments:\n>\n> * `subscribe`: function to register a callback that is called whenever the store changes.\n> * `getSnapshot`: function that returns the current value of the store.\n> * `getServerSnapshot`: function that returns the snapshot used during server rendering.",
+      "source_content_hash": "1b1de9e500fe68bcd8994a12619faaa3bef023c349e30685bbdb1f9befe69ea4",
+      "node_type": "blockquote",
+      "translatable": true,
+      "translations": {
+        "ja": "> useSyncExternalStoreは、選択的なハイドレーションやタイムスライスなどのコンカレントレンダリング機能と互換性のある方法で、外部データソースからの読み取りと購読に推奨されるフックです。\n> このメソッドはストアの値を返し、3つの引数を受け取ります：\n>\n> * `subscribe`: ストアが変更されるたびに呼び出されるコールバックを登録する関数\n> * `getSnapshot`: ストアの現在の値を返す関数\n> * `getServerSnapshot`: サーバーレンダリング中に使用されるスナップショットを返す関数"
+      }
+    },
+    {
+      "segment_id": "5782e280",
+      "source_content": "```tsx\nfunction useSyncExternalStore<Snapshot>(\n  subscribe: (onStoreChange: () => void) => () => void,\n  getSnapshot: () => Snapshot,\n  getServerSnapshot?: () => Snapshot,\n): Snapshot;\n```",
+      "source_content_hash": "37049ffb849ff33cab894cfeba415b68d66bfdeece444d5596cece028b53532b",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_5782e280"
+      }
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "This feels a bit abstract. This [beta doc page](https://beta.reactjs.org/learn/you-might-not-need-an-effect#subscribing-to-an-external-store) gives a good example:",
+      "source_content_hash": "ca7536d7acd70832a20fcb4ee80bc28d5d800cb6f7e21083126da9b18926ed8f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "これは少し抽象的です。この[ベータ版ドキュメントページ](https://beta.reactjs.org/learn/you-might-not-need-an-effect#subscribing-to-an-external-store)には良い例があります："
+      }
+    },
+    {
+      "segment_id": "cae897fb",
+      "source_content": "```tsx\nfunction subscribe(callback) {\n  window.addEventListener(\"online\", callback);\n  window.addEventListener(\"offline\", callback);\n  return () => {\n    window.removeEventListener(\"online\", callback);\n    window.removeEventListener(\"offline\", callback);\n  };\n}\n\nfunction useOnlineStatus() {\n  return useSyncExternalStore(\n    subscribe,\n    () => navigator.onLine,\n    () => true,\n  );\n}\n\nfunction ChatIndicator() {\n  const isOnline = useOnlineStatus();\n  // ...\n}\n```",
+      "source_content_hash": "9dbd0e80ea7b7d17e5c3341cf8de124068bd2080dd2c15c3e18b8602bee18bd4",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_cae897fb"
+      }
+    },
+    {
+      "segment_id": "b9331170",
+      "source_content": "It turns out that the browser history can also be considered as an external data source. Let's see how to use `useSyncExternalStore` with React-Router!",
+      "source_content_hash": "ddb9900449da77cfb3672b7d96771bd9370737c14d5971b33dfc22e94cac2c5a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ブラウザの履歴も外部データソースと見なせることがわかります。React-Routerで`useSyncExternalStore`を使う方法を見てみましょう！"
+      }
+    },
+    {
+      "segment_id": "2bb63d77",
+      "source_content": "## Implementing `useHistorySelector()`",
+      "source_content_hash": "eafdc1d47619b50cf44fa76487aa0162ba785ed2de67d9a40997219f0d38d03b",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## `useHistorySelector()`の実装"
+      }
+    },
+    {
+      "segment_id": "53aa2b95",
+      "source_content": "React-Router expose everything we need to wire `useSyncExternalStore`:",
+      "source_content_hash": "05a88ff7a73ab9d40d3f883378482fa054421fab9e33d9a92f62f3e7249483ba",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React-Routerは`useSyncExternalStore`を接続するために必要なすべてを公開しています："
+      }
+    },
+    {
+      "segment_id": "d8460b5b",
+      "source_content": "* access the browser history with [`useHistory()`](https://v5.reactrouter.com/web/api/Hooks/usehistory)\n* subscribe for history updates with [`history.listen(callback)`](https://github.com/remix-run/history/blob/main/docs/api-reference.md#history.listen)\n* access a snapshot of the current location with [`history.location`](https://github.com/remix-run/history/blob/main/docs/api-reference.md#historylocation)",
+      "source_content_hash": "6b3a78c506ef3a89d4761a83c80451b0c068b279ed33b843dfacf92008a00ed4",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* [`useHistory()`](https://v5.reactrouter.com/web/api/Hooks/usehistory)でブラウザ履歴にアクセス\n* [`history.listen(callback)`](https://github.com/remix-run/history/blob/main/docs/api-reference.md#history.listen)で履歴更新を購読\n* [`history.location`](https://github.com/remix-run/history/blob/main/docs/api-reference.md#historylocation)で現在のロケーションのスナップショットにアクセス"
+      }
+    },
+    {
+      "segment_id": "a1600d1d",
+      "source_content": ":::caution\nThis website uses React-Router v5: the solution will be different for React-Router v6 ([see](https://twitter.com/Zh0uzi/status/1567523679604539405)).\n:::",
+      "source_content_hash": "0a929c82979d512fc7a3ac02a56a1b6e1a6d4a10dc3cdcd2883b88f6b1dc403c",
+      "node_type": "containerDirective",
+      "translatable": true,
+      "translations": {
+        "ja": ":::caution\nこのウェブサイトはReact-Router v5を使用しています: React-Router v6では解決策が異なります（[参照](https://twitter.com/Zh0uzi/status/1567523679604539405)）。\n:::"
+      }
+    },
+    {
+      "segment_id": "bb1346b6",
+      "source_content": "The implementation of `useHistorySelector()` relatively simple:",
+      "source_content_hash": "b35e0181ebd2bfc4c81f65c23a0f9d0f7f3463efbe7a7e26d901e55885c44146",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "`useHistorySelector()`の実装は比較的シンプルです:"
+      }
+    },
+    {
+      "segment_id": "8a061704",
+      "source_content": "```tsx\nfunction useHistorySelector(selector) {\n  const history = useHistory();\n  return useSyncExternalStore(history.listen, () =>\n    selector(history),\n  );\n}\n```",
+      "source_content_hash": "4148e4d5489e39f6a64e209787c2e0056a9c8017ca8cea0497fe8f570dc88715",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_8a061704"
+      }
+    },
+    {
+      "segment_id": "719d3997",
+      "source_content": "Let's use it in our app:",
+      "source_content_hash": "c5c2687980ae5832f77ef92f44860c31bcbc3f293e6aa0197c09ef526f9e4c84",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "これをアプリで使用してみましょう:"
+      }
+    },
+    {
+      "segment_id": "5d30fd9b",
+      "source_content": "```tsx\nfunction CurrentPathname() {\n  const pathname = useHistorySelector(\n    (history) => history.location.pathname,\n  );\n  return <div>{pathname}</div>;\n}\n\nfunction CurrentHash() {\n  const hash = useHistorySelector(\n    (history) => history.location.hash,\n  );\n  return <div>{hash}</div>;\n}\n```",
+      "source_content_hash": "8634c51e60804ee12e2db7021ea554920b0c5828f7c8517b94fc42126e367a79",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_5d30fd9b"
+      }
+    },
+    {
+      "segment_id": "dd56b068",
+      "source_content": "<AppFixed />",
+      "source_content_hash": "b52353ceb24bec063e10ce1dc5ecc46db4114eab4ab9dbca5589fef80f4b5f5b",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_dd56b068"
+      }
+    },
+    {
+      "segment_id": "d636abf8",
+      "source_content": "Now, when you click on a hash link above, the `CurrentPathname` component will **not re-render** anymore!",
+      "source_content_hash": "52c5a811f7ee0105a3589cea54499ad70d2e14d33667189d4602b7a7b9675fed",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "これで、上記のハッシュリンクをクリックしても、`CurrentPathname`コンポーネントは**再レンダリングされなくなりました**！"
+      }
+    },
+    {
+      "segment_id": "191265da",
+      "source_content": "## Another example: `scrollY`",
+      "source_content_hash": "7e9f3116e38ee27a6f6289a62d11a3a77c61b0c69e09a7dbdc270ba88582512b",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 別の例: `scrollY`"
+      }
+    },
+    {
+      "segment_id": "85ea22dd",
+      "source_content": "There are so many external data sources that we can subscribe to, and implementing your own selector system on top might enable you to optimize React re-renders.",
+      "source_content_hash": "f1e322ed225b706cfd909fd503f4859510dac8fd323b9987c3d60068ad1420bc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "購読可能な外部データソースは数多くあり、独自のセレクターシステムを実装することでReactの再レンダリングを最適化できる可能性があります。"
+      }
+    },
+    {
+      "segment_id": "dc72fd20",
+      "source_content": "For example, let's consider we want to use the `scrollY` position of a page. We can implement this custom React hook:",
+      "source_content_hash": "b6da6b19ff461c56fac08e138cdc6f75b410b530fc56e8645ce036bc9fcd25be",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "例えば、ページの`scrollY`位置を使用したい場合を考えてみましょう。以下のようなカスタムReactフックを実装できます:"
+      }
+    },
+    {
+      "segment_id": "82a37a1b",
+      "source_content": "```tsx\n// A memoized constant fn prevents unsubscribe/resubscribe\n// In practice it is not a big deal\nfunction subscribe(onStoreChange) {\n  global.window?.addEventListener(\"scroll\", onStoreChange);\n  return () =>\n    global.window?.removeEventListener(\n      \"scroll\",\n      onStoreChange,\n    );\n}\n\nfunction useScrollY(selector = (id) => id) {\n  return useSyncExternalStore(\n    subscribe,\n    () => selector(global.window?.scrollY),\n    () => undefined,\n  );\n}\n```",
+      "source_content_hash": "3134d48752dbf7c9e77d0265a5ad9145df658c032aeda0d6c8257804603f28db",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_82a37a1b"
+      }
+    },
+    {
+      "segment_id": "3208eb29",
+      "source_content": "We can now use this hook with an optional selector:",
+      "source_content_hash": "5fe7994bac2ddf6c3169f35371c74ed5c013ea4d6a5f4689b259fc0b0c38717a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このフックをオプションのセレクターと共に使用できます:"
+      }
+    },
+    {
+      "segment_id": "3c6be27a",
+      "source_content": "```tsx\nfunction ScrollY() {\n  const scrollY = useScrollY();\n  return <div>{scrollY}</div>;\n}\n\nfunction ScrollYFloored() {\n  const to = 100;\n  const scrollYFloored = useScrollY((y) =>\n    y ? Math.floor(y / to) * to : undefined,\n  );\n  return <div>{scrollYFloored}</div>;\n}\n```",
+      "source_content_hash": "4d300d3a281610e30302fe8d59abb4edbd06478886eb3c15309eb614caf0beb1",
+      "node_type": "code",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_3c6be27a"
+      }
+    },
+    {
+      "segment_id": "b150092b",
+      "source_content": "<ScrollApp />",
+      "source_content_hash": "87e4dd8dae5f49eedd8ebe8eebe3f85246f0f5048d947e97cfcbac76dcc6f776",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_b150092b"
+      }
+    },
+    {
+      "segment_id": "d8c366cc",
+      "source_content": "Scroll the page and see how the components above re-render? One is re-rendering less than the other!",
+      "source_content_hash": "98e6dd5231b50293e3baae90be4411d8ba43083ef1e6c5a14a5b049dc5cf35ce",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ページをスクロールして、上記のコンポーネントがどのように再レンダリングされるか確認しましたか？一方が他方よりも再レンダリング回数が少ないです！"
+      }
+    },
+    {
+      "segment_id": "59087b4e",
+      "source_content": ":::info\nWhen you don't need a `scrollY` 1 pixel precision level, returning a wide range value such as `scrollY` can also be considered as over-returning. Consider returning a narrower value.\n\nFor example: a `useResponsiveBreakpoint()` hook that only returns a limited set of values (`small`, `medium` or `large`) will be more optimized than a `useViewportWidth()` hook.\n\nIf a React component only handles `large` screens differently, you can create an even narrower `useIsLargeScreen()` hook returning a boolean.\n:::",
+      "source_content_hash": "05a90436211c9e78c07c86b6d930646ed56fcfe5f974911b929881f3ac140437",
+      "node_type": "containerDirective",
+      "translatable": true,
+      "translations": {
+        "ja": ":::info\n`scrollY`の1ピクセルレベルの精度が必要ない場合、`scrollY`のような広範囲の値を返すことも過剰な返却と見なせます。より狭い値を返すことを検討してください。\n\n例えば: `small`、`medium`、`large`といった限られた値セットのみを返す`useResponsiveBreakpoint()`フックは、`useViewportWidth()`フックよりも最適化されます。\n\nReactコンポーネントが`large`スクリーンのみを特別に扱う場合、さらに限定された`useIsLargeScreen()`フックをbooleanで返すことも可能です。\n:::"
+      }
+    },
+    {
+      "segment_id": "63daebc9",
+      "source_content": "## Conclusion",
+      "source_content_hash": "be031d37bb75d96ef08ca9ec5b0e83bb6f91172f60d3c31a78feae8d7dc4a0b0",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 結論"
+      }
+    },
+    {
+      "segment_id": "228d01d5",
+      "source_content": "I hope this article convinced you to take a second look at `useSyncExternalStore()`. I feel this hook is currently underused in the React ecosystem, and deserves a bit more attention. There are many external data sources that you can subscribe to.",
+      "source_content_hash": "1355fc1bdf09826d3a4978436b82e8fe95c93e087e30878f49eff5d02f8ede88",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "この記事が、`useSyncExternalStore()`をもう一度見直すきっかけになれば幸いです。このフックは現在Reactエコシステムで十分に活用されておらず、もう少し注目される価値があると感じています。購読可能な外部データソースは数多く存在します。"
+      }
+    },
+    {
+      "segment_id": "85b17c36",
+      "source_content": "If you still haven't upgraded to React 18, there's a npm [use-sync-external-store](https://www.npmjs.com/package/use-sync-external-store) shim that you can already use today in older versions. There is also a `use-sync-external-store/with-selector` export in case you need to return a memoized non-primitive value.",
+      "source_content_hash": "b68310ecc785b49d09f5e05131808002c23cb580be2399153172b3f21d43a2e6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "まだReact 18にアップグレードしていない場合、npmの[use-sync-external-store](https://www.npmjs.com/package/use-sync-external-store)シャムを古いバージョンですでに使用できます。また、メモ化された非プリミティブ値を返す必要がある場合は`use-sync-external-store/with-selector`エクスポートも利用可能です。"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-articles/useSyncExternalStore-the-underrated-react-api/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:36.721367+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "d837303b04cde37a19a845d82af4186f11a8e3903e147c38fe77df1f4309161d"
+  }
+}

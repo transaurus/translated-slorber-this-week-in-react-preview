@@ -1,0 +1,159 @@
+---
+slug: /205
+title: "This Week In React #205: Next.js, useActionState, Headless, d&d, Web Components, RSCs, Next-Safe-Action, Remix, Zustand, NumberFlow, Atomic-CSS-DevTools, ESLint, BottomSheet, edge-to-edge, Ignite, Metro, ES2025, Node.js, TypeScript..."
+authors: [slorber]
+date: 10-16-2024
+---
+
+みなさん、こんにちは！
+
+今週はNext.js Confの直前にメジャーなNext.js RCリリースが公開され、多様なリリースや素晴らしいインタラクティブなブログ記事が登場しました。
+
+React Nativeの世界も非常に活発で、多くのインフラパッケージから素晴らしいリリースがあります。v0.76の安定版が間もなくリリースされると聞いています！
+
+Node.js 23がリリースされ、ES2025で標準化される4つの新機能が準備されています！
+
+🙏 ニュースレターの成長が以前ほど速くありません。友人や同僚にこのニュースレターを紹介していただけると本当に助かります。このメール（または[オンライン版のリンク](https://thisweekinreact.com/newsletter/205)）を転送するだけで、購読する価値があるかどうか判断してもらえます。よろしくお願いします！
+
+<!-- truncate -->
+
+**💡 [Twitterでこのニュースレターをチェック](https://slo.im/thread) - ビジュアル形式 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![AG Charts: 世界最高のReactチャートライブラリ](/emails/issues/205/agcharts.jpg)](https://www.ag-grid.com/charts?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=2024-email-2)
+
+**[AG Charts: 世界最高のReactチャートライブラリ](https://www.ag-grid.com/charts?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=2024-email-2)**
+
+AG ChartsはAG Gridが提供するキャンバスベースのチャートライブラリです。当初は[AG Grids](https://www.ag-grid.com/react-table?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=2024-email-2)の統合チャート機能を強化するために開発されましたが、現在では月間**100万**以上のnpmダウンロードを記録しています：
+
+* 🆓 **無料:** **棒グラフ**、**折れ線グラフ**、**散布図**、**面グラフ**など、さまざまなチャートタイプを**永久に無料**で利用可能
+* 🚀 **高速:** **バッチ描画**と高度な変更検出を**オフスクリーンキャンバスAPI**と組み合わせることで、数十万のデータポイントを簡単にレンダリング可能
+* 📊 **金融チャート:** わずか3行のコードで高度な注釈付きのインタラクティブな金融チャートを構築可能
+* 🏢 **エンタープライズ機能:** エンタープライズ版にアップグレードすると、アニメーション、コンテキストメニュー、クロスヘアなど高度な機能が利用可能。無料トライアルも提供（試用ライセンス不要）
+
+詳細はこちら: [www.ag-grid.com/charts](https://www.ag-grid.com/charts?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=2024-email-2)
+
+***
+
+## ⚛️ React {#react}
+
+[![Next.js 15 RC 2](/emails/issues/205/nextjs.jpg)](https://nextjs.org/blog/next-15-rc2)
+
+[**Next.js 15 RC 2**](https://nextjs.org/blog/next-15-rc2)
+
+最初のRCから数ヶ月を経て、Next.js Confの直前に以下のような大きなアップデートが公開されました：
+
+* `@next/codemod upgrade`: 最新のNext.jsとReactバージョンへのアップグレードを簡単に実行。
+* Turbopack for development: パフォーマンス改善とNext.js 15の安定性を目標。
+* Async Request APIs (Breaking): 簡素化されたレンダリングとキャッシュモデルへの漸進的移行。
+* Server Actions: 推測不能なエンドポイントと未使用アクションの削除によるセキュリティ強化。
+* Static Indicator: 開発中に静的ルートを表示する新しいビジュアルインジケーター。
+* `next/form`: クライアントサイドナビゲーションを備えたHTMLフォームの拡張。
+* `next.config.ts`: Next.js設定ファイルのTypeScriptサポート。
+* `instrumentation.js` (Stable): サーバーライフサイクル可観測性のための新API。
+* Development and Build improvements: ビルド時間の改善と高速なFast Refresh。
+* Self-hosting: `Cache-Control`ヘッダーの制御性向上。
+* ESLint 9
+
+***
+
+* 💸 [Product for Engineers - 小規模エンジニアリングチームの魔法](https://newsletter.posthog.com/p/the-magic-of-small-engineering-teams?utm_source=twir\&utm_campaign=twir)
+* 👀 [React Core PR - 非ブロッキングプリレンダリングの再導入](https://github.com/facebook/react/pull/31238): Suspense兄弟要素のプリレンダリング（v19リリースをブロックしていた問題）は不具合のため一度リバートされましたが、改めて導入されました。
+* 👀 [Next.js PR草案 - 実験的Request Interceptors](https://github.com/vercel/next.js/pull/70961): この新機能はミドルウェアを補完し、異なるトレードオフでその制限の一部を解決する可能性があります。
+* 👀 [react-beautiful-dndが非推奨に](https://github.com/atlassian/react-beautiful-dnd/issues/2672): Atlassianは現在「実用的なドラッグ＆ドロップ」の構築に注力しています。
+* 🗓️ [React Summit US](https://reactsummit.us/?utm_source=Newsletter\&utm_medium=thisweekinreact) - 🇺🇸 ニューヨーク - 12月19日＆22日 - チケット価格が上がる前に急いでカンファレンスチケットを入手しましょう！「TWIR」コードで割引も適用されます。
+* 📜 [useActionStateの真の性質](https://www.nikhilsnayak.dev/blogs/the-true-nature-of-use-action-state): `useReducer`と`useActionState`のAPI設計の類似性を指摘するインタラクティブ記事。メモリ内ToDoアプリを`useReducer`から永続的/非同期ストレージを使用するようにリファクタリングします。React 19では既存のリデューサーを非同期化してサーバーに移動するのが便利になります。
+* 📜 [ヘッドレス、ボーンレス、スキンレス＆ライフレスUI](https://nerdy.dev/headless-boneless-and-skinless-ui): Adam ArgyleがReact UI抽象化ライブラリを「ヘッドレス」以上の精度で分類しようと試みています。
+* 📜 [ドラッグで選択](https://www.joshuawootonn.com/react-drag-to-select): この素晴らしいインタラクティブ記事は、Reactで複雑なアイテム選択UXを実装する方法を説明し、ドラッグ中のユーザースクロールなど考慮すべき様々なエッジケースを含みます。
+* 📜 [Shadow DOMなしのWeb Componentsの未来](https://jjenzz.com/future-for-web-components-without-shadow-dom/): Jenna（RadixUI）がReactデザインシステム開発者の視点からWeb Componentsに関する興味深い洞察を共有。Declarative Shadow DOMがSSRに必要だと思っていましたが、カスタマイズされた組み込み要素とカスタム属性（提案）がより良い代替手段かもしれません。
+* 📜 [RSCにおける大きな「サーバーウォーターフォール問題」](https://www.epicreact.dev/server-waterfall-problem-rscs): Kentは、RSCを使用してもウォーターフォールが発生する可能性があるが、サーバーサイドのウォーターフォールはクライアントサイドよりも問題が少ないと説明します。クエリの共配置とpropsのドリリング間の緊張関係はRSCでも解消されません。
+* 📜 [Tailwind CSSでReactの再レンダリングを防ぐ方法](https://www.niko.fyi/blog/tailwind-css-group-modifier-to-prevent-react-rerender): DOMツリーの上部にデータ属性を追加することで、深くネストされたコンポーネントのステートフル性を減らすことができます。テーマ設定だけでなく、Tailwindユーザー以外にも役立つ興味深いテクニックです。
+* 📜 [Next-Safe-Actionをサーバーアクションで使用する方法](https://codelynx.dev/posts/next-safe-action-guide-en): Zodパラメータ検証、アクセス制御ミドルウェア、正規化されたエラー管理、React-Query統合でNext.jsサーバーアクションを強化する方法を示します。
+* 📦 [Zustand 5.0 - 新機能なし、しかしサイズは半分に](https://github.com/pmndrs/zustand/releases/tag/v5.0.0)
+* 📦 [Number Flow - 数値のトランジション、フォーマット、ローカライズを行うReactコンポーネント](https://github.com/barvian/number-flow)
+* 📦 [Atomic-CSS-DevTools](https://github.com/astahmer/atomic-css-devtools): このChrome拡張機能は、アトミックCSSルールをあたかもアトミックでないかのようにデバッグするための開発ツールパネルを追加します。Tailwind、StyleX、Pandaなどに対応。
+* 📦 [Remix 2.13 - `lazyRouteDiscovery`、`data`、`singleFetch`、`flushSync`、`viewTransition`を安定化](https://github.com/remix-run/remix/blob/main/CHANGELOG.md#v2130)
+* 📦 [React Router 6.27 - `dataStrategy`、`patchRoutesOnNavigation`、`flushSync`、`viewTransition`を安定化](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v6270)
+* 📦 [ESLint-Plugin-React-Hooks 5.0 - ESLint 9のサポート](https://github.com/facebook/react/releases/tag/eslint-plugin-react-hooks%405.0.0)
+* 📦 [Astro 4.16 - 並列ビルド](https://github.com/withastro/astro/releases/tag/astro%404.16.0)
+* 📦 [Just-Styled - React 19+向けの超シンプルなCSS-in-JSライブラリ](https://github.com/yukukotani/just-styled)
+* 🎥 [Alem Tuzlak - React Router v7が型安全になった方法！](https://www.youtube.com/watch?v=ferLCqcLcGU)
+* 🎥 [Sam Selikoff - スクロール時にアニメーションする再利用可能なコンポーネントの構築](https://www.youtube.com/watch?v=GIIuG5_kyow)
+* 🎙️ [Syntax 833 - TanStackによる次世代フルスタックReact](https://syntax.fm/show/833/next-gen-fullstack-react-with-tanstack)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![WorkOS: B2B SaaS向けモダンアイデンティティプラットフォーム](/emails/issues/195/workOS.jpg)](https://workos.com/?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=q32024)
+
+**[WorkOS: B2B SaaS向けモダンアイデンティティプラットフォーム](https://workos.com/?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=q32024)**
+
+WorkOSを使えば、数行のコードで企業向け販売を開始できます。
+
+🔐 WorkOS AuthKitは、**SSO、SCIM、RBAC、FGA**を含む完全なユーザー管理ソリューションをサポートしています。
+
+🏗️ APIは**柔軟で使いやすく、モジュール式**です。必要な機能を選び、数分で統合できます。
+
+🎨 デザインとユーザー体験がすべてです。ドキュメントの品質からユーザーのオンボーディングまで、**開発者にとって不要な複雑さを排除**しています。
+
+✨ AuthKitは**100万MAUまで無料**で、ボット対策、MFA、RBACなどを含みます。
+
+🤝 WorkOSは**Perplexity**、**Vercel**、**Webflow**など、数百の主要スタートアップに信頼されています。
+
+[WorkOSを始める](https://workos.com/?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=q32024) 🚀
+
+***
+
+## 📱 React-Native {#react-native}
+
+* 💸 [Expo Starter Kit - iOS、Android、Web向けの機能満載スターターキットでモバイルアプリを迅速にリリース](https://expostarter.com?utm_source=this-week-in-react\&utm_medium=newsletter\&utm_campaign=this-week-in-react)
+* 🐦 [Expo DOM ComponentsのmacOSデモ](https://x.com/Baconbrix/status/1845612129342165217): Electron/Tauriデスクトップアプリ（WebView）からネイティブへの段階的な移行手段として将来活用可能
+* 👀 [React Native PR - iOSの制御コンポーネントにおけるカーソル問題の修正（NewArch）](https://github.com/facebook/react-native/pull/46970): 先週Danが報告した主要なテキスト入力問題が新アーキテクチャ向けに修正
+* 👀 [React Nativeドキュメント - Pure C++ Turbo Native Modules](https://reactnative.dev/docs/next/the-new-architecture/pure-cxx-modules)
+* 🗓️ [RNLConf](https://www.reactnativelondon.co.uk/?utm_source=thisweekinreact) - 🇬🇧 ロンドン - 11月14-15日 - コード「TWIR」で10%割引。Alex Hunt、Charlotte Isambert、Cedric Van Putten、Charlie Cheeverが登壇！
+* 📜 [OMH Cloud Storage Moduleの紹介](https://www.callstack.com/blog/introducing-the-omh-cloud-storage-module)
+* 📜 [Clerk、Convex、Expoで日次ワークアウトトラッカーを構築](https://expo.dev/blog/build-a-daily-workout-tracker-with-clerk-convex-and-expo)
+* 📜 [React NativeでWebViewの通知を管理](https://www.premieroctet.com/blog/en/notification-webview)
+* 📦 [react-native-edge-to-edge - Androidアプリコンテンツをシステムバー下に表示](https://github.com/zoontek/react-native-edge-to-edge): Expoがサポートする重要インフラライブラリ、Android 15+で特に有用
+* 📦 [Bottom Sheet 5.0 - RNGH v2、Webサポート、動的サイズ変更、FlashList統合](https://gorhom.dev/react-native-bottom-sheet/blog/bottom-sheet-v5)
+* 📦 [Metro 0.81 - RN 0.76向け予定、`fileSystemLookup`、`onClose`](https://github.com/facebook/metro/releases/tag/v0.81.0)
+* 📦 [Ignite 10.0 - Infinite Redの実戦検証済みReact Nativeスターター](https://shift.infinite.red/what-is-ignite-x-9ecde0b34d75): Expo prebuild、ダークモード、Expo Router、MKKV、i18next、RNTLなどを搭載
+* 📦 [react-native-bootsplash 6.2 - Kotlin書き換え、透過バーの改善処理](https://github.com/zoontek/react-native-bootsplash/releases/tag/6.2.0)
+* 📦 [react-native-permissions 5.0 - iOS 18限定連絡先権限、権限昇格、旧バージョン削除](https://github.com/zoontek/react-native-permissions/releases/tag/5.0.0)
+* 📦 [react-native-fast-confetti - Skia Atlasベース](https://github.com/AlirezaHadjar/react-native-fast-confetti)
+* 🎥 [Expo - ユニバーサルアプリチュートリアルシリーズ - React Nativeアプリ構築入門](https://www.youtube.com/playlist?list=PLsXDmrmFV_AT6I9knFlpzP61_appiRTNP)
+* 🎥 [Catalin Miron - カスタムアニメーションタブ](https://www.youtube.com/watch?v=zBBMimH6lTc)
+* 🎥 [Simon Grimm - Expoの競合となるか？（One）](https://www.youtube.com/watch?v=GY2pCVn0Bm8)
+
+***
+
+## 🔀 Other {#other}
+
+* 👀 [TC39 - 第104回会議のアップデート](https://dev.to/hemanth/updates-from-the-104th-tc39-meeting-14cp): 14の提案が進行中で、そのうち4つがステージ4に到達しES2025に採用予定！
+* 👀 [Companion Windows](https://github.com/explainers-by-googlers/companion-windows): Googleが取り組むウェブ機能の解説。MPA（マルチページアプリケーション）において動的ウィジェットの状態をナビゲーション中に保持するための不足していたピースとなる可能性
+* 📜 [Express v5の紹介: Node.jsフレームワークの新時代](https://expressjs.com/2024/10/15/v5-release): v5.0が数週間前にリリースされ、破壊的変更のリストと共に公式ブログ記事が公開。v5がまだ`latest`タグ付けされていない理由も説明
+* 📦 [Node.js 23.0 - require(ESM)がデフォルトで有効化](https://nodejs.org/en/blog/release/v23.0.0)
+* 📦 [TypeScript 5.7 Beta - 新チェック機能、es2024 lib/target、相対パス書き換え、パフォーマンス改善](https://devblogs.microsoft.com/typescript/announcing-typescript-5-7-beta/)
+* 📦 [srvx - Deno、Bun、Node.jsで動作するウェブプラットフォーム標準ベースのユニバーサルサーバーAPI](https://github.com/unjs/srvx)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/205/meme.jpg)](https://x.com/sebastienlorber/status/1846445741188743509)
+
+[![alt](/emails/issues/205/meme2.jpg)](https://x.com/_tjzel/status/1839275827759816882)
+
+それではまた！ 👋

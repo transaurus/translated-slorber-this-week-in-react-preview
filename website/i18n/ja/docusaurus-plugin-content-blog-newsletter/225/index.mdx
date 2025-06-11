@@ -1,0 +1,145 @@
+---
+slug: /225
+title: "This Week In React #225: React Router, React Aria, Ark, moveBefore(), Ark | JSC, Lynx, Metro, Reanimated, AI, Radon, Galeria, Zeego, Legal | TypeScript, Deno, Web Almanac"
+authors: [slorber]
+date: 03-12-2025
+---
+
+みなさん、こんにちは！
+
+今週の注目コンテンツ：
+
+* **React**: 多様な記事やReact Router、React Ariaの素晴らしいリリースが目白押し
+* **React Native**: Lynxへの反響を含め、活発な動きがあります
+* **その他**: Goへの移植が発表されたTypeScriptなど
+
+パートナーカンファレンス🗓 [Future Frontend](https://futurefrontend.com/?utm_source=thisweekinreact) - 🇫🇮 エスポー - 5月26-28日。フィンランドで開催されるシングルトラックカンファレンスで未来のフロントエンドを体感しましょう！
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Reactコードレビュー時間とバグを半減](/emails/issues/225/coderabbit.jpg)](https://www.coderabbit.ai?utm_source=newsletter\&utm_medium=email\&utm_campaign=this_week_in_react_mar25)
+
+**[Reactコードレビュー時間とバグを半減](https://www.coderabbit.ai?utm_source=newsletter\&utm_medium=email\&utm_campaign=this_week_in_react_mar25)**
+
+コードレビューは重要ですが時間がかかります。CodeRabbitはAIコパイロットとして、プルリクエストごとに即座にレビューコメントと潜在的な影響を提供します。
+
+問題指摘だけでなく、ワンクリック修正提案やAST Grepパターンを使ったカスタムコード品質ルール定義により、従来の静的解析ツールでは見逃しがちな微妙な問題も捕捉します。
+
+CodeRabbitはこれまで500万以上のPRをレビューし、100万リポジトリに導入され、5万のオープンソースプロジェクトで利用されています。オープンソースリポジトリは無料で利用可能。[今すぐ始めましょう！](https://www.coderabbit.ai?utm_source=newsletter\&utm_medium=email\&utm_campaign=this_week_in_react_mar25)
+
+***
+
+## ⚛️ React {#react}
+
+[![React Router 7.3 - ルートミドルウェア](/emails/issues/225/rr.jpg)](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v730)
+
+**[React Router 7.3 - ルートミドルウェア](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v730)**
+
+このReact Routerリリースでは主要な新機能としてミドルウェアが導入されました。まだ本番環境対応ではありませんが、`future.unstable_middleware`フラグで有効化可能です。フレームワーク/ライブラリ両モードで利用でき、クライアントとサーバーミドルウェアが区別されています。ロギング、認証など横断的関心事の実装に使用できます。
+
+関連コミュニティリソース：
+
+* 📜 [React Routerでミドルウェアを使用する](https://sergiodxa.com/tutorials/use-middleware-in-react-router)
+* 📜 [React Routerミドルウェアのテスト](https://sergiodxa.com/tutorials/test-middleware-in-react-router)
+* 📜 [React Routerミドルウェアでリクエストごとのシングルトンを作成する方法](https://sergiodxa.com/tutorials/create-a-per-request-singleton-with-react-router-middleware)
+* 🎥 [Alem Tuzlak - React Routerミドルウェアが登場！](https://www.youtube.com/watch?v=H9WmtBchWtQ)
+
+***
+
+* 💸 [エンジニア向けプロダクト - アクティベーションとは何か、なぜエンジニアは気にするべきか？](https://dub.link/twir-mar12)
+* 👀 [React `moveBefore()` + `<ViewTransition>` デモ](https://bsky.app/profile/did\:plc\:hxmev3uady7j4litwnr5fzbg/post/3lk6phwfik226): この画期的なブラウザ機能により、DOMノードを状態を保持したまま移動/並べ替え可能（動画プレイヤーやiframeに有用）。最近DOM Living Standardに追加され、Chrome 133でサポート開始。React DOMレコンサイラでも実験的リリースとして有効化されました。ViewTransitionコンポーネントとの連動デモを公開。
+* 🗓️ [dotJS 2025](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 パリ - 4月3日 - 開催まであと3週間！欧州では稀なトップコントリビューター（Ryan Dahl、Wes Bosら）と1対1で交流可能。コード「TWIR」でチケット15%OFF。
+* 🗓 [StrapiConf](https://conf.strapi.io/?utm_source=thisweekinreact) - 🇫🇷 パリ - 5月13日。基調講演者発表：Sébastien Chopin、Matt Kane、Haris Ali Khan！コード「TWIR」で10%割引。
+* 📜 [React Router - ルートモジュール分割](https://remix.run/blog/split-route-modules): React Router 7.2の新機能フラグでネットワークウォーターフォールを回避するルートモジュール分割を解説。
+* 📜 [React.memoを超えて：よりスマートなパフォーマンス最適化手法](https://cekrem.github.io/posts/beyond-react-memo-smarter-performance-optimization/): メモ化前にアプリ構造の見直しとコンポジション活用を推奨。
+* 📜 [Toastフィードバック付きServer Actions（useActionState）](https://www.robinwieruch.de/react-server-actions-toast-useactionstate/): Server Action後のToast表示方法を多角的に検証。`useEffect`依存しない実装がおすすめ。
+* 📜 [React Routerエラー報告をゼロから構築](https://programmingarehard.com/2025/03/11/react-router-error-reporting.html/): ソースマップを読み込みエラー周辺のオリジナルコードを表示するメール送信システムを実装。他のJS環境でも応用可能な知見。
+* 📜 [ニューヨーク・タイムズがEnzymeからReact Testing Libraryへ体系移行した方法](https://open.nytimes.com/how-the-new-york-times-systematically-migrated-from-enzyme-into-react-testing-library-b3ea538d001c): 単純なテストから段階的移行し、コントリビューター向けテンプレートを提供。
+* 📜 [Railsビュー、Webコンポーネント、React。なぜ選択が必要？](https://www.aha.io/engineering/articles/rails-views-web-components-react): 各技術に適した用途があり、状態管理が必要なリッチインタラクションにのみReactを採用。
+* 📜 [プリレンダリングNext.jsサイトの実際のトラフィック耐性](https://martijnhols.nl/blog/how-much-traffic-can-a-pre-rendered-nextjs-site-handle): 自己ホスト型Next.jsブログのプリレンダリング+SSRで秒間リクエスト処理能力を負荷テスト。
+* 💸 [VS Code拡張: コンポーネント（とそのprops）の使用箇所を可視化](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-mar-2025)
+* 📦 [React Aria - 2025年3月5日リリース - Toast、Tree、Virtualizer、Tailwind 4対応、Autocomplete改善、Command Palette、DatePicker RTL、`usePress`修正など](https://react-spectrum.adobe.com/releases/2025-03-05.html)
+* 📦 [Ark UI 5.0 - クロスフレームワークヘッドレスUIライブラリ - 更に高速・軽量化](https://ark-ui.com/react/docs/overview/changelog#:~\:text=.-,%5B5.0.0%5D%20%2D%202025%2D03%2D06)
+* 🎥 [Jack Herrington - TanStackでのReact/Solid-JSモジュール連携！](https://www.youtube.com/watch?v=e8yY9ZgPozw)
+* 🎙️ [Front-end Fire 84 - TanStack Form v1、ByteDanceがLynx発表、VS Code AI進化](https://front-end-fire.com/episodes/84/)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![ReactアプリのUXを再考するReactile](/emails/issues/216/reactile.jpg)](https://www.reactile.net/?utm_source=ThisweekinReact)
+
+**[ReactアプリのUXを再考するReactile](https://www.reactile.net/?utm_source=ThisweekinReact)**
+
+Reactileは、直感的なタイル表示とワークスペースを備えたUI/UXのターンキーフレームワークです。単一のブラウザタブ内で大規模なWebソリューション向けに並列ワークロードを促進します。Reactを使用して独自のビューコンテナ、ウィジェット、ロジックを実装し、表示はReactileに任せることができます。
+
+さらに、Reactileは以下も提供します:
+
+* 時間や複数デバイス間で統一されたワークフローを可能にするPromiseベースの永続化メカニズム
+* タイルにネストされたタブを使用する機能
+* 簡素化されたグローバル検索メカニズム
+* CSS @containerベースのレスポンシブ対応
+* その他多くの機能
+
+バージョン2が間もなくリリース予定です。30日間の無料トライアルを開始しましょう。詳細はreactile.netでご確認ください。
+
+[Reactile - 新しいReact UI管理システム](https://www.reactile.net/price?utm_source=ThisweekinReact)
+
+***
+
+## 📱 React-Native {#react-native}
+
+* 💸 [Expo向けネイティブPasskeysサポートの導入 - 次世代プロジェクトで急成長中の認証戦略を活用](https://go.clerk.com/I4o9cHy)
+* 🧵 [CallstackのLynx深堀り - 3時間ライブストリームの要点](https://threadreaderapp.com/thread/1898114457634500692.html)
+* 📜 [React Native Reanimatedがスタイルを更新する仕組み](https://blog.swmansion.com/how-react-native-reanimated-updates-the-styles-a-deep-dive-338ab22e9f21): UIプロパティとネイティブプロパティの違いを解説する技術解説
+* 📜 [モバイル向けローカルLLMは現時点ではギミック](https://www.callstack.com/blog/local-llms-on-mobile-are-a-gimmick): オンデバイスAIモデル実行の課題（モデルサイズ/フォーマット、CPU/バッテリー消費、品質/速度のトレードオフ）の概要
+* 📜 [推移的依存関係とReact Native Autolinking](https://shift.infinite.red/transitive-dependencies-and-react-native-autolinking-d4d4b7a651cf): 推移的依存関係は自動リンクされない正当な理由があり、明示的に`peerDependencies`として宣言する必要がある
+* 📜 [Expoアプリ向け堅牢なテストハーネスの構築方法](https://expo.dev/blog/how-to-build-a-solid-test-harness-for-expo-apps): RNアプリテストに適したマインドセットを養う
+* 📜 [React Native vs Lynx JS](https://shift.infinite.red/react-native-vs-lynx-js-b1fffb0f0152)
+* 📜 [Android開発者向けReact Nativeガイド](https://dev.to/amazonappdev/an-android-developers-guide-to-react-native-j66)
+* 📦 [React Native JavaScriptCore](https://github.com/react-native-community/javascriptcore): Hermesランタイムが主流となる中、React NativeチームはJSCエンジンを別リポジトリに分離。RN 0.79でJSCを選択可能に。組み込みJSCはRN 0.81/0.82で削除予定
+* 📦 [Metro 0.82 - `package.json#exports`解決と遅延ファイルハッシュをサポート](https://github.com/facebook/metro/releases/tag/v0.82.0): RN 0.79に含まれるアップデート
+* 📦 [React Native Worklets 0.1](https://github.com/software-mansion/react-native-reanimated/tree/main/packages/react-native-worklets): Software MansionがReanimatedのワークレットシステムを独立したマルチスレッドライブラリとして分離。開発中
+* 📦 [Galeria 1.0 - ユニバーサル画像ビューア](https://github.com/nandorojo/galeria/releases/tag/v1.0.0): New Arch/Web対応、任意の画像コンポーネントと連携可能
+* 📦 [Zeego 3.0 - ユニバーサルメニュー/ドロップダウン](https://github.com/nandorojo/zeego/releases/tag/v3.0.1): New Arch/RN 0.77/Expo 52対応
+* 📦 [React Native Legal - 依存関係/ライセンス確認画面を自動生成](https://github.com/callstackincubator/react-native-legal)
+* 📦 [React Native Executorch 0.3 - オンデバイスAI体験（音声認識/OCRなど）](https://github.com/software-mansion/react-native-executorch/releases/tag/v0.3.0)
+* 📦 [Radon IDE 1.4 - React Query DevTools/React Scan再レンダリング可視化/JSサンプリングプロファイラ](https://github.com/software-mansion/radon-ide/releases/tag/v1.4.0)
+* 📦 [Testing Library 13.1 - React 19/React Native 0.78サポート](https://github.com/callstack/react-native-testing-library/releases/tag/v13.1.0)
+* 📦 [React Native Emoji Popup - ネイティブプリミティブ使用（iOSはMCEmojiPicker/AndroidはEmoji2）](https://github.com/okwasniewski/react-native-emoji-popup)
+* 🎥 [Theo - Lynxは驚異的（TikTokのReact Nativeキラー技術解説）](https://www.youtube.com/watch?v=No0k-TMRuMA)
+* 🎥 [Simon Grimm - React Nativeは危機か？（Lynx/React Native Framework/Vercel）](https://www.youtube.com/watch?v=aqgQatFPNSw)
+* 🎥 [Catalin Miron - Reanimatedを使った円形カルーセル](https://www.youtube.com/watch?v=6Va1yBFdUxI)
+* 🎙️ [React Native Radio 324 - Alfred Lieth Årøeと語るExpo移行](https://infinite.red/react-native-radio/rnr-324-migrating-to-expo-with-alfred-lieth-are)
+* 🎙️ [Rocket Ship 62 - Betoと語るナビゲーション/スタイリング/React Nativeの現状](https://share.transistor.fm/s/6a224b64)
+
+***
+
+## 🔀 Other {#other}
+
+* 📜 [Microsoft - 10倍高速なTypeScript](https://devblogs.microsoft.com/typescript/typescript-native-port/): コンパイラがGoに移植中で、10倍高速化されTS 7.0でリリース予定。詳しくは[Syntax.fmポッドキャスト](https://www.youtube.com/watch?v=ZlGza4oIleY)でTypeScriptチームへのインタビューをチェック（RustではなくGoを選んだ理由など）。
+* 📜 [Web Almanac 2024 - JavaScript](https://almanac.httparchive.org/en/2024/javascript): 最終章（JS編）が公開。Reactの採用率は10%（+25%）だが、JQuery（74%）に比べるとまだ小規模。
+* 📜 [NodeがTypeScriptサポートを追加。Denoへの影響は？](https://deno.com/blog/typescript-in-node-vs-deno): 2つのランタイムは異なる方法でTSをサポート。例えばDenoは組み込みの型チェックとJSX/TSXサポートを有する。
+* 📜 [document.currentScriptを使ったインラインレンダリング](https://leanrada.com/notes/inline-rendering-currentscript/)
+* 📜 [再現性 vs. プロビナンス: JavaScriptサプライチェーンの信頼性](https://blog.vlt.sh/blog/reproducibility)
+* 📦 [Fast-check 4.0 - プロパティベーステストフレームワーク](https://fast-check.dev/blog/2025/03/10/whats-new-in-fast-check-4-0-0/)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/225/meme.jpg)](https://x.com/schlimmson/status/1895489183101440486)
+
+[![alt](/emails/issues/225/meme2.jpg)](https://x.com/sebastienlorber/status/1899482883472961833)
+
+それでは！👋

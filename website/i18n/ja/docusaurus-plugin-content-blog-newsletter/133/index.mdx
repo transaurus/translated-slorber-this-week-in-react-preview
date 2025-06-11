@@ -1,0 +1,169 @@
+---
+slug: /133
+title: "This Week In React #133: Astro, React dying?, Qwikify, CRA, Next.js, Remix, Redux, Storybook, Redwood, Nextra, React-Native..."
+authors: [slorber]
+date: 01-31-2023
+---
+
+みなさん、こんにちは！
+
+今年は、このニュースレターをもう少し読みやすくしたいと考えています。何か提案はありますか？リンクが多すぎて削除できるものがあると思いますか？それとも網羅的な側面がお好きですか？私の目標は、このニュースレターの作成時間を短縮し、オリジナル記事のような興味深いコンテンツを提供できるようにすることです。詳細は後ほど説明します。
+
+Docusaurusに興味がある方は、最近[Semaphoreポッドキャストでそれについて話しました](https://semaphoreci.com/blog/sebastien-lorber-docusaurus)。
+
+クリエイティブなCSS開発者向けの素晴らしいインスピレーション源である**[CSS Animation Weekly](https://weekly.cssanimation.rocks/?utm_source=thisweekinreact)**をチェックしてください。
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアル形式 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![refine](/emails/issues/132/refine.png)](https://github.com/refinedev/refine)
+
+[**refine - 100%オープンソースのヘッドレスReactフレームワークでCRUDアプリを構築**](https://github.com/refinedev/refine)
+
+スキルを次のレベルに引き上げる準備をしましょう！私たちはオープンソースのrefineハッカソンを開催することに興奮しています。
+
+1500ドルと特別なスワッグキットを獲得できるチャンスです！
+
+Strapi、Appwrite、Meilisearch、Medusaと協力できることを嬉しく思います。彼らはrefineハッカソンをスポンサーしており、勝者はそれぞれからスワッグキットを受け取ります！
+
+[ハッカソンの詳細はこちら](https://s.refine.dev/hackathon)。
+
+***
+
+## ⚛️ React {#react}
+
+[![Astroレンダリングv2](/emails/issues/133/astro-rendering.jpg)](https://astro.build/blog/hybrid-rendering/)
+
+**[Astro - ハイブリッドレンダリングで新たな可能性を解き放つ](https://astro.build/blog/hybrid-rendering/)**
+
+Astro 1では、サイト全体に対してグローバルな選択をする必要がありました：100%静的（SSG）または100%サーバー（SSR）。Astro 2.0では、各ページごとに選択できるようになりました。この記事では、Astroビルドの内部動作と、この新機能をサポートするためにどのように進化したかが詳しく説明されています。彼らは静的解析を使用して、静的ルートとSSRルートを分離しています。
+
+***
+
+[![なぜReactは死なないのか](/emails/issues/133/reactisntdying.jpg)](https://tkdodo.eu/blog/why-react-isnt-dying)
+
+**[なぜReactは死なないのか](https://tkdodo.eu/blog/why-react-isnt-dying)**
+
+Dominikは、Reactがなぜ死なないのかを説明しています。ReactはJSXとコンポーネント、宣言的UIの概念を普及させました。代替手段は良い部分を取り入れ、問題を解決しようとしますが、そのエコシステムの規模と時間とともに強くなるコミュニティを考えると、挑戦するのは難しいでしょう。大きなブレークスルーイノベーションが必要です。フレームワークに依存しないライブラリ（TanStack）は、知識を一つのエコシステムから別のエコシステムに移す役割を果たします。
+
+***
+
+[![再開可能なReact: Qwik内でReactを使用する方法](/emails/issues/133/qwik.jpg)](https://www.builder.io/blog/resumable-react-how-to-use-react-inside-qwik)
+
+**[再開可能なReact: Qwik内でReactを使用する方法](https://www.builder.io/blog/resumable-react-how-to-use-react-inside-qwik)**
+
+この記事では、QwikとReactの統合について取り上げています。Qwikは、ハイドレーションではなく再開可能性（resumability）を基盤としたベータ版の革新的なフレームワークです。Qwikは`qwikify$()`メソッドを提供しており、既存のReactコンポーネントをQwikアプリで使用できるように適応させることができます。これには複数のハイドレーションモードが用意されています。バンドルサイズを可能な限り削減するために、Reactコンポーネントのハイドレーションを回避し、ネイティブのDOMイベントを直接利用することも可能です。
+
+***
+
+* 💬 [Create React Appの推奨をViteに置き換える - Dan Abramovの回答](https://github.com/reactjs/reactjs.org/pull/5487#issuecomment-1409720741): Danによる長いコメント。CRAの経緯、目的、未来について5つの選択肢を提示。要約: CRAを非推奨にはしたくないが、推奨もしたくない。SSG/SSRを自ら放棄することは良いことではない。CRA CLIがNext.js、Remix、CRAなど複数の人気フレームワークを選択可能なランチャーになる可能性も。
+* 👀 [AsyncContext + React](https://twitter.com/sebmarkbage/status/1620442034598477824): Sebastian Markbågeが、TC39ステージ0提案の[AsyncContext](https://github.com/legendecas/proposal-async-context)をReactコンテキストとして直接使用するアイデアを提唱。
+* 👀 [「Next.jsに静的に型付けされたリンクが導入予定」](https://twitter.com/shuding_/status/1620137501192253440): 型安全なルーティングにとって朗報。おそらく新しい[TypeScript言語サーバープラグイン](https://twitter.com/delba_oliveira/status/1592209522281439232)で実装される可能性があり、コード生成ステップは不要に？
+* 👀 [Next.jsに導入予定 - SEOサポートの改善！](https://twitter.com/leeerob/status/1619743437577912321): 新しい`metadata`エクスポート（[新しいTSプラグインで型付けされる？](https://twitter.com/shuding_/status/1619775431921762304)）
+* 📜 [優れたコンポーネント設計の鍵は自己中心性](https://www.smashingmagazine.com/2023/01/key-good-component-design-selfishness/): `<Button>`コンポーネントの設計変遷。内部ボタンコンテンツをプロップスで制御しようとしたことが問題。`children`とコンポジションを使用し、ボタンの責任を制限する価値がある。
+* 📜 [Storybook - Component Story Format 3がリリース](https://storybook.js.org/blog/storybook-csf3-is-here/): 新フォーマットがベータを脱し、興味深い改善（ボイラープレート削減、コンポジション、`play`関数など）を提供しながら後方互換性を維持。
+* 📜 [Remixで1つのフォームに複数のアクションを作成する方法](https://www.wking.dev/library/how-to-create-one-form-with-many-actions-in-remix): HTMLボタンの`name`と`value`プロップスを使用し、各アクションタイプのスキーマでTypeScriptユニオン型を活用。
+* 📜 [Nextra 2 – Next.js静的サイトジェネレーター](https://the-guild.dev/blog/nextra-2): Next.js向け静的サイトジェネレーターNextra v2の主な新機能を紹介。
+* 📜 [NetlifyがStorybookを視覚的回帰テストに活用する方法](https://www.netlify.com/blog/storybook-visual-regression-testing/)
+* 📜 [Reactの不思議な事例](https://cult.honeypot.io/reads/the-curious-case-of-react/)
+* 🎥 [Andrew Clarkが語るRedux誕生秘話](https://www.youtube.com/watch?v=WvRcZkuXmpo): 2014-2015年頃を振り返るインタビュー。[Reactドキュメンタリー](https://www.youtube.com/watch?v=gmp0istg5xo)の予告編的コンテンツ。Reduxは最もエレガントなFlux実装を提供し、リデューサーの概念を普及。Andrewはプロジェクトを否定せず、データ取得などに対してReactがより良い代替案を提案していることを喜んでいる。
+* 🎥 [ネストされたReactコンポーネントについて私が間違っていたこと](https://www.youtube.com/watch?v=2sAdzy90GtE): Jackが、なぜコンポーネント内で別コンポーネントを宣言すべきでないかをわかりやすく説明。
+* 🎥 [RemixとReact Routerでのスクロール管理](https://www.youtube.com/watch?v=4_H8j3rkpjI)
+* 🎥 [2023年1月時点のReactエコシステムの状況](https://www.youtube.com/watch?v=_nGuk2Gs2oc)
+* 📦 [Redwood 4.0](https://community.redwoodjs.com/t/redwood-v4-0-0-is-now-available/4538): 新しいAuth API、GraphQL Yoga v3、GraphQL Armorなどを含むv4.0正式リリース。
+* 📦 [Remix 1.12](https://github.com/remix-run/remix/releases/tag/remix%401.12.0): フラグ付きで新しい開発サーバープレビューを導入。
+* 📦 [React Router 6.8.0](https://github.com/remix-run/react-router/releases/tag/react-router%406.8.0)
+* 📦 [Jotai v2](https://twitter.com/jotaijs/status/1620436882034421762)
+* 📦 [Docusaurus 2.3](https://docusaurus.io/blog/releases/2.3)
+* 📦 [TinyBase 3.0](https://twitter.com/tinybasejs/status/1619763700650614784)
+* 📦 [Redux Toolkit 1.9.2](https://twitter.com/acemarke/status/1619445949822009346)
+* 🤖 [Houston - AstroアシスタントAI](https://twitter.com/astrodotbuild/status/1619053233082859521): Astroドキュメントが独自のAIを搭載し質問に回答。Remixも[同様の取り組み](https://twitter.com/mjackson/status/1619419579754889218)を検討中。
+* 🐦 [Lee Robinson - 「私のウェブサイトの新バージョン」](https://twitter.com/leeerob/status/1620073039131213824)
+
+<SubscribeFormEmbed />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![surveyjs.jpg](/emails/issues/133/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact\&utm_medium=referral)
+
+**[拡張可能なJavaScript製のアンケート＆フォームライブラリ](https://surveyjs.io/?utm_source=thisweekinreact\&utm_medium=referral)**
+
+[SurveyJS](https://github.com/surveyjs)は、ウェブアプリに簡単に統合できるオープンソースのJavaScriptフォームライブラリセットです。**複数のフォームを作成・実行**でき、すべての機密データを自社サーバーに保持したり、**セルフホスト型のWYSIWYGフォームビルダー**を提供して非技術者ユーザーが直接利用できるようにしたりできます。
+
+また、**アンケート結果をカスタムダッシュボードで分析**したり、フォームをPDFに保存したり、単に**編集可能なPDFファイルに変換**したりすることも可能です。**ReactとAngularのレンダリングをネイティブサポート**しており、バックエンドは完全な自由が利きます。**あらゆるサーバーとデータベースの組み合わせと完全互換**です。
+
+***
+
+## 📱 React-Native {#react-native}
+
+* 📜 [React Native 0.71-RC0 Android障害の事後分析](https://reactnative.dev/blog/2023/01/27/71rc1-android-outage-postmortem): React-Nativeチームが、2022年11月に発生したMavenリリースと動的Gradleバージョン依存関係によるAndroidビルド障害を振り返ります。
+* 📜 [2022年の振り返り — Software MansionにおけるReact Nativeオープンソース活動](https://blog.swmansion.com/summary-of-2022-react-native-open-source-at-software-mansion-9edf929db005): Software Mansionの活動を振り返る良記事。今年も非常に活発な活動が伺えます！
+* 📜 [React Nativeのジェスチャーを自然に感じさせる方法](https://shopify.engineering/making-react-native-gestures-feel-natural): アニメーションをより自然に見せるための有用なテクニック（スプリング、速度、抵抗）を紹介。
+* 📜 [React NativeでApache EChartsを使用する](https://medium.com/@chenzhiqing/using-apache-echarts-in-react-native-55c6d555ac03): React-Native-SVGまたはReact-Native-Skiaを使用してReact-Native上でApache EChartコンポーネントをレンダリングする新しいライブラリを紹介。
+* 📜 [アプリの主要部分のテストを実行する](https://www.callstack.com/blog/run-tests-for-key-pieces-of-your-app)
+* 📜 [Gradle設定でAndroidアプリのサイズを最適化する](https://www.callstack.com/blog/optimize-android-application-size-with-gradle-settings)
+* 📖 [Open Native Docs](https://twitter.com/ammarahm_ed/status/1620136052152500225): 新しいオンラインドキュメント。React-Native、NativeScript、Flutterなど複数のエコシステムで動作するネイティブライブラリの統一を提案。
+* 🎨 [Fabric + React-Native-macOS デモ - WIP](https://twitter.com/ReactNativeMSFT/status/1619037832496156674)
+* 🎨 [Expo Router - クイックノートデモ](https://twitter.com/Baconbrix/status/1619609828380540929)
+* 🎨 [ExpoでのCSS Modulesデモ](https://twitter.com/Baconbrix/status/1619179207250296833)
+* 🐦 ["PS5ユーザーインターフェースをReact Nativeで実装"](https://twitter.com/Kelset/status/1619991122130137089)
+* 🐦 ["react-native-drawer-layoutが復活"](https://twitter.com/satya164/status/1620186837917786114)
+* 📦 [React-Native 0.70.7](https://twitter.com/CipolleschiR/status/1620468072493752320)
+* 📦 [react-native-select-pro](https://github.com/MobileReality/react-native-select-pro)
+* 🎙 [React-Native-Radio 257 - React Nativeをどう改善できるか part 2 - Metaの回答！](https://reactnativeradio.com/episodes/rnr-257-meta-responds-how-can-we-improve-react-native-part-2)
+* 🎙️ [The React Native Show 20 - Jonny BurgerによるRemotionとReact Nativeのアニメーション](https://www.youtube.com/watch?v=1VW5Gluxa4w)
+
+***
+
+## 🧑‍💻 Jobs {#jobs}
+
+🧑‍💼 [**TLDR - シニアソフトウェアエンジニア（リモート、\$120k-200k）**](https://tldr.tech/jobs/senior-software-engineer/23?utm_source=thisweekinreact)
+
+TLDRニュースレターが、採用プラットフォームやその他の内部プロジェクトを構築する最初のエンジニアを募集しています。Next.jsとPostgres/Supabaseの経験があり、サイドプロジェクトや小規模チームでの開発経験がある方を求めています。
+
+🧑‍💼 [**Callstack - シニアReact Native開発者 - 完全リモート、B2B月額PLN 21-32k net**](https://www.callstack.com/senior-react-native-developer)
+
+世界で最も使われているアプリに携わりたいですか？React Native技術の共創に興味はありませんか？React & React NativeのリーダーであるCallstackチームに参加してください。詳細はウェブサイトをご覧ください。あなたの応募をお待ちしています - あなたの実力を見せてください！
+
+🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\&t=ArRLC77BpRwXXCdx8fnUqw)
+
+React Nativeに特化した開発者向けに複数のポジションを募集しています！報酬は約160kドル＋10％のボーナスです。React Nativeの実務経験があり、米国在住であることが条件です。詳細は[@gabe\_g2i](https://twitter.com/gabe_g2i)にDMでお問い合わせください。This Week in Reactからの紹介であることをお忘れなく。
+
+💡 [求人の掲載方法は？](https://thisweekinreact.com/sponsor)
+
+***
+
+## 🔀 Other {#other}
+
+* [TC39 2023年1月会議](https://github.com/babel/proposals/issues/86): [Immutable Array methods (change array by copy)](https://twitter.com/AndaristRake/status/1620154153250217988)や[Symbols as WeakMap keys](https://twitter.com/sebastienlorber/status/1620385689853661185)など、素晴らしい提案がステージ4に進んでいます。
+* [TypeScript 5.0 Beta](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-beta/): [Matt Pocockによるこの動画](https://www.youtube.com/watch?v=iOTAFRFgm8I)では、デコレータやconst型パラメータなど、最も興味深い機能のいくつかが紹介されています。
+* [Safari Technology Preview 162のリリースノート](https://webkit.org/blog/13703/release-notes-for-safari-technology-preview-162/): CSSネスティング、宣言的シャドウDOMなど...
+* [Scrollend、新しいJavaScriptイベント](https://developer.chrome.com/blog/scrollend-a-new-javascript-event/): すでにChromeとFirefoxで利用可能で、ポリフィルも提供されています。
+* ["Turbopackがwebpackローダーのサポートを追加中"](https://twitter.com/jaredpalmer/status/1619071988181651456)
+* [Flutterの今後](https://medium.com/flutter/whats-next-for-flutter-b94ce089f49c)
+* [イベントリスナーを削除するための選択肢](https://www.macarthur.me/posts/options-for-removing-event-listeners)
+* [Deno 1.30: 組み込みのNodeモジュール](https://deno.com/blog/v1.30)
+* [2023年のWeb開発トレンド10選](https://www.robinwieruch.de/web-development-trends/)
+* [サーバーレス＆エッジ向けデータベースの2023年状況](https://leerob.io/blog/backend)
+* [PlaywrightのSoft Assertionsでテスト体験を向上](https://timdeschryver.dev/blog/improve-your-test-experience-with-playwright-soft-assertions)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/133/meme.jpg)](https://twitter.com/t3dotgg/status/1618932062236594179)
+
+それではまた！👋

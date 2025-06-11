@@ -1,0 +1,145 @@
+---
+slug: /195
+title: "This Week In React #195: Compiler, Refactoring components, XState Store, Next.js, Redwood, Vitale, Astro, LLMs, Astro, Dédale, XR, tldraw, RN + Amazon, RN new styles, Gesture Handler, Reanimated, TC39, Node, TypeScript..."
+authors: [slorber]
+date: 08-07-2024
+---
+
+みなさん、こんにちは！
+
+React界隈では今週も落ち着いた1週間でした。大きな発表はありませんが、読むべき素晴らしいコミュニティ記事が多数あります。
+
+Node.js v22.6がリリースされ、実験的なTypeScriptサポートが追加されました！🎉
+
+パートナーイベントの[React Universe Conf](https://www.reactuniverseconf.com/?utm_source=thisweekinreact)（🇵🇱 ポーランド・ヴロツワフ - 9月5-6日、旧React Native EU）をチェックしてください。コード「TWIR」で10%オフになります。今年は本当に素晴らしいスピーカー陣が揃っています！
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![WorkOS: B2B SaaS向けモダンアイデンティティプラットフォーム](/emails/issues/195/workOS.jpg)](https://workos.com/?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=q32024)
+
+**[WorkOS: B2B SaaS向けモダンアイデンティティプラットフォーム](https://workos.com/?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=q32024)**
+
+WorkOSを使えば、数行のコードで企業向け販売を開始できます。
+
+🔐 WorkOS AuthKitは、**SSO、SCIM、RBAC、FGA**を含む完全なユーザー管理ソリューションをサポートします。
+
+🏗️ APIは**柔軟で使いやすくモジュール化**されています。必要な機能を選んで数分で統合可能です。
+
+🎨 デザインとユーザー体験がすべてです。ドキュメントの品質からユーザーオンボーディングまで、開発者にとって**不要な複雑さをすべて排除**します。
+
+✨ AuthKitは**100万MAUまで無料**で、ボット対策、MFA、RBACなどを含みます。
+
+🤝 WorkOSは**Perplexity**、**Vercel**、**Webflow**など数百の主要スタートアップに信頼されています。
+
+[WorkOSを始める](https://workos.com/?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=q32024) 🚀
+
+***
+
+## ⚛️ React {#react}
+
+* 💸 [Reactile – ReactベースのWebアプリへの新しいアプローチ。独自のビューを作成し、単一のブラウザタブでウィンドウやウィジェットを管理](https://www.reactile.net/?utm_source=reactnewsletter)
+* 🐦 [ZuckerbergがMetaの主要なオープンソースイニシアチブとしてReactを挙げる](https://x.com/Vjeux/status/1818766264833392763)
+* 🐦 [ReactBricksを使ったRSCによるビジュアル編集](https://x.com/rauchg/status/1819383553668370440)
+* 📖 [改訂版「Redux Essentials」チュートリアル](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)
+* 🗓️ [React-Africa](https://react-africa.com/?utm_source=thisweekinreact) - 🇲🇦 カサブランカ - 11月29日 - スピーカーラインナップ公開中、TWIRコードでチケット10%オフ！
+* 📜 [Reactコンパイラの仕組みは？](https://yongseok.me/blog/en/react_compiler_1/): Babelプラグイン、useMemoCache、HIR/SSA変換などReactコンパイラのコードを深掘りする4部作。技術的に高度な内容だが、各投稿の最後には主要アルゴリズムの概要も解説。Babelから独立したHIR（高レベル中間表現）を採用した設計が特徴。
+* 📜 [Unstyled Reactコンポーネントで時期尚早な抽象化を回避](https://buildui.com/posts/avoiding-premature-abstraction-with-unstyled-react-components): Samが具体的なFormボタンから、スタイリングの柔軟性を保つheadlessなLoadingButton抽象化へリファクタリングする過程を紹介。スタイル付きの抽象化は後からでも可能。
+* 📜 [煩雑なReactコンポーネントの常識的リファクタリング](https://alexkondov.com/refactoring-a-messy-react-component/): Alexが実世界の肥大化したFormコンポーネントを、サブコンポーネントやカスタムフックに分割して整理する手法を解説。
+* 📜 [XState Storeの紹介](https://tkdodo.eu/blog/introducing-x-state-store): Dominik（React Query）がZustandに代わる新たな選択肢として、より意見のある（状態/アクション分離、イベント駆動）XState Storeを評価。Daishiは類似インターフェースを実現する[Zustand-xsミドルウェア](https://github.com/zustandjs/zustand-xs)で応答。
+* 📜 [Next.jsでNotionをCMSとして利用](https://jordaneldredge.com/notes/notion-cms/): メモ作成・公開のフローを簡素化するセットアップ。NotionコンテンツをMarkdownに変換後、Next.jsアプリでレンダリング。
+* 📜 [Next.jsのunstable_cache()を解明](https://jordaneldredge.com/notes/unstable_cache/): クラスを返す危険性に関する注意と、キャッシュの落とし穴を網羅した関連記事/パッケージへのリンク。
+* 📜 [40行未満で自作React状態管理ライブラリ](https://paripsky.github.io/blog/build-your-own-react-state-management/): useSyncExternalStoreを使ったカスタムストア実装と、Immer統合などの改善提案。
+* 📜 [GitHub Vitale - VS Code用JavaScript/TypeScript/Web開発/AI実験のためのライブノートブック](https://githubnext.com/projects/vitale/): GitHub NextチームがViteベースの対話型ノートブック技術を発表。Reactコンポーネントのセル内レンダリングをサポート。
+* 📜 [フロントエンドセキュリティチェックリスト](https://www.trevorlasn.com/blog/frontend-security-checklist): ReactコンテキストでのXSS/CSRF攻撃緩和策の実例を含む。
+* 📜 [Webでのディザリングとレトロシェーディングの技術（React Three Fiber使用）](https://blog.maximeheckel.com/posts/the-art-of-dithering-and-retro-shading-web/)
+* 🔨 [Dédale - React Emailベースのメールテンプレート開発環境](https://bireme.io/en/blog/announcing-dedale)
+* 📦 [Redwood 8.0 RC](https://github.com/redwoodjs/redwood/releases/tag/v8.0.0-rc.1114): フルスタックReactフレームワークの新バージョンがRCに。SSR/RSCサポート（実験的）、Vite 5、Prettier 3を追加。[v8アップグレードガイド](https://community.redwoodjs.com/t/redwood-v8-0-0-upgrade-guide/7250)も公開。近くBackground Jobs機能の導入予定。
+* 📦 [Vercel AI SDK 3.3 - useChat()でファイル添付サポート、useObject()で構造化データストリーミング](https://vercel.com/blog/vercel-ai-sdk-3-3): Zodスキーマベースの構造化データによりLLMの開発者向け利用が容易に。[OpenAIもZodサポートの構造化出力を発表](https://openai.com/index/introducing-structured-outputs-in-the-api/)。
+* 📦 [Astro 4.13 - 安定版リクエスト書き換え、コンテンツコレクションJSONスキーマ安定化](https://astro.build/blog/astro-4130/)
+* 📦 [react-three/xr 6.1 - WebXR Anchor API、Hit Testing API、DOM Overlay API、実験的エミュレーター](https://github.com/pmndrs/xr/releases/tag/v6.1.0)
+* 📦 [Tldraw sync - React製ホワイトボードアプリ用のセルフホスティング可能なリアルタイムコラボレーションエンジン](https://tldraw.substack.com/p/announcing-tldraw-sync)
+* 🎥 [Theo - サーバーアイランドは本当にクール](https://www.youtube.com/watch?v=uBxehYwQox4)
+* 🎥 [Jack Herrington - NextJS機能フラグ設定を簡単に](https://www.youtube.com/watch?v=M1Rj1xSm3SM)
+* 🎥 [UI Engineering - Reactが宣言的である理由](https://www.youtube.com/watch?v=TVmRuP0_RGM)
+* 🎥 [Expo - React開発者が知っておくべきReact Nativeの知識](https://www.youtube.com/live/iB7sc-fzpWw)
+* 🎙️ [Syntax - jQuery作者がReactとTypeScriptを使う理由 - John Resig](https://syntax.fm/show/800/why-the-jquery-creator-uses-react-and-typescript-john-resig?utm_source=thisweekinreact)
+* 🎙️ [This Month in React - 2024年7月 - JS、React、HTMLの現状](https://podcasters.spotify.com/pod/show/reactiflux/episodes/TMiR-2024-07-State-of-JS--React--HTML-e2mplrc)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![React Universe Conf 2024でお会いしましょう](/emails/issues/195/callstack.jpg)](https://www.reactuniverseconf.com/?utm_campaign=RUC%202024%20-%20TWIR%20Nesletter\&utm_source=RUC%202024%20-%20TWIR%20Nesletter\&utm_medium=TWIR%20NesletterOrganic\&utm_content=TWIR%20Nesletter)
+
+**[React Universe Conf 2024でお会いしましょう](https://www.reactuniverseconf.com/?utm_campaign=RUC%202024%20-%20TWIR%20Nesletter\&utm_source=RUC%202024%20-%20TWIR%20Nesletter\&utm_medium=TWIR%20NesletterOrganic\&utm_content=TWIR%20Nesletter)**
+
+[React Universe Conf](https://www.reactuniverseconf.com/?utm_campaign=RUC%202024%20-%20TWIR%20Nesletter\&utm_source=RUC%202024%20-%20TWIR%20Nesletter\&utm_medium=TWIR%20NesletterOrganic\&utm_content=TWIR%20Nesletter)は、ヨーロッパの中心地で開催される、学び、ネットワーキング、イノベーションに満ちた2日間のイベントです。以前はReact Native EUとして知られていたこのカンファレンスは、ReactとReact Native愛好家のための究極の集いとなりました。今年の見どころは？
+
+* **豪華なスピーカー陣:** Dan Abramov、Evan Bacon、Kent C. Dodds、Delba de Oliveira、Marc Rousavyなど、多くの著名なスピーカーが登壇。
+* **ホットトピック:** 新しいアーキテクチャ、React Server Components、Static Hermes、Out-of-Treeプラットフォームなど。
+* **React Nativeを使ったクロスプラットフォームアプリ開発に関する実践的な知見**
+
+**TWIR**プロモコードを使用するとチケットが**10%オフ**になります。[こちら](https://www.reactuniverseconf.com/?utm_campaign=RUC%202024%20-%20TWIR%20Nesletter\&utm_source=RUC%202024%20-%20TWIR%20Nesletter\&utm_medium=TWIR%20NesletterOrganic\&utm_content=TWIR%20Nesletter)からお申し込みください。ポーランド・ヴロツワフでお会いしましょう！
+
+***
+
+## 📱 React-Native {#react-native}
+
+このセクションは[Benedikt](https://twitter.com/bndkt)によって執筆されています。
+
+* 💸 [React Native Mastery - React Native & Expoをマスターする唯一のコース](https://notjust.dev/react-native-mastery?utm_source=twir\&utm_medium=email)
+* 🐦 [HermesチームがHostObjectよりもJSI NativeStateを推奨する理由](https://x.com/tmikov/status/1820266381545468200)
+* 🐦 [Expoで実験的なツリーシェイキングサポートが実装](https://x.com/baconbrix/status/1816488585409052925): SDK 52（現在カナリー版）で実験的に利用可能
+* 🐦 [React Nativeにスタイル機能が追加 - 線形グラデーション、ボックスシャドウ、CSSフィルター、%単位のflex gaps](https://x.com/Baconbrix/status/1821039004671741984)
+* 👀 [React Native PR - 実験的なbackgroundImageスタイルプロパティで線形グラデーションを実装](https://github.com/facebook/react-native/pull/45434)
+* 📜 [JSからFire OSへ - Amazonデバイス向けReact Native](https://dev.to/amazonappdev/get-started-with-react-native-for-amazon-fire-os-51j8): Fire OSがAndroidベースであるため、FireタブレットやFire TV向けアプリをReact Nativeで構築可能
+* 📜 [React NativeでのTVナビゲーション: TVFocusGuideViewの使い方ガイド](https://dev.to/amazonappdev/tv-navigation-in-react-native-a-guide-to-using-tvfocusguideview-302i): tvOSやAndroid TV向けのプラットフォーム固有の動作を活用する方法について解説
+* 📜 [XcodeのUIデバッグをQuick Lookで](https://www.oskarkwasniewski.dev/blog/xcode-quick-look-debugging): Xcodeを頻繁に使用する場合に便利（私はあまり使わないですが😅）
+* 📜 [Chain React 2024参加レポート（カンファレンス参加のコツ付き）](https://dev.to/amazonappdev/my-visit-to-chain-react-2024-nfj): 警告 - Chain Reactに参加していない場合、この記事を読むと強烈なFOMOを感じるかもしれませんが、それでも楽しめる内容です
+* 📦 [React Native 0.75.0-rc.7 - CLIを14.0に更新](https://github.com/facebook/react-native/releases/tag/v0.75.0-rc.7)
+* 📦 [React Native 0.74.5 - 軽微な修正](https://github.com/facebook/react-native/releases/tag/v0.74.5)
+* 📦 [react-native-gesture-handler 2.18.0 - ReanimatedSwipeableをスタンドアロンコンポーネントとして追加、いくつかの改善とRN 0.75サポート](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.18.0)
+* 📦 [react-native-svg 15.5.0 - 新フィルターの追加、FilterImageコンポーネントのCSSフィルターAPI、多数のバグ修正](https://github.com/software-mansion/react-native-svg/releases/tag/v15.5.0)
+* 📦 [react-native-reanimated 3.15.0 - ReducedMotionConfig、EntryExitTransition、CurvedTransition、RN 0.75サポート、多数の修正](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.15.0)
+* 🎥 [Simon Grimm - React Native Server Defined Rendering](https://www.youtube.com/watch?v=-6Mrar0r3kg)
+* 🎥 [Reactiiive - JotaiとMMKVの秘密（React Native）](https://www.youtube.com/watch?v=-AR2PN38ovo)
+* 🎥 [notJust.dev - React NativeとReanimatedでiOS 18 Photosアプリを構築](https://www.youtube.com/watch?v=pZHRFNpYkAY)
+* 🎙️ [PodRocket - Expo RouterでRSCを使用（Evan Bacon氏）](https://podrocket.logrocket.com/using-rscs-expo-router-evan-bacon)
+
+***
+
+## 🔀 Other {#other}
+
+* 🐦 [TC39会議103 - `RegExp.escape`がステージ3に、並行制御と非順序非同期イテレーターヘルパーがステージ1に](https://x.com/robpalmer2/status/1819051033215049742)
+* 📜 [Googleがインデックス作成プロセス全体でJavaScriptをどのように扱うか](https://vercel.com/blog/how-google-handles-javascript-throughout-the-indexing-process)
+* 📜 [Unknown型が有用な理由](https://michaeluloth.com/programming-types-unknown-why-useful/)
+* 📜 [TypeScriptについて考える別の方法](https://www.rob.directory/blog/a-different-way-to-think-about-typescript)
+* 📜 [すべてにContainer Unitsを使ったらどうなるか？](https://frontendmasters.com/blog/what-if-you-used-container-units-for-everything/)
+* 📜 [Effectのベストプラクティス](https://ethanniser.dev/blog/effect-best-practices/)
+* 📦 [Node v22.6.0 - 実験的なTypeScriptサポート付き](https://nodejs.org/en/blog/release/v22.6.0)
+* 📦 [Rslib - Rsbuildを利用したライブラリビルドツール](https://github.com/web-infra-dev/rslib)
+* 📦 [Nx 19.5 - Stackblitz、Bun、Pnpm 9、Vite用インクリメンタルビルド、Gradleテストアトマイザー](https://nx.dev/blog/nx-19-5-adds-stackblitz-new-features-and-more)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/195/meme.jpg)](https://x.com/ryanflorence/status/1820284287356383321)
+
+[![alt](/emails/issues/195/meme2.jpg)](https://x.com/jaredpalmer/status/1819165228052996209)
+
+それではまた！👋

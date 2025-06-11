@@ -1,0 +1,168 @@
+---
+slug: /145
+title: "This Week In React #145: Next.js, Server Actions, useFormStatus, useOptimistic, App Router, Canaries, Ink, ReasonML, Redwood, Reanimated, VisionCamera..."
+authors: [slorber]
+date: 05-09-2023
+---
+
+皆さん、こんにちは！
+
+予想通り、Next.jsの新バージョンがリリースされました。フォーム`action`や、2つの新しいフック`useFormStatus`と`useOptimistic`など、Reactの新機能がNext.jsのドキュメントでより詳しく解説されています。
+
+現在、多くのカンファレンスが開催されています。Remix ConfとApp.jsが今日から始まります。素晴らしい発表があるでしょう。
+
+[React-Native-Connection](https://reactnativeconnection.io/)（6月1日、パリ）も数週間後に迫っており、コード「REACTHEBDO」で20%オフの割引が適用されます！
+
+来週の号はお休みします。次回は5月24日です 👋
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアル形式 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Start UI](/emails/issues/144/start_ui.jpg)](https://web.start-ui.com?utm_source=newsletter\&utm_term=this-week-in-react)
+
+**[Start UI \[web\] - オピニオン付きWebアプリUIスターター](https://web.start-ui.com?utm_source=newsletter\&utm_term=this-week-in-react)**
+
+私たちの**無料でオープンソースのUI Webアプリスターター**は、次のプロジェクトを迅速かつ簡単に開始する方法を提供します。**ベストプラクティスと本番環境対応のツール**が含まれており、初期セットアップ段階で時間と労力を節約できます。
+
+🔐 認証、📱 レスポンシブレイアウト、🧑‍💻 ユーザー管理、🇫🇷 国際化と右から左へのサポート、🌚 ダークモード、🎛 開発を容易にする高度なコンポーネントなど、**組み込み機能**を備えています。[デモアプリ](https://demo.start-ui.com)を試すことができます。
+
+**TypeScript**、**NextJS**、Chakra UI、TanStack Query、Storybookなどとすぐに使用できます。
+
+[🚀 Start UI \[web\] on GitHub](https://web.start-ui.com)
+
+***
+
+## ⚛️ React {#react}
+
+[![Next.js 13.4](/emails/issues/145/nextjs.jpg)](https://nextjs.org/blog/next-13-4)
+
+**[Next.js 13.4](https://nextjs.org/blog/next-13-4)**
+
+Next.jsのメジャーリリースで、以下の機能が含まれています：
+
+* App Router（安定版）：SuspenseとServer Componentsに基づく新しいルーターが本番環境に対応
+* Turbopack（ベータ版）：新しいバンドラーが開発環境で安定化し、本番ビルドが間もなくリリース予定
+* Server Actions（アルファ版）：最新のReactの革新をNext.jsに統合
+
+ブログ記事では、旧ルーターとの多くの注目すべき違いが示されています：規約、ネストされたレイアウト、選択的なハイドレーション、サーバーコンポーネント、コード分割など...
+
+また、サーバーとのインタラクションを大幅に簡素化する、Reactの最新の革新であるServer ActionsがNext.jsに統合されました。これにより、APIルートを作成する必要がなく、[プログレッシブエンハンスメント](https://twitter.com/acdlite/status/1654159613950828546)をサポートするフォームを使用せずに、フルスタックのReactコンポーネントを作成および配布できるようになりました。
+
+ただし、Server Actionsを本番環境で採用するにはまだ少し早いです。アルファ版であり、Server Actionのクロージャに含まれる秘密がクライアントに意図せず公開される可能性があります。詳細はこちら：
+
+* 🧵 [スレッド](https://twitter.com/tomus_sherman/status/1654198731313500174): この問題について警告
+* 🐦 [Sebastian Markbåge](https://twitter.com/sebmarkbage/status/1654212899097960448) と [Andrew Clark](https://twitter.com/acdlite/status/1654317374777032704) によって認識され、変数の暗号化が提案されています。
+* 🎥 [NextのServer Actionsはそれほど安全ではないかもしれない...](https://www.youtube.com/watch?v=fdKcbyEK66M)
+
+**その他の便利なリンク:**
+
+* 📖 [新しいNext.jsドキュメント](https://twitter.com/leeerob/status/1654181055740497939): 新しいベータ版ドキュメントが本番環境にデプロイされました。特に [React Essentials](https://nextjs.org/docs/getting-started/react-essentials) を読むことをお勧めします。
+* 👀 [useOptimistic](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions#experimental-useoptimistic) と [useFormStatus](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions#experimental-useformstatus): 新しいReactの実験的フック。
+* 📜 [Vercel上のNext.js 13.4](https://vercel.com/changelog/next-js-13-4)
+* 📜 [Vercel Data Cacheの紹介: React Server Componentsのための最適化されたキャッシュ](https://vercel.com/changelog/introducing-vercel-data-cache)
+* 🧵 [Guillermo Rauch - 「rauchg.comをApp Routerで再設計しました」](https://twitter.com/rauchg/status/1652093972117073920): 興味深いフィードバック。
+* 🎥 [Next.js App Routerの紹介](https://www.youtube.com/watch?v=DrxiNfbr63s)
+
+***
+
+* 🧑‍🎓 [TotalTypeScript - React with TypeScriptチュートリアル](https://www.totaltypescript.com/tutorials/react-with-typescript): TypeScriptの達人Matt Pocockによる無料チュートリアル。
+* 🎨 [Reactコンポーネントのレンダリングの旅](https://alexsidorenko.com/react-journey): 再レンダリングのステップバイステップ可視化。
+* 📜 [React Canaries: Meta外での段階的な機能ロールアウトを可能に](https://react.dev/blog/2023/05/03/react-canaries): Reactチームが、正式な安定版リリース前にフレームワークが新しいReact機能を採用できる新しいカナリアリリースチャネルを紹介。カナリアリリースは本番環境で採用できるほど安定している。これはNext.js App Routerが現在使用しているものだが、MetaやReact-Nativeも常に依存してきたもの。
+* 📜 [React Server Components、Next.js App Routerと例](https://addyosmani.com/blog/react-server-components-app-router/): Addy OsmaniがServer Componentsに関する考察とメモを共有。良い概要と多くのオープンソースアプリの例。また、Create-React-Appの使用をやめる理由もリストアップ。
+* 📜 [Next.js App Routerを本番環境に導入して学んだ5つの教訓](https://www.inngest.com/blog/5-lessons-learned-from-taking-next-js-app-router-to-production): CRAアプリからNext.jsとApp Routerに移行したInngestからのフィードバック。キャッシュや検索パラメータに関する興味深い詳細がある。
+* 📜 [OCamlでReactをサーバーサイドレンダリング](https://sancho.dev/blog/server-side-rendering-react-in-ocaml): Ahrefsの開発者はReason-Reactを使用。SSRをネイティブに実行し、問題を解決するためにOCamlで`ReactDOMServer.renderToString`を再実装。彼らのSSRはNode.jsより10倍、Bunより6倍高速。SSRをネイティブに実行するアイデアは非常に興味深いが、ストリーミングやServer Componentsのような最新のイノベーションをサポートするには多くの作業が必要。
+* 📜 [HTMXは未来](https://quii.dev/HTMX_is_the_Future): SPAフレームワーク、特にReactに対する批判。代替としてHTMXとハイパーメディアレスポンスの使用を提案。JavaScriptを書かずにインタラクティブ性を追加したいバックエンド開発者にとっては興味深いが、スケールするかどうかは不明。
+* 📜 [コンテキスト、コンポジション、柔軟性](https://kyleshevlin.com/context-composition-and-flexibility): Reactコンテキストを使用して、コンポーネントの代替レンダリングをサブツリー全体でアクティブにすることを提案。
+* 📜 [Remixとの闘い](https://redd.one/blog/my-struggle-with-remix): 興味深いフィードバック。著者はまだRemixを愛しているが、使用中に遭遇した課題を提示。
+* 📜 [Reactフックとしてスクラッチからプルツーリフレッシュを実装](https://www.strictmode.io/articles/react-pull-to-refresh)
+* 📜 [CSSとReactでインタラクティブなスポットライトボーダーを作成](https://www.julienthibeaut.xyz/blog/create-spotlight-border-with-react-css)
+* 📦 [Redwood 5.0](https://community.redwoodjs.com/t/redwood-v5-0-0-is-now-available/4830): React 18、TypeScript v5、および可観測性。
+* 📦 [Ink UI - CLI向けのテーマ可能なUIコンポーネント](https://twitter.com/vadimdemedes/status/1655567427885846534): Reactのクロスプラットフォーム能力の素晴らしい例。ターミナルにレンダリングし、その特定のエコシステム向けのUIライブラリを作成可能。
+* 📦 [OpenNext 1.2.0 - ミドルウェアでのジオロケーション](https://twitter.com/fanjiewang/status/1654192897678295040)
+* 📦 [Zact - Zod Server ACTions](https://github.com/pingdotgg/zact)
+* 📦 [Astro 2.4](https://astro.build/blog/astro-240/)
+* 📦 [server-only](https://www.npmjs.com/package/server-only): サーバーコードをクライアントコンポーネントにインポートするのを防ぐための公式Reactパッケージ（[Next.jsドキュメント](https://nextjs.org/docs/getting-started/react-essentials#keeping-server-only-code-out-of-client-components-poisoning)参照）。
+* 📦 [shadcn UI - テーブルとデータテーブルコンポーネント](https://twitter.com/shadcn/status/1656019263394836480)
+* 📦 [Million.js 2.3.1 - Astroサポート（ベータ）](https://twitter.com/aidenybai/status/1655088722222923776)
+* 📊 [State of React 2023 - 予備議論](https://github.com/Devographics/surveys/issues/85): 今年はReactに特化した調査が行われる可能性あり。
+* 👀 [Rspack上のRSCs](https://twitter.com/_hyf0/status/1655538017669648385)
+* 👀 [Remotionでオーディオを編集](https://twitter.com/JNYBGR/status/1655853159623917568)
+* 🎥 [Always Bet On React](https://www.youtube.com/watch?v=TnyslkPfXaM)
+* 🎥 [I'm Done With React](https://www.youtube.com/watch?v=Zt8mO_Aqzw8)
+* 🎥 [2023年にReactを学ぶべきか？ - React SummitスピーカーTru NarlaとJordan Genslerとのインタビュー](https://www.youtube.com/watch?v=5xRqP-M8MkM)
+* 👥 [React Summit](https://reactsummit.com/?utm_source=email\&utm_medium=thisweekinreact) (アムステルダム、6月2-6日) はチケットに-5%（コード「ThisWeekInReact5」）、[ワークショップ](https://reactsummit.com/react-workshops)に-10%（コード「THISWEEKINREACT」）を提供。
+
+<SubscribeFormEmbed />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Nylas](/emails/issues/144/nylas_2.png)](https://www.nylas.com/?utm_source=TWIR\&utm_medium=sponsoredemail\&utm_campaign=FY23Q2-TWIR-2P-DSU\&utm_content\&utm_term)
+
+**[OpenAI + Nylas ファイアサイドチャット: 生成AI](https://www.nylas.com/?utm_source=TWIR\&utm_medium=sponsoredemail\&utm_campaign=FY23Q2-TWIR-2P-DSU\&utm_content\&utm_term)**
+
+生成AIの未来を内側から覗いてみませんか？5月17日、[OpenAIとNylasが誰でも参加可能なファイアサイドチャットを開催](https://info.nylas.com/firesidechat-openai-registrationpage.html?utm_source=TWIR\&utm_medium=sponsoredemail\&utm_campaign=FY23Q2-TWIR-2P-Webinar\&utm_content=march-9-issue\&utm_term=)します。OpenAIのApplied Engineering ManagerであるEvan Morikawaと、NylasのCTO兼共同創業者Christine Spangが登壇し、大規模なAIソリューションの提供と維持に必要なこと、AIの次の成熟段階の姿などについて議論します。[お見逃しなく](https://info.nylas.com/firesidechat-openai-registrationpage.html?utm_source=TWIR\&utm_medium=sponsoredemail\&utm_campaign=FY23Q2-TWIR-2P-Webinar\&utm_content=march-9-issue\&utm_term=)。
+
+***
+
+## 📱 React-Native {#react-native}
+
+* 📖 [新Reanimatedベータ版ドキュメント](https://twitter.com/swmansion/status/1655930596093472774): React-Native-Webで実装された多くの例を含む、インタラクティブなDocusaurusドキュメント。
+* 🎨 [VisionCamera + Skia + TensorFlowデモ](https://twitter.com/mrousavy/status/1654143459849121792): 現在のReact-Nativeで可能なことの素晴らしさ。SkiaレンダリングとTensorFlowモデルはOTA更新で更新可能。
+* 🎨 [Reanimated 3 + Expo Router + 共有要素トランジションデモ](https://twitter.com/kacperkapusciak/status/1654434612825792513)
+* 📜 [React Native向けE2E Maestroのベストティップス＆トリック](https://dev.to/retyui/best-tips-tricks-for-e2e-maestro-with-react-native-2kaa)
+* 📜 [React Native run-android: 様々なデバイスタイプのテスト方法](https://www.testim.io/blog/react-native-run-android/)
+* 👥 [App.js](https://appjs.co/) (クラクフ、5月10-12日) はワークショップに[-20%割引](https://ti.to/appjs/2023/discount/ThisWeekinReact20)を提供しています（コード「ThisWeekinReact20」）。
+* 👥 [Chain React](https://chainreactconf.com/) (ポートランド、5月18-19日) は参加費に-10%割引を提供しています（コード「thisweekinreact」）。
+* 👥 [React-Native-Connection](https://reactnativeconnection.io/) (パリ、6月1日) は参加費に-10%割引を提供しています（コード「REACTHEBDO」）。
+
+***
+
+## 🧑‍💻 Jobs {#jobs}
+
+🧑‍💼 [**Passionfroot - シニアフルスタックエンジニア（Remix） - €160k+、ベルリン/リモート**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+Passionfrootのミッションは、YouTube、ポッドキャスト、ソーシャルメディア、ニュースレターを通じて、明日の独立ビジネスを支援することです。クリエイターが世界的にスケーラブルで持続可能なビジネスを構築するためのツールを共に作りましょう。
+
+🧑‍💼 [**Callstack - シニアReact Native開発者 - 完全リモート、B2B月額21-32k PLN（税抜）**](https://www.callstack.com/senior-react-native-developer)
+
+世界で最も利用されているアプリの開発に携わりたいですか？React Nativeテクノロジーの共創に興味はありませんか？React & React Nativeのリーダー集団であるCallstackチームに参加しましょう。詳細は当社ウェブサイトをご覧ください。あなたの応募をお待ちしています - あなたの実力を見せてください！
+
+🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\&t=ArRLC77BpRwXXCdx8fnUqw)
+
+React Nativeに特化した開発者向けに複数のポジションを募集しています！報酬は約160kドル＋10％のボーナスです。RNの実務経験があり、米国在住であることが条件です。詳細は[@gabe\_g2i](https://twitter.com/gabe_g2i)までDMでお問い合わせください。その際、「This Week in React」を見たとお伝えください。
+
+💡 [求人を掲載する方法は？](https://thisweekinreact.com/sponsor)
+
+***
+
+## 🔀 Other {#other}
+
+* [HTMLのクライアントサイドレンダリングとインタラクティビティ](https://web.dev/client-side-rendering-of-html-and-interactivity/)
+* [ラボ環境での遅いインタラクションの診断](https://web.dev/diagnose-slow-interactions-in-the-lab/)
+* [WebGPUについて話したい](https://cohost.org/mcc/post/1406157-i-want-to-talk-about)
+* [スクロール駆動アニメーションで要素をアニメート](https://developer.chrome.com/articles/scroll-driven-animations/)
+* [ラボと実環境データにおけるCLS（Cumulative Layout Shift）の差異](https://www.debugbear.com/blog/cls-lab-field-differences)
+* [Angular v16](https://blog.angular.io/angular-v16-is-here-4d7a28ec680d)
+* [Nx v16](https://blog.nrwl.io/nx-16-is-here-69584ec87053#68c6)
+* [Vitest 0.31](https://twitter.com/sheremet_va/status/1653827712576880645)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/145/meme.jpg)](https://twitter.com/markdalgleish/status/1654259858668163072)
+
+それではまた！👋

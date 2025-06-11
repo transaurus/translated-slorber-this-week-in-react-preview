@@ -1,0 +1,171 @@
+---
+slug: /132
+title: "This Week In React #132: Astro, Remix, Server Components, useGlobalState, Next.js, Redwood, Expo Router, Expo Image, Android Widgets..."
+authors: [slorber]
+date: 01-25-2023
+---
+
+みなさん、こんにちは！
+
+今週はAstro 2.0とRemix 1.11のリリースがありました。また、Server Componentsに関する興味深いコンテンツもあります。
+
+React-NativeもExpo Routerがリリース候補版に、Expo Imageがベータ版になり、Androidウィジェットを作成する新しいソリューションが登場しました。
+
+私は番組「[Learn With Jason - Create and deploy a documentation website](https://www.learnwithjason.dev/create-and-deploy-a-documentation-website?utm_source=thisweekinreact)」に招待されました。この番組ではJasonがDocusaurusで初めてのステップを踏み出します。
+
+JavaScript言語の進化、TC39委員会、ESLint、Babel、Bun、PrettierなどのJSツーリングに関する最新情報を得るための良い情報源である[ES.next News newsletter](https://esnextnews.com/?utm_source=thisweekinreact)をチェックしてみてください。
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![refine](/emails/issues/132/refine.png)](https://github.com/refinedev/refine)
+
+[**refine - 100%オープンソース、ヘッドレスReactフレームワークでCRUDアプリを構築**](https://github.com/refinedev/refine)
+
+スキルセットを次のレベルに引き上げる準備をしましょう！私たちはOpen Source refineハッカソンを開催することを嬉しく思います。
+
+1500ドルと特別なスワッグキットを獲得できます！
+
+Strapi、Appwrite、Meilisearch、Medusaと協力できることを嬉しく思います。彼らはrefineハッカソンをスポンサーしており、勝者はそれぞれからスワッグキットを受け取ります！
+
+[ハッカソンの詳細はこちら](https://refine.dev/blog/refine-hackathon/)。
+
+***
+
+## ⚛️ React {#react}
+
+[![Astro 2.0](/emails/issues/132/astro2.jpg)](https://astro.build/blog/astro-2/)
+
+**[Astro 2.0](https://astro.build/blog/astro-2/)**
+
+Astroがv2をリリースしました。主な新機能は以下の通りです：
+
+* コンテンツコレクション：Markdown & MDXの自動型安全性
+* ハイブリッドレンダリング：静的？動的？両方の利点を得られます
+* 再設計されたエラーオーバーレイ
+* 改良された開発サーバー（HMR）
+* Vite 4.0
+* 公開ロードマップ
+
+また、記事「[Introducing Content Collections: Type-Safe Markdown in Astro 2.0](https://astro.build/blog/introducing-content-collections/)」も参照してください。これはZodを使用してフロントマターを検証し、Reactコンポーネントで型安全にこのデータを使用できるようにし、スキーマを尊重しないフロントマターデータがある場合に良いDXで良いエラーメッセージを表示する方法についてです。ちなみに[Docusaurusも同様のことをしています](https://github.com/facebook/docusaurus/issues/4591) 😜。
+
+***
+
+[![Remix 1.11](/emails/issues/132/remix0.11.jpg)](https://github.com/remix-run/remix/releases/tag/remix%401.11.0)
+
+**[Remix 1.11](https://github.com/remix-run/remix/releases/tag/remix%401.11.0)**
+
+主な新機能を含む素晴らしいRemixリリースです：
+
+* `defer` + `<Await>` を使用してストリーミングレスポンスを開始。ローダーはクライアントサイドで後から待機されるPromiseを返すことが可能。
+* [Route Convention v2](https://remix.run/docs/en/v1/file-conventions/route-files-v2): 新しいルート規約（フラットルート）。現在有効化可能で、v2ではデフォルト規約となる予定。
+* CSSインポート、CSS Modules、Vanilla Extractの実験的サポート。
+
+***
+
+* 📖 ベータ版ドキュメント: ["現在の主要なブロッカーはランディングページで、現在作業中です"](https://twitter.com/dan_abramov/status/1617543301477060608)
+* 🐦 ["Reactを使用するなら、Reactフレームワークを使うべき"](https://twitter.com/acdlite/status/1617611126514266112): Andrew Clarkがフレームワークを使用するべき理由を説明。使用しない場合、自分でそれほど優れていないフレームワークを作ることになる。
+* 📜 [優れたドキュメントの構成要素](https://www.mux.com/blog/the-building-blocks-of-great-docs): Next.js 13への技術ドキュメント移行中。Server Componentsの使用は、多くの静的コンテンツを持つサイトに多くの利点をもたらす。
+* 📜 [useGlobalState - コンテキストや高度なライブラリなしでReactコンポーネント間で状態を共有](https://yoavik.com/snippets/use-global-state): プロバイダーを使用せずに独自のグローバル状態抽象化を作成する方法を提案。
+* 📜 [Astroの好きな点](https://www.macarthur.me/posts/what-i-like-about-astro): GatsbyやNext.jsとのデータソーシング、統合（RSS、サイトマップなど）に関する興味深い比較。Astroは遅いサイトを作りにくくする。
+* 📜 [React Wrap Balancerで可読性を向上](https://vercel.com/blog/react-wrap-balancer): レイアウトシフトを発生させずに見出しをバランスさせるReact Wrap Balancerの内部動作を詳細に説明（CSSに不足している機能）。
+* 📜 [2023年にJavaScriptとフロントエンド開発で見たいもの](https://paularmstrong.dev/blog/2023/01/20/javascript-and-frontend-things-to-see-in-2023/): 興味深い予測とReactへの辛辣な批評 🔥
+* 📜 [RemixをSPAのみで使用](https://sergiodxa.com/articles/use-remix-as-a-spa-only): `<ClientOnly>`コンポーネントを使用。
+* 📜 [Gatsby 5、TypeScript、および生成されたGraphQLタイプ: チュートリアル](https://www.gatsbyjs.com/blog/gatsby-5-typescript-and-generated-graphql-types-a-walkthrough/)
+* 📜 [React Router 6とRemixでのモーダル](https://dev.to/infoxicator/modals-with-react-router-6-and-remix-1e35)
+* 📜 [マイクロフロントエンドにおけるReact Routerの優位性](https://dev.to/infoxicator/why-react-router-is-excellent-for-micro-frontends-2a21)
+* 📜 [useAsyncEffect: 不足していたReactフック](https://marmelab.com/blog/2023/01/11/use-async-effect-react.html)
+* 📜 [NextJS APIルートのテスト駆動開発](https://massimilianomirra.com/notes/test-driven-development-of-nextjs-api-routes)
+* 📜 [Pigeon MapsとMapboxでより良いReactマップを構築](https://evilmartians.com/chronicles/how-to-build-a-better-react-map-with-pigeon-maps-and-mapbox)
+* 📜 [屈折、分散、その他のシェーダー光効果](https://blog.maximeheckel.com/posts/refraction-dispersion-and-other-shader-light-effects/)
+* 🧑‍🎓 [Josh Comeau - Joy of React - コース開始](https://twitter.com/JoshWComeau/status/1617553220242661377)
+* 🎨 [TanStack Queryマルチクライアント同期デモ](https://twitter.com/aryan__deora/status/1616097346558754819)
+* 🎨 [DevTools - Suspense境界の切り替えデモ](https://twitter.com/delba_oliveira/status/1617205554547683328)
+* 👀 [Remix PR - 組み込みのPostCSSとTailwindサポートを追加](https://github.com/remix-run/remix/pull/5229)
+* 👀 [XState PR - createProvider](https://twitter.com/DavidKPiano/status/1617537783018422273)
+* 👀 [ReactドキュメントPR - Create React Appの推奨をViteに置換](https://github.com/reactjs/reactjs.org/pull/5487): 今週の論争を呼んだPR
+* 📦 [Bright - シンタックスハイライト用React Server Component](https://github.com/code-hike/bright): モダンなシンタックスハイライトのための有望なWIPパッケージ。Node.js/サーバーコンテキストでは、正規表現（Prism）ではなくAST解析のような重いコードを実行可能。
+* 📦 [Redwood 4.0 RC](https://twitter.com/RedwoodJS/status/1616002999729389568): 新しいAPI Auth、GraphQL Yoga v3、GraphQL Armor、Node.js 16/18...
+* 📦 [shadcdn/ui - Radix UIとTailwind CSSで構築された美しく設計されたコンポーネント](https://twitter.com/shadcn/status/1617916719242293248)
+* 📦 [next-mdx-remote 4.3 - Server Componentsサポート（実験的）](https://github.com/hashicorp/next-mdx-remote/releases/tag/v4.3.0)
+* 🎥 [Astro 2.0は革命的！](https://www.youtube.com/watch?v=gi4c7fbeURc)
+* 🎥 [Lee Robinson - 3年後に自分のReactコースを再訪](https://www.youtube.com/watch?v=DQk0TWmgYXw)
+
+<SubscribeFormEmbed />
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![Expo Router RC](/emails/issues/132/expo-router.jpg)](https://blog.expo.dev/announcing-the-expo-router-v1-release-candidate-c5680b88a18c)
+
+**[Expo Router v1 リリース候補版](https://blog.expo.dev/announcing-the-expo-router-v1-release-candidate-c5680b88a18c)**
+
+Expo Routerは、React-Navigationをベースにしたモバイルナビゲーションをファイルシステムの命名規則で作成する提案です。これは多くのReactウェブフレームワークで既に採用されている方法です。レイアウトルート、動的ルート、エラーバウンダリなど、一般的な機能が含まれています。
+
+特に興味深いのは、ユニバーサルサポートです。ナビゲーションはリンクベースで、`<Link>`コンポーネントとMetroのウェブサポート（実験的）を使用しています。Expoのネイティブ部分がうまく機能している今、Expoが徐々にユニバーサルなフルスタックフレームワークになり、[Andrew Clarkの予測](https://twitter.com/acdlite/status/1489755769876754434)を実現する可能性があると感じています。
+
+***
+
+* 👀 [Expo-Imageがベータ版に](https://twitter.com/JI/status/1616337848558551041): Expoの新しい画像コンポーネントがベータ版になりました。高性能でクロスプラットフォーム（ウェブ/モバイル）、多くのフォーマットに対応、プレースホルダー、object-fitなど。[ドキュメント](https://docs.expo.dev/versions/unversioned/sdk/image/)を確認してください。
+* 📖 [Maestro Guides - React-Native](https://maestro.mobile.dev/platform-support/react-native): e2eテストフレームワークがReact-Nativeのドキュメントページを提供しています。
+* 📦 [React-Native-Android-Widget](https://saleksovski.github.io/react-native-android-widget/): Androidウィジェットを作成するための新しいパッケージ。専用のUIプリミティブを使用し、ウィジェットプレビューシステムを備えています。Expo（Config Plugin）で簡単に使用できます。
+* 📦 [Moti 0.22](https://twitter.com/FernandoTheRojo/status/1616583066054545408): Hermesサポートを追加する修正が行われました。
+* 📦 [Metro 0.74](https://github.com/facebook/metro/releases/tag/v0.74.0): 大幅なパフォーマンス改善が行われました。
+* 🎙️ [RNR 256 - Expo Router with Evan Bacon](https://reactnativeradio.com/episodes/rnr-256-expo-router-with-evan-bacon)
+
+***
+
+## 🧑‍💻 Jobs {#jobs}
+
+🧑‍💼 [**Lab - フロントエンド開発者 - ハイブリッドリモート、ロンドン**](https://4dayweek.io/remote-job/frontend-developer-lab?utm_source=newsletter\&utm_medium=newsletter\&utm_campaign=weekinreact)
+
+Riverrエージェンシーでフロントエンド開発者として、React、Next.js、TypeScriptなどのモダンな技術を使用したクライアントプロジェクトに参加してください。[**週4日勤務**](https://4dayweek.io/?utm_source=newsletter\&utm_medium=newsletter\&utm_campaign=weekinreact)の仕事です。
+
+🧑‍💼 [**TLDR - シニアソフトウェアエンジニア（リモート、\$120k-200k）**](https://tldr.tech/jobs/senior-software-engineer/23?utm_source=thisweekinreact)
+
+TLDRニュースレターは、採用プラットフォームやその他の内部プロジェクトを構築するための最初のエンジニアを募集しています。Next.jsとPostgres/Supabaseの経験があり、サイドプロジェクトや小規模チームでの経験がある人を求めています。
+
+🧑‍💼 [**Callstack - シニアReact Native開発者 - 完全リモート、B2Bで月額PLN 21-32k net**](https://www.callstack.com/senior-react-native-developer)
+
+世界で最も使用されているアプリで働きたいですか？React Nativeテクノロジーの共創に参加したいですか？React & React NativeのリーダーであるCallstackチームに参加してください。詳細はウェブサイトをご覧ください。あなたの応募をお待ちしています - あなたのスキルを見せてください！
+
+🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\&t=ArRLC77BpRwXXCdx8fnUqw)
+
+React Nativeに特化した開発者向けの複数のポジションを募集しています！報酬は約160kドル＋10％のボーナスです。React Nativeの実務経験があり、米国在住であることが条件です。詳細は[@gabe\_g2i](https://twitter.com/gabe_g2i)までDMでお問い合わせください。その際、「This Week in React」を見たとお伝えください。
+
+💡 [求人の掲載方法は？](https://thisweekinreact.com/sponsor)
+
+***
+
+## 🔀 Other {#other}
+
+* ["webpackのRustへの完全な移植が進行中。Turbopackではありません。"](https://twitter.com/ScriptedAlchemy/status/1617815340905553921)
+* [V8 - WebAssembly JavaScript Promise Integration APIの紹介](https://v8.dev/blog/jspi)
+* [Safari 16.3のWebKit機能](https://webkit.org/blog/13691/webkit-features-in-safari-16-3/)
+* [CSSセレクタのパフォーマンスに関する真実](https://blogs.windows.com/msedgedev/2023/01/17/the-truth-about-css-selector-performance/)
+* [ジェネリック関数を型チェックに通す方法](https://type-level-typescript.com/articles/making-generic-functions-pass-type-checking)
+* [CSSネスティング - Blinkの実装意向](https://twitter.com/sebastienlorber/status/1617882799100526595)
+* [TypeScript 5.0 PR - デコレータのサポート](https://twitter.com/robpalmer2/status/1616215250055090187)
+* [Bun 0.5](https://bun.sh/blog/bun-v0.5.0)
+* [esbuild 0.17](https://github.com/evanw/esbuild/releases/tag/v0.17.0)
+* [ESLintの2022年回顧](https://eslint.org/blog/2023/01/eslint-2022-year-review/)
+* [大規模なフロントエンドの構築と配信](https://frontendmastery.com/posts/building-and-serving-frontends-at-scale/)
+* [小さなtRPCクライアントの作成](https://trpc.io/blog/tinyrpc-client)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/132/meme.jpg)](https://twitter.com/fireship_dev/status/1617708616496345088)

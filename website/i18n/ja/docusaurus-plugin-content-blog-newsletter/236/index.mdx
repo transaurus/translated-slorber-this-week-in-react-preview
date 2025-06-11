@@ -1,0 +1,133 @@
+---
+slug: /236
+title: "This Week In React #236: Remix, TanStack, RSC, RedwoodSDK, Storybook, Docusaurus | ExecuTorch, Screens, FlashList, Reanimated, Expo, EAS, Radon | TypeScript, Temporal, Angular, JSPM, ESLint, tsdown"
+authors: [cyrilbo, matthieugicquel]
+date: 05-28-2025
+---
+
+みなさん、こんにちは！
+
+[Theodo Apps](https://apps.theodo.com/en?utm_source=thisweekinreact)のCyrilとMatthieuです 👋。
+
+今週、Remixチームから大きなニュースが発表されました。また、MicrosoftはTypeScript Goの書き換えを試しやすくする変更を行いました。
+
+React Nativeの世界では、いくつかのマイナーながら興味深いリリースがあり、App.jsの設定が明日から始まります。詳細は来週Sebが報告する予定です。
+
+さっそく見ていきましょう！
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![AG Charts: 世界最高のReactチャートライブラリ](/emails/issues/236/adgrid.jpg)](https://www.ag-grid.com/charts?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=2025-email-1)
+
+**[AG Charts: 世界最高のReactチャートライブラリ](https://www.ag-grid.com/charts?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=2025-email-1)**
+
+AG ChartsはAG Gridが提供するキャンバスベースのチャートライブラリです。もともと[AG Grids](https://www.ag-grid.com/react-table?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=2025-email-1)の統合チャート機能を支えるために開発されましたが、現在では月間**100万**以上のnpmダウンロードを誇ります：
+
+* 🆓 **無料:** **棒グラフ**、**折れ線グラフ**、**散布図**、**面グラフ**など様々なチャートタイプを**永久無料**で利用可能
+* 🚀 **高速:** **バッチ描画**と高度な変更検知に加え、**オフスクリーンキャンバスAPI**を活用することで、数十万のデータポイントも簡単にレンダリング可能
+* 📊 **金融チャート:** たった3行のコードで高度な注釈付きのインタラクティブな金融チャートを構築可能
+* 🏢 **エンタープライズ機能:** アニメーション、コンテキストメニュー、クロスヘアなど高度な機能をエンタープライズ版で利用可能。無料トライアルも提供中
+
+詳細はこちら: [www.ag-grid.com/charts](https://www.ag-grid.com/charts?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=2025-email-1)
+
+***
+
+## ⚛️ React {#react}
+
+[![Wake up Remix](/emails/issues/236/remix.jpg)](https://remix.run/blog/wake-up-remix)
+
+**[Wake up Remix - Remix v3の計画](https://remix.run/blog/wake-up-remix)**
+
+今週、[RemixがReactから離れる](https://x.com/AdamRackis/status/1925646909345058818)という噂を耳にしたかもしれません。RyanとMichaelは公式投稿でRemixの未来像を説明しました。
+
+要約すると、React Routerは引き続き完全にメンテナンスされ、安全な選択肢です。並行して、Remix v3はPreactのフォークを基にした新しいフレームワークとして開発され、フルスタックをコントロールできるようになります。
+
+Remix v3の目標は「ウェブフレームワークの可能性を再構築する」ことです。この投稿では、新しいフレームワークが従う指針（LLM最適化、Web API構築、コンポジションなど）が説明されています。
+
+***
+
+* 💸 [Product for Engineers - これがあなたがリリースできない理由](https://go.posthog.com/twir-may28)
+* 📜 [TanStack Routerの美しさ](https://tkdodo.eu/blog/the-beauty-of-tan-stack-router): DominikがTanstack Routerを際立たせる機能を解説 - StrictOrFrom原則による型安全なルーティング、検索パラメータの状態管理、ファイルベースのルーティング、Suspenseサポートなど。
+* 📜 [サーバーコンポーネントとクライアントコンポーネントの組み合わせ: モダンReactの超能力](https://www.epicreact.dev/composing-server-and-client-components-the-modern-reacts-superpower-08yn9): RSCはスクリプトタグとグローバル変数を使っていた昔とは大きく異なります。
+* 📜 [ReactのError Boundariesが単なるコンポーネントのtry/catchではない理由](https://www.epicreact.dev/why-react-error-boundaries-arent-just-try-catch-for-components-i6e2l): これらはレンダーエラーのみをキャッチする宣言型コンポーネントです。この記事では`react-error-boundary`パッケージの使用方法やリトライボタンの実装方法など実践的なヒントを共有しています。
+* 📜 [Next.js Server Actionsは公開APIエンドポイントである](https://growl.dev/blog/nextjs-server-actions/): Server ActionsはCurlコマンドから呼び出せ、アクションIDが簡単に漏洩する可能性があります。従来の公開APIエンドポイントと同様のセキュリティ対策が必要です。
+* 📜 [あなたのReactメタフレームワークが不完全に感じる理由](https://rwsdk.com/blog/your-react-meta-framework-feels-broken): RedwoodSDKはNext.jsやRemixに存在する不要な抽象化レイヤーや規約、その他の魔法のようなものを排除しようとしています。
+* 📜 [RedwoodSDKでReactサーバーコンポーネントとクライアントコンポーネントを構築する](https://rwsdk.com/blog/react-rsc-redwoodsdk)
+* 📜 [React開発者向けSolidJSガイド](https://marmelab.com/blog/2025/05/28/solidjs-for-react-developper.html)
+* 📜 [長押し削除コンポーネントの構築](https://emilkowal.ski/ui/building-a-hold-to-delete-component)
+* 📜 [SSR Reactプロジェクトを構築してハイドレーションエラーを理解する](https://www.propelauth.com/post/understanding-hydration-errors)
+* 📜 [Reactプロジェクトで継承よりコンポジションが優れている理由](https://thetshaped.dev/p/why-composition-beats-inheritance-react-projects-extensible-components)
+* 💸 [The Road to Next - Next.js 15とReact 19でフルスタックWeb開発をマスター](https://www.road-to-next.com/?utm_source=newsletter\&utm_medium=email\&utm_campaign=this_week_in_react_1.1)
+* 📦 [Docusaurus 3.8](https://docusaurus.io/blog/releases/3.8): より高速なビルドの作業を継続し、CSSカスケードレイヤーのサポートを追加（どちらも「Future Flags」の背後）。
+* 📦 [Storybook 9.0](https://github.com/storybookjs/storybook/releases/tag/v9.0.0): 多くのベータ/RC版を経てついにリリースされましたが、公式ブログ記事はまだありません。
+* 📦 [TanStack Query v5.77](https://github.com/TanStack/query/releases/tag/v5.77.0): ストリーミングクエリ用にキャッシュに保持する`maxChunks`を追加。
+* 🎥 [Youssef Benlemlih - TanStackがゆっくりとReactを乗っ取ろうとしている](https://www.youtube.com/watch?v=u10Zlg_Un8I)
+* 🎥 [Alem Tuzlak - react-routerのハイドレーション問題の原因を理解する](https://www.epicweb.dev/tips/understanding-the-cause-of-hydration-issues-in-react-router~si4z9)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Clerk Billingを使い始める](/emails/issues/236/clerk.jpg)](https://go.clerk.com/KfnV7Rj)
+
+**[Clerk Billingを使い始める](https://go.clerk.com/KfnV7Rj)**
+
+カスタムUIやWebhook、Stripeセッション管理なしで、Clerkを使って完全な課金エクスペリエンスを構築する方法を学びましょう。
+
+* `<PricingTable />`コンポーネントで価格ページを作成
+* Stripeと接続—手動のAPI呼び出しや同期は不要
+* Clerkダッシュボード内でプランと権限を管理
+* 顧客のプラン、機能、権限に基づいてアクセスを制御する`has()`ヘルパー
+* ユーザーとサブスクリプションデータを一元管理
+
+課金を有効にし、`<PricingTable/>`を`/pricing`ページに配置して[アプリケーションの収益化を開始](https://go.clerk.com/LphCouG)しましょう。
+
+***
+
+## 📱 React-Native {#react-native}
+
+* 💸 [EAS WorkflowsはReact Native CI/CDの標準です。CIについて考える時間を減らし、機能開発に集中しましょう。](https://expo.dev/eas/workflows?utm_source=twir+newsletter\&utm_medium=email\&utm_campaign=twir-workflows\&utm_id=TWIR)
+* 📣 [Expo - EAS Hostingの増分変更](https://expo.dev/changelog/incremental-eas-hosting-changes)
+* 📜 [Expo - 環境変数についてすべての開発者が知っておくべきこと](https://expo.dev/blog/what-are-environment-variables)
+* 📜 [Expo - コード不要でBoltアプリをApp Storeに公開する方法](https://expo.dev/blog/how-to-get-your-ai-app-to-the-app-store)
+* 📦 [RN ExecuTorch 0.4.0 - より多くのLLM、ツール呼び出し、テキスト埋め込み、多言語音声テキスト変換とOCR、画像セグメンテーション](https://blog.swmansion.com/react-native-executorch-release-v0-4-0-262d4013ac10)
+* 📦 [RN Screens 4.11 - react-native-edge-to-edge統合、`pageSheet`プレゼンテーション](https://github.com/software-mansion/react-native-screens/releases/tag/4.11.0)
+* 📦 [Radon IDE 1.7 - 多数のバグ修正](https://github.com/software-mansion/radon-ide/releases/tag/v1.7.0)
+* 📦 [FlashList 2.0 RC1](https://github.com/Shopify/flash-list/releases/tag/v2.0.0-rc.1): 前回のアルファ版からの大きな変更はなく、現在はリリース候補版で、すでに本番環境での利用が可能とされています。
+* 📦 [Reanimated 4.0.0-beta.4 - RN 0.78、0.79、0.80のサポート、CSSアニメーションの修正、安定性の向上](https://github.com/software-mansion/react-native-reanimated/releases/tag/4.0.0-beta.4)
+* 🎥 [Expo - The Golden Workflowsプレイリスト](https://www.youtube.com/watch?v=u8MAJ0F18s0\&list=PLsXDmrmFV_AQ1fp78TTKP51N_R-EW98oT)
+* 🎙️ [RNR 333 - Expo Atlas with Cedric van Putten](https://infinite.red/react-native-radio/rnr-333-expo-atlas-with-cedric-van-putten)
+* 🎙️ [Rocket Ship 070 - React Nativeバージョン地獄、ExpoでのReact Server Components、Invoiceアプリの更新](https://share.transistor.fm/s/b04dbb2b)
+
+***
+
+## 🔀 Other {#other}
+
+* 📜 [TypeScriptネイティブプレビュー](https://devblogs.microsoft.com/typescript/announcing-typescript-native-previews/): Microsoftは数ヶ月前にTypeScriptのGo言語版リライトを発表しました。このリライト版のナイトリービルドが公開され、CLIまたはVS Code拡張機能で使用可能になりました。JSXサポートが追加され、JS版よりも約10倍高速です。
+* 📜 [リクエストに対するアサーションを行わない](https://www.epicweb.dev/do-not-assert-on-requests): mswの作成者が、テストで送信されたリクエストのbody/headerをチェックする代わりに推奨する方法を説明
+* 📜 [ESLint v9回顧録 - うまくいったこと、いかなかったことのレビュー](https://eslint.org/blog/2025/05/eslint-v9.0.0-retrospective/)
+* 📜 [tsupからtsdownへの移行](https://alan.norbauer.com/articles/tsdown-bundler/)
+* 📜 [JavaScriptの簡潔な歴史](https://deno.com/blog/history-of-javascript)
+* 📦 [Firefox 139 - Temporal、`hidden=until-found`、`dialog.requestClose()`](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/139): ステージ3のTemporal APIをサポートした最初のブラウザ！
+* 📦 [JSPM 4.0 - 標準ベースのインポートマップパッケージ管理](https://jspm.org/jspm-4.0-release): ビルドステップなしでフロントエンドを配信する革新的なプロジェクト。
+* 📦 [Angular 20.0 - リアクティビティ、Resource API、SSR、Zoneless、Vitestなど](https://medium.com/@mgechev/b5c9c06cf301)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![Benjamin Leeのツイート: @tan\_stackがRSCから安全でありますように](/emails/issues/236/meme.jpg)](https://x.com/Benjamin_D_Lee/status/1926071667345822140)
+
+[![ミーム2](/emails/issues/236/meme2.jpg)](hhttps://x.com/alxfazio/status/1926731799226462646)
+
+それでは！👋

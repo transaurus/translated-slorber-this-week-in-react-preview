@@ -1,0 +1,592 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/169/index.mdx",
+  "source_file_content_hash": "152d704d6383f56f72eef6bbc4827edc97fa0ce111b79593ee3170f82da14001",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /169\ntitle: \"This Week In React #169: useMemo, 2 Reacts, Next.js, Remix, JS Rising Stars, Docusaurus, Astro, Fresnel, Mutative, JSX emails, Expo usage, React-Native releases, Reanimated, VisionCamera, TypeScript, Rspack, Biome...\"\nauthors: [slorber, bndkt]\ndate: 01-09-2024\n---",
+      "source_content_hash": "567ce8b7d9e9b09ab891077389182a7aaef8b7b9598110a5a3591d1cbf9ecd32",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week we have an exciting sneak peek of the future of React and memoization, and a lot of Lee Robinson's related content 😄",
+      "source_content_hash": "72c4b32f1b450518eebf4609c64066d847f2a89fae516b1fee7b1defe2a57913",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週は、Reactとメモ化の未来に関する興味深い先行プレビューと、Lee Robinson関連のコンテンツが盛りだくさんです😄"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Expo is going strong in the React-Native ecosystem and the app stores 💪",
+      "source_content_hash": "32cdd46cffbd2df846ea5b5a80a683644ac5bb2e48c9f13f71ea55dbdceceb8d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ExpoはReact-Nativeエコシステムとアプリストアで勢いを増しています💪"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "[JavaScript Rising Stars 2023](https://risingstars.js.org/2023/en) has been published. This year I had the opportunity to comment on the React section. shadcn/ui and Bun took the world by storm. I’m also thankful for Theo recommending my newsletter in his related [trend analysis video](https://www.youtube.com/watch?v=5lkMs_WEoto): welcome to all of you who signed up recently 🙏",
+      "source_content_hash": "031307401889ec8416b5bc732e0b9c3633792d54d7ff7f7d9bc003da40d328e6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[JavaScript Rising Stars 2023](https://risingstars.js.org/2023/en)が公開されました。今年はReactセクションのコメントを担当する機会をいただきました。shadcn/uiとBunが世界を席巻しました。また、Theoが彼の[トレンド分析動画](https://www.youtube.com/watch?v=5lkMs_WEoto)でこのニュースレターを紹介してくれたことにも感謝します：最近登録された皆さん、ようこそ🙏"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Paris 2024 is not only the Olympic Games: we are also back at the center of the React conf world!\nSince the end of React Europe, there has been a lack of great React conferences in Paris. It’s finally fixed with 3 great upcoming confs 👌",
+      "source_content_hash": "c44c382e205b94eb3f553e766495bd5999e18665568ac6b50ab3f386152589c4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "パリ2024はオリンピックだけではありません：私たちはReactカンファレンスの世界の中心にも戻ってきました！\nReact Europeの終了以来、パリでは素晴らしいReactカンファレンスが不足していました。ついに3つの素晴らしいカンファレンスで解決されます👌"
+      }
+    },
+    {
+      "segment_id": "034de896",
+      "source_content": "* 📅 22 March - [React Paris](https://react.paris/) - The crew behind React Brussels and BeJS is launching a new conference in Paris and a great line-up has just been announced today!\n\n* 📅 22-23 April - [React Connection](https://reactconnection.io/) + [React-Native Connection](https://reactnativeconnection.io/) - Last year’s half-day React-Native conference that I helped organize was a great success. So it returns this year as a 1-day + 1-day conference, making it more worth it to travel. CFP is open until 3 February.",
+      "source_content_hash": "f25d5006c1791bb7d1573a72cc4238d2b23f4b2d0549d8ee031cfa902942a5f1",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📅 3月22日 - [React Paris](https://react.paris/) - React BrusselsとBeJSを手掛けたチームがパリで新たなカンファレンスを開催し、素晴らしいラインナップが本日発表されました！\n\n* 📅 4月22-23日 - [React Connection](https://reactconnection.io/) + [React-Native Connection](https://reactnativeconnection.io/) - 昨年私が企画に携わった半日のReact-Nativeカンファレンスは大成功でした。今年は1日+1日のカンファレンスとして戻ってきて、より旅行の価値があります。CFPは2月3日まで開いています。"
+      }
+    },
+    {
+      "segment_id": "2fdadb08",
+      "source_content": "I’ll try to attend both, and hope to meet some of you there!",
+      "source_content_hash": "589a729ced68c3ef8c37cdf566fade7fc32b56e4de634610d67a8bbeada78513",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "私は両方に参加する予定で、そこで皆さんにお会いできるのを楽しみにしています！"
+      }
+    },
+    {
+      "segment_id": "c0bf612b",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_c0bf612b"
+      }
+    },
+    {
+      "segment_id": "a76548f8",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット🎨**"
+      }
+    },
+    {
+      "segment_id": "8b52fbba",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "00e03281",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_00e03281"
+      }
+    },
+    {
+      "segment_id": "2a70bec8",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_2a70bec8"
+      }
+    },
+    {
+      "segment_id": "102e731c",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "3b7478ea",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "c3a738de",
+      "source_content": "[![Nlux ― A new new React / JS library to create conversational AI web apps](/emails/issues/169/nlux.png)](https://nlux.ai/?c-twr1-h)",
+      "source_content_hash": "bf8ec29456ab3997aa485509a601d72213d228335badb089047e28ca73412107",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Nlux ― 会話型AIウェブアプリを作成する新しいReact / JSライブラリ](/emails/issues/169/nlux.png)](https://nlux.ai/?c-twr1-h)"
+      }
+    },
+    {
+      "segment_id": "3cfe6286",
+      "source_content": "**[Nlux ― A new new React / JS library to create conversational AI web apps](https://nlux.ai/?c-twr1-h)**",
+      "source_content_hash": "3877a7a943e9bc7e8cb0a8d76dd922960294707955be16da425ed97e0d056f70",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Nlux ― 会話型AIウェブアプリを作成する新しいReact / JSライブラリ](https://nlux.ai/?c-twr1-h)**"
+      }
+    },
+    {
+      "segment_id": "1042b50d",
+      "source_content": "[NLUX](https://nlux.ai?c-twr1-p1) *(for Natural Language User Experience)* is a new [open-source](https://github.com/nluxai/nlux) React / Javascript library that makes it simple to integrate powerful large language models (LLMs) like ChatGPT into your web app or website. With just a few lines of code, you can add conversational AI capabilities and interact with your favourite LLM.",
+      "source_content_hash": "b6b0c93007b89b29e720d48463e770e4e87c0e65da659bdcc764406ab49b82fa",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[NLUX](https://nlux.ai?c-twr1-p1) *(Natural Language User Experienceの略)* は、ChatGPTのような強力な大規模言語モデル（LLM）をウェブアプリやウェブサイトに簡単に統合できる新しい[オープンソース](https://github.com/nluxai/nlux)のReact / Javascriptライブラリです。わずか数行のコードで、会話型AIの機能を追加し、お気に入りのLLMと対話できます。"
+      }
+    },
+    {
+      "segment_id": "aa1e7006",
+      "source_content": "Key features 🌟 include:",
+      "source_content_hash": "7c9774ccfc6a7d876eedf218e2c40697e4a451c1178bdf57089358b2544054ad",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "主な特徴 🌟："
+      }
+    },
+    {
+      "segment_id": "b93ddfac",
+      "source_content": "* **Build AI Chat Interfaces In Minutes** - High quality conversational AI interfaces with just a few lines of code.\n* **React Components & Hooks** - `<AiChat />` for UI and `useAdapter` hook for easy integration.\n* **Flexible LLM Adapters** - `ChatGPT` and `HuggingFace`, and an API to **Create Your Own Adapter** for any LLM.\n* **Customisable Chat Personas** - Configure bot and user pictures, names, and descriptions for personalised interactions.\n* **Zero Dependencies** - Lightweight codebase, with zero-dependencies except for LLM front-end libraries.",
+      "source_content_hash": "c3970421b811ccd11334a7e0a61bfe0bb227e8f3ac5fdd9bb6195bc6572ec2e5",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* **数分でAIチャットインターフェースを構築** - わずか数行のコードで高品質な会話型AIインターフェースを実現。\n* **Reactコンポーネント＆フック** - UI用の`<AiChat />`と簡単な統合用の`useAdapter`フック。\n* **柔軟なLLMアダプター** - `ChatGPT`と`HuggingFace`、そして任意のLLM用に**独自のアダプターを作成**するためのAPI。\n* **カスタマイズ可能なチャットペルソナ** - ボットとユーザーの画像、名前、説明を設定してパーソナライズされた対話を実現。\n* **ゼロ依存関係** - LLMフロントエンドライブラリを除き、軽量なコードベースで依存関係なし。"
+      }
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "More info, examples and documentation on [Nlux.ai](https://nlux.ai?c-twr1-p2)",
+      "source_content_hash": "2367392256052fdc27b87a190cf6932168699fcbd4f31b9cf69b74a2fad5ecdc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "詳細、例、ドキュメントは[Nlux.ai](https://nlux.ai?c-twr1-p2)でご覧ください。"
+      }
+    },
+    {
+      "segment_id": "51029da6",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "e50bebbf",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "23dfb152",
+      "source_content": "[![The future of React.use and React.useMemo - a powerful alternative to context selectors](/emails/issues/169/useMemo.jpg)](https://interbolt.org/blog/react-use-selector-optimization/)",
+      "source_content_hash": "77c3b42c74530c7e719d0ebae60d7625366b22835d939ee52492a40d08eb2027",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![React.useとReact.useMemoの未来 - コンテキストセレクターの強力な代替手段](/emails/issues/169/useMemo.jpg)](https://interbolt.org/blog/react-use-selector-optimization/)"
+      }
+    },
+    {
+      "segment_id": "1131ef75",
+      "source_content": "**[The future of React.use and React.useMemo - a powerful alternative to context selectors](https://interbolt.org/blog/react-use-selector-optimization/)**",
+      "source_content_hash": "cdcf41de217d5576b418d111933635b936d52303c91bca9d82289df434e38812",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[React.useとReact.useMemoの未来 - コンテキストセレクターの強力な代替手段](https://interbolt.org/blog/react-use-selector-optimization/)**"
+      }
+    },
+    {
+      "segment_id": "8b2a52b1",
+      "source_content": "Colin explains how React context can cause performance problems, the lack of a context selector API, and how he optimized an app’s performances thanks to the userland [use-context-selector](https://github.com/dai-shi/use-context-selector) implementation from Daishi Kato.",
+      "source_content_hash": "2240df1d8ab64fb58f5bc37fa54997638fa78b4ffa0e800ab5f4ad35ba2c1f4f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Colinは、Reactコンテキストがパフォーマンス問題を引き起こす可能性があること、コンテキストセレクターAPIの不足、そしてDaishi Katoによるユーザーランド実装[use-context-selector](https://github.com/dai-shi/use-context-selector)を活用してアプリのパフォーマンスを最適化した方法について説明しています。"
+      }
+    },
+    {
+      "segment_id": "5dae11e3",
+      "source_content": "The most interesting part is a great summary of the [recent Twitter discussions](https://twitter.com/sebastienlorber/status/1741218919732429108). Dan Abramov explained context selectors do not compos well. Andrew Clark shared the plan to extend `useMemo()` and allow the usage of other hooks inside it. This would work with the use hook with [any Usable types](https://github.com/acdlite/rfcs/blob/first-class-promises/text/0000-first-class-support-for-promises.md#other-usable-types) (currently context and promises, but maybe Observables and stores in the future?), but also [third-party hooks](https://twitter.com/BenJ_Ayc0/status/1742499230525067408)! This would solve the fine-grained selection problem in a performant and composable way, and be compatible with the upcoming React Forget compiler.",
+      "source_content_hash": "6fc82e8b52adca82c1809b676bf2b0484f54b789362758a2d65cd95e57c143df",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "最も興味深い部分は、[最近のTwitterディスカッション](https://twitter.com/sebastienlorber/status/1741218919732429108)の優れたまとめです。Dan Abramovは、コンテキストセレクターがうまく構成できないことを説明しました。Andrew Clarkは、`useMemo()`を拡張し、その内部で他のフックを使用できるようにする計画を共有しました。これは、[任意のUsableタイプ](https://github.com/acdlite/rfcs/blob/first-class-promises/text/0000-first-class-support-for-promises.md#other-usable-types)（現在はコンテキストとプロミスですが、将来的にはObservablesやストアも含まれるかもしれません）とuseフックで動作しますが、[サードパーティのフック](https://twitter.com/BenJ_Ayc0/status/1742499230525067408)とも互換性があります！これにより、細かい選択問題がパフォーマンス良く構成可能な方法で解決され、今後のReact Forgetコンパイラとも互換性があります。"
+      }
+    },
+    {
+      "segment_id": "379f9c7b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "657c2b20",
+      "source_content": "[![The Two Reacts](/emails/issues/169/2reacts.jpg)](https://overreacted.io/the-two-reacts/)",
+      "source_content_hash": "48b82beb0b3f12f54e1f9a5d70019640216078a99413bcdaefc340d35705dd9c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![2つのReact](/emails/issues/169/2reacts.jpg)](https://overreacted.io/the-two-reacts/)"
+      }
+    },
+    {
+      "segment_id": "e7772088",
+      "source_content": "**[The Two Reacts](https://overreacted.io/the-two-reacts/)**",
+      "source_content_hash": "63453f6572957ddf6d779caf646fc1263b0551b4efb11125624236782a086ff8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[2つのReact](https://overreacted.io/the-two-reacts/)**"
+      }
+    },
+    {
+      "segment_id": "eab056be",
+      "source_content": "Great writeup from Dan Abramov, giving good reasons for code to run locally (instant feedback), as well as remotely (close to the data source). He proposes a new React formula: `UI = f(data, state)`, where `f` represents all your whole React app, running in 2 distinct environments.",
+      "source_content_hash": "28628d4805b55578ef6aac63090957f4290e16dd26043d70968d8b54e88aacae",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Dan Abramovによる素晴らしい記事で、コードをローカルで実行する（即時フィードバック）理由と、リモートで実行する（データソースに近い）理由の両方を示しています。彼は新しいReactの公式を提案しています：`UI = f(data, state)`。ここで`f`は、2つの異なる環境で実行されるあなたのReactアプリ全体を表します。"
+      }
+    },
+    {
+      "segment_id": "f01228d3",
+      "source_content": "This ends with a great question, implicitly asking if you would invent React Server Components to solve this problem.",
+      "source_content_hash": "e1dc955cb5fcb34d24fee2c7eb84442c645c519cc1b57d93f9aeb2ed12a21134",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "これは、この問題を解決するためにReact Server Componentsを発明するかどうかを暗に問う素晴らしい質問で締めくくられています。"
+      }
+    },
+    {
+      "segment_id": "34033296",
+      "source_content": "> Is there some way we could split components between your computer and mine in a way that preserves what’s great about React? Could we combine and nest components from two different environments? How would that work?",
+      "source_content_hash": "c763c875dcf3dff0e9653198413a5a937a607909cd2f3fdc0cecc141b570256f",
+      "node_type": "blockquote",
+      "translatable": true,
+      "translations": {
+        "ja": "> Reactの優れた点を保ちつつ、コンポーネントをあなたのコンピュータと私のコンピュータの間で分割する方法はあるでしょうか？2つの異なる環境からのコンポーネントを組み合わせてネストできるでしょうか？それはどのように機能するでしょうか？"
+      }
+    },
+    {
+      "segment_id": "f51aebdd",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "5efe9dee",
+      "source_content": "* 💸 [From Dreamweaver to JSX: The Evolution of Visual Dev Tools for the Web](https://mightymeld.com/blog/browser-dev-tools-understand-code?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=link1)\n* 🌟 [2023 JavaScript Rising Stars](https://risingstars.js.org/2023/en): see my comment on the [React section](https://risingstars.js.org/2023/en#section-react).\n* 🐦 [Next.js can now run with HTTPS locally](https://twitter.com/leeerob/status/1743709145386131906)\n* 📖 [Remix Docs - new Client Data guide](https://remix.run/docs/en/main/guides/client-data)\n* 📜 [Common mistakes with the Next.js App Router and how to fix them](https://vercel.com/blog/common-mistakes-with-the-next-js-app-router-and-how-to-fix-them): Lee Robinson is in touch with hundreds of Next.js devs and gathered the most common mistakes. Also available as a [video](https://www.youtube.com/watch?v=RBM03RihZVs). TIL that the redirect function returns a never type and throws a Next.js specific error, surprising design.\n* 📜 [How I'm Writing CSS in 2024](https://leerob.io/blog/css): Lee Robinson likes CSS in 2024. He describes constraints that make a great UX/DX, and the role of a build step, compiler, or streaming. He recommends CSS Modules, Tailwind CSS, or StyleX.\n* 📜 [Increasingly miffed about the state of React releases](https://macwright.com/2024/01/03/miffed-about-react): No stable release for 550d considered harmful.\n* 📜 [Executing Dangerously Injected Scripts Inside React Components](https://macarthur.me/posts/script-tags-in-react): Interesting technique to bypass security limitations and execute scripts injected through dangerouslySetInnerHTML, using Document Fragments.\n* 📜 [28 Advanced NextJS features everyone should know](https://codedrivendevelopment.com/posts/rarely-known-nextjs-features): List and comments on various lesser-known features the author did not encounter in any app he worked on.\n* 📜 [Things I would change about React to increase DX](https://codedrivendevelopment.com/posts/things-i-would-change-about-react): List React pain points I can agee with, and make rough propositions to fix them (not all of them are great nor possible IMHO).\n* 📜 [Harmful complexity: using React for static content](https://gomakethings.com/harmful-complexity-using-react-for-static-content/): Interesting opinion, but I hope to prove the author wrong and believe React is nice for static content, particularly with RSCs.\n* 📜 [A new blog for 2024](https://chrisnicholas.dev/blog/a-new-blog-for-2024): Using moderns tools such as Catalyst, TWC, Contentlayer, Tailwind, Next.js\n* 📜 [How to Set Up Soft Navigation Reporting in a React App](https://www.debugbear.com/blog/soft-navigations-react-tutorial): Shows usage of the Google web-vitals npm package in a CRA app.\n* 📜 [Introducing Superglue: React ❤️ Rails](https://thoughtbot.com/blog/introducing-superglue): “Superglue makes React and Redux as productive as Hotwire, Turbo and Stimulus”\n* 📜 [How Lee Robinson created his Guestbook, and you can do it too](https://bejamas.io/blog/how-to-create-a-guestbook/?ck_subscriber_id=887776054)\n* 📜 [2024 Predictions by JavaScript Frontend Framework Maintainers](https://thenewstack.io/2024-predictions-by-javascript-frontend-framework-maintainers/)\n* 📦 [Fresnel 7.0 - React 18 support - SSR compatible approach for responsive layouts for React](https://github.com/artsy/fresnel/releases/tag/v7.0.0)\n* 📦 [@tanstack/router-vite-plugin - Vite alternative to the router CLI](https://tanstack.com/router/v1/docs/api/router-vite-plugin)\n* 📦 [Docusaurus 3.1 - built-in broken anchors detectors, `parseFrontMatter` hook](https://docusaurus.io/blog/releases/3.1)\n* 📦 [Astro 4.1 - Accessibility audit rules, client:visible rootMargin, custom cookie encoding](https://astro.build/blog/astro-410/)\n* 📦 [Mutative 1.0 - Efficient immutable updates, 10x faster than Immer](https://dev.to/unadlib/announcing-mutative-10-a-new-era-in-efficient-immutable-updates-nml)\n* 📦 [JSX email 1.7 - A fork of react-email that keeps being improved](https://github.com/shellscape/jsx-email)\n* 🔨 [Palettify - Get an instant preview for your theme - supports shadcn/ui and soon MUI](https://palettify.co/)\n* 🔗 [Remix Resources - Community templates, stacks and libraries](https://remix.run/resources)\n* 🎥 [Jack Herrington - HTMX For React Developers in 10 Minutes](https://www.youtube.com/watch?v=r0XBULqzsT0)\n* 🎥 [Lee Robinson - React Server Components: the Good, the Bad, and the Ugly](https://www.youtube.com/watch?v=8DyzsSWNcDE)\n* 🎥 [Remix Singles - \"Trellix\" - Cookies, Auth, and Drag & Drop](https://www.youtube.com/watch?v=RTHzZVbTl6c\\&list=PLXoynULbYuED9b2k5LS44v9TQjfXifwNu): 15 short videos by the Remix team, building a Trello clone (see the [demo app](https://trellix.fly.dev/)).",
+      "source_content_hash": "f8bf15c821a00c70c40c17c9bd4c295397b67262f5b83d2275bd2705264ebf29",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [DreamweaverからJSXへ: Web向けビジュアル開発ツールの進化](https://mightymeld.com/blog/browser-dev-tools-understand-code?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=link1)\n* 🌟 [2023年JavaScript Rising Stars](https://risingstars.js.org/2023/en): [Reactセクション](https://risingstars.js.org/2023/en#section-react)に関する私のコメントを参照。\n* 🐦 [Next.jsがローカルでHTTPS実行可能に](https://twitter.com/leeerob/status/1743709145386131906)\n* 📖 [Remix Docs - 新しいClient Dataガイド](https://remix.run/docs/en/main/guides/client-data)\n* 📜 [Next.js App Routerでのよくある間違いとその修正方法](https://vercel.com/blog/common-mistakes-with-the-next-js-app-router-and-how-to-fix-them): Lee Robinsonは数百人のNext.js開発者と接点を持ち、最も一般的な間違いをまとめました。[動画版](https://www.youtube.com/watch?v=RBM03RihZVs)も利用可能。redirect関数がnever型を返し、Next.js固有のエラーをスローするという設計には驚きました。\n* 📜 [2024年における私のCSSの書き方](https://leerob.io/blog/css): Lee Robinsonは2024年のCSSが気に入っています。優れたUX/DXを実現するための制約や、ビルドステップ、コンパイラ、ストリーミングの役割について説明しています。CSS Modules、Tailwind CSS、StyleXを推奨。\n* 📜 [Reactのリリース状況についてますます不満](https://macwright.com/2024/01/03/miffed-about-react): 550日間安定版リリースなしは有害と考えます。\n* 📜 [Reactコンポーネント内で危険に注入されたスクリプトを実行する](https://macarthur.me/posts/script-tags-in-react): dangerouslySetInnerHTMLを通じて注入されたスクリプトを、Document Fragmentsを使用してセキュリティ制限を回避し実行する興味深いテクニック。\n* 📜 [誰もが知っておくべき28の高度なNextJS機能](https://codedrivendevelopment.com/posts/rarely-known-nextjs-features): 著者がこれまで関わったアプリでは見かけなかった様々な知られざる機能のリストと解説。\n* 📜 [ReactのDXを向上させるために私が変更したいこと](https://codedrivendevelopment.com/posts/things-i-would-change-about-react): 私も同意できるReactの課題点と、それらを修正するための大まかな提案（すべてが優れているわけでも、実現可能なわけでもないと思いますが）。\n* 📜 [有害な複雑さ: 静的なコンテンツにReactを使用すること](https://gomakethings.com/harmful-complexity-using-react-for-static-content/): 興味深い意見ですが、私は著者の考えを覆し、特にRSCsを使用すれば静的なコンテンツにもReactが適していることを証明したいと考えています。\n* 📜 [2024年向けの新しいブログ](https://chrisnicholas.dev/blog/a-new-blog-for-2024): Catalyst、TWC、Contentlayer、Tailwind、Next.jsなどのモダンなツールを使用。\n* 📜 [Reactアプリでソフトナビゲーションのレポートを設定する方法](https://www.debugbear.com/blog/soft-navigations-react-tutorial): CRAアプリでGoogleのweb-vitals npmパッケージを使用する方法を示しています。\n* 📜 [Superglueの紹介: React ❤️ Rails](https://thoughtbot.com/blog/introducing-superglue): 「SuperglueはReactとReduxをHotwire、Turbo、Stimulusと同じくらい生産的にします」\n* 📜 [Lee Robinsonがゲストブックを作成した方法と、あなたもできること](https://bejamas.io/blog/how-to-create-a-guestbook/?ck_subscriber_id=887776054)\n* 📜 [JavaScriptフロントエンドフレームワークメンテナーによる2024年予測](https://thenewstack.io/2024-predictions-by-javascript-frontend-framework-maintainers/)\n* 📦 [Fresnel 7.0 - React 18サポート - レスポンシブレイアウトのためのSSR互換アプローチ](https://github.com/artsy/fresnel/releases/tag/v7.0.0)\n* 📦 [@tanstack/router-vite-plugin - ルーターCLIのVite代替](https://tanstack.com/router/v1/docs/api/router-vite-plugin)\n* 📦 [Docusaurus 3.1 - 組み込みの壊れたアンカー検出器、`parseFrontMatter`フック](https://docusaurus.io/blog/releases/3.1)\n* 📦 [Astro 4.1 - アクセシビリティ監査ルール、client:visible rootMargin、カスタムクッキーエンコーディング](https://astro.build/blog/astro-410/)\n* 📦 [Mutative 1.0 - 効率的な不変更新、Immerよりも10倍高速](https://dev.to/unadlib/announcing-mutative-10-a-new-era-in-efficient-immutable-updates-nml)\n* 📦 [JSX email 1.7 - 改善を続けるreact-emailのフォーク](https://github.com/shellscape/jsx-email)\n* 🔨 [Palettify - テーマの即時プレビューを取得 - shadcn/uiをサポート、近日中にMUIも](https://palettify.co/)\n* 🔗 [Remixリソース - コミュニティテンプレート、スタック、ライブラリ](https://remix.run/resources)\n* 🎥 [Jack Herrington - React開発者向けHTMXを10分で](https://www.youtube.com/watch?v=r0XBULqzsT0)\n* 🎥 [Lee Robinson - React Server Components: 良い点、悪い点、そして醜い点](https://www.youtube.com/watch?v=8DyzsSWNcDE)\n* 🎥 [Remix Singles - 「Trellix」 - クッキー、認証、ドラッグ＆ドロップ](https://www.youtube.com/watch?v=RTHzZVbTl6c\\&list=PLXoynULbYuED9b2k5LS44v9TQjfXifwNu): Remixチームによる15のショートビデオ、Trelloクローンを構築（[デモアプリ](https://trellix.fly.dev/)を参照）。"
+      }
+    },
+    {
+      "segment_id": "8850c5e2",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_8850c5e2"
+      }
+    },
+    {
+      "segment_id": "3c5a1374",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "8574d51c",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "[![CMS with Inline Visual editing for Next.js, Remix and Gatsby](/emails/issues/169/reactbricks.jpg)](https://reactbricks.com?utm_source=twir\\&utm_campaign=twir_2024\\&utm_medium=email)",
+      "source_content_hash": "4aaa851d9634d3eb96ab4b8b184faf0d339d3f56e9441776d3e945dd58352328",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Next.js、Remix、Gatsby向けインライン視覚編集CMS](/emails/issues/169/reactbricks.jpg)](https://reactbricks.com?utm_source=twir\\&utm_campaign=twir_2024\\&utm_medium=email)"
+      }
+    },
+    {
+      "segment_id": "1b4de6df",
+      "source_content": "**[CMS with Inline Visual editing for Next.js, Remix and Gatsby](https://reactbricks.com?utm_source=twir\\&utm_campaign=twir_2024\\&utm_medium=email)**",
+      "source_content_hash": "21ee43aac4cd8900d1e4ebfc7adc226da01db86110a8636b3a23e6e092cb2200",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Next.js、Remix、Gatsby向けインライン視覚編集CMS](https://reactbricks.com?utm_source=twir\\&utm_campaign=twir_2024\\&utm_medium=email)**"
+      }
+    },
+    {
+      "segment_id": "1958bc43",
+      "source_content": "[**Set up a project in just 1 minute**](https://reactbricks.com/sign-up?utm_source=twir\\&utm_campaign=twir_2024\\&utm_medium=email) with the CLI and define your own Visual blocks as React components to convey your pixel-perfect corporate brand, using any CSS framework.",
+      "source_content_hash": "5ae4f11e957e3cb25097114de5dce52f2ecfc66651262c9e560b78d82b8bcb6a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**1分でプロジェクトをセットアップ**](https://reactbricks.com/sign-up?utm_source=twir\\&utm_campaign=twir_2024\\&utm_medium=email) CLIを使用し、任意のCSSフレームワークでピクセルパーフェクトなコーポレートブランドを表現するためのビジュアルブロックをReactコンポーネントとして定義できます。"
+      }
+    },
+    {
+      "segment_id": "a8610918",
+      "source_content": "Content editors can easily use these blocks to compose pages visually, just like using a word processor, without compromising the design system.",
+      "source_content_hash": "6b38e1bcd98970bb30ecedea484b9defb1939da083a3ce7df622eab3da0899aa",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "コンテンツ編集者は、デザインシステムを損なうことなく、ワードプロセッサのようにこれらのブロックを使用して視覚的にページを構成できます。"
+      }
+    },
+    {
+      "segment_id": "a6c928a1",
+      "source_content": "React Bricks is enterprise-ready with Digital Assets Management, Advanced SEO, Collaboration, Scheduled Publishing, Multilanguage, Integrations with external data sources, Approval Workflow, Single Sign-On, Multiple environments, Backup and Change history.",
+      "source_content_hash": "37c55b642e5229bc7b36e008f9f29c44762405ddce84cc50d6f0e84568127bf4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React Bricksは、デジタルアセット管理、高度なSEO、コラボレーション、スケジュールされた公開、多言語対応、外部データソースとの統合、承認ワークフロー、シングルサインオン、複数環境、バックアップ、変更履歴など、企業向けの機能を備えています。"
+      }
+    },
+    {
+      "segment_id": "b6152880",
+      "source_content": "Trusted by corporate clients such as The Weather Channel, Deel.com, La Banque Postale, leading eCommerce sites and over 8,500 users worldwide.\\\n[**Get started today!**](https://reactbricks.com/sign-up?utm_source=twir\\&utm_campaign=twir_2024\\&utm_medium=email)",
+      "source_content_hash": "d012b28951667a83964c4224b8205a16fe94d12d6976eb4dfda07385001a19ab",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "The Weather Channel、Deel.com、La Banque Postaleなどの企業クライアントや、主要なeCommerceサイト、全世界8,500人以上のユーザーに信頼されています。\\\n[**今すぐ始めましょう！**](https://reactbricks.com/sign-up?utm_source=twir\\&utm_campaign=twir_2024\\&utm_medium=email)"
+      }
+    },
+    {
+      "segment_id": "ce5ba214",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "4dd6a631",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "f45239ba",
+      "source_content": "[![Who's using Expo OSS in 2024](/emails/issues/169/expo.jpg)](https://evanbacon.dev/blog/expo-2024)",
+      "source_content_hash": "9414b007786ebf1ea46ce81b497e1d73a1b22047c00966008cc5e1c3e36d2cd8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![2024年にExpo OSSを使用しているのは誰か](/emails/issues/169/expo.jpg)](https://evanbacon.dev/blog/expo-2024)"
+      }
+    },
+    {
+      "segment_id": "692c6053",
+      "source_content": "**[Who's using Expo OSS in 2024](https://evanbacon.dev/blog/expo-2024)**",
+      "source_content_hash": "5bba6b1c972dd773e2596987d1be434e1bcc32f4ce1bd15440f44ee141cb890b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[2024年にExpo OSSを使用しているのは誰か](https://evanbacon.dev/blog/expo-2024)**"
+      }
+    },
+    {
+      "segment_id": "383fbdd2",
+      "source_content": "Evan Bacon gathered an impressive list of 1,599 apps that are using Expo libraries (and therefore, React Native). The list includes household names like Pizza Hut, Burger King, Microsoft, Discord, Shopify, NFL, Walgreens, Amazon, CNN, and many more. It’s not news to us that React Native is thriving, but it’s nevertheless encouraging to see the big role that it plays when you look at top apps in the App Store.",
+      "source_content_hash": "d07243cc7e8879ff33bc196ec01a5150a43892da4ddbcdf81e40e5f8104a73ad",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Evan Baconは、Expoライブラリ（したがってReact Native）を使用している1,599のアプリの印象的なリストをまとめました。このリストには、Pizza Hut、Burger King、Microsoft、Discord、Shopify、NFL、Walgreens、Amazon、CNNなどの有名企業が含まれています。React Nativeが繁栄していることは私たちにとってニュースではありませんが、App Storeのトップアプリを見ると、その大きな役割を確認できるのは励みになります。"
+      }
+    },
+    {
+      "segment_id": "b99d2cf6",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "292df6cb",
+      "source_content": "* 💸 [Galaxies.dev - Master React Native & Save 25% on PRO with code GALAXIES24](https://galaxies.dev?utm_source=thisweekinreact.com)\n* 👀 [Proposal: Hover style API for iPad / Apple Vision Pro](https://github.com/react-native-community/discussions-and-proposals/pull/750) The iPad supports hover effects for mouse/trackpad users, and this will also be useful for Apple’s upcoming Vision Pro, where navigation elements get highlighted when the user looks at them.\n* 📜 [Introduction to Reanimated](https://www.reactiive.io/articles/introduction-to-reanimated): A good introductory article to learn about the concepts behind one of the most popular animation libraries for RN: shared values, reanimated style, animated view.\n* 📦 [React-Native v0.73.2 + v0.72.9 + v0.71.15](https://github.com/facebook/react-native/issues/42180): new releases fix the \"Error installing boost Verification checksum” iOS build errors, among other things.\n* 📦 [react-native-vision-camera 3.7.0](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.7.0): Now includes an Expo config plugin to easily enable the fully native QR/Barcode scanner.\n* 🎥 [Theo - Moving off React Native](https://www.youtube.com/watch?v=gntZth3mIbM): Clickbait, but informative. This is about moving from “vanilla” React-Native to Expo.\n* 🎥 [Szymon Rybczak - Bringing React Server Components to React Native](https://portal.gitnation.org/contents/brining-react-server-components-to-react-native)\n* 🎥 [Simon Grimm - THE React Native Tech Stack for 2024](https://www.youtube.com/watch?v=Xwk4rcB6qVQ)",
+      "source_content_hash": "0345b828c0e9ef97440bda65693b4f12d4c2362d4e53f6965720d7ced18b6cd7",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Galaxies.dev - React Nativeマスター & PRO版25%オフ（コード: GALAXIES24）](https://galaxies.dev?utm_source=thisweekinreact.com)\n* 👀 [提案: iPad / Apple Vision Pro向けホバースタイルAPI](https://github.com/react-native-community/discussions-and-proposals/pull/750) iPadはマウス/トラックパッドユーザー向けにホバー効果をサポートしており、これはAppleの新製品Vision Proでも有用です。Vision Proでは、ユーザーが要素を見つめるとナビゲーション要素がハイライト表示されます。\n* 📜 [Reanimated入門](https://www.reactiive.io/articles/introduction-to-reanimated): RN向け人気アニメーションライブラリの基本概念（共有値、再アニメーション化されたスタイル、アニメーションビュー）を学べる良い導入記事です。\n* 📦 [React-Native v0.73.2 + v0.72.9 + v0.71.15](https://github.com/facebook/react-native/issues/42180): 新リリースでは「Error installing boost Verification checksum」などのiOSビルドエラーが修正されました。\n* 📦 [react-native-vision-camera 3.7.0](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.7.0): 完全ネイティブなQR/バーコードスキャナーを簡単に有効化できるExpo設定プラグインが追加されました。\n* 🎥 [Theo - React Nativeからの移行](https://www.youtube.com/watch?v=gntZth3mIbM): 釣りタイトルですが有益な内容。「バニラ」React-NativeからExpoへの移行について。\n* 🎥 [Szymon Rybczak - React Server ComponentsをReact Nativeに導入](https://portal.gitnation.org/contents/brining-react-server-components-to-react-native)\n* 🎥 [Simon Grimm - 2024年向けReact Nativeテックスタック](https://www.youtube.com/watch?v=Xwk4rcB6qVQ)"
+      }
+    },
+    {
+      "segment_id": "f97c407b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "3cd8185f",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "a627a446",
+      "source_content": "* 👀 [TypeScript 5.4 Iteration Plan - `NoInfer<T>`, throw expressions...](https://github.com/microsoft/TypeScript/issues/56948)\n* 📜 [Daniel Rosenwasser on TypeScript and What’s Ahead in 2024](https://thenewstack.io/daniel-rosenwasser-on-typescript-and-whats-ahead-in-2024/)\n* 📜 [Weird things engineers believe about Web development](https://birtles.blog/2024/01/06/weird-things-engineers-believe-about-development/)\n* 📜 [The Website vs. Web App Dichotomy Doesn't Exist](https://jakelazaroff.com/words/the-website-vs-web-app-dichotomy-doesnt-exist/)\n* 📜 [The Popular Vote of Interop 2024](https://frontendmasters.com/blog/the-popular-vote-of-interop-2024/)\n* 📦 [Biome 1.5 - 97% Prettier compat + 2024 Roadmap](https://biomejs.dev/blog/roadmap-2024/)\n* 📦 [Node 20.11 - improves test\\_runner, import.meta, perf…](https://nodejs.org/en/blog/release/v20.11.0)\n* 📦 [Rspact 0.5 - Module Federation](https://www.rspack.dev/blog/announcing-0.5)",
+      "source_content_hash": "3344ff7d4c65ae48be318d93cef82d61e816df43e0c786ce56086147bca8ec5a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 👀 [TypeScript 5.4イテレーションプラン - `NoInfer<T>`、throw式...](https://github.com/microsoft/TypeScript/issues/56948)\n* 📜 [Daniel Rosenwasserが語るTypeScriptと2024年の展望](https://thenewstack.io/daniel-rosenwasser-on-typescript-and-whats-ahead-in-2024/)\n* 📜 [エンジニアが信じるWeb開発に関する奇妙なこと](https://birtles.blog/2024/01/06/weird-things-engineers-believe-about-development/)\n* 📜 [ウェブサイト vs Webアプリの二分法は存在しない](https://jakelazaroff.com/words/the-website-vs-web-app-dichotomy-doesnt-exist/)\n* 📜 [Interop 2024の人気投票結果](https://frontendmasters.com/blog/the-popular-vote-of-interop-2024/)\n* 📦 [Biome 1.5 - Prettier 97%互換 + 2024年ロードマップ](https://biomejs.dev/blog/roadmap-2024/)\n* 📦 [Node 20.11 - test\\_runner、import.meta、パフォーマンス改善...](https://nodejs.org/en/blog/release/v20.11.0)\n* 📦 [Rspact 0.5 - モジュールフェデレーション対応](https://www.rspack.dev/blog/announcing-0.5)"
+      }
+    },
+    {
+      "segment_id": "c7daeccd",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "d4eab4a6",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "0ddaa835",
+      "source_content": "[![alt](/emails/issues/169/meme.jpg)](https://twitter.com/sebastienlorber/status/1744853546556649773)",
+      "source_content_hash": "f287d983864ae3e00efebfcf3d46bbc68dfd320ed56b9d8c35fe3c8814a638c1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/169/meme.jpg)](https://twitter.com/sebastienlorber/status/1744853546556649773)"
+      }
+    },
+    {
+      "segment_id": "fd7ed056",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "それでは！👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/169/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:38.473380+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "152d704d6383f56f72eef6bbc4827edc97fa0ce111b79593ee3170f82da14001"
+  }
+}

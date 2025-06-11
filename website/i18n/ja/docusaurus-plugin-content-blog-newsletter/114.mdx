@@ -1,0 +1,119 @@
+---
+slug: /114
+title: "This Week In React #114: 🎉 official launch of Docusaurus 2.0 🥳️"
+authors: [slorber]
+date: 08-01-2022
+---
+
+This Week In React #114: 🎉 Docusaurus 2.0公式リリース 🥳️
+
+<!-- truncate -->
+
+皆さん、こんにちは！
+
+🎉 [**Docusaurus 2.0の公式リリース**](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)です！
+
+これは私がメンテナンスしている**Meta Open Source（Facebook）**のプロジェクトで、Node.jsとReactベースのドキュメント用静的サイトジェネレーターです。コンテンツ作成に集中できるよう設計されており、Markdownファイルを書くだけで利用できます。Docusaurusは真にカスタマイズ可能で、企業のブランディングにも対応しています。React-Native、Supabase、Redux、Tauri、Electron、Courier、Ionic、Figma、Snapchat、Prettier、Babel、Solana、Cardanoなど、多くの有名なドキュメントサイトですでに採用されています。
+
+🙏 また、[**ProductHunt**](https://www.producthunt.com/posts/docusaurus-2-0?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)、[**Hacker News**](https://news.ycombinator.com/item?id=32303052\&utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)、[**Twitter**](https://twitter.com/docusaurus/status/1554000364432769025?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)でも公開しています。プロジェクトが気に入ったら、ぜひ**投票**して意見を共有してください😃
+
+🎙️ [The Developer's Bakery](https://thebakery.dev/39/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)でのDocusaurusに関する私のポッドキャストも公開されました😉
+
+***
+
+[![](https://s3.amazonaws.com/revue/items/images/017/224/019/mail/social-card.png?1659345670)](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+
+**注**: 公式の[**Announcing Docusaurus 2.0**](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0)記事も必ずお読みください。こちらは私の個人的なまとめですが、公式記事の方がより詳細です。
+
+## Docusaurusとは？
+
+Metaには多くの内部/外部プロジェクトがあり、それぞれにドキュメントが必要です。ドキュメント作成自体が大変な作業なのに、サイトのカスタマイズまで行うと時間がかかりすぎます。
+
+2017年、彼らは各プロジェクトごとにJekyllテンプレートをコピー＆ペーストし始めましたが、すぐにメンテナンスが困難になりました。
+
+2017年、彼らはDocusaurusの開発を決定しました。これはNode.js上で動作するReactベースの静的サイトジェネレーターで、サイトの技術スタックを「隠蔽」し、**コンテンツ作成**（**Markdown**ファイルの記述）に集中できるようにするものです。Create-React-Appのようなものですが、コンテンツサイト（ドキュメント、ブログ、ランディングページなど）作成に特化しています。
+
+Docusaurus v1はすぐに人気を博し、React-Native、Jest、Babel、Prettierなどで採用されました。
+
+![Docusaurus v1を使用しているサイト](https://s3.amazonaws.com/revue/items/images/017/224/025/original/v1.gif?1659345706)
+
+***
+
+## Docusaurus v2への道
+
+v1のリリース後、Metaはv1のいくつかの制限に気づきました:
+
+* Reactを使用しているがサーバーサイドのみ: ハイドレーションやシングルページアプリケーションのナビゲーションは不可
+* リポジトリがモノリシックで、メンテナンスやテストが困難
+* 拡張性が低く、プラグインシステムが存在しない
+* テーマ設定が比較的限定的で、v1サイトは非常に似た見た目になる
+
+2018年、Metaは**Docusaurusをゼロから再構築**することを決定し、全く新しいアーキテクチャを採用しました:
+
+* クライアントとサーバーサイドの両方でReactを使用（Next.js、Remix、Gatsbyなどと同様）
+* プラグインシステム: コミュニティが有用な機能を提供可能（OpenAPI統合、ローカル検索エンジン、Sassサポートなど）
+* より柔軟なテーマシステム: テーマの任意のReactコンポーネントをオーバーライド可能
+* MDX（Markdown + React）を使用してドキュメントをインタラクティブに
+
+Docusaurus 2.0は**4年間**にわたってアルファ/ベータ版として開発され🤪、ついに**最初の安定版**をリリースしました！セマンティックバージョニングを遵守することが明らかでなかったため、このリリースは遅れました。
+
+現在、Docusaurus v2は多くの機能を備えて利用可能で、それらをすべて列挙するのは困難です: ドキュメント、ブログ、バージョニング、テーマ設定、ダークモード、国際化、アクセシビリティ、SEO、TypeScript、PWA、Algolia DocSearch、MDX...
+
+***
+
+## Docusaurus 2.0のユーザーは？
+
+多くの企業がベータ版にもかかわらず既にDocusaurus 2.0を採用しています。v2はv1よりもはるかに人気があり、npmダウンロード数はGatsbyのほぼ半分に達しています！
+
+![npm成長率](https://s3.amazonaws.com/revue/items/images/017/224/035/mail/npm-downloads.png?1659345822)
+
+私たちの[**サイトショーケース**](https://docusaurus.io/showcase?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)には既に約300サイトが掲載されています。
+
+そしてこれはまだ網羅的とは言えません。多くのサイトがまだ追加されていません:[Figma](https://www.figma.com/plugin-docs/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)、[Snapchat](https://docs.snap.com/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)、[Courier](https://www.courier.com/docs/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)、[1Password](https://developer.1password.com/?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)...
+
+Microsoft、LinkedIn、Shopifyなどの企業の多くの内部サイトは言うまでもありません...
+
+いくつかの例:
+
+* **大手テック企業**: Microsoft、Snapchat、Shopify、LinkedIn、Meta、SAP、ByteDance、Lacework、Palo Alto Network...
+* **スタートアップ**: Supabase、Ionic、Hasura、Figma、Courier、CodeSandbox、StackBlitz、Redis、Algolia、Hashnode...
+* **OSS**: React-Native、Redux、React-Navigation、Jest、Testing Library、Gulp、Babel、Lerna、pnpm、Electron、Tauri...
+* **Web3**: Iota、Solana、Cardano、Neo、SushiSwap...
+
+また、企業のブランドイメージを忠実に反映した美しいカスタマイズを施したサイトも多数あります。
+
+![Docusaurus v2を使用したサイト](https://s3.amazonaws.com/revue/items/images/017/224/051/original/showcase-2.gif?1659345869)
+
+***
+
+## 私の役割は？
+
+2年前、Twitterをスクロールしているとこんな投稿に出会いました:
+
+[![](https://user-images.githubusercontent.com/749374/182660849-cc39d9d0-85ad-481c-a681-743a9c5b20c7.png)](https://twitter.com/sebastienlorber/status/1232059882091749376)
+
+**プロのアドバイス**: Twitterに参加してオープンでいましょう 😄 面白いキャリアの機会につながるかもしれません！
+
+これは素晴らしい機会だと思いました: Facebookのフリーランスとしてオープンソースプロジェクトに携わるのは日常茶飯事ではありません。当初は3ヶ月の予定でしたが、結局もっと長く続くことになり、私はDocusaurusに2年以上も関わっています！
+
+非常に柔軟な働き方ができ、大きな自律性も与えられているので、このニュースレターを並行して運営することも可能です。
+
+Docusaurusが人気を集めるのを見るのは本当に嬉しく、自分の仕事が実際に影響を与えていると実感できます。このツールを試すきっかけになれば幸いです。皆さんが作成するサイトを見るのが楽しみです！ぜひ[サイトショーケース](https://docusaurus.io/showcase?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)に送ってください！
+
+***
+
+## ご協力のお願い
+
+**ローンチを成功させるため**に、アップボート、リツイート、コメントなどでご協力いただけると大変ありがたいです！
+
+主な公開プラットフォームはこちら:
+
+* [Twitter](https://twitter.com/docusaurus/status/1554000364432769025?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* [Product Hunt](https://www.producthunt.com/posts/docusaurus-2-0?utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+* [Hacker News](https://news.ycombinator.com/item?id=32303052\&utm_campaign=This%20Week%20In%20React\&utm_medium=email\&utm_source=Revue%20newsletter)
+
+ありがとうございます。また新鮮なReactニュースをお届けできるのを楽しみにしています :)
+
+![私たちの最もキュートなマスコットSlash 💕](https://s3.amazonaws.com/revue/items/images/017/224/190/mail/CleanShot_2022-08-01_at_11.08.03_402x.png?1659346116)
+
+私たちの最もキュートなマスコットSlash 💕

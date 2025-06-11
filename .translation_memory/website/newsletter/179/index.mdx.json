@@ -1,0 +1,560 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/179/index.mdx",
+  "source_file_content_hash": "431cf5f7dfd022285c3f3498a2c62f0b332643706eba4bc64921422d56054b31",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /179\ntitle: \"This Week In React #179: useActionState, Redwood, Waku, Astro, Pre-rendering, Bun, Kotekan, memo, Radix, shadcn/ui, React-Navigation, RN-Screens, CodePush, VisionOS, TypeScript, Node.js...\"\nauthors: [slorber, bndkt]\ndate: 03-27-2024\n---",
+      "source_content_hash": "c30d4187a91b06d07fa643b4c06ee0f146468caabb6e66c0118889ad79493dea",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Another week full of interesting news! I found many links, and saved a few of them for next week, which should be a quiet one due to Easter Monday.",
+      "source_content_hash": "d8a8f18699bbcaab7fc7ae57ad3055dff6ddeccaf3fdc22112a6caaa2ac985cf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週も興味深いニュースが盛りだくさんです！多くのリンクを見つけ、イースター月曜日のため静かな週になるであろう来週用にいくつか保存しておきました。"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "It's exciting to see Waku and Redwood becoming stronger meta-frameworks, and new innovative experiments built on top of Bun such as Kotekan and a pre-rendering macro.",
+      "source_content_hash": "d15e9182f132f47287042afb35e9932756b5d130b038f917abf7ad70a42e94f3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "WakuやRedwoodがより強力なメタフレームワークとして成長していること、そしてBun上に構築されたKotekanやプリレンダリングマクロといった新しい革新的な実験が進行中なのはエキサイティングです。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "React Native also has interesting updates, notably a React Navigation v7 sneak peek, and a nice React Native Screen upgrade.",
+      "source_content_hash": "ebcd103cafc6ef58e428b48482b1dfc3ba375f9580e2ce342dbca5d3f0088544",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React Nativeにも興味深いアップデートがあり、特にReact Navigation v7の先行公開やReact Native Screenの素晴らしいアップグレードが注目されます。"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "I was at [React.paris](https://react.paris/) last week. It was a really great conf, and it was nice to meet some of you! It's great that Paris is finally back in the React conf game.",
+      "source_content_hash": "eeb49be0c22731ef9ea242b908d63c63e4fe2bc5aba92315c52b9e6339065592",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "先週は[React.paris](https://react.paris/)に参加していました。非常に素晴らしいカンファレンスで、読者の皆さんにお会いできたのも嬉しかったです！パリが再びReactカンファレンスの舞台に戻ってきたことは喜ばしいことです。"
+      }
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "The party is not over, because next month we also have [React Connection](https://reactconnection.io/) and [React Native Connection](https://reactnativeconnection.io/) on 22-23 April in Paris! The newsletter is once again a conf media partner. You can get a [-20% discount](https://www.billetweb.fr/react-connection-2024?discount=TWIR) with the code \"TWIR\", and we'll run a ticket giveaway on Twitter this Friday.",
+      "source_content_hash": "48e13f22cfac13ef107760df6b10fec5609ee7260efc0e6cc505f24c1a9851b8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "お祭りはまだ終わりません。来月4月22-23日にはパリで[React Connection](https://reactconnection.io/)と[React Native Connection](https://reactnativeconnection.io/)が開催されます！このニュースレターも再びカンファレンスのメディアパートナーを務めます。\"TWIR\"コードを使用すると[-20%の割引](https://www.billetweb.fr/react-connection-2024?discount=TWIR)が適用され、今週金曜日にはTwitterでチケットのプレゼントキャンペーンも行います。"
+      }
+    },
+    {
+      "segment_id": "c6da205d",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_c6da205d"
+      }
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**💡 [Twitterでこのニュースレターをチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**"
+      }
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "cf4363fc",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_cf4363fc"
+      }
+    },
+    {
+      "segment_id": "2a3434e4",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_2a3434e4"
+      }
+    },
+    {
+      "segment_id": "2b28cb1b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "b25f21be",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "[![React-admin: The Open-Source Framework for B2B apps](/emails/issues/179/reactadmin.jpg)](https://marmelab.com/react-admin/)",
+      "source_content_hash": "c490e55cb25c27ca57f53c799a4ad130e87cef871a4362fdbf7333b773794bf9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![React-admin: B2Bアプリ向けオープンソースフレームワーク](/emails/issues/179/reactadmin.jpg)](https://marmelab.com/react-admin/)"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "**[React-admin: The Open-Source Framework for B2B apps](https://marmelab.com/react-admin/)**",
+      "source_content_hash": "134eba9a0d54cccd0c26001e8ef40db0ca57b4aed3b5964db5fa48be482c2b51",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[React-admin: B2Bアプリ向けオープンソースフレームワーク](https://marmelab.com/react-admin/)**"
+      }
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "With 23k stars and 500,000 daily users, react-admin is the framework of choice for single-page applications (ERPs, Admins, B2B apps). Compatible with Vite, Next, and Remix, it builds upon acclaimed libraries like react-hook-form, react-query, react-router and material-ui to accelerate your development game.",
+      "source_content_hash": "6855e6c07e1c8a054ca4a74184e747d5e62144f37c274d834793616b2efe511f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "23,000のスターと50万の日間ユーザーを誇るreact-adminは、シングルページアプリケーション（ERP、管理画面、B2Bアプリ）向けのフレームワークとして選ばれています。Vite、Next、Remixと互換性があり、react-hook-form、react-query、react-router、material-uiといった高評価のライブラリを基盤として開発速度を加速します。"
+      }
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "🌟 Key characteristics include:",
+      "source_content_hash": "67ee75efa70caeb1ad153fb5661abc61944f0ba4a30c73637352dbdbdd2c34ee",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "🌟 主な特徴:"
+      }
+    },
+    {
+      "segment_id": "8612da05",
+      "source_content": "* 🔌 Backend agnostic: Connects to any REST or GraphQL API\n* 🧩 Rich library with over 200 application building blocks\n* 🛠 Complete customization: Replace any component with your own\n* 💻 Great developer experience\n* 👑 Amazing user experience",
+      "source_content_hash": "3422aeceba8205f21ada4cb4df1e8710f0e7f264372d07a36e5bd4fe73cab673",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 🔌 バックエンド非依存: 任意のRESTまたはGraphQL APIに接続可能\n* 🧩 200以上のアプリケーションビルディングブロックを備えた豊富なライブラリ\n* 🛠 完全なカスタマイズ: 任意のコンポーネントを独自のものに置換可能\n* 💻 優れた開発者体験\n* 👑 素晴らしいユーザー体験"
+      }
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "[Join React-admin’s community](https://discord.gg/tKyDzXHJ7f) today and witness firsthand why it's the framework of choice for thousands of developers worldwide! [Try it now](https://marmelab.com/react-admin/Tutorial.html), it is free, forever! 😉",
+      "source_content_hash": "6349cc93983bc42e022fe56c4127aa2af0048ddc91ea7fd5b24e67137e2ad2ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[React-adminのコミュニティに参加](https://discord.gg/tKyDzXHJ7f)して、なぜ世界中の何千もの開発者に選ばれているのかを直接体験してください！[今すぐ試す](https://marmelab.com/react-admin/Tutorial.html)、無料で永遠に！😉"
+      }
+    },
+    {
+      "segment_id": "816a06a6",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "cb5b269c",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "b36c6338",
+      "source_content": "[![React Server Components now in RedwoodJS](/emails/issues/179/redwood.jpg)](https://redwoodjs.com/blog/rsc-now-in-redwoodjs)",
+      "source_content_hash": "1342ddf5c1e6e4dad242f97438b61f79d6c18d92b98b6e36b84a5e20d2762afc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![RedwoodJSでReact Server Componentsが利用可能に](/emails/issues/179/redwood.jpg)](https://redwoodjs.com/blog/rsc-now-in-redwoodjs)"
+      }
+    },
+    {
+      "segment_id": "b9aaa519",
+      "source_content": "[**React Server Components now in RedwoodJS**](https://redwoodjs.com/blog/rsc-now-in-redwoodjs)",
+      "source_content_hash": "afe9fa6b0521ceb88de1c5d540d6d330a09133feed990aa962838f9242a8bf4d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**RedwoodJSでReact Server Componentsが利用可能に**](https://redwoodjs.com/blog/rsc-now-in-redwoodjs)"
+      }
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "Bighorn, the next Redwood “epoch” starting at v8.0, will bet all-in on React Server Components. This article explains why Redwood now prefers RSCs over GraphQL, which wasn’t the best DX to get started with for most devs and projects. GraphQL will remain supported and can be used alongside RSCs in the same app. Redwood Cells now allow you to export a new “data” function to load the Cell data.",
+      "source_content_hash": "b1e4749b4a651ff8c7a104fb2e342b7bcf65bedc358c5ed80a6996d7b2b147af",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "v8.0から始まるRedwoodの次の「時代」であるBighornは、React Server Componentsに全面賭けします。この記事では、なぜRedwoodがGraphQLよりもRSCを優先するようになったのか、そしてGraphQLがほとんどの開発者やプロジェクトにとって最適なDXではなかった理由を説明しています。GraphQLは引き続きサポートされ、RSCと同じアプリ内で併用できます。Redwood Cellsでは、新しい「data」関数をエクスポートしてCellデータをロードできるようになりました。"
+      }
+    },
+    {
+      "segment_id": "40158b4b",
+      "source_content": "You can try Redwood Bighorn today as a v8 canary release, but there are still many rough edges mentioned in the blog post, that they’ll fix before the official major release. There’s another interesting article to read [comparing Redwood routing conventions to Next.js and Remix](https://redwoodjs.com/blog/whats-different-comparing-the-router-in-nextjs-app-api-nextjs-pages-api-remix-and-redwoodjs).",
+      "source_content_hash": "b0131245651715020105d5cb440c8955c4c994597fde6487a3d5c26bd5640f33",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Redwood Bighornはv8のカナリーリリースとして今日から試すことができますが、ブログ記事で言及されているように、まだ多くの未完成部分があり、正式なメジャーリリース前に修正される予定です。また、[Redwoodのルーティング規則をNext.jsやRemixと比較する](https://redwoodjs.com/blog/whats-different-comparing-the-router-in-nextjs-app-api-nextjs-pages-api-remix-and-redwoodjs)興味深い記事も読む価値があります。"
+      }
+    },
+    {
+      "segment_id": "818747ba",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "158e1f5d",
+      "source_content": "* 💸 [React Universe Conf - We care about a diverse lineup, so we prolong our CFP until April 5. We encourage all women in tech to submit talks!](https://www.reactuniverseconf.com/?utm_campaign=React_Universe_Conf\\&utm_source=email\\&utm_content=This_Week_in_React)\n* 👀 [React Core PR - useActionState](https://github.com/facebook/react/pull/28491): The PR is now merged and has been added to the [canary changelog](https://github.com/facebook/react/blob/main/CHANGELOG-canary.md).\n* 💬 [Astro proposal - Form actions](https://github.com/withastro/roadmap/discussions/871): Astro is exploring options for form submissions and mutations to feed their new Astro DB product, taking into consideration React 19 islands using useActionState() and useFormStatus().\n* 🐦 [Sebastian Silbermann (React core team) joins Vercel](https://twitter.com/sebsilbermann/status/1772229730747490691)\n* 📖 [Remix new docs - CSS files](https://remix.run/docs/en/main/guides/css-files)\n* 📜 [Power of Partial Prerendering with Bun](https://aralroca.com/blog/partial-prerendering): An interesting idea, using import attributes to pre-render React components thanks to a Bun macro.\n* 📜 [A faster React.memo()](https://romgrk.com/posts/react-fast-memo/): Argues that React is using a generic shallowCompare function for React.memo() that could be greatly optimized by using a specialized comparison function that assumes the things to compare are React props.\n* 📜 [What is a layout in React?](https://www.ericburel.tech/blog/what-layout-means-in-react): A good overview presenting how layouts are implemented differently in Remix, Next.js, or Astro.\n* 📜 [Diving into the Node.js Website Redesign](https://nodejs.org/en/blog/announcements/diving-into-the-nodejs-website-redesign): Node.js just launched a new Next.js website and shares behind-the-scenes details. They considered Nextra but settled on a custom Next.js setup. The site is statically built, using ISR for dynamic content.\n* 📜 [This Pattern Will Wreck Your React App's TS Performance](https://www.totaltypescript.com/react-apps-ts-performance): Matt recommends using “interface extends” instead of “&”, drawing on the story of a Sentry TS perf issue.\n* 📜 [Utilizing useOptimistic() across the component tree in Next.js](https://aurorascharff.no/posts/utilizing-useoptimistic-across-the-component-tree-in-nextjs/): Explains why and how to share the useOptimistic value through a React context.\n* 📜 [Why I Like React (even in 2024)](https://ejosh.co/de/2024/03/why-i-like-react-even-in-2024/)\n* 📜 [Building a «hold to confirm» button with Framer Motion](https://sinja.io/blog/hold-to-confirm-button-react-framer-motion)\n* 📜 [React useEffect and objects as dependency - 4 approaches to avoid unnecessary re-renders](https://profy.dev/article/react-useeffect-with-object-dependency)\n* 📜 [React-Three-Fiber - Moebius-style post-processing and other stylized shaders](https://blog.maximeheckel.com/posts/moebius-style-post-processing/)\n* 📜 [How to Build Your Own ChatGPT Clone Using Clerk & AWS Bedrock](https://conermurphy.com/blog/how-to-build-your-own-chatgpt-clone-using-clerk-aws-bedrock)\n* 📜 [Exploring useSyncExternalStore, a lesser-known React Hook](https://blog.logrocket.com/exploring-usesyncexternalstore-react-hook/)\n* 📜 [Remix Case Study - Shopify rebuilding Shop with Remix](https://remix.run/blog/shop-case-study)\n* 📦 [Waku 0.20 - Introducing “pages router”](https://waku.gg/blog/introducing-pages-router): Waku continues to push toward becoming a first-class React meta-framework. The latest release adds a lightweight file-based router and the introduction article presents its conventions. You can choose between static or dynamic rendering on a per-page basis.\n* 📦 [Kotekan - A simple React framework built on Bun, supporting React Server Components](https://kotekan.dev/blog/introducing-kotekan): My co-author Benedikt created his own experimental meta-framework, supporting React Server Components. Unlike other frameworks trying to stay decoupled from a specific runtime, Kotekan leverages tight coupling with Bun for both bundling and runtime. It looks like other interesting things are not mentioned in the intro post, notably a mobile app demo using react-strict-dom and StyleX. That’s impressive that the website is already built with it.\n* 📦 [Radix Themes 3.0](https://www.radix-ui.com/blog/themes-3): This new version adds custom color palettes, many new components, and a new layout engine.\n* 📦 [shadcn/ui update - Blocks](https://ui.shadcn.com/docs/changelog): Fully responsive, accessible, and composable ready-made components, starting with dashboard layouts and authentication pages.\n* 📦 [@vite-pwa/remix - Zero-config PWA Plugin for Remix](https://github.com/vite-pwa/remix)\n* 📦 [Remotion 4.0.130 - Lambda renders are now faster](https://www.remotion.dev/blog/faster-lambda)\n* 🎥 [Jack Herrington - Finally Fix Your Issues With JS/React Memory Leaks](https://www.youtube.com/watch?v=qERgb3pWfu0)\n* 🎥 [UI Engineering - Senior-Level Understanding of React Portals](https://www.youtube.com/watch?v=5F7GrlIPdJ4)\n* 🎥 [Theo - The End Of React Router](https://www.youtube.com/watch?v=nZKlPtQqqgQ)\n* 🎥 [James Quick - I Didn't Know Next.js Server Actions Could Do This (usage outside forms)](https://www.youtube.com/watch?v=ZZCXnNAOqqU)",
+      "source_content_hash": "4b2ead7a5eef1b926f285db805d85562435eaf464cb1344c96ccec146445d8ff",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {}
+    },
+    {
+      "segment_id": "2ef748d1",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_2ef748d1"
+      }
+    },
+    {
+      "segment_id": "b805e2c6",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "b10963d7",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "[![The only auth platform you need for enterprise clients](/emails/issues/179/workos.jpg)](https://workos.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=q12024)",
+      "source_content_hash": "0e72afa953dd5fc7225f112161b71f2a3cdb99393604e286d42227e3c3f7bdfc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![エンタープライズクライアント向けに必要な唯一の認証プラットフォーム](/emails/issues/179/workos.jpg)](https://workos.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=q12024)"
+      }
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "**[The only auth platform you need for enterprise clients](https://workos.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=q12024)**",
+      "source_content_hash": "a4cae9505c47388cc845d8269f225074a23a597794e20b62c878107c14824023",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[エンタープライズクライアント向けに必要な唯一の認証プラットフォーム](https://workos.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=q12024)**"
+      }
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "WorkOS is a modern identity platform built for B2B SaaS.",
+      "source_content_hash": "e6d29cc7df53aef4f493c3ae4a5ed23aff82a8dbb14db9715284391ea97f02db",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "WorkOSはB2B SaaS向けに構築されたモダンなアイデンティティプラットフォームです。"
+      }
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "⚡ Open-source login UI powered by Radix components, offering all the customizability you need",
+      "source_content_hash": "19be9d4bc3a7abf7c6c6a3839f0baec3eb82f84658f326999cfc4b2039fb526a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "⚡ Radixコンポーネントを活用したオープンソースのログインUIで、必要なカスタマイズ性をすべて提供"
+      }
+    },
+    {
+      "segment_id": "4be28ed1",
+      "source_content": "⚙️ Support for more complex features like single sign-on (SSO) and SCIM provisioning",
+      "source_content_hash": "32f0c40f90063189680c8c2e8a7942ac81662966f7e2072a337f48a5a4207b37",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "⚙️ シングルサインオン（SSO）やSCIMプロビジョニングなどの複雑な機能をサポート"
+      }
+    },
+    {
+      "segment_id": "0e80209e",
+      "source_content": "⌨️ Flexible and easy-to-use APIs, helping companies like Vercel, Loom, and Webflow offer enterprise-grade auth in minutes",
+      "source_content_hash": "3e0228caa871dc649cdb38fec1cadf9c22c45f453e40da43eeb174f154fa4912",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "⌨️ Vercel、Loom、Webflowなどの企業が数分でエンタープライズグレードの認証を提供できる柔軟で使いやすいAPI"
+      }
+    },
+    {
+      "segment_id": "7bc8bb24",
+      "source_content": "💰 User Management that is free up to 1 million monthly active users",
+      "source_content_hash": "8bb9afc2e7a77f4d10bc04840c3e504144fa4f43b88faed1a5d9bbab521e1f50",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "💰 月間アクティブユーザー100万人まで無料のユーザー管理"
+      }
+    },
+    {
+      "segment_id": "6693c38c",
+      "source_content": "[Get started with WorkOS ↗️](https://workos.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=q12024)",
+      "source_content_hash": "0fa4b41e1ccf631be784d85b1151e861315087aa2b2482ed939d5d5adfc99bf0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[WorkOSを始める ↗️](https://workos.com/?utm_source=thisweekinreact\\&utm_medium=newsletter\\&utm_campaign=q12024)"
+      }
+    },
+    {
+      "segment_id": "e55f4c1f",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "48155948",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "1958bc43",
+      "source_content": "This section is now co-authored with [Benedikt](https://twitter.com/bndkt). Feel free to send us your comments by email or on [Twitter](https://twitter.com/bndkt)!",
+      "source_content_hash": "03c93ddbf8c7962f08a28785d1027e43728cac6191b8183c1e16ffcc9503435b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "このセクションは現在[Benedikt](https://twitter.com/bndkt)と共同執筆しています。コメントはメールまたは[Twitter](https://twitter.com/bndkt)でお送りください！"
+      }
+    },
+    {
+      "segment_id": "a8610918",
+      "source_content": "[![React Navigation - Introducing Static API](/emails/issues/179/rnav.jpg)](https://reactnavigation.org/blog/2024/03/25/introducing-static-api)",
+      "source_content_hash": "023f00710b1fe0de7c0df5b14a2705df9e5f1cad3f58c5f79c959394be89e91f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![React Navigation - 静的APIの紹介](/emails/issues/179/rnav.jpg)](https://reactnavigation.org/blog/2024/03/25/introducing-static-api)"
+      }
+    },
+    {
+      "segment_id": "a6c928a1",
+      "source_content": "[**React Navigation - Introducing Static API**](https://reactnavigation.org/blog/2024/03/25/introducing-static-api)",
+      "source_content_hash": "e378ebb267d3fd1ce4fd105956eae8323aa6d5b7ad83b7b832080dd8c610e41a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**React Navigation - 静的APIの紹介**](https://reactnavigation.org/blog/2024/03/25/introducing-static-api)"
+      }
+    },
+    {
+      "segment_id": "b6152880",
+      "source_content": "Arguably one of the most used and most important React Native libraries out there is React Navigation. The current major version (6) was introduced roughly three years ago, and now it seems we’re getting closer to the next major release. With v7 (currently in alpha), React Navigation is (re-)introducing a static API, which lets you define screens from an object configuration. This allows type inference (if you’ve ever created types for a dynamic React Navigation tree you know what that relieves you of) and also makes deep linking config easier (or partly automatic, even).",
+      "source_content_hash": "83d06cf4036277dae7cfe64de253da081dd02473bc6082b13b6fbba9ea957850",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React Nativeで最も使用され、最も重要なライブラリの1つであるReact Navigation。現在のメジャーバージョン（6）は約3年前に導入されましたが、次のメジャーリリースが近づいているようです。v7（現在アルファ版）では、React Navigationは静的APIを（再）導入し、オブジェクト設定から画面を定義できるようになります。これにより型推論が可能になり（動的なReact Navigationツリーの型を作成したことがある方ならその負担が軽減されることをご存知でしょう）、ディープリンクの設定も容易に（あるいは部分的に自動化さえ）なります。"
+      }
+    },
+    {
+      "segment_id": "b9331170",
+      "source_content": "Make sure to also read the [v7 upgrade guide](https://reactnavigation.org/docs/7.x/upgrading-from-6.x/) if you want to know about other changes coming!",
+      "source_content_hash": "9676a0437e178066f100eb39adce3751a6a5baec68931d7f07618182e5de3c66",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "他の変更点について知りたい方は、[v7アップグレードガイド](https://reactnavigation.org/docs/7.x/upgrading-from-6.x/)も必ずお読みください！"
+      }
+    },
+    {
+      "segment_id": "566c958b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "a8198b43",
+      "source_content": "* 💸 [Omlet - Measure React Native component usage in production. Track adoption and get data for codebase improvements in \\<5 minutes setup](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-rn-mar-2024)\n* 🐦 [React Native Server Components on visionOS demo](https://twitter.com/SzymonRybczak/status/1772987077488935208)\n* 📜 [Building multi-window applications with React Native visionOS](https://www.oskarkwasniewski.dev/blog/react-native-visionos-multi-window-apps): Learn how to not only enable multiple windows in visionOS apps, but also how to share React state between them.\n* 📜 [Expo - How to replace App Center and CodePush](https://expo.dev/blog/how-to-replace-app-center-and-codepush): As reported last week, CodePush is shutting down on March 31, 2025.\n* 📜 Two Expo case studies: [Win your March Madness bracket with this Expo app](https://expo.dev/blog/march-madness-expo-app) and [incident.io harnesses the power of native modules and CNG](https://expo.dev/blog/incident-io-harnesses-the-power-of-native-modules-and-cng)\n* 📜 [Rethinking Layout Practices - A minimalistic Stack component that sets the foundation for doing layout well](https://www.reactnative.university/blog/rethinking-layout-practices): Interesting take: Never layout using padding or margin on Text or View components and instead introduce a Stack component (Tamagui does this for example).\n* 📜 [Optimize Your React Native App’s JavaScript Bundle](https://www.callstack.com/blog/optimize-react-native-apps-javascript-bundle): The title doesn’t give it away, but this is an interesting overview of alternative bundlers for RN. Sadly, all of these still have pretty big trade-offs compared to Metro.\n* 📜 [How To Add Social Auth With AWS Amplify And React Native?](https://scientyficworld.org/social-auth-with-aws-amplify-and-react-native/)\n* 📜 [Optimize React Native Apps' Battery Drain With Mobile-Dedicated Libraries](https://www.callstack.com/blog/optimize-battery-drain-in-react-native-apps)\n* 📜 [How Can Higher-Order Components Improve Performance of React Native Apps?](https://www.callstack.com/blog/improve-react-native-performance-with-higher-ordered-components)\n* 📦 [@dev-plugins/redux](https://www.npmjs.com/package/@dev-plugins/redux): Plugin for Expo Dev Tools to debug Redux stores.\n* 📦 [react-native-screens 3.30.0](https://github.com/software-mansion/react-native-screens/releases/tag/3.30.0): Now includes a \"go back\" gesture and supports visionOS\n* 📦 [react-native 0.74.0-rc.5](https://github.com/facebook/react-native/releases/tag/v0.74.0-rc.5)\n* 🎙️ [RNR 292 - RNR Explains: Metro Bundler](https://reactnativeradio.com/episodes/rnr-292-rnr-explains-metro-bundler)\n* 🎥 [Theo - The New React Native Architecture](https://www.youtube.com/watch?v=BdPkVl4Y8TQ)\n* 🎥 [Rocket Ship 35 - React Native Skia with William Candillon](https://share.transistor.fm/s/15269c3f)\n* 🎥 [Simon: Build a FinTech Clone with React Native (API Routes, Zustand, Tanstack Query, FaceID, Charts, Clerk)](https://www.youtube.com/watch?v=iDZBeIgcixk): Usually we pick short, but valuable videos to save you time. This one is over 5½ hours long(!), but I highly recommend it if you want to observe a state-of-the-art RN app build from start to finish.",
+      "source_content_hash": "ebd4168d6c118b34e0da12d50a8a5da2f5816b58a3581814e84a8133ca52ab1d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Omlet - React Nativeコンポーネントの本番環境での使用状況を計測。導入状況を追跡し、5分未満のセットアップでコードベース改善のためのデータを取得](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-rn-mar-2024)\n* 🐦 [visionOSでのReact Native Server Componentsデモ](https://twitter.com/SzymonRybczak/status/1772987077488935208)\n* 📜 [React Native visionOSでマルチウィンドウアプリケーションを構築](https://www.oskarkwasniewski.dev/blog/react-native-visionos-multi-window-apps): visionOSアプリで複数ウィンドウを有効にするだけでなく、React状態をそれらの間で共有する方法を学びます。\n* 📜 [Expo - App CenterとCodePushの代替方法](https://expo.dev/blog/how-to-replace-app-center-and-codepush): 先週報告された通り、CodePushは2025年3月31日にサービス終了予定です。\n* 📜 Expoケーススタディ2件: [このExpoアプリでMarch Madnessのブラケットを勝ち取ろう](https://expo.dev/blog/march-madness-expo-app) と [incident.ioがネイティブモジュールとCNGの力を活用](https://expo.dev/blog/incident-io-harnesses-the-power-of-native-modules-and-cng)\n* 📜 [レイアウト手法の再考 - 適切なレイアウトの基礎を築く最小限のStackコンポーネント](https://www.reactnative.university/blog/rethinking-layout-practices): 興味深い提言：TextやViewコンポーネントにpaddingやmarginを使ってレイアウトするのをやめ、代わりにStackコンポーネントを導入する（Tamaguiなどがこのアプローチを採用）。\n* 📜 [React NativeアプリのJavaScriptバンドルを最適化](https://www.callstack.com/blog/optimize-react-native-apps-javascript-bundle): タイトルからはわかりませんが、これはRN向けの代替バンドラーの興味深い概説です。残念ながら、これらはすべてMetroと比べてまだ大きなトレードオフがあります。\n* 📜 [AWS AmplifyとReact Nativeでソーシャル認証を追加する方法](https://scientyficworld.org/social-auth-with-aws-amplify-and-react-native/)\n* 📜 [モバイル専用ライブラリでReact Nativeアプリのバッテリー消費を最適化](https://www.callstack.com/blog/optimize-battery-drain-in-react-native-apps)\n* 📜 [高階コンポーネントがReact Nativeアプリのパフォーマンスを向上させる方法](https://www.callstack.com/blog/improve-react-native-performance-with-higher-ordered-components)\n* 📦 [@dev-plugins/redux](https://www.npmjs.com/package/@dev-plugins/redux): Expo Dev Tools用プラグインでReduxストアをデバッグ。\n* 📦 [react-native-screens 3.30.0](https://github.com/software-mansion/react-native-screens/releases/tag/3.30.0): 「戻る」ジェスチャーをサポートし、visionOSにも対応\n* 📦 [react-native 0.74.0-rc.5](https://github.com/facebook/react-native/releases/tag/v0.74.0-rc.5)\n* 🎙️ [RNR 292 - RNR解説: Metro Bundler](https://reactnativeradio.com/episodes/rnr-292-rnr-explains-metro-bundler)\n* 🎥 [Theo - 新しいReact Nativeアーキテクチャ](https://www.youtube.com/watch?v=BdPkVl4Y8TQ)\n* 🎥 [Rocket Ship 35 - William CandillonとReact Native Skia](https://share.transistor.fm/s/15269c3f)\n* 🎥 [Simon: React NativeでFinTechクローンを構築（API Routes、Zustand、Tanstack Query、FaceID、チャート、Clerk）](https://www.youtube.com/watch?v=iDZBeIgcixk): 通常は時間節約のため短く価値ある動画を選びますが、これは5時間半以上(!)の長編です。最新のRNアプリ構築を最初から最後まで観察したい方には強くおすすめします。"
+      }
+    },
+    {
+      "segment_id": "f97c407b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "3cd8185f",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "a627a446",
+      "source_content": "* 📜 [TypeScript Flow Nodes - How Type Inference Is Implemented](https://effectivetypescript.com/2024/03/24/flownodes/)\n* 📜 [Optimizing Javascript for fun and for profit](https://romgrk.com/posts/optimizing-javascript/)\n* 📜 [Why TypeScript Doesn't Include a throws Keyword](https://www.learningtypescript.com/articles/why-typescript-doesnt-include-a-throws-keyword)\n* 📜 [JavaScript Visualized - Promise Execution](https://www.lydiahallie.com/blog/promise-execution)\n* 📜 [Astro - Migrating 500+ tests from Mocha to Node.js](https://astro.build/blog/node-test-migration/)\n* 📜 [Kuto, a reverse JS bundler](https://samthor.au/2024/kuto/)\n* 📦 [VitePress 1.0 - Vite & Vue Powered Static Site Generator](https://blog.vuejs.org/posts/vitepress-1.0)\n* 📦 [Microsoft TypeChat 0.1 - Get structured output from AI language models](https://microsoft.github.io/TypeChat/blog/announcing-typechat-0-1-0/)\n* 🎥 [Node.js - The Documentary](https://www.youtube.com/watch?v=LB8KwiiUGy0)\n* 🔗 [Runtime Compatibility - Display APIs compatibility across different JavaScript runtimes](https://runtime-compat.unjs.io/)",
+      "source_content_hash": "6caf392e5dd762726ff9c2c779944e053b2342c5a890174b02d75729d00dc1d9",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 📜 [TypeScript Flow Nodes - 型推論の実装方法](https://effectivetypescript.com/2024/03/24/flownodes/)\n* 📜 [楽しみと利益のためのJavaScript最適化](https://romgrk.com/posts/optimizing-javascript/)\n* 📜 [TypeScriptがthrowsキーワードを含まない理由](https://www.learningtypescript.com/articles/why-typescript-doesnt-include-a-throws-keyword)\n* 📜 [JavaScriptビジュアライズド - Promiseの実行](https://www.lydiahallie.com/blog/promise-execution)\n* 📜 [Astro - 500以上のテストをMochaからNode.jsに移行](https://astro.build/blog/node-test-migration/)\n* 📜 [Kuto、逆方向のJSバンドラー](https://samthor.au/2024/kuto/)\n* 📦 [VitePress 1.0 - Vite & Vue製の静的サイトジェネレータ](https://blog.vuejs.org/posts/vitepress-1.0)\n* 📦 [Microsoft TypeChat 0.1 - AI言語モデルから構造化された出力を取得](https://microsoft.github.io/TypeChat/blog/announcing-typechat-0-1-0/)\n* 🎥 [Node.js - ドキュメンタリー](https://www.youtube.com/watch?v=LB8KwiiUGy0)\n* 🔗 [Runtime Compatibility - 様々なJavaScriptランタイム間のAPI互換性を表示](https://runtime-compat.unjs.io/)"
+      }
+    },
+    {
+      "segment_id": "a0d6d6c7",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "a5905b07",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "fd7ed056",
+      "source_content": "[![alt](/emails/issues/179/meme.jpg)](https://twitter.com/ryanflorence/status/1770638771392049400)",
+      "source_content_hash": "a7ff2f5eee0c7debdf080983fe295200ae5b6ac2e8b3da5bf15aa969b86ffe28",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/179/meme.jpg)](https://twitter.com/ryanflorence/status/1770638771392049400)"
+      }
+    },
+    {
+      "segment_id": "b08ad0b4",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "またね！👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/179/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:41.856598+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "431cf5f7dfd022285c3f3498a2c62f0b332643706eba4bc64921422d56054b31"
+  }
+}

@@ -1,0 +1,171 @@
+---
+slug: /147
+title: "This Week In React #147: RSCs, Next.js, Remix, Redwood, Error Boundary, JSX, Raycast, Spotify, Triplex, useHooks, ReMDX, Astro, Pastel, TypeScript..."
+authors: [slorber]
+date: 06-06-2023
+---
+
+みなさん、こんにちは！
+
+今週は、[Reactの10周年](https://twitter.com/sebastienlorber/status/1662957673573130244)をお祝いしています！ 🥳️
+
+ここ2週間で、特にServer Componentsの導入に伴う複雑さに関連する興味深い記事がいくつかありました。Dan Abramovはこのテーマについて興味深いリソースを公開しています。RemixとRedwoodはRSCのサポートを表明しました。
+
+React-Nativeに関しては、最近3つのカンファレンスが開催され、プレイリストがYouTubeで公開されつつあります。私は[React-Native-Connectionで素晴らしい時間を過ごしました](https://twitter.com/sebastienlorber/status/1664584407775051779)。これはパリで開催された新しいReact-Nativeカンファレンスです。参加してくれた皆さん、そしてこの初回の成功を支えてくれた皆さんに感謝します。
+
+素晴らしいことに、このニュースレターは[React SummitカンファレンスでReact Open Source Awardを受賞しました](https://twitter.com/sebastienlorber/status/1664667086860308481)！投票してくれた皆さんに感謝します。他の候補者を考えると受賞するとは思っていませんでした😆
+
+[![award](/emails/issues/147/award.jpg)](https://twitter.com/sebastienlorber/status/1664667086860308481)
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアル形式 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Start UI](/emails/issues/144/start_ui.jpg)](https://web.start-ui.com?utm_source=newsletter\&utm_term=this-week-in-react)
+
+**[Start UI \[web\] - オピニオンが詰まったWebアプリUIスターター](https://web.start-ui.com?utm_source=newsletter\&utm_term=this-week-in-react)**
+
+私たちの**無料でオープンソースのUI Webアプリスターター**は、次のプロジェクトを迅速かつ簡単に開始する方法を提供します。これには、初期セットアップ段階で時間と労力を節約する**ベストプラクティスと本番環境対応のツール**が含まれています。
+
+🔐 認証、📱レスポンシブレイアウト、🧑‍💻 ユーザー管理、🇫🇷 国際化と右から左へのサポート、🌚 ダークモード、🎛 開発を容易にする高度なコンポーネントなどの**機能**が組み込まれています。[デモアプリ](https://demo.start-ui.com)を試すことができます。
+
+**TypeScript**、**NextJS**、Chakra UI、TanStack Query、Storybookなどで使用可能です。
+
+[🚀 Start UI \[web\] on GitHub](https://web.start-ui.com)
+
+***
+
+## ⚛️ React {#react}
+
+[![クライアントコンポーネントはなぜHTMLにSSRされるのか？](/emails/issues/147/client-component.jpg)](https://github.com/reactwg/server-components/discussions/4)
+
+**[クライアントコンポーネントはなぜHTMLにSSRされるのか？](https://github.com/reactwg/server-components/discussions/4)**
+
+Dan Abramovによる、既知のクライアントツリーと新しいサーバーツリーの違いについての短いビジュアル解説です。この図は興味深いもので、簡単に混乱しがちな点を解消してくれます。クライアントコンポーネントは、実際にはこれまで単純なReactコンポーネントと呼んでいたものです。SSR中、**クライアントコンポーネントは以前と同様にサーバー上で実行されます**。
+
+***
+
+[![Raycast APIと拡張機能の仕組み](/emails/issues/147/raycast.jpg)](https://www.raycast.com/blog/how-raycast-api-extensions-work)
+
+**[Raycast APIと拡張機能の仕組み](https://www.raycast.com/blog/how-raycast-api-extensions-work)**
+
+RaycastはMacOS向けの拡張可能なランチャーで、その品質の高さで知られるアプリです。この記事では、彼らがプラグインシステムを実装するために辿ったステップを説明しています。UXとDXを妥協したくないという考えから、WebViewやElectronは採用せず、セキュリティを確保しつつnpmパッケージを使用可能にする方法を模索しました。最終的には、別のNodeプロセスで動作するカスタムReactレンダラーを開発し、Swiftを通じてネイティブビューをJSONブリッジで操作する方式を採用しました。これはReact-Nativeと非常に似たアーキテクチャです。
+
+***
+
+* 🥳️ [Reactの10周年を祝う](https://vercel.com/blog/10-years-of-react): VercelはReactの10周年を記念して、Andrew、Sebastian、Delbaを交えた最新のReactイノベーションについての[ラウンドテーブル動画](https://www.youtube.com/watch?v=g5BGoLyGjY0)を公開しています。
+* 👀 [React `<Catch>` API?](https://twitter.com/wongmjane/status/1661786321176911872): クラスコンポーネントなしでエラーバウンダリをサポートする予定？
+* 👀 [Remix + RSC POC](https://twitter.com/ryanflorence/status/1663587026384584704): RemixがついにServer Componentsの実装を計画しており、その理由の一つを[こちら](https://twitter.com/remix_run/status/1661017634480201734)で説明しています。
+* 💬 [React WG - RSC from Scratch. Part 1: Server Components](https://github.com/reactwg/server-components/discussions/5): Dan AbramovがServer Componentsをゼロから実装する方法を詳しく解説。Part 1（全3回）ではServer Components側の実装方法を説明しています。
+* 📖 [Next.jsドキュメント更新 - プロジェクト組織ページ](https://twitter.com/delba_oliveira/status/1662211824211877889)
+* 📜 [ReactはAngular.jsのような瞬間を迎えているのか？](https://marmelab.com/blog/2023/06/05/react-angularjs-moment.html): Server Componentsの登場はAngular.jsとAngular 2のようなパラダイムシフトを意味するのか？いいえ、Server Componentsはオプションの新機能であり、Reactの他の部分は従来通り動作します。ただし、この記事ではRSCを推奨・採用するにはまだ早く、エコシステムが完全に準備されていないと警告しています。
+* 📜 [React Server Componentsに関する意見付きノート](https://github.com/nilshartmann/react-server-component-material/blob/notes-on-rsc/notes-on-rsc.md): RSCに関する考察とメモ。多くの関連外部リファレンスを含む包括的でよくまとめられた資料です。
+* 📜 [Isomorphic Development](https://meijer.ws/articles/isomorphic-development): Server Componentsがもたらす複雑さについての興味深い考察。複雑なのはServer Components自体ではなく、コードベースの新しいハイブリッドな性質と、その境界が曖昧になったことです。
+* 📜 [React APIとコード再利用の進化](https://frontendmastery.com/posts/the-evolution-of-react-patterns/): 時代ごとに使用されたパターン（ミックスイン、HOC、レンダープロップ、フック、RSC）とそのトレードオフをレビュー。
+* 📜 [なぜ私たちはNext.jsのサポートを終了するのか](https://www.stormkit.io/blog/why-we-are-dropping-support-for-next-js): Stormkitデプロイメントプラットフォームは、小規模チームでは扱いが複雑すぎるとしてNext.jsのサポートを終了。代わりにSSRをサポートするReact + Viteテンプレートの使用を提案しています。
+* 📜 [Server Componentsを使ったReactのより良い学習パス](https://scastiel.dev/better-learning-path-react): RSCが実際にReactの学習を容易にする可能性について。新鮮な視点で考えれば理にかなっています。
+* 📜 [RedwoodJSの次なる時代：React Server Componentsに全力投球](https://tom.preston-werner.com/2023/05/30/redwoods-next-epoch-all-in-on-rsc.html): GitHubの創設者Tom Preston-Wernerが、RedwoodフレームワークがReact Server Componentsの実装を計画していることを発表。これまでRedwoodはSSRなしのSPAを生成しており（SEOに制限あり）、GraphQLの強制使用が常に最適とは限りませんでした。
+* 📜 [Remixでのハイドレーションエラーの解決](https://www.jacobparis.com/content/remix-hydration-errors): Reactハイドレーションエラーのデバッグに関する良いアドバイス。他のフレームワークにも適用可能です。
+* 📜 [JSX.IntrinsicElementsとは何か？](https://www.totaltypescript.com/what-is-jsx-intrinsicelements): TypeScriptはIntrinsicElementsを使用して、ネイティブでサポートされているJSX要素を判別します。Reactのようなフレームワークは、独自のネイティブ要素を宣言することが可能です。
+* 📜 [SSTを使用してNext.jsをエッジにデプロイ](https://engineering.udacity.com/deploying-next-js-on-the-edge-with-sst-is-sst-the-game-changer-its-claimed-to-be-1f05a0abc27c): OpenNextとSSTを使用してNext.jsアプリをAWSにデプロイする際の肯定的なフィードバック。
+* 📜 [Spotify - デザインシステムにおける複数の抽象化レイヤー](https://engineering.atspotify.com/2023/05/multiple-layers-of-abstraction-in-design-systems/): SpotifyのReactデザインシステムが3つの抽象化レベル（config、slots、custom）を公開する方法を説明。
+* 📦 [TypeScript 5.1](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1): この新しいTypeScriptバージョンはReactにとって重要で、React向けのJSXの型付けが改善され、コンポーネントがPromise（非同期Server Component）、文字列、配列、booleanなどを返せるようになります。新しいReactの型定義は既に[公開されています](https://twitter.com/sebsilbermann/status/1664356039876124672)！
+* 📦 [Triplex - React Three Fiberビジュアルエディタ](https://twitter.com/itsdouges/status/1664874971481382913)
+* 📦 [useHooks.com v2.0 - SSRセーフなフックコレクション](https://usehooks.com/)
+* 📦 [ReMDX - 美しくミニマルなReact & MDXプレゼンテーション](https://github.com/cpojer/remdx)
+* 📦 [Next-Typesafe-Url - Next.JS向け完全型安全かつzod検証済みルーティング](https://github.com/ethanniser/next-typesafe-url)
+* 📦 [Redux Toolkit v2.0.0-beta.0](https://twitter.com/acemarke/status/1663707088478953474)
+* 📦 [Pastel v2.0 - Ink製のNext.js風CLIフレームワーク](https://twitter.com/vadimdemedes/status/1661343197535129601)
+* 📦 [React Aria + React Spectrum - 2023年5月24日リリース](https://twitter.com/devongovett/status/1661765315825643521)
+* 📦 [Astro v2.6 - ミドルウェア、ハイブリッドSSR、カスタムクライアントディレクティブ...](https://astro.build/blog/astro-260/)
+* 🔗 [Reactハンドブック](https://reacthandbook.dev/)
+* 🎥 [React Server Componentsは本当に遅いのか？](https://www.youtube.com/watch?v=3Q2q2gs0nAI): Next.jsのPages RouterがApp Routerよりも高速であることを示すベンチマークですが、ストリーミングにより後者の方がユーザーエクスペリエンスが向上する可能性があります。
+* 🎥 [React Server Componentsを汚染しない方法](https://www.youtube.com/watch?v=BZlwtR9pDp4): `server-only`パッケージを使用してサーバーコードをClient Componentsにインポートしない方法。
+* 🎥 [Remix Conf - ReactコアパネルQ&A](https://www.youtube.com/watch?v=WiEtFPYGgbM)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Nylas](/emails/issues/147/Nylas.png)](https://info.nylas.com/firesidechat-openai-registrationpage.html?utm_source=twir\&utm_medium=sponsoredemail\&utm_campaign=FY23Q2-TWIR-2P\&utm_content=2023-06-07-Issue-openaireplay)
+
+**[OpenAI + Nylasによる生成AIに関する対談: 今すぐ視聴！](https://info.nylas.com/firesidechat-openai-registrationpage.html?utm_source=twir\&utm_medium=sponsoredemail\&utm_campaign=FY23Q2-TWIR-2P\&utm_content=2023-06-07-Issue-openaireplay)**
+
+生成AIの未来を内側から覗いてみませんか？OpenAIのApplied Engineering ManagerであるEvan Morikawaと、NylasのCTO兼共同創業者であるChristine Spangが、生成AIの次のステップについて深掘りします。
+
+彼らは、スケールするAIソリューションの提供と維持に必要なこと、AIの次の成熟段階の姿などについて議論します。[今すぐリプレイを視聴](https://info.nylas.com/firesidechat-openai-registrationpage.html?utm_source=twir\&utm_medium=sponsoredemail\&utm_campaign=FY23Q2-TWIR-2P\&utm_content=2023-06-07-Issue-openaireplay)。
+
+ReactでChatGPT + Email APIコールを使った開発を始めたいですか？[こちらが始めるためのガイドです。](https://www.nylas.com/blog/how-to-build-with-nylas-using-chatgpt/?utm_source=twir\&utm_medium=sponsoredemail\&utm_campaign=FY23Q2-TWIR-2P\&utm_content=2023-06-07-Issue-chatgptblog)
+
+***
+
+## 📱 React-Native {#react-native}
+
+* 👀 [Apple App Storeのトップショッピングアプリの約4分の1がReact Nativeを採用](https://twitter.com/Baconbrix/status/1664285684583002112): React-Nativeアプリは最高の評価を得ています！その他のカテゴリもご覧ください [飲食](https://twitter.com/Baconbrix/status/1661775514074247169) と [金融](https://twitter.com/Baconbrix/status/1662866951784235008)。
+* 👀 [React NativeのテストをKotlin化する手伝いを](https://twitter.com/cortinico/status/1666001895360454660): React-NativeのJavaからKotlinへの移行の始まりで、テストからスタートしています。
+* 👀 [React-Skia-Experiment](https://github.com/wcandillon/react-skia-experiment): William CandillonがReact-Native-Skiaライブラリをユニバーサル化する実験を行っています（[ツイート](https://twitter.com/wcandillon/status/1662037035102683136)）。
+* 👀 [Portal - Apple Vision ProアプリでReact-Nativeを使用](https://twitter.com/Baconbrix/status/1665816002712436736)
+* 📜 [BlueSkyのアプリ構造と状態管理の方法](https://alexkondov.com/reading-code-bluesky/): BlueSkyのオープンソースコードベースをExpo、React-Native-Web、Mobxを使用して解説。
+* 🔗 [React Nativeパフォーマンス問題カタログ](https://spangled-split-858.notion.site/React-Native-Performance-Issues-Catalogue-9338979a2a5648e883331ef2050e963c): React-Nativeのパフォーマンス問題の原因と症状をリスト化したNotionデータベース。
+* 📦 [React-Native 0.72.0-RC.5](https://github.com/facebook/react-native/releases/tag/v0.72.0-rc.5): 新しいGolden Release Candidate。
+* 📦 [vscode-expo-tools](https://twitter.com/cedric_dev/status/1666113468078997507)
+* 📦 [style-variants - 動的で再利用可能なスタイルを作成するソリューション](https://github.com/oktaysenkan/style-variants)
+* 🎥 [App.js 2023 - Youtubeプレイリスト](https://www.youtube.com/playlist?list=PLSk21zn8fFZCfYEMpSqQOHMgyNKc8B7_s)
+* 🎥 [Chain React 2023 - Youtubeプレイリスト](https://www.youtube.com/playlist?list=PLFHvL21g9bk30F2UaJfn6TqJn15MAoBOc)
+* 🎙️[React-Native-Radio 266 - Chain Reactまとめ](https://reactnativeradio.com/episodes/rnr-266-chain-react-roundup) + [React-Native-Radio 267 - React Native Windows with Chiara Mooney](https://reactnativeradio.com/episodes/rnr-267-react-native-windows-with-chiara-mooney)
+* 🎙️ [React Native Show Coffee Talk #10 - Vercelニュース、React Canaries & RN macOS 0.71](https://www.youtube.com/watch?v=qvPOkvdG0ZI)
+
+***
+
+## 🧑‍💻 Jobs {#jobs}
+
+🧑‍💼 [**Passionfroot - シニアフルスタックエンジニア (Remix) - €160k+, ベルリン/リモート**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+Passionfrootの使命は、YouTube、ポッドキャスト、ソーシャルメディア、ニュースレターを通じて、明日の独立ビジネスを支援することです。クリエイターがスケーラブルで持続可能なビジネスを構築できるツールの開発に参加してください。
+
+🧑‍💼 [**Callstack - シニアReact Native開発者 - 完全リモート、月額PLN 21-32k net on B2B**](https://www.callstack.com/senior-react-native-developer)
+
+世界で最も使われているアプリで働きたいですか？React Native技術の共創に興味はありませんか？React & React NativeのリーダーであるCallstackチームに参加してください。詳細はウェブサイトをご覧ください。あなたの応募をお待ちしています - あなたの実力を見せてください！
+
+🧑‍💼 [**G2i - 100%リモートのReact Native求人**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20\&t=ArRLC77BpRwXXCdx8fnUqw)
+
+React Nativeに特化した開発者向けの複数のポジションを募集しています！報酬は約160kドル＋10%のボーナスです。RNの実務経験があり、米国在住であることが条件です。詳細は[@gabe\_g2i](https://twitter.com/gabe_g2i)までDMでお問い合わせください。その際、「This Week in React」を見たとお伝えください。
+
+💡 [求人を掲載する方法は？](https://thisweekinreact.com/sponsor)
+
+***
+
+## 🔀 Other {#other}
+
+* [CSSの@scope入門](https://fullystacked.net/posts/scope-in-css/)
+* [Promiseの並列実行：ビジュアルガイド](https://julesblom.com/writing/running-promises-in-parallel)
+* [1時間で学ぶ上級TypeScriptワークショップ](https://type-level-typescript.com/articles/one-hour-workshop)
+* [BunにおけるJavaScriptマクロ](https://bun.sh/blog/bun-macros)
+* [5月のWebプラットフォーム新機能](https://web.dev/web-platform-05-2023/)
+* [Popover APIの紹介](https://developer.chrome.com/blog/introducing-popover-api/)
+* [Web Share APIがW3C勧告になりました](https://www.w3.org/blog/news/archives/9931)
+* [Safari 17 betaのWebKit機能](https://webkit.org/blog/14205/news-from-wwdc23-webkit-features-in-safari-17-beta/)
+* [Deno 1.34：deno compileがnpmパッケージをサポート](https://deno.com/blog/v1.34)
+* [Parcel 2.9](https://parceljs.org/blog/v2-9-0/)
+* [XState v5 beta](https://stately.ai/blog/announcing-xstate-v5-beta)
+* [Rspack 0.2](https://twitter.com/rspack_dev/status/1664510907379228672)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/147/meme.jpg)](https://twitter.com/sophiebits/status/1663710200078151681)
+
+それでは！👋

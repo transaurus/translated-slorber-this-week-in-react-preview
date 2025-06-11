@@ -1,0 +1,502 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/226/index.mdx",
+  "source_file_content_hash": "592cd45bd4869186612b7cc05b2d6e9aee61fd22735489518f14a9e35a3a3303",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /226\ntitle: \"This Week In React #226: Parcel, TanStack, Astro, React-Scan, React-Router | Worklets, Enterprise Framework, Perf, Expo UI, FlatList, BackgroundTask | Node.js, Oxc Minifier, Oxlint, Valibot\"\nauthors: [matthieugicquel, cyrilbo]\ndate: 03-19-2025\n---",
+      "source_content_hash": "c921fd84c24346a67eeeb52543f419745df448f38c9794bf2b44d51ca898514f",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Cyril and Matthieu from Theodo Apps here 👋, with some big updates in React and React Native!",
+      "source_content_hash": "f182996d1969fdbe209c3e2c7f03394c38d78f28446e4338d9a00671c804ad14",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Theodo AppsのCyrilとMatthieuです 👋。ReactとReact Nativeに関する大きなアップデートをお届けします！"
+      }
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "React Server Components are now supported in Parcel, making it a more viable bundler for modern apps. Callstack is working on a new React Native framework aimed at enterprise teams, promising better build caching. React Native Worklets is bringing real multithreading to React Native, finally decoupling it from animations. And React 19 migrations are picking up speed, with teams sharing insights on adapting to the changes.",
+      "source_content_hash": "e400474014f41b4bd8f8c036340141671aaebc3ba5f5d6e96241d5a4fd35d918",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React Server ComponentsがParcelでサポートされるようになり、モダンなアプリケーションにとってより実用的なバンドラーとなりました。Callstackはエンタープライズチーム向けの新しいReact Nativeフレームワークに取り組んでおり、ビルドキャッシュの改善を約束しています。React Native WorkletsはReact Nativeに真のマルチスレッドを導入し、ついにアニメーションから切り離されました。また、React 19への移行が加速しており、各チームが変更への適応に関する知見を共有しています。"
+      }
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Exciting times ahead—let’s dive in! 🚀",
+      "source_content_hash": "ccfdadbe8724a72300e447a29955f5ba386d648d9b305f7b3d7a3abe2ee64027",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "エキサイティングな時代がやってきました—さっそく見ていきましょう！ 🚀"
+      }
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6429a3aa"
+      }
+    },
+    {
+      "segment_id": "6c991806",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6c991806"
+      }
+    },
+    {
+      "segment_id": "8f488ab5",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_8f488ab5"
+      }
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "[![The first newsletter for product engineers](/emails/issues/226/dub.jpg)](https://dub.link/twir-mar19)",
+      "source_content_hash": "b3d4170af6c586e76953f2f41be14db8aa9fc243e4d8dedfe99a648dd42f4d5d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![プロダクトエンジニア向け初のニュースレター](/emails/issues/226/dub.jpg)](https://dub.link/twir-mar19)"
+      }
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "**[The first newsletter for product engineers](https://dub.link/twir-mar19)**",
+      "source_content_hash": "1c9bb9c169d9523fd6fdf9fe87a1dbda5567c324055256ed60cd7881676ad4a6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[プロダクトエンジニア向け初のニュースレター](https://dub.link/twir-mar19)**"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "[Product for Engineers](https://dub.link/twir-mar19) is PostHog’s newsletter dedicated to helping engineers flex their product muscles.",
+      "source_content_hash": "4fb14aacffd3a5baaadde494bdddbf55a4b2b045409acfb6f8bf1627b1064ff0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[Product for Engineers](https://dub.link/twir-mar19)は、エンジニアがプロダクトスキルを強化するためのPostHogのニュースレターです。"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "With over 50k subscribers, it bridges the gap between product and engineering, helping you ship products users love.",
+      "source_content_hash": "e5dd4673e4ba82cdfd8a9450e2f23855c16760d4f7537222c1cb7df5d65de74d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "5万人以上の購読者を抱え、プロダクトとエンジニアリングのギャップを埋め、ユーザーが愛するプロダクトをリリースする手助けをします。"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "It covers topics like why deadlines suck, non-obvious behaviors that will kill your startup, and mistakes they learned the hard way. Best of all, it’s totally free.",
+      "source_content_hash": "b373d581d7546de3381e6c549cf1f106a1f3d8c3fef873f18029ea1f7f8e4a2b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "締め切りがなぜ悪いのか、スタートアップを殺す非自明な行動、そして彼らが苦労して学んだ失敗などについて取り上げています。何より、完全に無料です。"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "[**Subscribe for free.**](https://dub.link/twir-mar19)",
+      "source_content_hash": "ed07a36e50372d01ab5a802c6c016a577b4c0456a57f7ac4e5443c189b8d0d02",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**無料で購読する。**](https://dub.link/twir-mar19)"
+      }
+    },
+    {
+      "segment_id": "91afe33f",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "782c902a",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "[![Parcel v2.14.0](/emails/issues/226/parcel.jpg)](https://parceljs.org/blog/v2-14-0/)",
+      "source_content_hash": "a0ed84a3b5b47a240f5d9ecd58c5fecf155df4c978006229e9607986eb22d8d7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Parcel v2.14.0](/emails/issues/226/parcel.jpg)](https://parceljs.org/blog/v2-14-0/)"
+      }
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "[**Parcel v2.14.0**](https://parceljs.org/blog/v2-14-0/)",
+      "source_content_hash": "819d3fdb3938764cb7e0503e03046fc4d9eb767df5fcddce2d6d239032e8c194",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**Parcel v2.14.0**](https://parceljs.org/blog/v2-14-0/)"
+      }
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "Parcel is an interesting thing: it’s a very robust and feature-complete bundler. While not used/supported by any major React framework, it doesn’t prevent it from moving forward, with v2.14.0 adding a few big features:",
+      "source_content_hash": "e68f871d94e08432fd2dae28ad7d15c997a32d39b64d865eb6380894225032d2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Parcelは非常に興味深い存在です：非常に堅牢で機能が充実したバンドラーです。主要なReactフレームワークでは使用/サポートされていませんが、v2.14.0でいくつかの大きな機能が追加されました："
+      }
+    },
+    {
+      "segment_id": "cef3cb03",
+      "source_content": "* Server Components with client, server, and static rendering\n* Integrated MDX support (using the rust lib `mdx-rs`)\n* A `create-parcel` CLI that can be a replacement for `create-react-app`\n* A new React error overlay",
+      "source_content_hash": "8f0ef3613efbc2848c9d83ce2d89dfa99d9566ab1be10c887f111041649d57b0",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* クライアント、サーバー、静的レンダリングを備えたServer Components\n* Rustライブラリ`mdx-rs`を使用した統合MDXサポート\n* `create-react-app`の代替となる`create-parcel` CLI\n* 新しいReactエラーオーバーレイ"
+      }
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "If you’re “building your own framework” or have a niche use case, all this makes parcel even more attractive.",
+      "source_content_hash": "2183caf89049b682ebe05219091b8a6b17808a892875ff8fce6edf249868adc3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "「独自のフレームワークを構築している」場合やニッチなユースケースがある場合、これらすべてがParcelをさらに魅力的な選択肢にします。"
+      }
+    },
+    {
+      "segment_id": "51029da6",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "36ab8340",
+      "source_content": "* 💸 [Convex launched an MCP Server](https://convex.link/thisweekmcp)\n* 🐦 [Support for streaming coming to React Query](https://bsky.app/profile/tkdodo.eu/post/3lkiuj7362k2a)\n* 🗓 [StrapiConf](https://conf.strapi.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - 13 May. Discover the full lineup : Shruti Kapoor, Quentin de Quelen, Sebastien Chopin! And get a 10% discount with code \"TWIR”\n* 🗓 [Future Frontend](https://futurefrontend.com/?utm_source=thisweekinreact) - 🇫🇮 Espoo - 26-28 May. Web development/design and AI meet on a single track. Secure your spot today with a 10% discount using code \"TWIR”\n* 📣 [TanStack + Netlify Partnership](https://tanstack.com/blog/netlify-partnership)\n* 📜 [Live Mode](https://www.openstatus.dev/blog/live-mode-infinite-query): Live data updates in React with TanStack's Infinite Queries.\n* 📜 [How we migrated MUI X to React 19](https://mui.com/blog/react-19-update/): They needed to maintain compatibility with React 18 even though there are a few breaking changes in React 19 (with refs and StrictMode).\n* 📜 [Writing static websites with Vite and React](https://blog.carlosn.com.br/post/writing-static-websites-with-vite-and-react/): The author describes how the experimental `vite-ssg-react` package he’s working on works, and what he plans for the future.\n* 📜 [SSR Deep Dive for React Developers](https://www.developerway.com/posts/ssr-deep-dive-for-react-developers): Your framework probably handles SSR for you, but you’ll learn how to implement it yourself, and how it works along the way\n* 📜 [Common React libraries architecture](https://www.felgus.dev/blog/common-react-lib-architecture#react-19)\n* 📜 [Why React is surprisingly the best model for LLM workflows](https://www.gensx.com/blog/why-react-is-the-best-backend-workflow-engine)\n* 💸 [VS Code extension: Get React component usage insights in VS Code](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-mar-2025)\n* 📦 [Astro 5.5 - Type-safe sessions, better Mermaid diagrams integration](https://astro.build/blog/astro-550/)\n* 📦 [React Scan 0.3 - See the parents of rendered components](https://github.com/aidenybai/react-scan/releases/tag/v0.3.0)\n* 📦 [TanStack Form 1.1 - Form reset util](https://github.com/TanStack/form/releases/tag/v1.1.0)\n* 📦 [React Router 7.4](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v740)\n* 🎥 [Theo - Tanner just fixed forms](https://www.youtube.com/watch?v=aezimBnSJqY)\n* 🎥 [Epic Web Dev - Upgrading React Router](https://www.epicweb.dev/tips/upgrading-react-router)\n* 🎥 [Web Dev Simplified - Next.js Finally Fixed Caching](https://www.youtube.com/watch?v=nHnw3pusFXw)",
+      "source_content_hash": "81e8879d2e3ce331eb04d57d7d0e078a059a607912cba0d06bac9c4e9a4fd860",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [ConvexがMCPサーバーをリリース](https://convex.link/thisweekmcp)\n* 🐦 [React Queryにストリーミングサポートが追加予定](https://bsky.app/profile/tkdodo.eu/post/3lkiuj7362k2a)\n* 🗓 [StrapiConf](https://conf.strapi.io/?utm_source=thisweekinreact) - 🇫🇷 パリ - 5月13日。Shruti Kapoor、Quentin de Quelen、Sebastien Chopinら豪華ラインナップをチェック！「TWIR」コードで10%オフ\n* 🗓 [Future Frontend](https://futurefrontend.com/?utm_source=thisweekinreact) - 🇫🇮 エスポー - 5月26-28日。Web開発/デザインとAIが融合したシングルトラック。「TWIR」コードで10%オフ\n* 📣 [TanStackとNetlifyが提携](https://tanstack.com/blog/netlify-partnership)\n* 📜 [Live Mode](https://www.openstatus.dev/blog/live-mode-infinite-query): TanStackのInfinite Queriesを使ったReactでのライブデータ更新\n* 📜 [MUI XをReact 19に移行した方法](https://mui.com/blog/react-19-update/): refsやStrictModeに破壊的変更がある中でReact 18との互換性を維持する必要があった\n* 📜 [ViteとReactで静的サイトを構築](https://blog.carlosn.com.br/post/writing-static-websites-with-vite-and-react/): 実験的な`vite-ssg-react`パッケージの仕組みと今後の計画\n* 📜 [React開発者向けSSR深掘り](https://www.developerway.com/posts/ssr-deep-dive-for-react-developers): フレームワーク任せにせず、自ら実装する方法とその仕組みを学ぶ\n* 📜 [Reactライブラリの共通アーキテクチャ](https://www.felgus.dev/blog/common-react-lib-architecture#react-19)\n* 📜 [ReactがLLMワークフローに最適な理由](https://www.gensx.com/blog/why-react-is-the-best-backend-workflow-engine)\n* 💸 [VS Code拡張: Reactコンポーネントの使用状況を可視化](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-mar-2025)\n* 📦 [Astro 5.5 - タイプセーフなセッション、Mermaid図の統合強化](https://astro.build/blog/astro-550/)\n* 📦 [React Scan 0.3 - レンダリングされたコンポーネントの親を確認](https://github.com/aidenybai/react-scan/releases/tag/v0.3.0)\n* 📦 [TanStack Form 1.1 - フォームリセットユーティリティ](https://github.com/TanStack/form/releases/tag/v1.1.0)\n* 📦 [React Router 7.4](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v740)\n* 🎥 [Theo - Tannerがフォームを修正](https://www.youtube.com/watch?v=aezimBnSJqY)\n* 🎥 [Epic Web Dev - React Routerのアップグレード](https://www.epicweb.dev/tips/upgrading-react-router)\n* 🎥 [Web Dev Simplified - Next.jsがついにキャッシュ問題を解決](https://www.youtube.com/watch?v=nHnw3pusFXw)"
+      }
+    },
+    {
+      "segment_id": "568a7359",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_568a7359"
+      }
+    },
+    {
+      "segment_id": "f51aebdd",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "b936dd6a",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "a5c5772a",
+      "source_content": "[![Tests are dead - Meticulous is here](/emails/issues/217/meticulous.jpg)](https://www.meticulous.ai?utm_source=thisweekinreact\\&utm_campaign=mar19th)",
+      "source_content_hash": "827ea26d0f5121748ea28d8bf4bf0c170a41d91a6f7250072c87c0a3b6971f36",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![テストは不要に - Meticulous登場](/emails/issues/217/meticulous.jpg)](https://www.meticulous.ai?utm_source=thisweekinreact\\&utm_campaign=mar19th)"
+      }
+    },
+    {
+      "segment_id": "fbc2db85",
+      "source_content": "**[Tests are dead - Meticulous is here](https://www.meticulous.ai?utm_source=thisweekinreact\\&utm_campaign=mar19th)**",
+      "source_content_hash": "93f8c2639d33d1b18eba50fb3f899e16b53ecb7f427ebfb8bc41a40721c91810",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[テストは不要に - Meticulous登場](https://www.meticulous.ai?utm_source=thisweekinreact\\&utm_campaign=mar19th)**"
+      }
+    },
+    {
+      "segment_id": "8126f763",
+      "source_content": "Meticulous creates and maintains an exhaustive suite of e2e ui tests with **zero** developer effort.",
+      "source_content_hash": "0ecb39db111eb1375a61d1cef29da6ab4b417c2dea7f9c87927ef68686364ce6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Meticulousは開発者の労力**ゼロ**で包括的なe2e UIテストスイートを作成・維持します。"
+      }
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "Dropbox, Bilt Rewards, Lattice and hundreds of engineering organizations rely on Meticulous for their frontend testing.",
+      "source_content_hash": "ce2441e4431232bf72089ca781026659675f9b6730570031e49f64e9de5f0b22",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Dropbox、Bilt Rewards、Latticeなど数百のエンジニアリング組織がフロントエンドテストにMeticulousを採用しています。"
+      }
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "This quote from the CTO of Traba sums the product up best: \"Meticulous has fundamentally changed the way we approach frontend testing in our web applications, fully eliminating the need to write any frontend tests. The software gives us confidence that every change will be completely regression tested, allowing us to ship more quickly with significantly fewer bugs in our code.\"",
+      "source_content_hash": "679cbf62c6e39e9a29be41c29259c9a006d31b25ec9f5ccfadcb058422c7d71b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "TrabaのCTOによるこの言葉が製品を最もよく表しています：「Meticulousは私たちのウェブアプリケーションにおけるフロントエンドテストのアプローチを根本的に変え、フロントエンドテストを一切書く必要をなくしました。このソフトウェアは、あらゆる変更が完全に回帰テストされることを保証し、コードのバグを大幅に減らしながら迅速にリリースできる自信を与えてくれます。」"
+      }
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "This [post](https://www.meticulous.ai/blog/lessons-from-a-decade?utm_source=thisweekinreact\\&utm_campaign=jan15th) from our CTO, who formerly led a large engineering group at Palantir, sets out the context of why exhaustive testing can double engineering velocity.",
+      "source_content_hash": "7b78b66e593d8e42440b43c8bd7c2b2bd71f417551f09ce21d9390d6dda9df0f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Palantirで大規模なエンジニアリンググループを率いていた当社のCTOによるこの[記事](https://www.meticulous.ai/blog/lessons-from-a-decade?utm_source=thisweekinreact\\&utm_campaign=jan15th)では、網羅的なテストがエンジニアリングの速度を2倍にできる背景が説明されています。"
+      }
+    },
+    {
+      "segment_id": "b805e2c6",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "b10963d7",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "[![React Native Worklets RFC](/emails/issues/226/worklets.jpg)](https://github.com/software-mansion/react-native-reanimated/discussions/7264)",
+      "source_content_hash": "73a2e66d914d77d637ec9eb8fc4a6c1831cfdb1ea8104fd5af20340a7bd21471",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![React Native Worklets RFC](/emails/issues/226/worklets.jpg)](https://github.com/software-mansion/react-native-reanimated/discussions/7264)"
+      }
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "[**React Native Worklets RFC**](https://github.com/software-mansion/react-native-reanimated/discussions/7264)",
+      "source_content_hash": "d9e36c9c1d08814791638c8e925a8d6848a3e93dfde787d8a286dbcd762fd4fa",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**React Native Worklets RFC**](https://github.com/software-mansion/react-native-reanimated/discussions/7264)"
+      }
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "React Native Worklets is a new library extracted from Reanimated that enables true multithreading in React Native. It lets you run JavaScript code on multiple runtimes. A new memory model introduces `Serializables`, `Shareables`, and `Synchronizables` to handle data across runtimes.",
+      "source_content_hash": "3a09aa7112fdff5f1924c3c5a79bf05454ec87a4673413d8ec894ea2c0df9a54",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "React Native Workletsは、Reanimatedから抽出された新しいライブラリで、React Nativeで真のマルチスレッドを実現します。複数のランタイムでJavaScriptコードを実行できるようになります。新しいメモリモデルでは、ランタイム間でデータを扱うために`Serializables`、`Shareables`、`Synchronizables`が導入されています。"
+      }
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "By decoupling multithreading from animations, Reanimated becomes leaner, which is especially beneficial for web apps aiming for smaller bundle sizes. At the same time, developers can now use multithreading for non-UI tasks like async storage, database operations, real-time audio processing, or AI-powered computations — without depending on an animation library.",
+      "source_content_hash": "310040e39a0404eff733c8410af6cc250459311065d90c28072809dac39211db",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "マルチスレッドをアニメーションから切り離すことで、Reanimatedはより軽量になり、特にバンドルサイズを小さくしたいウェブアプリにとって有益です。同時に、開発者はアニメーションライブラリに依存せずに、非UIタスク（非同期ストレージ、データベース操作、リアルタイムオーディオ処理、AIを活用した計算など）にマルチスレッドを利用できるようになります。"
+      }
+    },
+    {
+      "segment_id": "f414353c",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "664ad8b1",
+      "source_content": "* 💸 [PostHog - How to set up a React Native remote config (with Expo Router)](https://dub.link/twir-mar19-rn)\n* 🐦 [React Native in Native apps: strategies and blockers](https://x.com/_atlj/status/1901990291306873047)\n* 🐦 [React Native Bottom Tabs integrate seamlessly with other native UI elements](https://x.com/o_kwasniewski/status/1884537940736393426)\n* 🐦 [expo/ui will launch with Expo SDK 53](https://x.com/aleqsio/status/1902034184920584538): It will include fully native input components, iOS form sections, context menus and iOS previews.\n* 🐦 [React Server Functions in Expo Router](https://x.com/Baconbrix/status/1900547469374574966)\n* 📊 [RevenueCat State of Subscription Apps 2025](https://www.revenuecat.com/state-of-subscription-apps-2025/): Cross-platform subscription apps (in particular React Native ones) have better performances in retention and monetization compared to native apps. The top-performing ones excel by optimizing onboarding, surfacing paywalls early, and leveraging hybrid monetization.\n* 📖 [Ultimate Guide to React Native Optimization 2025](https://www.callstack.com/ebook/the-ultimate-guide-to-react-native-optimization): Callstack just published their upgraded guide.\n* 📖 [Expo Documentation - Using push notifications](https://docs.expo.dev/guides/using-push-notifications-services/): Fresh reminder on what services are available to implement push notifications in an Expo app.\n* 📜 [We’re Building a New React Native Framework](https://www.callstack.com/blog/were-building-a-new-react-native-framework): Michał from callstack unveiled features of their React Native framework targeting large mobile teams, emphasizing fast native build caching. It's still not open sourced yet.\n* 📜 [FlatList Optimization: Avoid Re-Rendering When Adding or Removing Items](https://brainsandbeards.com/blog/2025-dont-rerender-new-flatlist-items/)\n* 📦 [Expo BackgroundTask Beta](https://docs.expo.dev/versions/latest/sdk/background-task/)\n* 📦 [Create React Native Library 0.48: Add template for Nitro modules](https://github.com/callstack/react-native-builder-bob/releases/tag/create-react-native-library%400.48.0)\n* 📦 [Galeria 1.1 - Fix new architecture issues, support for edge-to-edge](https://github.com/nandorojo/galeria/releases/tag/v1.1.0)\n* 🎙️ [RNR 325 - Legend List with Jay Meistrich](https://infinite.red/react-native-radio/rnr-325-legend-list-with-jay-meistrich)",
+      "source_content_hash": "1c243b4305fa7b4cb2e7637aed6b9078e5eb15bb3690b894c08ea8ba664425e7",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [PostHog - React Nativeリモート設定のセットアップ方法（Expo Router使用）](https://dub.link/twir-mar19-rn)\n* 🐦 [ネイティブアプリ内でのReact Native：戦略と障壁](https://x.com/_atlj/status/1901990291306873047)\n* 🐦 [React Nativeボトムタブが他のネイティブUI要素とシームレスに統合](https://x.com/o_kwasniewski/status/1884537940736393426)\n* 🐦 [expo/uiがExpo SDK 53でリリース予定](https://x.com/aleqsio/status/1902034184920584538): 完全なネイティブ入力コンポーネント、iOSフォームセクション、コンテキストメニュー、iOSプレビューが含まれます。\n* 🐦 [Expo RouterでのReact Server Functions](https://x.com/Baconbrix/status/1900547469374574966)\n* 📊 [RevenueCat サブスクリプションアプリの現状 2025](https://www.revenuecat.com/state-of-subscription-apps-2025/): クロスプラットフォームサブスクリプションアプリ（特にReact Native製）は、ネイティブアプリと比較してリテンションと収益化のパフォーマンスが優れています。最上位のアプリは、オンボーディングの最適化、早期のペイウォール表示、ハイブリッド収益化の活用によって優れた結果を出しています。\n* 📖 [React Native最適化究極ガイド 2025](https://www.callstack.com/ebook/the-ultimate-guide-to-react-native-optimization): Callstackが最新版ガイドを公開しました。\n* 📖 [Expoドキュメント - プッシュ通知の使用方法](https://docs.expo.dev/guides/using-push-notifications-services/): Expoアプリでプッシュ通知を実装する際に利用可能なサービスについての最新リマインダー。\n* 📜 [新しいReact Nativeフレームワークを構築中](https://www.callstack.com/blog/were-building-a-new-react-native-framework): CallstackのMichałが、大規模モバイルチームを対象としたReact Nativeフレームワークの機能を公開しました。高速なネイティブビルドキャッシュを重視しています。まだオープンソース化されていません。\n* 📜 [FlatList最適化：アイテム追加・削除時の再レンダリングを回避](https://brainsandbeards.com/blog/2025-dont-rerender-new-flatlist-items/)\n* 📦 [Expo BackgroundTask Beta](https://docs.expo.dev/versions/latest/sdk/background-task/)\n* 📦 [Create React Native Library 0.48: Nitroモジュール用テンプレート追加](https://github.com/callstack/react-native-builder-bob/releases/tag/create-react-native-library%400.48.0)\n* 📦 [Galeria 1.1 - 新アーキテクチャ問題の修正、エッジツーエッジ対応](https://github.com/nandorojo/galeria/releases/tag/v1.1.0)\n* 🎙️ [RNR 325 - Jay MeistrichとのLegend List](https://infinite.red/react-native-radio/rnr-325-legend-list-with-jay-meistrich)"
+      }
+    },
+    {
+      "segment_id": "cf53fc07",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "47516512",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "683a33d9",
+      "source_content": "* 👀 [Node.js TSC - Should Corepack stay in the Node.js distribution?](https://github.com/nodejs/TSC/pull/1697): Corepack will stop being distributed with Node.js starting v25.\n* 📜 [Node.js Launches Official Community Space on Discord](https://nodejs.org/en/blog/announcements/official-discord-launch-announcement)\n* 📜 [Support for CSS and Baseline has shipped in ESLint](https://web.dev/blog/eslint-baseline-integration?hl=en)\n* 📦 [Oxc Minifier Alpha](https://oxc.rs/blog/2025-03-13-minifier-alpha): A new minifier that already outperform esbuild and is used with Rolldown, which aims to become the next default bundler for Vite.\n* 📦 [Oxlint Beta](https://oxc.rs/blog/2025-03-15-oxlint-beta): It features over 500 built-in linting rules with significant performance boosts, allowing small to medium projects to fully replace ESLint. ESLint plugin & custom rules support should come in the next major release.\n* 📦 [Valibot 1.0 - 1kB alternative to Zod](https://valibot.dev/blog/valibot-v1-the-1-kb-schema-library/)\n* 📦 [Node.js 23.10 - New `--experimental-config-file`](https://nodejs.org/en/blog/release/v23.10.0)\n* 📦 [Node.js 20.19 - require(esm) enabled](https://nodejs.org/en/blog/release/v20.19.0)",
+      "source_content_hash": "bcbdbdec55124ab1cda4c8b856543cc90c9f598783e3e7818f148f574294c5ae",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 👀 [Node.js TSC - CorepackをNode.jsディストリビューションに残すべきか？](https://github.com/nodejs/TSC/pull/1697): CorepackはNode.js v25以降、ディストリビューションから除外されます。\n* 📜 [Node.jsがDiscord上に公式コミュニティスペースを開設](https://nodejs.org/en/blog/announcements/official-discord-launch-announcement)\n* 📜 [ESLintにCSSとBaselineのサポートが実装](https://web.dev/blog/eslint-baseline-integration?hl=en)\n* 📦 [Oxc Minifier Alphaリリース](https://oxc.rs/blog/2025-03-13-minifier-alpha): esbuildを上回る性能を持つ新しいミニファイア。Rolldownと連携しており、Viteの次期デフォルトバンドラーを目指しています。\n* 📦 [Oxlint Betaリリース](https://oxc.rs/blog/2025-03-15-oxlint-beta): 500以上の組み込みリンルールを備え、大幅なパフォーマンス向上を実現。中小規模プロジェクトではESLintを完全に置き換え可能。ESLintプラグイン＆カスタムルールサポートは次期メジャーリリースで予定。\n* 📦 [Valibot 1.0リリース - Zodの1kB代替ライブラリ](https://valibot.dev/blog/valibot-v1-the-1-kb-schema-library/)\n* 📦 [Node.js 23.10リリース - 新機能`--experimental-config-file`追加](https://nodejs.org/en/blog/release/v23.10.0)\n* 📦 [Node.js 20.19リリース - require(esm)有効化](https://nodejs.org/en/blog/release/v20.19.0)"
+      }
+    },
+    {
+      "segment_id": "efbc76b7",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "c6868a9f",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "bb1346b6",
+      "source_content": "[![Rewrite TS in Rust](/emails/issues/226/ts-go.jpg)](https://x.com/IroncladDev/status/1899870309152342367)",
+      "source_content_hash": "832365ad72abbf6a8350c5bb74d1ae93d5b614311027531a705d3be976a877d6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![TypeScriptをRustで書き直す](/emails/issues/226/ts-go.jpg)](https://x.com/IroncladDev/status/1899870309152342367)"
+      }
+    },
+    {
+      "segment_id": "8664ed0b",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "それでは！ 👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/226/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:38.765320+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "592cd45bd4869186612b7cc05b2d6e9aee61fd22735489518f14a9e35a3a3303"
+  }
+}

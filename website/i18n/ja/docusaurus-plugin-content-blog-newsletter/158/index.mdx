@@ -1,0 +1,164 @@
+---
+slug: /158
+title: "This Week In React #158: Astro, Server Components, VisionCamera, Owner Tree, Props Drilling, Next.js, Remix, Chakra, TypeScript, Skia, Biome, CSS, Node.js..."
+authors: [slorber]
+date: 09-06-2023
+---
+
+みなさん、こんにちは！
+
+今回は2週間分のニュースをお届けします。Astro 3.0とVisionCamera 3.0の素晴らしいリリースを含め、興味深い記事がたくさんあったので少し選別しました！
+
+Bun 1.0が今夜リリースされます。彼らが何を計画しているのか気になります。Jestの代替としてユニットテストで試してみましたが、本当に非常に高速です。
+
+React-Native EUカンファレンスが今日始まります。[🐦 非常に興味深い講演](https://twitter.com/sebastienlorber/status/1696837186677530813)があり、特にStatic Hermesに関するものが目立ちました。
+
+イタリアを訪れたい方は、10月27日にヴェローナで開催される[reactjsday](https://2023.reactjsday.it/)にどうぞ。カンファレンスでは[チケットが-10%](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR)で、さらに読者の方にオンライン/リモートチケットを2枚プレゼントしています。このメールに返信して最初に申し込んだ2名に差し上げます。
+
+ここで言い忘れることが多いのですが、私は「公開しながら開発」しています。最新の[Indie Hackers月次レポート](https://www.indiehackers.com/product/french-react-newsletter)や[🐦 Twitterでの詳細](https://twitter.com/sebastienlorber/status/1699065823959421109)をチェックしてください。
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアル形式 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Frontendmasters](/emails/issues/158/frontendmasters.jpg)](https://frontendmasters.com/learn/react/?utm_source=newsletter\&utm_medium=thisweekinreact\&utm_campaign=reactpath)
+
+**[FrontendMasters – シニアReact開発者への完全なReact.js学習パス](https://frontendmasters.com/learn/react/?utm_source=newsletter\&utm_medium=thisweekinreact\&utm_campaign=reactpath)**
+
+React.jsを基礎から、パフォーマンス、テスト、コード品質などの高度なトピックまで学びましょう。まずは「React完全入門」で実践的なアプリを構築します。続いて「中級React」でエコシステムの人気ツールを統合します。さらにパフォーマンス、TypeScript、そしてフルスタックReactフレームワークであるNext.jsまで学べます！
+
+***
+
+## ⚛️ React {#react}
+
+[![Astro 3.0](/emails/issues/158/astro3.jpg)](https://astro.build/blog/astro-3/)
+
+[**Astro 3.0**](https://astro.build/blog/astro-3/)
+
+この新バージョンのAstroは、特に新しいView Transition APIの使用と、表示されているコンポーネントの状態を保持しながらページ間をスムーズにアニメーション遷移できる機能により革新をもたらしています。これにより多くのユースケースでSPAの必要性が減ります。
+
+その他の注目すべき改善点：
+
+* 画像最適化が安定版に
+* レンダリングパフォーマンスの向上：Astroコンポーネントのレンダリングが30-75%高速化
+* サーバーレス向けSSR機能強化：ホスティングプラットフォームへの新しい接続方法
+* JSXのHMR機能強化：ReactとPreactのFast Refreshサポート
+* ビルド出力の最適化：よりクリーンで高性能なHTML
+
+***
+
+[![React Server Componentsを理解する](/emails/issues/158/rsc.jpg)](https://www.joshwcomeau.com/react/server-components/)
+
+[**React Server Componentsを理解する**](https://www.joshwcomeau.com/react/server-components/)
+
+Josh Comeauが、来週公開予定の彼の[コース](https://www.joyofreact.com/)から抜粋した、React Server Componentsについての素晴らしい入門記事を公開しました。多くのアニメーションダイアグラムが、この新しいReactパラダイムを理解しやすくしています。
+
+***
+
+* 💸 [Zero To Shipped - 高速フルスタック開発をマスターし、**ついに**プロダクトをリリースする](https://www.zerotoshipped.com/)
+* 🐦 [Remix v2 プレリリース](https://twitter.com/remix_run/status/1696525340640936190): すでに[future flags v2](https://remix.run/blog/future-flags)を有効にしている場合、簡単にアップグレードしてこれらのフラグを削除できるはずです。
+* 🐦 [Dan AbramovがBlueskyに参加](https://twitter.com/dan_abramov/status/1695566446007386214): DanはMetaを離れ、クロスプラットフォームのExpoアプリを基盤とするこのTwitterの競合サービスに参加しました。これは素晴らしいニュースであり、クロスプラットフォームとExpoを推進する強力なエバンジェリストを獲得したかもしれません[詳細はこちら](https://twitter.com/dan_abramov/status/1699476986727399933)。
+* 🐦 [Next.js App RouterのWIPテストドキュメント](https://twitter.com/leeerob/status/1698758756924825723)
+* 🧑‍🎓 [Next.js App Router - フォームとミューテーションのドキュメント](https://nextjs.org/docs/app/building-your-application/data-fetching/forms-and-mutations): Server ActionsとReactの`useFormStatus`および`useOptimistic`フックの使用法を説明する新しいドキュメントページ。
+* 💬 [Next.js Tim Neutkensのディープダイブ - キャッシングと再検証](https://github.com/vercel/next.js/discussions/54075)
+* 📜 [ReactにおけるParents & Owners: データフロー](https://julesblom.com/writing/parents-owners-data-flow): プロップスドリリングの問題と、スロット付きコンポーネントでそれを回避する方法を説明するオリジナルのインタラクティブで視覚的な記事。親ツリーとオーナーツリーの概念を解説。図を見るとプロップスドリリングの問題が明確にわかります。
+* 📜 [確立された規範に挑戦: コンポーネントフェッチを例外にする](https://jjenzz.com/making-component-fetching-the-exception/): ウォーターフォールを避けるためにルートレベルでクエリを実行し、コンポジションを使用してプロップスドリリングを回避することを促す興味深い考え。
+* 📜 [Rust Server Components](https://anto.pt/articles/rust-server-components): Rust、HTMX、その他のいくつかのライブラリを使用してRSC、MDX、Suspenseを部分的に再現する提案。「Rust版T3スタック」。Rustをやらない人にも読みやすいですが、RSCが解決するすべての問題を解決する最終結果には懐疑的です。
+* 📜 [Chakra、Panda、Ark - 今後の計画は？](https://www.adebayosegun.com/blog/chakra-panda-ark-whats-the-plan): Segunが自身のライブラリに関する多くの質問に回答。Chakra v3はQ4にリリースされますが、依然としてEmotionを使用します。「use client」の追加によりRSCでの使用が容易に。Radixの`asChild`パターンの採用。
+* 📜 [Reactでコンポーネントをプロップとして渡す方法](https://www.totaltypescript.com/pass-component-as-prop-react): MattがTypeScript + Reactの型付けのヒントを共有。「as」プロップを実装する型はかなり恐ろしいです😬。
+* 📜 [Remixアプリケーションでzodを使用した型安全なトースト通知の処理](https://alemtuzlak.hashnode.dev/handling-toasts-in-remix): アクション後のフィードバックを提供するためにRemixのフラッシュセッションを使用する方法を説明。
+* 📜 [Vercel向けNext.jsコールドスタートの最適化](https://holocron.so/blog/optimizing-next.js-cold-starts-for-vercel)
+* 📜 [TypeScriptでReactのプロップを強力に型付けする](https://www.totaltypescript.com/react-props-typescript)
+* 📜 [useEffectAsyncフックは必要ないかもしれない](https://krassnig.dev/blog/you-might-not-need-a-use-effect-async-hook.html)
+* 📜 [Web開発者よ、CSS-in-JSはあなたのプロダクトを台無しにしている](https://cord.com/blog/migrating-from-css-in-js-to-vanilla-extract)
+* 📜 [独自のヘッドレスUIコンポーネントを構築する](https://www.jacobparis.com/content/react-headless-submenus)
+* 📜 [トーストコンポーネントの構築](https://emilkowal.ski/ui/building-a-toast-component)
+* 📦 [next-flat-routes](https://github.com/ifyio/next-flat-routes)
+* 📦 [Puck - React向けセルフホスト型ドラッグアンドドロップエディター](https://github.com/measuredco/puck)
+* 📦 [react-prod-sourcemaps](https://github.com/markerikson/react-prod-sourcemaps)
+* 📦 [Reshaped 2.2 - NPMで利用可能](https://reshaped.so/content/blog/2.2)
+* 👥 [reactjsday](https://2023.reactjsday.it/) (イタリア・ヴェローナ、2023年10月27日)が[カンファレンスチケットを10%オフ](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR)で提供しています。コード「media\_TWIR」を使用してください。
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Google Formsに代わる非クラウド型の包括的ソリューション](/emails/issues/155/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact\&utm_medium=email)
+
+**[Google Formsに代わる非クラウド型の包括的ソリューション](https://surveyjs.io/?utm_source=thisweekinreact\&utm_medium=email)**
+
+データフローを完全に制御可能な堅牢なフォーム管理システムを構築したい場合、そしてその導入に何ヶ月も数千ドルも費やしたくない場合、SurveyJSが最適な選択肢です！
+
+SurveyJSは4つのオープンソースJavaScriptライブラリから成るプロダクトスイートで、ドラッグ＆ドロップのフォームビルダーで動的なJSONベースの複数フォームを作成・編集し、Reactアプリでレンダリング、機密性の高い調査データを自社インフラ内に保存できます。さらにカスタム調査をブラウザ上で編集可能なPDFファイルとして表示したり、インタラクティブなチャートや表で結果を可視化できます。[詳細はこちら](https://surveyjs.io/?utm_source=thisweekinreact\&utm_medium=email)。
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![VisionCamera 3.0](/emails/issues/158/visioncamera3.jpg)](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.0.0)
+
+[**VisionCamera 3.0**](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.0.0)
+
+VisionCameraの新バージョンがリリースされました。主なハイライト：
+
+* Android Camera2の完全書き換え
+* カスタムGPU OpenGLビデオパイプライン
+* 新しいカメラ機能
+* 新しいフレームプロセッサエンジン（react-native-worklets-core）
+* 新しいフレームプロセッサプラグインAPI
+
+Marcはコードサイズと複雑さを合理的に保つため、[Skiaとの統合を削除する決定](https://github.com/mrousavy/react-native-vision-camera/pull/1740)を行いました。
+
+[**VisionCamera V3、TFLite、Skiaを使った姿勢検出**](https://mrousavy.com/blog/VisionCamera-Pose-Detection-TFLite)では、このような統合で可能なことを解説しています。結果は非常に印象的です。
+
+[![VisionCamera V3、TFLite、Skiaを使った姿勢検出](/emails/issues/158/frame-processing-skia.jpg)](https://mrousavy.com/blog/VisionCamera-Pose-Detection-TFLite)
+
+***
+
+* 📜 [React Nativeの今後期待できること](https://buttondown.email/whatever_jamie/archive/things-to-look-forward-to-in-react-native/): React-Nativeの今後数年にわたる展望を概説しています。Web Conformance、Static Hermes、Node-API、React Server Componentsなど...
+* 📜 [React Nativeのパフォーマンス測定と監視ツール](https://semaphoreci.com/blog/react-native-performance-measuring-monitoring-tools)
+* 🧵 [React Native Gesture Handlerのすべてのジェスチャーを実例付きで解説](https://twitter.com/kacperkapusciak/status/1698719844089160189)
+* 👀 [Expo - EAS Insightsでユーザーを理解しアプリを成長させる](https://expo.dev/changelog/2023/08-22-insights)
+* 📦 [expo-ahap - Appleの触覚フィードバックとオーディオパターン](https://github.com/EvanBacon/expo-ahap)
+* 📦 [react-native-z-view](https://github.com/intergalacticspacehighway/react-native-z-view)
+* 📦 [Universal Medusa - Expo、Solito、Next.js、Nativewind、Medusaを使用したEコマーススターター](https://github.com/bidah/universal-medusa/)
+* 🔗 [Awesome Universal React - ユニバーサルフレームワーク、ライブラリ、デザインシステム、アプリ、リソース](https://github.com/axeldelafosse/awesome-universal-react)
+* 🎥 [React Nativeでの実験的なブラーグラデーション](https://www.youtube.com/watch?v=oboF_H1MApo)
+* 🎥 [React Native Skiaで作るiPhone壁紙](https://www.youtube.com/watch?v=Apqd749v34I)
+* 👥 [React Native EU 2023](https://www.react-native.eu/) (ポーランド・ヴロツワフ、9月7–8日)では、コード「thisweekinreact15」で[カンファレンスチケットを15%オフ](https://ti.to/react-native-eu/2023/discount/thisweekinreact15)で提供しています。
+
+***
+
+## 🔀 Other {#other}
+
+* 📊 [State of CSS 2023 - 調査結果](https://2023.stateofcss.com/)
+* 📜 [My Node.js is a bit Rusty](https://gal.hagever.com/posts/my-node-js-is-a-bit-rusty)
+* 📜 [Biome発表 - Rome（メンテナンス停止）の公式フォーク](https://biomejs.dev/blog/annoucing-biome)
+* 📜 [View Transitionsがインクリメンタルレンダリングを破壊する](https://ericportis.com/posts/2023/view-transitions-break-incremental-rendering/)
+* 📜 [Web Componentsを得意分野で活用する](https://nolanlawson.com/2023/08/23/use-web-components-for-what-theyre-good-at/)
+* 📜 [@propertyを使ったタイプセーフなCSSデザインシステム](https://nerdy.dev/cant-break-this-design-system)
+* 👀 [TypeScript 5.3のイテレーションプラン](https://github.com/microsoft/TypeScript/issues/55486)
+* 📦 [TypeScript 5.2発表](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2/)
+* 📦 [Node 20.6 - ビルトイン.envファイルサポート](https://nodejs.org/en/blog/release/v20.6.0)
+* 📦 [Firefox 117 - CSSネスティングが広く利用可能に](https://www.mozilla.org/en-US/firefox/117.0/releasenotes/)
+* 📦 [Espresso Build - 次世代パッケージレジストリ、パッケージマネージャー、ツールチェーンの実験的プロジェクト](https://espresso.build/)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/158/meme.jpg)](https://twitter.com/sebastienlorber/status/1687456078198394882)
+
+それではまた！👋

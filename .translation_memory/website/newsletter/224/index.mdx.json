@@ -1,0 +1,532 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/224/index.mdx",
+  "source_file_content_hash": "a18a086958a72ef562b34f04909984d1c960083566f0d0ec72400da933ad2322",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /224\ntitle: \"This Week In React #224: Next.js, TanStack Form, Astro, RTK, State Machine, Remix, StyleX | Lynx, Entreprise, SwiftUI, VisionOS, Windows, Hermes, Expo | Node.js, TypeScript, ArkType, Nitro, BetterAuth\"\nauthors: [slorber]\ndate: 03-05-2025\n---",
+      "source_content_hash": "480815ae1717710d0854c80910946866e3c041200a0a6ec6d01d81203e9e85aa",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_58cfcc64"
+      }
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "みなさん、こんにちは！"
+      }
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week we have:",
+      "source_content_hash": "a6352a9b027570377cc0a88e9522887265e6d3f6c6f031ce612f64761e19d181",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "今週の注目ポイント:"
+      }
+    },
+    {
+      "segment_id": "143e51c1",
+      "source_content": "* **React**: A cool Next.js release improving the DX, and TanStack Form launching a stable v1.\n* **React Native**: The field is getting more competitive, with ByteDance, Callstack and early signals of Vercel mobile activity.\n* **Other**: TypeScript support keeps improving!",
+      "source_content_hash": "01227b6747bcbafa211adcffed77bf4429c0efdee7482c39b3d458c0507cfce6",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* **React**: DXを改善するNext.jsのリリースと、TanStack Formの安定版v1の登場。\n* **React Native**: ByteDanceやCallstackの参入、Vercelのモバイル領域への動きなど、競争が激化しています。\n* **その他**: TypeScriptのサポートがさらに向上！"
+      }
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Check our partner conf [React-Summit](https://reactsummit.com/?utm_source=Newsletter\\&utm_medium=thisweekinreact) - 🇳🇱 Amsterdam - 13 & 17 June - The biggest React conf worldwide! Use promo code TWIR for 10% off tickets.",
+      "source_content_hash": "b24b8f5451548562a5d2778f140c4d7fbab450ec0e6a9d660ec66bd3392fed7f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "パートナーカンファレンス[React-Summit](https://reactsummit.com/?utm_source=Newsletter\\&utm_medium=thisweekinreact) - 🇳🇱 アムステルダム - 6月13日＆17日 - 世界最大級のReactカンファレンス！チケットはプロモコード「TWIR」で10%オフ。"
+      }
+    },
+    {
+      "segment_id": "45c63027",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_45c63027"
+      }
+    },
+    {
+      "segment_id": "92f4ea84",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_92f4ea84"
+      }
+    },
+    {
+      "segment_id": "5dfba1c3",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_5dfba1c3"
+      }
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor1}"
+      }
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "[![Convex: The Database Designed for AI Coding](/emails/issues/224/convex.jpg)](https://convex.link/thisweekai)",
+      "source_content_hash": "8e83225483840bc379e27b763b247c5ae881b521cb32d1e5d0620ec2d3979896",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Convex: AIコーディング向けに設計されたデータベース](/emails/issues/224/convex.jpg)](https://convex.link/thisweekai)"
+      }
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "**[Convex: The Database Designed for AI Coding](https://convex.link/thisweekai)**",
+      "source_content_hash": "d384fd6f220e543e310b02b0dbf2f609aeb6345a2c6e5afafb56a68aae15b062",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[Convex: AIコーディング向けに設計されたデータベース](https://convex.link/thisweekai)**"
+      }
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "In the age of code generation, you need a backend that you can confidently generate with AI platforms. Convex is by far and away [best in class](https://stack.convex.dev/introducing-fullstack-bench) in this respect.",
+      "source_content_hash": "3d6b6550ec4434fdb7d1e0d080f650b4d4ce50ff1bfec51a6a667626a9411329",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "コード生成の時代において、AIプラットフォームで自信を持って生成できるバックエンドが必要です。Convexはこの点で[圧倒的に優れています](https://stack.convex.dev/introducing-fullstack-bench)。"
+      }
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "This is because Convex is just TypeScript, allowing you to write [queries as code](https://docs.convex.dev/functions/query-functions/) that are automatically transactional, cached, and realtime.",
+      "source_content_hash": "b00591181af36984cd990624880779b79694b2dffc5adce3c0d62fdea305b862",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "Convexは単なるTypeScriptであり、[クエリをコードとして記述](https://docs.convex.dev/functions/query-functions/)でき、自動的にトランザクショナルでキャッシュされ、リアルタイム動作します。"
+      }
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "And that’s just the beginning. With Convex, you can:",
+      "source_content_hash": "6cde80d7e7f63df8bc62324cf0d40c07146774a00de388434787366d409a424a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "これだけではありません。Convexでは以下のことが可能です:"
+      }
+    },
+    {
+      "segment_id": "157151e9",
+      "source_content": "* Easily schedule functions and write cron jobs\n* Set up file storage\n* Write efficient server functions\n* And so much more…",
+      "source_content_hash": "e2be5b6e9584d6ef0e68f152444e039fdab6a0c0cb3611a79b4e08c56a76a733",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 関数のスケジュール設定やcronジョブの簡単な作成\n* ファイルストレージのセットアップ\n* 効率的なサーバー関数の記述\n* その他多くの機能..."
+      }
+    },
+    {
+      "segment_id": "1042b50d",
+      "source_content": "[Try a Quickstart today](https://docs.convex.dev/quickstarts)",
+      "source_content_hash": "bae3099e9bb4fe5dd167b12ba995e805841457f7c924697770516e6cf10e140a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[今すぐクイックスタートを試す](https://docs.convex.dev/quickstarts)"
+      }
+    },
+    {
+      "segment_id": "39993511",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "f44c1398",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## ⚛️ React {#react}"
+      }
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "[![Next.js 15.2](/emails/issues/224/next.jpg)](https://nextjs.org/blog/next-15-2)",
+      "source_content_hash": "661eca66fd25724922b845bedc7d9f81e8e76a13b5870025c336e6c4ab591cd0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Next.js 15.2](/emails/issues/224/next.jpg)](https://nextjs.org/blog/next-15-2)"
+      }
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "[**Next.js 15.2**](https://nextjs.org/blog/next-15-2)",
+      "source_content_hash": "773755bfff7572e7efbbe4a8531b8f2aec1a6fdac7e60c468882f2954133336b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**Next.js 15.2**](https://nextjs.org/blog/next-15-2)"
+      }
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "Vercel released a new minor version of Next.js, with major DX improvements. Highlights include:",
+      "source_content_hash": "3be1cea7fe72d34026d4fe257c438bac8259723fd58276f1a294c43bb880fc12",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "VercelはNext.jsの新しいマイナーバージョンをリリースし、DXが大幅に改善されました。主なハイライト:"
+      }
+    },
+    {
+      "segment_id": "c94a9c0e",
+      "source_content": "* Redesigned error UI and improved stack traces: A redesigned debugging experience leveraging the brand-new React [`captureOwnerStack()`](https://react.dev/reference/react/captureOwnerStack) API\n* Streaming metadata: Async metadata will no longer block page rendering or client-side page transitions\n* Turbopack performance improvements: Faster compile times and reduced memory usage\n* React View Transitions (experimental): Experimental support for React's new View Transitions API\n* Node.js Middleware (experimental): Experimental support for using the Node.js runtime in Middleware",
+      "source_content_hash": "07bfa971996afd86088cd76299644f0b83d743a8ea513e9b037b63f3a97b2d7d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* エラーUIの再設計とスタックトレースの改善: Reactの新API[`captureOwnerStack()`](https://react.dev/reference/react/captureOwnerStack)を活用したデバッグ体験\n* ストリーミングメタデータ: 非同期メタデータがページレンダリングやクライアントサイド遷移をブロックしなくなりました\n* Turbopackのパフォーマンス改善: コンパイル時間の短縮とメモリ使用量の削減\n* React View Transitions（実験的）: Reactの新しいView Transitions APIの実験的サポート\n* Node.jsミドルウェア（実験的）: ミドルウェアでのNode.jsランタイム使用の実験的サポート"
+      }
+    },
+    {
+      "segment_id": "aa7d3f2b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "8b2a52b1",
+      "source_content": "[![TanStack Form 1.0](/emails/issues/224/form.jpg)](https://tanstack.com/blog/announcing-tanstack-form-v1)",
+      "source_content_hash": "7b23645384cabd187b364bc9363874198e23251374a030ffee9eed5afc3706a2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![TanStack Form 1.0](/emails/issues/224/form.jpg)](https://tanstack.com/blog/announcing-tanstack-form-v1)"
+      }
+    },
+    {
+      "segment_id": "5dae11e3",
+      "source_content": "[**TanStack Form 1.0**](https://tanstack.com/blog/announcing-tanstack-form-v1)",
+      "source_content_hash": "8fc6a7266f1613e883194c55f540fa7fd724704bda525b35060fc7b3946f6b2c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**TanStack Form 1.0**](https://tanstack.com/blog/announcing-tanstack-form-v1)"
+      }
+    },
+    {
+      "segment_id": "0bb95128",
+      "source_content": "A new TanStack library, years in the making, has just been released as stable. The announcement post highlights an interesting subset of its features:",
+      "source_content_hash": "ccaf78ec5388bc392849a4983bd5e9c81c1af97960e0c1387edf0bdaf5708019",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "長年の開発を経て、新しいTanStackライブラリが安定版としてリリースされました。発表記事では以下の特徴が紹介されています:"
+      }
+    },
+    {
+      "segment_id": "a4bd3cfc",
+      "source_content": "* Framework agnostic, headless: Supports 5 frameworks, including React used in the post's examples\n* Extreme type safety: I must admit `<form.Field>` is a pretty cool API\n* Schema validation: Support for Zod, Valibot, ArkType, Standard Schema\n* Async validation, built-in debouncing, AbortSignal\n* Isomorphic, multi-platform: share validation logic across client/server",
+      "source_content_hash": "dfc539e48a7c199ba1eff8b6c2aea6e74e31439afad4446048c9353833e4b3f3",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* フレームワーク非依存、ヘッドレス: 記事の例で使用されているReactを含む5つのフレームワークをサポート\n* 極限の型安全性: `<form.Field>`というAPIは非常に優れています\n* スキーマ検証: Zod、Valibot、ArkType、Standard Schemaをサポート\n* 非同期検証、組み込みのデバウンス、AbortSignal\n* アイソモーフィックでマルチプラットフォーム: クライアント/サーバー間で検証ロジックを共有可能"
+      }
+    },
+    {
+      "segment_id": "01868def",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "caffd879",
+      "source_content": "* 💸 [Clerk - Build session-based authentication with React and Express](https://go.clerk.com/HRqsMAP)\n* 👀 [Rsbuild Plugin React Router - Epic Stack example](https://github.com/rspack-contrib/rsbuild-plugin-react-router/tree/main/examples/epic-stack): Did you know that Rsbuild can be used as an alternative to Vite for React Router framework mode? Yep, it can even run Kent’s favorite stack.\n* 🗓️ [React Paris 2025](https://react.paris/?utm_source=thisweekinreact) - 🇫🇷 Paris - 20 & 21 March (2 days) / 19th of March (Workshops) - Last call to join the React Event of the year in Paris. Get 20% off tickets with code \"TWIR\"!\n* 🗓️ [dotJS 2025](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - 03 April - Last week of regular registration! Secure your spot now to save 200€ until March 11. Join Ryan Dahl, Sarah Drasner, Wes Bos, Angie Jones, Kyle Simpson, Matteo Collina, Eduardo San Martin Morote and more! Get 15% off tickets with code \"TWIR”.\n* 📜 [\\{transitions} = f(state)](https://jordaneldredge.com/blog/transitions-f-of-state/): A rather philosophical article explaining that React can be seen as a state machine where the possible state transitions are implicitly defined by its event handlers. The asynchronous/concurrent nature of React makes it possible to introduce invalid state transitions that you should guard against explicitly.\n* 📜 [Building APIs with Next.js](https://nextjs.org/blog/building-apis-with-nextjs): New official guide from Lee Robinson, covering many cases and answering common questions.\n* 📜 [It's probably time to stop recommending Redux](https://www.bennett.ink/its-probably-time-to-stop-recommending-redux): Argues you probably don’t need a global state manager and can go a long way with an API cache + `useState`.\n* 📜 [Signals in React? Not a good idea](https://www.felgus.dev/blog/signals-in-react): React doesn’t have first-class signal support on purpose, and relies on raw data.\n* 📜 [React, Solid, htmx: Part 2](https://bobaekang.com/blog/react-solid-htmx-part-2/): The recent evolution of multiple frameworks, all pushing the web forward in their way.\n* 📜 [Building an InertiaJS app with Rails](https://avohq.io/blog/inertia-js-with-rails): A complete example of a seamless integration of a React frontend with a Rails backend through Inertia, without the need for an API.\n* 📜 [How to Show a 404 in React Router](https://sergiodxa.com/tutorials/create-show-a-404-in-react-router)\n* 📦 [XState Store 3.0](https://stately.ai/blog/2025-02-26-xstate-store-v3): I particularly like the new `store.trigger` API that permits using the store more ergonomically, in particular for cases where event-driven indirection is not useful. This new version makes it an interesting alternative to Zustand, still lightweight but more opinionated, and a path toward adopting real XState state machines.\n* 📦 [Isograph 0.3 - Modern GraphQL framework, support for Relay-style connections, fetch policies](https://isograph.dev/blog/2025/03/03/isograph-0.3.0/)\n* 📦 [Astro 5.4 - Remote image optimization in Markdown, enhanced security for dev and preview servers](https://astro.build/blog/astro-540)\n* 📦 [React Hook Form Lenses - Focus on specific parts of your deeply nested form state](https://github.com/react-hook-form/lenses)\n* 📦 [StyleX 0.11 - Debugging, CLI caching and docs improvements](https://stylexjs.com/blog/v0.11.0)\n* 📦 [Redux Toolkit 2.6 - Infinite Query support](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.6.0)\n* 📦 [Remix 2.16 - Vite 6 support](https://github.com/remix-run/remix/blob/main/CHANGELOG.md#v2160)\n* 🎥 [Jack Herrington - React’s New ViewTransition Component Is A Little Flakey](https://www.youtube.com/watch?v=xfzNXa8WYW8)\n* 🎥 [Alem Tuzlak - React Router just made your apps faster (splitRouteModules)](https://www.youtube.com/watch?v=A96Xkc9GiGY)\n* 🎙️ [This Month in React - CRA, React Router, RTK, TypeScript, Astro, Standard Schema](https://creators.spotify.com/pod/show/reactiflux/episodes/TMiR-2025-02-Updated-new-project-docs-e2vj003)",
+      "source_content_hash": "c142e842e8badc19cba70b731abe47ebf9d94d8c121873489ee1b8dcac227259",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [Clerk - ReactとExpressでセッションベースの認証を構築](https://go.clerk.com/HRqsMAP)\n* 👀 [Rsbuild Plugin React Router - Epic Stackの例](https://github.com/rspack-contrib/rsbuild-plugin-react-router/tree/main/examples/epic-stack): RsbuildがReact RouterのフレームワークモードでViteの代替として使えることをご存知でしたか？Kentのお気に入りスタックも実行可能です。\n* 🗓️ [React Paris 2025](https://react.paris/?utm_source=thisweekinreact) - 🇫🇷 パリ - 3月20日＆21日（2日間）/ 3月19日（ワークショップ） - パリで開催される今年のReactイベントに参加する最後のチャンス。「TWIR」コードでチケット20%オフ！\n* 🗓️ [dotJS 2025](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 パリ - 4月3日 - 通常登録の最終週！3月11日までにスポットを確保して200€節約。Ryan Dahl、Sarah Drasner、Wes Bos、Angie Jones、Kyle Simpson、Matteo Collina、Eduardo San Martin Moroteなどが登壇。「TWIR」コードで15%オフ。\n* 📜 [\\{transitions} = f(state)](https://jordaneldredge.com/blog/transitions-f-of-state/): Reactを状態マシンと見なし、可能な状態遷移がイベントハンドラによって暗黙的に定義されるという哲学的記事。Reactの非同期/並行性により、明示的に防ぐべき無効な状態遷移が発生し得る。\n* 📜 [Next.jsでAPIを構築](https://nextjs.org/blog/building-apis-with-nextjs): Lee Robinsonによる公式ガイド。多くのケースをカバーし、一般的な質問に回答。\n* 📜 [Reduxを推奨するのはそろそろやめるべき時](https://www.bennett.ink/its-probably-time-to-stop-recommending-redux): グローバル状態管理は不要で、APIキャッシュと`useState`で十分と主張。\n* 📜 [ReactでのSignals？良いアイデアではない](https://www.felgus.dev/blog/signals-in-react): Reactは意図的にSignalを第一級でサポートせず、生データに依存。\n* 📜 [React、Solid、htmx: パート2](https://bobaekang.com/blog/react-solid-htmx-part-2/): 複数フレームワークの最近の進化と、それぞれのWeb推進へのアプローチ。\n* 📜 [RailsでInertiaJSアプリを構築](https://avohq.io/blog/inertia-js-with-rails): API不要でReactフロントエンドとRailsバックエンドをシームレスに統合する完全な例。\n* 📜 [React Routerで404を表示する方法](https://sergiodxa.com/tutorials/create-show-a-404-in-react-router)\n* 📦 [XState Store 3.0](https://stately.ai/blog/2025-02-26-xstate-store-v3): 新しい`store.trigger` APIが特に気に入りました。イベント駆動の間接化が不要なケースでストアをより使いやすくします。Zustandの軽量な代替として興味深く、本格的なXStateステートマシン採用への道も。\n* 📦 [Isograph 0.3 - モダンなGraphQLフレームワーク、Relayスタイルの接続とフェッチポリシーをサポート](https://isograph.dev/blog/2025/03/03/isograph-0.3.0/)\n* 📦 [Astro 5.4 - Markdownでのリモート画像最適化、開発/プレビューサーバーのセキュリティ強化](https://astro.build/blog/astro-540)\n* 📦 [React Hook Form Lenses - 深くネストされたフォーム状態の特定部分にフォーカス](https://github.com/react-hook-form/lenses)\n* 📦 [StyleX 0.11 - デバッグ、CLIキャッシュ、ドキュメント改善](https://stylexjs.com/blog/v0.11.0)\n* 📦 [Redux Toolkit 2.6 - Infinite Queryサポート](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.6.0)\n* 📦 [Remix 2.16 - Vite 6サポート](https://github.com/remix-run/remix/blob/main/CHANGELOG.md#v2160)\n* 🎥 [Jack Herrington - Reactの新しいViewTransitionコンポーネントは少し不安定](https://www.youtube.com/watch?v=xfzNXa8WYW8)\n* 🎥 [Alem Tuzlak - React Routerがアプリを高速化（splitRouteModules）](https://www.youtube.com/watch?v=A96Xkc9GiGY)\n* 🎙️ [This Month in React - CRA、React Router、RTK、TypeScript、Astro、Standard Schema](https://creators.spotify.com/pod/show/reactiflux/episodes/TMiR-2025-02-Updated-new-project-docs-e2vj003)"
+      }
+    },
+    {
+      "segment_id": "c2059547",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_c2059547"
+      }
+    },
+    {
+      "segment_id": "fc25fa9c",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "94145a94",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 💸 Sponsor {#sponsor2}"
+      }
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "[![Hands-on debugging session: instrument, monitor & fix](/emails/issues/224/sentry.jpg)](https://dub.sh/debugging-workshop)",
+      "source_content_hash": "c8b1eb0c8296f5c2eaee84e20d03d4833bcfc7384dd8d9313d2bc322599d12d8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![ハンズオンデバッグセッション: 計測、監視、修正](/emails/issues/224/sentry.jpg)](https://dub.sh/debugging-workshop)"
+      }
+    },
+    {
+      "segment_id": "4be28ed1",
+      "source_content": "**[Hands-on debugging session: instrument, monitor & fix](https://dub.sh/debugging-workshop)**",
+      "source_content_hash": "ab42f00ffd25fd26ff873f04e51a0858abdc70252cf74865c8d669717de0269f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**[ハンズオンデバッグセッション: 計測、監視、修正](https://dub.sh/debugging-workshop)**"
+      }
+    },
+    {
+      "segment_id": "0e80209e",
+      "source_content": "Join Lazar from Sentry for a hands-on session where you’ll build it, break it, debug it, and fix it. You’ll set up Sentry, track errors, use Session Replay and Tracing, and leverage some good ol’ AI to find and fix issues fast.",
+      "source_content_hash": "7560c1b285d959579a8c61ef18a1f59ed5b2c89f1380c33332e917968b5b6b47",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "SentryのLazarと一緒に、実際に構築、破壊、デバッグ、修正を行うハンズオンセッションに参加しましょう。Sentryの設定、エラーの追跡、Session ReplayとTracingの利用、そしてAIを活用して問題を迅速に発見・修正する方法を学びます。"
+      }
+    },
+    {
+      "segment_id": "3c5a1374",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "8574d51c",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 📱 React-Native {#react-native}"
+      }
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "[![Lynx: Unlock Native for More](/emails/issues/224/lynx.jpg)](https://lynxjs.org/blog/lynx-unlock-native-for-more)",
+      "source_content_hash": "8d597e060a659f262e3a9cd7e879aea171c5c34053f9887a2553e81dbffbb4da",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![Lynx: ネイティブの可能性を解き放つ](/emails/issues/224/lynx.jpg)](https://lynxjs.org/blog/lynx-unlock-native-for-more)"
+      }
+    },
+    {
+      "segment_id": "1b4de6df",
+      "source_content": "[**Lynx: Unlock Native for More**](https://lynxjs.org/blog/lynx-unlock-native-for-more)",
+      "source_content_hash": "82baa5cbe027554024617ed46058e89453adba61c89156cc88cc1ad306332241",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[**Lynx: ネイティブの可能性を解き放つ**](https://lynxjs.org/blog/lynx-unlock-native-for-more)"
+      }
+    },
+    {
+      "segment_id": "1958bc43",
+      "source_content": "ByteDance just announced Lynx, their native cross-platform technology. It’s used extensively in their production apps, including TikTok! With React bindings, it’s a serious competitor to React Native, and support for other frameworks is expected. The architectural choices are interesting, with a dual-thread model and different runtimes. It has support for some CSS and Web APIs that even React Native still doesn’t have and uses convenient built-in JSX intrinsic elements like `<view>`.",
+      "source_content_hash": "d48d94efd97d0bff83a7d3c349678df2ffc618f7669f6a9744849c968f153b90",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ByteDanceが新たに発表したLynxは、ネイティブのクロスプラットフォーム技術です。TikTokを含む自社のプロダクションアプリで広く利用されており、Reactバインディングを備えているため、React Nativeの強力な競合となり得ます。他のフレームワークのサポートも予定されています。アーキテクチャの選択肢は興味深く、デュアルスレッドモデルと異なるランタイムを採用しています。React Nativeでさえまだサポートしていない一部のCSSやWeb APIをサポートしており、`<view>`のような便利な組み込みJSX要素を使用します。"
+      }
+    },
+    {
+      "segment_id": "a8610918",
+      "source_content": "The feature set at launch is impressive, but there are also some surprising things you might dislike, such as using React 17 / Preact, or custom elements on the web. Time will tell whether the technology lives up to its promise and can truly compete with the established player. In any case, competition is healthy.",
+      "source_content_hash": "1bcc66337f350a471e16f099819634292c549771f865e9c9e50d0274434a9c24",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ローンチ時の機能セットは印象的ですが、React 17 / Preactの使用や、ウェブ上でのカスタム要素など、好みが分かれる点もあるかもしれません。この技術が約束を果たし、既存のプレイヤーと真に競合できるかどうかは時間が証明するでしょう。いずれにせよ、競争は健全です。"
+      }
+    },
+    {
+      "segment_id": "862bb4be",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "82abb0a4",
+      "source_content": "* 💸 [WithFrame - Pre-built React Native templates](https://withfra.me/templates)\n* 👀 [Fernando Rojo joins Vercel as Head of Mobile](https://x.com/rauchg/status/1896943726486032783): Interesting to see Vercel deploying resources in the React mobile/cross-platform space.\n* 👀 [React Native Framework for Enterprise](https://enterprise-framework.callstack.com/): Callstack unveils plans to open source a new RN framework tailored for enterprise needs.\n* 💬 [Riccardo clarifies Hermes confusion](https://github.com/facebook/react-native/pull/48531): Compiling to native code is not ready for prime time, but we can expect a new version of Hermes with bytecode translation to land first.\n* 📜 [Exposing SwiftUI Views to React Native: An Integration Guide](https://www.callstack.com/blog/exposing-swiftui-views-to-react-native-an-integration-guide): Shows how to build a SwiftUI paywall in React Native that works for both architectures.\n* 📜 [Expo's AI Strategy](https://expo.dev/ai/strategy): Democratizing app creation, expanding the audience of the Expo framework and EAS to include both human developers and AI agents.\n* 📜 [State of React Native 2024: Our Key Takeaways](https://blog.swmansion.com/wstate-of-react-native-2024-our-key-takeaways-19a7c0039d36)\n* 📜 [4 must-have Radon IDE features for convenient Expo development](https://expo.dev/blog/4-must-have-radon-ide-features-for-even-more-convenient-expo-development)\n* 📜 [Implementing Internationalisation in React Native Apps](https://addjam.com/blog/2025-02-27/implementing-internationalisation-react-native/)\n* 📦 [Re.Pack 5.0 - Mobile Microfrontends, 5x Faster, Less Configuration](https://re-pack.dev/blog/repack-5-release): This alternative bundler aims to be a drop-in alternative to Metro. The new version supports Rspack for speed, Module Federation 2 for microfrontends, and has plugins for Reanimated, Expo Modules, NativeWind.\n* 📦 [Metro 0.81.3 - Support resolving package.json import subpaths](https://github.com/facebook/metro/releases/tag/v0.81.3)\n* 📦 [React Native VisionOS 0.78](https://github.com/callstack/react-native-visionos/releases/tag/v0.78.0-visionos)\n* 📦 [React Native Windows 0.78](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.78.0)\n* 🎥 [Dan's Lab - Build Layouts By Instagram with Expo and React-Native](https://www.youtube.com/watch?v=MKCUOLapII4)\n* 🎥 [Beto - Master Expo Router API Routes | Handle Requests & Stream Data](https://www.youtube.com/watch?v=2_UzR1wdimI)\n* 🎥 [Catalin Miron - Interactive Confetti Animation - Reanimated, Gestures & Skia!](https://www.youtube.com/watch?v=MPVUL3MhfZ0)\n* 🎙️ [React Native Radio 323 - Static Hermes with Tzvetan Mikov](https://infinite.red/react-native-radio/rnr-323-static-hermes-with-tzvetan-mikov)\n* 🎙️ [React Universe On Air 49 - App Development With React Native Is Not Just Mobile, But Bigger](https://www.youtube.com/watch?v=G1_RMxtswsc)",
+      "source_content_hash": "0e892d71cb40f8f43b525acdd8b1b2c8a41459681dbe92b3acfc2386d2880aec",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 💸 [WithFrame - プリビルドされたReact Nativeテンプレート](https://withfra.me/templates)\n* 👀 [Fernando RojoがVercelのHead of Mobileに就任](https://x.com/rauchg/status/1896943726486032783): VercelがReactモバイル/クロスプラットフォーム領域にリソースを投入しているのは興味深い。\n* 👀 [エンタープライズ向けReact Nativeフレームワーク](https://enterprise-framework.callstack.com/): Callstackがエンタープライズニーズに特化した新しいRNフレームワークをオープンソース化する計画を発表。\n* 💬 [RiccardoがHermesの混乱を解明](https://github.com/facebook/react-native/pull/48531): ネイティブコードへのコンパイルはまだ本番環境には準備が整っていないが、バイトコード変換を備えた新しいバージョンのHermesが最初にリリースされる予定。\n* 📜 [SwiftUIビューをReact Nativeに公開する方法: 統合ガイド](https://www.callstack.com/blog/exposing-swiftui-views-to-react-native-an-integration-guide): 両アーキテクチャで動作するSwiftUIペイウォールをReact Nativeで構築する方法を紹介。\n* 📜 [ExpoのAI戦略](https://expo.dev/ai/strategy): アプリ作成の民主化、ExpoフレームワークとEASの対象を人間の開発者とAIエージェントの両方に拡大。\n* 📜 [React Nativeの現状2024: 主なポイント](https://blog.swmansion.com/wstate-of-react-native-2024-our-key-takeaways-19a7c0039d36)\n* 📜 [Expo開発をさらに便利にするRadon IDEの4つの必須機能](https://expo.dev/blog/4-must-have-radon-ide-features-for-even-more-convenient-expo-development)\n* 📜 [React Nativeアプリでの国際化の実装](https://addjam.com/blog/2025-02-27/implementing-internationalisation-react-native/)\n* 📦 [Re.Pack 5.0 - モバイルマイクロフロントエンド、5倍高速化、設定の簡素化](https://re-pack.dev/blog/repack-5-release): この代替バンドラーはMetroの代替として設計されており、新バージョンでは速度向上のためのRspack、マイクロフロントエンドのためのModule Federation 2をサポートし、Reanimated、Expo Modules、NativeWind用のプラグインを備えている。\n* 📦 [Metro 0.81.3 - package.jsonのimportサブパス解決をサポート](https://github.com/facebook/metro/releases/tag/v0.81.3)\n* 📦 [React Native VisionOS 0.78](https://github.com/callstack/react-native-visionos/releases/tag/v0.78.0-visionos)\n* 📦 [React Native Windows 0.78](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.78.0)\n* 🎥 [Dan's Lab - ExpoとReact-NativeでInstagram風レイアウトを構築](https://www.youtube.com/watch?v=MKCUOLapII4)\n* 🎥 [Beto - Expo Router APIルートのマスター | リクエスト処理とデータストリーミング](https://www.youtube.com/watch?v=2_UzR1wdimI)\n* 🎥 [Catalin Miron - インタラクティブな紙吹雪アニメーション - Reanimated、ジェスチャー & Skia!](https://www.youtube.com/watch?v=MPVUL3MhfZ0)\n* 🎙️ [React Native Radio 323 - Tzvetan MikovによるStatic Hermes](https://infinite.red/react-native-radio/rnr-323-static-hermes-with-tzvetan-mikov)\n* 🎙️ [React Universe On Air 49 - React Nativeによるアプリ開発はモバイルだけでなく、もっと大きな可能性を秘めている](https://www.youtube.com/watch?v=G1_RMxtswsc)"
+      }
+    },
+    {
+      "segment_id": "c63467a3",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "73776161",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🔀 Other {#other}"
+      }
+    },
+    {
+      "segment_id": "6b304caa",
+      "source_content": "* 👀 [Node.js PR - Unflag TypeScrit support in v22](https://github.com/nodejs/node/pull/57298): TypeScript support should be in a Node LTS version soon!\n* 📜 [Async, Sync, in Between](https://antfu.me/posts/async-sync-in-between): Using generators to create colorless functions, an interesting approach that reminds the Effect lib.\n* 📜 [The HTML command and commandfor attributes](https://fullystacked.net/command-and-commandfor/)\n* 📦 [TypeScript 5.8 - `erasableSyntaxOnly`, `require(esm)`, dependent return type narrowing](https://devblogs.microsoft.com/typescript/announcing-typescript-5-8/): A flag you should probably turn on if you ever want to run TypeScript natively in Node!\n* 📦 [Better Auth 1.2 - Stripe, Captcha, API Keys, Teams, Init CLI, and more](https://www.better-auth.com/changelogs/1-2)\n* 📦 [ArkType 2.1 - Pattern matching](https://github.com/arktypeio/arktype/releases/tag/arktype%402.1.0)\n* 📦 [Nitro 2.11 - Improved errors, dev server, database support and more](https://github.com/nitrojs/nitro/releases/tag/v2.11.0)",
+      "source_content_hash": "69c207e8c0d9a2eeb8be694e497daad93ffbe6a1dad8872c8997ef3f7bc24397",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 👀 [Node.js PR - v22でTypeScriptサポートのフラグ解除](https://github.com/nodejs/node/pull/57298): TypeScriptサポートが間もなくNode LTSバージョンに搭載される予定です！\n* 📜 [Async、Sync、そしてその間](https://antfu.me/posts/async-sync-in-between): ジェネレーターを使用してカラーレス関数を作成する手法。Effectライブラリを彷彿とさせる興味深いアプローチ。\n* 📜 [HTMLのcommand属性とcommandfor属性](https://fullystacked.net/command-and-commandfor/)\n* 📦 [TypeScript 5.8 - `erasableSyntaxOnly`、`require(esm)`、依存する戻り値型の絞り込み](https://devblogs.microsoft.com/typescript/announcing-typescript-5-8/): NodeでTypeScriptをネイティブ実行したい場合に有効化すべきフラグです！\n* 📦 [Better Auth 1.2 - Stripe、Captcha、APIキー、チーム、初期化CLIなど](https://www.better-auth.com/changelogs/1-2)\n* 📦 [ArkType 2.1 - パターンマッチング](https://github.com/arktypeio/arktype/releases/tag/arktype%402.1.0)\n* 📦 [Nitro 2.11 - エラー改善、開発サーバー、データベースサポートなど](https://github.com/nitrojs/nitro/releases/tag/v2.11.0)"
+      }
+    },
+    {
+      "segment_id": "70a662e2",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "97afbaf0",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 🤭 Fun {#fun}"
+      }
+    },
+    {
+      "segment_id": "a8f09c71",
+      "source_content": "[![alt](/emails/issues/224/meme.jpg)](https://x.com/devagrawal09/status/1894892406480281924)",
+      "source_content_hash": "240d93f2a574fc7556558527dbd83eb2b6b8d9fae25d5372bab4b846969b3de8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/224/meme.jpg)](https://x.com/devagrawal09/status/1894892406480281924)"
+      }
+    },
+    {
+      "segment_id": "d2a3d4c7",
+      "source_content": "[![alt](/emails/issues/224/meme2.jpg)](https://x.com/aidenybai/status/1895868884986778103)",
+      "source_content_hash": "1ba2d60bce1a430aaf33b7d7164ae9ebd82e662851a86833ab69051f0be57c16",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[![alt](/emails/issues/224/meme2.jpg)](https://x.com/aidenybai/status/1895868884986778103)"
+      }
+    },
+    {
+      "segment_id": "008183b0",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "それでは！👋"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/224/index.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:40.889744+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "a18a086958a72ef562b34f04909984d1c960083566f0d0ec72400da933ad2322"
+  }
+}

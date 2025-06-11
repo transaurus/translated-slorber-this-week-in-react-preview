@@ -1,0 +1,162 @@
+---
+slug: /227
+title: "This Week In React #227: Next.js, tRPC, React Query, React Router, StyledComponents, MUI, Base UI, Next Intl | React Native birthday, Lynx, EAS, Atlas, Reanimated, Audio, BottomTabs | CSS, Rsdoctor, Linters, Node"
+authors: [slorber]
+date: 03-26-2025
+---
+
+みなさん、こんにちは！
+
+今週は、Next.jsのミドルウェアに関する騒動を見逃した人はいないと思いますが、それだけではありませんでした！
+
+tRPC、React Query、Rsdoctorなど、多くの素晴らしいリリースがありました！
+
+また、React Nativeは今日で10周年を迎えました！ 🥳
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![Convex: AIコーディング向けに設計されたデータベース](/emails/issues/227/convex.jpg)](https://convex.link/thisweekai)
+
+**[Convex: AIコーディング向けに設計されたデータベース](https://convex.link/thisweekai)**
+
+コード生成の時代において、AIプラットフォームで自信を持って生成できるバックエンドが必要です。Convexはこの点において[圧倒的に優れています](https://stack.convex.dev/introducing-fullstack-bench)。
+
+これは、Convexが単なるTypeScriptであり、自動的にトランザクショナルでキャッシュされ、リアルタイムな[クエリをコードとして記述](https://docs.convex.dev/functions/query-functions/)できるためです。
+
+そして、これだけではありません。Convexでは以下のことが可能です：
+
+* 簡単に関数をスケジュールしたり、cronジョブを記述
+* ファイルストレージを設定
+* 効率的なサーバー関数を記述
+* その他多くの機能…
+
+[今すぐクイックスタートを試す](https://docs.convex.dev/quickstarts)
+
+***
+
+## ⚛️ React {#react}
+
+[![Next.jsミドルウェアバイパスの事後分析](/emails/issues/227/middleware.png)](https://vercel.com/blog/postmortem-on-next-js-middleware-bypass)
+
+**[Next.jsミドルウェアバイパスの事後分析](https://vercel.com/blog/postmortem-on-next-js-middleware-bypass)**
+
+数日前、VercelはNext.jsミドルウェアシステムにおける重大な9.1の脆弱性を発表しました。単純だが悪意のある`x-middleware-subrequest`ヘッダーを使用することで、ミドルウェアをバイパスし、機密情報が漏洩する可能性があります。Next.js 12/13/14/15向けのパッチが利用可能です。この脆弱性は、`output: ‘standalone’`を使用し、`next start`を利用するセルフホスト型アプリにのみ影響します。主要なサーバーレスクラウドプロバイダーの顧客（Vercel、Netlify）は影響を受けないか、保護を有効にできます（Cloudflare）。
+
+Next.jsミドルウェアにこの脆弱性があってはならないものの、[ユーザーセッションの管理やルートの保護には推奨される場所ではありません](https://nextjs.org/docs/pages/building-your-application/authentication#optimistic-checks-with-middleware-optional)。また、Next.jsアプリの唯一の防御ラインとして依存すべきではありません。ミドルウェアは、軽量な楽観的チェックを実行し、最終的にDBにヒットせずにリライト/リダイレクトを行うように設計されています。
+
+このセキュリティイベントはエコシステムに多くの騒動を引き起こしましたが、これについてはあまりコメントしたくありません。Vercelは状況をより良く処理できたかもしれませんし、今後は改善する予定です。さまざまなリソースに基づいて各自で判断してください。情報が多すぎるため、これは一部にすぎません：
+
+* 📜 [Next.jsと不正なミドルウェア：認証アーティファクト](https://zhero-web-sec.github.io/research-and-things/nextjs-and-the-corrupt-middleware): この脆弱性を発見したセキュリティ研究者によるオリジナルの記事。
+* 📜 [Next.jsにおけるセキュリティの考え方](https://nextjs.org/blog/security-nextjs-server-components-actions): 古い記事ですが、今日でも関連性のある内容です。
+* 📜 [Next.jsでの認可](https://www.robinwieruch.de/next-authorization/): RobinがNext.jsプロジェクトで認可をどのように扱うか、機密データに可能な限り近い場所で行う方法を説明しています。
+* 📜 [Next.jsを選ぶ前に知っておくべきこと](https://eduardoboucas.com/posts/2025-03-25-you-should-know-this-before-choosing-nextjs/): Netlifyのプリンシパルエンジニアからの視点。
+* 🎥 [Theo - Next.jsセキュリティエクスプロイト](https://www.youtube.com/live/UbcrphhSAIs?si=QgihLKnhpyE3RxPO\&t=8243): このトピックについての1時間のストリームで、Vercelの対応の誤りについても解説しています。
+
+***
+
+* 💸 [Product for Engineers - これらの機能フラグのミスを避けよう](https://dub.link/twir-mar26)
+* 👀 [Next.js PR - `useLinkStatus()`](https://github.com/vercel/next.js/pull/77300): ナビゲーション遷移中の保留状態フィードバックを提供する新フック。
+* 👀 [Next.js PR - Link `onNavigate` prop](https://github.com/vercel/next.js/pull/77209)
+* 📣 [Styled Components - 感謝の言葉](https://opencollective.com/styled-components/updates/thank-you): 人気の旧世代CSS-in-JSライブラリは現在メンテナンスモードに移行し、新規プロジェクトでの使用は推奨されていません。
+* 🗓 [React-Summit](https://reactsummit.com/?utm_source=Newsletter\&utm_medium=thisweekinreact) - 🇳🇱 アムステルダム - 6月13日 & 17日。React Queryの開発者（Tanner Linsley）、Expo Router（Evan Bacon）、Million.js（Aiden Bai）などがReact Summitで知識を共有！チケット10%オフのプロモコード「TWIR」を利用可能。
+* 📜 [React View Transitionsの実験](https://frontendatscale.com/issues/43): View Transitionsの解説と、Reactの実験的API `<ViewComponent>` がこのWeb機能をどう統合するかを説明。Reactはコンカレント機能使用時に自動的にビュートランジションを開始し、適切なタイミングでトランジション名を自動適用し、便利なライフサイクルプロパティを公開。
+* 📜 [コンポーネントはただの煌めくフック](https://www.bbss.dev/posts/sparkling-hooks/): コンポーネントをフックに変換する方法、両者の関係を示し、柔軟なプリミティブとしてのフックベースのヘッドレスコンポーネントの概念を紹介。
+* 📜 [ViteとReactで静的ウェブサイトを構築](https://blog.carlosn.com.br/post/writing-static-websites-with-vite-and-react/): CarlosはViteプラグインを作成し、Reactをサーバーサイドテンプレートシステムとしてのみ使用するシンプルな静的サイトジェネレーターを実装。
+* 📜 [Next.js vs TanStack](https://www.kylegill.com/essays/next-vs-tanstack/): KyleはNext.jsの複雑さに嫌気がさし、TanStack Startが適切な抽象化だと考える。
+* 📜 [TypeScript ReactコンポーネントにネイティブHTML属性を渡す](https://frontguys.fr/front-end/typescript-react-native-attributes/): ネイティブinputをラップしながら、あらゆるネイティブinputプロパティを渡す機能を保持する方法を示す。
+* 📜 [Storybook 9 先行公開: アクセシビリティアドオンの刷新](https://storybook.js.org/blog/preview-the-new-accessibility-addon/)
+* 📜 [2025年のReactトレンド](https://www.robinwieruch.de/react-trends/)
+* 📜 [Next 15とReact 19でuse APIはどう機能するか？](https://www.premieroctet.com/blog/en/how-does-the-use-api-work-with-next-15-and-react-19)
+* 💸 [Omlet for VS Code: VS CodeでReactコンポーネントの使用状況を把握](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-mar-2025)
+* 📦 [tRPC 11.0](https://trpc.io/blog/announcing-trpc-v11): このリリースでは、TanStack Query v5サポート、`queryOptions`に基づくよりネイティブなReact Query統合、Next.js/RSCサポートの改善、バイナリのダウンロード/アップロード機能など、多くのReact関連機能が追加されました。
+* 📦 [React Query 5.69 - `streamedQuery`](https://github.com/TanStack/query/releases/tag/v5.69.0): React Queryは`AsyncIterable`タイプを処理できるようになり、データのチャンクを受け取れます。最初のチャンクを待つ間のみ`pending`状態になります。AI/LLMチャット構築に特に有用そうです。
+* 📦 [Rsbuild Plugin React Router](https://github.com/rspack-contrib/rsbuild-plugin-react-router/releases/tag/rsbuild-plugin-react-router%400.0.1): npmで利用可能になり、Vite以外のバンドラーでもフレームワークモードでReact Routerを使用可能。すべてのReact Router CLIテンプレートとEpic Stackとうまく連携。
+* 📦 [Material UI 7.0 - ESMサポート改善、一貫したスロットパターン実装、`enableCssLayer`](https://mui.com/blog/material-ui-v7-is-here/)
+* 📦 [Base UI 1.0.0-alpha.7](https://github.com/mui/base-ui/releases/tag/v1.0.0-alpha.7): 有望なRadix UIの挑戦者からの素晴らしいリリース。
+* 📦 [Next Intl 4.0 - タイプセーフなロケール、ICU引数、フォーマットなど](https://next-intl.dev/blog/next-intl-4-0)
+* 📦 [Merge Refs 2.0 - React refsを1つに統合](https://github.com/wojtekmaj/merge-refs)
+* 📦 [React-Admin 5.5 & 5.6 - 2025年3月アップデート](https://marmelab.com/blog/2025/03/24/react-admin-march-2025-update.html)
+* 📦 [Ionic 8.5 - React 19サポート](https://ionic.io/blog/announcing-ionic-8-5)
+* 🎥 [React Paris 2025 プレイリスト](https://www.youtube.com/watch?v=-W3_dxNDHVw\&list=PL53Z0yyYnpWitP8Zv01TSEQmKLvuRh_Dj): 先週金曜日にカンファレンスに参加、素晴らしい講演が既にオンラインで視聴可能、現地で何人かにお会いできて良かったです 👋！
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Meet @clerk/agent-toolkit](/emails/issues/227/clerk.jpg)](https://go.clerk.com/ovPb3z0)
+
+**[Meet @clerk/agent-toolkit](https://go.clerk.com/ovPb3z0)**
+
+Clerkの新しい実験的パッケージで、AIエージェントワークフロー内でClerkを利用できます。Vercel AI SDK + LangChainサポートにより、ユーザーや組織を管理。今すぐ試す: `npm install @clerk/agent-toolkit`
+
+***
+
+## 📱 React-Native {#react-native}
+
+![React Native 10周年](/emails/issues/227/rn-10.jpg)
+
+**React Nativeが10周年を迎えました！ 🎉🤯**
+
+信じられないかもしれませんが、React Nativeは[ちょうど10年前にオープンソース化され](https://engineering.fb.com/2015/03/26/android/react-native-bringing-modern-web-techniques-to-mobile/)、今日が最初の10周年記念日です！
+
+これを実現したすべての方々に感謝を！ この機会に、[React Native共同開発者Christopher Chedeau（Vjeux）のポッドキャストエピソード](https://youtu.be/_cBqGenDCks?si=nrfF4D_FGEJhQsH3\&t=1504)をもう一度聴いてみましょう。React Nativeの背景ストーリーや、野心的な人々の賭けがなければこの素晴らしいプロジェクトが簡単に消えていたかもしれない話が語られています。
+
+また、結束力の高い素晴らしいReact Nativeコミュニティにも感謝します。常に前進し、課題に取り組み、宣言的なネイティブUIの未来を共に築いています 🚀
+
+次の期待に満ちた10年に向けて！ 🥂
+
+***
+
+* 💸 [Codemagic - React Native開発者向けの素晴らしいApp Center代替サービス！ビルド速度8倍、CodePush、自動配布。1ヶ月無料トライアル！](https://codemagic.io/migration-from-app-center/?utm_source=newsletter\&utm_medium=email\&utm_campaign=app_center_this_week_react)
+* 👀 [2025年にExpo OSSを使用しているのは誰か](https://bacon.expo.app/blog/expo-apps): EvanがExpoまたはReact Navigationを使用している2,262のトップアプリのリストを更新しました。
+* 👀 [Plugin Pro](https://pluginpro.dev/): ネイティブプラットフォームの変更を記録し、Expo設定プラグインを生成する予定のCLIのプレビュー。patch-packageの動作を彷彿とさせます。
+* 👀 [Legend Photos - オープンソースの写真閲覧アプリ - React Native macOSで構築](https://github.com/LegendApp/legend-photos)
+* 🐦 [Evan Bacon - 「モバイルアプリから直接モバイルアプリを構築できたらどうだろう？」](https://x.com/Baconbrix/status/1904548835143409948): このアイデアは非常に興味深いです。AIを使用してサーバー駆動のUIを生成する代わりに、ローカルで画面全体を生成するのはどうでしょうか？
+* 📣 [EAS Build & Workflows - M4 Proの導入 - iOSビルド速度1.85倍向上](https://expo.dev/changelog/eas-build-workflows-m4-pro)
+* 📜 [Lynxロードマップ2025](https://lynxjs.org/blog/lynx-open-source-roadmap-2025.html): React Nativeの競合プロジェクトがWindows、macOS、OpenHarmonyのデスクトップサポートをオープンソース化する予定です。新機能、UI要素、ツールの改善が進行中。
+* 📜 [React Nativeのパフォーマンスにおいてアプリのバンドル内容を知ることが重要な理由](https://www.callstack.com/blog/knowing-your-apps-bundle-contents-native-performance): Expo Atlasの使用方法と、Expoを使用していない場合でも動作させるトリックを解説。
+* 📜 [Firebase Dynamic Linksからの移行: 実践ガイド](https://medium.com/@louis.lagrange/migrating-from-firebase-dynamic-links-a-practical-guide-9905bbb8f04d)
+* 📜 [2025年のReact Nativeモーダル](https://addjam.com/blog/2025-03-24/react-native-modals-2025-comprehensive-guide/)
+* 📦 [Reanimated 4 beta.3 - CSSトランジションの短縮記法、edge-to-edge、Old Archコードの削除、react-native-workletsへの依存](https://github.com/software-mansion/react-native-reanimated/releases/tag/4.0.0-beta.3)
+* 📦 [Bottom Tabs 0.9 - `freezeOnBlur`の追加、`ignoresTopSafeArea`の削除（自動化されました）](https://github.com/callstackincubator/react-native-bottom-tabs/releases)
+* 📦 [Audio API 0.5 - RN 0.78対応、ピッチ補正、メモリ内オーディオデコード](https://github.com/software-mansion/react-native-audio-api/releases/tag/0.5.0)
+* 📦 [Tanstack Query DevTools Expoプラグイン](https://github.com/LovesWorking/tanstack-query-dev-tools-expo-plugin)
+* 📦 [React Native Auto Skeleton - 既存のUIレイアウトに基づいてスケルトンを自動生成](https://github.com/pioner92/react-native-auto-skeleton)
+* 📦 [Expo Passkey - 安全なパスワードレス認証を可能にするBetter Authプラグイン](https://github.com/iosazee/expo-passkey)
+* 📦 [React Native Magic Scroll 0.1.25 - 長いフォームでのキーボードとScrollViewの管理 - New Arch、Expo 52サポート](https://github.com/AppAndFlow/react-native-magic-scroll/releases/tag/v0.1.25)
+* 🎙️ [Rocket Ship 63 - Matt PalmerとReplitを使用したアイデアからアプリまで](https://podcast.galaxies.dev/episodes/063-from-idea-to-app-using-replit-with-matt-palmer)
+* 🎥 [Callstackウェビナー - 既存アプリでのReact Native使用によるクロスプラットフォーム機能の高速開発](https://www.youtube.com/watch?v=qlm1q0ZQ0ko)
+
+***
+
+## 🔀 Other {#other}
+
+* 👀 [Node PR - v24.0 リリース](https://github.com/nodejs/node/pull/57609): 新しいNode.js LTSがRC段階で、4月22日にリリース予定です。V8が13.4にアップグレードされ、`Promise.try`、`Intl.DurationFormat`、`Atomics.pause`などの新しいJS機能が利用可能になります。
+* 📜 [@scopeができることの1つは、ソース順序に関する懸念を減らすこと](https://frontendmasters.com/blog/one-thing-scope-can-do-is-reduce-concerns-about-source-order/): `@scope`がCSSカスケードに「スコープ近接性」という新しい概念を導入することを学びました！これはInterop 2025に含まれており、まもなくすべてのブラウザで利用可能になる予定です。
+* 📜 [Chrome 135 - CSSを使ったカルーセル](https://developer.chrome.com/blog/carousels-with-css)
+* 📜 [Chrome 135 - \<select>要素がCSSでカスタマイズ可能に](https://developer.chrome.com/blog/a-customizable-select)
+* 📜 [ハイブリッドリンター：両方の世界のベスト](https://www.joshuakgoldberg.com/blog/hybrid-linters-the-best-of-both-worlds/)
+* 📦 [Rsdoctor 1.0 - webpackとRspackのビルドアナライザー](https://rsdoctor.dev/blog/release/release-note-1_0): Docusaurusでビルド時間のボトルネックを見つけるために使用している優れたツールです。
+* 📦 [Biome 2.0 beta - プラグイン、ドメイン、マルチファイル分析など](https://biomejs.dev/blog/biome-v2-0-beta/)
+
+***
+
+## 🤭 Fun {#fun}
+
+今週は2つの動画があります、クリックする必要があります 😂
+
+[![alt](/emails/issues/227/meme.jpg)](https://x.com/sebastienlorber/status/1904152606181658966)
+
+[![alt](/emails/issues/227/meme2.jpg)](https://x.com/flexbox_/status/1903547233032712635)
+
+またね！ 👋

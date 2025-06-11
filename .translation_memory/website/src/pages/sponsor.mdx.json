@@ -1,0 +1,882 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "src/pages/sponsor.mdx",
+  "source_file_content_hash": "786296582ced55e51e9a6f6be85a52327306175710d6e0f530f5c362fcc9e24e",
+  "segments": [
+    {
+      "segment_id": "a9b642df",
+      "source_content": "import {\n  newsletterStats,\n  sponsorshipCalendarLink,\n  lastIssueLink,\n} from \"@site/src/newsletter\";\nimport {\n  PrimaryAdExample,\n  SecondaryAdExample,\n} from \"@site/src/components/AdExamples\";",
+      "source_content_hash": "60e793b5857ad0f8547c2a672e4238ec2c325e4f9b9ee27d6e6bc33fb55a763c",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_a9b642df"
+      }
+    },
+    {
+      "segment_id": "8a5f6a7b",
+      "source_content": "# Sponsor the newsletter",
+      "source_content_hash": "a5cf80f00f4ef21063eb967b586b28127eb742273e9b08110a5af74d2dafe734",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "# ニュースレターのスポンサーになる"
+      }
+    },
+    {
+      "segment_id": "180bddb1",
+      "source_content": "Reach a **qualified and engaged** audience of **mid/senior React developers** with an ad in our [weekly newsletter](/newsletter).",
+      "source_content_hash": "bb46abf3e6911f5f0dfd2202d4056bb24152c7d3af045c417cc142e55553f999",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "[週刊ニュースレター](/newsletter)に広告を掲載し、**中級/上級React開発者**の**質の高い熱心な**読者層にリーチしましょう。"
+      }
+    },
+    {
+      "segment_id": "cf898102",
+      "source_content": "Get in touch:",
+      "source_content_hash": "168f130ad05007fd88d6b016fd73ba38135b47244623a994c2f835f7f0e0eee2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "お問い合わせ方法:"
+      }
+    },
+    {
+      "segment_id": "84758135",
+      "source_content": "* by email at [**sponsor@thisweekinreact.com**](mailto\\:sponsor@thisweekinreact.com?subject=Sponsorship)\n* or fill the [**contact form**](https://thisweekinreact.com/sponsor/form)",
+      "source_content_hash": "4a83b89e3be7b152ee1a76d8aeceaad217823eb1ad6145d9cbc89cb0bc5cb514",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* メール: [**sponsor@thisweekinreact.com**](mailto\\:sponsor@thisweekinreact.com?subject=Sponsorship)\n* または[**コンタクトフォーム**](https://thisweekinreact.com/sponsor/form)から"
+      }
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "Last updated: **February 2025**.",
+      "source_content_hash": "f9c051e53614248d2576d4945c76df9bfb4aa23097ebe85401536e3aafccd1ce",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "最終更新: **2025年2月**"
+      }
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## TLDR",
+      "source_content_hash": "20923b9fb79d5ff45f5691db457c4796246c5c5f1b47806da7ae8462a8457406",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 概要"
+      }
+    },
+    {
+      "segment_id": "1941846d",
+      "source_content": "<ul>\n  <li>\n    <b>Advertise</b>\n    <>: a product, course, blog post, conference...</>\n  </li>\n\n  <li>\n    <b>Placements</b>\n    <>: 1st sponsor, 2nd sponsor, sponsored link, custom...</>\n  </li>\n\n  <li>\n    <b>Subscribers count</b>\n    <>: </>\n\n    <span>\n      {newsletterStats.all.subscribersCount}\n    </span>\n  </li>\n\n  <li>\n    <>\n      <b>Open-rate</b>\n      <>: </>\n      <span>{newsletterStats.all.openRate}%</span>\n    </>\n  </li>\n\n  <li>\n    <>\n      <b>Click-rate</b>\n      <>: </>\n      <span>{newsletterStats.all.clickRate}%</span>\n    </>\n  </li>\n\n  <li>\n    <b>Readers at</b>\n\n    <>\n      {\n              \": Meta, Google, Microsoft, GitHub, Shopify, Amazon, Stripe, Cloudflare, ByteDance, Figma, Uber...\"\n            }\n    </>\n  </li>\n\n  <li>\n    <b>Most popular offer</b>\n    <>: </>\n    <a href=\"#sponsor-1st\">4 x 1st sponsor slots</a>\n  </li>\n\n  <li>\n    <b>Booking</b>\n    <>: </>\n    <>email us at </>\n\n    <a href=\"mailto:sponsor@thisweekinreact.com?subject=Sponsorship\">\n      <b>\n        {\"sponsor@thisweekinreact.com\"}\n      </b>\n    </a>\n\n    <> or </>\n\n    <a href=\"https://thisweekinreact.com/sponsor/form\">\n      <b>fill this form</b>\n    </a>\n  </li>\n</ul>",
+      "source_content_hash": "b8beb03147b5ee927d20c69c3c5a75a82dcd2b6b40e3c448bd1f2d8272603e2b",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_1941846d"
+      }
+    },
+    {
+      "segment_id": "f7a7cb1b",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "e06c002e",
+      "source_content": "## Audience {#audience}",
+      "source_content_hash": "5836b2873d71c222a2d57c13e151d2fcbba49ec4cd48b0fa52af22532b239aac",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## Audience {#audience}"
+      }
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "The audience of our [weekly newsletter](/newsletter) is **qualitative and engaged**, with open-rates way above the industry standard.",
+      "source_content_hash": "5ff125262f9fdd4499c44a7253aee91191afdb3d290f050931a04b66007865b1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "私たちの[週刊ニュースレター](/newsletter)の読者は**質が高く熱心**で、業界標準を大きく上回る開封率を誇ります。"
+      }
+    },
+    {
+      "segment_id": "94145a94",
+      "source_content": "### 📜 Content {#content}",
+      "source_content_hash": "c5a64d0088083ae1c22e4705856d9eda0e7610cf96c6f760ab563dea9e05d26a",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 📜 Content {#content}"
+      }
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "Our editorial line assumes readers are:",
+      "source_content_hash": "f517541dda8e4c2dc5e054f79f06272307d8c25978e57c3774ed005dbafa3a17",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "編集方針として、読者は以下のような層を想定しています:"
+      }
+    },
+    {
+      "segment_id": "f6db2c30",
+      "source_content": "* **React developers**: we cover the whole React ecosystem\n* **React-Native developers**: there's a dedicated section in the newsletter\n* **experienced**: they know React well and are not interested in beginner-friendly content\n* **passionate**: they want to stay on top of their favorite technology\n* **open-minded**: they also want to know about non-React news that are relevant to them\n* **respecting their time**: they want a pre-filtered qualitative content",
+      "source_content_hash": "af9c50d60b68a1e547c01dba1c5ebe9cda26c1c453dec939c2ab67950716b0f5",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* **React開発者**: Reactエコシステム全体をカバー\n* **React-Native開発者**: ニュースレターに専用セクションあり\n* **経験豊富**: Reactをよく理解しており、初心者向けコンテンツには興味がない\n* **情熱的**: 好きな技術の最新動向を知りたい\n* **オープンマインド**: React以外でも関連するニュースを知りたい\n* **時間を尊重**: 事前に精選された質の高いコンテンツを求める"
+      }
+    },
+    {
+      "segment_id": "0de3740b",
+      "source_content": "<details>\n  <summary>What makes this newsletter unique</summary>\n\n  It is a weekly curation of news **for** React developers, not just about React. And in particular for **mid/senior** developers that are already productive using React.\n\n  We focus on what's **really new** in an **exhaustive** way. There's usually **a lof of external links**, but readers aren't expected to click all of them: simply reading the headlines and comments usually provide enough value.\n\n  We **filter content** heavily, and generally exclude:\n\n  * content produced for SEO, based on keyword analysis\n  * listicles, 101's\n  * verbose step-by-step tutorials\n  * promotional product tutorials\n  * most UI libraries and npm packages\n</details>",
+      "source_content_hash": "37f51d042771e2de4560756ae1b5fff21f1cb5e7a9dbc2fc175e1289c48ddeea",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_0de3740b"
+      }
+    },
+    {
+      "segment_id": "3c33aede",
+      "source_content": "<details>\n  <summary>About the author - Sébastien Lorber</summary>\n\n  [**Sébastien Lorber**](https://www.linkedin.com/in/sebastienlorber) ([@sebastienlorber](https://twitter.com/sebastienlorber)) is a **React early-adopter** and user since [January 2014](https://stackoverflow.com/questions/21352587/does-react-use-requestanimationframe-if-so-how-does-it-use-it).\n\n  With **a decade of React experience**, he has the credibility and authority to know exactly what is interesting to a senior React developer, and is able to provide **unique insight**.\n\n  Since 2020, he has been **working for Meta** as a freelancer. He is the **lead maintainer of [Docusaurus](https://github.com/facebook/docusaurus)**, a React static site generator for creating beautiful documentation websites, one of Meta's most successful open source project.\n</details>",
+      "source_content_hash": "4c6bdf572363f40dc039a07b71b48fd41e6c3b2fcc77310952831fb38ca928ce",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_3c33aede"
+      }
+    },
+    {
+      "segment_id": "3c293157",
+      "source_content": "<br />",
+      "source_content_hash": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_3c293157"
+      }
+    },
+    {
+      "segment_id": "9c2ab4c8",
+      "source_content": "### 🌍 Demography {#demography}",
+      "source_content_hash": "4b45f3e8f8870f5ddf4d76d48940dc736c93e1c27ed5698b4c2ca9ff1b9446c9",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 🌍 Demography {#demography}"
+      }
+    },
+    {
+      "segment_id": "a9c2a503",
+      "source_content": "Our audience is well-balanced, with the largest share in **Europe** (40%) followed by **North America** (18%).",
+      "source_content_hash": "39ee2eafef6201265f47f60f201e11013a57ce88c86a3be1d82f79b6caeeaccb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "読者層はバランスが取れており、**ヨーロッパ**(40%)が最も多く、次いで**北米**(18%)です。"
+      }
+    },
+    {
+      "segment_id": "cfeb9eb1",
+      "source_content": "![Substack audience demography stats](/img/audience-demography.png)",
+      "source_content_hash": "a0f8692c4fd745ea76548372df7e086c5b3d20f72ac246612d0b45142a96940e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "![Substackの読者層統計](/img/audience-demography.png)"
+      }
+    },
+    {
+      "segment_id": "dd4905a4",
+      "source_content": "### 📈 Stats {#stats}",
+      "source_content_hash": "0431134bdf4a68a4fc4f2db7d8cc8c2030379a04bdf3e5b991ad2fd736d6302b",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 📈 Stats {#stats}"
+      }
+    },
+    {
+      "segment_id": "b0cf7ea6",
+      "source_content": "<SponsoringTabsStats>\n  <details>\n    <summary><b>Email provider screenshot</b>{\" (April 2024)\"}</summary>\n\n    <img alt=\"screenshot\" src=\"/img/CK_TWIR_STATS.jpg\" />\n  </details>\n\n  <details>\n    <summary><b>About the open-rate </b> - an unreliable metric</summary>\n\n    * [iOS 15 prevents email tracking](https://phoscreative.com/articles/ios15-email-marketing/)\n    * [Gmail clipping prevents email tracking](https://convertkit.com/sender-reputation)\n    * Readers use privacy tooling: [StoopInbox](https://stoopinbox.com/), [Kill The Newsletter](https://kill-the-newsletter.com/), [FeedBin](https://feedbin.com/), [ReadWise](https://readwise.io/), [Feedly](https://feedly.com/), [Newsletterss](https://newsletterss.com/), [Mailbrew](https://mailbrew.com/), [ProtonMail](https://proton.me/), [Apple Private Relay Email](https://developer.apple.com/documentation/sign_in_with_apple/sign_in_with_apple_js/communicating_using_the_private_email_relay_service), [Firefox Relay](https://relay.firefox.com/)...\n  </details>\n</SponsoringTabsStats>",
+      "source_content_hash": "6316a3b87c3f0df45185648d1dab01bb99f145d81d5fa5a9d02db52a00c66390",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_b0cf7ea6"
+      }
+    },
+    {
+      "segment_id": "aa8003b6",
+      "source_content": "<br />",
+      "source_content_hash": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_aa8003b6"
+      }
+    },
+    {
+      "segment_id": "08f73f73",
+      "source_content": "### 🗣 Testimonials {#testimonials}",
+      "source_content_hash": "657899ab2a597bec700a43728092de200412502f1761d0b780ab3d5e9d598c4d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 🗣 Testimonials {#testimonials}"
+      }
+    },
+    {
+      "segment_id": "b08ad0b4",
+      "source_content": "Readers regularly express their satisfaction. Check our **[Twitter testimonials](https://twitter.com/sebastienlorber/timelines/1448942785814466561)**.",
+      "source_content_hash": "5d2d8ded33e385eda34a4862fadf0ab70ee78cc0afb905b577e2a1682d91c443",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "読者から定期的に満足の声が寄せられています。**[Twitterの推薦文](https://twitter.com/sebastienlorber/timelines/1448942785814466561)**をご覧ください。"
+      }
+    },
+    {
+      "segment_id": "623fa941",
+      "source_content": "<SponsoringTabsTestimonials />",
+      "source_content_hash": "f96d0fdb6409ec3e671fd371e27a84a0d9b8178d2951f5eab327ef84afef3c40",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_623fa941"
+      }
+    },
+    {
+      "segment_id": "ae25b606",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "a6b29dc7",
+      "source_content": "## Placements {#placements}",
+      "source_content_hash": "b6d94a45739ef99be974c1e6aa14204004611fed40c5f57b395d59c50f00d526",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## Placements {#placements}"
+      }
+    },
+    {
+      "segment_id": "dc72fd20",
+      "source_content": "We offer multiple sponsored placements, each of them has a different price.",
+      "source_content_hash": "61e96fa9d35e5286c102ad66460ed4329c5b222929d1907469e37940889ffab3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "複数のスポンサー掲載オプションを提供しており、それぞれ価格が異なります。"
+      }
+    },
+    {
+      "segment_id": "674abb31",
+      "source_content": "The newsletter structure stays the same every week:",
+      "source_content_hash": "9bafcece2476bfe6979c32ed828d4a21417bbd8bb5f848836be8fe613960777d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "ニュースレターの構成は毎週同じです:"
+      }
+    },
+    {
+      "segment_id": "4727185d",
+      "source_content": "<BrowserWindow url={lastIssueLink}>\n  * 👋 Introduction\n  * 🥇 [**1st sponsor**](#sponsor-1st)\n  * ⚛️ React section:\n    * 👀 Headlines\n    * ⚡ [**React Link sponsor**](#sponsor-link)\n    * 🔗 Links\n    * ⚡ [**React Link sponsor**](#sponsor-link)\n    * 🔗 Links\n  * 🥈 [**2nd sponsor**](#sponsor-2nd)\n  * 📱 React-Native section:\n    * 👀 Headlines\n    * ⚡ [**React Native Link sponsor**](#sponsor-link)\n    * 🔗 Links\n  * 🔀 Other section\n  * 🤭 Fun section\n</BrowserWindow>",
+      "source_content_hash": "2f786ff8c32eec024e0613d5b9158c40b9ed841ce97e6b01bc140b34c7a2a880",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_4727185d"
+      }
+    },
+    {
+      "segment_id": "bf49b721",
+      "source_content": "<span>\n  <>Check our </>\n\n  <b>\n    <a href={lastIssueLink}>last newsletter issue</a>\n  </b>\n\n  <> to get a better idea!</>\n</span>",
+      "source_content_hash": "f14f530cbb72bcd4ae8ba908d44394fc5c2eb5639332eb84f9f2270e0236f087",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_bf49b721"
+      }
+    },
+    {
+      "segment_id": "0f9ea278",
+      "source_content": "<br />",
+      "source_content_hash": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_0f9ea278"
+      }
+    },
+    {
+      "segment_id": "daa03ba9",
+      "source_content": "<br />",
+      "source_content_hash": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_daa03ba9"
+      }
+    },
+    {
+      "segment_id": "dd21637d",
+      "source_content": "### 🥇 1st sponsor {#sponsor-1st}",
+      "source_content_hash": "c4c7786171cc57c51a16042fc7a034e405c217709a29895eb1cc98f802075b1d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 🥇 1st sponsor {#sponsor-1st}"
+      }
+    },
+    {
+      "segment_id": "09f901c3",
+      "source_content": "This placement offers a generous ad copy length at the beginning of the newsletter, before the React section.",
+      "source_content_hash": "5a19893733f10bd16b24c492502202df8f9ccb8a162bed5a7108ed46d80ec763",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "この掲載位置では、ニュースレターの冒頭、Reactセクションの前に長めの広告文を掲載できます。"
+      }
+    },
+    {
+      "segment_id": "b150092b",
+      "source_content": "<details>\n  <summary>Ad constraints and example</summary>\n\n  **Placement constraints:**\n\n  * **Title**: 55 characters max, 1 link\n  * **Body**: 800 characters max, max 2 links, max 3 line breaks, decent usage of bold/smileys/list\n  * **Image**: horizontal banner - ideally 1200x600px\n\n  <PrimaryAdExample />\n</details>",
+      "source_content_hash": "6020be54fb88a00ef743a410c14f329f34cff89d31b731fa59e76401363392fa",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_b150092b"
+      }
+    },
+    {
+      "segment_id": "9e01fd9d",
+      "source_content": "<SponsoringTabsFirstSponsor />",
+      "source_content_hash": "3340ccef78a0e1c4b4c384a8243680a78b24dbf56986ed44a60cb4d118664af0",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_9e01fd9d"
+      }
+    },
+    {
+      "segment_id": "17d89a55",
+      "source_content": "<br />",
+      "source_content_hash": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_17d89a55"
+      }
+    },
+    {
+      "segment_id": "fbdb880f",
+      "source_content": "### 🥈 2nd sponsor {#sponsor-2nd}",
+      "source_content_hash": "571b306a29c4ba078b1c4ae4c37328b99a64224c62eaaa9cda0d5d27a4f47fc9",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 🥈 2nd sponsor {#sponsor-2nd}"
+      }
+    },
+    {
+      "segment_id": "d3912b2e",
+      "source_content": "This placement appears in the middle of the newsletter, in between the React and React-Native sections.",
+      "source_content_hash": "69acd9f80c625fef6b6a68e87e5a2ac7e237520daab17811f7f4e3e216348ee3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "この掲載位置はニュースレターの中ほど、ReactセクションとReact-Nativeセクションの間に表示されます。"
+      }
+    },
+    {
+      "segment_id": "8ef9aa8b",
+      "source_content": "<details>\n  <summary>Ad constraints and example</summary>\n\n  **Placement constraints:**\n\n  * **Title**: 55 characters max, 1 link\n  * **Body**: 800 characters max, max 1 link, max 2 line breaks, decent usage of bold/smileys/list\n  * **Image**: horizontal banner - ideally 1200x600px\n\n  <SecondaryAdExample />\n</details>",
+      "source_content_hash": "8b08e4c5e3a6359aa8a13a2792dcd75162c7fd9be0df9d0aaf6679a46a069c8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_8ef9aa8b"
+      }
+    },
+    {
+      "segment_id": "6096356e",
+      "source_content": "<SponsoringTabsSecondSponsor />",
+      "source_content_hash": "0d204cfff12a9e2960760137d62e7a6c2cf4f6700c71d8bbb12a4bcfa2152e12",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_6096356e"
+      }
+    },
+    {
+      "segment_id": "2d2470c7",
+      "source_content": "<br />",
+      "source_content_hash": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_2d2470c7"
+      }
+    },
+    {
+      "segment_id": "f7d4d765",
+      "source_content": "### ⚡️ Sponsored Link {#sponsor-link}",
+      "source_content_hash": "cf8f111cc05426beea9f72294942a54ab717dd4b1c0884a7b2407d72970edfbe",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### ⚡️ Sponsored Link {#sponsor-link}"
+      }
+    },
+    {
+      "segment_id": "13440cd7",
+      "source_content": "Sponsored Links are sponsored links inserted in the React or React-Native newsletter sections, alongside the regular content. **Subscribers can't miss them**, right between the section headlines and the list of links they are interested in.",
+      "source_content_hash": "69f3d3b54a663b2b9c60cce05c3b677f9e7061342c434db51c8a071809556110",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "スポンサードリンクは、ReactまたはReact-Nativeニュースレターセクション内の通常コンテンツと共に掲載されます。**購読者に見逃されることはありません**。セクション見出しと興味のあるリンクリストの間に表示されます。"
+      }
+    },
+    {
+      "segment_id": "5d3138c7",
+      "source_content": "There's up to 2 sponsored links per section. When there's more than 1 sponsored link, the 2nd link appears in the middle of the section.",
+      "source_content_hash": "6ca392655f46a97e620b38b28dd20d02754f711af9f52a95e6c61bfde028db1e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "各セクションには最大2つのスポンサードリンクを掲載できます。2つ目のリンクはセクションの中ほどに表示されます。"
+      }
+    },
+    {
+      "segment_id": "35d942b1",
+      "source_content": "<details>\n  <summary>Ad constraints and example</summary>\n\n  **Placement constraints:**\n\n  * **Title**: 140 characters max\n  * **Title**: plain text, no bold/emojis/uppercase and other attention-grabbing hacks\n  * **Title**: respects the pattern `ProductName - Description` whenever possible\n\n  **Sponsored Links examples:**\n\n  * [Zero To Shipped - Master Fast-Paced Fullstack Development and finally ship that product](https://www.zerotoshipped.com/)\n  * [Ably Realtime Hackathon - Create a real-time React app, win \\$19,000 in prizes - from real-time dashboards to collaborative experiences!](https://ably.devpost.com/?utm_campaign=23-hackathon\\&utm_source=thisweekinreact\\&utm_medium=referral)\n  * [Blitz - Build React Native Apps Faster for iOS, Android, and Web!](https://www.blitz-rn.com/)\n  * [Moropo - build and scale open-source React Native tests 10x quicker](https://www.moropo.com/for-react-native?utm_source=newsletter\\&utm_medium=emails\\&utm_campaign=twir-20231018)\n</details>",
+      "source_content_hash": "0c5395f3563d344edf69fcf91fdacdad27330374b730e9028a785fd46d53473e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_35d942b1"
+      }
+    },
+    {
+      "segment_id": "005d858b",
+      "source_content": "<SponsoringTabsQuickLinkSponsor />",
+      "source_content_hash": "66bf44f458229ecf31eef4f7cd5e48328aafc182bc23d9a416704848cb49d91e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_005d858b"
+      }
+    },
+    {
+      "segment_id": "8acb6805",
+      "source_content": "<br />",
+      "source_content_hash": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_8acb6805"
+      }
+    },
+    {
+      "segment_id": "1bf64e32",
+      "source_content": ":::tip[Use sponsored links to]\n* promote a React or React-Native product\n* promote a relevant **piece of content** such as a product tutorial blog post\n* improve your **SEO profile** with a new do-follow backlink\n* **remind** the audience of an already-promoted product and stay top-of-mind\n* get a **lower Cost-Per-Click**: favor number of clicks instead of brand awareness\n* drive traffic to your site for creating qualified retargeting look-alike audiences\n:::",
+      "source_content_hash": "08605de7e7aa314bdcc6fce70caa427ce3b448f5346b4b8165888fe8210d99a0",
+      "node_type": "containerDirective",
+      "translatable": true,
+      "translations": {
+        "ja": ":::tip[スポンサードリンクの活用方法]\n* ReactまたはReact-Native製品のプロモーション\n* 製品チュートリアルのブログ記事など、関連する**コンテンツ**の宣伝\n* do-followバックリンクによる**SEOプロファイル**の向上\n* 既に宣伝済みの製品を**リマインド**し、認知度を維持\n* **クリック単価の低減**: ブランド認知よりもクリック数を重視\n* サイトへのトラフィック誘導による、適格なリターゲティング/ルックアライクオーディエンスの構築\n:::"
+      }
+    },
+    {
+      "segment_id": "fbbade7d",
+      "source_content": "### 🧑‍🎨 Custom",
+      "source_content_hash": "7b4370f8a0380b0c661c87d1f9300e1d0b2d52d582710bf68aa04b80b2f87ad5",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### 🧑‍🎨 カスタムオファー"
+      }
+    },
+    {
+      "segment_id": "f0db2ff1",
+      "source_content": "Reach out to [sponsor@thisweekinreact.com](mailto\\:sponsor@thisweekinreact.com?subject=Custom%20sponsorship%20offering) to explain us your marketing goals. We can create custom offers including:",
+      "source_content_hash": "9406aa57153c14fc14163cf35886ca1374dc1a3a148581d8451581ba55de2784",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "マーケティング目標について[sponsor@thisweekinreact.com](mailto\\:sponsor@thisweekinreact.com?subject=Custom%20sponsorship%20offering)までご連絡ください。以下のようなカスタムオファーをご提案可能です:"
+      }
+    },
+    {
+      "segment_id": "3cfbf567",
+      "source_content": "* custom placement bundles with quantity discounts\n* sponsored placement at the top of the email on our occasional [React articles](/articles)\n* sponsored smart placement, tightly integrated in an article we write related to your product",
+      "source_content_hash": "1842ad7d8458d9690ccadc0db4aebbff4af579c881a94078fc6aede38fd01e30",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 数量割引が適用されるカスタム配置バンドル\n* 不定期掲載の[React記事](/articles)上部へのスポンサード掲載\n* 貴社製品に関連する記事内に密接に統合したスマート配置"
+      }
+    },
+    {
+      "segment_id": "a7a919ed",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "793be93c",
+      "source_content": "## Order process {#order-process}",
+      "source_content_hash": "5be8fa4c29f8ccb71f16654233b5c3a1b01e910cc9d1de7f7dc8ff7491ba56d1",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## Order process {#order-process}"
+      }
+    },
+    {
+      "segment_id": "4786f22b",
+      "source_content": "The easiest way is to simply contact us, we'll get back to you asap, explaining everything:",
+      "source_content_hash": "39eb998d2e70a1e379e94ec59b40c333a574afd6557f0655822fc4c173b1e89d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "最も簡単な方法は当方へご連絡いただくことです。迅速にご返信し、詳細を説明いたします:"
+      }
+    },
+    {
+      "segment_id": "acf357aa",
+      "source_content": "* send an email at [**sponsor@thisweekinreact.com**](mailto\\:sponsor@thisweekinreact.com?subject=Sponsorships)\n* fill the [**contact form**](https://thisweekinreact.com/sponsor/form)",
+      "source_content_hash": "19e2e51d886c62d9d39aed26e141294ee7b482ed219104bd15341ad39e79bbaf",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* メール送信: [**sponsor@thisweekinreact.com**](mailto\\:sponsor@thisweekinreact.com?subject=Sponsorships)\n* [**コンタクトフォーム**](https://thisweekinreact.com/sponsor/form)の記入"
+      }
+    },
+    {
+      "segment_id": "fd59095d",
+      "source_content": "### ⏱ Now {#now}",
+      "source_content_hash": "87d1884fdaa188c83274354f67b1b1c09881fac3f27a63dc743a1d465dd04550",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### ⏱ Now {#now}"
+      }
+    },
+    {
+      "segment_id": "c2a9a004",
+      "source_content": "Alternatively, you can also provide us with all the information we need straight away, and follow these steps:",
+      "source_content_hash": "0dd63fdec19c01f4d0d0344cb6982388cd38fdf5707a8d35848d61d25b37b897",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "必要な情報を最初から全て提供いただくことも可能です。以下の手順に従ってください:"
+      }
+    },
+    {
+      "segment_id": "63aec83f",
+      "source_content": "* select your [placement](#placements) and number of issues\n* select available dates on the [public sponsorship calendar](https://thisweekinreact.com/calendar)\n* prepare your company details for invoicing\n* email us at [sponsor@thisweekinreact.com](mailto\\:sponsor@thisweekinreact.com?subject=Sponsorship)\n* acknowledge receipt of our invoice",
+      "source_content_hash": "88093c504791a8936a01f196f734a5925d269f07dbf8a2bd0319d1d2c084a111",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* [掲載位置](#placements)と掲載号数を選択\n* [公開スポンサーカレンダー](https://thisweekinreact.com/calendar)で空き日を確認\n* 請求書用の会社情報を準備\n* [sponsor@thisweekinreact.com](mailto\\:sponsor@thisweekinreact.com?subject=Sponsorship)へメール送信\n* 請求書の受領確認"
+      }
+    },
+    {
+      "segment_id": "b16b56a2",
+      "source_content": "**Useful additional information to provide**:",
+      "source_content_hash": "1a797840c39759c9677e18f1766bafaa98f30755409011e43bdda95007888ba7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**提供いただくと有益な追加情報**:"
+      }
+    },
+    {
+      "segment_id": "0b30c085",
+      "source_content": "* let us know if you have strict calendar constraints, such as a fixed-date event\n* give us a list of companies you don't want to advertise alongside in the same issue",
+      "source_content_hash": "8fbb3149ce2349c521f99403c19ac0be8e9780445676dd6fba6061e9a0e92a0f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 固定日イベントなど、厳密なスケジュール制約がある場合\n* 同一号で並列掲載を希望しない競合企業のリスト"
+      }
+    },
+    {
+      "segment_id": "e0a4e8ba",
+      "source_content": "<details>\n  <summary>We suggest using the following email template</summary>\n\n  ```txt\n  Hi\n\n  We would like to sponsor This Week In React.\n\n  Booking informations:\n  - Sponsorship placement: 1st sponsor\n  - Number of issues: 4\n  - Price: 1000€\n\n  Requested dates (dd/MM/yyyy):\n  - 06/09/2022\n  - 27/09/2022\n  - 04/10/2022\n  - 11/10/2022\n\n  Additional information:\n  - We are flexible for the dates: yes / no\n  - Competitors we do not want to advertise alongside in the same issue: Company1, Company2...\n\n  Company details for invoicing:\n  - Company Name: ACME Corp\n  - Street: 42 Software Street,\n  - Postal code: 94102\n  - City: San Francisco\n  - VAT / tax number (if applicable):\n  - Contact email: marketing@acme.com\n\n  If this booking order is valid, please send us an invoice asap.\n\n  We will send the ad copy before the 31/08/2022\n  ```\n</details>",
+      "source_content_hash": "7e26014647c8b7d72bba2d2de33e480c2c3cc353615945b60d3165460cd8acb3",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_e0a4e8ba"
+      }
+    },
+    {
+      "segment_id": "b5b0d360",
+      "source_content": "### ⏳ Later {#later}",
+      "source_content_hash": "ca7d20eb2d5794715c0bc7003a60b67d1ae8a39875ea41eb9c369c42f72f0f08",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### ⏳ Later {#later}"
+      }
+    },
+    {
+      "segment_id": "f7f08e35",
+      "source_content": "Once the order is complete:",
+      "source_content_hash": "0fe9396f813904ed01e8e1327e600259fdb4e4e2f730e398c99c4e54acbe0498",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "注文完了後の流れ:"
+      }
+    },
+    {
+      "segment_id": "0afd3bd0",
+      "source_content": "* you pay the invoice under 15 days, before the publication date\n* we give you access to our sponsor portal\n* you provide the ad copy at least one week before the issue date\n* we review and validate the ad copy\n* we include the ad in the newsletters 🎉",
+      "source_content_hash": "1d0614663133dd5c1acc77cb036ee600d5eed035fb6448e2402835f98334536b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* 公開15日前までに請求書をお支払い\n* スポンサーポータルへのアクセス権を付与\n* 掲載1週間前までに広告文案を提供\n* 当方による文案のレビューと承認\n* ニュースレターへの広告掲載 🎉"
+      }
+    },
+    {
+      "segment_id": "37772f05",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "dbd99edb",
+      "source_content": "## To sponsor or not?",
+      "source_content_hash": "6221d161f825b12c50e9c74073f1e2689f32e42442e74f459e7e0d91e4986e4c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## スポンサー適性の判断"
+      }
+    },
+    {
+      "segment_id": "f613e20b",
+      "source_content": "Make sure your ad is relevant to the target audience.",
+      "source_content_hash": "454986d06187e42fee7b73efaa50cd4dd9496510d432c5a30e21c428c897d7ea",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "対象読者層に関連性のある広告であることを確認してください。"
+      }
+    },
+    {
+      "segment_id": "d89dd60e",
+      "source_content": "### ✅ Good fit",
+      "source_content_hash": "317dd9fc72b2184cfa71998a3f194885f27a8c21391ef91ad7405be9fae365fc",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### ✅ 適している場合"
+      }
+    },
+    {
+      "segment_id": "aaddedb4",
+      "source_content": "* Reach **mid/senior React developers**\n* Reach **cross-platform enthusiasts**, using both **React and React-Native**\n* Reach **open-minded** developers using JavaScript, TypeScript, Node.js...\n* Reach **decision makers**: CTOs, tech leads, engineering managers...",
+      "source_content_hash": "7434de8824bfa9966a901d1f9a38ca2e938af7624231d1804cc84582db2262a9",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* **中級/上級React開発者**へのリーチ\n* **ReactとReact-Native**を併用する**クロスプラットフォーム愛好家**層\n* JavaScript/TypeScript/Node.js利用者など**オープンマインド**な開発者\n* **意思決定者層**: CTO、テックリード、エンジニアリングマネージャー..."
+      }
+    },
+    {
+      "segment_id": "faaf88af",
+      "source_content": "### ❌ Bad fit",
+      "source_content_hash": "3f167c55203ee5dd3532d1dbdaeccd9434982c706b3e1ace7967d0cbfff56dfe",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "### ❌ 適さない場合"
+      }
+    },
+    {
+      "segment_id": "46200cfe",
+      "source_content": "* Reach an audience of only **junior** React developers\n* Promote something **irrelevant** to React developers",
+      "source_content_hash": "307fcb4a2ce17eb4c4610046afec9e52397d823db66b876b2e798712d3c8853f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "ja": "* **初心者**React開発者のみを対象とする場合\n* React開発者にとって**無関係**な内容のプロモーション"
+      }
+    },
+    {
+      "segment_id": "5f4f92e0",
+      "source_content": ":::info\nWe will tell you if we think your ad is not a good fit.\n:::",
+      "source_content_hash": "41ab59fce8380a990277f23c055d9405406eb3bd78002efdeda0fef28e43f928",
+      "node_type": "containerDirective",
+      "translatable": true,
+      "translations": {
+        "ja": ":::info\n広告内容が不適切と判断した場合はお知らせします。\n:::"
+      }
+    },
+    {
+      "segment_id": "83c064ad",
+      "source_content": "***",
+      "source_content_hash": "596f4162a52f315b2ad0fa53fd30a2769d02a41ed7439123790966eee4ceb5cd",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "ja": "***"
+      }
+    },
+    {
+      "segment_id": "1ddee520",
+      "source_content": "## Past Sponsors",
+      "source_content_hash": "1082e5044cf7667f8a090c82be62a5380fa85103214296ca1944dad7070a93cb",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## 過去のスポンサー企業"
+      }
+    },
+    {
+      "segment_id": "c4d69fe4",
+      "source_content": "**Previous sponsors include**: PostHog, Axiom, WorkOS, Clerk, Omlet, Highlight, FrontendMaster, Ably, AG Grid, Graphite Grid, NLUX, RevenueCat, Stream, PowerSync, Callstack, Software Mansion, Meilisearch, Storyblok, Retool, Sizzy, CoderPad, React-Bricks, Refine, Apryse, Suncel, React-Admin, TinaCMS, Checkly, SurveyJS, FrontendMasters, Flycode, WithFrame, Meteor, Hashnode, Sunsama, Moropo, RemixTape, Storetasker, Porkbun, Tripetto, MightyMeld, UXPin, Cambly, Nylas, Indy, TechTree...",
+      "source_content_hash": "646f508e8975acb49aa0e898b5eadaf1b000e005401f51fc4fb14821cde5ed67",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "ja": "**過去のスポンサーには以下の企業が含まれます**: PostHog、Axiom、WorkOS、Clerk、Omlet、Highlight、FrontendMaster、Ably、AG Grid、Graphite Grid、NLUX、RevenueCat、Stream、PowerSync、Callstack、Software Mansion、Meilisearch、Storyblok、Retool、Sizzy、CoderPad、React-Bricks、Refine、Apryse、Suncel、React-Admin、TinaCMS、Checkly、SurveyJS、FrontendMasters、Flycode、WithFrame、Meteor、Hashnode、Sunsama、Moropo、RemixTape、Storetasker、Porkbun、Tripetto、MightyMeld、UXPin、Cambly、Nylas、Indy、TechTree..."
+      }
+    },
+    {
+      "segment_id": "c489a644",
+      "source_content": "## FAQ",
+      "source_content_hash": "b07ed55203f0d88ebed77a69ea750333f4f62ec38193b32272aa2987376f7b86",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "ja": "## よくある質問"
+      }
+    },
+    {
+      "segment_id": "b6be16eb",
+      "source_content": "<details>\n  <summary>Why are some dates unavailable</summary>\n\n  This newsletter is mostly run by a [single person](https://twitter.com/sebastienlorber) who sometimes has to take vacations 😅\n\n  I prefer to be pessimistic and open sponsorship slots once I'm sure I will be available.\n</details>",
+      "source_content_hash": "5c218fbf19d5c72ee75c193abf79e29c4ef4d3a18ee5c53245f2372d01d4fd20",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_b6be16eb"
+      }
+    },
+    {
+      "segment_id": "f62996fa",
+      "source_content": "<details>\n  <summary>Are the sponsorship dates contractual?</summary>\n\n  The respect of sponsorship dates are a best effort and **not contractual**, unless we sign a contract.\n\n  This newsletter is mostly run by a [single person](https://twitter.com/sebastienlorber), and unexpected life events can happen.\n\n  That can lead to offset the upcoming sponsorship slots. In practice, your dates shouldn't be delayed by more than one issue/week.\n\n  We will let you know if publication dates are postponed, and look for a solution together in case your dates are not flexible.\n</details>",
+      "source_content_hash": "a3afea243b500c06ffd19a686337323167b11694e60af2b360d1edb60c8ec1e8",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_f62996fa"
+      }
+    },
+    {
+      "segment_id": "cd4b4190",
+      "source_content": "<details>\n  <summary>Do you provide tracking / reporting?</summary>\n\n  We don't provide any reporting by default, but you can ask for a basic reporting one week after the send.\n\n  To measure the result of your newsletter campaign, we suggest:\n\n  * to add [`utm_` querystring parameters](https://en.wikipedia.org/wiki/UTM_parameters) (we automatically add some default utm parameters in case you don't provide them)\n  * to provide your own tracking links to count clicks (please do not use [bit.ly](https://bit.ly/), it often flag emails as spam on some email clients, we prefer [dub.sh](https://dub.co/) using your own custom domain)\n\n  In the future, we will look into providing a good reporting automatically.\n</details>",
+      "source_content_hash": "f268aec0096e392fb65f7c7ba6d58da18d79683bb45950d3d16c267dbba301c1",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_cd4b4190"
+      }
+    },
+    {
+      "segment_id": "9ff7ec86",
+      "source_content": "<details>\n  <summary>Why are prices higher for a single issue?</summary>\n\n  To keep a positive ROI for us, we have to take into account the time it takes to manage sponsorships: sales, support, booking, invoicing, ad copy reviews, email integration...\n</details>",
+      "source_content_hash": "b6257373a1a9039f0c08ccc84f1131be7302c5b8595bd789dbe8f52eb6dd3c8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_9ff7ec86"
+      }
+    },
+    {
+      "segment_id": "614607ae",
+      "source_content": "<details>\n  <summary>\n    Why is the sponsorship calendar public?\n  </summary>\n\n  This newsletter is being built in public, in a transparent way:\n\n  * Check our [public spreadsheet](https://thisweekinreact.com/calendar)\n  * The [Indie Hackers product page](https://thisweekinreact.com/ih) provides monthly reportings on turnover, growth...\n\n  In case you don't want your company's name to appear in our public calendar, please give us a company alias name.\n</details>",
+      "source_content_hash": "541f6a55be7eb3921ac606b3e35c0e9968cefca38ebde879d0c452665b414a12",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_614607ae"
+      }
+    },
+    {
+      "segment_id": "a469753a",
+      "source_content": "<details>\n  <summary>\n    What happens if I don't submit my ad copy on time?\n  </summary>\n\n  It is your responsibility to provide the ad copy on time, at least one week before the publication date.\n\n  Unless we have an agreement, it is not possible to cancel a sponsorship slot at the last minute. We will have to run your ad, no matter what.\n\n  In case we don't receive your ad copy on time, we will:\n\n  * use the copy of a previous ad, if possible\n  * fallback to a quick-and-dirty ad we create ourselves based on your ad landing page\n\n  For these reasons, we strongly recommend to submit your ad copy on time, including ad updates.\n</details>",
+      "source_content_hash": "85a034a1e0cbbe90f5c50be08b2d641db260d6a7f116fea10472b5d40bfe0ab3",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_a469753a"
+      }
+    },
+    {
+      "segment_id": "bc77f3c5",
+      "source_content": "<details>\n  <summary>\n    What happens if my ad gets scheduled the same day as a company I don't like, or a competitor?\n  </summary>\n\n  Our newsletter has multiple placements, and it is possible that your ad gets matched with another ad that does not please you.\n\n  We understand that you might not want to broadcast your ad the same newsletter as your competitors. In practice, we think it is not a big deal, and many paid marketing channels (such as Google search ads) display competitors already.\n\n  However, in case there are companies and competitors you absolutely don't want to advertise alongside, we kindly ask you to be proactive and provide us with an exhaustive list of companies you do not want to be matched with.\n\n  If you don't provide such a list when booking a slot, we will do our best to not match you with a competitor on a best-effort basis based on our intuition, but there will be no guarantee.\n\n  Please keep in mind that our sales/booking team doesn't always have perfect knowledge of who's competing with whom, and to what extent. You know better than us whose companies you don't want to be matched with.\n</details>",
+      "source_content_hash": "1bf7e7db0db8ffa9d057963d32032a9bb787a967803ac5a90470bc707d5578b6",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "ja": "@@untranslatable_placeholder_bc77f3c5"
+      }
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-pages/sponsor.mdx",
+  "last_updated_timestamp": "2025-06-11T16:37:42.354412+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "ja": "786296582ced55e51e9a6f6be85a52327306175710d6e0f530f5c362fcc9e24e"
+  }
+}

@@ -1,0 +1,221 @@
+---
+slug: /192
+title: "This Week In React #192: Fog of War, react-html, Memory leaks, Suspense, security, chadcn/ui Charts, MUI, XR, Filament, Rise, Expo, React Navigation, Reanimated, Node, TypeScript, pnpm, Vitest..."
+authors: [slorber]
+date: 07-18-2024
+---
+
+みなさん、こんにちは！
+
+ニュースレターが2週間の休暇を経て戻ってきました！
+
+今回は3週間分のニュースを1回の号でお届けします。リンクが多すぎて1通のメールに収まらないため、より厳選したニュースを掲載しています。休暇シーズンにもかかわらず、素晴らしいReactコミュニティの記事や興味深いReact Nativeのニュースがたくさんありました！
+
+もしこのニュースレターの網羅的な側面が気に入ったら、ぜひ[オンライン版](https://thisweekinreact.com/newsletter/192)もチェックしてみてください。今回は特別に、さらに多くのリンクを含む追加セクションがあります。これを見れば、私が提供している価値がわかるでしょう。読んで精査したものの、掲載を見送った記事もたくさんあるのです。
+
+パートナーカンファレンス[React-Brussels](https://www.react.brussels/?utm_source=thisweekinreact)（🇧🇪 ブリュッセル - 10月18日）もチェックしてください。「TWIR」コードで10%割引が適用されます。すでにいくつかのスピーカーが発表されています！
+
+<!-- truncate -->
+
+**💡 [Twitterでこのニュースレターをチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![エンタープライズ向けカテゴリ定義Reactグリッド](/emails/issues/190/advertfinal.jpg)](https://1771technologies.com/graphitegrid)
+
+**[エンタープライズ向けカテゴリ定義Reactグリッド](https://1771technologies.com/graphitegrid)**
+
+データグリッドはWebアプリケーションの複雑なコンポーネントですが、現在のソリューションは非効率的で、多くのメンテナンスを必要とし、パフォーマンスも低いです。[Graphite Grid](https://1771technologies.com/graphitegrid)は、再ターゲティング可能なレンダリングとリアクティブシグナル状態という2つの主要機能でこの状況を変えます。
+
+**Graphite Grid**はグリッドの状態とビューロジックを分離し、単一の統一された状態モデルがさまざまなレンダリングターゲットを宣言的または命令的にサポートできるようにします。**DOMとCanvas**レンダラーを含んでおり、開発者に柔軟で高性能なオプションを提供します🚀。
+
+Graphite Gridは宣言的で一貫性があり、状態シグナルを活用してアプリケーションとのシームレスな統合を保証します。**Reactを念頭に設計**されており、Reactの状態管理プリミティブで構築された唯一のJavaScriptデータグリッドです。[今すぐ試してみてください！](https://1771technologies.com/graphitegrid/demo)
+
+***
+
+## ⚛️ React {#react}
+
+[![Remix - Fog of War](/emails/issues/192/rr.jpg)](https://remix.run/blog/fog-of-war)
+
+**[Remix - Fog of War](https://remix.run/blog/fog-of-war)**
+
+前号でも取り上げましたが、専用のブログ記事が公開され、その内容が詳しく説明されています。新しいReact Routerの機能により、ルートマニフェストをチャンクに分割できるようになりました。この記事では、Remix 2.10にどのように統合されたかとトレードオフについて説明しています。ルートマニフェストはかなり大きくなる可能性があり、分割しないとアプリのReactハイドレーションが遅れる可能性があります。中規模/大規模なRemixまたはReact Routerサイトをお持ちの場合は、すぐにルートマニフェストのサイズを確認し、論理的な分割方法を検討することをお勧めします。この新機能によるサイズ削減はパフォーマンスに大きな影響を与える可能性があります。Shopifyの初期マニフェストは10MBから1.9KBに削減されました！Docusaurusのウェブサイトマニフェストも200KBあり、私は間違いなくこれを実装する予定です。
+
+***
+
+* 💸 [Meilisearch — Reactで高速でタイポ耐性のある検索を構築](https://dub.sh/0PeE0RQ)
+* 👀 [React Core PR - `ReactHTML.renderToMarkup`](https://github.com/facebook/react/pull/30105): ハイドレートされないHTML（メールなど）を生成するための新しい`react-html`パッケージが導入されます。`renderToStaticMarkup`の後継で、Suspenseのようなモダンな機能をサポートします。
+* 👀 [React Core PR - `React.captureOwnerStack()`](http://github.com/facebook/react/pull/29923): Reactリポジトリでは、デバッグ、ロギング、読みやすい「コンポーネントオーナースタックトレース」の生成を改善するための多くの作業が行われています。この新しい公開APIは、フレームワーク作者がエラーダイアログを表示するのに役立つでしょう。
+* 👀 [Next.js PR - TypeScript設定ファイル（`next.config.ts`）](https://github.com/vercel/next.js/pull/63051): JSDocコメントに限定されず、設定ファイルでTypeScriptを第一級サポートするDX改善です。
+* 🗓️ [React Rally](https://reactrally.com/?utm_source=thisweekinreact) - 🇺🇸 ユタ州 - 8月12-13日 - コード「TWIR」で[10%割引](https://ti.to/react-rally/react-rally-2024/discount/TWIR)。Kent C. Dodds、Cory House、Joel Hooks、Tejas Kumarなど豪華なラインナップが発表されています。
+* 📜 [Reactの巧妙なメモリリーク：Reactコンパイラーが救えないケース](http://schiener.io/2024-07-07/react-closures-compiler): Reactでのメモリリークに関する素晴らしい3部作の最終章です。Kevinは、Reactコンパイラーを使用すると、本来リークしないコードにメモリリークを引き起こすケースを発見しました。bindの使用が有効な回避策になるかもしれません。これらのメモリ問題はReactに限定されず、JS全般での関数型プログラミングとクロージャの使用によって発生します。
+* 📜 [TypeScript名前空間でコンポーネントインポートを簡素化する方法](https://sergiodxa.com/tutorials/simplify-component-imports-with-typescript-namespaces): [Matt Pocockも推奨する](https://x.com/mattpocockuk/status/1805606072167940167)、React + TypeScriptの実用的なテクニックです。
+* 📜 [React Server Componentsでのセキュリティ侵害から保護する方法](https://www.nodejs-security.com/blog/how-to-protect-against-a-security-breach-in-react-server-components): Zodでの検証だけでは不十分で、サーバーアクションの入力に対してアクセス制御をチェックすることが重要であることを示しています。
+* 📜 [WorkOS - ダウンタイムゼロでNext.js App Routerに移行する方法](https://workos.com/blog/migrating-to-next-js-app-router-with-zero-downtime): Pages RouterからApp Routerへの段階的な移行では優れたナビゲーションUXが得られません。彼らは、クエリ文字列パラメータを通じてルーターを切り替えることで、同じアプリをPages RouterとApp Routerの両方として公開する巧妙な方法を見つけました。
+* 📜 [React 18でニューヨーク・タイムズのWebパフォーマンスを向上](https://open.nytimes.com/enhancing-the-new-york-times-web-performance-with-react-18-d6f91a7c5af8): React 16から移行し、再レンダリングの減少やINPスコアの向上などの大きなメリットを得ました。より厳格なハイドレーション要件による課題にも直面しました。
+* 📜 [Suspense対応ライブラリを構築してSuspenseを学ぶ](https://www.bbss.dev/posts/react-learn-suspense/): 実際のライブラリがどのように機能するかを広く示すために、Suspense対応の`useFetch()`フックを作成します。
+* 📜 [ボタンについてのすべて](https://blog.jim-nielsen.com/2024/all-about-that-button/): Remixは、JSが動作する「前」に機能する宣言的なHTMLとしてミューテーションを記述することを推奨し、その他のボタン関連のプログレッシブエンハンスメントについても興味深い内容です。
+* 📜 [Next.jsをセルフホストするための秘伝の知識](https://www.flightcontrol.dev/blog/secret-knowledge-to-self-host-nextjs): Vercel以外でNext.jsを本番環境にデプロイするために必要なすべてが記載されたガイドです。
+* 📜 [React Server Componentsに関する5つの誤解](https://www.builder.io/blog/nextjs-react-server-components)
+* 📦 [chadcn/ui Charts - Rechartsを使用して構築された美しいチャートコンポーネントのコレクション](https://ui.shadcn.com/docs/components/chart)
+* 📦 [Material UI 6.0ベータ - Pigment CSSによるビルド時CSS-in-JSサポート（オプション）、コンテナクエリ](https://next.mui.com/material-ui/migration/migrating-to-v6/)
+* 📦 [react-three/xr 6.0 - react-three-fiber向けAR/VR](https://github.com/pmndrs/xr)
+* 📦 [Motion-Primitives - Framer Motionベースの美しく設計されたモーションコンポーネント](https://motion-primitives.com/)
+* 🎥 [Jack Herrington - 警告: React 19のuseフックはアプリのパフォーマンスに影響を与える可能性あり](https://www.youtube.com/watch?v=t6MeFVF3V9I): 「use」フックに初めて遭遇したときのReactの実装詳細について学びました。
+* 🎙️ [PodRocket - Sathya GunasekaranとJoe SavonaによるReactコンパイラー](https://podrocket.logrocket.com/react-compiler-sathya-gunasekaran-joe-savona)
+
+**Extras:**
+
+* 👀 [Next.js PR - instrumentation.js の onRequestError](https://github.com/vercel/next.js/pull/67539)
+* 💬 [Vercel が Vite ではなく Turbopack を作成した理由](https://github.com/vercel/next.js/issues/48748#issuecomment-2199941311)
+* 📜 [保守可能なRemixアプリの秘訣：ヘキサゴナルアーキテクチャ](https://laconicwit.com/the-secret-to-maintainable-remix-apps-hexagonal-architecture/)
+* 📜 [ReactのPropsを変更できるか？](https://www.epicreact.dev/can-you-modify-react-props)
+* 📜 [Next.jsのキャッシュを解明する](https://www.nico.fyi/blog/demistifying-cache-in-nextjs)
+* 📜 [Tanstack Queryが節約できるコード量](https://www.frontendundefined.com/posts/monthly/tanstack-query-savings/)
+* 📜 [CloudflareにNext.jsアプリをデプロイする体験](https://davidgomes.com/the-experience-of-deploying-next-js-apps-on-cloudflare/)
+* 📜 [React 19への準備：WordPress 6.6ユーザー向けガイド](https://kinsta.com/blog/react-19-wordpress/)
+* 📜 [既存のRailsアプリケーションにReactを追加する実践ガイド（Hotwireも活用）](https://thoughtbot.com/blog/add-react-to-an-existing-rails-app)
+* 📜 [Next.jsとキャッシュポイズニング：ブラックホールを求めて](https://zhero-web-sec.github.io/research-and-things/nextjs-and-cache-poisoning-a-quest-for-the-black-hole)
+* 📜 [DockerでNext.jsをセルフホスティングする際のセキュリティアドバイス](https://blog.arcjet.com/security-advice-for-self-hosting-next-js-in-docker/)
+* 📜 [ConformでForm Dataのネストされた配列とオブジェクトを扱う](https://www.jacobparis.com/content/conform-nested-formdata)
+* 📜 [Reactフォームボタン](https://www.robinwieruch.de/react-form-button/)
+* 📜 [Reactフォームのサーバーアクションに追加引数を渡す](https://www.robinwieruch.de/react-form-server-action-extra-arguments/)
+* 📜 [Next.jsのcreatePageヘルパーとローダーパターン](https://saas-ui.dev/blog/nextjs-create-page-helper-with-loader-pattern)
+* 📜 [Zustandが生まれた経緯](https://blog.axlight.com/posts/how-zustand-was-born/)
+* 📜 [ReactのuseRefフック：DOM要素だけではない使い方](https://opensauced.pizza/docs/community-resources/the-react-useref-hook-not-just-for-html-elements/)
+* 📜 [クリーンなReactアーキテクチャへの道（第7部）- ドメインロジック](https://profy.dev/article/react-architecture-domain-logic)
+* 📦 [Headless UI React 2.1 - 簡素化されたトランジションAPIと改良されたマルチダイアログサポート](https://tailwindcss.com/blog/2024-06-21-headless-ui-v2-1)
+* 📦 [Storybook 8.2 - beforeAllテストフック、強化されたplay関数、ポータブルストーリー、新オンボーディング](https://github.com/storybookjs/storybook/releases/tag/v8.2.0)
+* 📦 [React Flow 12.0 - SSRサポート、フローの計算、ダークモード](https://www.xyflow.com/blog/react-flow-12-release)
+* 📦 [Hono 4.5 - React 19互換API](https://github.com/honojs/hono/releases/tag/v4.5.0)
+* 🎥 [Dave Gray - Next.jsサーバーアクションとnext-safe-actionを使ったトースト通知パターン](https://www.youtube.com/watch?v=A_061Vqh6Bc)
+* 🎥 [Lazar Nikolov - Next.jsでクリーンアーキテクチャパターンを実装する](https://www.youtube.com/playlist?list=PLHQY5AFuyYYW8IJK16BxyTLZqTHxwmDww)
+* 🎥 [Jolly Coding - NextJSの'use server'トラップ（データ漏洩のリスク）](https://www.youtube.com/watch?v=yBEHKoaoZpY)
+* 🎥 [Olivier Larose - React向けGSAP vs Framer Motion比較](https://www.youtube.com/watch?v=_1QAJaC6Xwc)
+* 🎙️ [今月のReact - React 19延期（ドラマチック？）、JS版Laravelがない理由、TS 5.5…](https://podcasters.spotify.com/pod/show/reactiflux/episodes/TMiR-2024-06-React-19-delayed-drama-ish--why-no-JS-Laravel--TS-5-5-and-more-e2lee77)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![WorkOS: B2B SaaS向けモダンアイデンティティプラットフォーム](/emails/issues/189/WorkOS.jpg)](https://workos.com/?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=q22024)
+
+**[WorkOS: B2B SaaS向けモダンアイデンティティプラットフォーム](https://workos.com/?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=q22024)**
+
+WorkOSを使えば、数行のコードで企業向けの販売を開始できます。
+
+🔐 WorkOSは完全なユーザー管理ソリューションに加えて、**SSO、SCIM、RBAC、FGA**をサポートしています。
+
+🏗️ APIは**柔軟で使いやすく、モジュール式**です。必要な機能を選び、数分で統合できます。
+
+🎨 デザインとユーザー体験がすべてです。ドキュメントの品質からユーザーのオンボーディングまで、開発者にとって不要な複雑さを**すべて排除**しています。
+
+✨ ユーザー管理は**100万MAUまで無料**で、ボット対策、なりすまし防止、MFAなどが含まれます。
+
+🤝 WorkOSは**Perplexity**、**Vercel**、**Webflow**など、数百の主要スタートアップに信頼されています。
+
+[WorkOS](https://workos.com/?utm_source=thisweekinreact\&utm_medium=newsletter\&utm_campaign=q22024)で認証スタックを未来に備えましょう 🚀
+
+***
+
+## 📱 React-Native {#react-native}
+
+[![react-native-filament](/emails/issues/192/filament.jpg)](https://github.com/margelo/react-native-filament)
+
+**[react-native-filament](https://github.com/margelo/react-native-filament)**
+
+Margeloチームが、Google FilamentをベースにしたReact Native向けのリアルタイム物理ベース3Dレンダリングエンジンをリリースしました。Metal/VulkanでGPUアクセラレーションされ、別スレッドでレンダリングされ、Reanimatedと連携可能で、すでにNew ArchitectureとExpoをサポートしています。READMEには、expo-glベースの既存の3Dソリューション（expo-threeやreact-three-fiber RN）との違いが詳しく説明されています。SkiaとFilamentにより、React Nativeの2D/3D機能の未来は明るいです。
+
+***
+
+[![Rise Tools](/emails/issues/192/rise.jpg)](https://rise.tools/)
+
+**[Rise Tools](https://rise.tools/)**
+
+React Nativeでサーバー駆動UIを作成する新しいソリューションで、アプリをリビルドや再提出せずに（あるいはOTA更新で）サーバー上に新しいビューをデプロイできます。哲学的にはReact Server Componentsモデルに非常に近いですが、若干異なるトレードオフがあります：追加の手動作業が必要な代わりに、ビューがどのようにシリアライズされるかを定義するプロトコルにより、この新しいソリューションはフレームワークや言語に依存しません。まだ初期段階ですが、非常に有望です。
+
+***
+
+* 💸 [RevenueCat Paywalls - React Nativeアプリ向けのリモート設定可能なペイウォール](https://www.revenuecat.com/docs/tools/paywalls?utm_medium=sponsored\&utm_source=thisWeekInReact\&utm_campaign=general_sponsorship\&utm_content=revenuecat-paywalls)
+* 📣 [React Native 0.76 - AndroidのminSdkがAndroid 7.0（API 24）に引き上げられます](https://github.com/react-native-community/discussions-and-proposals/discussions/802)
+* 👀 [More-reacty-native-demo](https://github.com/EvanBacon/more-reacty-native-demo): Evan Baconが、ネイティブビューを小文字の組み込みJSX要素として直接使用できるようにする実験を行っています（Webのdiv要素のようにインポート不要）。
+* 📖 [Reanimated Cookbook - 実践的な学習用サンプル集](https://docs.swmansion.com/react-native-reanimated/examples/)
+* 🗓️ [The Geek Conf](https://www.thegeekconf.com/?utm_source=thisweekinreact) - 🇩🇪 ベルリン - 7月18日＆25日 - コード「TWIR」で10%割引。明日のリモートイベント最終日チケット！
+* 📜 [Expo - PRプレビューで開発サイクルを高速化](https://expo.dev/blog/increase-iteration-speed-with-pr-previews): GitHubとEAS Updatesを連携し、PRのコミットステータスとしてOTA更新を自動投稿する新機能。WebのVercel/Netlifyのような優れた開発者体験。QRコードをPRコメントに貼ってくれるとさらに良いのですが。
+* 📜 [React Nativeアプリ開発にはフレームワークを使いましょう](https://reactnative.dev/blog/2024/06/25/use-a-framework-to-build-react-native-apps): React Nativeチームが公式にExpoの使用を推奨！フレームワークを使わない場合、実は自分でフレームワークを作っているようなものです。
+* 📜 [Web開発者からネイティブ開発へ（React編）](https://expo.dev/blog/from-web-to-native-with-react): ExpoのKadiがReact DOMとReact Nativeの要素比較、flexboxモデルの違い、避けるべきエラー、学ぶべきネイティブ機能など、React Native/Expoに関するすべてを網羅した素晴らしい学習リソースを作成。
+* 📜 [Microsoft - MacからReact Native for Windowsアプリを構築](https://devblogs.microsoft.com/react-native/2024-07-18-running-rnw-from-a-mac-md/): Windows PCは必須ではなく、Microsoft Dev BoxやParallels経由のWindows VMが利用可能。
+* 📜 [React NativeとNew Arch（およびSwift）を使ったApp Clip](https://ospfranco.com/app-clip-with-react-native-and-new-arch-\(and-swift\)/)
+* 📜 [ExecuTorchでモバイルアプリにネイティブAIを導入 - Part 2（Android編）](https://blog.swmansion.com/bringing-native-ai-to-your-mobile-apps-with-executorch-part-ii-android-29431b6b9f7f)
+* 📜 [React Native OMH Mapsライブラリ入門](https://www.callstack.com/blog/introduction-to-the-react-native-omh-maps-library)
+* 📦 [React Navigation 7.0 RC](https://reactnavigation.org/blog/2024/06/27/react-navigation-7.0-rc/): 7.0正式版リリース間近。Static APIと画面プリロードAPIの導入が特に注目。これは将来のConcurrent React機能（例: `<Activity>`）を活用したパフォーマンス改善への第一歩。
+* 📦 [FlashList 1.7 - New Architecture対応！](https://github.com/Shopify/flash-list/releases/tag/v1.7.0)
+* 📦 [Yoga 3.1 - %単位のgap、レイアウト準拠と回帰修正](https://www.yogalayout.dev/blog/announcing-yoga-3.1)
+* 📦 [Reanimated 3.13 - New Architecture、タブ共有要素トランジション](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.13.0)
+* 📦 [React Native Primitives - アクセシビリティ重視のスタイルなしユニバーサルコンポーネント](https://github.com/roninoss/rn-primitives)
+
+**その他:**
+
+* 🐦 [Meta Quest上で動作するReact Nativeのデモ](https://x.com/swmansion/status/1798736357206179920)
+* 🐦 [Daylight DC-1デバイスで動作するExpoのデモ](https://x.com/notbrent/status/1811134140265173178)
+* 👀 [Flutter-Brownfield - 既存のFlutterアプリにReact Nativeを追加する概念実証](https://github.com/callstack/flutter-brownfield)
+* 📜 [10年前のiOSアプリをExpoで再構築](https://expo.dev/blog/rebuilding-a-10-year-old-ios-app-with-expo)
+* 📜 [SkiaとReanimatedを使用したReact Nativeでの画像スライダーの構築](https://www.tweag.io/blog/2024-07-04-image-transition-react-native-skia/)
+* 📜 [デュアルモジュールESMライブラリの公開](https://satya164.page/posts/publishing-dual-module-esm-libraries)
+* 📜 [Expoアプリでローカルストレージを実装する方法](https://scientyficworld.org/how-to-implement-local-storage-in-expo-app/)
+* 📜 [ユーザーエンパワーメント：React Nativeを使用したアクセシブルなモバイルアプリの開発](https://commerce.nearform.com/blog/2024/empowering-users-developing-accessible-mobile-apps-using-react-native)
+* 🔗 [Awesome-react-native-ui - コミュニティ作成のReact Nativeアニメーションリスト](https://mrpmohiburrahman.github.io/awesome-react-native-ui/)
+* 📦 [React Native 0.75 RC.5](https://github.com/facebook/react-native/releases/tag/v0.75.0-rc.5)
+* 🎙️ [Rocket Ship 44 - Yoga、レイアウト、New Architectureについて（Delphine Bugner）](https://podcast.galaxies.dev/episodes/044-yoga-layouting-and-new-architecture-with-delphine-bugner)
+* 🎙️ [Rocket Ship 45 - 船員向けReact Nativeアプリ（Gabriel Dierks）](https://podcast.galaxies.dev/episodes/045-react-native-apps-for-seafarers-with-gabriel-dierks)
+* 🎙️ [RNR 301 - RNR解説：AnimatedのNative Driverの使用](https://www.reactnativeradio.com/episodes/rnr-301-rnr-explains-using-native-driver-for-animated)
+* 🎙️ [RNR 302 - Taylor DesseynとのReact Native求職談](https://www.reactnativeradio.com/episodes/rnr-302-landing-a-react-native-job-with-taylor-desseyn)
+* 🎥 [Simon Grimm - 12分でReactからReact Nativeへ](https://www.youtube.com/watch?v=6UB3gw3SKfY)
+* 🎥 [Simon Grimm - React Native vs Flutter - どちらを使うべきか？](https://www.youtube.com/watch?v=AiG8-wHidiA)
+
+***
+
+## 🔀 Other {#other}
+
+* 👀 [TypeScript 5.6 イテレーションプラン](https://github.com/microsoft/TypeScript/issues/59250)
+* 📜 [Ecma InternationalがECMAScript 2024を承認 - 新機能は？](https://2ality.com/2024/06/ecmascript-2024.html)
+* 📜 [JavaScriptエコシステムの高速化 - Isolated Declarations](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-10/)
+* 📦 [Node 22.4 - 実験的なWeb Storageサポート（localStorage/sessionStorage）](https://nodejs.org/en/blog/release/v22.4.0)
+* 📦 [Node 22.5 - 実験的なnode:sqliteモジュール](https://nodejs.org/en/blog/release/v22.5.0)
+* 📦 [pnpm 9.5 - 新機能「カタログ」](https://pnpm.io/catalogs)
+* 📦 [Vitest 2.0 - 改良されたBrowser Mode](https://github.com/vitest-dev/vitest/releases/tag/v2.0.0)
+
+**エクストラ:**
+
+* 🔐 [Polyfill.ioのサプライチェーン攻撃が10万以上のサイトに影響](https://sansec.io/research/polyfill-supply-chain-attack)
+* 📣 [Astro + Netlify - 公式デプロイメントパートナーに](https://astro.build/blog/netlify-official-deployment-partner/)
+* 📜 [2024年Google Lighthouseスコアをハックする方法](https://blog.sentry.io/how-to-hack-your-google-lighthouse-scores-in-2024/)
+* 📜 [プログレッシブエンハンスメントとは何か、改めて説明してみる](https://piccalil.li/blog/its-about-time-i-tried-to-explain-what-progressive-enhancement-actually-is/)
+* 📜 [ESLintの次期計画 - 言語非依存、コア書き換え](https://eslint.org/blog/2024/07/whats-coming-next-for-eslint/)
+* 📜 [TypeScriptは単なるリンターなのか？](https://www.totaltypescript.com/is-typescript-just-a-linter)
+* 📜 [Node.jsストリームの読み書きガイド](https://blog.platformatic.dev/a-guide-to-reading-and-writing-nodejs-streams)
+* 📜 [TypeScript 5.5 - ブロックバスターリリース](https://effectivetypescript.com/2024/07/02/ts-55/)
+* 📦 [StackBlitz pkg.pr.new - ライブラリの継続的（プレビュー）リリース](https://github.com/stackblitz-labs/pkg.pr.new)
+* 📦 [fetch-super-headers - 型安全なアクセスを提供するJavaScript `Headers`の代替品](https://github.com/mjackson/fetch-super-headers)
+* 📦 [Deno 1.45 - ワークスペースとモノレポサポート](https://deno.com/blog/v1.45)
+* 📦 [Rspack 1.0 Alpha - 小さな出力、モジュール連結、Lightning CSS、軽量コア](https://www.rspack.dev/blog/announcing-1-0-alpha)
+* 📦 [Mako - Rustベースの新しい高速バンドラー](https://makojs.dev/blog/mako-open-sourced)
+* 📦 [Facebook memlab - JavaScriptメモリリーク検出、ヒープスナップショット分析](https://github.com/facebook/memlab)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/192/meme.jpg)](https://x.com/flexbox_/status/1806786055057674337)
+
+それでは！👋

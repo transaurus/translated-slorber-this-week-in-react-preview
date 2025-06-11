@@ -1,0 +1,156 @@
+---
+slug: /197
+title: "This Week In React #197: Waku, Effect, TanStack, Framer Motion, use(), Preact, Valtio, Astro, Three.js, Nitrogen, React-Native-Web, expo-dom, Tophat, React-Navigation, Skip, TypeScript, Rspack, Volta..."
+authors: [matthieugicquel, cyrilbo]
+date: 08-21-2024
+---
+
+みなさん、こんにちは！
+
+[Theodo Apps（旧BAM）](https://apps.theodo.com/en?utm_source=thisweekinreact)のCyrilとMatthieuです 👋。Sebに代わって、ReactとReact Nativeの最新ニュースをお届けします。
+
+今週も落ち着いた週でしたが、素晴らしいアップデートがあります。WakuがReact Server Actionsをサポート、TanStack/Routerの使用に関するヒント、Reactがフルスタックフレームワークへと進化する過程を探ります。さらに、React Native 0.75の新機能もチェックしてください！NitroModulesとreact-native-webGPUに関するアップデートもあります。ぜひご覧ください！
+
+パートナーイベント **[React Advanced London](https://reactadvanced.com/?utm_source=Newsletter\&utm_medium=thisweekinreact)**（🇬🇧 ロンドン - 10月25日＆28日）をチェックしてください。高度なReactトークのアイデアが気に入っていますし、今のところラインナップも期待を裏切りません！👌
+
+<!-- truncate -->
+
+**💡 [このニュースレターをTwitterでチェック](https://slo.im/thread) - ビジュアルフォーマット 🎨**
+
+***
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+***
+
+## 💸 Sponsor {#sponsor1}
+
+[![ReactのPRレビューがコンポーネントのカオスになっていませんか？](/emails/issues/197/coderabbit.jpg)](https://coderabbit.ai/?utm_source=newsletter\&utm_medium=this-week-react-aug-21)
+
+**[ReactのPRレビューがコンポーネントのカオスになっていませんか？](https://coderabbit.ai/?utm_source=newsletter\&utm_medium=this-week-react-aug-21)**
+
+ReactのPRレビューを効率化し、チームの焦点をコード品質の重要な側面に集中させるための戦略を発見してください。依存関係管理、コード調整などを含むすべてのPRをレビューし、チームがアーキテクチャの決定、コンポーネント設計、パフォーマンス最適化に集中できるようにします。
+
+CodeRabbitは以下を支援します：
+
+* ベストプラクティスの実施：CodeRabbitの機能を活用して、Reactのアンチパターンを特定し、ベストプラクティスを提案することで、コード品質を確保します。
+* コンポーネント構造のレビュー：コンポーネント構造の詳細なサマリーを受け取り、より良い構成のための提案を得られます。
+* 実践的なコードレビューコメント：PR内でコードを修正し、1クリックでコミット提案を行います。
+
+CodeRabbitはすべてのオープンソースリポジトリで無料です。[今日から始めましょう！](https://coderabbit.ai/?utm_source=newsletter\&utm_medium=this-week-react-aug-21)
+
+***
+
+## ⚛️ React {#react}
+
+[![Waku v0.21 - React Server Actionsの完全サポート](/emails/issues/197/waku.jpg)](https://waku.gg/blog/server-actions-are-here)
+
+**[Waku v0.21 - React Server Actionsの完全サポート](https://waku.gg/blog/server-actions-are-here)**
+
+React Server Componentsは「Reactフレームワーク」の新たな波を引き起こしました。Daishi Kato（jotai、valtioの作者）が作成したWakuはその一つです。Next.js以外で最初にサーバーコンポーネントをサポートしたフレームワークの一つです。
+
+Server Actionsの追加により、ほとんどのReact 19機能がWakuでサポートされるようになり、「APIを持つ」部分をスキップしてフルアプリを開発できるようになりました。
+
+***
+
+[![ReactからEffectへ](/emails/issues/197/effect.jpg)](https://effect.website/blog/from-react-to-effect)
+
+**[ReactからEffectへ](https://effect.website/blog/from-react-to-effect)**
+
+Effectの創始者であるMichael Arnaldiは、EffectとReactが採用するモデルの類似性について解説しています。Effectは強力なツールキットですが、習得が難しく、ほぼ新しい言語を学ぶようなものです。そのため、既に慣れ親しんでいる概念との類似点を理解することが助けになります。
+
+Effectでは、Reactと同様に、記述するコードの大部分が「設計図」となります。プログラムが何をすべきかを宣言するだけで、直接実行はしません。その後、ライブラリ（ReactまたはEffect）が実際の実行を担当します。
+
+***
+
+* 💸 [TutorialKit — バックエンドインフラの構築や管理なしに、インタラクティブなチュートリアルを即座に作成。](https://tutorialkit.dev/)
+* 🗓️ [reactjsday](https://2024.reactjsday.it/?utm_source=thisweekinreact) - 🇮🇹 ヴェローナ - 10月25日 - コード「TWIR」で10%割引。A、B、Cが登壇予定！
+* 🗓️ [Squiggle Conf](https://2024.squiggleconf.com/?utm_source=thisweekinreact) - 🇺🇸 ボストン - 10月3日＆4日 - コード「TWIR」で10%割引。スピーカーが発表されましたので、公式サイトをご覧ください。
+* 📜 [TanStack/Routerを8ヶ月間プロダクションで使って得た知見](https://swizec.com/blog/tips-from-8-months-of-tan-stack-router-in-production/): Swizec Tellerが、ローダーやSuspenseクエリ、クエリを使用する際に適用している原則を共有
+* 📜 [Reactは（ついに）フルスタックフレームワークに](https://www.robinwieruch.de/react-full-stack-framework/): Server ComponentsとServer Actionsの追加により
+* 📜 [Reactでの状態同期](https://www.brenelz.com/posts/synchronizing-state-in-react/): 古典的なバグを「正しい方法」で解決する方法を解説。useEffectではなくコンポーネント分割で対応
+* 📜 [ReactとFramer Motionでスワイプアクションコンポーネントを構築](https://sinja.io/blog/swipe-actions-react-framer-motion)
+* 📜 [useStateObject: useStateをシンプルで便利なAPIでラップ](https://www.jameskerr.blog/posts/use-state-object/)
+* 📜 [連続リクエストを処理するReactフックの構築方法 - AbortControllerを使用](https://webdeveloper.beehiiv.com/p/build-react-hook-handles-sequential-requests)
+* 📜 [ReactでPDFを生成](https://spacejelly.dev/posts/generate-a-pdf-from-html-in-javascript) - html2pdf.js、React PDF、Puppeteer
+* 📜 [Preact - Preset Viteを使ったプリレンダリング](https://preactjs.com/blog/prerendering-preset-vite)
+* 📜 [良いリファクタリング vs 悪いリファクタリング](https://www.builder.io/blog/good-vs-bad-refactoring)
+* 📜 [Valtioが生まれた経緯](https://blog.axlight.com/posts/how-valtio-was-born/)
+* 📦 [Astro v4.14 - 実験的なContent Layer APIとコンテンツファイルでのIntellisenseサポート](https://astro.build/blog/astro-4140/)
+* 📦 [react-three/xr 6.2.0](https://github.com/pmndrs/xr/releases/tag/v6.2.0): 無制限スペース、深度センシング、セカンダリ入力ソースを追加
+* 📦 [react18-use](https://github.com/dai-shi/react18-use): Daishi KatoがReact 19の`use`フックをReact 18で動作するように作成。🐦 [`useMemo`内で`use(Context)`を呼び出せる](https://x.com/dai_shi/status/1825484689030955094)（実験的）機能を含む。Reactチームが実装予定のコンテキストセレクターのより良い代替手段。
+* 📦 [Formity](https://www.formity.app/): JSON構造で複雑なフォームを定義し、重たい処理をパッケージに任せる
+* 📦 [rspack-plugin-react-refresh v1.0](https://github.com/rspack-contrib/rspack-plugin-react-refresh)
+* 🎙️ [PodRocket - Malte Ublと語るGenerative UIとReactコンポーネント](https://podrocket.logrocket.com/generative-ui-react-components-malte-ubl)
+* 🎥 [Jack Herrington - React Web開発者向けReact-Native秘技！ - patch-packageを使ってServer Componentsと互換性のない依存関係を修正](https://www.youtube.com/watch?v=81oUBWJQii4)
+
+<SubscribeFormEmbed placement="middle" />
+
+***
+
+## 💸 Sponsor {#sponsor2}
+
+[![Storybook、Playwright、Cypress向けビジュアルテスト](/emails/issues/197/chromatic.jpg)](https://www.chromatic.com/features/visual-test?utm_source=thisweekinreact\&utm_medium=2nd_sponsor\&utm_campaign=q3_2024)
+
+**[Storybook、Playwright、Cypress向けのビジュアルテスト](https://www.chromatic.com/features/visual-test?utm_source=thisweekinreact\&utm_medium=2nd_sponsor\&utm_campaign=q3_2024)**
+
+レイアウトの崩れやUIの不具合に悩まされていませんか？Chromaticのビジュアルテストなら、自信を持って開発を進められます。機能テストでは見逃されがちな要素の位置ずれ、色の誤り、z-indexの問題まで検出します。
+
+追加のテストケースや設定は不要です。Chromaticは既存のStorybook、Playwright、Cypress環境にシームレスに統合され、アプリケーションUIのビジュアルテストを可能にします。すべてのテストは並列実行され、Chromaticの高速なCapture Cloudインフラで処理されます（追加費用なし）。
+
+セットアップはわずか2分、基本プランでは月5,000件の無料スナップショットが利用可能です。[今すぐ始める »](https://www.chromatic.com/features/visual-test?utm_source=thisweekinreact\&utm_medium=2nd_sponsor\&utm_campaign=q3_2024)
+
+***
+
+## 📱 React-Native {#react-native}
+
+**[React Native 0.75](https://reactnative.dev/blog/2024/08/12/release-0.75)**
+
+今週、React Native 0.75がリリースされました。コアチームは、本番環境対応のアプリ構築にはExpoなどのReact Nativeフレームワークの使用を強く推奨しています。この方針転換を受け、コアパッケージから`/template`フォルダが削除され、`react-native init`コマンドも2024年末までに非推奨化される予定です（ただし、`@react-native-community`パッケージ内では引き続き利用可能）。注目すべき改善点として、[自動リンクビルドフェーズのパフォーマンス向上](https://github.com/react-native-community/discussions-and-proposals/discussions/814)と[Yoga 3.1の導入](https://www.yogalayout.dev/blog/announcing-yoga-3.1)が挙げられます。Yoga 3.1では、新アーキテクチャ有効時に`gap`、`columnGap`、`rowGap`、`translation`プロパティでパーセンテージ値が使用可能になりました。これらの進化から、最新機能と安定性を享受するには新アーキテクチャの採用が不可欠であることが明らかです。
+
+***
+
+* 💸 [React Native Mastery - React NativeとExpoをマスターする唯一のコース](https://notjust.dev/react-native-mastery?utm_source=twir\&utm_medium=email)
+* 👀 [React Native 0.76では、libreactnative.soという単一の動的ライブラリが統合される予定](https://github.com/react-native-community/discussions-and-proposals/discussions/816): これによりアプリサイズと起動時間が削減されます
+* 🐦 [NitroModulesの新しいコードジェネレータ「Nitrogen」](https://x.com/mrousavy/status/1823796378860184044): Marc氏が、Objective-CやC++コードに触れることなく実装可能なSwift仕様を生成する方法を紹介 👏
+* 🐦 [react-native-webの型定義がDefinitelyTypedで公開されました](https://x.com/swmansion/status/1824379053836480771)
+* 🐦 [react-native-webGPUを使用してthree.jsがRN上で動作](https://x.com/wcandillon/status/1825862686300672124)
+* 🐦 [expo-domのデモ with React Three Fiberコンポーネント](https://x.com/Baconbrix/status/1825128678683971733)
+* 🗓️ [React Universe Conf](https://www.reactuniverseconf.com/?utm_source=thisweekinreact) - 🇵🇱 ヴロツワフ - 9月5-6日。コード「TWIR」で10%割引。スピーカー: Evan Bacon、Marc Rousavy、Tzvetan Mikov、Oskar Kwaśniewski...
+* 📜 [React Native 0.75がExpo SDK 51で利用可能に](https://expo.dev/changelog/2024/08-14-react-native-0.75): SDK 52を待つ必要なく、バグ修正やパフォーマンス改善、新アーキテクチャの安定化を低いアップグレードコストで活用可能
+* 📜 [プログレッシブウェブアプリ（PWA）: ネイティブモバイルアプリケーションへの足がかり](https://www.thinkmill.com.au/blog/progressive-web-apps-pw-as-a-stepping-stone-towards-a-native-mobile-application): PWAとネイティブアプリのトレードオフに関する最新の評価
+* 📦 [React Native Keyboard Controller v1.13](https://github.com/kirillzyusko/react-native-keyboard-controller/releases/tag/1.13.0): AndroidモーダルとReact Native 0.75のサポートを追加
+* 📦 [Skip v1.0リリース](https://skip.tools/blog/skip-1_0-release/): SwiftとSwiftUIでネイティブiOSアプリを開発しながら、自動的にネイティブAndroidコードを生成する新しいクロスプラットフォームフレームワーク
+* 📦 [Shopify - Tophatがオープンソース化](https://github.com/shopify/tophat)
+* 🎙️ [RNR 304 - React Navigation V7 with Satyajit Sahoo - 静的API、改善されたディープリンク、強化されたTypeScriptサポートなどReact Navigation 7の新機能](https://reactnativeradio.com/episodes/rnr-304-react-navigation-v7-with-satyajit-saho)
+* 🎥 [Jolly Coding - ExpoがWebからネイティブへの移行をさらに簡単に - expo-domデモ](https://www.youtube.com/watch?v=MKoZTAcVCJU)
+
+***
+
+## 🔀 Other {#other}
+
+* 📊 [State of CSS 2024 調査結果が公開されました](https://survey.devographics.com/en-US/survey/state-of-css/2024)
+* 👀 [Chrome 129 で2つの新しいJavaScriptイベント - scrollSnapChangeとscrollSnapChangingが導入されます](https://developer.chrome.com/blog/scroll-snap-events?hl=en)
+* 👀 [ECMAScript Error Safe Assignment Operator提案](https://github.com/arthurfiorette/proposal-safe-assignment-operator) - 関数型プログラミングの概念（モナド）やRustの`Result`型に触発され、関数からタプル`[error, result]`を返すことでJavaScriptのエラーハンドリングを簡素化することを目的としています。
+* 🐦 [ColinのTSインターフェースからキーをフィルタリングするハック:](https://x.com/colinhacks/status/1824052417820021173) Omit/Pickと文字列テンプレートリテラルを使用
+* 📜 [TypeScriptのBranded Types](https://www.learningtypescript.com/articles/branded-types): Branded Typesは型システムを強化するための鍵です。価格は単なる数字ではなく、時間の量でもないので、受け入れる型を絞り込むことで関数を保護します。
+* 📜 [Total TypeScript - なぜ私はEnumが好きではないのか - 数値Enum vs 文字列Enum、名義型付けとその他の癖](https://www.totaltypescript.com/why-i-dont-like-typescript-enums)
+* 📜 [手書きウェブサイトでのシンタックスハイライト - フォント内に直接OpenType機能を使用してシンタックスハイライトを実装](https://blog.glyphdrawing.club/font-with-built-in-syntax-highlighting/)
+* 📜 [「スマート」レイアウトとコンテナクエリ - コンテナクエリと従来のメディアクエリの比較](https://css-tricks.com/smart-layouts-with-container-queries/)
+* 📜 [Rspackへの移行で学んだこと - webpackからRspackへのSPA移行の課題と利点](https://birtles.blog/2024/08/14/lessons-learned-switching-to-rspack/)
+* 📜 [空間コンピューティング - ネットワークにコードを実行する場所を決定させる](https://sunilpai.dev/posts/spatial-compute/)
+* 📦 [Chrome 128 Devtoolsアップデート - Geminiによるコンソールインサイト、パフォーマンス＆ネットワークパネルの改善](https://developer.chrome.com/blog/new-in-devtools-128?hl=en)
+* 📦 [Volta 2.0 手間のかからないJavaScriptツールマネージャー](https://github.com/volta-cli/volta/releases/tag/v2.0.0)
+* 🎥 [Lydia Hallie - JavaScriptビジュアライズド - クロージャー](https://www.youtube.com/watch?v=6Ixyltr8_R0)
+
+***
+
+## 🤭 Fun {#fun}
+
+[![alt](/emails/issues/197/meme.jpg)](https://x.com/colinhacks/status/1823445912997515429)
+
+[![alt](/emails/issues/197/meme2.jpg)](https://x.com/nativewindcss/status/1824558552972923122)
+
+それでは！ 👋
