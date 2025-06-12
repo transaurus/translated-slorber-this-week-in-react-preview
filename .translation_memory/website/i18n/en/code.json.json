@@ -1,6 +1,6 @@
 {
   "source_file_path_relative_to_docusaurus_root": "i18n/en/code.json",
-  "source_file_content_hash": "95dc3e38395cac4934ef92a94f18c66fafd9d516356d524422893bcecacf58c4",
+  "source_file_content_hash": "67735f84c39b7d7ede58d2ab6b118cd57bf8bc889a16d8969cc9fa9082d69847",
   "segments": [
     {
       "segment_id": "theme.ErrorPageContent.title",
@@ -61,7 +61,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "ブログリストページナビゲーション"
+        "ja": "ブログリストページのナビゲーション"
       },
       "metadata": {
         "json_description": "The ARIA label for the blog pagination"
@@ -74,7 +74,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "新しい投稿"
+        "ja": "新しいエントリ"
       },
       "metadata": {
         "json_description": "The label used to navigate to the newer blog posts page (previous page)"
@@ -87,7 +87,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "古い投稿"
+        "ja": "古いエントリ"
       },
       "metadata": {
         "json_description": "The label used to navigate to the older blog posts page (next page)"
@@ -100,7 +100,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "ブログ投稿ページナビゲーション"
+        "ja": "ブログ投稿ページのナビゲーション"
       },
       "metadata": {
         "json_description": "The ARIA label for the blog posts pagination"
@@ -152,7 +152,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "ダークモードとライトモードを切り替え（現在 {mode}）"
+        "ja": "ダークモードとライトモードを切り替え（現在は {mode}）"
       },
       "metadata": {
         "json_description": "The ARIA label for the navbar color mode toggle"
@@ -204,7 +204,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "1アイテム|{count}アイテム"
+        "ja": "1 アイテム|{count} アイテム"
       },
       "metadata": {
         "json_description": "The default description for a category card in the generated index about how many items this category includes"
@@ -256,7 +256,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "1ドキュメントがタグ付けされています|{count}ドキュメントがタグ付けされています"
+        "ja": "1 ドキュメントがタグ付けされています|{count} ドキュメントがタグ付けされています"
       },
       "metadata": {
         "json_description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
@@ -269,7 +269,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "\"{tagName}\" でタグ付けされた{nDocsTagged}"
+        "ja": "{nDocsTagged} \"{tagName}\" のタグ付き"
       },
       "metadata": {
         "json_description": "The title of the page for a docs tag"
@@ -305,7 +305,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "これは {siteTitle} {versionLabel} のドキュメントで、現在は積極的にメンテナンスされていません。"
+        "ja": "これは {siteTitle} {versionLabel} のドキュメントであり、現在は積極的にメンテナンスされていません。"
       },
       "metadata": {
         "json_description": "The label used to tell the user that he's browsing an unmaintained doc version"
@@ -318,7 +318,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "最新のドキュメントについては、{latestVersionLink}（{versionLabel}）をご覧ください。"
+        "ja": "最新のドキュメントについては、{latestVersionLink} ({versionLabel}) をご覧ください。"
       },
       "metadata": {
         "json_description": "The label used to tell the user to check the latest version"
@@ -357,7 +357,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "{heading}への直接リンク"
+        "ja": "{heading} への直接リンク"
       },
       "metadata": {
         "json_description": "Title for link to heading"
@@ -442,6 +442,19 @@
       }
     },
     {
+      "segment_id": "theme.AnnouncementBar.closeButtonAriaLabel",
+      "source_content": "Close",
+      "source_content_hash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed",
+      "node_type": "json_message",
+      "translatable": true,
+      "translations": {
+        "ja": "閉じる"
+      },
+      "metadata": {
+        "json_description": "The ARIA label for close button of announcement bar"
+      }
+    },
+    {
       "segment_id": "theme.admonition.caution",
       "source_content": "caution",
       "source_content_hash": "3cf083c28255868b5f464f8ed39b1db95aee54b99b8670a2dbb556a580e9d5da",
@@ -517,19 +530,6 @@
       },
       "metadata": {
         "json_description": "The default label used for the Warning admonition (:::warning)"
-      }
-    },
-    {
-      "segment_id": "theme.AnnouncementBar.closeButtonAriaLabel",
-      "source_content": "Close",
-      "source_content_hash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed",
-      "node_type": "json_message",
-      "translatable": true,
-      "translations": {
-        "ja": "閉じる"
-      },
-      "metadata": {
-        "json_description": "The ARIA label for close button of announcement bar"
       }
     },
     {
@@ -630,7 +630,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "メインナビゲーション"
+        "ja": "メイン"
       },
       "metadata": {
         "json_description": "The ARIA label for the main navigation"
@@ -669,7 +669,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "元のURLにリンクしていたサイトの所有者に連絡し、リンクが切れていることを伝えてください。"
+        "ja": "元のURLをリンクしていたサイトの所有者に連絡し、リンクが切れていることを伝えてください。"
       },
       "metadata": {
         "json_description": "The 2nd paragraph of the 404 page"
@@ -682,7 +682,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "このページの内容"
+        "ja": "このページの目次"
       },
       "metadata": {
         "json_description": "The label used by the button on the collapsible TOC component"
@@ -851,7 +851,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "全{count}件の結果を表示"
+        "ja": "全{count}件を表示"
       }
     },
     {
@@ -900,7 +900,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "ここに検索語を入力"
+        "ja": "検索語を入力してください"
       },
       "metadata": {
         "json_description": "The placeholder for search page input"
@@ -939,7 +939,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "検索結果が見つかりませんでした"
+        "ja": "該当する結果が見つかりませんでした"
       },
       "metadata": {
         "json_description": "The paragraph for empty search result"
@@ -952,7 +952,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "新しい検索結果を取得中..."
+        "ja": "新しい結果を取得中..."
       },
       "metadata": {
         "json_description": "The paragraph for fetching new search results"
@@ -1017,7 +1017,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "最近の検索はありません"
+        "ja": "最近の検索履歴はありません"
       },
       "metadata": {
         "json_description": "The text when no recent searches"
@@ -1082,7 +1082,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "結果を取得できませんでした"
+        "ja": "結果の取得に失敗しました"
       },
       "metadata": {
         "json_description": "The title for error screen of search modal"
@@ -1095,7 +1095,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "ネットワーク接続を確認してください。"
+        "ja": "ネットワーク接続を確認してください"
       },
       "metadata": {
         "json_description": "The help text for error screen of search modal"
@@ -1212,7 +1212,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "次の検索に対する結果はありません:"
+        "ja": "次の検索に該当する結果がありません:"
       },
       "metadata": {
         "json_description": "The text explains that there are no results for the following search"
@@ -1225,7 +1225,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "次の検索を試してください:"
+        "ja": "次の語句で検索してみてください:"
       },
       "metadata": {
         "json_description": "The text for the suggested query when no results are found for the following search"
@@ -1238,7 +1238,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "このクエリで結果が返るはずだと思いますか？"
+        "ja": "この検索で結果が返るべきだと思いますか？"
       },
       "metadata": {
         "json_description": "The text for the question where the user thinks there are missing results"
@@ -1251,7 +1251,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "お知らせください。"
+        "ja": "お知らせください"
       },
       "metadata": {
         "json_description": "The text for the link to report missing results"
@@ -1277,7 +1277,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "結果"
+        "ja": "実行結果"
       },
       "metadata": {
         "json_description": "The result label of the live codeblocks"
@@ -1316,7 +1316,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "\"{tagName}\"のタグが付いた{nPosts}"
+        "ja": "\"{tagName}\" タグの投稿 {nPosts}件"
       },
       "metadata": {
         "json_description": "The title of the page for a blog tag"
@@ -1329,7 +1329,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "{authorName} - {nPosts}"
+        "ja": "{authorName} - {nPosts}件の投稿"
       },
       "metadata": {
         "json_description": "The title of the page for a blog author"
@@ -1459,7 +1459,7 @@
       "node_type": "json_message",
       "translatable": true,
       "translations": {
-        "ja": "タグ"
+        "ja": "タグ一覧"
       },
       "metadata": {
         "json_description": "The title of the tag list page"
@@ -1602,6 +1602,10 @@
       "message": "Tags:",
       "description": "The label alongside a tag list"
     },
+    "theme.AnnouncementBar.closeButtonAriaLabel": {
+      "message": "Close",
+      "description": "The ARIA label for close button of announcement bar"
+    },
     "theme.admonition.caution": {
       "message": "caution",
       "description": "The default label used for the Caution admonition (:::caution)"
@@ -1625,10 +1629,6 @@
     "theme.admonition.warning": {
       "message": "warning",
       "description": "The default label used for the Warning admonition (:::warning)"
-    },
-    "theme.AnnouncementBar.closeButtonAriaLabel": {
-      "message": "Close",
-      "description": "The ARIA label for close button of announcement bar"
     },
     "theme.blog.sidebar.navAriaLabel": {
       "message": "Blog recent posts navigation",
@@ -1919,9 +1919,9 @@
     }
   },
   "target_i18n_subpath": "code.json",
-  "last_updated_timestamp": "2025-06-11T16:37:36.715718+00:00",
+  "last_updated_timestamp": "2025-06-12T01:22:15.073865+00:00",
   "schema_version": "1.0",
   "translated_versions": {
-    "ja": "95dc3e38395cac4934ef92a94f18c66fafd9d516356d524422893bcecacf58c4"
+    "ja": "67735f84c39b7d7ede58d2ab6b118cd57bf8bc889a16d8969cc9fa9082d69847"
   }
 }

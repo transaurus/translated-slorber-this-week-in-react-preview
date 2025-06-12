@@ -16,19 +16,19 @@
     "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "ブログリストページナビゲーション",
+    "message": "ブログリストページのナビゲーション",
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "新しい投稿",
+    "message": "新しいエントリ",
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "古い投稿",
+    "message": "古いエントリ",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "ブログ投稿ページナビゲーション",
+    "message": "ブログ投稿ページのナビゲーション",
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
@@ -44,7 +44,7 @@
     "description": "The label of the link targeting the tag list page"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "ダークモードとライトモードを切り替え（現在 {mode}）",
+    "message": "ダークモードとライトモードを切り替え（現在は {mode}）",
     "description": "The ARIA label for the navbar color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
@@ -60,7 +60,7 @@
     "description": "The ARIA label for the breadcrumbs"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "1アイテム|{count}アイテム",
+    "message": "1 アイテム|{count} アイテム",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.paginator.navAriaLabel": {
@@ -76,11 +76,11 @@
     "description": "The label used to navigate to the next doc"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "1ドキュメントがタグ付けされています|{count}ドキュメントがタグ付けされています",
+    "message": "1 ドキュメントがタグ付けされています|{count} ドキュメントがタグ付けされています",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "\"{tagName}\" でタグ付けされた{nDocsTagged}",
+    "message": "{nDocsTagged} \"{tagName}\" のタグ付き",
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.versionBadge.label": {
@@ -91,11 +91,11 @@
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "これは {siteTitle} {versionLabel} のドキュメントで、現在は積極的にメンテナンスされていません。",
+    "message": "これは {siteTitle} {versionLabel} のドキュメントであり、現在は積極的にメンテナンスされていません。",
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "最新のドキュメントについては、{latestVersionLink}（{versionLabel}）をご覧ください。",
+    "message": "最新のドキュメントについては、{latestVersionLink} ({versionLabel}) をご覧ください。",
     "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
@@ -107,7 +107,7 @@
     "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
-    "message": "{heading}への直接リンク",
+    "message": "{heading} への直接リンク",
     "description": "Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
@@ -134,6 +134,10 @@
     "message": "タグ:",
     "description": "The label alongside a tag list"
   },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "閉じる",
+    "description": "The ARIA label for close button of announcement bar"
+  },
   "theme.admonition.caution": {
     "message": "注意",
     "description": "The default label used for the Caution admonition (:::caution)"
@@ -157,10 +161,6 @@
   "theme.admonition.warning": {
     "message": "警告",
     "description": "The default label used for the Warning admonition (:::warning)"
-  },
-  "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "閉じる",
-    "description": "The ARIA label for close button of announcement bar"
   },
   "theme.blog.sidebar.navAriaLabel": {
     "message": "ブログ最近の投稿ナビゲーション",
@@ -191,7 +191,7 @@
     "description": "The ARIA label to collapse the sidebar category"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "メインナビゲーション",
+    "message": "メイン",
     "description": "The ARIA label for the main navigation"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
@@ -203,11 +203,11 @@
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "元のURLにリンクしていたサイトの所有者に連絡し、リンクが切れていることを伝えてください。",
+    "message": "元のURLをリンクしていたサイトの所有者に連絡し、リンクが切れていることを伝えてください。",
     "description": "The 2nd paragraph of the 404 page"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "このページの内容",
+    "message": "このページの目次",
     "description": "The label used by the button on the collapsible TOC component"
   },
   "theme.blog.post.readMore": {
@@ -259,7 +259,7 @@
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.SearchBar.seeAll": {
-    "message": "全{count}件の結果を表示"
+    "message": "全{count}件を表示"
   },
   "theme.SearchPage.documentsFound.plurals": {
     "message": "1件のドキュメントが見つかりました|{count}件のドキュメントが見つかりました",
@@ -274,7 +274,7 @@
     "description": "The search page title for empty query"
   },
   "theme.SearchPage.inputPlaceholder": {
-    "message": "ここに検索語を入力",
+    "message": "検索語を入力してください",
     "description": "The placeholder for search page input"
   },
   "theme.SearchPage.inputLabel": {
@@ -286,11 +286,11 @@
     "description": "The ARIA label for Algolia mention"
   },
   "theme.SearchPage.noResultsText": {
-    "message": "検索結果が見つかりませんでした",
+    "message": "該当する結果が見つかりませんでした",
     "description": "The paragraph for empty search result"
   },
   "theme.SearchPage.fetchingNewResults": {
-    "message": "新しい検索結果を取得中...",
+    "message": "新しい結果を取得中...",
     "description": "The paragraph for fetching new search results"
   },
   "theme.SearchBar.label": {
@@ -310,7 +310,7 @@
     "description": "The title for recent searches"
   },
   "theme.SearchModal.startScreen.noRecentSearchesText": {
-    "message": "最近の検索はありません",
+    "message": "最近の検索履歴はありません",
     "description": "The text when no recent searches"
   },
   "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
@@ -330,11 +330,11 @@
     "description": "The label for remove favorite search button"
   },
   "theme.SearchModal.errorScreen.titleText": {
-    "message": "結果を取得できませんでした",
+    "message": "結果の取得に失敗しました",
     "description": "The title for error screen of search modal"
   },
   "theme.SearchModal.errorScreen.helpText": {
-    "message": "ネットワーク接続を確認してください。",
+    "message": "ネットワーク接続を確認してください",
     "description": "The help text for error screen of search modal"
   },
   "theme.SearchModal.footer.selectText": {
@@ -370,19 +370,19 @@
     "description": "The text explain that the search is making by Algolia"
   },
   "theme.SearchModal.noResultsScreen.noResultsText": {
-    "message": "次の検索に対する結果はありません:",
+    "message": "次の検索に該当する結果がありません:",
     "description": "The text explains that there are no results for the following search"
   },
   "theme.SearchModal.noResultsScreen.suggestedQueryText": {
-    "message": "次の検索を試してください:",
+    "message": "次の語句で検索してみてください:",
     "description": "The text for the suggested query when no results are found for the following search"
   },
   "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
-    "message": "このクエリで結果が返るはずだと思いますか？",
+    "message": "この検索で結果が返るべきだと思いますか？",
     "description": "The text for the question where the user thinks there are missing results"
   },
   "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
-    "message": "お知らせください。",
+    "message": "お知らせください",
     "description": "The text for the link to report missing results"
   },
   "theme.SearchModal.placeholder": {
@@ -390,7 +390,7 @@
     "description": "The placeholder of the input of the DocSearch pop-up modal"
   },
   "theme.Playground.result": {
-    "message": "結果",
+    "message": "実行結果",
     "description": "The result label of the live codeblocks"
   },
   "theme.Playground.liveEditor": {
@@ -402,11 +402,11 @@
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "\"{tagName}\"のタグが付いた{nPosts}",
+    "message": "\"{tagName}\" タグの投稿 {nPosts}件",
     "description": "The title of the page for a blog tag"
   },
   "theme.blog.author.pageTitle": {
-    "message": "{authorName} - {nPosts}",
+    "message": "{authorName} - {nPosts}件の投稿",
     "description": "The title of the page for a blog author"
   },
   "theme.blog.authorsList.pageTitle": {
@@ -446,7 +446,7 @@
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "タグ",
+    "message": "タグ一覧",
     "description": "The title of the tag list page"
   }
 }
